@@ -36,6 +36,12 @@
             android:summary="@string/flashlight_notification_summary"
             android:defaultValue="false" />
 
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="headset_connect_player"
+            android:title="@string/headset_connect_player_title"
+            android:summary="@string/headset_connect_player_summary"
+            android:defaultValue="false" />
+
         <ListPreference
             android:key="media_scanner_on_boot"
             android:title="@string/media_scanner_on_boot_title"
