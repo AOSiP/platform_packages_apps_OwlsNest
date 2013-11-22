@@ -28,6 +28,7 @@
     <string name="battery_bar_title">BatteryBar</string>
     <string name="notification_tiles_title">Tile options</string>
     <string name="notification_tiles_homeless_title">Homeless settings</string>
+    <string name="navigation_bar_screen_title">Navigation bar</string>
 
     <!--IllusionBox categories-->
     <string name="status_bar_clock_title">Clock</string>
@@ -240,5 +241,13 @@
     <string name="qs_brightness_tile">Brightness</string>
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_sync_tile">Sync</string>
+
+    <!--Navigation bar-->
+    <string name="navigation_bar_title">Buttons and layout</string>
+    <string name="navigation_bar_help_text">To get started tap the edit icon to unlock the navigation bar for editing.\n\nYou can tap an icon to change its shortcut, or long press an icon to re-arrange the layout.\n\nTap save to commit your changes, or restore to reset the layout to default settings.</string>
+    <string name="navigation_restore_button_text">Restore\ndefaults</string>
+    <string name="navigation_edit_button_text">Edit</string>
+    <string name="navigation_save_button_text">Save</string>
+    <string name="navigation_bar_reset_message">Delete current settings and restore the default layout?</string>
 </resources>
 

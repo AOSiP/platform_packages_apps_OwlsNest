@@ -232,6 +232,7 @@ public class SettingsActivity extends PreferenceActivity {
         QSListAdapter.class.getName(),
         QSTileHolder.class.getName(),
         QSTiles.class.getName(),
+        NavBar.class.getName(),
     };
 
     @Override
