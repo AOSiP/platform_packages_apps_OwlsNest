@@ -41,10 +41,17 @@
         android:summary="@string/media_art_summary"
         android:defaultValue="true" />
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_scramble_pin_layout"
+        android:title="@string/unlock_scramble_pin_layout_title"
+        android:summary="@string/unlock_scramble_pin_layout_summary"
+        android:defaultValue="false" />
+
     <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
         android:key="lockscreen_visualizer"
         android:title="@string/lockscreen_visualizer_title"
         android:summary="@string/lockscreen_visualizer_summary"
         android:defaultValue="false"/>
+
 
 </PreferenceScreen>

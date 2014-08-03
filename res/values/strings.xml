@@ -282,6 +282,10 @@
     <string name="lockscreen_power_menu_disabled_title">Disable power menu on lock screen</string>
     <string name="lockscreen_power_menu_disabled_summary">This will only disable the power menu on secure lock screens</string>
 
+    <!-- Scramble PIN layout when unlocking -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
