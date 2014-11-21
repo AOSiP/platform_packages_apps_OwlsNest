@@ -392,6 +392,10 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
+    <!-- Status bar quick qs pulldown -->
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
+
     <!--Owlsnest navigation-->
     <string name="navigation_title">Navigation</string>
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
