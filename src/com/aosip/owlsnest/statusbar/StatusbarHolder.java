@@ -54,7 +54,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.aosip.owlsnest.statusbar.ClockCategory;
 import com.aosip.owlsnest.statusbar.BatteryCategory;
 import com.aosip.owlsnest.statusbar.IconsCategory;
-import com.aosip.owlsnest.statusbar.ExtrasCategory;
+import com.aosip.owlsnest.statusbar.TrafficCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
@@ -112,7 +112,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
             frags[0] = new ClockCategory();
             frags[1] = new BatteryCategory();
             frags[2] = new IconsCategory();
-            frags[3] = new ExtrasCategory();
+            frags[3] = new TrafficCategory();
         }
 
         @Override
@@ -137,7 +137,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
                     getString(R.string.clock_category),
                     getString(R.string.battery_category),
                     getString(R.string.icon_category),
-                    getString(R.string.extra_category)};
+                    getString(R.string.network_traffic_title)};
         return titleString;
         }
     }

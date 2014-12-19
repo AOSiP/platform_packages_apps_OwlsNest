@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 AOSiP
+<!-- Copyright (C) 2017 AOSiP
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,6 +15,10 @@
 -->
 
 <resources>
-
+    <!-- Overlays for NetworkTraffic to use -->
+    <integer name="maskUp">0x00000001</integer>
+    <integer name="maskDown">0x00000002</integer>
+    <integer name="maskUnit">0x00000004</integer>
+    <integer name="maskPeriod">0xFFFF0000</integer>
 </resources>
 
