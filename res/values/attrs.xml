@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListPreferenceMultiSelect">
+    	<attr format="string" name="checkAll" />
+    	<attr format="string" name="separator" />
+    </declare-styleable>
+
+    <declare-styleable name="IconPreferenceScreen">
+         <attr name="icon" format="reference" />
+    </declare-styleable>
+
+</resources>

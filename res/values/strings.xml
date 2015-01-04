@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Illusion-Box</string>
+
+    <!-- Header Strings -->
+    <string name="user_interface">Interface</string>
+    <string name="bars">Bar Interface</string>
+    <string name="system">System</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="empty">Empty</string>
+
+    <!-- Activity titles defined in AndroidManifest.xml -->
+    <string name="title_clipboard_share">Copy to Clipboard</string>
+
+    <!-- T-Mobile Theme chooser settings  -->
+    <string name="themes_title">Themes</string>
+
+    <!-- Share to clipboard -->
+    <string name="clipboard_notification">Copied to clipboard</string>
+
+    <!-- Header Summaries -->
+    <string name="header_summary">@null</string>
+
+    <!-- Menu Strings -->
+    <string name="menu_main_activity_change_locale">Locale</string>
+
+    <!-- General Strings -->
+    <string name="advanced_settings">Advanced settings</string>
+    <string name="misc_short">Misc</string>
+    <string name="custom_app_icon_successfully">"'s icon set successfully!"</string>
+    <string name="select_custom_app_title">Select custom application</string>
+    <string name="text_on">On</string>
+    <string name="text_off">Off</string>
+    <string name="use_custom_app_title">Use custom application</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="use_custom_app_summary">Use custom application instead of the recent applications dialog</string>
+    <string name="group_applications">Applications</string>
+    <string name="choose_application">Choose application</string>
+    <string name="select_application">Select application</string>
+    <string name="dpi">DPI</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>   
+    <string name="arrow_right">→</string> 
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#FF000000</string>
+    <string name="set">Set</string>
+    <string name="ics_color">Holo</string>
+
+
+</resources>
