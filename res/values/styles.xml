@@ -15,8 +15,13 @@
 -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="text_view_style" parent="android:Widget.Holo.TextView">
+    <style name="text_view_condensed_style" parent="android:Widget.Holo.TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="text_view_light_style" parent="android:Widget.Holo.TextView">
         <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">italic</item>
     </style>
 
     <style name="button_style" parent="android:Widget.Holo.Button">
@@ -32,3 +37,4 @@
     <style name="Theme.CreateShortCut" parent="@android:style/Theme.Holo.DialogWhenLarge" />
     
 </resources>
+

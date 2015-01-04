@@ -36,6 +36,8 @@ import android.widget.ListAdapter;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.illusion.box.fragments.ButtonSettings;
+
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
     private static final String TAG = "CR_Settings";
@@ -186,6 +188,20 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
         }
     }
 
+    private static final String[] ENTRY_FRAGMENTS = {
+        ButtonSettings.class.getName(),
+    };
+
+    @Override
+    protected boolean isValidFragment(String fragmentName) {
+        // Almost all fragments are wrapped in this,
+        // except for a few that have their own activities.
+        for (int i = 0; i < ENTRY_FRAGMENTS.length; i++) {
+             if (ENTRY_FRAGMENTS[i].equals(fragmentName)) return true;
+             }
+        return false;
+    }
+
     /**
      * Populate the activity with the top-level headers.
      */
@@ -262,7 +278,7 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
     public void onResume() {
         super.onResume();
 
-//        setLocale();
+        setLocale();
 
         ListAdapter listAdapter = getListAdapter();
         if (listAdapter instanceof HeaderAdapter) {

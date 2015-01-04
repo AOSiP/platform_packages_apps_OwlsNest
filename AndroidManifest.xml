@@ -26,8 +26,11 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/application_theme"
+        android:theme="@style/application_theme_dark"
         android:uiOptions="none" >
+
+        <uses-library android:name="org.cyanogenmod.hardware" required="false" />
+
         <activity
             android:name=".SettingsActivity"
             android:label="@string/app_name" >
@@ -38,6 +41,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragments.ButtonSettings"
+            android:label="@string/button_pref_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.illusion.box.SHORTCUT" />
+           </intent-filter>
+       </activity>
+       <activity
  	    android:name=".ShareToClipboard"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
  	    android:label="@string/title_clipboard_share" >
@@ -55,6 +67,12 @@
              android:theme="@style/Theme.CreateShortCut" >
  	  <intent-filter>
                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+        <receiver android:name=".com.illusion.box.BootReceiver" android:enabled="true">$
+            <intent-filter android:priority="2147483647">$
+                <action android:name="android.intent.action.BOOT_COMPLETED" />$
+            </intent-filter>$
+        </receiver>
 
   	       <category android:name="android.intent.category.DEFAULT" />
           </intent-filter>

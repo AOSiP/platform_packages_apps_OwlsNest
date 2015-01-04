@@ -9,4 +9,10 @@
             android:icon="@drawable/ic_fibers_button"
             android:title="@string/button_settings" /-->
 
+        <header
+            android:key="@+id/button_settings"
+            android:title="@string/button_pref_title"
+            android:fragment="com.illusion.box.fragments.ButtonSettings"
+            android:icon="@drawable/ic_fibers_button" />
+
 </preference-headers>
