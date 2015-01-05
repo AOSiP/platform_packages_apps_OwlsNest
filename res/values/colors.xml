@@ -25,6 +25,10 @@
     <color name="color_text_holo_light">#000000</color>
     <color name="color_text_holo_dark">#FFFFFF</color>
 
-    <color name="color_kitkat">#AB0A0A</color>
+    <color name="color_kitkat">#ff009586</color>
+    <color name="actionbar_icon_color">#ffffff</color>
+
+    <color name="theme_primary">#ff009586</color>
+    <color name="theme_primary_dark">#ff007C6D</color>
 
 </resources>

@@ -94,10 +94,30 @@
     <string name="am_pm_clock_none">Don\'t show</string>
     <string name="clock_date_display_none">Don\'t show</string>
     <string name="clock_date_display_small">Small font size</string>
-   <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
     <string name="clock_date_style_normal">Normal</string>
     <string name="clock_date_style_lowercase">Lowercase</string>
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="qs_title">Quick settings</string>
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_dismissable">No dismissable</string>
+    <string name="smart_pulldown_persistent">No persistent</string>
+    <string name="smart_pulldown_all">No dismissable or persistent</string>
+
+    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
+    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+
 </resources>

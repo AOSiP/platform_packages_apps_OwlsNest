@@ -33,7 +33,7 @@
                 android:layout_gravity="top"
                 android:textColor="@color/color_kitkat"
                 android:textAppearance="@style/TextAppearance.PagerTabs"
-                android:background="@color/color_text_holo_dark" />
+                android:background="@*android:color/material_blue_grey" />
 
     </android.support.v4.view.ViewPager>
 </LinearLayout>

@@ -15,6 +15,13 @@
   limitations under the License.
 -->
 <resources>
+    <!-- ActionBar height -->
+    <dimen name="actionbar_size">56dip</dimen>
+
+    <!-- ActionBar contentInsetStart -->
+    <dimen name="actionbar_contentInsetStart">16dp</dimen>
+    <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
+
     <!-- height of a normal list item in edit playlist mode -->
     <dimen name="normal_height">64dip</dimen>
     <!-- height of an expanded list item in edit playlist mode -->
