@@ -89,8 +89,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBarClockStyle();
-            //frags[1] = new NotificationDrawer();
+            frags[0] = new ButtonSettings();
+            frags[1] = new StatusBarClockStyle();
         }
 
         @Override
@@ -112,7 +112,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    //getString(R.string.sb_quicksettings_category),
+                    getString(R.string.button_pref_title),
                     getString(R.string.status_bar_clock_title)};
         return titleString;
     }

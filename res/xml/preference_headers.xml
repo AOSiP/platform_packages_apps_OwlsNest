@@ -1,18 +1,8 @@
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <header
-        android:title="@string/user_interface" />
-
-        <header
-            android:key="@+id/button_settings"
-            android:title="@string/button_pref_title"
-            android:fragment="com.illusion.box.fragments.ButtonSettings"
-            android:icon="@drawable/ic_fibers_button" />
-
-    <header
         android:title="@string/header_category_personalization" />
 
-    <!-- Interface -->
     <header
         android:id="@+id/interface_settings"
         android:icon="@drawable/ic_settings_interface"

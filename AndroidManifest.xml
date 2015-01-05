@@ -40,15 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".fragments.ButtonSettings"
-            android:label="@string/button_pref_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.illusion.box.SHORTCUT" />
-           </intent-filter>
-       </activity>
        <activity
  	    android:name=".ShareToClipboard"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
@@ -71,6 +62,15 @@
                 <category android:name="com.illusion.box.SHORTCUT" />
             </intent-filter>
         </activity>
+        <!--activity
+            android:name=".fragments.ButtonSettings"
+            android:label="@string/button_pref_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.illusion.box.SHORTCUT" />
+           </intent-filter>
+       </activity-->
         <activity
  	    android:name=".CreateShortcut"
              android:theme="@style/Theme.CreateShortCut" >

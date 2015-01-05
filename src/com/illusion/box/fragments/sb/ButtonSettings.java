@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments;
+package com.illusion.box.fragments.sb;
 
 import android.content.ContentResolver;
 import android.content.Context;
