@@ -25,4 +25,6 @@
     <color name="color_text_holo_light">#000000</color>
     <color name="color_text_holo_dark">#FFFFFF</color>
 
+    <color name="color_kitkat">#AB0A0A</color>
+
 </resources>

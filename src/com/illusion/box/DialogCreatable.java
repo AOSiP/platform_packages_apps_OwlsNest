@@ -1,5 +1,3 @@
-
-package com.illusion.box;
 /*
  * Copyright (C) 2010 The Android Open Source Project
  *
@@ -16,7 +14,7 @@ package com.illusion.box;
  * limitations under the License.
  */
 
-
+package com.illusion.box;
 
 import android.app.Dialog;
 

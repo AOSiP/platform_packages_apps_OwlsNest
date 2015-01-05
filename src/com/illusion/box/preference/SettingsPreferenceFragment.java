@@ -53,6 +53,9 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
     protected ContentResolver mContentRes;
     protected ContentResolver mContentAppRes;
 
+    // Cache the content resolver for async callbacks
+    private ContentResolver mContentResolver;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,7 +114,11 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
      * Returns the ContentResolver from the owning Activity.
      */
     protected ContentResolver getContentResolver() {
-        return getActivity().getContentResolver();
+        Context context = getActivity();
+        if (context != null) {
+            mContentResolver = context.getContentResolver();
+        }
+        return mContentResolver;
     }
 
     /**
@@ -183,6 +190,10 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
         }
     }
 
+    public void onDialogShowing() {
+    // override in subclass to attach a dismiss listener, for instance
+    }
+
     public static class SettingsDialogFragment extends DialogFragment {
         private static final String KEY_DIALOG_ID = "key_dialog_id";
         private static final String KEY_PARENT_FRAGMENT_ID = "key_parent_fragment_id";
@@ -217,6 +228,15 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
         }
 
         @Override
+        public void onStart() {
+            super.onStart();
+
+            if (mParentFragment != null && mParentFragment instanceof SettingsPreferenceFragment) {
+                ((SettingsPreferenceFragment) mParentFragment).onDialogShowing();
+            }
+        }
+
+        @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             if (savedInstanceState != null) {
                 mDialogId = savedInstanceState.getInt(KEY_DIALOG_ID, 0);
@@ -225,8 +245,11 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
                     mParentFragment = getFragmentManager().findFragmentById(mParentFragmentId);
                     if (!(mParentFragment instanceof DialogCreatable)) {
                         throw new IllegalArgumentException(
-                                KEY_PARENT_FRAGMENT_ID + " must implement "
-                                        + DialogCreatable.class.getName());
+                                (mParentFragment != null
+                                        ? mParentFragment.getClass().getName()
+                                        : mParentFragmentId)
+                                + " must implement "
+                                + DialogCreatable.class.getName());
                     }
                 }
                 // This dialog fragment could be created from non-SettingsPreferenceFragment
