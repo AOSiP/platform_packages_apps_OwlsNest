@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.sb;
+package com.illusion.box.fragments.buttons;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,14 +35,14 @@ import com.illusion.box.R;
 import com.illusion.box.preference.SettingsPreferenceFragment;
 import com.illusion.box.Utils;
 
-import com.illusion.box.fragments.sb.*;
+import com.illusion.box.fragments.buttons.*;
 
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class InterfaceSettings extends SettingsPreferenceFragment {
+public class NavigationSettings extends SettingsPreferenceFragment {
 
-    private static final String TAG = "interface_settings_title";
+    private static final String TAG = "navigation_title";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -89,11 +89,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBarClockStyle();
-            frags[1] = new StatusBarBatteryStyle();
-            frags[2] = new Traffic();
-            frags[3] = new QsSettings();
-            frags[4] = new StatusBar();
+            frags[0] = new NavBarDimen();
+            frags[1] = new ButtonSettings();
+            //frags[2] = new StatusBarBatteryStyle();
+            //frags[3] = new Traffic();
+            //frags[4] = new QsSettings();
+            //frags[5] = new StatusBar();
         }
 
         @Override
@@ -115,11 +116,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.status_bar_clock_title),
-                    getString(R.string.battery_style_title),
-                    getString(R.string.network_traffic_title),
-                    getString(R.string.qs_title),
-                    getString(R.string.status_bar_title)};
+                    getString(R.string.navigation_bar_category),
+                    getString(R.string.button_pref_title)};
+                    //getString(R.string.battery_style_title),
+                    //getString(R.string.network_traffic_title),
+                    //getString(R.string.qs_title),
+                    //getString(R.string.status_bar_title)};
         return titleString;
     }
 }

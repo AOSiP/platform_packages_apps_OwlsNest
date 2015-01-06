@@ -34,8 +34,11 @@
     <!-- Menu Strings -->
     <string name="menu_main_activity_change_locale">Locale</string>
 
+    <!-- Navigation -->
+    <string name="navigation_title">Navigation</string>
+
     <!-- HW rebind -->
-    <string name="button_pref_title">Navigation</string>
+    <string name="button_pref_title">Buttons</string>
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>
     <string name="hardware_keys_short_press_title">Short press action</string>
@@ -50,9 +53,15 @@
     <string name="hardware_keys_action_launch_camera">Launch camera</string>
     <string name="hardware_keys_action_sleep">Turn screen off</string>
 
+    <string name="hardware_keys_volume_keys_title">Volume buttons</string>
+    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_cursor_control_off">Disabled</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
     <!-- Slim settings screens -->
     <string name="header_category_personalization">Personalization</string>
-    <string name="interface_settings_title">Interface</string>
+    <string name="interface_settings_title">Status bar</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -188,5 +197,26 @@
     <string name="battery_bar_thickness_title">Battery bar thickness</string>
     <string name="battery_bar_animate_title">Charging animation</string>
     <string name="battery_style_reset_message">Reset battery bar color?</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_category">Navigation bar</string>
+    <string name="navbar_enable_bar">Enable</string>
+    <string name="navbar_dimen_title">Dimensions</string>
+    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
+    <string name="navigation_bar_height_title">Navigation bar height</string>
+    <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
+    <string name="navigation_bar_width_title">Navigation bar width</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+    <string name="navigation_bar_left_title">Left-handed mode</string>
+    <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
+
 
 </resources>

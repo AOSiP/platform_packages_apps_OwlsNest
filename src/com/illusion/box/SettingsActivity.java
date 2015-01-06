@@ -38,6 +38,7 @@ import android.widget.TextView;
 
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.sb.*;
+import com.illusion.box.fragments.buttons.*;
 
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
@@ -191,7 +192,7 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
-        //ButtonSettings.class.getName(),
+        NavigationSettings.class.getName(),
         InterfaceSettings.class.getName(),
     };
 

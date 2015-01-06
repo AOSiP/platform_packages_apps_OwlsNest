@@ -9,4 +9,10 @@
         android:fragment="com.illusion.box.fragments.sb.InterfaceSettings"
         android:title="@string/interface_settings_title" />
 
+    <header
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_navigation"
+        android:fragment="com.illusion.box.fragments.buttons.NavigationSettings"
+        android:title="@string/navigation_title" />
+
 </preference-headers>
