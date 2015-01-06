@@ -5,7 +5,7 @@
 
     <header
         android:id="@+id/interface_settings"
-        android:icon="@drawable/ic_settings_interface"
+        android:icon="@drawable/ic_statusbar"
         android:fragment="com.illusion.box.fragments.sb.InterfaceSettings"
         android:title="@string/interface_settings_title" />
 

@@ -91,8 +91,10 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new ButtonSettings();
             frags[1] = new StatusBarClockStyle();
-            frags[2] = new Traffic();
-            frags[3] = new QsSettings();
+            frags[2] = new StatusBarBatteryStyle();
+            frags[3] = new Traffic();
+            frags[4] = new QsSettings();
+            frags[5] = new StatusBar();
         }
 
         @Override
@@ -116,8 +118,10 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.button_pref_title),
                     getString(R.string.status_bar_clock_title),
+                    getString(R.string.battery_style_title),
                     getString(R.string.network_traffic_title),
-                    getString(R.string.qs_title)};
+                    getString(R.string.qs_title),
+                    getString(R.string.status_bar_title)};
         return titleString;
     }
 }
