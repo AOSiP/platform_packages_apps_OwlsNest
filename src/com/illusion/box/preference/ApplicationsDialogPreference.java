@@ -42,7 +42,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.illusion.box.R;
-//import com.illusion.box.SettingsPreferenceFragment;
+import com.illusion.box.preference.SettingsPreferenceFragment;
 
 import java.util.Collections;
 import java.util.LinkedList;

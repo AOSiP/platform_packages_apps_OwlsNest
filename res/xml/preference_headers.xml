@@ -15,4 +15,10 @@
         android:fragment="com.illusion.box.fragments.buttons.NavigationSettings"
         android:title="@string/navigation_title" />
 
+    <header
+        android:id="@+id/shortcut_settings"
+        android:icon="@drawable/ic_shortcut"
+        android:fragment="com.illusion.box.fragments.sc.ShortcutSettings"
+        android:title="@string/shortcut_title" />
+
 </preference-headers>

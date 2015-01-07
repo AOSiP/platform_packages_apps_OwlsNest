@@ -36,5 +36,8 @@
     <dimen name="navigation_bar_24">24.0dip</dimen>
     <dimen name="navigation_bar_0">0.0dip</dimen>
 
+    <!-- Gesture Anywhere -->
+    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
     <dimen name="shortcut_picker_left_padding">70dip</dimen>
 </resources>
