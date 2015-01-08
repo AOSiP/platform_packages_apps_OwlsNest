@@ -21,7 +21,7 @@
         <item name="@*android:actionBarSize">@dimen/actionbar_size</item>
         <item name="android:buttonStyle">@style/button_style</item>
         <item name="android:textViewStyle">@style/text_view_light_style</item>
-
+        <item name="android:colorAccent">@color/color_illusion_blue</item>
         <item name="android:colorPrimary">@color/theme_primary</item>
         <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
     </style>

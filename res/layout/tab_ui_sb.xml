@@ -31,9 +31,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:textColor="@color/color_kitkat"
+                android:textColor="@color/color_illusion_blue"
                 android:textAppearance="@style/TextAppearance.PagerTabs"
-                android:background="@*android:color/material_blue_grey" />
+                android:background="@color/color_illusion_pink" />
 
     </android.support.v4.view.ViewPager>
 </LinearLayout>

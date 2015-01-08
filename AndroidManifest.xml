@@ -112,6 +112,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragments.personal.PersonalSettings"
+            android:label="@string/personal_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.illusion.box.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.misc.MiscSettings"
+            android:label="@string/personal_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.illusion.box.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".fragments.Navigation"
             android:label="@string/navigation_title" >
             <intent-filter>

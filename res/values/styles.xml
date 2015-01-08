@@ -39,6 +39,7 @@
 
     <style name="TextAppearance.info_label">
         <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_illusion_blue</item>
         <item name="android:textStyle">bold</item>
     </style>
 
