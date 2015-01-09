@@ -36,7 +36,7 @@
     <header
         android:key="lock_clock"
         android:title="@string/lock_clock_title"
-        android:icon="@drawable/ic_misc"
+        android:icon="@drawable/ic_clock"
         android:summary="@string/lock_clock_summary">
         <intent android:action="android.intent.action.MAIN"
            android:targetPackage="com.cyanogenmod.lockclock"

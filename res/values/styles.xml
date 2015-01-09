@@ -63,5 +63,10 @@
 
     <style name="Theme.CreateShortCut" parent="@android:style/Theme.Holo.DialogWhenLarge" />
     
+    <style name="SettingsPreferenceHeaderPanel" parent="@*android:style/PreferenceHeaderPanel">
+    </style>
+    <style name="SettingsPreferenceHeaderList" parent="@*android:style/PreferenceHeaderList">
+    </style>
+
 </resources>
 
