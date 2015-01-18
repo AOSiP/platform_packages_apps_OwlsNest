@@ -87,6 +87,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarCarrier = (SwitchPreference) findPreference(STATUS_BAR_CARRIER);
         mStatusBarCarrier.setChecked((Settings.System.getInt(getContentResolver(),
                Settings.System.STATUS_BAR_CARRIER, 0) == 1));
+        mStatusBarCarrier.setOnPreferenceChangeListener(this);
 
        // MIUI-like carrier Label color
        mCarrierColorPicker = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
