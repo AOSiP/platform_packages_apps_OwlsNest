@@ -53,15 +53,9 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
 
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String KEY_STATUS_BAR_TICKER = "status_bar_ticker_enabled";
-    private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
-    private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
-
-    static final int DEFAULT_STATUS_CARRIER_COLOR = 0xffffffff;
 
     private SwitchPreference mStatusBarBrightnessControl;
     private SwitchPreference mTicker;
-    SwitchPreference mStatusBarCarrier;
-    ColorPickerPreference mCarrierColorPicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,21 +77,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             return;
         }
 
-        // MIUI-like carrier Label
-        mStatusBarCarrier = (SwitchPreference) findPreference(STATUS_BAR_CARRIER);
-        mStatusBarCarrier.setChecked((Settings.System.getInt(getContentResolver(),
-               Settings.System.STATUS_BAR_CARRIER, 0) == 1));
-        mStatusBarCarrier.setOnPreferenceChangeListener(this);
-
-       // MIUI-like carrier Label color
-       mCarrierColorPicker = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
-       mCarrierColorPicker.setOnPreferenceChangeListener(this);
-       intColor = Settings.System.getInt(getContentResolver(),
-               Settings.System.STATUS_BAR_CARRIER_COLOR, DEFAULT_STATUS_CARRIER_COLOR);
-               hexColor = String.format("#%08x", (0xffffffff & intColor));
-       mCarrierColorPicker.setSummary(hexColor);
-       mCarrierColorPicker.setNewPreviewColor(intColor);
-
         mTicker = (SwitchPreference) prefSet.findPreference(KEY_STATUS_BAR_TICKER);
         final boolean tickerEnabled = systemUiResources.getBoolean(systemUiResources.getIdentifier(
                     "com.android.systemui:bool/enable_ticker", null, null));
@@ -112,15 +91,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
     }
 
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mStatusBarCarrier) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_CARRIER, mStatusBarCarrier.isChecked() ? 1 : 0);
-            return true;
-            }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
-
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mStatusBarBrightnessControl) {
@@ -132,13 +102,6 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_TICKER_ENABLED,
                     (Boolean) objValue ? 1 : 0);
-            return true;
-        } else if (preference == mCarrierColorPicker) {
-            String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String.valueOf(objValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                   Settings.System.STATUS_BAR_CARRIER_COLOR, intHex);
             return true;
         }
         return false;

@@ -85,10 +85,10 @@
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
 
-    <!-- MIUI-like carrier label -->
+    <!-- MIUI-like carrier label >
     <string name="show_status_bar_carrier_title">MIUI-like carrier label</string>
     <string name="show_status_bar_carrier_summary">Shows carrier label in status bar</string>
-    <string name="status_bar_carrier_color">MIUI-like carrier label Color</string>
+    <string name="status_bar_carrier_color">MIUI-like carrier label Color</string-->
 
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
