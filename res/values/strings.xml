@@ -10,6 +10,7 @@
     <string name="header_category_ib">Illusion-Box custom settings</string>
     <string name="interface_settings_title">Status bar</string>
     <string name="misc_title">Miscellaneous</string>
+    <string name="illusion_settings">Custom</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>

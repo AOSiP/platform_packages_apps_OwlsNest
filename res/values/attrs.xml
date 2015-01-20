@@ -5,17 +5,6 @@
     	<attr format="string" name="separator" />
     </declare-styleable>
 
-    <declare-styleable name="IconPreferenceScreen">
-         <attr name="icon" format="reference" />
-    </declare-styleable>
-
-    <declare-styleable name="IntervalSeekBar">
-        <attr name="min" format="float" />
-        <attr name="max" format="float" />
-        <attr name="defaultValue" format="float" />
-        <attr name="digits" format="integer" />
-    </declare-styleable>
-
     <declare-styleable name="SeekBarPreference">
         <attr name="maximum" format="integer" />
         <attr name="minimum" format="integer" />
@@ -23,5 +12,4 @@
         <attr name="unitsRight" format="string" />
         <attr name="interval" format="integer" />
     </declare-styleable>
-
 </resources>

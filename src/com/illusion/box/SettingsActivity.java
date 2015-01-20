@@ -45,7 +45,7 @@ import com.illusion.box.fragments.misc.*;
 
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
-    private static final String TAG = "CR_Settings";
+    private static final String TAG = "illusion_Settings";
 
     private static String KEY_USE_ENGLISH_LOCALE = "use_english_locale";
 

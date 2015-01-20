@@ -19,7 +19,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="app_circle_sidebar"
         android:title="@string/app_circle_bar_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.illusion.box">
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
         android:key="category_app_circle_bar"

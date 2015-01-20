@@ -61,6 +61,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
         View view = inflater.inflate(R.layout.tab_ui_sb, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mPagerTabStrip = (PagerTabStrip) view.findViewById(R.id.pagerTabStrip);
+        mPagerTabStrip.setTabIndicatorColorResource(android.R.color.white);
 
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);

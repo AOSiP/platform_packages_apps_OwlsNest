@@ -17,7 +17,7 @@
 <PreferenceScreen
     android:title="@string/network_traffic_title"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.illusion.box">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <ListPreference
         android:key="network_traffic_state"
