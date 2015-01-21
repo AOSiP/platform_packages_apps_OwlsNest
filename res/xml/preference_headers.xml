@@ -5,39 +5,32 @@
 
     <header
         android:id="@+id/interface_settings"
-        android:icon="@drawable/ic_statusbar"
         android:fragment="com.illusion.box.fragments.sb.InterfaceSettings"
         android:title="@string/interface_settings_title" />
 
     <header
         android:id="@+id/navigation_settings"
-        android:icon="@drawable/ic_navigation"
         android:fragment="com.illusion.box.fragments.buttons.NavigationSettings"
         android:title="@string/navigation_title" />
 
     <header
         android:id="@+id/shortcut_settings"
-        android:icon="@drawable/ic_shortcut"
         android:fragment="com.illusion.box.fragments.sc.ShortcutSettings"
         android:title="@string/shortcut_title" />
 
     <header
         android:id="@+id/personal_settings"
-        android:icon="@drawable/ic_personal"
         android:fragment="com.illusion.box.fragments.personal.PersonalSettings"
         android:title="@string/personal_title" />
 
     <header
         android:id="@+id/misc_settings"
-        android:icon="@drawable/ic_misc"
         android:fragment="com.illusion.box.fragments.misc.MiscSettings"
         android:title="@string/misc_title" />
 
     <header
         android:key="lock_clock"
-        android:title="@string/lock_clock_title"
-        android:icon="@drawable/ic_clock"
-        android:summary="@string/lock_clock_summary">
+        android:title="@string/lock_clock_title" >
         <intent android:action="android.intent.action.MAIN"
            android:targetPackage="com.cyanogenmod.lockclock"
            android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
