@@ -11,6 +11,8 @@
     <string name="interface_settings_title">Status bar</string>
     <string name="misc_title">Miscellaneous</string>
     <string name="illusion_settings">Custom</string>
+    <string name="recents_panel_settings">Recents panel settings</string>
+    <string name="recent_settings_title">Recent panel settings</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -381,5 +383,12 @@
     <!-- LockClocK -->
     <string name="lock_clock_title">cLock widget</string>
     <string name="lock_clock_summary"></string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all recents button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
+    <string name="recents_clear_all_location_title">Clear all recents location</string>
+    <string name="recents_clear_all_location_right">Top right</string>
+    <string name="recents_clear_all_location_left">Top left</string>
 
 </resources>

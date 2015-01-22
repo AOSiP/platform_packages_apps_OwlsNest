@@ -24,6 +24,11 @@
         android:title="@string/personal_title" />
 
     <header
+        android:id="@+id/recent_settings"
+        android:fragment="com.illusion.box.fragments.recent.RecentSettings"
+        android:title="@string/recent_settings_title" />
+
+    <header
         android:id="@+id/misc_settings"
         android:fragment="com.illusion.box.fragments.misc.MiscSettings"
         android:title="@string/misc_title" />

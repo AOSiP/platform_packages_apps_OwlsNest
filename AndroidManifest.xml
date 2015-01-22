@@ -147,6 +147,15 @@
                 <category android:name="com.illusion.box.SHORTCUT" />
            </intent-filter>
        </activity>
+       <activity
+            android:name=".fragments.recent.RecentSettings"
+            android:label="@string/recent_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.illusion.box.SHORTCUT" />
+           </intent-filter>
+       </activity>
 
         <activity android:name="com.illusion.box.fragments.sc.GestureAnywhereBuilderActivity" />
         <activity android:name="com.illusion.box.fragments.sc.GestureAnywhereCreateGestureActivity" />
