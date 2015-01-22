@@ -91,7 +91,7 @@ public class RecentSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new CustomSettings();
-            //frags[1] = new StatusBarBatteryStyle();
+            frags[1] = new OmniSwitch();
             //frags[2] = new Traffic();
             //frags[3] = new QsSettings();
             //frags[4] = new StatusBar();
@@ -119,8 +119,8 @@ public class RecentSettings extends SettingsPreferenceFragment {
                     //getString(R.string.status_bar_clock_title),
                     //getString(R.string.battery_style_title),
                     //getString(R.string.network_traffic_title),
-                    //getString(R.string.qs_title),
-                    getString(R.string.recent_settings_title)};
+                    getString(R.string.recent_settings_title),
+                    getString(R.string.omniswitch_settings_title)};
         return titleString;
     }
 }
