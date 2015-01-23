@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.sb;
+package com.illusion.box.fragments.notification;
 
 import android.content.pm.PackageManager;
 import android.content.res.Resources;

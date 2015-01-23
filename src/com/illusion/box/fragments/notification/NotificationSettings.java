@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.sb;
+package com.illusion.box.fragments.notification;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -31,18 +31,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.illusion.box.R;
+import com.android.settings.R;
 import com.illusion.box.preference.SettingsPreferenceFragment;
 import com.illusion.box.Utils;
 
-import com.illusion.box.fragments.sb.*;
+import com.illusion.box.fragments.notification.*;
 
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class InterfaceSettings extends SettingsPreferenceFragment {
+public class NotificationSettings extends SettingsPreferenceFragment {
 
-    private static final String TAG = "interface_settings_title";
+    private static final String TAG = "notification_title";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -90,10 +90,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBarClockStyle();
-            frags[1] = new StatusBarBatteryStyle();
-            frags[2] = new Traffic();
-            frags[3] = new StatusBar();
+            frags[0] = new NotificationDrawerSettings();
+            frags[1] = new QsSettings();
+            //frags[1] = new StatusBarBatteryStyle();
+           //frags[2] = new Traffic();
+            //frags[3] = new QsSettings();
+            //frags[4] = new StatusBar();
         }
 
         @Override
@@ -115,10 +117,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.status_bar_clock_title),
-                    getString(R.string.battery_style_title),
-                    getString(R.string.network_traffic_title),
-                    getString(R.string.status_bar_title)};
+                    //getString(R.string.status_bar_clock_title),
+                    //getString(R.string.battery_style_title),
+                   //getString(R.string.network_traffic_title),
+                    //getString(R.notification_drawer_title),
+                    getString(R.string.notification_drawer_title),
+                    getString(R.string.qs_title)};
         return titleString;
     }
 }

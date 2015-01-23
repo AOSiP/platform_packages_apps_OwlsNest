@@ -156,6 +156,15 @@
                 <category android:name="com.illusion.box.SHORTCUT" />
            </intent-filter>
        </activity>
+       <activity
+            android:name=".fragments.notification.NotificationSettings"
+            android:label="@string/notification_drawer_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.illusion.box.SHORTCUT" />
+            </intent-filter>
+        </activity>
 
         <activity android:name="com.illusion.box.fragments.sc.GestureAnywhereBuilderActivity" />
         <activity android:name="com.illusion.box.fragments.sc.GestureAnywhereCreateGestureActivity" />

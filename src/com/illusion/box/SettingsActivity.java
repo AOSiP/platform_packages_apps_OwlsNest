@@ -43,6 +43,7 @@ import com.illusion.box.fragments.buttons.*;
 import com.illusion.box.fragments.personal.*;
 import com.illusion.box.fragments.misc.*;
 import com.illusion.box.fragments.recent.*;
+import com.illusion.box.fragments.notification.*;
 
 public class SettingsActivity extends PreferenceActivity implements ButtonBarHandler {
 
@@ -202,6 +203,8 @@ public class SettingsActivity extends PreferenceActivity implements ButtonBarHan
         PersonalSettings.class.getName(),
         MiscSettings.class.getName(),
         RecentSettings.class.getName(),
+        NotificationSettings.class.getName(),
+        QSTiles.class.getName(),
     };
 
     @Override

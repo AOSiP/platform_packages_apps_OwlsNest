@@ -3,13 +3,13 @@
 
     <string name="app_name">Illusion-Box</string>
     <string name="default_string">Default</string>
-    <string name="user_interface">Interface</string>
+    <string name="user_interface">StatusBar</string>
     <string name="bars">Bar Interface</string>
     <string name="shortcut_title">Shortcuts</string>
-    <string name="personal_title">Visual</string>
+    <string name="personal_title">Animations</string>
     <string name="header_category_ib">Illusion-Box custom settings</string>
-    <string name="interface_settings_title">Status bar</string>
-    <string name="misc_title">Miscellaneous</string>
+    <string name="interface_settings_title">Extra options</string>
+    <string name="misc_title">Misc. settings</string>
     <string name="illusion_settings">Custom</string>
     <string name="recents_panel_settings">Recents panel settings</string>
     <string name="recent_settings_title">Recent panel settings</string>
@@ -132,7 +132,7 @@
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 
     <!-- QuickSettings: Quick Pulldown -->
-    <string name="qs_title">Quick settings</string>
+    <string name="qs_title">Extra options</string>
     <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="quick_pulldown_off">Off</string>
