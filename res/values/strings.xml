@@ -132,6 +132,7 @@
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 
     <!-- QuickSettings: Quick Pulldown -->
+    <string name="qs_brightness_slider_title">Enable brightness slider</string>
     <string name="qs_title">Extra options</string>
     <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>

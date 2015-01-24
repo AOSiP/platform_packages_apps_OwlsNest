@@ -24,6 +24,11 @@
            android:summary="@string/status_bar_show_weather_summary"
            android:defaultValue="true" />
 
+        <com.illusion.box.illusion.SystemSettingSwitchPreference
+           android:key="qs_show_brightness_slider"
+           android:title="@string/qs_brightness_slider_title"
+           android:defaultValue="true" />
+
         <!--SwitchPreference
            android:key="block_on_secure_keyguard"
            android:title="@string/block_on_secure_keyguard_title"
