@@ -92,6 +92,7 @@ public class NotificationSettings extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new NotificationDrawerSettings();
             frags[1] = new QsSettings();
+            frags[2] = new OptSettings();
             //frags[1] = new StatusBarBatteryStyle();
            //frags[2] = new Traffic();
             //frags[3] = new QsSettings();
@@ -121,8 +122,9 @@ public class NotificationSettings extends SettingsPreferenceFragment {
                     //getString(R.string.battery_style_title),
                    //getString(R.string.network_traffic_title),
                     //getString(R.notification_drawer_title),
-                    getString(R.string.notification_drawer_title),
-                    getString(R.string.qs_title)};
+                    getString(R.string.notification_title),
+                    getString(R.string.qs_title),
+                    getString(R.string.opt_title)};
         return titleString;
     }
 }
