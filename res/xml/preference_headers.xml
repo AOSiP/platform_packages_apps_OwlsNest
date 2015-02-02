@@ -9,49 +9,4 @@
         android:icon="@drawable/illusion_statusbar"
         android:title="@string/interface_settings_title" />
 
-    <header
-        android:id="@+id/notification_settings"
-        android:fragment="com.illusion.box.fragments.notification.NotificationSettings"
-        android:icon="@drawable/illusion_notification"
-        android:title="@string/notification_drawer_title" />
-
-    <header
-        android:id="@+id/navigation_settings"
-        android:fragment="com.illusion.box.fragments.buttons.NavigationSettings"
-        android:icon="@drawable/illusion_navigation"
-        android:title="@string/navigation_title" />
-
-    <header
-        android:id="@+id/shortcut_settings"
-        android:fragment="com.illusion.box.fragments.sc.ShortcutSettings"
-        android:icon="@drawable/illusion_shortcuts"
-        android:title="@string/shortcut_title" />
-
-    <header
-        android:id="@+id/personal_settings"
-        android:fragment="com.illusion.box.fragments.personal.PersonalSettings"
-        android:icon="@drawable/illusion_animation"
-        android:title="@string/personal_title" />
-
-    <header
-        android:id="@+id/recent_settings"
-        android:fragment="com.illusion.box.fragments.recent.RecentSettings"
-        android:icon="@drawable/illusion_recents"
-        android:title="@string/recent_settings_title" />
-
-    <header
-        android:key="lock_clock"
-        android:title="@string/lock_clock_title" 
-        android:icon="@drawable/illusion_clock">
-        <intent android:action="android.intent.action.MAIN"
-           android:targetPackage="com.cyanogenmod.lockclock"
-           android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
-    </header>
-
-    <header
-        android:id="@+id/misc_settings"
-        android:fragment="com.illusion.box.fragments.misc.MiscSettings"
-        android:icon="@drawable/illusion_misc"
-        android:title="@string/misc_title" />
-
 </preference-headers>

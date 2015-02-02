@@ -33,8 +33,8 @@ import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.illusion.box.R;
-import com.illusion.box.preference.SettingsPreferenceFragment;
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 import android.database.ContentObserver;
 import android.net.Uri;
@@ -42,14 +42,12 @@ import android.os.Handler;
 import android.preference.PreferenceScreen;
 import android.provider.Settings.SettingNotFoundException;
 //import android.telephony.MSimTelephonyManager;
-import com.illusion.box.Utils;
-import com.android.internal.util.slim.DeviceUtils;
+import com.android.settings.Utils;
+import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
+public class MiscStatusBar extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-public class StatusBar extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-
-    private static final String TAG = "StatusBarSettings";
+    private static final String TAG = "StatusBarMiscSettings";
 
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String KEY_STATUS_BAR_TICKER = "status_bar_ticker_enabled";
@@ -61,7 +59,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.status_bar_settings);
+        addPreferencesFromResource(R.xml.status_bar_misc_settings);
 
         int intColor;
         String hexColor;

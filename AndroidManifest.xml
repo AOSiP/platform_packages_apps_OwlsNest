@@ -112,64 +112,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".fragments.personal.PersonalSettings"
-            android:label="@string/personal_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.illusion.box.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".fragments.misc.MiscSettings"
-            android:label="@string/personal_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.illusion.box.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".fragments.Navigation"
-            android:label="@string/navigation_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.illusion.box.SHORTCUT" />
-           </intent-filter>
-       </activity>
-       <activity
-            android:name=".fragments.sc.ShortcutSettings"
-            android:label="@string/shortcut_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.illusion.box.SHORTCUT" />
-           </intent-filter>
-       </activity>
-       <activity
-            android:name=".fragments.recent.RecentSettings"
-            android:label="@string/recent_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.illusion.box.SHORTCUT" />
-           </intent-filter>
-       </activity>
-       <activity
-            android:name=".fragments.notification.NotificationSettings"
-            android:label="@string/notification_drawer_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.illusion.box.SHORTCUT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.illusion.box.fragments.sc.GestureAnywhereBuilderActivity" />
-        <activity android:name="com.illusion.box.fragments.sc.GestureAnywhereCreateGestureActivity" />
-
-        <activity
  	    android:name=".CreateShortcut"
              android:theme="@style/Theme.CreateShortCut" >
  	  <intent-filter>

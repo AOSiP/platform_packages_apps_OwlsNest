@@ -21,26 +21,4 @@
     <!-- ActionBar contentInsetStart -->
     <dimen name="actionbar_contentInsetStart">16dp</dimen>
     <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
-
-    <!-- height of a normal list item in edit playlist mode -->
-    <dimen name="normal_height">64dip</dimen>
-    <!-- height of an expanded list item in edit playlist mode -->
-    <dimen name="expanded_height">128dip</dimen>
-    
-    <dimen name="navigation_bar_48">48.0dip</dimen>
-    <dimen name="navigation_bar_44">44.0dip</dimen>
-    <dimen name="navigation_bar_42">42.0dip</dimen>
-    <dimen name="navigation_bar_40">40.0dip</dimen>
-    <dimen name="navigation_bar_36">36.0dip</dimen>
-    <dimen name="navigation_bar_30">30.0dip</dimen>
-    <dimen name="navigation_bar_24">24.0dip</dimen>
-    <dimen name="navigation_bar_0">0.0dip</dimen>
-
-    <!-- Gesture Anywhere -->
-    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
-    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
-    <dimen name="shortcut_picker_left_padding">70dip</dimen>
-
-    <!-- Expanded desktop -->
-    <dimen name="fab_line_width">2dp</dimen>
 </resources>

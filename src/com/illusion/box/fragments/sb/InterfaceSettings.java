@@ -31,9 +31,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.illusion.box.R;
-import com.illusion.box.preference.SettingsPreferenceFragment;
-import com.illusion.box.Utils;
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 import com.illusion.box.fragments.sb.*;
 
@@ -91,9 +91,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new StatusBarClockStyle();
-            frags[1] = new StatusBarBatteryStyle();
-            frags[2] = new Traffic();
-            frags[3] = new StatusBar();
+            frags[1] = new Traffic();
+            frags[2] = new MiscStatusBar();
         }
 
         @Override
@@ -116,9 +115,8 @@ public class InterfaceSettings extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.status_bar_clock_title),
-                    getString(R.string.battery_style_title),
                     getString(R.string.network_traffic_title),
-                    getString(R.string.status_bar_title)};
+                    getString(R.string.status_bar_misc_title)};
         return titleString;
     }
 }
