@@ -107,7 +107,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new PowermenuCategory();
+            frags[0] = new PowerMenuFragment();
             frags[1] = new VolumeCategory();
         }
 
@@ -130,7 +130,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.powermenu_category),
+                    getString(R.string.power_menu_title),
                     getString(R.string.volume_category)};
         return titleString;
     }
