@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+    <string name="app_name">Owls Nest</string>
+    <string name="header_category_ib">Owls Nest custom settings</string>
+    <string name="ib_title">Owls Nest</string>
     <!-- Activity titles defined in AndroidManifest.xml -->
     <string name="title_clipboard_share">Copy to Clipboard</string>
     <!-- Share to clipboard -->
@@ -9,9 +11,5 @@
     <string name="header_summary">@null</string>
     <!-- Menu Strings -->
     <string name="menu_main_activity_change_locale">Locale</string>
-
-    <string name="app_name">Owls Nest</string>
-    <string name="header_category_ib">Owls Nest custom settings</string>
-    <string name="ib_title">Owls Nest</string>
 
 </resources>

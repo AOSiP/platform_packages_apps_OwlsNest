@@ -36,8 +36,8 @@ import android.widget.ListAdapter;
 import android.widget.Switch;
 import android.widget.TextView;
 
-//import com.illusion.box.fragments.*;
-//import com.illusion.box.fragments.sb.*;
+import com.illusion.box.fragments.*;
+import com.illusion.box.fragments.bar.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -191,7 +191,7 @@ public class SettingsActivity extends PreferenceActivity {
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
-        //InterfaceSettings.class.getName(),
+        StatusBarHolderSettings.class.getName(),
     };
 
     @Override

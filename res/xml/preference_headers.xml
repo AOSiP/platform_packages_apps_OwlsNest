@@ -3,10 +3,11 @@
     <header
         android:title="@string/header_category_ib" />
 
-    <!--header
-        android:id="@+id/interface_settings"
-        android:fragment="com.illusion.box.fragments.sb.InterfaceSettings"
-        android:icon="@drawable/illusion_statusbar"
-        android:title="@string/interface_settings_title" /-->
+    <header
+        android:id="@+id/status_bar_settings"
+        android:title="@string/status_bar_title"
+        android:fragment="com.illusion.box.fragments.bar.StatusBarHolderSettings"
+        android:icon="@drawable/ic_settings_home"
+        />
 
 </preference-headers>
