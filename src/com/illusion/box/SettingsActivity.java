@@ -35,9 +35,26 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.Switch;
 import android.widget.TextView;
+import com.android.settings.*;
+
+import com.android.settings.DisplaySettings;
+import com.android.settings.WallpaperTypeSettings;
+import com.android.settings.wfd.WifiDisplaySettings;
+import com.android.settings.widget.SwitchBar;
+
+import com.android.settings.notification.NotificationSettings;
+import com.android.settings.notification.NotificationAppList;
+import com.android.settings.notification.NotificationAccessSettings;
+import com.android.settings.notification.OtherSoundSettings;
+import com.android.settings.notification.ZenModeSettings;
+import com.android.settings.notificationlight.NotificationLightSettings;
+import com.android.settings.notificationlight.BatteryLightSettings;
 
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.bar.*;
+import com.illusion.box.fragments.button.*;
+import com.illusion.box.fragments.notification.*;
+import com.illusion.box.fragments.display.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -192,6 +209,19 @@ public class SettingsActivity extends PreferenceActivity {
 
     private static final String[] ENTRY_FRAGMENTS = {
         StatusBarHolderSettings.class.getName(),
+        ButtonHolderSettings.class.getName(),
+        DisplayHolderSettings.class.getName(),
+        DisplaySettings.class.getName(),
+        WallpaperTypeSettings.class.getName(),
+        WifiDisplaySettings.class.getName(),
+        NotificationHolderSettings.class.getName(),
+        NotificationSettings.class.getName(),
+        NotificationAppList.class.getName(),
+        NotificationAccessSettings.class.getName(),
+        OtherSoundSettings.class.getName(),
+        ZenModeSettings.class.getName(),
+        NotificationLightSettings.class.getName(),
+        BatteryLightSettings.class.getName(),
     };
 
     @Override

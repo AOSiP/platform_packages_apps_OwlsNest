@@ -21,8 +21,9 @@
      <string name="aosip_version_default">Unknown</string>
 
     <!--IllusionBox page titles-->
-    <string name="status_bar_clockndate_title">Clock-N-Date</string>
-    <string name="status_bar_misc_title">Homeless settings</string>
+    <string name="status_bar_clockndate_title">Clock-N-Battery</string>
+    <string name="status_bar_misc_title">Homeless bar settings</string>
+    <string name="button_misc_title">Homeless button settings</string>
 
     <!--User preferences settings-->
     <string name="button_pref_title">Buttons</string>

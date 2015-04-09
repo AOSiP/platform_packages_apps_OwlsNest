@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.bar;
+package com.illusion.box.fragments.notification;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,12 +35,13 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import com.illusion.box.fragments.bar.*;
+import com.android.settings.notification.NotificationSettings;
+import com.android.settings.notification.ZenModeSettings;
 
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class StatusBarHolderSettings extends SettingsPreferenceFragment {
+public class NotificationHolderSettings extends SettingsPreferenceFragment {
 
     private static final String TAG = "status_bar_title";
 
@@ -78,10 +79,6 @@ public class StatusBarHolderSettings extends SettingsPreferenceFragment {
     @Override
     public void onResume() {
         super.onResume();
-
-        if (!Utils.isTablet(getActivity())) {
-            mContainer.setPadding(0, 0, 0, 0);
-        }
     }
 
     class StatusBarAdapter extends FragmentPagerAdapter {
@@ -90,8 +87,8 @@ public class StatusBarHolderSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBarSettings();
-            frags[1] = new MiscStatusBar();
+            frags[0] = new NotificationSettings();
+            frags[1] = new ZenModeSettings();
         }
 
         @Override
@@ -113,8 +110,8 @@ public class StatusBarHolderSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.status_bar_clockndate_title),
-                    getString(R.string.status_bar_misc_title)};
+                    getString(R.string.notification_settings),
+                    getString(R.string.zen_mode_settings_title)};
         return titleString;
     }
 }
