@@ -7,14 +7,14 @@
         android:id="@+id/status_bar_settings"
         android:title="@string/status_bar_title"
         android:fragment="com.illusion.box.fragments.bar.StatusBarHolderSettings"
-        android:icon="@drawable/ic_settings_home"
+        android:icon="@drawable/ic_settings_statusbar"
         />
 
      <header
         android:id="@+id/button_settings"
         android:title="@string/button_pref_title"
         android:fragment="com.illusion.box.fragments.button.ButtonHolderSettings"
-        android:icon="@drawable/ic_settings_home"
+        android:icon="@drawable/ic_settings_buttons"
         />
 
      <header
