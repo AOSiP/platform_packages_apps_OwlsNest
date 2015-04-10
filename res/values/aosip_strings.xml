@@ -28,6 +28,8 @@
     <!--IllusionBox categories-->
     <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_battery_title">Battery</string>
+    <string name="hardware_keys_volume_keys_title">Volume buttons</string>
+    <string name="recent_keys_title">Recent screen</string>
 
     <!--User preferences settings-->
     <string name="button_pref_title">Buttons</string>
@@ -146,5 +148,11 @@
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
     <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
     <string name="recents_clear_all_dismiss_all_summary">Include foreground task when clearing all</string>
+
+    <!-- Volume rocker -->
+    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_cursor_control_off">Disabled</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 </resources>
 
