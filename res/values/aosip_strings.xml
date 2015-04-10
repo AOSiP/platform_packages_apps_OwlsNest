@@ -25,6 +25,10 @@
     <string name="status_bar_misc_title">Homeless bar settings</string>
     <string name="button_misc_title">Homeless button settings</string>
 
+    <!--IllusionBox categories-->
+    <string name="status_bar_clock_title">Clock</string>
+    <string name="status_bar_battery_title">Battery</string>
+
     <!--User preferences settings-->
     <string name="button_pref_title">Buttons</string>
     <string name="personalization">Personalization</string>
@@ -116,6 +120,14 @@
     <string name="status_bar_battery_percentage_default">Hidden (default)</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+
+    <!-- Battery Style icons-->
+    <string name="status_bar_battery_style_title">Battery status style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
 
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Show search bar in recents menu</string>
