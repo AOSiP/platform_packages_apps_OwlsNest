@@ -24,6 +24,7 @@
     <string name="status_bar_clockndate_title">Clock-N-Battery</string>
     <string name="status_bar_misc_title">Homeless bar settings</string>
     <string name="button_misc_title">Homeless button settings</string>
+    <string name="lockscreen_settings_title">Lockscreen</string>
 
     <!--IllusionBox categories-->
     <string name="status_bar_clock_title">Clock</string>
@@ -158,5 +159,16 @@
     <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
     <string name="button_wake_title">Wake up device</string>
     <string name="button_wake_summary">Overrides playback control</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
+    <string name="lockscreen_none_target">None</string>
+    <string name="lockscreen_default_target">Default</string>
+    <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
+    <string name="lockscreen_choose_action_title">Choose action</string>
+    <string name="profile_applist_title">Apps</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="select_custom_app_title">Select custom app</string>
 </resources>
 

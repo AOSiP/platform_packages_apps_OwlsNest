@@ -30,4 +30,11 @@
         android:fragment="com.illusion.box.fragments.notification.NotificationHolderSettings"
         android:icon="@drawable/ic_settings_notifications"
         />
+
+     <header
+        android:id="@+id/lockscreen_settings"
+        android:title="@string/lockscreen_settings_title"
+        android:fragment="com.illusion.box.fragments.lock.LockscreenHolderSettings"
+        android:icon="@drawable/ic_settings_security"
+        />
 </preference-headers>

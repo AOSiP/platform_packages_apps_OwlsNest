@@ -55,6 +55,7 @@ import com.illusion.box.fragments.bar.*;
 import com.illusion.box.fragments.button.*;
 import com.illusion.box.fragments.notification.*;
 import com.illusion.box.fragments.display.*;
+import com.illusion.box.fragments.lock.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -222,6 +223,7 @@ public class SettingsActivity extends PreferenceActivity {
         ZenModeSettings.class.getName(),
         NotificationLightSettings.class.getName(),
         BatteryLightSettings.class.getName(),
+        LockscreenHolderSettings.class.getName(),
     };
 
     @Override
