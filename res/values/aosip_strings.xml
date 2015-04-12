@@ -31,6 +31,7 @@
     <string name="status_bar_battery_title">Battery</string>
     <string name="hardware_keys_volume_keys_title">Volume buttons</string>
     <string name="recent_keys_title">Recent screen</string>
+    <string name="nav_keys_title">Navigation</string>
 
     <!--User preferences settings-->
     <string name="button_pref_title">Buttons</string>
@@ -185,5 +186,10 @@
     <string name="picker_activities">Activities</string>
     <string name="select_custom_activity_title">Select custom activity</string>
     <string name="select_custom_app_title">Select custom app</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+
 </resources>
 
