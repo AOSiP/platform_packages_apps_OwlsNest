@@ -84,8 +84,8 @@ limitations under the License.
     <string-array name="battery_bar_entries">
         <item>Hide</item>
         <item>Statusbar</item>
-        <item>Top of navbar</item>
-        <item>Bottom of navbar</item>
+        <!--item>Top of navbar</item>
+        <item>Bottom of navbar</item-->
     </string-array>
 
     <string-array name="battery_bar_values" translatable="false">
