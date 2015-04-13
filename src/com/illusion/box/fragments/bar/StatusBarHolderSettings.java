@@ -87,7 +87,8 @@ public class StatusBarHolderSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new StatusBarSettings();
-            frags[1] = new MiscStatusBar();
+            frags[1] = new BatteryBar();
+            frags[2] = new MiscStatusBar();
         }
 
         @Override
@@ -110,6 +111,7 @@ public class StatusBarHolderSettings extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.status_bar_clockndate_title),
+                    getString(R.string.battery_bar_title),
                     getString(R.string.status_bar_misc_title)};
         return titleString;
     }
