@@ -26,6 +26,8 @@
     <string name="button_misc_title">Homeless button settings</string>
     <string name="lockscreen_settings_title">Lockscreen</string>
     <string name="battery_bar_title">BatteryBar</string>
+    <string name="notification_tiles_title">Tile options</string>
+    <string name="notification_tiles_homeless_title">Homeless settings</string>
 
     <!--IllusionBox categories-->
     <string name="status_bar_clock_title">Clock</string>
@@ -33,6 +35,7 @@
     <string name="hardware_keys_volume_keys_title">Volume buttons</string>
     <string name="recent_keys_title">Recent screen</string>
     <string name="nav_keys_title">Navigation</string>
+    <string name="notification_drawer_title">Notification drawer</string>
 
     <!--User preferences settings-->
     <string name="button_pref_title">Buttons</string>
@@ -203,5 +206,18 @@
     <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
+    <!-- Notification drawer -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="qs_category_title">Quick Settings</string>
+    <string name="qs_order_title">Select and order tiles</string>
+    <string name="add_qs">Add new tile</string>
+    <string name="cast_screen">Cast screen</string>
+    <string name="hotspot">Hotspot</string>
+    <string name="qs_action_delete">Delete</string>
+    <string name="qs_action_add">Add</string>
+    <string name="qs_action_no_more_tiles">No more tiles available</string>
+    <string name="qs_main_tiles_title">Enlarge first row</string>
+    <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
+    <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
 </resources>
 

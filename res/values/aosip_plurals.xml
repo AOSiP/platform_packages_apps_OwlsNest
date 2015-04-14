@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2013 The Illusion Project
+     Copyright (C) 2013-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,19 +14,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- Lockscreen shortcuts -->
-    <dimen name="shortcut_picker_left_padding">40dip</dimen>
-    <dimen name="lockscreen_icon_side_padding">10dp</dimen>
-    <dimen name="lockscreen_icon_size">35dp</dimen>
-    <dimen name="phone_side_padding">10dp</dimen>
-    <dimen name="phone_bottom_padding">40dp</dimen>
-    <dimen name="phone_width">320dp</dimen>
-    <dimen name="phone_height">420dp</dimen>
-
-    <!-- QS tiles -->
-    <dimen name="qs_tile_max_size">120dp</dimen>
-    <dimen name="qs_tile_max_padding">10dp</dimen>
-    <dimen name="qs_tile_dragged_z">10dp</dimen>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="qs_tiles_summary">
+        <item quantity="one">1 tile configured</item>
+        <item quantity="other">%d tiles configured</item>
+    </plurals>
 </resources>
 
