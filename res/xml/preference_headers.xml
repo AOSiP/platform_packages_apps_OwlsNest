@@ -14,7 +14,7 @@
         android:id="@+id/button_settings"
         android:title="@string/button_pref_title"
         android:fragment="com.illusion.box.fragments.button.ButtonHolderSettings"
-        android:icon="@drawable/ic_settings_buttons"
+        android:icon="@drawable/ic_settings_button"
         />
 
      <header
