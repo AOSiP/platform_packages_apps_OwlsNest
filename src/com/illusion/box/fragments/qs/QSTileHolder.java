@@ -94,6 +94,22 @@ public class QSTileHolder {
                 resourceName = "ic_qs_nfc_on";
                 stringId = R.string.qs_title_nfc;
                 break;
+            case QSConstants.TILE_BATTERY_SAVER:
+                resourceName = "ic_qs_battery_saver_on";
+                stringId = R.string.qs_battery_saver_tile;
+                break;
+            case QSConstants.TILE_BRIGHTNESS:
+                resourceName = "ic_qs_brightness_auto_off";
+                stringId = R.string.qs_brightness_tile;
+                break;
+            case QSConstants.TILE_SCREENSHOT:
+                resourceName = "ic_qs_screenshot";
+                stringId = R.string.qs_screenshot_tile;
+                break;
+            case QSConstants.TILE_SYNC:
+                resourceName = "ic_qs_sync_on";
+                stringId = R.string.qs_sync_tile;
+                break;
             default:
                 return null;
         }
