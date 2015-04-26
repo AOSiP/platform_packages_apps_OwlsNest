@@ -2,9 +2,6 @@
          android:title="@string/header_category_ib">
 
     <header
-        android:title="@string/header_category_ib" />
-
-    <header
         android:id="@+id/status_bar_settings"
         android:title="@string/status_bar_title"
         android:fragment="com.illusion.box.fragments.bar.StatusBarHolderSettings"

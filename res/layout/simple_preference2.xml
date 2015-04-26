@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/exposed_secondary_text_light"
             android:ellipsize="marquee"
             android:fadingEdge="horizontal" />
 
@@ -38,6 +39,7 @@
             android:layout_below="@android:id/title"
             android:layout_alignStart="@android:id/title"
             android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/exposed_secondary_text_light"
             android:maxLines="4" />
 
     </RelativeLayout>

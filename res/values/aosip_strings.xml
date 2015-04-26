@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
      <!--AOSIP Version-->
-     <string name="aosip_version">AOSIP version</string>
+     <string name="aosip_version">AOSiP version</string>
      <string name="aosip_version_default">Unknown</string>
 
     <!--IllusionBox page titles-->
@@ -101,7 +101,7 @@
     <string name="profile_choose_app">Choose app</string>
 
     <!-- Status bar -->
-    <string name="header_category_personalization">AOSIP</string>
+    <string name="header_category_personalization">AOSiP</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
