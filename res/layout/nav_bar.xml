@@ -12,6 +12,7 @@
         android:layout_gravity="center"
         android:layout_weight="0.2"
         android:text="@string/navigation_bar_help_text"
+        android:textColor="@color/text_color_black"
         android:textSize="14sp" />
     <LinearLayout
         android:layout_weight="0.8"
@@ -35,7 +36,7 @@
                 android:gravity="center_horizontal"
                 android:textAllCaps="true"
                 android:text="@string/navigation_restore_button_text"
-                android:textColor="@color/text_color_secondary_text_material_light"
+                android:textColor="@color/text_color_black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14sp" />
