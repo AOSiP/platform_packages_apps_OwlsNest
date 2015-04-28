@@ -35,6 +35,7 @@
                 android:gravity="center_horizontal"
                 android:textAllCaps="true"
                 android:text="@string/navigation_restore_button_text"
+                android:textColor="@color/text_color_secondary_text_material_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14sp" />
