@@ -29,6 +29,7 @@
 
         <ImageView
             android:id="@android:id/icon"
+            android:tint="@color/theme_accent"
             android:layout_width="24dp"
             android:layout_height="24dp"/>
 
@@ -38,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textColor="@color/text_color_secondary_text_material_light"
             android:gravity="center_horizontal"/>
 
     </LinearLayout>
