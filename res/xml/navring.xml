@@ -4,8 +4,7 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
-        android:key="navigation_bar"
-        android:fragment="com.illusion.box.fragments.button.NavBar"
-        android:title="@string/navigation_bar_title" />
-
+        android:key="navigation_bar_ring"
+        android:fragment="com.illusion.box.fragments.button.NavRing"
+        android:title="@string/navigation_ring_title" />
 </PreferenceScreen>
