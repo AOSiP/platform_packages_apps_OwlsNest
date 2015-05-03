@@ -30,6 +30,10 @@
     <string name="notification_tiles_homeless_title">Homeless settings</string>
     <string name="interface_settings">Interface</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
+    <!-- Status bar greeting -->
+    <string name="status_bar_greeting_title">Greeting</string>
+    <string name="status_bar_greeting_summary">Display a custom greeting in the status bar after unlocking the device</string>
+    <string name="status_bar_greeting_dialog">Set your greeting</string>
 
     <!--IllusionBox categories-->
     <string name="status_bar_clock_title">Clock</string>
