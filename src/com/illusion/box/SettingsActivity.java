@@ -57,6 +57,7 @@ import com.illusion.box.fragments.notification.*;
 import com.illusion.box.fragments.display.*;
 import com.illusion.box.fragments.lock.*;
 import com.illusion.box.fragments.qs.*;
+import com.illusion.box.fragments.interfase.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -234,6 +235,7 @@ public class SettingsActivity extends PreferenceActivity {
         QSTiles.class.getName(),
         NavBar.class.getName(),
         NavRing.class.getName(),
+        InterfaceHolderSettings.class.getName(),
     };
 
     @Override
