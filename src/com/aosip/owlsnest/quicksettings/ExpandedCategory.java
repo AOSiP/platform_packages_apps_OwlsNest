@@ -54,7 +54,6 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
         PreferenceScreen prefs = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-
         // QS animation
         mTileAnimationStyle = (ListPreference) findPreference(PREF_TILE_ANIM_STYLE);
         int tileAnimationStyle = Settings.System.getIntForUser(resolver,
