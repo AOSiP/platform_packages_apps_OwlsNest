@@ -49,6 +49,7 @@ import com.android.settings.notification.OtherSoundSettings;
 import com.android.settings.notification.ZenModeSettings;
 import com.android.settings.notificationlight.NotificationLightSettings;
 import com.android.settings.notificationlight.BatteryLightSettings;
+import com.android.settings.euphoria.VolumeSteps;
 
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.bar.*;
@@ -236,6 +237,7 @@ public class SettingsActivity extends PreferenceActivity {
         NavBar.class.getName(),
         NavRing.class.getName(),
         InterfaceHolderSettings.class.getName(),
+        VolumeSteps.class.getName(),
     };
 
     @Override
