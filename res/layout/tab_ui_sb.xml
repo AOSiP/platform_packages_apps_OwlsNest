@@ -17,14 +17,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <android.support.v4.view.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="0">
+            android:layout_weight="0" >
 
         <android.support.v4.view.PagerTabStrip
                 android:id="@+id/pagerTabStrip"
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:textAppearance="@style/TextAppearance.PagerTabs" 
-                android:textColor="@color/theme_accent" />
+                android:textColor="@color/text_color_black" />
 
     </android.support.v4.view.ViewPager>
 </LinearLayout>

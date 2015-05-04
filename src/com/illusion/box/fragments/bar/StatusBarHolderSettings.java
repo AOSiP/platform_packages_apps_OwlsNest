@@ -61,7 +61,7 @@ public class StatusBarHolderSettings extends SettingsPreferenceFragment {
         View view = inflater.inflate(R.layout.tab_ui_sb, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mPagerTabStrip = (PagerTabStrip) view.findViewById(R.id.pagerTabStrip);
-        mPagerTabStrip.setTabIndicatorColorResource(android.R.color.white);
+        mPagerTabStrip.setTabIndicatorColor(getResources().getColor(R.color.theme_accent));
 
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
