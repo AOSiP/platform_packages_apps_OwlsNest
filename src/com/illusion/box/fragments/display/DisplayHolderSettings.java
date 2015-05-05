@@ -83,10 +83,11 @@ public class DisplayHolderSettings extends SettingsPreferenceFragment {
     class StatusBarAdapter extends FragmentPagerAdapter {
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
-
+        //Enter pref screen with java file listed below
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new DisplaySettings();
+            frags[1] = new ScreenRecorderSettings();
         }
 
         @Override
@@ -104,11 +105,12 @@ public class DisplayHolderSettings extends SettingsPreferenceFragment {
             return frags.length;
         }
     }
-
+    //Tab title goes here to show in viewpager
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.display_settings)};
+                    getString(R.string.display_settings),
+                    getString(R.string.screen_recorder_title)};
         return titleString;
     }
 }

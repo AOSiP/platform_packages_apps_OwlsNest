@@ -238,6 +238,7 @@ public class SettingsActivity extends PreferenceActivity {
         NavRing.class.getName(),
         InterfaceHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
+        ScreenRecorderSettings.class.getName(),
     };
 
     @Override
