@@ -252,6 +252,8 @@
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_screenrecord_tile">Screen record</string>
     <string name="qs_sync_tile">Sync</string>
+    <string name="qs_notifications_tile">Notifications</string>
+    <string name="qs_title_compass">Compass</string>
 
     <!--Navigation bar-->
     <string name="navigation_bar_title">Buttons and layout</string>
