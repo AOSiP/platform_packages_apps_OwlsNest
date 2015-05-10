@@ -49,6 +49,12 @@
             android:summary="@string/fprint_sucess_vib_summary"
             android:defaultValue="true" />
 
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_enable_power_menu"
+            android:title="@string/lockscreen_enable_power_menu_title"
+            android:summary="@string/lockscreen_enable_power_menu_summary"
+            android:defaultValue="true" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
