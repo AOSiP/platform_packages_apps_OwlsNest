@@ -122,6 +122,9 @@
     <string name="quick_pulldown_right">Right</string>
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_style_title">Clock style</string>
