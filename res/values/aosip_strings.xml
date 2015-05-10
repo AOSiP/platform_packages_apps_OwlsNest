@@ -207,6 +207,8 @@
     <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
     <string name="button_wake_title">Wake up device</string>
     <string name="button_wake_summary">Overrides playback control</string>
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_targets_message">Lockscreen shortcuts</string>

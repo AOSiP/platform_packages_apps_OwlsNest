@@ -38,10 +38,12 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+    private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mVolumeKeyCursorControl;
+    private SwitchPreference mSwapVolumeButtons;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -66,6 +68,11 @@ public class ButtonSettings extends SettingsPreferenceFragment
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
             mVolumeKeyCursorControl = initActionList(KEY_VOLUME_KEY_CURSOR_CONTROL,
                     cursorControlAction);
+
+        mSwapVolumeButtons = (SwitchPreference) findPreference(KEY_SWAP_VOLUME_BUTTONS);
+        mSwapVolumeButtons.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0) != 0);
+        mSwapVolumeButtons.setOnPreferenceChangeListener(this);
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -92,6 +99,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+        final String key = preference.getKey();
         if (preference == mRecentsClearAll) {
             boolean show = (Boolean) newValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(),
@@ -107,6 +115,11 @@ public class ButtonSettings extends SettingsPreferenceFragment
         } else if (preference == mVolumeKeyCursorControl) {
             handleActionListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+            return true;
+        } else if (KEY_SWAP_VOLUME_BUTTONS.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
+                    (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;
