@@ -353,5 +353,8 @@
     <string name="network_traffic_color_style">Color style</string>
     <string name="network_traffic_color_reset">Reset color</string>
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
+
+    <!-- Navigation bar button color -->
+    <string name="navbar_button_tint_title">Navigation button tint</string>
 </resources>
 

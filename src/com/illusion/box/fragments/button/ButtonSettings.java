@@ -25,12 +25,14 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class ButtonSettings extends SettingsPreferenceFragment
             implements OnPreferenceChangeListener  {
@@ -39,11 +41,13 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mSwapVolumeButtons;
+    private ColorPickerPreference mNavbarButtonTint;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -73,6 +77,15 @@ public class ButtonSettings extends SettingsPreferenceFragment
         mSwapVolumeButtons.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0) != 0);
         mSwapVolumeButtons.setOnPreferenceChangeListener(this);
+
+        // Navigation bar button color
+        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
+        mNavbarButtonTint.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_TINT, 0xffffffff);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mNavbarButtonTint.setSummary(hexColor);
+        mNavbarButtonTint.setNewPreviewColor(intColor);
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -121,6 +134,14 @@ public class ButtonSettings extends SettingsPreferenceFragment
                     Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
                     (Boolean) newValue ? 1 : 0);
             return true;
+        } else if (preference == mNavbarButtonTint) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_TINT, intHex);
+            return true; 
         }
         return false;
     }
