@@ -29,6 +29,8 @@
     <string name="notification_tiles_title">Tile options</string>
     <string name="notification_tiles_homeless_title">Homeless settings</string>
     <string name="interface_settings">Interface</string>
+    <string name="navigation_misc_title">Navigation bar</string>
+    <string name="navigation_title">Navigation bar</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
 
     <!-- Status bar greeting -->
@@ -273,7 +275,7 @@
 
     <!-- Navigation bar -->
     <string name="navigation_bar_category">Navigation bar</string>
-    <string name="navbar_dimen_title">Dimensions</string>
+    <string name="navbar_dimen_title">Homeless navigation</string>
     <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
     <string name="navigation_bar_height_title">Navigation bar height</string>
     <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
@@ -291,7 +293,7 @@
     <string name="navigation_ring_title">Navigation ring targets</string>
     <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the check mark icon to save your changes, or restore to reset the settings to defaults.</string>
     <!-- Navigation search panel (enable/disable) -->
-    <string name="navigation_ring_enable_title">Enable navigation search panel</string>
+    <string name="navigation_ring_enable_title">Enable navigation ring</string>
 
     <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">Gesture Anywhere</string>

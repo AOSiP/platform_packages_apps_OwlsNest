@@ -59,6 +59,7 @@ import com.illusion.box.fragments.display.*;
 import com.illusion.box.fragments.lock.*;
 import com.illusion.box.fragments.qs.*;
 import com.illusion.box.fragments.interfase.*;
+import com.illusion.box.fragments.navigation.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -238,6 +239,7 @@ public class SettingsActivity extends PreferenceActivity {
         NavRing.class.getName(),
         InterfaceHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
+        NavigationHolderSettings.class.getName(),
     };
 
     @Override

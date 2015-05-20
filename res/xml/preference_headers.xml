@@ -2,17 +2,17 @@
          android:title="@string/header_category_ib">
 
     <header
+        android:id="@+id/lockscreen_settings"
+        android:title="@string/lockscreen_settings_title"
+        android:fragment="com.illusion.box.fragments.lock.LockscreenHolderSettings"
+        android:icon="@drawable/ic_settings_security_exposed"
+        />
+
+    <header
         android:id="@+id/status_bar_settings"
         android:title="@string/status_bar_title"
         android:fragment="com.illusion.box.fragments.bar.StatusBarHolderSettings"
         android:icon="@drawable/ic_settings_statusbar_exposed"
-        />
-
-     <header
-        android:id="@+id/button_settings"
-        android:title="@string/button_pref_title"
-        android:fragment="com.illusion.box.fragments.button.ButtonHolderSettings"
-        android:icon="@drawable/ic_settings_button_exposed"
         />
 
      <header
@@ -30,23 +30,31 @@
         />
 
      <header
-        android:id="@+id/notification_settings"
-        android:title="@string/notification_settings"
-        android:fragment="com.illusion.box.fragments.notification.NotificationHolderSettings"
-        android:icon="@drawable/ic_settings_notifications_exposed"
-        />
-
-     <header
-        android:id="@+id/lockscreen_settings"
-        android:title="@string/lockscreen_settings_title"
-        android:fragment="com.illusion.box.fragments.lock.LockscreenHolderSettings"
-        android:icon="@drawable/ic_settings_security_exposed"
-        />
-
-     <header
         android:id="@+id/interfase_settings"
         android:title="@string/interface_settings"
         android:fragment="com.illusion.box.fragments.interfase.InterfaceHolderSettings"
         android:icon="@drawable/ic_settings_interface_exposed"
         />
+
+     <header
+        android:id="@+id/navigation_settings"
+        android:title="@string/navigation_title"
+        android:fragment="com.illusion.box.fragments.navigation.NavigationHolderSettings"
+        android:icon="@drawable/ic_settings_navigation_exposed"
+        />
+
+     <header
+        android:id="@+id/button_settings"
+        android:title="@string/button_pref_title"
+        android:fragment="com.illusion.box.fragments.button.ButtonHolderSettings"
+        android:icon="@drawable/ic_settings_button_exposed"
+        />
+
+     <header
+        android:id="@+id/notification_settings"
+        android:title="@string/notification_settings"
+        android:fragment="com.illusion.box.fragments.notification.NotificationHolderSettings"
+        android:icon="@drawable/ic_settings_notifications_exposed"
+        />
+     
 </preference-headers>

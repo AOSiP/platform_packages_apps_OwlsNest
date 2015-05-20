@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.button;
+package com.illusion.box.fragments.navigation;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
