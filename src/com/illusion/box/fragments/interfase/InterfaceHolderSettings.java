@@ -87,6 +87,7 @@ public class InterfaceHolderSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new GestureAnywhereSettings();
+            frags[1] = new AppSidebar();
         }
 
         @Override
@@ -108,7 +109,8 @@ public class InterfaceHolderSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.gesture_anywhere_title)};
+                    getString(R.string.gesture_anywhere_title),
+                    getString(R.string.app_sidebar_title)};
         return titleString;
     }
 }

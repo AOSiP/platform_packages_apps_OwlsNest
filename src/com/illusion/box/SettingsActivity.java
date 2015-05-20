@@ -240,6 +240,7 @@ public class SettingsActivity extends PreferenceActivity {
         InterfaceHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
         NavigationHolderSettings.class.getName(),
+        AppSidebar.class.getName(),
     };
 
     @Override
