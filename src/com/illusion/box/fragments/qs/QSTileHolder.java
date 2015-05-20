@@ -62,6 +62,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_signal_full_4";
                 stringId = R.string.qs_tile_cellular_data;
                 break;
+            case QSConstants.TILE_OWLS_NEST:
+                resourceName = "ic_qs_owls_nest";
+                stringId = R.string.qs_owls_nest;
+                break;
             case QSConstants.TILE_AIRPLANE:
                 resourceName = "ic_qs_airplane_on";
                 stringId = R.string.qs_tile_airplane_mode;

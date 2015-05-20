@@ -264,6 +264,7 @@
     <string name="qs_sync_tile">Sync</string>
     <string name="qs_notifications_tile">Notifications</string>
     <string name="qs_title_compass">Compass</string>
+    <string name="qs_owls_nest">Owls nest</string>
 
     <!--Navigation bar-->
     <string name="navigation_bar_title">Buttons and layout</string>
