@@ -1,4 +1,4 @@
-package com.illusion.box.fragments.navigation;
+package com.illusion.box.fragments.button;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -22,7 +22,6 @@ import android.view.MenuItem;
 import com.android.internal.util.cm.ScreenType;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class NavBarDimen extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -32,13 +31,10 @@ public class NavBarDimen extends SettingsPreferenceFragment implements
     private static final String PREF_NAVIGATION_BAR_HEIGHT_LANDSCAPE = "navigation_bar_height_landscape";
     private static final String PREF_NAVIGATION_BAR_WIDTH = "navigation_bar_width";
     private static final String KEY_DIMEN_OPTIONS = "navbar_dimen";
-    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
 
     ListPreference mNavigationBarHeight;
     ListPreference mNavigationBarHeightLandscape;
     ListPreference mNavigationBarWidth;
-
-    private ColorPickerPreference mNavbarButtonTint;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,15 +48,6 @@ public class NavBarDimen extends SettingsPreferenceFragment implements
         mNavigationBarHeight =
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_HEIGHT);
         mNavigationBarHeight.setOnPreferenceChangeListener(this);
-
-        // Navigation bar button color
-        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
-        mNavbarButtonTint.setOnPreferenceChangeListener(this);
-        int intColor = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.NAVIGATION_BAR_TINT, 0xffffffff);
-        String hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mNavbarButtonTint.setSummary(hexColor);
-        mNavbarButtonTint.setNewPreviewColor(intColor);
 
         mNavigationBarHeightLandscape =
             (ListPreference) findPreference(PREF_NAVIGATION_BAR_HEIGHT_LANDSCAPE);
@@ -141,14 +128,6 @@ public class NavBarDimen extends SettingsPreferenceFragment implements
                     Settings.System.NAVIGATION_BAR_HEIGHT_LANDSCAPE, Integer.parseInt((String) newValue));
             updateDimensionValues();
             return true;
-        } else if (preference == mNavbarButtonTint) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_TINT, intHex);
-            return true; 
         }
         return false;
     }
