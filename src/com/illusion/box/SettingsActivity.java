@@ -235,7 +235,6 @@ public class SettingsActivity extends PreferenceActivity {
         QSTileHolder.class.getName(),
         QSTiles.class.getName(),
         NavBar.class.getName(),
-        NavRing.class.getName(),
         InterfaceHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
         AppSidebar.class.getName(),
