@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.display;
+package com.illusion.box.fragments.navigation;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,12 +35,10 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import com.android.settings.DisplaySettings;
-
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class DisplayHolderSettings extends SettingsPreferenceFragment {
+public class NavigationHolderSettings extends SettingsPreferenceFragment {
 
     private static final String TAG = "status_bar_title";
 
@@ -86,7 +84,8 @@ public class DisplayHolderSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new DisplaySettings();
+            frags[0] = new NavbarSettings();
+            frags[1] = new NavBarButtonStyle();
         }
 
         @Override
@@ -108,7 +107,8 @@ public class DisplayHolderSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.display_settings)};
+                    getString(R.string.gesture_anywhere_title),
+                    getString(R.string.app_sidebar_title)};
         return titleString;
     }
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.illusion.box.fragments.notification;
+package com.illusion.box.fragments.navigation;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -35,13 +35,10 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import com.android.settings.notification.NotificationSettings;
-import com.android.settings.notification.ZenModeSettings;
-
 import java.lang.Exception;
 import java.util.ArrayList;
 
-public class NotificationHolderSettings extends SettingsPreferenceFragment {
+public class NavigationHolderSettings extends SettingsPreferenceFragment {
 
     private static final String TAG = "status_bar_title";
 
@@ -87,8 +84,9 @@ public class NotificationHolderSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new NotificationSettings();
-            frags[1] = new ZenModeSettings();
+            frags[0] = new NavbarSettings();
+            frags[1] = new NavbarStyleDimenSettings();
+            frags[2] = new NavBarButtonStyle();
         }
 
         @Override
@@ -110,8 +108,9 @@ public class NotificationHolderSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.notification_settings),
-                    getString(R.string.zen_mode_settings_title)};
+                    getString(R.string.Navigation_title),
+                    getString(R.string.Navigation_dimen_title),
+                    getString(R.string.Navigation_color_title)};
         return titleString;
     }
 }
