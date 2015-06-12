@@ -209,6 +209,7 @@
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
+    <string name="breathing_notifications_category">Breathing Notifications</string>
 
     <!-- Heads up -->
     <string name="heads_up_notifications">Heads up</string>
@@ -242,6 +243,15 @@
     <!-- Power notification controls -->
     <string name="power_notification_title">Power notification controls</string>
     <string name="power_notification_summary">Advanced notification controls and information</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Breathing notifications</string>
+    <string name="missed_call_breath_title">Breathing Missed Call</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
+    <string name="voicemail_breath_title">Breathing Voicemail</string>
+    <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
+    <string name="sms_breath_title">Breathing SMS</string>
+    <string name="sms_breath_summary">Will give your SMS notifications a breathing effect in the statusbar</string>
 
     <!-- LED notifications -->
     <string name="battery_light_settings">Battery LED</string>
