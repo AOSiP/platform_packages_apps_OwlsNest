@@ -236,7 +236,6 @@ public class SettingsActivity extends PreferenceActivity {
         QSTiles.class.getName(),
         InterfaceHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
-        AppSidebar.class.getName(),
     };
 
     @Override
