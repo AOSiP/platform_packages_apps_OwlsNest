@@ -24,11 +24,6 @@
     <dimen name="phone_width">320dp</dimen>
     <dimen name="phone_height">420dp</dimen>
 
-    <!-- QS tiles -->
-    <dimen name="qs_tile_max_size">120dp</dimen>
-    <dimen name="qs_tile_max_padding">10dp</dimen>
-    <dimen name="qs_tile_dragged_z">10dp</dimen>
-
     <!-- ActionBar height -->
     <dimen name="actionbar_size">56dip</dimen>
 
@@ -36,9 +31,5 @@
     <dimen name="actionbar_contentInsetStart">16dp</dimen>
     <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
-    <!-- Gesture Anywhere -->
-    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
-    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
-    <dimen name="shortcut_picker_left_padding">70dip</dimen>
 </resources>
 

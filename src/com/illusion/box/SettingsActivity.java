@@ -57,8 +57,6 @@ import com.illusion.box.fragments.button.*;
 import com.illusion.box.fragments.notification.*;
 import com.illusion.box.fragments.display.*;
 import com.illusion.box.fragments.lock.*;
-import com.illusion.box.fragments.qs.*;
-import com.illusion.box.fragments.interfase.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -227,14 +225,6 @@ public class SettingsActivity extends PreferenceActivity {
         NotificationLightSettings.class.getName(),
         BatteryLightSettings.class.getName(),
         LockscreenHolderSettings.class.getName(),
-        NotificationDrawerHolderSettings.class.getName(),
-        ColoringCardView.class.getName(),
-        DraggableGridView.class.getName(),
-        NotificationDrawerSettings.class.getName(),
-        QSListAdapter.class.getName(),
-        QSTileHolder.class.getName(),
-        QSTiles.class.getName(),
-        InterfaceHolderSettings.class.getName(),
         VolumeSteps.class.getName(),
     };
 
