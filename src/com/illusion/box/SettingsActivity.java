@@ -44,6 +44,7 @@ import com.illusion.box.fragments.bar.*;
 import com.illusion.box.fragments.button.*;
 import com.illusion.box.fragments.lock.*;
 import com.illusion.box.fragments.navigation.*;
+import com.illusion.box.fragments.animation.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -205,6 +206,10 @@ public class SettingsActivity extends PreferenceActivity {
         NavbarSettings.class.getName(),
         NavbarStyleDimenSettings.class.getName(),
         ActionListViewSettings.class.getName(),
+        AnimationHolderSettings.class.getName(),
+        DisplayAnimationsSettings.class.getName(),
+        AnimBarPreference.class.getName(),
+        AnimationControls.class.getName(),
     };
 
     @Override

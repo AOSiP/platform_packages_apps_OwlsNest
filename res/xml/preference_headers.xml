@@ -25,4 +25,10 @@
         android:fragment="com.illusion.box.fragments.lock.LockscreenHolderSettings"
         />
 
+     <header
+        android:id="@+id/disp_anim_settings"
+        android:title="@string/animation_title"
+        android:fragment="com.illusion.box.fragments.animation.AnimationHolderSettings" 
+        />
+
 </preference-headers>
