@@ -288,7 +288,6 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                 }
             }
             return true;
-        }
          } else if (preference == mFontStyle) {
             int val = Integer.parseInt((String) newValue);
             int index = mFontStyle.findIndexOfValue((String) newValue);
@@ -296,6 +295,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                     Settings.System.STATUSBAR_CLOCK_FONT_STYLE, val);
             mFontStyle.setSummary(mFontStyle.getEntries()[index]);
             return true;
+         }
         return false;
     }
 
