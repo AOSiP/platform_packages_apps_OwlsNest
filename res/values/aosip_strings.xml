@@ -132,34 +132,6 @@
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
 
-    <!-- Status bar - Clock -->
-    <string name="status_bar_clock_style_title">Clock style</string>
-    <string name="status_bar_clock_style_right">Right</string>
-    <string name="status_bar_clock_style_left">Left</string>
-    <string name="status_bar_clock_style_center">Center</string>
-    <string name="status_bar_clock_style_hidden">Hidden</string>
-
-    <string name="status_bar_am_pm_title">AM/PM style</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Small</string>
-    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
-
-    <!--Status bar date -->
-    <string name="status_bar_clock_category">Clock</string>
-    <string name="status_bar_date_title">Date</string>
-    <string name="status_bar_date_none">Hidden (default)</string>
-    <string name="status_bar_date_small">Small</string>
-    <string name="status_bar_date_normal">Normal</string>
-    <string name="status_bar_date_format_title">Date format</string>
-    <string name="status_bar_date_style">Date style</string>
-    <string name="status_bar_date_style_normal">Normal</string>
-    <string name="status_bar_date_style_lowercase">Lowercase</string>
-    <string name="status_bar_date_style_uppercase">Uppercase</string>
-    <string name="status_bar_date_format_custom">Custom java format</string>
-    <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="status_bar_date_string_edittext_summary">Enter string</string>
-
     <!-- Battery percentage -->
     <string name="status_bar_battery_percentage_title">Show battery percentage</string>
     <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
@@ -497,6 +469,45 @@
     <string name="dynamic_system_bars_gradient_summary">Overlay a gradient on the system bars</string>
     <string name="dynamic_status_bar_filter_title">Darker status bar</string>
     <string name="dynamic_status_bar_filter_summary">Overlay a darkening filter on the status bar</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_style_title">Style</string>
+    <string name="status_bar_options_title">Options</string>
+
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Clock and date</string>
+    <string name="status_bar_clock_title">Clock and date style</string>
+    <string name="clock_title_enable">Alignment</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="clock_color_title">Color</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="enable_clock_weekday">Day of the week</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="right_clock">Right clock</string>
+    <string name="center_clock">Center clock</string>
+    <string name="dont_show">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 </resources>
 
 
