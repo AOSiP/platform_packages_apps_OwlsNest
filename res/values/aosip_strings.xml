@@ -39,6 +39,7 @@
     <string name="dlg_reset_android">Android</string>
     <string name="dlg_reset_illusion">Illusion</string>
     <string name="dlg_reset_values_message">Reset values to\nAndroid- or Illusion default?</string>
+    <string name="experimental_cat">Experimental features (WIP)</string>
 
     <!-- Status bar greeting -->
     <string name="status_bar_greeting_title">Greeting</string>

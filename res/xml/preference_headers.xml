@@ -34,5 +34,5 @@
     <header
         android:id="@+id/dynamic_system_bar"
         android:fragment="com.illusion.box.fragments.dsb.DSBSettings"
-        android:title="@string/dynamic_system_bars_title" />
+        android:title="@string/experimental_cat" />
 </preference-headers>
