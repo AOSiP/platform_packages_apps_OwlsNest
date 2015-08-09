@@ -39,6 +39,8 @@
     <string name="dlg_reset_android">Android</string>
     <string name="dlg_reset_illusion">Illusion</string>
     <string name="dlg_reset_values_message">Reset values to\nAndroid- or Illusion default?</string>
+    <string name="hidden_title">Hidden</string>
+    <string name="disabled_title">Disabled</string>
 
     <!-- Status bar greeting -->
     <string name="status_bar_greeting_title">Greeting</string>
@@ -151,15 +153,20 @@
     <string name="status_bar_battery_style_hidden">Hidden</string>
 
     <!-- Battery Bar -->
-    <string name="status_bar_battery_cat_title">Battery</string>
-    <string name="battery_bar_title">Battery Bar</string>
-    <string name="battery_bar">Battery bar location</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar_cat">Battery bar style</string>
-    <string name="battery_bar_style_title">Battery bar alignment</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
-    <string name="battery_bar_animate_title">Charging animation</string>
-    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+    <string name="battery_status_cat_bar_options_title">Customize the bar</string>
+    <string name="battery_status_style_title">Default indicator</string>
+    <string name="battery_status_bar_indicator_title">Bar</string>
+    <string name="battery_status_bar_indicator_fill_title">Only fill</string>
+    <string name="battery_status_bar_indicator_frame_fill_title">Frame &amp; fill</string>
+    <string name="battery_status_bar_thickness_title">Thickness</string>
+    <string name="battery_status_bar_thickness_1_dp_title">1 dp</string>
+    <string name="battery_status_bar_thickness_2_dp_title">2 dp</string>
+    <string name="battery_status_bar_thickness_3_dp_title">3 dp</string>
+    <string name="battery_status_bar_thickness_4_dp_title">4 dp</string>
+    <string name="battery_status_battery_color_title">Fill (Default indicator)</string>
+    <string name="battery_status_bar_color_title">Fill (Bar)</string>
+    <string name="battery_status_use_circle_fill_animation_title">Animation type</string>
+    <string name="battery_status_use_circle_fill_animation_summary">Activate to use a fill animation, disable to use a offset animation</string>
 
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Show search bar in recents menu</string>
@@ -542,5 +549,6 @@
     <string name="expanded_header_show_battery_status_text_title">Show battery status text</string>
     <string name="expanded_header_show_battery_status_text_summary">Enable to show the (default) battery status text next to the battery icon</string>
 </resources>
+
 
 

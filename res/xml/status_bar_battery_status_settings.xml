@@ -26,6 +26,13 @@
         android:entryValues="@array/battery_status_style_values" />
 
     <ListPreference
+        android:key="battery_status_bar_indicator"
+        android:title="@string/battery_status_bar_indicator_title"
+        android:dialogTitle="@string/battery_status_bar_indicator_title"
+        android:entries="@array/battery_status_bar_indicator_entries"
+        android:entryValues="@array/battery_status_bar_indicator_values" />
+
+    <ListPreference
         android:key="battery_status_percent_style"
         android:title="@string/battery_status_percent_style_title"
         android:dialogTitle="@string/battery_status_percent_style_dialog_title"
@@ -43,7 +50,7 @@
         android:key="battery_status_cat_circle_options"
         android:title="@string/battery_status_cat_circle_options_title">
 
-         <CheckBoxPreference
+         <SwitchPreference
 	        android:key="battery_status_show_circle_dotted"
 	        android:title="@string/battery_status_show_circle_dotted_title"
 	        android:summary="@string/battery_status_show_circle_dotted_summary" />
@@ -63,6 +70,17 @@
             android:defaultValue="2" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="battery_status_cat_bar_options"
+        android:title="@string/battery_status_cat_bar_options_title">
+
+        <ListPreference
+            android:key="battery_status_bar_thickness"
+            android:title="@string/battery_status_bar_thickness_title"
+            android:dialogTitle="@string/battery_status_bar_thickness_title"
+            android:entries="@array/battery_status_bar_thickness_entries"
+            android:entryValues="@array/battery_status_bar_thickness_values" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="battery_status_cat_colors"
@@ -75,8 +93,13 @@
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="battery_status_text_color"
-            android:title="@string/battery_status_text_color_title"
+            android:title="@string/text_title"
             android:defaultValue="0xff000000" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="battery_status_bar_color"
+            android:title="@string/battery_status_bar_color_title"
+            android:defaultValue="0xffffffff" />
     </PreferenceCategory>
 </PreferenceScreen>
 
