@@ -42,6 +42,8 @@
     <string name="hidden_title">Hidden</string>
     <string name="disabled_title">Disabled</string>
     <string name="options_title">Options</string>
+    <string name="pulldown_title">Expanded and activity options</string>
+    <string name="icon_title">Statusbar icon options</string>
 
     <!-- Status bar greeting -->
     <string name="status_bar_greeting_title">Greeting</string>
