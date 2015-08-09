@@ -212,6 +212,7 @@ public class SettingsActivity extends PreferenceActivity {
         AnimationControls.class.getName(),
         StatusBarExpandedHeaderSettings.class.getName(),
         StatusBarBatteryStatusSettings.class.getName(),
+        StatusBarSignalWifiSettings.class.getName(),
     };
 
     @Override

@@ -18,6 +18,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/status_bar_misc_title">
 
+    <PreferenceScreen
+        android:key="status_bar_signal_wifi_settings"
+        android:title="@string/status_bar_signal_wifi_settings_title"
+        android:summary="@string/status_bar_signal_wifi_settings_summary"
+        android:fragment="com.illusion.box.fragments.bar.StatusBarSignalWifiSettings" />
+
+    <PreferenceScreen
+        android:key="status_bar_expanded_header"
+        android:fragment="com.illusion.box.fragments.bar.StatusBarExpandedHeaderSettings"
+        android:title="@string/status_bar_expanded_header_settings_title" />
+
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
         android:title="@string/status_bar_toggle_brightness"
