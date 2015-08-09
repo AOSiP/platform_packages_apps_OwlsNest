@@ -41,6 +41,7 @@
     <string name="dlg_reset_values_message">Reset values to\nAndroid- or Illusion default?</string>
     <string name="hidden_title">Hidden</string>
     <string name="disabled_title">Disabled</string>
+    <string name="options_title">Options</string>
 
     <!-- Status bar greeting -->
     <string name="status_bar_greeting_title">Greeting</string>
@@ -559,6 +560,23 @@
     <string name="cat_network_icons_title">Network icons</string>
     <string name="cat_network_activity_icons_title">Activity icons</string>
     <string name="cat_airplane_mode_icon_title">Airplane mode icons</string>
+
+    <!-- Status bar notifications and system icons -->
+    <string name="notif_system_icons_colorize_notif_icons_title">Colorize notification icons</string>
+    <string name="notif_system_icons_colorize_notif_icons_title_phone">Colorize notif. icons</string>
+    <string name="notif_system_icons_colorize_notif_icons_summary">Enable to colorize the notification icons color</string>
+    <string name="notif_system_icons_show_ticker_title">Show ticker</string>
+    <string name="notif_system_icons_show_ticker_summary">Enable to show the ticker</string>
+    <string name="notif_system_icons_show_count_title">Notification count</string>
+    <string name="notif_system_icons_show_count_summary">Enable to display the number of pending notifications</string>
+    <string name="notif_system_icons_icon_color_title">Icons</string>
+    <string name="notif_system_icons_notif_text_color_title">Ticker text</string>
+    <string name="notif_system_icons_count_icon_color_title">Notification count icon</string>
+    <string name="notif_system_icons_count_text_color_title">Notification count Text</string>
+    <string name="status_bar_notif_system_icons_settings_title">Notifications &amp; system icons</string>
+    <string name="status_bar_notif_system_icons_settings_title_phone">Notif. &amp; system icons</string>
+    <string name="status_bar_notif_system_icons_settings_summary">Customize the notifications &amp; system icons</string>
+    <string name="cat_colors_title">Customize colors</string>
 </resources>
 
 

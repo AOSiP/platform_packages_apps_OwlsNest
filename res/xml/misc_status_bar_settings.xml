@@ -25,6 +25,12 @@
         android:fragment="com.illusion.box.fragments.bar.StatusBarSignalWifiSettings" />
 
     <PreferenceScreen
+        android:key="status_bar_notif_system_icons_settings"
+        android:title="@string/status_bar_notif_system_icons_settings_title"
+        android:summary="@string/status_bar_notif_system_icons_settings_summary"
+        android:fragment="com.illusion.box.fragments.bar.StatusBarNotifSystemIconsSettings" />
+
+    <PreferenceScreen
         android:key="status_bar_expanded_header"
         android:fragment="com.illusion.box.fragments.bar.StatusBarExpandedHeaderSettings"
         android:title="@string/status_bar_expanded_header_settings_title" />
