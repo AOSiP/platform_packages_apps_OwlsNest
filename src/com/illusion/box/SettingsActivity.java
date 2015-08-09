@@ -212,6 +212,8 @@ public class SettingsActivity extends PreferenceActivity {
         AnimBarPreference.class.getName(),
         AnimationControls.class.getName(),
         DSBSettings.class.getName(),
+        StatusBarExpandedHeaderSettings.class.getName(),
+        StatusBarBatteryStatusSettings.class.getName(),
     };
 
     @Override
