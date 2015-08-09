@@ -39,7 +39,6 @@
     <string name="dlg_reset_android">Android</string>
     <string name="dlg_reset_illusion">Illusion</string>
     <string name="dlg_reset_values_message">Reset values to\nAndroid- or Illusion default?</string>
-    <string name="experimental_cat">Experimental features (WIP)</string>
 
     <!-- Status bar greeting -->
     <string name="status_bar_greeting_title">Greeting</string>
@@ -462,17 +461,6 @@
     <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
     <string name="animation_duration_title">Animation duration</string>
     <string name="animation_duration_default">Default</string>
-
-    <!-- Dynamic system bars -->
-    <string name="dynamic_system_bars_title">Dynamic system bars</string>
-    <string name="dynamic_status_bar_title">Dynamic status bar</string>
-    <string name="dynamic_status_bar_summary">Automatically update the background of the status bar</string>
-    <string name="dynamic_navigation_bar_title">Dynamic navigation bar</string>
-    <string name="dynamic_navigation_bar_summary">Automatically update the background of the navigation bar</string>
-    <string name="dynamic_system_bars_gradient_title">System bar gradient</string>
-    <string name="dynamic_system_bars_gradient_summary">Overlay a gradient on the system bars</string>
-    <string name="dynamic_status_bar_filter_title">Darker status bar</string>
-    <string name="dynamic_status_bar_filter_summary">Overlay a darkening filter on the status bar</string>
 
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>

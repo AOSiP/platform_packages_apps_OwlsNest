@@ -45,7 +45,6 @@ import com.illusion.box.fragments.button.*;
 import com.illusion.box.fragments.lock.*;
 import com.illusion.box.fragments.navigation.*;
 import com.illusion.box.fragments.animation.*;
-import com.illusion.box.fragments.dsb.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
@@ -211,7 +210,6 @@ public class SettingsActivity extends PreferenceActivity {
         DisplayAnimationsSettings.class.getName(),
         AnimBarPreference.class.getName(),
         AnimationControls.class.getName(),
-        DSBSettings.class.getName(),
         StatusBarExpandedHeaderSettings.class.getName(),
         StatusBarBatteryStatusSettings.class.getName(),
     };
