@@ -20,6 +20,8 @@
      <string name="aosip_version">AOSiP version</string>
      <string name="aosip_version_default">Unknown</string>
 
+    <string name="status_bar_aicp_logo_color">Kronic logo color</string>
+
     <!--IllusionBox page titles-->
     <string name="status_bar_clockndate_title">Clock-N-Battery</string>
     <string name="status_bar_misc_title">Homeless bar settings</string>
@@ -579,6 +581,10 @@
     <string name="status_bar_notif_system_icons_settings_title_phone">Notif. &amp; system icons</string>
     <string name="status_bar_notif_system_icons_settings_summary">Customize the notifications &amp; system icons</string>
     <string name="cat_colors_title">Customize colors</string>
+
+    <!-- Weather in status bar -->
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
 </resources>
 
 

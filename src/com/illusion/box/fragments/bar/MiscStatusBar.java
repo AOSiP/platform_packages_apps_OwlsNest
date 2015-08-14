@@ -35,21 +35,25 @@ import com.android.settings.R;
 
 import java.util.Locale;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 public class MiscStatusBar extends SettingsPreferenceFragment
             implements OnPreferenceChangeListener  {
 
     public static final String TAG = "QsSettings";
 
     private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
+    private static final String KEY_ILLUSION_LOGO_COLOR = "status_bar_illusion_logo_color";
 
     ListPreference mQuickPulldown;
+    private ColorPickerPreference mIllusionLogoColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.misc_status_bar_settings);
-
+        PreferenceScreen prefSet = getPreferenceScreen();
         PreferenceScreen prefs = getPreferenceScreen();
 
         mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
@@ -60,6 +64,15 @@ public class MiscStatusBar extends SettingsPreferenceFragment
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0);
         mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updateQuickPulldownSummary(statusQuickPulldown);
+
+        mIllusionLogoColor =
+            (ColorPickerPreference) prefSet.findPreference(KEY_ILLUSION_LOGO_COLOR);
+        mIllusionLogoColor.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_ILLUSION_LOGO_COLOR, 0xffffffff);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mIllusionLogoColor.setSummary(hexColor);
+            mIllusionLogoColor.setNewPreviewColor(intColor);
     }
 
     @Override
@@ -75,6 +88,14 @@ public class MiscStatusBar extends SettingsPreferenceFragment
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     statusQuickPulldown);
             updateQuickPulldownSummary(statusQuickPulldown);
+            return true;
+        } else if (preference == mIllusionLogoColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_ILLUSION_LOGO_COLOR, intHex);
             return true;
         }
         return false;

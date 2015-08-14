@@ -21,6 +21,18 @@
   <PreferenceCategory
         android:title="@string/icon_title">
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="status_bar_illusion_logo"
+        android:title="@string/status_bar_illusion_logo_title"
+        android:summary="@string/status_bar_illusion_logo_summary"
+        android:defaultValue="true" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="status_bar_illusion_logo_color"
+        android:title="@string/status_bar_aicp_logo_color"
+        android:defaultValue="0xffffffff"
+        android:dependency="status_bar_illusion_logo" />
+
     <PreferenceScreen
         android:key="status_bar_signal_wifi_settings"
         android:title="@string/status_bar_signal_wifi_settings_title"
@@ -42,6 +54,12 @@
         android:key="status_bar_expanded_header"
         android:fragment="com.illusion.box.fragments.bar.StatusBarExpandedHeaderSettings"
         android:title="@string/status_bar_expanded_header_settings_title" />
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="status_bar_show_weather"
+        android:title="@string/status_bar_show_weather_title"
+        android:summary="@string/status_bar_show_weather_summary"
+        android:defaultValue="true" />
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
