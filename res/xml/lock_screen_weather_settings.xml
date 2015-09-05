@@ -38,24 +38,20 @@
         android:entries="@array/weather_condition_icon_entries"
         android:entryValues="@array/weather_condition_icon_values" />
 
-    <SwitchPreference
-        android:key="weather_colorize_all_icons"
-        android:title="@string/weather_colorize_all_icons_title"
-        android:summary="@string/weather_colorize_all_icons_summary" />
-
     <PreferenceCategory
         android:key="weather_cat_colors"
         android:title="@string/colors_title">
 
-         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="weather_text_color"
-            android:title="@string/text_title"
-            android:defaultValue="0xffffffff" />
+         <SwitchPreference
+            android:key="weather_colorize_all_icons"
+            android:title="@string/weather_colorize_all_icons_title"
+            android:summary="@string/weather_colorize_all_icons_summary" />
 
-         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="weather_icon_color"
-            android:title="@string/icons_title"
-            android:defaultValue="0xffffffff" />
+        <PreferenceScreen
+            android:key="lock_screen_color_settings"
+            android:title="@string/colors_title"
+            android:summary="@string/lock_screen_color_settings_summary"
+            android:fragment="com.android.settings.darkkat.LockScreenColorSettings" />
 
 	</PreferenceCategory>
 </PreferenceScreen>
