@@ -87,7 +87,8 @@ public class LockscreenHolderSettings extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new LockscreenShortcuts();
-            frags[1] = new LockScreenWeatherSettings();
+            frags[1] = new LockscreenShortcutFragment();
+            frags[2] = new LockScreenWeatherSettings();
         }
 
         @Override
@@ -110,6 +111,7 @@ public class LockscreenHolderSettings extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.lockscreen_targets_message),
+                    getString(R.string.lockscreen_shortcuts_title),
                     getString(R.string.lock_screen_weather_settings_title)};
         return titleString;
     }

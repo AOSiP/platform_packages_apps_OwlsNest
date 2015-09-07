@@ -38,6 +38,9 @@ import android.widget.TextView;
 import com.android.settings.*;
 
 import com.android.settings.slim.dslv.ActionListViewSettings;
+import com.android.settings.slim.dslv.DragSortListView;
+import com.android.settings.slim.dslv.DragSortController;
+import com.android.settings.slim.util.ShortcutPickerHelper;
 
 import com.illusion.box.fragments.*;
 import com.illusion.box.fragments.bar.*;
@@ -217,6 +220,10 @@ public class SettingsActivity extends PreferenceActivity {
         LockScreenColorSettings.class.getName(),
         LockScreenWeatherSettings.class.getName(),
         LockscreenShortcuts.class.getName(),
+        DragSortListView.class.getName(),
+        DragSortController.class.getName(),
+        ShortcutPickerHelper.class.getName(),
+        LockscreenShortcutFragment.class.getName(),
     };
 
     @Override
