@@ -215,6 +215,8 @@ public class SettingsActivity extends PreferenceActivity {
         StatusBarSignalWifiSettings.class.getName(),
         StatusBarNotifSystemIconsSettings.class.getName(),
         LockScreenColorSettings.class.getName(),
+        LockScreenWeatherSettings.class.getName(),
+        LockscreenShortcuts.class.getName(),
     };
 
     @Override

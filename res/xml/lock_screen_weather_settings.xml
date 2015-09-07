@@ -51,7 +51,7 @@
             android:key="lock_screen_color_settings"
             android:title="@string/colors_title"
             android:summary="@string/lock_screen_color_settings_summary"
-            android:fragment="com.android.settings.darkkat.LockScreenColorSettings" />
+            android:fragment="com.illusion.box.fragments.lock.LockScreenColorSettings" />
 
 	</PreferenceCategory>
 </PreferenceScreen>
