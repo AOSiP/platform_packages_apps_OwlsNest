@@ -589,6 +589,12 @@
     <string name="volbtn_music_controls_title">Music control</string>
     <string name="volbtn_music_controls_summary">With screen off, long pressing the volume keys will seek tracks</string>
 
+    <!-- Volume key cursor control -->
+    <string name="volbtn_cursor_control_title">Volume key cursor control</string>
+    <string name="volbtn_cursor_control_off">Disabled</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
     <!-- Volume button wake -->
     <string name="volbtn_wake_device_title">Volume button wake</string>
     <string name="button_wake_summary">May not wake device if music control is active and music is playing</string>

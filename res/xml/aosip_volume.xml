@@ -21,6 +21,14 @@
     android:layout="@layout/tab_ui"
     android:title="@string/volume_category" >
 
+    <ListPreference
+        android:key="volume_key_cursor_control"
+        android:dialogTitle="@string/volbtn_cursor_control_title"
+        android:title="@string/volbtn_cursor_control_title"
+        android:entries="@array/volbtn_cursor_control_entries"
+        android:entryValues="@array/volbtn_cursor_control_values"
+        android:persistent="false" />
+
     <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
         android:key="volbtn_music_controls"
         android:title="@string/volbtn_music_controls_title"
