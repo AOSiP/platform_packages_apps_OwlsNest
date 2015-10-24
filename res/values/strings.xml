@@ -450,6 +450,10 @@
     <string name="volbtn_music_controls_title">Music control</string>
     <string name="volbtn_music_controls_summary">With screen off, long pressing the volume keys will seek tracks</string>
 
+    <!-- Volume button wake -->
+    <string name="volbtn_wake_device_title">Volume button wake</string>
+    <string name="button_wake_summary">May not wake device if music control is active and music is playing</string>
+
     <!-- powermenu fragment -->
     <string name="power_menu_title">Advanced power menu</string>
     <string name="powermenu_settings_summary">Customize APM actions</string>
