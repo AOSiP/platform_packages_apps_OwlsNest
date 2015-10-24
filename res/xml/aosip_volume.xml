@@ -21,5 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/volume_category" >
 
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="volbtn_music_controls"
+        android:title="@string/volbtn_music_controls_title"
+        android:summary="@string/volbtn_music_controls_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
 

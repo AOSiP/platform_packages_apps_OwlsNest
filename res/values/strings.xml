@@ -446,6 +446,10 @@
     <string name="powermenu_category">Power</string>
     <string name="volume_category">Volume</string>
 
+    <!-- Volume button track change -->
+    <string name="volbtn_music_controls_title">Music control</string>
+    <string name="volbtn_music_controls_summary">With screen off, long pressing the volume keys will seek tracks</string>
+
     <!-- powermenu fragment -->
     <string name="power_menu_title">Advanced power menu</string>
     <string name="powermenu_settings_summary">Customize APM actions</string>
