@@ -779,6 +779,7 @@
     <string name="weather_category">Weather</string>
     <string name="options_category">Various</string>
     <string name="lockscreen_secure_options_title">Secure lockscreen options</string>
+    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>

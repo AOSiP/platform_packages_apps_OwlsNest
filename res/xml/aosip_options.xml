@@ -21,6 +21,13 @@
     android:layout="@layout/tab_ui"
     android:title="@string/options_category" >
 
+        <PreferenceScreen
+            android:title="@string/lockscreen_targets_message" >
+            <intent
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.aosip.LockscreenShortcutsActivity" />
+        </PreferenceScreen>
+
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="lockscreen_media_metadata"
             android:title="@string/media_art_title"
@@ -63,7 +70,6 @@
             android:key="hide_lockscreen_alarm"
             android:title="@string/hide_lockscreen_alarm_title"
             android:defaultValue="true" />
-
      </PreferenceCategory>
 
      <PreferenceCategory
@@ -87,7 +93,6 @@
             android:title="@string/lockscreen_enable_power_menu_title"
             android:summary="@string/lockscreen_enable_power_menu_summary"
             android:defaultValue="true" />
-
      </PreferenceCategory>
 
 </PreferenceScreen>
