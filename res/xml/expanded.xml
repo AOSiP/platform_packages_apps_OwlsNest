@@ -56,6 +56,13 @@
             android:dependency="qs_show_brightness"
             android:defaultValue="true" />
 
+        <ListPreference
+            android:key="quick_pulldown"
+            android:title="@string/quick_pulldown_title"
+            android:entries="@array/quick_pulldown_entries"
+            android:entryValues="@array/quick_pulldown_values"
+            android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
