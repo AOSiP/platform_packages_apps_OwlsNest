@@ -68,6 +68,10 @@
     <string name="icon_category">Icons</string>
     <string name="traffic_category">Network Traffic</string>
 
+    <!-- Notification Count in Statusbar -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
     <!-- Status Bar Ticker -->
     <string name="ticker_screen_title">Ticker</string>
     <string name="ticker_title">Status Bar Ticker</string>
