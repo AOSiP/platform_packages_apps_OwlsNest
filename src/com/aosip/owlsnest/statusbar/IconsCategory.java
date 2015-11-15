@@ -18,14 +18,23 @@ package com.aosip.owlsnest.statusbar;
 
 import android.os.Bundle;
 import android.provider.Settings;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceCategory;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
+
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 public class IconsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
+
+    private SwitchPreference mEnableNC;
 
     @Override
     protected int getMetricsCategory() {
@@ -38,6 +47,14 @@ public class IconsCategory extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.aosip_icons);
 
+        final PreferenceScreen prefSet = getPreferenceScreen();
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        mEnableNC = (SwitchPreference) findPreference(STATUS_BAR_NOTIF_COUNT);
+        mEnableNC.setOnPreferenceChangeListener(this);
+        int EnableNC = Settings.System.getInt(getContentResolver(),
+                STATUS_BAR_NOTIF_COUNT, 0);
+        mEnableNC.setChecked(EnableNC != 0);
     }
 
     @Override
@@ -46,6 +63,12 @@ public class IconsCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if  (preference == mEnableNC) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), STATUS_BAR_NOTIF_COUNT,
+                    value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 }
