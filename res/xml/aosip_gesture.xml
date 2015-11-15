@@ -21,4 +21,9 @@
     android:layout="@layout/tab_ui"
     android:title="@string/gesture_category" >
 
+    <SwitchPreference
+        android:key="status_bar_brightness_control"
+        android:summary="@string/status_bar_brightness_control_summary"
+        android:title="@string/status_bar_brightness_control_title" />
+
 </PreferenceScreen>

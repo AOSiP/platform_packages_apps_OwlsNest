@@ -95,6 +95,11 @@
     <string name="gesture_category">Gesture</string>
     <string name="gesture_summary">Gesture based options/actions</string>
 
+    <!-- Status bar brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
+    <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
+
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Customize lockscreen layout</string>

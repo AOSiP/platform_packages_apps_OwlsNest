@@ -18,6 +18,7 @@ package com.aosip.owlsnest.gesture;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.content.ContentResolver;
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -27,6 +28,7 @@ import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.Gravity;
 import com.android.settings.R;
+import android.provider.Settings.SettingNotFoundException; 
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -35,6 +37,9 @@ public class GestureCategory extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private static final String TAG = "GestureCategory";
 
+    private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
+
+    private SwitchPreference mStatusBarBrightnessControl;
 
     @Override
     protected int getMetricsCategory() {
@@ -47,8 +52,22 @@ public class GestureCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.aosip_gesture);
+        final ContentResolver resolver = getActivity().getContentResolver();
 
-    }
+        mStatusBarBrightnessControl = (SwitchPreference) findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
+        mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
+        int statusBarBrightnessControl = Settings.System.getInt(getContentResolver(),
+                STATUS_BAR_BRIGHTNESS_CONTROL, 0);
+        mStatusBarBrightnessControl.setChecked(statusBarBrightnessControl != 0);
+        try {
+            if (Settings.System.getInt(getContentResolver(),
+                    Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
+                mStatusBarBrightnessControl.setEnabled(false);
+                mStatusBarBrightnessControl.setSummary(R.string.status_bar_brightness_control_info);
+            }
+        } catch (SettingNotFoundException e) {
+        }
+      }
 
     @Override
     public void onResume() {
@@ -56,7 +75,13 @@ public class GestureCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
+        if (preference == mStatusBarBrightnessControl) {
+           boolean value = (Boolean) newValue;
+           Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
+                    value ? 1 : 0);
+              return true;
+          }        
+       return false;
     }
 }
 
