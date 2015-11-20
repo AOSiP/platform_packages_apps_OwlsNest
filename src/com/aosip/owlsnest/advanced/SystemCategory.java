@@ -41,11 +41,13 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     private static final String SCREENSHOT_DELAY = "screenshot_delay";
     private static final String SCREENRECORD_CHORD_TYPE = "screenrecord_chord_type";
     private static final String PREF_AOSIP_SETTINGS_SUMMARY = "aosip_settings_summary";
+    private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot"; 
 
+    private ListPreference mMsob; 
+    private ListPreference mScreenrecordChordType;
     private Preference mCustomSummary;
     private String mCustomSummaryText;
     private CustomSeekBarPreference mScreenshotDelay;
-    private ListPreference mScreenrecordChordType;
 
     @Override
     protected int getMetricsCategory() {
@@ -59,6 +61,12 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.aosip_system);
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mMsob = (ListPreference) findPreference(PREF_MEDIA_SCANNER_ON_BOOT);
+        mMsob.setValue(String.valueOf(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0)));
+        mMsob.setSummary(mMsob.getEntry());
+        mMsob.setOnPreferenceChangeListener(this);
 
         mScreenshotDelay = (CustomSeekBarPreference) findPreference(SCREENSHOT_DELAY);
         int screenshotDelay = Settings.System.getInt(resolver,
@@ -88,6 +96,14 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         } else if  (preference == mScreenrecordChordType) {
             handleActionListChange(mScreenrecordChordType, newValue,
                     Settings.System.SCREENRECORD_CHORD_TYPE);
+            return true;
+        } else if (preference == mMsob) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.MEDIA_SCANNER_ON_BOOT,
+                    Integer.valueOf(String.valueOf(newValue)));
+
+            mMsob.setValue(String.valueOf(newValue));
+            mMsob.setSummary(mMsob.getEntry());
             return true;
         }
         return false;

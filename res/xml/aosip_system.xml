@@ -26,6 +26,13 @@
             android:title="@string/owlsnest_settings_summary_title" />
 
         <ListPreference
+             android:key="media_scanner_on_boot"
+             android:title="@string/media_scanner_on_boot_title"
+             android:entries="@array/media_scanner_on_boot_entries"
+             android:entryValues="@array/media_scanner_on_boot_values"
+             android:persistent="false" />
+
+        <ListPreference
              android:key="screenrecord_chord_type"
              android:title="@string/screen_record_chord_title"
              android:entries="@array/screen_record_chord_entries"
