@@ -21,8 +21,10 @@ limitations under the License.
         <item>power</item>
         <item>reboot</item>
         <item>screenshot</item>
+        <item>screenrecord</item>
         <item>airplane</item>
         <item>users</item>
+        <item>torch</item>
         <item>settings</item>
         <item>lockdown</item>
         <item>assist</item>

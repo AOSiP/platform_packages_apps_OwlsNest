@@ -23,31 +23,32 @@ import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
-import android.preference.Preference;
-import android.preference.PreferenceFragment;
-import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
 
 import com.android.internal.util.aosip.PowerMenuConstants;
 import static com.android.internal.util.aosip.PowerMenuConstants.*;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsLogger;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
+import com.android.internal.util.aosip.aosipUtils;
 
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PowerMenuFragment extends PreferenceFragment {
+public class PowerMenuFragment extends SettingsPreferenceFragment {
 
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
+    private SwitchPreference mScreenrecordPref;
     private SwitchPreference mAirplanePref;
     private SwitchPreference mUsersPref;
+    private SwitchPreference mFlashlightPref;
     private SwitchPreference mSettingsPref;
     private SwitchPreference mLockdownPref;
     private SwitchPreference mAssistPref;
@@ -66,6 +67,7 @@ public class PowerMenuFragment extends PreferenceFragment {
 
         addPreferencesFromResource(R.xml.powermenu_fragment);
         mContext = getActivity().getApplicationContext();
+        PreferenceScreen prefScreen = getPreferenceScreen();
 
         mAvailableActions = getActivity().getResources().getStringArray(
                 R.array.power_menu_actions_array);
@@ -82,10 +84,14 @@ public class PowerMenuFragment extends PreferenceFragment {
                 mRebootPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_RESTART);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
+            } else if (action.equals(GLOBAL_ACTION_KEY_SCREENRECORD)) {
+                mScreenrecordPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENRECORD);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
             } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
                 mUsersPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_USERS);
+            } else if (action.equals(GLOBAL_ACTION_KEY_TORCH)) {
+                mFlashlightPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_TORCH);
             } else if (action.equals(GLOBAL_ACTION_KEY_SETTINGS)) {
                 mSettingsPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SETTINGS);
             } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
@@ -104,7 +110,10 @@ public class PowerMenuFragment extends PreferenceFragment {
         getUserConfig();
     }
 
-    public PowerMenuFragment(){}
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsEvent.OWLSNEST;
+    }
 
     @Override
     public void onStart() {
@@ -118,6 +127,9 @@ public class PowerMenuFragment extends PreferenceFragment {
             mScreenshotPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENSHOT));
         }
 
+        if (mScreenrecordPref != null) {
+            mScreenrecordPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENRECORD));
+        }
 
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
@@ -134,6 +146,15 @@ public class PowerMenuFragment extends PreferenceFragment {
                 mUsersPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_USERS) && enabled);
                 mUsersPref.setEnabled(enabled);
             }
+        }
+
+       if (mFlashlightPref != null) {
+            if (!aosipUtils.deviceSupportsFlashLight(getActivity())) {
+                getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_TORCH));
+                mFlashlightPref = null;
+            } else {
+                mFlashlightPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_TORCH));
+          }
         }
 
         if (mSettingsPref != null) {
@@ -170,8 +191,9 @@ public class PowerMenuFragment extends PreferenceFragment {
     }
 
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, @NonNull Preference preference) {
+    public boolean onPreferenceTreeClick(Preference preference) {
         boolean value;
+
         if (preference == mRebootPref) {
             value = mRebootPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_RESTART);
@@ -180,6 +202,10 @@ public class PowerMenuFragment extends PreferenceFragment {
             value = mScreenshotPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
 
+        } else if (preference == mScreenrecordPref) {
+            value = mScreenrecordPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENRECORD);
+
         } else if (preference == mAirplanePref) {
             value = mAirplanePref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
@@ -187,6 +213,10 @@ public class PowerMenuFragment extends PreferenceFragment {
         } else if (preference == mUsersPref) {
             value = mUsersPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
+
+        } else if (preference == mFlashlightPref) {
+            value = mFlashlightPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_TORCH);
 
         } else if (preference == mSettingsPref) {
             value = mSettingsPref.isChecked();
@@ -213,7 +243,7 @@ public class PowerMenuFragment extends PreferenceFragment {
             updateUserConfig(value, GLOBAL_ACTION_KEY_SILENT);
 
         } else {
-            return super.onPreferenceTreeClick(preferenceScreen, preference);
+            return super.onPreferenceTreeClick(preference);
         }
         return true;
     }
@@ -243,8 +273,8 @@ public class PowerMenuFragment extends PreferenceFragment {
     }
 
     private void updatePreferences() {
-        boolean bugreport = Settings.Secure.getInt(getActivity().getContentResolver(),
-                Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
+        boolean bugreport = Settings.Secure.getInt(getContentResolver(),
+            Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
 
         if (mBugReportPref != null) {
             mBugReportPref.setEnabled(bugreport);
@@ -260,7 +290,7 @@ public class PowerMenuFragment extends PreferenceFragment {
         mLocalUserConfig.clear();
         String[] defaultActions;
         String savedActions = Settings.Global.getStringForUser(mContext.getContentResolver(),
-                Settings.Global.POWER_MENU_ACTIONS, UserHandle.USER_CURRENT);
+            Settings.Global.POWER_MENU_ACTIONS, UserHandle.USER_CURRENT);
 
         if (savedActions == null) {
             defaultActions = mContext.getResources().getStringArray(
@@ -295,8 +325,8 @@ public class PowerMenuFragment extends PreferenceFragment {
             }
         }
 
-        Settings.Global.putStringForUser(getActivity().getContentResolver(),
-                 Settings.Global.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
+        Settings.Global.putStringForUser(getContentResolver(),
+            Settings.Global.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
         updatePowerMenuDialog();
     }
 

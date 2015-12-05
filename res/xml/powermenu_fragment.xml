@@ -16,6 +16,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/power_menu_title">
 
     <SwitchPreference
@@ -29,6 +30,11 @@
         android:defaultValue="false" />
 
     <SwitchPreference
+        android:key="screenrecord"
+        android:title="@string/power_menu_screenrecord_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
         android:key="airplane"
         android:title="@string/power_menu_airplane_title"
         android:defaultValue="true" />
@@ -36,6 +42,11 @@
     <SwitchPreference
         android:key="users"
         android:title="@string/power_menu_users_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="torch"
+        android:title="@string/power_menu_torch"
         android:defaultValue="false" />
 
     <SwitchPreference
