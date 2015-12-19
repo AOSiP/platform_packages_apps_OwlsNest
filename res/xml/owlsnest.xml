@@ -1,12 +1,53 @@
-<preference-headers xmlns:android="http://schemas.android.com/apk/res/android"
-         android:title="@string/header_category">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
 
-<!-- Leaving this as an example
-     Remove once proper ones are added
-    <header
-        android:id="@+id/status_bar_settings"
-        android:title="@string/status_bar_title"
-        android:fragment="com.aosip.owlsnest.fragments.bar.StatusBarHolderSettings"
-        /> -->
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
 
-</preference-headers>
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/custom_title">
+
+    <PreferenceScreen
+       android:key="status_bar"
+       android:fragment="com.aosip.owlsnest.statusbar.StatusbarHolder"
+       android:title="@string/statusbar_bar_title" 
+       android:summary="@string/statusbar_bar_summary" />
+
+    <PreferenceScreen
+       android:key="navigation"
+       android:fragment="com.aosip.owlsnest.navigation.NavigationHolder"
+       android:title="@string/navigation_title" 
+       android:summary="@string/navigation_summary" />
+
+    <PreferenceScreen
+       android:key="buttons"
+       android:fragment="com.aosip.owlsnest.buttons.ButtonsHolder"
+       android:title="@string/buttons_title" 
+       android:summary="@string/buttons_summary" />
+
+    <PreferenceScreen
+       android:key="lockscreen"
+       android:fragment="com.aosip.owlsnest.lockscreen.LockscreenHolder"
+       android:title="@string/lockscreen_title" 
+       android:summary="@string/lockscreen_summary" />
+
+    <PreferenceScreen
+       android:key="advanced"
+       android:fragment="com.aosip.owlsnest.advanced.AdvancedHolder"
+       android:title="@string/advanced_title" 
+       android:summary="@string/advanced_summary" />
+
+</PreferenceScreen>
