@@ -16,4 +16,34 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/nest_title">
 
+    <PreferenceScreen
+       android:key="status_bar"
+       android:fragment="com.aosip.owlsnest.statusbar.StatusbarHolder"
+       android:title="@string/statusbar_bar_title" 
+       android:summary="@string/statusbar_bar_summary" />
+
+    <PreferenceScreen
+       android:key="navigation"
+       android:fragment="com.aosip.owlsnest.navigation.NavigationHolder"
+       android:title="@string/navigation_title" 
+       android:summary="@string/navigation_summary" />
+
+    <PreferenceScreen
+       android:key="buttons"
+       android:fragment="com.aosip.owlsnest.buttons.ButtonsHolder"
+       android:title="@string/buttons_title" 
+       android:summary="@string/buttons_summary" />
+
+    <PreferenceScreen
+       android:key="lockscreen"
+       android:fragment="com.aosip.owlsnest.lockscreen.LockscreenHolder"
+       android:title="@string/lockscreen_title" 
+       android:summary="@string/lockscreen_summary" />
+
+    <PreferenceScreen
+       android:key="advanced"
+       android:fragment="com.aosip.owlsnest.advanced.AdvancedHolder"
+       android:title="@string/advanced_title" 
+       android:summary="@string/advanced_summary" />
+
 </PreferenceScreen>
