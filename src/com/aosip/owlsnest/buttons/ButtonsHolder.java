@@ -53,6 +53,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.buttons.ButtonSettings;
 import com.aosip.owlsnest.buttons.PowermenuCategory;
+import com.aosip.owlsnest.buttons.PowerMenuFragment;
 import com.aosip.owlsnest.buttons.VolumeCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
