@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Android Open Source Illusion Project
+ * Copyright (C) 2015 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.buttons;
+package com.aosip.owlsnest.recent;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -51,14 +51,13 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.buttons.PowermenuCategory;
-import com.aosip.owlsnest.buttons.VolumeCategory;
+import com.aosip.owlsnest.recent.RecentCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ButtonsHolder extends SettingsPreferenceFragment {
+public class RecentHolder extends SettingsPreferenceFragment {
 
     ViewPager mViewPager;
     String titleString[];
@@ -107,8 +106,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new PowermenuCategory();
-            frags[1] = new VolumeCategory();
+            frags[0] = new RecentCategory();
         }
 
         @Override
@@ -130,8 +128,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.powermenu_category),
-                    getString(R.string.volume_category)};
+                    getString(R.string.recent_category)};
         return titleString;
     }
 }
