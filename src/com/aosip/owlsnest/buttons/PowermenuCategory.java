@@ -18,6 +18,7 @@ package com.aosip.owlsnest.buttons;
 
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 
@@ -31,8 +32,10 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String KEYGUARD_TORCH = "keyguard_toggle_torch";
+    private static final String POWER_MENU_ANIMATIONS = "power_menu_animations"; 
 
     private SystemSettingSwitchPreference mLsTorch;
+    private ListPreference mPowerMenuAnimations; 
 
     @Override
     protected int getMetricsCategory() {
@@ -50,6 +53,12 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
         if (!aosipUtils.deviceSupportsFlashLight(getActivity())) {
             prefScreen.removePreference(mLsTorch);
         }
+
+        mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
+        mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
+        mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+        mPowerMenuAnimations.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -58,6 +67,13 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mPowerMenuAnimations) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,
+                    Integer.valueOf((String) newValue));
+            mPowerMenuAnimations.setValue(String.valueOf(newValue));
+            mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+            return true;
+        }
         return false;
     }
 }
