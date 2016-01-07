@@ -273,6 +273,10 @@
     <string name="expanded_category">Statusbar expanded</string>
     <string name="tile_category">Tiles</string>
 
+    <!-- QS Brightness icon visibility -->
+    <string name="brightness_icon_title">Brightness icon </string>
+    <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+
     <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">QS tile titles</string>
     <string name="qs_tile_title_visibility_summary_on">QS tiles titles are now visible</string>
