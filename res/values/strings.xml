@@ -52,6 +52,10 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="choose_app">Choose app</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Icon</string>
+    <string name="color_title">Color</string>
+    <string name="colors_title">Colors</string>
 
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Statusbar options</string>
@@ -61,6 +65,13 @@
     <string name="icon_category">Icons</string>
     <string name="extra_category">Extras</string>
     <string name="traffic_category">Network Traffic</string>
+
+    <!-- Status Bar Ticker -->
+    <string name="ticker_screen_title">Ticker</string>
+    <string name="ticker_title">Status Bar Ticker</string>
+    <string name="ticker_screen_summary">Customize the ticker style</string>
+    <string name="ticker_summary">Enable the old status bar ticker</string>
+    <string name="ticker_restore_defaults_title">Restore defaults</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
