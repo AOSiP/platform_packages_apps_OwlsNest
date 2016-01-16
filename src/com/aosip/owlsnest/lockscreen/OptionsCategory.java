@@ -26,6 +26,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 
 import com.aosip.owlsnest.preference.SystemSettingSwitchPreference;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -38,9 +39,11 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     private static final String LS_SECURE_CAT = "lockscreen_secure_options";
 
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
 
-     private FingerprintManager mFingerprintManager;
+    private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFpKeystore;
+    private SystemSettingSwitchPreference mFingerprintVib;
 
     @Override
     protected int getMetricsCategory() {
@@ -54,10 +57,11 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
         PreferenceCategory secureCategory = (PreferenceCategory) findPreference(LS_SECURE_CAT);
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-
+        mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
         mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
         if (!mFingerprintManager.isHardwareDetected()){
             secureCategory.removePreference(mFpKeystore);
+            secureCategory.removePreference(mFingerprintVib);
         }
     }
 

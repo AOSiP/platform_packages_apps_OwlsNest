@@ -621,6 +621,10 @@
     <string name="fp_unlock_keystore_title">Fingerprint unlock after reboot</string>
     <string name="fp_unlock_keystore_summary">Allow device to always be unlocked with fingerprint, even after reboot</string>
 
+    <!-- fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced UI</string>
     <string name="advanced_summary">Heavy custom features</string>

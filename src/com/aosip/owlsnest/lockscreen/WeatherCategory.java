@@ -19,6 +19,7 @@ package com.aosip.owlsnest.lockscreen;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.preference.Preference;
