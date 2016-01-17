@@ -24,14 +24,14 @@
        android:fragment="com.aosip.owlsnest.statusbar.StatusbarHolder"
        android:title="@string/statusbar_bar_title" 
        android:summary="@string/statusbar_bar_summary" 
-       android:icon="@drawable/ic_owlsnest_status" />
+       android:icon="@drawable/ic_owlsnest_status"/>
 
     <PreferenceScreen
        android:key="quicksettings"
        android:fragment="com.aosip.owlsnest.qssettings.QsSettingsHolder"
        android:title="@string/quicksettings_title" 
        android:summary="@string/quicksettings_summary"
-       android:icon="@drawable/ic_owlsnest_qs" />
+       android:icon="@drawable/ic_owlsnest_qs"/>
 
     <PreferenceScreen
        android:key="notification"
@@ -45,42 +45,42 @@
        android:fragment="com.aosip.owlsnest.navigation.NavigationHolder"
        android:title="@string/navigation_title" 
        android:summary="@string/navigation_summary"
-       android:icon="@drawable/ic_owlsnest_nav" />
+       android:icon="@drawable/ic_owlsnest_nav"/>
 
     <PreferenceScreen
        android:key="buttons"
        android:fragment="com.aosip.owlsnest.buttons.ButtonsHolder"
        android:title="@string/buttons_title" 
        android:summary="@string/buttons_summary"
-       android:icon="@drawable/ic_owlsnest_buttons" />
+       android:icon="@drawable/ic_owlsnest_buttons"/>
 
     <PreferenceScreen
        android:key="recent"
        android:fragment="com.aosip.owlsnest.recent.RecentHolder"
        android:title="@string/recent_title" 
        android:summary="@string/recent_summary"
-       android:icon="@drawable/ic_owlsnest_recents" />
+       android:icon="@drawable/ic_owlsnest_recents"/>
 
     <PreferenceScreen
        android:key="lockscreen"
        android:fragment="com.aosip.owlsnest.lockscreen.LockscreenHolder"
        android:title="@string/lockscreen_title" 
        android:summary="@string/lockscreen_summary"
-       android:icon="@drawable/ic_owlsnest_lockscreen" />
+       android:icon="@drawable/ic_owlsnest_lockscreen"/>
 
     <PreferenceScreen
        android:key="gesture"
        android:fragment="com.aosip.owlsnest.gesture.GestureHolder"
        android:title="@string/gesture_category" 
        android:summary="@string/gesture_summary"
-       android:icon="@drawable/ic_owlsnest_gesture" />
+       android:icon="@drawable/ic_owlsnest_gesture"/>
 
     <PreferenceScreen
        android:key="advanced"
        android:fragment="com.aosip.owlsnest.advanced.AdvancedHolder"
        android:title="@string/advanced_title"
        android:summary="@string/advanced_summary"
-       android:icon="@drawable/ic_owlsnest_advanced" />
+       android:icon="@drawable/ic_owlsnest_advanced"/>
 
     <PreferenceScreen
        android:key="ota"

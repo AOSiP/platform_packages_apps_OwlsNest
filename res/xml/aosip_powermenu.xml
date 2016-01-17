@@ -26,5 +26,11 @@
         android:title="@string/power_menu_title"
         android:summary="@string/powermenu_settings_summary"
         android:fragment="com.aosip.owlsnest.buttons.PowerMenuFragment" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="keyguard_toggle_torch"
+        android:title="@string/keyguard_torch_title"
+        android:summary="@string/keyguard_torch_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
 

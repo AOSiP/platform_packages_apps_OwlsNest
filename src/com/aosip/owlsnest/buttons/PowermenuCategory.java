@@ -18,15 +18,21 @@ package com.aosip.owlsnest.buttons;
 
 import android.os.Bundle;
 import android.provider.Settings;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 
+import com.android.internal.util.aosip.aosipUtils;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.aosip.owlsnest.preference.SystemSettingSwitchPreference;
 
 public class PowermenuCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String KEYGUARD_TORCH = "keyguard_toggle_torch";
+
+    private SystemSettingSwitchPreference mLsTorch;
 
     @Override
     protected int getMetricsCategory() {
@@ -38,7 +44,12 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.aosip_powermenu);
+        PreferenceScreen prefScreen = getPreferenceScreen();
 
+        mLsTorch = (SystemSettingSwitchPreference) findPreference(KEYGUARD_TORCH);
+        if (!aosipUtils.deviceSupportsFlashLight(getActivity())) {
+            prefScreen.removePreference(mLsTorch);
+        }
     }
 
     @Override
