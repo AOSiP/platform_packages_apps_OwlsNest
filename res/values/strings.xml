@@ -757,6 +757,11 @@
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
 
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_items_title">Lockscreen items</string>
+    <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
+    <string name="hide_lockscreen_date_title">Show lockscreen date</string>
+
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Fingerprint unlock after reboot</string>
     <string name="fp_unlock_keystore_summary">Allow device to always be unlocked with fingerprint, even after reboot</string>

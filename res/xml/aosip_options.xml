@@ -33,6 +33,23 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="false" />
 
+        <!-- Hide Lockscreen clock & date -->
+        <PreferenceCategory
+            android:key="hide_lockscreen_items_category"
+            android:title="@string/hide_lockscreen_items_title" />
+
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_clock"
+            android:title="@string/hide_lockscreen_clock_title"
+            android:defaultValue="true" />
+
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_date"
+            android:title="@string/hide_lockscreen_date_title"
+            android:defaultValue="true" />
+
+     </PreferenceCategory>
+
      <PreferenceCategory
          android:key="lockscreen_secure_options"
          android:title="@string/lockscreen_secure_options_title" >
