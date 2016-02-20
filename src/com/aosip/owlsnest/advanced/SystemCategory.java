@@ -20,16 +20,19 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
+import android.content.ContentResolver;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.widget.EditText;
 
+import com.android.internal.util.aosip.aosipUtils;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -41,13 +44,15 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     private static final String SCREENSHOT_DELAY = "screenshot_delay";
     private static final String SCREENRECORD_CHORD_TYPE = "screenrecord_chord_type";
     private static final String PREF_AOSIP_SETTINGS_SUMMARY = "aosip_settings_summary";
-    private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot"; 
+    private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+    private static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
 
     private ListPreference mMsob; 
     private ListPreference mScreenrecordChordType;
     private Preference mCustomSummary;
     private String mCustomSummaryText;
     private CustomSeekBarPreference mScreenshotDelay;
+    private SwitchPreference mFlashlightNotification;
 
     @Override
     protected int getMetricsCategory() {
@@ -57,8 +62,8 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.aosip_system);
+        PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -80,6 +85,15 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
         mCustomSummary = (Preference) prefScreen.findPreference(PREF_AOSIP_SETTINGS_SUMMARY);
         updateCustomSummaryTextString();
+
+        mFlashlightNotification = (SwitchPreference) findPreference(FLASHLIGHT_NOTIFICATION);
+        mFlashlightNotification.setOnPreferenceChangeListener(this);
+        if (!aosipUtils.deviceSupportsFlashLight(getActivity())) {
+            prefSet.removePreference(mFlashlightNotification);
+        } else {
+        mFlashlightNotification.setChecked((Settings.System.getInt(resolver,
+                Settings.System.FLASHLIGHT_NOTIFICATION, 0) == 1));
+        }
     }
 
     @Override
@@ -104,6 +118,11 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
             mMsob.setValue(String.valueOf(newValue));
             mMsob.setSummary(mMsob.getEntry());
+            return true;
+        } else if  (preference == mFlashlightNotification) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FLASHLIGHT_NOTIFICATION, checked ? 1:0);
             return true;
         }
         return false;
