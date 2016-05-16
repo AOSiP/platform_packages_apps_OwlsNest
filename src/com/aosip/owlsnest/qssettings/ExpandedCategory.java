@@ -16,16 +16,26 @@
 
 package com.aosip.owlsnest.qssettings;
 
+import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import android.provider.Settings;
 
 public class ExpandedCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
+    private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
+
+    private ListPreference mTileAnimationStyle;
+    private ListPreference mTileAnimationDuration;
 
     @Override
     public int getMetricsCategory() {
@@ -35,9 +45,27 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.expanded);
 
+	ContentResolver resolver = getActivity().getContentResolver();
+
+	// QS animation
+        mTileAnimationStyle = (ListPreference) findPreference(PREF_TILE_ANIM_STYLE);
+        int tileAnimationStyle = Settings.System.getIntForUser(resolver,
+		Settings.System.ANIM_TILE_STYLE, 0,
+                UserHandle.USER_CURRENT);
+        mTileAnimationStyle.setValue(String.valueOf(tileAnimationStyle));
+        updateTileAnimationStyleSummary(tileAnimationStyle);
+        updateAnimTileDuration(tileAnimationStyle);
+        mTileAnimationStyle.setOnPreferenceChangeListener(this);
+
+	mTileAnimationDuration = (ListPreference) findPreference(PREF_TILE_ANIM_DURATION);
+        int tileAnimationDuration = Settings.System.getIntForUser(resolver,
+                Settings.System.ANIM_TILE_DURATION, 2000,
+                UserHandle.USER_CURRENT);
+        mTileAnimationDuration.setValue(String.valueOf(tileAnimationDuration));
+        updateTileAnimationDurationSummary(tileAnimationDuration);
+        mTileAnimationDuration.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -46,7 +74,43 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+	ContentResolver resolver = getActivity().getContentResolver();
+	if (preference == mTileAnimationStyle) {
+		int tileAnimationStyle = Integer.valueOf((String) newValue);
+		Settings.System.putIntForUser(resolver, Settings.System.ANIM_TILE_STYLE,
+			tileAnimationStyle, UserHandle.USER_CURRENT);
+		updateTileAnimationStyleSummary(tileAnimationStyle);
+		updateAnimTileDuration(tileAnimationStyle);
+		return true;
+	} else if (preference == mTileAnimationDuration) {
+		int tileAnimationDuration = Integer.valueOf((String) newValue);
+		Settings.System.putIntForUser(resolver, Settings.System.ANIM_TILE_DURATION,
+			tileAnimationDuration, UserHandle.USER_CURRENT);
+		updateTileAnimationDurationSummary(tileAnimationDuration);
+		return true;
+	}
         return false;
     }
-}
 
+    private void updateTileAnimationStyleSummary(int tileAnimationStyle) {
+        String prefix = (String) mTileAnimationStyle.getEntries()[mTileAnimationStyle.findIndexOfValue(String
+		.valueOf(tileAnimationStyle))];
+        mTileAnimationStyle.setSummary(getResources().getString(R.string.qs_set_animation_style, prefix));
+    }
+
+    private void updateTileAnimationDurationSummary(int tileAnimationDuration) {
+        String prefix = (String) mTileAnimationDuration.getEntries()[mTileAnimationDuration.findIndexOfValue(String
+                .valueOf(tileAnimationDuration))];
+        mTileAnimationDuration.setSummary(getResources().getString(R.string.qs_set_animation_duration, prefix));
+    }
+
+    private void updateAnimTileDuration(int tileAnimationStyle) {
+        if (mTileAnimationDuration != null) {
+            if (tileAnimationStyle == 0) {
+                mTileAnimationDuration.setSelectable(false);
+            } else {
+                mTileAnimationDuration.setSelectable(true);
+            }
+	}
+    }
+}
