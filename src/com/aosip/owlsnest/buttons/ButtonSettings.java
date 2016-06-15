@@ -36,12 +36,9 @@ import com.android.settings.R;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.utils.du.ActionConstants;
+import com.aosip.owlsnest.utils.ActionFragment;
 
 public class ButtonSettings extends ActionFragment implements OnPreferenceChangeListener {
-
-    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
-    private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
-    public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
 
     // category keys
     private static final String CATEGORY_BACK = "back_key";
@@ -62,9 +59,6 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     public static final int KEY_MASK_CAMERA = 0x20;
     public static final int KEY_MASK_VOLUME = 0x40;
 
-    private SwitchPreference mSwapVolumeButtons;
-    private SwitchPreference mVolumeRockerWake;
-    private SwitchPreference mVolumeRockerMusicControl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -122,51 +116,22 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             prefScreen.removePreference(assistCategory);
         }
 
-        mSwapVolumeButtons = (SwitchPreference) findPreference(SWAP_VOLUME_BUTTONS);
-        mSwapVolumeButtons.setOnPreferenceChangeListener(this);
-        int swapVolumeButtons = Settings.System.getInt(getContentResolver(),
-                SWAP_VOLUME_BUTTONS, 0);
-        mSwapVolumeButtons.setChecked(swapVolumeButtons != 0);
-
-        mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
-        mVolumeRockerWake.setOnPreferenceChangeListener(this);
-        int volumeRockerWake = Settings.System.getInt(getContentResolver(),
-                VOLUME_ROCKER_WAKE, 0);
-        mVolumeRockerWake.setChecked(volumeRockerWake != 0);
-
-        mVolumeRockerMusicControl = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
-        mVolumeRockerMusicControl.setOnPreferenceChangeListener(this);
-        int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
-                VOLUME_ROCKER_MUSIC_CONTROLS, 0);
-        mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
-
         // let super know we can load ActionPreferences
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.HWKEYS));
     }
 
     @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
+    }
+
+    @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.OWLSNEST;
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mSwapVolumeButtons) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(), SWAP_VOLUME_BUTTONS,
-                    value ? 1 : 0);
-            return true;
-        } else if (preference == mVolumeRockerWake) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
-                    value ? 1 : 0);
-            return true;
-        } else if (preference == mVolumeRockerMusicControl) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
-                    value ? 1 : 0);
-            return true;
-        }
         return false;
     }
 }

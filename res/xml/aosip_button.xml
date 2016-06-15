@@ -18,34 +18,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
-        android:key="sysui_show_full_zen"
-        android:title="@string/tuner_full_zen_title"
-        android:summary="@string/tuner_full_zen_summary"
-        android:defaultValue="false"/>
-
-    <SwitchPreference
-        android:key="swap_volume_buttons"
-        android:title="@string/swap_volume_buttons_title"
-        android:summary="@string/swap_volume_buttons_summary" />
-
-    <SwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
-
-    <SwitchPreference
-        android:key="volume_rocker_music_controls"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title"
-        android:defaultValue="true"
-        android:dependency="volume_rocker_wake" />
-
     <PreferenceCategory
         android:key="back_key"
         android:title="@string/hardware_keys_back_key_title" >
+
+        <com.aosip.owlsnest.preference.ActionPreference
+            android:key="hwkeys_button_back_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.aosip.owlsnest.preference.ActionPreference>
 
         <com.aosip.owlsnest.preference.ActionPreference
             android:key="hwkeys_button_back_long_press"
@@ -64,6 +45,12 @@
     <PreferenceCategory
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
+
+        <com.aosip.owlsnest.preference.ActionPreference
+            android:key="hwkeys_button_home_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.aosip.owlsnest.preference.ActionPreference>
 
         <com.aosip.owlsnest.preference.ActionPreference
             android:key="hwkeys_button_home_long_press"

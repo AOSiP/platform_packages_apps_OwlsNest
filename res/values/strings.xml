@@ -191,6 +191,7 @@
     <string name="reset">Reset</string>
 
     <!-- Hardware button navigation -->
+    <string name="hardware_keys_title">Navigation</string>
     <string name="hardware_keys_volume_keys_title">Volume rocker</string>
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>
