@@ -18,6 +18,7 @@ package com.aosip.owlsnest.lockscreen;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.hardware.fingerprint.FingerprintManager;
@@ -40,7 +41,9 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
 
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
+    private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
 
+    private ListPreference mLockClockFonts;
     private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFpKeystore;
     private SystemSettingSwitchPreference mFingerprintVib;
@@ -53,8 +56,11 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.aosip_options);
+        final PreferenceScreen prefScreen = getPreferenceScreen();
         PreferenceCategory secureCategory = (PreferenceCategory) findPreference(LS_SECURE_CAT);
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        addPreferencesFromResource(R.xml.aosip_options);
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
@@ -63,6 +69,11 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
             secureCategory.removePreference(mFpKeystore);
             secureCategory.removePreference(mFingerprintVib);
         }
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+                resolver, Settings.System.LOCK_CLOCK_FONTS, 4)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -71,6 +82,14 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mLockClockFonts) {
+            Settings.System.putInt(resolver, Settings.System.LOCK_CLOCK_FONTS,
+                    Integer.valueOf((String) newValue));
+            mLockClockFonts.setValue(String.valueOf(newValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+            return true;
+        }
         return false;
     }
 }
