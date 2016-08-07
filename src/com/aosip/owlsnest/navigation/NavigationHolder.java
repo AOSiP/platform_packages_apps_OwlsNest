@@ -59,6 +59,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
     private static final String KEY_SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
     private static final String KEY_GESTURE_SYSTEM = "gesture_system_navigation";
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
+    private static final String KEY_HARDWARE_KEYS_ENABLE = "hardware_keys_enable";
 
     private static final String KEY_LONG_BACK_SWIPE_TIMEOUT = "long_back_swipe_timeout";
     private static final String KEY_BACK_SWIPE_EXTENDED = "back_swipe_extended";
@@ -134,6 +135,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
     private Preference mGestureSystemNavigation;
     private Preference mHomeLongPressCustomApp;
     private Preference mHomeDoubleTapCustomApp;
+    private Preference mHwKeyEnable;
     private Preference mLayoutSettings;
     private Preference mLeftSwipeAppSelection;
     private Preference mRightSwipeAppSelection;
@@ -217,6 +219,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         mSwapHardwareKeys = (SystemSettingSwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
 
         mButtonBrightness = (Preference) findPreference(KEY_BUTTON_BRIGHTNESS);
+        mHwKeyEnable = (Preference) findPreference(KEY_HARDWARE_KEYS_ENABLE);
         mGestureSystemNavigation = (Preference) findPreference(KEY_GESTURE_SYSTEM);
 
         mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
@@ -409,6 +412,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
 
         if (deviceKeys == 0) {
             prefSet.removePreference(mButtonBrightness);
+            prefSet.removePreference(mHwKeyEnable);
             prefSet.removePreference(mSwapHardwareKeys);
             prefSet.removePreference(menuCategory);
             prefSet.removePreference(assistCategory);
@@ -704,9 +708,11 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
     private void updateBacklight() {
         if (isNavbarVisible()) {
             mButtonBrightness.setEnabled(false);
+            mHwKeyEnable.setEnabled(false);
             mSwapHardwareKeys.setEnabled(false);
         } else {
             mButtonBrightness.setEnabled(true);
+            mHwKeyEnable.setEnabled(true);
             mSwapHardwareKeys.setEnabled(true);
         }
     }
@@ -925,6 +931,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                     if (deviceKeys == 0) {
                         keys.add(KEY_SWAP_NAVIGATION_KEYS);
                         keys.add(KEY_BUTTON_BRIGHTNESS);
+                        keys.add(KEY_HARDWARE_KEYS_ENABLE);
                     }
                     if (!hasMenu) {
                         keys.add(KEY_CATEGORY_MENU);
