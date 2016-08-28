@@ -27,6 +27,12 @@
        android:summary="@string/statusbar_bar_summary" />
 
     <PreferenceScreen
+       android:key="quicksettings"
+       android:fragment="com.aosip.owlsnest.qssettings.QsSettingsHolder"
+       android:title="@string/quicksettings_title" 
+       android:summary="@string/quicksettings_summary" />
+
+    <PreferenceScreen
        android:key="navigation"
        android:fragment="com.aosip.owlsnest.navigation.NavigationHolder"
        android:title="@string/navigation_title" 

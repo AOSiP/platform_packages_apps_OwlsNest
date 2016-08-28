@@ -46,6 +46,11 @@
     <string name="icon_category">Icons</string>
     <string name="extra_category">Extras</string>
 
+    <!--Owlsnest Quick settings-->
+    <string name="quicksettings_title">Quick settings</string>
+    <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
+    <string name="expanded_category">Statusbar expanded</string>
+
     <!--Owlsnest navigation-->
     <string name="navigation_title">Navigation bar options</string>
     <string name="navigation_summary">Customize Navbar size,buttons,layout,and colors</string>
