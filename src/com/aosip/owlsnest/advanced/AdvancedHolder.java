@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Android Open Source Illusion Project
+ * Copyright (C) 2017 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -51,7 +51,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.advanced.GestureanywhereCategory;
+import com.aosip.owlsnest.advanced.SystemCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
@@ -106,7 +106,7 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new GestureanywhereCategory();
+            frags[0] = new SystemCategory();
         }
 
         @Override
@@ -128,7 +128,7 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.gestureanywhere_category)};
+                    getString(R.string.system_category)};
         return titleString;
     }
 }

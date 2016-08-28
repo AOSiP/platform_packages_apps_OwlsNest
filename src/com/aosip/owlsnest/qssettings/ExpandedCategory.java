@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.advanced;
+package com.aosip.owlsnest.qssettings;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -31,7 +31,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class GestureanywhereCategory extends SettingsPreferenceFragment implements
+public class ExpandedCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
@@ -43,7 +43,7 @@ public class GestureanywhereCategory extends SettingsPreferenceFragment implemen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.aosip_gestureanywhere);
+        addPreferencesFromResource(R.xml.aosip_expanded);
 
     }
 

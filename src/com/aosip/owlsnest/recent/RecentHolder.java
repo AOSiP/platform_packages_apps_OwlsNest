@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.lockscreen;
+package com.aosip.owlsnest.recent;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -51,13 +51,13 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.lockscreen.OptionsCategory;
+import com.aosip.owlsnest.recent.RecentCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LockscreenHolder extends SettingsPreferenceFragment {
+public class RecentHolder extends SettingsPreferenceFragment {
 
     ViewPager mViewPager;
     String titleString[];
@@ -106,7 +106,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new OptionsCategory();
+            frags[0] = new RecentCategory();
         }
 
         @Override
@@ -128,7 +128,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.options_category)};
+                    getString(R.string.recent_category)};
         return titleString;
     }
 }
