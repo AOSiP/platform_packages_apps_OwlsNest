@@ -25,6 +25,11 @@
             android:key="aosip_settings_summary"
             android:title="@string/owlsnest_settings_summary_title" />
 
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="dnd_when_call"
+            android:title="@string/dnd_when_call_title"
+            android:summary="@string/dnd_when_call_summary" />
+
         <ListPreference
              android:key="media_scanner_on_boot"
              android:title="@string/media_scanner_on_boot_title"
@@ -38,11 +43,6 @@
              android:entries="@array/screen_record_chord_entries"
              android:entryValues="@array/screen_record_chord_values" />
 
-         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="dnd_when_call"
-            android:title="@string/dnd_when_call_title"
-            android:summary="@string/dnd_when_call_summary" />
-
          <com.aosip.owlsnest.preference.CustomSeekBarPreference
              android:key="screenshot_delay"
              android:title="@string/screenshot_delay_title"
@@ -52,6 +52,12 @@
              settings:interval="100"
              settings:units="ms"
              android:persistent="false" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="false" />]
 
 </PreferenceScreen>
 
