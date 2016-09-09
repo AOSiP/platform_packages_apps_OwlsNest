@@ -51,7 +51,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.recent.RecentCategory;
+import com.aosip.owlsnest.recent.StockRecents;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
@@ -106,7 +106,7 @@ public class RecentHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new RecentCategory();
+            frags[0] = new StockRecents();
         }
 
         @Override
@@ -128,7 +128,7 @@ public class RecentHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.recent_category)};
+                    getString(R.string.stock_recent_category)};
         return titleString;
     }
 }

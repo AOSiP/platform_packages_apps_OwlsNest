@@ -484,6 +484,16 @@
     <string name="recent_title">Recents screen</string>
     <string name="recent_summary">Configure your clear all button and misc recent options</string>
     <string name="recent_category">Recent apps</string>
+    <string name="stock_recent_category">Stock Recents</string>
+
+    <!-- Immersive Recents -->
+    <string name="immersive_recents_title">Immersive Recents</string>
+    <string name="immersive_recents_summary">Change the view of the recents screen</string>
+    <string name="immersive_recents_dialog_title">Select recents view</string>
+    <string name="immersive_recents_default">Default</string>
+    <string name="immersive_recents_fullscreen">Fullscreen</string>
+    <string name="immersive_recents_statusbar">Statusbar only</string>
+    <string name="immersive_recents_navbar">Navbar only</string>
 
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesture</string>
