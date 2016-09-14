@@ -70,8 +70,9 @@
 
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
-    <string name="lockscreen_summary">Options for weather</string>
+    <string name="lockscreen_summary">Customize lockscreen layout</string>
     <string name="weather_category">Lockscreen weather</string>
+    <string name="options_category">Various Options</string>
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced UI</string>
