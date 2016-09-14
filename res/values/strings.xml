@@ -123,6 +123,13 @@
     <string name="use_old_mobiletype_title">Use old mobile signal</string>
     <string name="use_old_mobiletype_summary">Use the mobile icons from oreo and before\nSystemUI will restart</string>
 
+    <!-- Network traffic Settings -->
+    <string name="traffic_category">Network Traffic</string>
+    <string name="network_traffic_state_title">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
 
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>

@@ -90,6 +90,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
             frags[1] = new CarrierCategory();
             frags[2] = new ClockDateSettings();
             frags[3] = new IconsCategory();
+            frags[4] = new TrafficCategory();
         }
 
         @Override
@@ -114,7 +115,8 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
                     getString(R.string.battery_category),
                     getString(R.string.carrier_category),
                     getString(R.string.clock_category),
-                    getString(R.string.icon_category)};
+                    getString(R.string.icon_category),
+                    getString(R.string.traffic_category)};
         return titleString;
     }
 }
