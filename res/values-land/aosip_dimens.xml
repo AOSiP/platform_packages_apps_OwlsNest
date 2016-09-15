@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2013 The CyanogenMod Project
+     Copyright (C) 2016 AOSiP
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-    <dimen name="phone_height">210dp</dimen>
-    <dimen name="phone_width">420dp</dimen>
+
 </resources>
 

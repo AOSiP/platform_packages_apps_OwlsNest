@@ -1,4 +1,4 @@
-package com.illusion.box;
+package com.aosip.owlsnest;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,21 +37,11 @@ import android.widget.Switch;
 import android.widget.TextView;
 import com.android.settings.*;
 
-import com.android.settings.slim.dslv.ActionListViewSettings;
-import com.android.settings.slim.dslv.DragSortListView;
-import com.android.settings.slim.dslv.DragSortController;
-import com.android.settings.slim.util.ShortcutPickerHelper;
-
-import com.illusion.box.fragments.*;
-import com.illusion.box.fragments.bar.*;
-import com.illusion.box.fragments.button.*;
-import com.illusion.box.fragments.lock.*;
-import com.illusion.box.fragments.navigation.*;
-import com.illusion.box.fragments.animation.*;
+import com.aosip.owlsnest.fragments.*;
 
 public class SettingsActivity extends PreferenceActivity {
 
-    private static final String TAG = "illusion_Settings";
+    private static final String TAG = "OwlsNest";
 
     private static String KEY_USE_ENGLISH_LOCALE = "use_english_locale";
 
@@ -86,8 +76,8 @@ public class SettingsActivity extends PreferenceActivity {
             setTitle(R.string.app_name);
         }
 
-        if ("com.illusion.box.START_NEW_FRAGMENT".equals(getIntent().getAction())) {
-            String className = getIntent().getStringExtra("illusion_fragment_name").toString();
+        if ("com.aosip.owlsnest.START_NEW_FRAGMENT".equals(getIntent().getAction())) {
+            String className = getIntent().getStringExtra("owlsnest_fragment_name").toString();
             Class<?> cls = null;
             try {
                 cls = Class.forName(className);
@@ -201,29 +191,7 @@ public class SettingsActivity extends PreferenceActivity {
     }
 
     private static final String[] ENTRY_FRAGMENTS = {
-        StatusBarHolderSettings.class.getName(),
-        ButtonHolderSettings.class.getName(),
-        LockscreenHolderSettings.class.getName(),
-        NavigationHolderSettings.class.getName(),
-        NavBarButtonStyle.class.getName(),
-        NavbarSettings.class.getName(),
-        NavbarStyleDimenSettings.class.getName(),
-        ActionListViewSettings.class.getName(),
-        AnimationHolderSettings.class.getName(),
-        DisplayAnimationsSettings.class.getName(),
-        AnimBarPreference.class.getName(),
-        AnimationControls.class.getName(),
-        StatusBarExpandedHeaderSettings.class.getName(),
-        StatusBarBatteryStatusSettings.class.getName(),
-        StatusBarSignalWifiSettings.class.getName(),
-        StatusBarNotifSystemIconsSettings.class.getName(),
-        LockScreenColorSettings.class.getName(),
-        LockScreenWeatherSettings.class.getName(),
-        LockscreenShortcuts.class.getName(),
-        DragSortListView.class.getName(),
-        DragSortController.class.getName(),
-        ShortcutPickerHelper.class.getName(),
-        LockscreenShortcutFragment.class.getName(),
+
     };
 
     @Override
@@ -367,7 +335,6 @@ public class SettingsActivity extends PreferenceActivity {
             ImageView icon;
             TextView title;
             TextView summary;
-            Switch switch_;
         }
 
         private LayoutInflater mInflater;
