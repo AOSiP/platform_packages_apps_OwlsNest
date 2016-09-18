@@ -76,7 +76,6 @@
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced UI</string>
     <string name="advanced_summary">Heavy custom features</string>
-    <string name="gestureanywhere_category">Gesture anywhere</string>
-    <string name="sidebar_category">App sidebar</string>
+    <string name="system_category">System Settings</string>
 
 </resources>

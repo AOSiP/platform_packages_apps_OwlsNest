@@ -21,17 +21,17 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.preference.Preference;
-import android.preference.PreferenceScreen;
-import android.preference.PreferenceCategory;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SwitchPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class GestureanywhereCategory extends SettingsPreferenceFragment implements
+public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
@@ -43,7 +43,7 @@ public class GestureanywhereCategory extends SettingsPreferenceFragment implemen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.aosip_gestureanywhere);
+        addPreferencesFromResource(R.xml.aosip_system);
 
     }
 
