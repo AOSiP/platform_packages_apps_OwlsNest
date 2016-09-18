@@ -70,6 +70,13 @@
        android:icon="@drawable/ic_owlsnest_lockscreen" />
 
     <PreferenceScreen
+       android:key="gesture"
+       android:fragment="com.aosip.owlsnest.gesture.GestureHolder"
+       android:title="@string/gesture_category" 
+       android:summary="@string/gesture_summary"
+       android:icon="@drawable/ic_owlsnest_gesture" />
+
+    <PreferenceScreen
        android:key="advanced"
        android:fragment="com.aosip.owlsnest.advanced.AdvancedHolder"
        android:title="@string/advanced_title" 

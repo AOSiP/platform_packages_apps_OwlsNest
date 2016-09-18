@@ -85,6 +85,10 @@
     <string name="recent_summary">Configure your clear all button and misc recent options</string>
     <string name="recent_category">Recent apps</string>
 
+    <!--Owlsnest Gestures-->
+    <string name="gesture_category">Gesture</string>
+    <string name="gesture_summary">Gesture based options/actions</string>
+
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Customize lockscreen layout</string>
