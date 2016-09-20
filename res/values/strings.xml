@@ -177,6 +177,10 @@
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
 
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Music visualizer</string>
+    <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>

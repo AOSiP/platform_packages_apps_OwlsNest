@@ -29,4 +29,10 @@
             android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
     </Preference>
 
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:summary="@string/lockscreen_visualizer_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
