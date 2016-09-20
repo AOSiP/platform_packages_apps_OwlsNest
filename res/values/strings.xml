@@ -268,6 +268,10 @@
     <string name="lockscreen_power_menu_disabled_title">Disable power menu on lock screen</string>
     <string name="lockscreen_power_menu_disabled_summary">This will only disable the power menu on secure lock screens</string>
 
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Music visualizer</string>
+    <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
