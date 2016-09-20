@@ -552,4 +552,8 @@
     <string name="systemui_theme_style_light">Light style</string>
     <string name="systemui_theme_style_dark">Dark style</string>
 
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Music visualizer</string>
+    <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
+
 </resources>
