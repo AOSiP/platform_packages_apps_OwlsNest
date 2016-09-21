@@ -42,7 +42,7 @@ import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import com.android.internal.util.du.DuUtils;
+import com.android.internal.util.aosip.aosipUtils;
 
 import java.util.List;
 import java.util.ArrayList;
