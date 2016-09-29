@@ -35,6 +35,13 @@
        android:icon="@drawable/ic_owlsnest_qs" />
 
     <PreferenceScreen
+       android:key="notification"
+       android:fragment="com.aosip.owlsnest.notification.NotificationHolder"
+       android:title="@string/notification_title" 
+       android:summary="@string/notification_summary"
+       android:icon="@drawable/ic_owlsnest_notif"/>
+
+    <PreferenceScreen
        android:key="navigation"
        android:fragment="com.aosip.owlsnest.navigation.NavigationHolder"
        android:title="@string/navigation_title" 

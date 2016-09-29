@@ -58,6 +58,11 @@
     <string name="icon_category">Icons</string>
     <string name="extra_category">Extras</string>
 
+    <!--Owlsnest Notification-->
+    <string name="notification_title">Notification options</string>
+    <string name="notification_summary">Change notif settings such as leds</string>
+    <string name="notification_category">Notifications</string>
+
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
