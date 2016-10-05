@@ -154,4 +154,12 @@
     <string name="navbar_gestures_title">Navigation gesture options</string>
     <string name="navbar_gestures_summary">Choose buttons or gestures to navigate your device</string>
 
+    <!-- Battery customizations -->
+    <string name="battery_style_title">Battery Style</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_percent_title">Show percent</string>
+    <string name="battery_percent_summary">Always show the battery percent with the icon</string>
+
 </resources>
