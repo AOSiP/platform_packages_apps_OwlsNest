@@ -79,6 +79,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private SystemSettingSwitchPreference mEnabledPref;
     private SystemSettingSwitchPreference mScreenOnLightsPref;
     private SystemSettingSwitchPreference mCustomEnabledPref;
+    private SystemSettingSwitchPreference mAutoGenerateColors;
     private NotificationLightPreference mDefaultPref;
     private Menu mMenu;
     private AppSelectListPreference mPackageAdapter;
@@ -121,6 +122,9 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(Settings.System.NOTIFICATION_LIGHT_SCREEN_ON);
         mScreenOnLightsPref.setOnPreferenceChangeListener(this);
 
+        mAutoGenerateColors = (SystemSettingSwitchPreference)
+                findPreference(Settings.System.NOTIFICATION_LIGHT_COLOR_AUTO);
+
         // Advanced light settings
         mCustomEnabledPref = (SystemSettingSwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
@@ -136,6 +140,14 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mPackages = new HashMap<String, Package>();
         setHasOptionsMenu(true);
 
+        mMultiColorLed = resources.getBoolean(com.android.internal.R.bool.config_multiColorNotificationLed);
+        if (!mMultiColorLed) {
+            resetColors();
+            PreferenceGroup mGeneralPrefs = (PreferenceGroup) prefSet.findPreference("general_section");
+            mGeneralPrefs.removePreference(mAutoGenerateColors);
+        } else {
+            mAutoGenerateColors.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -185,7 +197,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                     pref.setPersistent(false);
                     pref.setOnPreferenceChangeListener(this);
                     pref.setOnLongClickListener(this);
-
                     mApplicationPrefList.addPreference(pref);
                 } catch (NameNotFoundException e) {
                     // Do nothing
@@ -207,7 +218,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     }
 
     private int getInitialColorForPackage(String packageName) {
-        boolean autoColor = true;
+        boolean autoColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.NOTIFICATION_LIGHT_COLOR_AUTO, mMultiColorLed ? 1 : 0) == 1;;
         int color = mDefaultColor;
         if (autoColor) {
             try {
@@ -343,7 +355,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mEnabledPref || preference == mCustomEnabledPref ||
-            preference == mScreenOnLightsPref) {
+            preference == mScreenOnLightsPref ||
+            preference == mAutoGenerateColors) {
             getActivity().invalidateOptionsMenu();
         } else {
             NotificationLightPreference lightPref = (NotificationLightPreference) preference;
