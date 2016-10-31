@@ -139,7 +139,5 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
                     getString(R.string.icon_category),
                     getString(R.string.extra_category)};
         return titleString;
+        }
     }
-}
-
-
