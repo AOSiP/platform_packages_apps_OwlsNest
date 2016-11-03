@@ -40,8 +40,10 @@ public class HeadsUp extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
+    private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
 
     private ListPreference mHeadsUpSnoozeTime;
+    private ListPreference mHeadsUpTimeOut;
 
     @Override
     public int getMetricsCategory() {
@@ -71,6 +73,15 @@ public class HeadsUp extends SettingsPreferenceFragment implements
         mHeadsUpSnoozeTime.setValue(String.valueOf(headsUpSnooze));
         updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
 
+        int defaultTimeOut = systemUiResources.getInteger(systemUiResources.getIdentifier(
+                    "com.android.systemui:integer/heads_up_notification_decay", null, null));
+        mHeadsUpTimeOut = (ListPreference) findPreference(PREF_HEADS_UP_TIME_OUT);
+        mHeadsUpTimeOut.setOnPreferenceChangeListener(this);
+        int headsUpTimeOut = Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_TIMEOUT, defaultTimeOut);
+        mHeadsUpTimeOut.setValue(String.valueOf(headsUpTimeOut));
+        updateHeadsUpTimeOutSummary(headsUpTimeOut);
+
       }
 
     @Override
@@ -86,6 +97,12 @@ public class HeadsUp extends SettingsPreferenceFragment implements
                     headsUpSnooze);
             updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
             return true;
+        } else if (preference == mHeadsUpTimeOut) {
+            int headsUpTimeOut = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HEADS_UP_TIMEOUT, headsUpTimeOut);
+            updateHeadsUpTimeOutSummary(headsUpTimeOut);
+            return true;
         }
        return false;
     }
@@ -99,6 +116,12 @@ public class HeadsUp extends SettingsPreferenceFragment implements
             String summary = getResources().getString(R.string.heads_up_snooze_summary, value / 60 / 1000);
             mHeadsUpSnoozeTime.setSummary(summary);
         }
+    }
+
+    private void updateHeadsUpTimeOutSummary(int value) {
+        String summary = getResources().getString(R.string.heads_up_time_out_summary,
+                value / 1000);
+        mHeadsUpTimeOut.setSummary(summary);
     }
 
     /**
