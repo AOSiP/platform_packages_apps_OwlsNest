@@ -21,5 +21,15 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
+         <com.aosip.owlsnest.preference.CustomSeekBarPreference
+             android:key="screenshot_delay"
+             android:title="@string/screenshot_delay_title"
+             android:summary="@string/screenshot_delay_summary"
+             settings:max="10000"
+             settings:min="100"
+             settings:interval="100"
+             settings:units="ms"
+             android:persistent="false" />
+
 </PreferenceScreen>
 

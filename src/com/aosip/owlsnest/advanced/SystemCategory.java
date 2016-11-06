@@ -18,6 +18,7 @@ package com.aosip.owlsnest.advanced;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -34,6 +35,10 @@ import com.android.settings.SettingsPreferenceFragment;
 public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String SCREENSHOT_DELAY = "screenshot_delay";
+
+    private CustomSeekBarPreference mScreenshotDelay;
+
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -45,6 +50,12 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.aosip_system);
 
+        mScreenshotDelay = (CustomSeekBarPreference) findPreference(SCREENSHOT_DELAY);
+        int screenshotDelay = Settings.System.getInt(resolver,
+                Settings.System.SCREENSHOT_DELAY, 1000);
+        mScreenshotDelay.setValue(screenshotDelay / 1);
+        mScreenshotDelay.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -53,6 +64,12 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mScreenshotDelay) {
+            int screenshotDelay = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SCREENSHOT_DELAY, screenshotDelay * 1);
+            return true;
+        }
         return false;
     }
 }
