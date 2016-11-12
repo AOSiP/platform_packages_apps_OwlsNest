@@ -481,4 +481,8 @@
     <string name="screenshot_delay_title">Screenshot delay</string>
     <string name="screenshot_delay_summary">Adjust the time for when a screenshot is captured</string>
 
+    <!-- Screen record chord behavior -->
+    <string name="screen_record_chord_title">Power + volume up behavior</string>
+    <string name="screen_record_chord_screenrecord">Start screen recording</string>
+    <string name="screen_record_chord_selscreenshot">Take screenshot of selectable area</string>
 </resources>
