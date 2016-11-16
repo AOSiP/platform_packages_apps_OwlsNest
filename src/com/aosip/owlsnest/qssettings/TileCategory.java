@@ -42,6 +42,8 @@ import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
 
+import com.aosip.owlsnest.preference.CustomSeekBarPreference;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -53,10 +55,12 @@ public class TileCategory extends SettingsPreferenceFragment implements
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
+    private static final String PREF_COLUMNS = "qs_layout_columns";
 
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
     private ListPreference mTileAnimationInterpolator;
+    private CustomSeekBarPreference mQsColumns;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -94,6 +98,12 @@ public class TileCategory extends SettingsPreferenceFragment implements
         mTileAnimationInterpolator.setValue(String.valueOf(tileAnimationInterpolator));
         updateTileAnimationInterpolatorSummary(tileAnimationInterpolator);
         mTileAnimationInterpolator.setOnPreferenceChangeListener(this);
+
+        mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
+        int columnsQs = Settings.System.getInt(resolver,
+                Settings.System.QS_LAYOUT_COLUMNS, 3);
+        mQsColumns.setValue(columnsQs / 1);
+        mQsColumns.setOnPreferenceChangeListener(this);
     }
 
 
@@ -118,6 +128,7 @@ public class TileCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         final String key = preference.getKey();
         if (preference == mTileAnimationStyle) {
             int tileAnimationStyle = Integer.valueOf((String) newValue);
@@ -138,8 +149,12 @@ public class TileCategory extends SettingsPreferenceFragment implements
                     tileAnimationInterpolator, UserHandle.USER_CURRENT);
             updateTileAnimationInterpolatorSummary(tileAnimationInterpolator);
             return true;
+        } else if (preference == mQsColumns) {
+            int qsColumns = (Integer) newValue;
+            Settings.System.putInt(resolver, Settings.System.QS_LAYOUT_COLUMNS, qsColumns * 1);
+            return true;
         }
-        return false;
+      return false;
     }
 
     private void updateTileAnimationStyleSummary(int tileAnimationStyle) {

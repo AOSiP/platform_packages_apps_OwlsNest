@@ -206,6 +206,10 @@
     <string name="qs_easy_toggle_title">Advanced Quick Setting easy toggle</string>
     <string name="qs_easy_toggle_summary">one tap action to toggle bluetooth, data, or wifi</string>
 
+    <!-- Quick settings tiles columns and rows config -->
+    <string name="qs_layout_category">QS tiles layout</string>
+    <string name="qs_columns_title">Columns</string>
+
     <!-- Tiles animation style  -->
     <string name="quicksettings_tiles_category">Tile animation options</string>
     <string name="qs_tile_animation_style_title">Tiles animation style</string>
