@@ -21,6 +21,10 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
+       <Preference
+            android:key="aosip_settings_summary"
+            android:title="@string/owlsnest_settings_summary_title" />
+
         <ListPreference
              android:key="screenrecord_chord_type"
              android:title="@string/screen_record_chord_title"

@@ -3,10 +3,12 @@ package com.aosip.owlsnest;
 import android.app.Activity;
 import android.os.Bundle;
 import android.content.Context;
+import android.provider.Settings;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.text.TextUtils;
 
 import com.android.settings.dashboard.SummaryLoader;
 
@@ -49,8 +51,14 @@ public class OwlsNestSettings extends SettingsPreferenceFragment implements
 
         @Override
         public void setListening(boolean listening) {
-            if (listening) {
-                mSummaryLoader.setSummary(this, mContext.getString(R.string.owlsnest_summary_title));
+           String mCustomSummary = Settings.System.getString(
+                    mContext.getContentResolver(), Settings.System.AOSIP_SETTINGS_SUMMARY);
+            if (listening) {		            
+                if (TextUtils.isEmpty(mCustomSummary)) {
+                    mSummaryLoader.setSummary(this, mContext.getString(R.string.owlsnest_summary_title));
+                } else {
+                    mSummaryLoader.setSummary(this, mCustomSummary);
+                }
             }
         }
     }
