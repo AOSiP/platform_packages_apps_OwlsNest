@@ -17,14 +17,14 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:layout="@layout/tab_ui"
     android:title="@string/heads_up_notifications" >
 
- <com.aosip.owlsnest.preference.GlobalSettingSwitchPreference
-    android:key="heads_up_notifications_enabled"
-    android:title="@string/heads_up_notifications"
-    android:summaryOn="@string/summary_heads_up_enabled"
-    android:summaryOff="@string/summary_heads_up_disabled" />
-
+    <com.aosip.owlsnest.preference.GlobalSettingSwitchPreference
+        android:key="heads_up_notifications_enabled"
+        android:title="@string/heads_up_notifications"
+        android:summaryOn="@string/summary_heads_up_enabled"
+        android:summaryOff="@string/summary_heads_up_disabled" />
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="always_headsup_dialer"

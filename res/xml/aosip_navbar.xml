@@ -15,8 +15,10 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:layout="@layout/tab_ui" >
 
     <SwitchPreference
         android:key="navbar_visibility"
@@ -43,7 +45,7 @@
             android:fragment="com.aosip.owlsnest.navigation.FlingSettings" />
 
     </PreferenceCategory>
-    
+
     <PreferenceCategory
         android:key="category_navbar_general"
         android:title="@string/navbar_general_title" >

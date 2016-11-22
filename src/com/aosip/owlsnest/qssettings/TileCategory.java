@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Androis Open Source Illusion Project
+ * Copyright (C) 2017 Androis Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@
 package com.aosip.owlsnest.qssettings;
 
 import android.content.ContentResolver;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;

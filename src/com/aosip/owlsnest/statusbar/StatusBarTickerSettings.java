@@ -21,7 +21,6 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 
@@ -65,16 +64,16 @@ public class StatusBarTickerSettings extends SettingsPreferenceFragment implemen
             mTextColor = (ColorPickerPreference) prefSet.findPreference(PREF_TEXT_COLOR);
             mTextColor.setOnPreferenceChangeListener(this);
             int textColor = Settings.System.getInt(resolver,
-                    Settings.System.STATUS_BAR_TICKER_TEXT_COLOR, 0xff000000);
-            String textHexColor = String.format("#%08x", (0xff000000 & textColor));
+                    Settings.System.STATUS_BAR_TICKER_TEXT_COLOR, 0xffffffff);
+            String textHexColor = String.format("#%08x", (0xffffffff & textColor));
             mTextColor.setSummary(textHexColor);
             mTextColor.setNewPreviewColor(textColor);
 
             mIconColor = (ColorPickerPreference) prefSet.findPreference(PREF_ICON_COLOR);
             mIconColor.setOnPreferenceChangeListener(this);
             int iconColor = Settings.System.getInt(resolver,
-                    Settings.System.STATUS_BAR_TICKER_ICON_COLOR, 0xff000000);
-            String iconHexColor = String.format("#%08x", (0xff000000 & iconColor));
+                    Settings.System.STATUS_BAR_TICKER_ICON_COLOR, 0xffffffff);
+            String iconHexColor = String.format("#%08x", (0xffffffff & iconColor));
             mIconColor.setSummary(iconHexColor);
             mIconColor.setNewPreviewColor(iconColor);
 
@@ -123,18 +122,18 @@ public class StatusBarTickerSettings extends SettingsPreferenceFragment implemen
                 String hexColor;
 
                 Settings.System.putInt(resolver,
-                        Settings.System.STATUS_BAR_TICKER_TEXT_COLOR, 0xff000000);
+                        Settings.System.STATUS_BAR_TICKER_TEXT_COLOR, 0xffffffff);
                 intColor = Settings.System.getInt(resolver,
-                        Settings.System.STATUS_BAR_TICKER_TEXT_COLOR, 0xff000000);
-                hexColor = String.format("#%08x", (0xff000000 & intColor));
+                        Settings.System.STATUS_BAR_TICKER_TEXT_COLOR, 0xffffffff);
+                hexColor = String.format("#%08x", (0xffffffff & intColor));
                 mTextColor.setSummary(hexColor);
                 mTextColor.setNewPreviewColor(intColor);
 
                 Settings.System.putInt(resolver,
-                        Settings.System.STATUS_BAR_TICKER_ICON_COLOR, 0xff000000);
+                        Settings.System.STATUS_BAR_TICKER_ICON_COLOR, 0xffffffff);
                 intColor = Settings.System.getInt(resolver,
-                        Settings.System.STATUS_BAR_TICKER_ICON_COLOR, 0xff000000);
-                hexColor = String.format("#%08x", (0xff000000 & intColor));
+                        Settings.System.STATUS_BAR_TICKER_ICON_COLOR, 0xffffffff);
+                hexColor = String.format("#%08x", (0xffffffff & intColor));
                 mIconColor.setSummary(hexColor);
                 mIconColor.setNewPreviewColor(intColor);
             }

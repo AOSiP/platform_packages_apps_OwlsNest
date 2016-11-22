@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Androis Open Source Illusion Project
+ * Copyright (C) 2017 Androis Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,6 @@ import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 

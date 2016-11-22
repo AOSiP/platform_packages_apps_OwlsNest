@@ -19,7 +19,7 @@
     <string name="app_name">OwlsNest</string>
     <string name="header_category">OwlsNest</string>
     <string name="title">OwlsNest</string>
-    <string name="owlsnest_summary_title">Home Of the Kronic</string>
+    <string name="owlsnest_summary_title">Home of the Kronic</string>
     <!-- Activity titles defined in AndroidManifest.xml -->
     <string name="title_clipboard_share">Copy to Clipboard</string>
     <!-- Share to clipboard -->
@@ -51,19 +51,17 @@
     <string name="add">Add</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
-    <string name="choose_app">Choose app</string>
     <string name="text_title">Text</string>
     <string name="icon_title">Icon</string>
     <string name="color_title">Color</string>
     <string name="colors_title">Colors</string>
 
     <!--Owlsnest statusbar-->
-    <string name="statusbar_bar_title">Statusbar options</string>
-    <string name="statusbar_bar_summary">Adjust items like battery,clock,icons,and colors</string>
+    <string name="statusbar_bar_title">Statusbar</string>
+    <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
     <string name="clock_category">Clock</string>
     <string name="battery_category">Battery</string>
     <string name="icon_category">Icons</string>
-    <string name="extra_category">Extras</string>
     <string name="traffic_category">Network Traffic</string>
 
     <!-- Status Bar Ticker -->
@@ -84,9 +82,6 @@
     <string name="status_bar_icon_blacklist_title">Status bar icons</string>
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
 
-    <!-- Clock settings -->
-    <string name="clock_settings_title">Clock settings</string>
-    <string name="clock_settings_summary">Custom clock and date options</string>
     <!-- clock date options -->
     <string name="clock_title_enable">Alignment</string>
     <string name="status_bar_show_clock_title">Show clock and date</string>
@@ -192,9 +187,8 @@
     <string name="logo5">RR Owl</string>
 
     <!--Owlsnest Notification-->
-    <string name="notification_title">Notification options</string>
-    <string name="notification_summary">Change notif settings such as leds</string>
-    <string name="notification_category">Notifications</string>
+    <string name="notification_title">Notification</string>
+    <string name="notification_summary">Adjust LEDs and notification behavior</string>
 
     <!-- Heads up -->
     <string name="heads_up_notifications">Heads up</string>
@@ -244,7 +238,7 @@
     <string name="pulse_speed_slow">Slow</string>
     <string name="pulse_speed_very_slow">Very slow</string>
     <!-- Lights settings screen, notification light settings -->
-    <string name="notification_light_title">Notification LED</string>
+    <string name="notification_light_title">Enable Notification LED</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Apps</string>
     <string name="notification_light_phonelist_title">Phone</string>
@@ -258,7 +252,7 @@
     <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
     <string name="keywords_lights_brightness_level">dim leds brightness</string>
     <string name="notification_light_automagic">AutoColor</string>
-    <string name="notification_light_automagic_summary">Automatically set a proper color for the led notification if the app has no custom values</string>
+    <string name="notification_light_automagic_summary">Automatically set a proper color for the LED notification if the app has no custom values</string>
     <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
@@ -270,15 +264,15 @@
     <string name="color_picker_dialog_title">Color</string>
 
     <!--Owlsnest Quick settings-->
-    <string name="quicksettings_title">Quick settings</string>
-    <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
-    <string name="expanded_category">Statusbar expanded</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="quicksettings_summary">Manage your qs tiles and expanded statusbar</string>
+    <string name="expanded_category">Expanded</string>
     <string name="tile_category">Tiles</string>
     <string name="qs_omnijaws_category">Weather QS tile</string>
 
     <!-- QS Brightness icon visibility -->
     <string name="brightness_icon_title">Brightness icon </string>
-    <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+    <string name="brightness_icon_summary">Show a brightness icon to the side of the brighness slider to adjust auto-brightness</string>
 
     <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">QS tile titles</string>
@@ -357,8 +351,8 @@
     <string name="qs_set_animation_interpolator">%1$s</string>
 
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Navigation bar options</string>
-    <string name="navigation_summary">Customize Navbar size,buttons,layout,and colors</string>
+    <string name="navigation_title">Navigation</string>
+    <string name="navigation_summary">Customize navigation bar style and behavior</string>
     <string name="navigationbuttons_category">Layouts</string>
     <string name="navigation_dimen_category">Navbar size</string>
     <string name="navigation_category">Navigation</string>
@@ -388,39 +382,6 @@
     <string name="smartbar_doubletap_sleep_summary">Double tap on navbar empty areas to switch off the screen</string>
     <string name="one_handed_mode_title">One handed mode</string>
     <string name="one_handed_mode_summary">Allows swiping on the navigation bar to enable one handed mode</string>
-
-    <!-- Hardware button navigation -->
-    <string name="hardware_keys_title">Navigation</string>
-    <string name="hardware_keys_volume_keys_title">Volume rocker</string>
-    <string name="hardware_keys_home_key_title">Home button</string>
-    <string name="hardware_keys_menu_key_title">Menu button</string>
-    <string name="hardware_keys_assist_key_title">Search button</string>
-    <string name="hardware_keys_appswitch_key_title">Overview button</string>
-    <string name="hardware_keys_back_key_title">Back button</string>
-    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
-    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
-    <string name="hardware_keys_long_press_summary">Set long press action</string>
-    <string name="hardware_keys_single_tap_title">Single tap action</string>
-    <string name="hardware_keys_long_press_title">Long press action</string>
-    <string name="hardware_keys_double_tap_title">Double tap action</string>
-    <string name="hardware_keys_category">Navigation buttons</string>
-    <string name="hardware_keys_disable_title">Disable navigation buttons</string>
-
-    <!-- Buttons backlight timeout -->
-    <string name="backlight_timeout_title">Buttons backlight timeout</string>
-    <string name="backlight_timeout_on">Enabled always</string>
-    <string name="backlight_timeout_1s">1 sec</string>
-    <string name="backlight_timeout_2s">2 sec</string>
-    <string name="backlight_timeout_default">3 sec (default)</string>
-    <string name="backlight_timeout_4s">4 sec</string>
-    <string name="backlight_timeout_5s">5 sec</string>
-    <string name="backlight_timeout_10s">10 sec</string>
-    <string name="backlight_timeout_15s">15 sec</string>
-    <string name="backlight_timeout_20s">20 sec</string>
-    <string name="backlight_timeout_30s">30 sec</string>
-
-    <!-- Enable keys backlight-->
-    <string name="button_brightness_title">Backlight</string>
 
     <!-- Actions dialog and default task values set in ActionPreference xml-->
     <string name="choose_action_title">Choose action</string>
@@ -565,7 +526,7 @@
     <string name="navbar_buttons_alpha_title">Button transparency</string>
 
     <!--Owlsnest buttons-->
-    <string name="buttons_title">Hardware buttons</string>
+    <string name="buttons_title">Hardware Buttons</string>
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
     <string name="powermenu_category">Power</string>
     <string name="volume_category">Volume</string>
@@ -607,10 +568,42 @@
     <string name="power_menu_screenrecord_title">Screenrecord</string>
     <string name="power_menu_torch">Flashlight</string>
 
+    <!-- Hardware button navigation -->
+    <string name="hardware_keys_title">Navigation</string>
+    <string name="hardware_keys_volume_keys_title">Volume rocker</string>
+    <string name="hardware_keys_home_key_title">Home button</string>
+    <string name="hardware_keys_menu_key_title">Menu button</string>
+    <string name="hardware_keys_assist_key_title">Search button</string>
+    <string name="hardware_keys_appswitch_key_title">Overview button</string>
+    <string name="hardware_keys_back_key_title">Back button</string>
+    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
+    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
+    <string name="hardware_keys_long_press_summary">Set long press action</string>
+    <string name="hardware_keys_single_tap_title">Single tap action</string>
+    <string name="hardware_keys_long_press_title">Long press action</string>
+    <string name="hardware_keys_double_tap_title">Double tap action</string>
+    <string name="hardware_keys_category">Navigation buttons</string>
+    <string name="hardware_keys_disable_title">Disable navigation buttons</string>
+
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">Buttons backlight timeout</string>
+    <string name="backlight_timeout_on">Enabled always</string>
+    <string name="backlight_timeout_1s">1 sec</string>
+    <string name="backlight_timeout_2s">2 sec</string>
+    <string name="backlight_timeout_default">3 sec (default)</string>
+    <string name="backlight_timeout_4s">4 sec</string>
+    <string name="backlight_timeout_5s">5 sec</string>
+    <string name="backlight_timeout_10s">10 sec</string>
+    <string name="backlight_timeout_15s">15 sec</string>
+    <string name="backlight_timeout_20s">20 sec</string>
+    <string name="backlight_timeout_30s">30 sec</string>
+
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_title">Backlight</string>
+
     <!--Owlsnest recentscreen-->
-    <string name="recent_title">Recents screen</string>
-    <string name="recent_summary">Configure your clear all button and misc recent options</string>
-    <string name="recent_category">Recent apps</string>
+    <string name="recent_title">Recents</string>
+    <string name="recent_summary">Configure which recents style and options</string>
     <string name="stock_recent_category">Stock Recents</string>
 
     <!-- Immersive Recents -->
@@ -634,14 +627,6 @@
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
-
-    <!-- Slim Recent panel -->
-    <string name="slim_recents_title">Slim recents</string>
-    <string name="use_slim_recents_title">Use for a recents alterative</string>
-    <string name="use_slim_recents_summary">Use slim recents instead of the default recents view</string>
-    <string name="slim_recents_settings_title">Slim recents settings</string>
-    <string name="slim_recents_settings_summary">View the settings for slim recents</string>
-    <string name="recent_panel_category">Slim recent apps panel</string>
 
     <!-- Slim Recents panel -->
     <string name="slim_recents_title">Slim Recents</string>
@@ -677,15 +662,15 @@
 
     <!-- Recents Membar -->
     <string name="systemui_recents_mem_display_title">Show memory bar</string>
-    <string name="systemui_recents_mem_display_summary">Enable disable ram bar in recent app view</string>
+    <string name="systemui_recents_mem_display_summary">Enable/Disable RAM bar in Recents app view</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hidden apps</string>
     <string name="hide_from_recents_add_app">Add App</string>
-    <string name="hide_apps_from_recents_summary">Pick which apps to exclude from the recents panel</string>
+    <string name="hide_apps_from_recents_summary">Pick which apps to exclude from all recent panels</string>
 
     <!--Owlsnest Gestures-->
-    <string name="gesture_category">Gesture</string>
+    <string name="gesture_category">Gestures</string>
     <string name="gesture_summary">Gesture based options/actions</string>
 
     <!-- Status bar brightness control -->
@@ -695,10 +680,10 @@
 
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
-    <string name="lockscreen_summary">Customize lockscreen layout</string>
-    <string name="weather_category">Lockscreen weather</string>
-    <string name="options_category">Various Options</string>
-    <string name="lockscreen_secure_options_title">Secure Lockscreen options</string>
+    <string name="lockscreen_summary">Customize lockscreen layout and options</string>
+    <string name="weather_category">Weather</string>
+    <string name="options_category">Various</string>
+    <string name="lockscreen_secure_options_title">Secure lockscreen options</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
@@ -713,8 +698,8 @@
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
 
     <!--Owlsnest advanced-->
-    <string name="advanced_title">Advanced UI</string>
-    <string name="advanced_summary">Heavy custom features</string>
+    <string name="advanced_title">Advanced Settings</string>
+    <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
 
     <!-- Three finger swipe screenshot -->
@@ -741,7 +726,7 @@
     <string name="screen_record_chord_selscreenshot">Take screenshot of selectable area</string>
 
     <!-- AOSIP summary text -->
-    <string name="owlsnest_settings_summary_title">Custom AOSiP summary text in Settings application</string> 
+    <string name="owlsnest_settings_summary_title">Custom AOSiP summary text</string>
     <string name="custom_summary_title">Custom AOSiP summary</string>
     <string name="custom_summary_explain">Please enter a new summary. Leave blank to revert to stock text.</string>
 

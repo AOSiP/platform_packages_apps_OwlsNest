@@ -18,9 +18,6 @@
 
 package com.aosip.owlsnest.buttons;
 
-import android.content.ContentResolver;
-import android.content.res.Resources;
-import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.Handler;

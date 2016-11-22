@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2016 Android Open Source Illusion Project
+<!--  Copyright (C) 2017 Android Open Source Illusion Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -66,24 +66,6 @@
         android:entryValues="@array/qs_tile_animation_interpolator_values"
         android:persistent="false" />
 
-    <PreferenceCategory
-        android:key="weather_category"
-        android:title="@string/qs_omnijaws_category">
-
-        <PreferenceScreen
-            android:title="@string/weather_config_title"
-            android:summary="@string/weather_config_summary" >
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="org.omnirom.omnijaws"
-                    android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
-        </PreferenceScreen>
-
-        <ListPreference
-            android:key="weather_icon_pack"
-            android:title="@string/weather_icon_pack_title"
-            android:persistent="false" />
-    </PreferenceCategory>
-
     <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
         android:key="qs_easy_toggle"
         android:title="@string/qs_easy_toggle_title"
@@ -103,6 +85,24 @@
         android:summary="@string/qs_music_tile_track_optional_summary"
         android:dependency="qs_tile_title_visibility"
         android:defaultValue="false"/>
+
+    <PreferenceCategory
+        android:key="weather_category"
+        android:title="@string/qs_omnijaws_category">
+
+        <PreferenceScreen
+            android:title="@string/weather_config_title"
+            android:summary="@string/weather_config_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.omnirom.omnijaws"
+                    android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
+        </PreferenceScreen>
+
+        <ListPreference
+            android:key="weather_icon_pack"
+            android:title="@string/weather_icon_pack_title"
+            android:persistent="false" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
 
