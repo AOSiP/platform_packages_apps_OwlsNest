@@ -62,6 +62,14 @@
     <string name="extra_category">Extras</string>
     <string name="traffic_category">Network Traffic</string>
 
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+
+    <!-- statusbar icon blacklist -->
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
+
     <!-- Clock settings -->
     <string name="clock_settings_title">Clock settings</string>
     <string name="clock_settings_summary">Custom clock and date options</string>
@@ -133,6 +141,10 @@
     <string name="heads_up_notifications">Heads up</string>
     <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
     <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+
+    <!-- Power notification controls -->
+    <string name="power_notification_title">Power notification controls</string>
+    <string name="power_notification_summary">Advanced notification controls and information</string>
 
     <!-- LED notifications -->
     <string name="battery_light_settings">Battery LED</string>
@@ -466,6 +478,18 @@
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
     <string name="powermenu_category">Power</string>
     <string name="volume_category">Volume</string>
+
+    <!-- Volume down enter do not disturb -->
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">allow volume down to enter do not disturb mode</string>
+
+    <!-- Volume up exit do not disturb -->
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">allow volume up to exit do not disturb mode</string>
+
+    <!-- Volume do not disturb switch -->
+    <string name="vol_zen_title">Do not disturb switch</string>
+    <string name="vol_zen_summary">Show do not disturb swith on volume panel</string>
 
     <!-- Volume button track change -->
     <string name="volbtn_music_controls_title">Music control</string>

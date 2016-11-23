@@ -21,6 +21,12 @@
     android:layout="@layout/tab_ui"
     android:title="@string/expanded_category" >
 
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="qs_show_brightness"
+        android:title="@string/qs_brightness_slider_title"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true"/>
+
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="qs_settings_icon_toggle"
         android:title="@string/qs_settings_icon_title"
