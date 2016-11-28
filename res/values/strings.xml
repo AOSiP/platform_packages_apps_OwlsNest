@@ -202,6 +202,11 @@
     <string name="expanded_category">Statusbar expanded</string>
     <string name="tile_category">Tiles</string>
 
+    <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">QS tile titles</string>
+    <string name="qs_tile_title_visibility_summary_on">QS tiles titles are now visible</string>
+    <string name="qs_tile_title_visibility_summary_off">QS tiles titles are now gone</string>
+
     <!-- QS easy toggles -->
     <string name="qs_easy_toggle_title">Advanced Quick Setting easy toggle</string>
     <string name="qs_easy_toggle_summary">one tap action to toggle bluetooth, data, or wifi</string>
