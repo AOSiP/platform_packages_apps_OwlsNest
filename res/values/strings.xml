@@ -136,7 +136,6 @@
     <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
     <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
 
-
     <!-- Custom carrier label and position -->
     <string name="carrier_label_settings_title">Carrier Label</string>
     <string name="carrier_label_settings_summary">Customize the carrier label</string>
@@ -175,6 +174,7 @@
     <string name="status_bar_battery_style_title">Battery status style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_bigcircle">Big Circle</string>
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_solid">Solid</string>
     <string name="status_bar_battery_style_text">Text</string>
