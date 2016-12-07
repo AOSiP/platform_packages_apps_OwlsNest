@@ -495,6 +495,17 @@
     <string name="immersive_recents_statusbar">Statusbar only</string>
     <string name="immersive_recents_navbar">Navbar only</string>
 
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button</string>
+    <string name="recents_clear_all_location_title">Clear all location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hidden apps</string>
     <string name="hide_from_recents_add_app">Add App</string>
