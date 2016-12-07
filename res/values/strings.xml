@@ -580,9 +580,9 @@
     <string name="options_category">Various Options</string>
     <string name="lockscreen_secure_options_title">Secure Lockscreen options</string>
 
-    <!-- Lockscreen charging current indicator  -->
-    <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
-    <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
 
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Fingerprint unlock after reboot</string>
