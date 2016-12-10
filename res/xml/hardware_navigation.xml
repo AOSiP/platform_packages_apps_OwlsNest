@@ -74,6 +74,11 @@
             android:title="@string/hardware_keys_double_tap_title" >
         </com.android.settings.smartnav.ActionPreference>
 
+        <SwitchPreference
+            android:key="home_button_wake"
+            android:title="@string/home_button_wake_title"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

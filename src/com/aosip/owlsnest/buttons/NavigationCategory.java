@@ -44,6 +44,7 @@ public class NavigationCategory extends ActionFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private static final String HOME_BUTTON_WAKE = "home_button_wake";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -64,6 +65,7 @@ public class NavigationCategory extends ActionFragment implements
     public static final int KEY_MASK_VOLUME = 0x40;
 
     private SwitchPreference mHwKeyDisable;
+    private SwitchPreference mHomeButtonWake;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -82,6 +84,10 @@ public class NavigationCategory extends ActionFragment implements
                     UserHandle.USER_CURRENT);
             mHwKeyDisable.setChecked(keysDisabled != 0);
             mHwKeyDisable.setOnPreferenceChangeListener(this);
+
+            mHomeButtonWake = (SwitchPreference) findPreference(HOME_BUTTON_WAKE);
+            mHomeButtonWake.setEnabled(keysDisabled == 0);
+            mHomeButtonWake.setOnPreferenceChangeListener(this);
         } else {
             prefScreen.removePreference(hwkeyCat);
         }
@@ -114,6 +120,19 @@ public class NavigationCategory extends ActionFragment implements
         if (!hasHomeKey) {
             prefScreen.removePreference(homeCategory);
         }
+
+        boolean showHomeWake = getResources().getBoolean(
+            com.android.internal.R.bool.config_show_homeWake);
+        if (!hasHomeKey || !showHomeWake) {
+            prefScreen.removePreference(mHomeButtonWake);
+        }
+        else {
+            mHomeButtonWake.setOnPreferenceChangeListener(this);
+            int homeButtonWake = Settings.System.getInt(getContentResolver(),
+                    HOME_BUTTON_WAKE, 1);
+            mHomeButtonWake.setChecked(homeButtonWake != 0);
+        }
+
          // App switch key (recents)
         if (!hasAppSwitchKey) {
             prefScreen.removePreference(appSwitchCategory);
@@ -142,6 +161,11 @@ public class NavigationCategory extends ActionFragment implements
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+            mHomeButtonWake.setEnabled(!value);
+        } else if (preference == mHomeButtonWake) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), HOME_BUTTON_WAKE,
+                    value ? 1 : 0);
         } else {
             return false;
         }
