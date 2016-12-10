@@ -572,4 +572,6 @@
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
     <string name="app_ops_settings_summary">Control apps permissions</string>
+    <!-- Home button wake -->
+    <string name="home_button_wake_title">Wake the device</string>
 </resources>
