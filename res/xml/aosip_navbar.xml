@@ -24,6 +24,12 @@
         android:key="navbar_visibility"
         android:title="@string/navbar_visibility" />
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="nav_bar_dynamic"
+        android:title="@string/nav_bar_dynamic_title"
+        android:summary="@string/nav_bar_dynamic_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="category_navbar_interface"
         android:title="@string/navbar_interface_title" >
