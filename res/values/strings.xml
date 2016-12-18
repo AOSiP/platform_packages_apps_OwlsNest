@@ -442,6 +442,8 @@
     <string name="navigation_category">Navigation</string>
 
     <!-- Navigation Bar -->
+    <string name="navbar_tint_switch">Navigation Button Tint</string>
+    <string name="navbar_button_color">Navigation Bar Buttons</string>
     <string name="navbar_interface_title">Interface</string>
     <string name="navbar_size">Bar size</string>
     <string name="navbar_mode">Navigation mode</string>
