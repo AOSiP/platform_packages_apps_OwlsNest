@@ -506,6 +506,10 @@
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Show memory bar</string>
+    <string name="systemui_recents_mem_display_summary">Enable disable ram bar in recent app view</string>
+
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hidden apps</string>
     <string name="hide_from_recents_add_app">Add App</string>
