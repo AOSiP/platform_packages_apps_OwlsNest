@@ -21,12 +21,6 @@
     android:paddingTop="@dimen/alert_dialog_padding_material"
     android:paddingStart="@dimen/alert_dialog_padding_material"
     android:paddingEnd="@dimen/alert_dialog_padding_material" >
-    <com.aosip.owlsnest.preference.ColorPickerView
-        android:id="@+id/color_picker_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp" />
     <LinearLayout
         android:id="@+id/color_panel_view"
         android:layout_width="match_parent"
@@ -50,4 +44,10 @@
             android:layout_marginStart="10dp"
             android:layout_weight="0.5" />
     </LinearLayout>
+    <com.aosip.owlsnest.preference.ColorPickerView
+        android:id="@+id/color_picker_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp" />
 </LinearLayout>
