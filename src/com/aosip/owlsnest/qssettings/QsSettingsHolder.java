@@ -51,6 +51,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.qssettings.ExpandedCategory;
+import com.aosip.owlsnest.qssettings.HeaderCategory;
 import com.aosip.owlsnest.qssettings.TileCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
@@ -106,8 +107,9 @@ public class QsSettingsHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new TileCategory();
-            frags[1] = new ExpandedCategory();
+            frags[0] = new ExpandedCategory();
+            frags[1] = new HeaderCategory();
+            frags[2] = new TileCategory();
         }
 
         @Override
@@ -129,8 +131,9 @@ public class QsSettingsHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.tile_category),
-                    getString(R.string.expanded_category)};
+                    getString(R.string.expanded_category),
+                    getString(R.string.qs_header_category),
+                    getString(R.string.tile_category)};
         return titleString;
     }
 }
