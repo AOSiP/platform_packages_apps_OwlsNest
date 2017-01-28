@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Android Open Source Illusion Project
+ * Copyright (C) 2017 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,6 +50,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
+import com.aosip.owlsnest.notification.HeadsUpCategory;
 import com.aosip.owlsnest.notification.NotificationCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
@@ -106,6 +107,7 @@ public class NotificationHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new NotificationCategory();
+            frags[1] = new HeadsUpCategory();
         }
 
         @Override
@@ -127,7 +129,8 @@ public class NotificationHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.notification_category)};
+                    getString(R.string.notification_category),
+                    getString(R.string.heads_up_notifications)};
         return titleString;
     }
 }

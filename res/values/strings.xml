@@ -63,6 +63,11 @@
     <string name="notification_summary">Change notif settings such as leds</string>
     <string name="notification_category">Notifications</string>
 
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
