@@ -33,10 +33,15 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="false" />
 
-        <!-- Hide Lockscreen clock & date -->
-        <PreferenceCategory
-            android:key="hide_lockscreen_items_category"
-            android:title="@string/hide_lockscreen_items_title" />
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="keyguard_show_clock"
+            android:title="@string/keyguard_statusbar_clock_title"
+            android:summary="@string/keyguard_statusbar_clock_summary" />
+
+     <!-- Hide Lockscreen clock & date -->
+     <PreferenceCategory
+         android:key="hide_lockscreen_items_category"
+         android:title="@string/hide_lockscreen_items_title" >
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="hide_lockscreen_clock"
@@ -46,6 +51,11 @@
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="hide_lockscreen_date"
             android:title="@string/hide_lockscreen_date_title"
+            android:defaultValue="true" />
+
+          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_alarm"
+            android:title="@string/hide_lockscreen_alarm_title"
             android:defaultValue="true" />
 
      </PreferenceCategory>
@@ -64,11 +74,6 @@
             android:key="fingerprint_success_vib"
             android:title="@string/fprint_sucess_vib_title"
             android:summary="@string/fprint_sucess_vib_summary"
-            android:defaultValue="true" />
-
-         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_alarm"
-            android:title="@string/hide_lockscreen_alarm_title"
             android:defaultValue="true" />
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference

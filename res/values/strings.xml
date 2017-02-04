@@ -763,6 +763,10 @@
     <string name="hide_lockscreen_date_title">Show lockscreen date</string>
     <string name="hide_lockscreen_alarm_title">Show lockscreen alarm</string>
 
+    <!-- Keyguard Statusbar Clock -->
+    <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
+    <string name="keyguard_statusbar_clock_summary">Show the left statusbar clock on the keyguard</string>
+
     <!-- Fingerprint unlock keystore -->
     <string name="fp_unlock_keystore_title">Fingerprint unlock after reboot</string>
     <string name="fp_unlock_keystore_summary">Allow device to always be unlocked with fingerprint, even after reboot</string>
@@ -829,4 +833,5 @@
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>
     <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
 </resources>
