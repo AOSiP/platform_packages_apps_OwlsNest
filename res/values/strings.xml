@@ -490,6 +490,11 @@
     <string name="lockscreen_summary">Customize lockscreen layout</string>
     <string name="weather_category">Lockscreen weather</string>
     <string name="options_category">Various Options</string>
+    <string name="lockscreen_secure_options_title">Secure Lockscreen options</string>
+
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Fingerprint unlock after reboot</string>
+    <string name="fp_unlock_keystore_summary">Allow device to always be unlocked with fingerprint, even after reboot</string>
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced UI</string>

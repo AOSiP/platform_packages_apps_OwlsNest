@@ -16,23 +16,31 @@
 
 package com.aosip.owlsnest.lockscreen;
 
-import android.app.ActivityManager;
 import android.content.Context;
-import android.content.res.Resources;
+import android.content.ContentResolver;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.hardware.fingerprint.FingerprintManager;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SwitchPreference;
 
+import com.aosip.owlsnest.preference.SystemSettingSwitchPreference;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class OptionsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String LS_SECURE_CAT = "lockscreen_secure_options";
+
+    private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+
+     private FingerprintManager mFingerprintManager;
+    private SystemSettingSwitchPreference mFpKeystore;
 
     @Override
     protected int getMetricsCategory() {
@@ -42,8 +50,15 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.aosip_options);
+        PreferenceCategory secureCategory = (PreferenceCategory) findPreference(LS_SECURE_CAT);
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+
+        mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
+        if (!mFingerprintManager.isHardwareDetected()){
+            secureCategory.removePreference(mFpKeystore);
+        }
     }
 
     @Override
