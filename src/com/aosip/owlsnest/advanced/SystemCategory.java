@@ -78,7 +78,7 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
         mScreenshotDelay = (CustomSeekBarPreference) findPreference(SCREENSHOT_DELAY);
         int screenshotDelay = Settings.System.getInt(resolver,
-                Settings.System.SCREENSHOT_DELAY, 1000);
+                Settings.System.SCREENSHOT_DELAY, 500);
         mScreenshotDelay.setValue(screenshotDelay / 1);
         mScreenshotDelay.setOnPreferenceChangeListener(this);
         int recordChordValue = Settings.System.getInt(resolver,
