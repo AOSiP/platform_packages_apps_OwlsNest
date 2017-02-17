@@ -158,6 +158,24 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
+    <!--Custom logos-->
+    <string name="sb_custom_logos">Custom Icons</string>
+    <string name="custom_logo_style"> Logos</string>
+    <string name="custom_logos">Take your Pick</string>
+    <string name="show_custom_logo_title">Show Custom Logo</string>
+    <string name="show_custom_logo_summary">Show Logos in Statusbar from a range of icons</string>
+    <string name="custom_logo_color">Color</string>
+    <string name="custom_logo_position">Position</string>
+    <string name="status_bar_logo_position_right">Right</string>
+    <string name="status_bar_logo_position_left">Left</string>
+    <string name="status_bar_logo_position_center">Center</string>
+    <string name="logo0">Kronic</string>
+    <string name="logo1">Kronic 2.0</string>
+    <string name="logo2">Kronic 3.0</string>
+    <string name="logo3">Khloe</string>
+    <string name="logo4">OwlsNest</string>
+    <string name="logo5">RR Owl</string>
+
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification options</string>
     <string name="notification_summary">Change notif settings such as leds</string>

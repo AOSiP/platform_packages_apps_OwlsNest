@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Android Open Source Illusion Project
+ * Copyright (C) 2017 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,6 +52,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.statusbar.ClockCategory;
+import com.aosip.owlsnest.statusbar.CustomLogo;
 import com.aosip.owlsnest.statusbar.BatteryCategory;
 import com.aosip.owlsnest.statusbar.IconsCategory;
 import com.aosip.owlsnest.statusbar.StatusBarTickerSettings;
@@ -112,9 +113,10 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new ClockCategory();
             frags[1] = new BatteryCategory();
-            frags[2] = new IconsCategory();
-            frags[3] = new StatusBarTickerSettings();
-            frags[4] = new TrafficCategory();
+            frags[2] = new CustomLogo();
+            frags[3] = new IconsCategory();
+            frags[4] = new StatusBarTickerSettings();
+            frags[5] = new TrafficCategory();
         }
 
         @Override
@@ -138,6 +140,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.clock_category),
                     getString(R.string.battery_category),
+                    getString(R.string.sb_custom_logos),
                     getString(R.string.icon_category),
                     getString(R.string.ticker_screen_title),
                     getString(R.string.network_traffic_title)};
