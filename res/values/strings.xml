@@ -216,7 +216,11 @@
     <!-- Buttons backlight timeout -->
     <string name="backlight_timeout_title">Buttons backlight timeout</string>
     <string name="backlight_timeout_on">Enabled always</string>
-    <string name="backlight_timeout_default">5 sec (default)</string>
+    <string name="backlight_timeout_1s">1 sec</string>
+    <string name="backlight_timeout_2s">2 sec</string>
+    <string name="backlight_timeout_default">3 sec (default)</string>
+    <string name="backlight_timeout_4s">4 sec</string>
+    <string name="backlight_timeout_5s">5 sec</string>
     <string name="backlight_timeout_10s">10 sec</string>
     <string name="backlight_timeout_15s">15 sec</string>
     <string name="backlight_timeout_20s">20 sec</string>

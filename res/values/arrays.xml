@@ -315,7 +315,11 @@ limitations under the License.
     <!--- Buttons backlight timeout -->
     <string-array name="backlight_timeout_entries">
         <item>@string/backlight_timeout_on</item>
+        <item>@string/backlight_timeout_1s</item>
+        <item>@string/backlight_timeout_2s</item>
         <item>@string/backlight_timeout_default</item>
+        <item>@string/backlight_timeout_4s</item>
+        <item>@string/backlight_timeout_5s</item>
         <item>@string/backlight_timeout_10s</item>
         <item>@string/backlight_timeout_15s</item>
         <item>@string/backlight_timeout_20s</item>
@@ -324,6 +328,10 @@ limitations under the License.
 
     <string-array name="backlight_timeout_values">
         <item>0</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
         <item>5000</item>
         <item>10000</item>
         <item>15000</item>
