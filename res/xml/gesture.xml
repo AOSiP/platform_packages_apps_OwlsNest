@@ -30,4 +30,10 @@
         android:summary="@string/pixel_gesture_summary"
         android:fragment="com.aosip.owlsnest.gesture.PixelGestureHolder" />
 
+    <com.aosip.settings.preferences.SystemSettingSwitchPreference
+         android:key="double_tap_sleep_gesture"
+         android:title="@string/double_tap_to_sleep_title"
+         android:summary="@string/double_tap_to_sleep_summary"
+         android:defaultValue="false" />
+
 </PreferenceScreen>
