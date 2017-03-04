@@ -274,6 +274,7 @@
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
     <string name="expanded_category">Statusbar expanded</string>
     <string name="tile_category">Tiles</string>
+    <string name="qs_omnijaws_category">Weather QS tile</string>
 
     <!-- QS Brightness icon visibility -->
     <string name="brightness_icon_title">Brightness icon </string>
@@ -297,6 +298,13 @@
     <string name="qs_rows_portrait_title">Rows (portrait)</string>
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qs_columns_title">Columns</string>
+
+    <!-- OmniJaws -->
+    <string name="weather_config_title">Weather settings</string>
+    <string name="weather_config_summary"></string>
+    <string name="header_weather_title">Header view weather</string>
+    <string name="header_weather_summary">Enable notification panel header weather display</string>
+    <string name="weather_icon_pack_title">Condition icon pack</string>
 
     <!-- QS Header Icons -->
     <string name="qs_settings_icon_title">Settings Shortcut</string>
