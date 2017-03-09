@@ -18,6 +18,7 @@ package com.aosip.owlsnest.statusbar;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.preference.PreferenceCategory;
 import android.support.v7.preference.Preference;
@@ -35,8 +36,10 @@ public class IconsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
+    private static final String PREF_STATUS_BAR_WEATHER = "status_bar_weather";
 
     private SwitchPreference mEnableNC;
+    private ListPreference mStatusBarWeather;
 
     @Override
     protected int getMetricsCategory() {
@@ -57,6 +60,19 @@ public class IconsCategory extends SettingsPreferenceFragment implements
         int EnableNC = Settings.System.getInt(getContentResolver(),
                 STATUS_BAR_NOTIF_COUNT, 0);
         mEnableNC.setChecked(EnableNC != 0);
+
+       // Status bar weather
+       mStatusBarWeather = (ListPreference) findPreference(PREF_STATUS_BAR_WEATHER);
+       int temperatureShow = Settings.System.getIntForUser(resolver,
+               Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0,
+               UserHandle.USER_CURRENT);
+       mStatusBarWeather.setValue(String.valueOf(temperatureShow));
+       if (temperatureShow == 0) {
+           mStatusBarWeather.setSummary(R.string.statusbar_weather_summary);
+       } else {
+           mStatusBarWeather.setSummary(mStatusBarWeather.getEntry());
+       }
+          mStatusBarWeather.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -69,6 +85,19 @@ public class IconsCategory extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), STATUS_BAR_NOTIF_COUNT,
                     value ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarWeather) {
+            int temperatureShow = Integer.valueOf((String) newValue);
+            int index = mStatusBarWeather.findIndexOfValue((String) newValue);
+            Settings.System.putIntForUser(resolver,
+                   Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP,
+                   temperatureShow, UserHandle.USER_CURRENT);
+            if (temperatureShow == 0) {
+                mStatusBarWeather.setSummary(R.string.statusbar_weather_summary);
+            } else {
+                mStatusBarWeather.setSummary(
+                mStatusBarWeather.getEntries()[index]);
+            }
             return true;
         }
         return false;
