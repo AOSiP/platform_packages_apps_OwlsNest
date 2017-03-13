@@ -67,6 +67,7 @@
     <string name="battery_category">Battery</string>
     <string name="icon_category">Icons</string>
     <string name="traffic_category">Network Traffic</string>
+    <string name="various">Various Items</string>
 
     <!-- Notification Count in Statusbar -->
     <string name="status_bar_notif_count_title">Show notification count</string>

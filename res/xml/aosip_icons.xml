@@ -29,6 +29,10 @@
                 android:targetClass="com.android.systemui.tuner.TunerActivity" />
     </PreferenceScreen>
 
+     <PreferenceCategory
+        android:key="pref_cat_various"
+        android:title="@string/various">
+
     <ListPreference
         android:key="status_bar_weather"
         android:title="@string/statusbar_weather_title"

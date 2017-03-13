@@ -20,23 +20,29 @@ import android.content.ContentResolver;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
-import android.preference.PreferenceCategory;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
+import android.support.v14.preference.PreferenceFragment;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.internal.util.aosip.aosipUtils;
+
 
 public class IconsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String PREF_STATUS_BAR_WEATHER = "status_bar_weather";
+    private static final String PREF_CATEGORY_VARIOUS = "pref_cat_various";
+    private static final String WEATHER_SERVICE_PACKAGE = "org.omnirom.omnijaws";
 
     private SwitchPreference mEnableNC;
     private ListPreference mStatusBarWeather;
@@ -52,8 +58,10 @@ public class IconsCategory extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.aosip_icons);
 
-        final PreferenceScreen prefSet = getPreferenceScreen();
-        final ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        PreferenceCategory categoryVarious = (PreferenceCategory) prefSet.findPreference(PREF_CATEGORY_VARIOUS);
 
         mEnableNC = (SwitchPreference) findPreference(STATUS_BAR_NOTIF_COUNT);
         mEnableNC.setOnPreferenceChangeListener(this);
@@ -61,18 +69,22 @@ public class IconsCategory extends SettingsPreferenceFragment implements
                 STATUS_BAR_NOTIF_COUNT, 0);
         mEnableNC.setChecked(EnableNC != 0);
 
-       // Status bar weather
-       mStatusBarWeather = (ListPreference) findPreference(PREF_STATUS_BAR_WEATHER);
-       int temperatureShow = Settings.System.getIntForUser(resolver,
-               Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0,
-               UserHandle.USER_CURRENT);
-       mStatusBarWeather.setValue(String.valueOf(temperatureShow));
-       if (temperatureShow == 0) {
-           mStatusBarWeather.setSummary(R.string.statusbar_weather_summary);
-       } else {
-           mStatusBarWeather.setSummary(mStatusBarWeather.getEntry());
-       }
-          mStatusBarWeather.setOnPreferenceChangeListener(this);
+        // Status bar weather
+        mStatusBarWeather = (ListPreference) prefSet.findPreference(PREF_STATUS_BAR_WEATHER);
+        if (mStatusBarWeather != null && (!aosipUtils.isPackageInstalled(getActivity(),WEATHER_SERVICE_PACKAGE))) {
+            categoryVarious.removePreference(mStatusBarWeather);
+        } else {
+            int temperatureShow = Settings.System.getIntForUser(resolver,
+                Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0,
+                UserHandle.USER_CURRENT);
+            mStatusBarWeather.setValue(String.valueOf(temperatureShow));
+            if (temperatureShow == 0) {
+                mStatusBarWeather.setSummary(R.string.statusbar_weather_summary);
+            } else {
+                mStatusBarWeather.setSummary(mStatusBarWeather.getEntry());
+            }
+            mStatusBarWeather.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -81,6 +93,7 @@ public class IconsCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         if  (preference == mEnableNC) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), STATUS_BAR_NOTIF_COUNT,
