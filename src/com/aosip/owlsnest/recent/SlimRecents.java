@@ -383,7 +383,7 @@ public class SlimRecents extends SettingsPreferenceFragment implements
 
             Resources res = ctx.getResources();
             String defaultLabel = res.getString(R.string.default_iconpack_title);
-            Drawable icon = res.getDrawable(R.drawable.ic_launcher_def);
+            Drawable icon = res.getDrawable(android.R.drawable.sym_def_app_icon);
             mSupportedPackages.add(0, new IconPackInfo(defaultLabel, icon, ""));
             mCurrentIconPack = Settings.System.getString(ctx.getContentResolver(),
                 Settings.System.SLIM_RECENTS_ICON_PACK);
