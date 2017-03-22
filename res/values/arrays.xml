@@ -266,7 +266,7 @@ limitations under the License.
         <item>@string/status_bar_battery_style_icon_portrait</item>
         <item>@string/status_bar_battery_style_icon_landscape</item>
         <item>@string/status_bar_battery_style_circle</item>
-        <item>@string/status_bar_battery_style_bigcircle</item>
+        <item>@string/status_bar_battery_style_big_circle</item>
 	    <item>@string/status_bar_battery_style_solid</item>
         <item>@string/status_bar_battery_style_text</item>
         <item>@string/status_bar_battery_style_hidden</item>
@@ -422,6 +422,22 @@ limitations under the License.
     <string-array name="entries_led_colors" translatable="false">
         <item>@string/led_color_green</item>
         <item>@string/led_color_red</item>
+    </string-array>
+
+    <string-array name="battery_tile_style_entries" translatable="false">
+        <item>@string/status_bar_battery_style_icon_portrait</item>
+        <item>@string/status_bar_battery_style_icon_landscape</item>
+        <item>@string/status_bar_battery_style_circle</item>
+        <item>@string/status_bar_battery_style_big_circle</item>
+        <item>@string/status_bar_battery_style_solid</item>
+    </string-array>
+
+    <string-array name="battery_tile_style_values" translatable="false">
+        <item>0</item>
+        <item>5</item>
+        <item>2</item>
+        <item>8</item>
+        <item>7</item>
     </string-array>
 
     <string-array name="values_led_colors" translatable="false">
