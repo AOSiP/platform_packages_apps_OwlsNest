@@ -228,6 +228,10 @@
     <string name="status_bar_temperature_hide_scale_hide_image">Show temp without scale</string>
     <string name="status_bar_show_image">Show image</string>
 
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Show roaming indicator</string>
+    <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
+
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
