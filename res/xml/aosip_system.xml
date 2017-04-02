@@ -37,6 +37,12 @@
              android:entryValues="@array/media_scanner_on_boot_values"
              android:persistent="false" />
 
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="screenshot_crop_and_share"
+            android:title="@string/screenshot_crop_and_share_title"
+            android:summary="@string/screenshot_crop_and_share_summary"
+            android:defaultValue="false" />
+
         <ListPreference
              android:key="screenrecord_chord_type"
              android:title="@string/screen_record_chord_title"
