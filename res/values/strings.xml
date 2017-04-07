@@ -72,6 +72,9 @@
     <string name="ticker_screen_summary">Customize the ticker style</string>
     <string name="ticker_summary">Enable the old status bar ticker</string>
     <string name="ticker_restore_defaults_title">Restore defaults</string>
+    <string name="ticker_disabled">No ticker</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notifications and music ticker</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
