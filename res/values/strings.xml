@@ -200,6 +200,8 @@
     <string name="heads_up_notifications">Heads up</string>
     <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
     <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+    <string name="always_headsup_dialer_title">Force heads up for dialer</string>
+    <string name="always_headsup_dialer_summary">Show heads up for dialer even if heads up is off to avoid fullscreen dialer on incoming calls</string>
 
     <!-- Power notification controls -->
     <string name="power_notification_title">Power notification controls</string>

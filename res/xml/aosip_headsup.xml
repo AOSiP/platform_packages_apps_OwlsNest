@@ -25,5 +25,12 @@
     android:summaryOn="@string/summary_heads_up_enabled"
     android:summaryOff="@string/summary_heads_up_disabled" />
 
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="always_headsup_dialer"
+        android:title="@string/always_headsup_dialer_title"
+        android:summary="@string/always_headsup_dialer_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
 
