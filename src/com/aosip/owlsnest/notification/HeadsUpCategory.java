@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Android Open Source Illusion Project
+ * Copyright (C) 2017 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v14.preference.SwitchPreference;
+
 import android.provider.Settings;
 import com.android.settings.R;
 import android.provider.Settings.SettingNotFoundException; 
