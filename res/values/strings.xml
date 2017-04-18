@@ -15,9 +15,6 @@
     <!-- AOSiP device info settings -->
     <string name="aosip_version">AOSiP version</string>
     <string name="aosip_version_default">Unknown</string>
-    <string name="cpu_info">CPU</string>
-    <string name="mem_info">Memory</string>
-    <string name="build_date">Build date</string>
 
     <!-- AOSiP custom settings main -->
     <string name="header_category_personalization">UI settings</string>
@@ -28,46 +25,43 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
-    <string name="attention">Attention</string>
     <string name="enabled">Enabled</string>
     <string name="default_string">Default</string>
     <string name="add">Add</string>
     <string name="choose_app">Choose app</string>
 
     <!--Owlsnest statusbar-->
-    <string name="statusbar_bar_title">Statusbar options</string>
-    <string name="statusbar_bar_summary">Adjust items like battery,clock,icons,and colors</string>
+    <string name="statusbar_bar_title">Statusbar</string>
+    <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
     <string name="clock_category">Clock</string>
     <string name="battery_category">Battery</string>
     <string name="icon_category">Icons</string>
-    <string name="extra_category">Extras</string>
 
     <!--Owlsnest Notification-->
-    <string name="notification_title">Notification options</string>
-    <string name="notification_summary">Change notif settings such as leds</string>
+    <string name="notification_title">Notification</string>
+    <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
 
     <!--Owlsnest Quick settings-->
-    <string name="quicksettings_title">Quick settings</string>
+    <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
-    <string name="expanded_category">Statusbar expanded</string>
+    <string name="expanded_category">Expanded</string>
 
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Navigation bar options</string>
-    <string name="navigation_summary">Customize Navbar size,buttons,layout,and colors</string>
+    <string name="navigation_title">Navigation</string>
+    <string name="navigation_summary">Customize navigation bar style and behavior</string>
     <string name="navigationbuttons_category">Layouts</string>
-    <string name="navigation_dimen_category">Navbar size</string>
 
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardware buttons</string>
-    <string name="buttons_summary">Tweak the actions of your volume and power buttons</string>
-    <string name="powermenu_category">Power button</string>
-    <string name="volume_category">Volume buttons</string>
+    <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
+    <string name="powermenu_category">Power</string>
+    <string name="volume_category">Volume</string>
 
     <!--Owlsnest recentscreen-->
-    <string name="recent_title">Recents screen</string>
-    <string name="recent_summary">Configure your clear all button and misc recent options</string>
-    <string name="recent_category">Recent apps</string>
+    <string name="recent_title">Recents</string>
+    <string name="recent_summary">Configure which recents style and options</string>
+    <string name="stock_recent_category">Stock</string>
 
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesture</string>
@@ -75,13 +69,13 @@
 
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
-    <string name="lockscreen_summary">Customize lockscreen layout</string>
-    <string name="weather_category">Lockscreen weather</string>
-    <string name="options_category">Various Options</string>
+    <string name="lockscreen_summary">Customize lockscreen layout and options</string>
+    <string name="weather_category">Weather</string>
+    <string name="options_category">Various</string>
 
     <!--Owlsnest advanced-->
-    <string name="advanced_title">Advanced UI</string>
-    <string name="advanced_summary">Heavy custom features</string>
+    <string name="advanced_title">Advanced Settings</string>
+    <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
 </resources>
 
