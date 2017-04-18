@@ -18,7 +18,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/icon_category" >
+    android:layout="@layout/tab_ui"
+    android:title="@string/extra_category" >
 
 </PreferenceScreen>
 

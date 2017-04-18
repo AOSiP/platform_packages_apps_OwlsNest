@@ -49,7 +49,7 @@ import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.statusbar.ClockCategory;
 import com.aosip.owlsnest.statusbar.BatteryCategory;
@@ -72,7 +72,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContainer = container;
 
-        View view = inflater.inflate(R.layout.tab_ui, container, false);
+        View view = inflater.inflate(R.layout.preference_ui, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
         mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
@@ -94,7 +94,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
     }
 
     @Override
-    protected int getMetricsCategory() {
+    public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
     }
 

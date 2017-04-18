@@ -72,21 +72,22 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 	private Paint rectPaint;
 	private Paint dividerPaint;
 
-	private int indicatorColor = 0xFF666666;
-	private int underlineColor = 0x1A000000;
-	private int dividerColor = 0x1A000000;
+	private int indicatorColor;
+	private int underlineColor;
+	private int dividerColor;
 
 	private boolean shouldExpand = false;
 	private boolean textAllCaps = true;
+    private boolean isPaddingMiddle = false;
 
 	private int scrollOffset = 52;
-	private int indicatorHeight = 8;
-	private int underlineHeight = 2;
+	private int indicatorHeight = 2;
+	private int underlineHeight = 0;
 	private int dividerPadding = 12;
-	private int tabPadding = 24;
-	private int dividerWidth = 1;
+	private int tabPadding = 16;
+	private int dividerWidth = 0;
 
-	private int tabTextSize = 12;
+	private int tabTextSize = 14;
 	private int tabTextColor = 0xFF666666;
 	private Typeface tabTypeface = null;
 	private int tabTypefaceStyle = Typeface.BOLD;
@@ -139,7 +140,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
 		a = context.obtainStyledAttributes(attrs, R.styleable.PagerSlidingTabStrip);
 
-		indicatorColor = context.getResources().getColor(R.color.text_color_white);
+		indicatorColor = context.getResources().getColor(R.color.theme_accent);
 		underlineColor = context.getResources().getColor(R.color.theme_accent);
 		dividerColor = context.getResources().getColor(R.color.theme_accent);
 		indicatorHeight = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsIndicatorHeight, indicatorHeight);
