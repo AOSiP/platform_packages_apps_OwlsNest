@@ -1,5 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2017 AOSiP
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <string name="app_name">OwlsNest</string>
     <string name="header_category">OwlsNest</string>
     <string name="title">OwlsNest</string>
@@ -11,5 +27,68 @@
     <string name="header_summary">@null</string>
     <!-- Menu Strings -->
     <string name="menu_main_activity_change_locale">Locale</string>
+
+    <!-- AOSiP device info settings -->
+    <string name="aosip_version">AOSiP version</string>
+    <string name="aosip_version_default">Unknown</string>
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">Memory</string>
+    <string name="build_date">Build date</string>
+
+    <!-- AOSiP custom settings main -->
+    <string name="header_category_personalization">UI settings</string>
+    <string name="custom_title">OwlsNest</string>
+    <string name="aosip_title">AOSiP Settings</string>
+    <string name="owlsnest_settings_title">Categories</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="attention">Attention</string>
+    <string name="enabled">Enabled</string>
+    <string name="default_string">Default</string>
+    <string name="add">Add</string>
+    <string name="choose_app">Choose app</string>
+
+    <!--Owlsnest statusbar-->
+    <string name="statusbar_bar_title">Statusbar options</string>
+    <string name="statusbar_bar_summary">Adjust items like battery,clock,icons,and colors</string>
+    <string name="clock_category">Clock</string>
+    <string name="battery_category">Battery</string>
+    <string name="icon_category">Icons</string>
+    <string name="extra_category">Extras</string>
+
+    <!--Owlsnest Quick settings-->
+    <string name="quicksettings_title">Quick settings</string>
+    <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
+    <string name="expanded_category">Statusbar expanded</string>
+
+    <!--Owlsnest navigation-->
+    <string name="navigation_title">Navigation bar options</string>
+    <string name="navigation_summary">Customize Navbar size,buttons,layout,and colors</string>
+    <string name="navigationbuttons_category">Layouts</string>
+    <string name="navigation_dimen_category">Navbar size</string>
+
+    <!--Owlsnest buttons-->
+    <string name="buttons_title">Hardware buttons</string>
+    <string name="buttons_summary">Tweak the actions of your volume and power buttons</string>
+    <string name="powermenu_category">Power button</string>
+    <string name="volume_category">Volume buttons</string>
+
+    <!--Owlsnest recentscreen-->
+    <string name="recent_title">Recents screen</string>
+    <string name="recent_summary">Configure your clear all button and misc recent options</string>
+    <string name="recent_category">Recent apps</string>
+
+    <!--Owlsnest lockscreen-->
+    <string name="lockscreen_title">Lockscreen</string>
+    <string name="lockscreen_summary">Customize lockscreen layout</string>
+    <string name="weather_category">Lockscreen weather</string>
+    <string name="options_category">Various Options</string>
+
+    <!--Owlsnest advanced-->
+    <string name="advanced_title">Advanced UI</string>
+    <string name="advanced_summary">Heavy custom features</string>
+    <string name="system_category">System Settings</string>
 
 </resources>
