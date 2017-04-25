@@ -88,7 +88,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 	private int dividerWidth = 0;
 
 	private int tabTextSize = 14;
-	private int tabTextColor = 0xFF666666;
+	private int tabTextColor = R.color.tab_text_color;
 	private Typeface tabTypeface = null;
 	private int tabTypefaceStyle = Typeface.BOLD;
 
