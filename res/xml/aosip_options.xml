@@ -53,21 +53,21 @@
 
      <!-- Hide Lockscreen clock & date -->
      <PreferenceCategory
-         android:key="hide_lockscreen_items_category"
+         android:key="show_lockscreen_items_category"
          android:title="@string/hide_lockscreen_items_title" >
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_clock"
+            android:key="show_lockscreen_clock"
             android:title="@string/hide_lockscreen_clock_title"
             android:defaultValue="true" />
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_date"
+            android:key="show_lockscreen_date"
             android:title="@string/hide_lockscreen_date_title"
             android:defaultValue="true" />
 
           <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_alarm"
+            android:key="show_lockscreen_alarm"
             android:title="@string/hide_lockscreen_alarm_title"
             android:defaultValue="true" />
      </PreferenceCategory>
