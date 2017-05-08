@@ -26,6 +26,7 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
 import com.android.settings.R;
+import com.android.settings.util.Helpers;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -34,10 +35,12 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
-  
+    private static final String RECENTS_TYPE = "navigation_bar_recents";
+
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
     private ListPreference mImmersiveRecents;
+    private ListPreference mRecentsType;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,14 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
         addPreferencesFromResource(R.xml.aosip_stock);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mRecentsType = (ListPreference) findPreference(RECENTS_TYPE);
+        int type = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                            Settings.System.NAVIGATION_BAR_RECENTS, 0,
+                            UserHandle.USER_CURRENT);
+        mRecentsType.setValue(String.valueOf(type));
+        mRecentsType.setSummary(mRecentsType.getEntry());
+        mRecentsType.setOnPreferenceChangeListener(this);
 
         mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
         mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
@@ -75,7 +86,16 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mImmersiveRecents) {
+        if (preference == mRecentsType) {
+            Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_RECENTS,
+                    Integer.valueOf((String) newValue));
+            int val = Integer.parseInt((String) newValue);
+            if (val== 0 || val == 1) {
+                Helpers.showSystemUIrestartDialog(getActivity());
+            }
+            mRecentsType.setValue(String.valueOf(newValue));
+            mRecentsType.setSummary(mRecentsType.getEntry());
+        } else if (preference == mImmersiveRecents) {
             Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
                     Integer.valueOf((String) newValue));
             mImmersiveRecents.setValue(String.valueOf(newValue));

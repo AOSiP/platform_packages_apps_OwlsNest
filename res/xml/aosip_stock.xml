@@ -21,6 +21,13 @@
     android:layout="@layout/tab_ui"
     android:title="@string/stock_recent_category" >
 
+       <ListPreference
+        android:key="navigation_bar_recents"
+        android:title="@string/recents_type_title"
+        android:dialogTitle="@string/recents_type_title"
+        android:entries="@array/recents_type_title_entries"
+        android:entryValues="@array/recents_type_title_values"/>
+
      <ListPreference
         android:key="immersive_recents"
         android:title="@string/immersive_recents_title"
