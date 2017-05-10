@@ -578,6 +578,8 @@
     <string name="immersive_recents_navbar">Navbar only</string>
 
     <!-- Recents panel settings -->
+    <string name="recents_use_grid_title">Enable grid recents</string>
+    <string name="recents_use_grid_summary">Show grid style using AOSP recents</string>
     <string name="show_clear_all_recents_button_title">Clear all button</string>
     <string name="show_clear_all_recents_button_summary">Show clear all button</string>
     <string name="recents_clear_all_location_title">Clear all location</string>

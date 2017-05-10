@@ -21,6 +21,12 @@
     android:layout="@layout/tab_ui"
     android:title="@string/stock_recent_category" >
 
+     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="recents_use_grid"
+        android:title="@string/recents_use_grid_title"
+        android:summary="@string/recents_use_grid_summary"
+        android:defaultValue="false" />
+
      <ListPreference
         android:key="immersive_recents"
         android:title="@string/immersive_recents_title"
