@@ -20,33 +20,40 @@ import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.aosip.owlsnest.utils.TelephonyUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
-    private static final String TAG = "GestureCategory";
 
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        final PreferenceScreen prefSet = getPreferenceScreen();
 
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+			prefSet.removePreference(incallVibCategory);
+        }
     }
 
     @Override
