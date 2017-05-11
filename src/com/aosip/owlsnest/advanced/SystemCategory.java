@@ -22,6 +22,7 @@ import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -46,9 +47,11 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     private static final String PREF_AOSIP_SETTINGS_SUMMARY = "aosip_settings_summary";
     private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
     private static final String FLASHLIGHT_NOTIFICATION = "flashlight_notification";
+    private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
 
     private ListPreference mMsob; 
     private ListPreference mScreenrecordChordType;
+    private ListPreference mLaunchPlayerHeadsetConnection;
     private Preference mCustomSummary;
     private String mCustomSummaryText;
     private CustomSeekBarPreference mScreenshotDelay;
@@ -86,6 +89,13 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         mCustomSummary = (Preference) prefScreen.findPreference(PREF_AOSIP_SETTINGS_SUMMARY);
         updateCustomSummaryTextString();
 
+        mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
+        int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
+                Settings.System.HEADSET_CONNECT_PLAYER, 0, UserHandle.USER_CURRENT);
+        mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
+        mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
+        mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
+
         mFlashlightNotification = (SwitchPreference) findPreference(FLASHLIGHT_NOTIFICATION);
         mFlashlightNotification.setOnPreferenceChangeListener(this);
         if (!aosipUtils.deviceSupportsFlashLight(getActivity())) {
@@ -102,6 +112,7 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        final ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mScreenshotDelay) {
             int screenshotDelay = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
@@ -123,6 +134,14 @@ public class SystemCategory extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FLASHLIGHT_NOTIFICATION, checked ? 1:0);
+            return true;
+        } else if (preference == mLaunchPlayerHeadsetConnection) {
+            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
+            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
+            mLaunchPlayerHeadsetConnection.setSummary(
+                    mLaunchPlayerHeadsetConnection.getEntries()[index]);
+            Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
+                    mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
