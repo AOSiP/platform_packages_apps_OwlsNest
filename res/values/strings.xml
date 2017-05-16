@@ -681,6 +681,11 @@
     <string name="recents_stock">Cards</string>
     <string name="recents_grid">Grid</string>
 
+   <!-- Grid recents screen pinning toggle -->
+    <string name="grid_recents_pinning_title">Show screen pinning icon in grid style recents</string>
+    <string name="grid_recents_pinning_summaryOn">Screen pinning icon will be shown in grid style recents if screen pinning is enabled from security settings</string>
+    <string name="grid_recents_pinning_summaryOff">Screen pinning icon will be hidden in grid style recents even if screen pinning is enabled from security settings</string>  
+
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive Recents</string>
     <string name="immersive_recents_summary">Change the view of the recents screen</string>

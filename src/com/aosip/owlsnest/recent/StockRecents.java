@@ -36,11 +36,13 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String RECENTS_TYPE = "navigation_bar_recents";
+    private static final String GRID_PINNING_TOGGLE = "grid_recents_pinning";
 
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
     private ListPreference mImmersiveRecents;
     private ListPreference mRecentsType;
+    private SwitchPreference mGridPinning;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,7 +51,8 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
         addPreferencesFromResource(R.xml.aosip_stock);
 
         final ContentResolver resolver = getActivity().getContentResolver();
-
+        
+        mGridPinning = (SwitchPreference) findPreference(GRID_PINNING_TOGGLE);
         mRecentsType = (ListPreference) findPreference(RECENTS_TYPE);
         int type = Settings.System.getIntForUser(getActivity().getContentResolver(),
                             Settings.System.NAVIGATION_BAR_RECENTS, 0,
@@ -57,6 +60,7 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
         mRecentsType.setValue(String.valueOf(type));
         mRecentsType.setSummary(mRecentsType.getEntry());
         mRecentsType.setOnPreferenceChangeListener(this);
+        setPreference(type);
 
         mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
         mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
@@ -90,11 +94,9 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
             Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_RECENTS,
                     Integer.valueOf((String) newValue));
             int val = Integer.parseInt((String) newValue);
-            if (val== 0 || val == 1) {
-                Helpers.showSystemUIrestartDialog(getActivity());
-            }
             mRecentsType.setValue(String.valueOf(newValue));
             mRecentsType.setSummary(mRecentsType.getEntry());
+            setPreference(val);
         } else if (preference == mImmersiveRecents) {
             Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
                     Integer.valueOf((String) newValue));
@@ -111,4 +113,13 @@ public class StockRecents extends SettingsPreferenceFragment implements OnPrefer
         }
         return false;
     }
+
+    public void setPreference(int type) {
+	if(type == 0) {
+	   mGridPinning.setEnabled(false);
+	} else if (type == 1) {
+       mGridPinning.setEnabled(true);
+	}
+    }
+
 }
