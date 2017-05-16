@@ -21,12 +21,19 @@
     android:layout="@layout/tab_ui"
     android:title="@string/stock_recent_category" >
 
-       <ListPreference
+     <ListPreference
         android:key="navigation_bar_recents"
         android:title="@string/recents_type_title"
         android:dialogTitle="@string/recents_type_title"
         android:entries="@array/recents_type_title_entries"
         android:entryValues="@array/recents_type_title_values"/>
+
+     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="grid_recents_pinning"
+        android:title="@string/grid_recents_pinning_title"
+        android:summaryOn="@string/grid_recents_pinning_summaryOn"
+        android:summaryOff="@string/grid_recents_pinning_summaryOff"
+        android:defaultValue="true" />
 
      <ListPreference
         android:key="immersive_recents"
