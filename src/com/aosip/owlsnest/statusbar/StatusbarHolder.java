@@ -145,8 +145,8 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
                     getString(R.string.clock_category),
                     getString(R.string.sb_custom_logos),
                     getString(R.string.icon_category),
-                    getString(R.string.network_traffic_title),
-                    getString(R.string.ticker_screen_title)};
+                    getString(R.string.ticker_screen_title),
+                    getString(R.string.network_traffic_title)};
         return titleString;
         }
     }
