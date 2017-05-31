@@ -42,6 +42,10 @@
     <string name="aosip_title">AOSiP Settings</string>
     <string name="owlsnest_settings_title">Categories</string>
 
+    <!-- AOSiP Updater -->
+    <string name="ota_title">OTA Updates</string>
+    <string name="ota_summary">Check for the latest releases</string>
+
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>

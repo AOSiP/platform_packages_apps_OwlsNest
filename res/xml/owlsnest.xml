@@ -78,8 +78,18 @@
     <PreferenceScreen
        android:key="advanced"
        android:fragment="com.aosip.owlsnest.advanced.AdvancedHolder"
-       android:title="@string/advanced_title" 
+       android:title="@string/advanced_title"
        android:summary="@string/advanced_summary"
        android:icon="@drawable/ic_owlsnest_advanced" />
+
+    <PreferenceScreen
+       android:key="ota"
+       android:title="@string/ota_title"
+       android:summary="@string/ota_summary"
+       android:icon="@drawable/ic_owlsnest_ota" >
+       <intent android:action="android.intent.action.MAIN"
+               android:targetPackage="com.ota.updates"
+               android:targetClass="com.ota.updates.activities.MainActivity" />
+    </PreferenceScreen>
 
 </PreferenceScreen>
