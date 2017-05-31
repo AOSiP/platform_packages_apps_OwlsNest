@@ -744,5 +744,9 @@
     <string name="owlsnest_settings_summary_title">Custom AOSiP summary text in Settings application</string> 
     <string name="custom_summary_title">Custom AOSiP summary</string>
     <string name="custom_summary_explain">Please enter a new summary. Leave blank to revert to stock text.</string>
- 
+
+    <!-- In-call DND -->
+    <string name="dnd_when_call_title">In-call do not disturb</string>
+    <string name="dnd_when_call_summary">Auto enable DND during calls</string>
+
 </resources>

@@ -31,6 +31,11 @@
              android:entries="@array/screen_record_chord_entries"
              android:entryValues="@array/screen_record_chord_values" />
 
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="dnd_when_call"
+            android:title="@string/dnd_when_call_title"
+            android:summary="@string/dnd_when_call_summary" />
+
          <com.aosip.owlsnest.preference.CustomSeekBarPreference
              android:key="screenshot_delay"
              android:title="@string/screenshot_delay_title"
