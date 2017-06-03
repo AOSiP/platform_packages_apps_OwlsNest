@@ -743,5 +743,8 @@
     <string name="media_scanner_on_boot_enabled">Scan media</string>
     <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
     <string name="media_scanner_on_boot_disabled">Do not scan media</string>
-
+   
+    <!-- Double tap statusbar to sleep -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
 </resources>
