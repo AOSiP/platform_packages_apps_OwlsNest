@@ -73,6 +73,12 @@
         android:defaultValue="false" />
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="qs_footer_warnings"
+        android:title="@string/qs_footer_warnings_title"
+        android:summary="@string/qs_footer_warnings_summary"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
         android:summaryOn="@string/qs_tile_title_visibility_summary_on"
