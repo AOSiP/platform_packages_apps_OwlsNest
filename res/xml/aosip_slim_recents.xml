@@ -78,6 +78,11 @@
             defaultColor="#00ffffff"
             alphaSlider="true" />
 
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="slim_recents_corner_radius"
+            android:title="@string/slim_recents_corner_radius_title"
+            android:defaultValue="true" />
+
         <Preference
             android:key="slim_icon_pack"
             android:title="@string/slim_icon_pack_title"
