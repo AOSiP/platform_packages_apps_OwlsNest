@@ -55,6 +55,7 @@ public class ButtonsCategory extends ActionFragment implements Preference.OnPref
     private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
     private static final String KEY_BUTON_BACKLIGHT_OPTIONS = "button_backlight_options_category";
+    private static final String KEY_HOME_WAKE_SCREEN = "home_wake_screen";
 
     // Masks for checking presence of hardware keys.
     // Must match values in frameworks/base/core/res/res/values/config.xml
@@ -67,6 +68,7 @@ public class ButtonsCategory extends ActionFragment implements Preference.OnPref
     public static final int KEY_MASK_VOLUME = 0x40;
 
     private SwitchPreference mHwKeyDisable;
+    private SwitchPreference mHwKeyWakeDisable;
 
     private CustomSeekBarPreference mButtonTimoutBar;
     private CustomSeekBarPreference mManualButtonBrightness;
@@ -153,6 +155,11 @@ public class ButtonsCategory extends ActionFragment implements Preference.OnPref
         // home key
         if (!hasHomeKey) {
             prefScreen.removePreference(homeCategory);
+        } else if (hasHomeKey) {
+ 		    mHwKeyWakeDisable = (SwitchPreference) findPreference(KEY_HOME_WAKE_SCREEN);
+            if (!getResources().getBoolean(R.bool.config_show_homeWake)) {
+            prefScreen.removePreference(mHwKeyWakeDisable);
+        }
         }
 
         // App switch key (recents)

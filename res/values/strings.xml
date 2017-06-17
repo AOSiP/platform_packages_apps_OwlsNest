@@ -39,6 +39,10 @@
     <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
     <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
 
+    <!-- Home button wake up -->
+    <string name="button_wake_title">Wake up</string>
+    <string name="home_wake_summary">Pressing the home button will wake your device</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>

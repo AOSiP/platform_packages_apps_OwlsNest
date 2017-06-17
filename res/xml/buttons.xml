@@ -110,6 +110,12 @@
             android:title="@string/hardware_keys_double_tap_title" >
         </com.aosip.owlsnest.preference.ActionPreference>
 
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="home_wake_screen"
+            android:title="@string/button_wake_title"
+            android:summary="@string/home_wake_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
