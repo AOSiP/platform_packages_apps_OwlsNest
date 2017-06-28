@@ -665,6 +665,10 @@
     <!-- Enable keys backlight-->
     <string name="button_brightness_title">Backlight</string>
 
+    <!-- Enable backlight only on key touch-->
+    <string name="button_backlight_on_touch_only_title">Button touch</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
+
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
