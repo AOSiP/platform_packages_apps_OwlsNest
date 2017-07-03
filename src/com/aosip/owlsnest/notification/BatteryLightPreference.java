@@ -27,6 +27,8 @@ import android.graphics.drawable.shapes.OvalShape;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
+import android.view.WindowManager;
+import android.view.WindowManager.LayoutParams;
 import android.widget.ImageView;
 
 import com.android.settings.R;
@@ -97,6 +99,7 @@ public class BatteryLightPreference extends Preference implements DialogInterfac
         mDialog = getDialog();
         mDialog.setOnDismissListener(this);
         mDialog.show();
+        mDialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
     }
 
     public Dialog getDialog() {

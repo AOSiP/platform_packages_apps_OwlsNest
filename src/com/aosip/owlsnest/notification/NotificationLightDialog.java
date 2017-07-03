@@ -521,7 +521,4 @@ public class NotificationLightDialog extends AlertDialog implements
             mHexColorInput.addTextChangedListener(this);
         }
     }
-
-
-
 }
