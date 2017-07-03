@@ -28,6 +28,8 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.WindowManager.LayoutParams;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -191,6 +193,7 @@ public class NotificationLightPreference extends Preference implements DialogInt
         mDialog = getDialog();
         mDialog.setOnDismissListener(this);
         mDialog.show();
+        mDialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
     }
 
     public Dialog getDialog() {
