@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.statusbar;
+package com.aosip.owlsnest.notification;
 
 import android.content.ContentResolver;
 import android.os.Bundle;

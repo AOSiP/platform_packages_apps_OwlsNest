@@ -34,6 +34,7 @@ import com.aosip.owlsnest.notification.HeadsUpCategory;
 import com.aosip.owlsnest.notification.BatteryLightSettings;
 import com.aosip.owlsnest.notification.NotificationCategory;
 import com.aosip.owlsnest.notification.NotificationLightSettings;
+import com.aosip.owlsnest.notification.StatusBarTickerSettings;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class NotificationHolder extends SettingsPreferenceFragment {
@@ -89,6 +90,7 @@ public class NotificationHolder extends SettingsPreferenceFragment {
             frags[1] = new BatteryLightSettings();
             frags[2] = new HeadsUpCategory();
             frags[3] = new NotificationLightSettings();
+            frags[4] = new StatusBarTickerSettings();
         }
 
         @Override
@@ -113,7 +115,8 @@ public class NotificationHolder extends SettingsPreferenceFragment {
                     getString(R.string.notification_title),
                     getString(R.string.battery_light_settings),
                     getString(R.string.heads_up_notifications),
-                    getString(R.string.notification_light_title)};
+                    getString(R.string.notification_light_title),
+                    getString(R.string.ticker_screen_title)};
         return titleString;
     }
 }
