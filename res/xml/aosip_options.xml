@@ -34,6 +34,12 @@
             android:defaultValue="false" />
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="ambient_display_show_battery"
+            android:title="@string/ambient_display_show_battery_title"
+            android:summary="@string/ambient_display_show_battery_summary"
+            android:defaultValue="true" />
+
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="keyguard_show_clock"
             android:title="@string/keyguard_statusbar_clock_title"
             android:summary="@string/keyguard_statusbar_clock_summary" />
