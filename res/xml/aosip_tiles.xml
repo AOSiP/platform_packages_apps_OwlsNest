@@ -45,6 +45,12 @@
         settings:units=""
         android:persistent="false" />
 
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="qs_fancy_animation"
+        android:title="@string/qs_fancy_animation_title"
+        android:summary="@string/qs_fancy_animation_summary"
+        android:defaultValue="true" />
+
     <ListPreference
         android:key="qs_tile_animation_style"
         android:title="@string/qs_tile_animation_style_title"

@@ -339,6 +339,10 @@
     <string name="qs_footer_warnings_title">QS footer warnings</string>
     <string name="qs_footer_warnings_summary">Display a warning at bottom of the QS panel while your network is monitored by external apps or a VPN</string>
 
+    <!-- QS fancy animation -->
+    <string name="qs_fancy_animation_title">Fancy QS animation</string>
+    <string name="qs_fancy_animation_summary">Enable a different animation effect when pulling down the statusbar</string>
+
     <!-- Disable music track title -->
     <string name="qs_music_tile_track_optional_title">Music tile track title</string>
     <string name="qs_music_tile_track_optional_summary">Show the music track title as the QS tile title</string>
