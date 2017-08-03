@@ -826,7 +826,10 @@
     <string name="weather_category">Weather</string>
     <string name="options_category">Various</string>
     <string name="lockscreen_secure_options_title">Secure lockscreen options</string>
+
+    <!-- Lockscreen shortcuts -->
     <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
+    <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
 
     <!-- Lockscreen weather -->
     <string name="display_category_weather_title">Lockscreen weather options</string>
