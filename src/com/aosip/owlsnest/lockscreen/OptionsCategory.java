@@ -56,11 +56,9 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-        PreferenceCategory secureCategory = (PreferenceCategory) findPreference(LS_SECURE_CAT);
-        ContentResolver resolver = getActivity().getContentResolver();
-
         addPreferencesFromResource(R.xml.aosip_options);
+        ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceCategory secureCategory = (PreferenceCategory) findPreference(LS_SECURE_CAT);
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
@@ -69,6 +67,7 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
             secureCategory.removePreference(mFpKeystore);
             secureCategory.removePreference(mFingerprintVib);
         }
+
         mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
         mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
                 resolver, Settings.System.LOCK_CLOCK_FONTS, 4)));
