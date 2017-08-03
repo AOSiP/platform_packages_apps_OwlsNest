@@ -22,7 +22,8 @@
     android:title="@string/options_category" >
 
         <PreferenceScreen
-            android:title="@string/lockscreen_targets_message" >
+            android:title="@string/lockscreen_targets_message" 
+            android:summary="@string/lockscreen_targets_summary" >
             <intent
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.aosip.LockscreenShortcutsActivity" />
