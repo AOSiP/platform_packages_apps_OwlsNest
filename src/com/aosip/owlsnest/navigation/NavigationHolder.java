@@ -31,6 +31,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.navigation.NavbarSettings;
+import com.aosip.owlsnest.navigation.PieSettings;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class NavigationHolder extends SettingsPreferenceFragment {
@@ -83,6 +84,7 @@ public class NavigationHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new NavbarSettings();
+            frags[1] = new PieSettings();
         }
 
         @Override
@@ -104,7 +106,8 @@ public class NavigationHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.navigation_category)};
+                    getString(R.string.navigation_category),
+                    getString(R.string.pie_settings)};
         return titleString;
     }
 }
