@@ -50,6 +50,12 @@
             android:title="@string/screenshot_edit_app"
             android:summary="@string/screenshot_edit_app_summary" />
 
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="sensor_block"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
