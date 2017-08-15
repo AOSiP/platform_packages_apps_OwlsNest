@@ -30,6 +30,12 @@
         </PreferenceScreen>
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="uiBlurEnabled"
+            android:title="@string/blur_effect_title"
+            android:summary="@string/blur_effect_summary"
+            android:defaultValue="false" />
+
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="lockscreen_media_metadata"
             android:title="@string/media_art_title"
             android:summary="@string/media_art_summary"
