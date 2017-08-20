@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2016 The Dirty Unicorns Project
+<!--  Copyright (C) 2017 AOSiP
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -36,9 +36,9 @@
     <com.aosip.owlsnest.preference.CustomSeekBarPreference
         android:key="button_brightness"
         android:title="@string/button_brightness_title"
-            android:max="255"
-            settings:min="0"
-            settings:units="" />
+        android:max="255"
+        settings:min="0"
+        settings:units="" />
 
     <ListPreference
         android:dialogTitle="@string/backlight_timeout_title"

@@ -30,16 +30,21 @@
         </PreferenceScreen>
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="ambient_display_show_battery"
+            android:title="@string/ambient_display_show_battery_title"
+            android:summary="@string/ambient_display_show_battery_summary"
+            android:defaultValue="true" />
+
+         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="uiBlurEnabled"
             android:title="@string/blur_effect_title"
             android:summary="@string/blur_effect_summary"
             android:defaultValue="false" />
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="lockscreen_media_metadata"
-            android:title="@string/media_art_title"
-            android:summary="@string/media_art_summary"
-            android:defaultValue="true" />
+            android:key="keyguard_show_clock"
+            android:title="@string/keyguard_statusbar_clock_title"
+            android:summary="@string/keyguard_statusbar_clock_summary" />
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
@@ -48,15 +53,10 @@
             android:defaultValue="false" />
 
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="ambient_display_show_battery"
-            android:title="@string/ambient_display_show_battery_title"
-            android:summary="@string/ambient_display_show_battery_summary"
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
             android:defaultValue="true" />
-
-         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="keyguard_show_clock"
-            android:title="@string/keyguard_statusbar_clock_title"
-            android:summary="@string/keyguard_statusbar_clock_summary" />
 
      <!-- Hide Lockscreen clock & date -->
      <PreferenceCategory
@@ -93,6 +93,11 @@
          android:key="lockscreen_secure_options"
          android:title="@string/lockscreen_secure_options_title" >
 
+         <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_qs_disabled"
+            android:title="@string/lockscreen_qs_disabled_title"
+            android:summary="@string/lockscreen_qs_disabled_summary"/>
+
          <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="fp_unlock_keystore"
             android:title="@string/fp_unlock_keystore_title"
@@ -111,10 +116,6 @@
             android:summary="@string/lockscreen_enable_power_menu_summary"
             android:defaultValue="true" />
 
-         <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
-            android:key="lockscreen_qs_disabled"
-            android:title="@string/lockscreen_qs_disabled_title"
-            android:summary="@string/lockscreen_qs_disabled_summary"/>
      </PreferenceCategory>
 
 </PreferenceScreen>
