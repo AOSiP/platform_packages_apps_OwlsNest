@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2015-2018 Android Open Source Illusion Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/global_actions_title" >
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_power"
+        android:title="@string/global_actions_power"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_restart"
+        android:title="@string/global_actions_restart"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_screenshot"
+        android:title="@string/global_actions_screenshot"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_screenrecord"
+        android:title="@string/global_actions_screenrecord"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_airplane"
+        android:title="@string/global_actions_airplane"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_settings"
+        android:title="@string/global_actions_settings"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_lockdown"
+        android:title="@string/global_actions_lockdown"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_flashlight"
+        android:title="@string/global_actions_flashlight"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_soundpanel"
+        android:title="@string/global_actions_soundpanel"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="global_actions_users"
+        android:title="@string/global_actions_users"
+        android:defaultValue="false" />
+
+</PreferenceScreen>
