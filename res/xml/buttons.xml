@@ -20,4 +20,16 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/buttons_category" >
 
+    <Preference
+        android:key="global_actions"
+        android:title="@string/global_actions_title"
+        android:summary="@string/global_actions_summary"
+        android:fragment="com.aosip.owlsnest.categories.buttons.GlobalActionsSettings" />
+
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/global_actions_advanced_reboot_title"
+        android:summary="@string/global_actions_advanced_reboot_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
