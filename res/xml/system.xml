@@ -22,6 +22,12 @@
     android:title="@string/system_category" >
 
         <Preference
+            android:key="device_parts"
+            android:title="@string/custom_device_parts"
+            android:summary="@string/custom_device_parts_summary"
+            android:fragment="com.aosip.device.DeviceParts" />
+
+        <Preference
             android:title="@string/app_ops_settings"
             android:summary="@string/app_ops_settings_summary"
             android:fragment="com.android.settings.applications.AppOpsSummary"/>

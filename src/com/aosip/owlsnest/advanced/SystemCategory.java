@@ -20,6 +20,8 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.content.ContentResolver;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -42,6 +44,7 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
+    private static final String KEY_DEVICE_PARTS = "device_parts";
 
     private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
 
@@ -81,6 +84,13 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         mPackageAdapter = new ScreenshotEditPackageListAdapter(getActivity());
         mScreenshotEditAppPref = findPreference("screenshot_edit_app");
         mScreenshotEditAppPref.setOnPreferenceClickListener(this);
+
+        if (!isDevicePartsSupported(getContext())) {
+            Preference pref = getPreferenceScreen().findPreference(KEY_DEVICE_PARTS);
+            if (pref != null) {
+                getPreferenceScreen().removePreference(pref);
+            }
+        }
     }
 
     @Override
@@ -158,6 +168,16 @@ public class SystemCategory extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    private static boolean isDevicePartsSupported(Context context) {
+        boolean devicePartsSupported = false;
+        try {
+            devicePartsSupported = context.getPackageManager().getPackageInfo(
+                    "com.aosip.device", 0).versionCode > 0;
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        return devicePartsSupported;
     }
 }
 
