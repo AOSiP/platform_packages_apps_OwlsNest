@@ -11,6 +11,7 @@
      limitations under the License.
 -->
 
+<<<<<<< HEAD:res/values/colors.xml
 <resources>
     <color name="background_tab_pressed">#6633B5E5</color>
     <color name="text_color_white">@android:color/white</color>
@@ -19,3 +20,13 @@
     <color name="tab_text_color">#FF666666</color>
     <color name="white">#FFF</color>
 </resources>
+=======
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <com.abc.settings.preferences.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_navbar"
+        android:title="@string/double_tap_sleep_navbar"
+        android:defaultValue="true" />
+</PreferenceScreen>
+>>>>>>> d584ec8... Add navbar double tap to sleep [2/2]:res/xml/abc_navbar_settings.xml
