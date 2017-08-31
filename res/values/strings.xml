@@ -79,6 +79,9 @@
     <string name="gesture_category">Gesture</string>
     <string name="gesture_summary">Gesture based options/actions</string>
 
+    <!--Double Tap to Sleep-->
+    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
