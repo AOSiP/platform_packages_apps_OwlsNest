@@ -73,6 +73,10 @@
     <string name="powermenu_category">Power</string>
     <string name="volume_category">Volume</string>
 
+    <!--Vol button rotation swap-->
+    <string name="swap_volume_buttons">Rotation Swap</string>
+    <string name="volume_keys_swap_summary">Swap volume buttons based on device rotation</string>
+
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
