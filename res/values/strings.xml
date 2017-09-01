@@ -58,6 +58,10 @@
     <string name="powermenu_category">Power</string>
     <string name="volume_category">Volume</string>
 
+    <!--Vol button rotation swap-->
+    <string name="swap_volume_buttons">Rotation Swap</string>
+    <string name="volume_keys_swap_summary">Swap volume buttons based on device rotation</string>
+
     <!-- Power Menu -->
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_power">Power</string>

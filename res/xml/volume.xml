@@ -21,5 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/volume_category" >
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="swap_volume_buttons"
+        android:title="@string/swap_volume_buttons"
+        android:summary="@string/volume_keys_swap_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
 
