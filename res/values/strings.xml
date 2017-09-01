@@ -62,6 +62,10 @@
     <string name="swap_volume_buttons">Rotation Swap</string>
     <string name="volume_keys_swap_summary">Swap volume buttons based on device rotation</string>
 
+    <!--Vol media all time-->
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Volume panel will show media volume slider by default</string>
+
     <!-- Power Menu -->
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_power">Power</string>
