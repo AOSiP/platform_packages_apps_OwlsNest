@@ -10,7 +10,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources>
     <color name="background_tab_pressed">#6633B5E5</color>
     <color name="text_color_white">@android:color/white</color>
