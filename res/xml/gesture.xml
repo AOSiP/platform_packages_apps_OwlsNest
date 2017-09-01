@@ -22,6 +22,11 @@
     android:title="@string/gesture_category" >
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_lockscreen"
+        android:title="@string/double_tap_sleep_lockscreen"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_navbar"
         android:title="@string/double_tap_sleep_navbar"
         android:defaultValue="true" />
