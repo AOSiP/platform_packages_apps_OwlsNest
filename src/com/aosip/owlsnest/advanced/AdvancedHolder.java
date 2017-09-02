@@ -34,6 +34,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.aosip.owlsnest.advanced.ScreenStateToggles;
 import com.aosip.owlsnest.advanced.SmartPixels;
 import com.aosip.owlsnest.advanced.SystemCategory;
+import com.aosip.owlsnest.advanced.WakeLockBlocker;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class AdvancedHolder extends SettingsPreferenceFragment {
@@ -92,6 +93,7 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
             } catch (IndexOutOfBoundsException e) {
                 // Do nothing
             }
+            frags[3] = new WakeLockBlocker();
         }
 
         @Override
@@ -117,10 +119,12 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
         if (enableSmartPixels) {
             return new String[]{ getString(R.string.system_category),
                     getString(R.string.screen_state_toggles_title),
-                    getString(R.string.smart_pixels_title)};
+                    getString(R.string.smart_pixels_title),
+                    getString(R.string.wakelock_blocker_title)};
         } else {
             return new String[]{ getString(R.string.system_category),
-                    getString(R.string.screen_state_toggles_title)};
+                    getString(R.string.screen_state_toggles_title),
+                    getString(R.string.wakelock_blocker_title)};
         }
     }
 }
