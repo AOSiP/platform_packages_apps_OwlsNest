@@ -31,6 +31,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
+import com.aosip.owlsnest.advanced.AlarmBlocker;
 import com.aosip.owlsnest.advanced.ScreenStateToggles;
 import com.aosip.owlsnest.advanced.SmartPixels;
 import com.aosip.owlsnest.advanced.SystemCategory;
@@ -87,13 +88,14 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new SystemCategory();
-            frags[1] = new ScreenStateToggles();
+            frags[1] = new AlarmBlocker();
+            frags[2] = new ScreenStateToggles();
+            frags[3] = new WakeLockBlocker();
             try {
-                frags[2] = new SmartPixels();
+                frags[4] = new SmartPixels();
             } catch (IndexOutOfBoundsException e) {
                 // Do nothing
             }
-            frags[3] = new WakeLockBlocker();
         }
 
         @Override
@@ -118,11 +120,13 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
                 getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
         if (enableSmartPixels) {
             return new String[]{ getString(R.string.system_category),
+                    getString(R.string.alarm_blocker),
                     getString(R.string.screen_state_toggles_title),
-                    getString(R.string.smart_pixels_title),
-                    getString(R.string.wakelock_blocker_title)};
+                    getString(R.string.wakelock_blocker_title),
+                    getString(R.string.smart_pixels_title)};
         } else {
             return new String[]{ getString(R.string.system_category),
+                    getString(R.string.alarm_blocker),
                     getString(R.string.screen_state_toggles_title),
                     getString(R.string.wakelock_blocker_title)};
         }
