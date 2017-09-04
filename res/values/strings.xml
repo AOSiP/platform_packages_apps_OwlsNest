@@ -56,6 +56,7 @@
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
     <string name="headsup_category">Heads Up</string>
+    <string name="battery_light">Battery LED</string>
 
     <string name="heads_up_title">Allow Heads up</string>
     <string name="heads_up_summary_enabled">Heads-up notifications are enabled</string>
@@ -77,6 +78,15 @@
     <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Make heads up less annoying</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+
+    <!-- Battery light -->
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
+    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_low_color">Low battery</string>
+    <string name="battery_light_medium_color">Medium battery</string>
+    <string name="battery_light_full_color">Almost full battery</string>
+    <string name="battery_light_reallyfull_color">Full (100) battery</string>
 
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
