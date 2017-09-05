@@ -29,7 +29,7 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
-
+import com.aosip.owlsnest.utils.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +39,7 @@ public class AdvancedHolder extends SettingsPreferenceFragment implements
     private static final String CUSTOM_THEME_BROWSE = "theme_select_activity";
 
     private Preference mThemeBrowse;
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,11 @@ public class AdvancedHolder extends SettingsPreferenceFragment implements
         browse.setClassName("com.android.customization", "com.android.customization.picker.CustomizationPickerActivity");
         return pm.resolveActivity(browse, 0) != null;
     }
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
+        }
 
     @Override
     public int getMetricsCategory() {
