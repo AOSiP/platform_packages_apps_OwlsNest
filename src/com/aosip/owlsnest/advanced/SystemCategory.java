@@ -28,12 +28,18 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
+
+import com.android.settings.Utils;
+
 public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
     private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private ListPreference mLaunchPlayerHeadsetConnection;
     private ListPreference mHeadsetRingtoneFocus;
@@ -51,6 +57,8 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.system);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        PreferenceScreen prefScreen = getPreferenceScreen();
 
         mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
         int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
@@ -74,6 +82,10 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntry());
         mSystemUIThemeStyle.setOnPreferenceChangeListener(this);
 
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
+        }
     }
 
     @Override

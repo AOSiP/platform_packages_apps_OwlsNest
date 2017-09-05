@@ -51,4 +51,24 @@
             android:entries="@array/systemui_theme_style_entries"
             android:entryValues="@array/systemui_theme_style_values" />
 
+    <PreferenceCategory
+        android:key="incall_vib_options"
+        android:title="@string/incall_vibration_category" >
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_connect"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="false" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="false" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_disconnect"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
