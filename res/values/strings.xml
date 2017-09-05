@@ -139,7 +139,6 @@
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
     <string name="powermenu_category">Power</string>
 
-
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Reboot</string>
     <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
@@ -147,10 +146,22 @@
     <string name="powermenu_screenshot_title">Screenshot</string>
     <string name="powermenu_airplane_title">Airplane mode</string>
 
+
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
     <string name="stock_recent">Stock</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button on legacy recents (Launcher3QuickStep uninstalled)</string>
+    <string name="recents_clear_all_location_title">Clear all location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
 
     <!--Owlsnest Gestures-->
