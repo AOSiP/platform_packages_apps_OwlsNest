@@ -39,5 +39,28 @@
         android:summary="@string/volume_keys_control_media_stream_summary"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+        android:key="vol_dnd_category"
+        android:title="@string/vol_dnd_category_title" >
+
+        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+            android:key="sysui_volume_down_silent"
+            android:title="@string/volbtn_down_zen_title"
+            android:summary="@string/volbtn_down_zen_summary"
+            android:defaultValue="true"/>
+
+        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+            android:key="sysui_volume_up_silent"
+            android:title="@string/volbtn_up_zen_title"
+            android:summary="@string/volbtn_up_zen_summary"
+            android:defaultValue="true" />
+
+        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+            android:key="sysui_show_full_zen"
+            android:title="@string/vol_zen_title"
+            android:summary="@string/vol_zen_summary"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
 </PreferenceScreen>
 

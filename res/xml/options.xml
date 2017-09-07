@@ -21,10 +21,24 @@
     android:layout="@layout/tab_ui"
     android:title="@string/options_category" >
 
+    <Preference
+            android:title="@string/lockscreen_shortcuts_title"
+            android:summary="@string/lockscreen_shortcuts_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
+    </Preference>
+
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="doze_always_on"
+        android:title="@string/doze_always_on_title"
+        android:summary="@string/doze_always_on_summary"
         android:defaultValue="false" />
 
 </PreferenceScreen>

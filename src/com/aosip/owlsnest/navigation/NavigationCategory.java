@@ -24,7 +24,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class NavigationButtonsCategory extends SettingsPreferenceFragment implements
+public class NavigationCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
@@ -36,7 +36,7 @@ public class NavigationButtonsCategory extends SettingsPreferenceFragment implem
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.navigationbuttons);
+        addPreferencesFromResource(R.xml.navigation);
 
     }
 
