@@ -31,7 +31,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.navigation.NavigationButtonsCategory;
+import com.aosip.owlsnest.navigation.NavigationCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class NavigationHolder extends SettingsPreferenceFragment {
@@ -83,7 +83,7 @@ public class NavigationHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new NavigationButtonsCategory();
+            frags[0] = new NavigationCategory();
         }
 
         @Override
@@ -105,7 +105,7 @@ public class NavigationHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.navigationbuttons_category)};
+                    getString(R.string.navigation_category)};
         return titleString;
     }
 }

@@ -69,7 +69,7 @@
     <!--Owlsnest navigation-->
     <string name="navigation_title">Navigation</string>
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
-    <string name="navigationbuttons_category">Layouts</string>
+    <string name="navigation_category">Navigation</string>
 
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardware buttons</string>
@@ -121,6 +121,31 @@
     <string name="advanced_title">Advanced Settings</string>
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
+
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
+    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
+    <string name="navbar_buttons_title">Navbar buttons</string>
+    <string name="navbar_buttons_summary">Navbar layout and custom buttons</string>
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show brightness slider on qs panel</string>
+    <string name="qs_show_brightness_mode">Show brightness mode switch</string>
+    <string name="qs_show_brightness_mode_summary">Show Auto-Brightness switch in qs panel</string>
+    <string name="vol_dnd_category_title">Do not disturb mode</string>
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">allow volume down to enter do not disturb mode</string>
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">allow volume up to exit do not disturb mode</string>
+    <string name="vol_zen_title">Do not disturb switch</string>
+    <string name="vol_zen_summary">Show do not disturb swith on volume panel</string>
+    <string name="doze_always_on_title">Always-on Ambient Display</string>
+    <string name="doze_always_on_summary">Ambient will be on when the proximity sensor is uncovered</string>
+    <string name="powern_notifications_title">Power notifications</string>
+    <string name="powern_notifications_summary">Advanced notifications control on long press</string>
+    <string name="notifications_cat_title">Notifications</string>
+    <string name="qs_cat_title">Quick settings panel</string>
 
 </resources>
 

@@ -27,5 +27,17 @@
         android:summary="@string/status_bar_quick_qs_pulldown_summary"
         android:defaultValue="false" />
 
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="qs_show_brightness"
+        android:title="@string/qs_brightness_slider_title"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true"/>
+
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="qs_show_brightness_mode"
+        android:title="@string/qs_show_brightness_mode"
+        android:summary="@string/qs_show_brightness_mode_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
 
