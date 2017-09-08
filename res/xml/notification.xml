@@ -21,5 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/notification_category" >
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
 
