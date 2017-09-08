@@ -74,6 +74,10 @@
     <string name="ticker_enabled">Notification ticker</string>
     <string name="ticker_media_enabled">Notification and music ticker</string>
 
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
