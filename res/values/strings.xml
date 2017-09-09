@@ -109,6 +109,10 @@
     <string name="weather_category">Weather</string>
     <string name="options_category">Various</string>
 
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
     <string name="advanced_summary">Misc and extra system settings</string>
