@@ -39,6 +39,13 @@
         android:summary="@string/volume_keys_control_media_stream_summary"
         android:defaultValue="false" />
 
+    <ListPreference
+	android:dialogTitle="@string/volume_key_cursor_control_title"
+	android:entries="@array/volume_key_cursor_control_entries"
+	android:entryValues="@array/volume_key_cursor_control_values"
+	android:key="volume_key_cursor_control"
+	android:title="@string/volume_key_cursor_control_title" />
+
     <PreferenceCategory
         android:key="vol_dnd_category"
         android:title="@string/vol_dnd_category_title" >
