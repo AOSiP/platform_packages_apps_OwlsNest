@@ -457,4 +457,10 @@
     <string name="force_ambient_for_media_title">Enable</string>
 
     <string name="app_ops_settings_summary">Control apps permissions</string>
+
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 </resources>
