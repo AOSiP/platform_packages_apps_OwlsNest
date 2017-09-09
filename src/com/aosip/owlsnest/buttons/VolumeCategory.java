@@ -27,6 +27,10 @@ import com.android.settings.SettingsPreferenceFragment;
 public class VolumeCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+
+    private ListPreference mVolumeKeyCursorControl;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -35,8 +39,21 @@ public class VolumeCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.volume);
+
+	final ContentResolver resolver = getContentResolver();
+	final PreferenceScreen prefScreen = getPreferenceScreen();
+	final Resources res = getResources();
+
+	// volume key cursor control
+        mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
+        if (mVolumeKeyCursorControl != null) {
+		mVolumeKeyCursorControl.setOnPreferenceChangeListener(this);
+		int volumeRockerCursorControl = Settings.System.getInt(getContentResolver(),
+			Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
+		mVolumeKeyCursorControl.setValue(Integer.toString(volumeRockerCursorControl));
+		mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
+	}
     }
 
     @Override
@@ -45,6 +62,17 @@ public class VolumeCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+	if (preference == mVolumeKeyCursorControl) {
+		String volumeKeyCursorControl = (String) newValue;
+		int volumeKeyCursorControlValue = Integer.parseInt(volumeKeyCursorControl);
+            	Settings.System.putInt(getActivity().getContentResolver(),
+                   	Settings.System.VOLUME_KEY_CURSOR_CONTROL, volumeKeyCursorControlValue);
+            	int volumeKeyCursorControlIndex = mVolumeKeyCursorControl
+                    	.findIndexOfValue(volumeKeyCursorControl);
+           	mVolumeKeyCursorControl
+                    	.setSummary(mVolumeKeyCursorControl.getEntries()[volumeKeyCursorControlIndex]);
+            	return true;
+	}
         return false;
     }
 }
