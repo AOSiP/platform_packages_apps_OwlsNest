@@ -21,5 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/options_category" >
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
 
