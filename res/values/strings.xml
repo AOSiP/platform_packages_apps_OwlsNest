@@ -46,6 +46,11 @@
     <string name="clock_category">Clock</string>
     <string name="battery_category">Battery</string>
     <string name="icon_category">Icons</string>
+    <string name="traffic_category">Traffic</string>
+
+    <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
 
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
