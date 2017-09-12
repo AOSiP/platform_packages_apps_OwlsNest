@@ -21,4 +21,10 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
+    <com.aosip.owlsnest.preference.GlobalSettingSwitchPreference
+        android:key="show_cpu_overlay"
+        android:title="@string/show_cpu_info"
+        android:summary="@string/show_cpu_info_summary" 
+        android:defaultValue="false" />
+
 </PreferenceScreen>
