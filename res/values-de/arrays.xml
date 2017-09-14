@@ -76,10 +76,10 @@ limitations under the License.
 
     <!-- PowerMenu entries -->
     <string-array name="power_menu_actions_array" translatable="false">
-        <item>Power</item>
+        <item>Powermenü</item>
         <item>Neustart</item>
-        <item>screenshot</item>
-        <item>screenrecord</item>
+        <item>Bildschirmfoto</item>
+        <item>Bildschirmvideo</item>
         <item>Flugmodus</item>
         <item>users</item>
         <item>Taschenlampe</item>
