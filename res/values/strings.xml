@@ -234,4 +234,10 @@
     <string name="global_actions_max_columns_title">Max visible actions</string>
     <string name="global_actions_max_columns_summary">Limit the amount of actions to show at once</string>
 
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="network_traffic_state_title">Network traffic</string>
+    <string name="network_traffic_state_summary">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
 </resources>
