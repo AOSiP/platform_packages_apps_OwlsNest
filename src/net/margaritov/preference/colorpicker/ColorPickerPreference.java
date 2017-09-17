@@ -30,9 +30,12 @@ import android.support.v7.preference.*;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.android.settings.R;
 
 /**
  * A preference type that allows a user to choose a time
@@ -48,6 +51,7 @@ public class ColorPickerPreference extends Preference implements
     private int mValue = Color.BLACK;
     private float mDensity = 0;
     private boolean mAlphaSliderEnabled = false;
+    private boolean mEnabled = true;
 
     // if we return -6, button is not enabled
     static final String SETTINGS_NS = "http://schemas.android.com/apk/res/com.android.settings";
@@ -143,7 +147,7 @@ public class ColorPickerPreference extends Preference implements
 
         widgetFrameView.addView(defView);
         widgetFrameView.setMinimumWidth(0);
-        defView.setBackground(getContext().getDrawable(android.R.drawable.ic_menu_revert));
+        defView.setBackground(getContext().getDrawable(R.drawable.ic_settings_backup_restore));
         defView.setTag("default");
         defView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,6 +155,7 @@ public class ColorPickerPreference extends Preference implements
                 try {
                     getOnPreferenceChangeListener().onPreferenceChange(ColorPickerPreference.this,
                             Integer.valueOf(mDefValue));
+                    onColorChanged(mDefValue);
                 } catch (NullPointerException e) {
                 }
             }
@@ -197,9 +202,19 @@ public class ColorPickerPreference extends Preference implements
         iView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog(null);
+                if (mEnabled) {
+                    showDialog(null);
+                }
             }
         });
+    }
+
+    @Override
+    public void setEnabled(boolean enabled) {
+        super.setEnabled(enabled);
+        if (mEnabled != enabled) {
+            mEnabled = enabled;
+        }
     }
 
     private Bitmap getPreviewBitmap() {
@@ -254,6 +269,8 @@ public class ColorPickerPreference extends Preference implements
             mDialog.onRestoreInstanceState(state);
         }
         mDialog.show();
+        mDialog.getWindow().setSoftInputMode(
+                android.view.WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
     }
 
 
@@ -274,6 +291,10 @@ public class ColorPickerPreference extends Preference implements
      */
     public void setNewPreviewColor(int color) {
         onColorChanged(color);
+    }
+
+    public void setDefaultColor(int color) {
+        mDefValue = color;
     }
 
     /**
