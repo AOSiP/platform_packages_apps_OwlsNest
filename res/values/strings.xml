@@ -44,6 +44,9 @@
     <string name="icon_category">Icons</string>
     <string name="battery_category">Battery</string>
 
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">Statusbar items</string>
+
 
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
