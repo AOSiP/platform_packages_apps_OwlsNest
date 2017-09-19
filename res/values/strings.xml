@@ -68,6 +68,7 @@
     <string name="powermenu_lockdown">Lock Down</string>
     <string name="powermenu_soundpanel">Sound Panel</string>
     <string name="powermenu_users">Users</string>
+    <string name="powermenu_torch">Flashlight</string>
 
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
