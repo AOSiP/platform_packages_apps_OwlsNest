@@ -46,4 +46,15 @@
         android:entryValues="@array/heads_up_time_out_values"
         android:persistent="false" />
 
+    <PreferenceCategory
+        android:title="@string/heads_up_stoplist_title"
+        android:key="stoplist_applications" >
+
+        <Preference
+            android:key="add_stoplist_packages"
+            android:icon="@drawable/ic_menu_add"
+            android:title="@string/add_heads_up_package"
+            android:summary="@string/add_heads_up_stoplist_summary" />
+    </PreferenceCategory>
+
 </PreferenceScreen>

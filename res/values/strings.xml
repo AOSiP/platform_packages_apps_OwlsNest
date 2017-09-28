@@ -198,6 +198,9 @@
     <string name="notification_category">Notifications</string>
     <string name="headsup_category">Heads-Up</string>
     <string name="headsup_summary">Various options to change how Heads Up works</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
+    <string name="heads_up_stoplist_title">Applist</string>
 
     <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">Show media heads up</string>
