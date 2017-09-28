@@ -186,7 +186,9 @@
     <string name="heads_up_snooze_20min">20 minutes</string>
     <string name="add_heads_up_package">Add app</string>
     <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="heads_up_stoplist_title">Applist</string>
+    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
+    <string name="heads_up_stoplist_title">Stoplist</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
 
     <!-- Battery light -->
     <string name="battery_light_settings">Battery LED</string>
