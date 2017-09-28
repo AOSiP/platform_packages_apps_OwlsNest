@@ -116,6 +116,10 @@
     <string name="status_bar_quick_qs_pulldown">Quick Pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">Pulldown statusbar from right side to show QS panel</string>
 
+    <!-- Small quick settings scroller -->
+    <string name="qqs_scroll_title">Scroll small QS tiles</string>
+    <string name="qqs_scroll_summary">Allow scrolling through the small QS tiles</string>
+
     <!--Owlsnest navigation-->
     <string name="navigation_title">Navigation</string>
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
