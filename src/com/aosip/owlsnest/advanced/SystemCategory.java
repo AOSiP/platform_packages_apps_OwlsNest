@@ -19,6 +19,7 @@ package com.aosip.owlsnest.advanced;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
@@ -45,6 +46,10 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
     private ListPreference mFlashlightOnCall;
 
+    private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
+
+    private ListPreference mLaunchPlayerHeadsetConnection;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -56,6 +61,7 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system);
         final PreferenceScreen prefSet = getPreferenceScreen();
+        final ContentResolver resolver = getActivity().getContentResolver();
 
         mFlashlightOnCall = (ListPreference) findPreference(FLASHLIGHT_ON_CALL);
         Preference FlashOnCall = findPreference("flashlight_on_call");
@@ -73,6 +79,14 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         if (!TelephonyUtils.isVoiceCapable(getActivity())) {
 			prefSet.removePreference(incallVibCategory);
         }
+
+        mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
+        int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
+                Settings.System.HEADSET_CONNECT_PLAYER, 4, UserHandle.USER_CURRENT);
+        mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
+        mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
+        mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -81,12 +95,23 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+
         if (preference == mFlashlightOnCall) {
             int flashlightValue = Integer.parseInt(((String) newValue).toString());
             Settings.System.putInt(getContentResolver(),
                     Settings.System.FLASHLIGHT_ON_CALL, flashlightValue);
             mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
             mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
+        }
+
+        if (preference == mLaunchPlayerHeadsetConnection) {
+            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
+            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
+            mLaunchPlayerHeadsetConnection.setSummary(
+                    mLaunchPlayerHeadsetConnection.getEntries()[index]);
+            Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
+                    mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
