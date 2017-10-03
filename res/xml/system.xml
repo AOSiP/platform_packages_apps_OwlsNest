@@ -26,11 +26,11 @@
             android:summary="@string/app_ops_settings_summary"
             android:fragment="com.android.settings.applications.AppOpsSummary"/>
 
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        <ListPreference
             android:key="headset_connect_player"
             android:title="@string/headset_connect_player_title"
-            android:summary="@string/headset_connect_player_summary"
-            android:defaultValue="false" />
+            android:entries="@array/headset_connect_player_entries"
+            android:entryValues="@array/headset_connect_player_values" />
 
 </PreferenceScreen>
 
