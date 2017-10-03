@@ -21,11 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        <ListPreference
             android:key="headset_connect_player"
             android:title="@string/headset_connect_player_title"
-            android:summary="@string/headset_connect_player_summary"
-            android:defaultValue="false" />
+            android:entries="@array/headset_connect_player_entries"
+            android:entryValues="@array/headset_connect_player_values" />
 
 </PreferenceScreen>
 

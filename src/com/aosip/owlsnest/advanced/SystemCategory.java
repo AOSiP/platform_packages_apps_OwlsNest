@@ -17,8 +17,12 @@
 package com.aosip.owlsnest.advanced;
 
 import android.os.Bundle;
+import android.content.ContentResolver;
+import android.os.UserHandle;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -26,6 +30,10 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
+
+    private ListPreference mLaunchPlayerHeadsetConnection;
 
     @Override
     public int getMetricsCategory() {
@@ -38,6 +46,15 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system);
 
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
+        int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
+                Settings.System.HEADSET_CONNECT_PLAYER, 4, UserHandle.USER_CURRENT);
+        mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
+        mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
+        mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -46,6 +63,16 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mLaunchPlayerHeadsetConnection) {
+            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
+            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
+            mLaunchPlayerHeadsetConnection.setSummary(
+                    mLaunchPlayerHeadsetConnection.getEntries()[index]);
+            Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
+                    mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
+            return true;
+        }
         return false;
     }
 }
