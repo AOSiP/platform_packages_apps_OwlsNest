@@ -21,6 +21,10 @@
     android:layout="@layout/tab_ui"
     android:title="@string/navigation_category" >
 
+    <SwitchPreference
+        android:key="navigation_bar_enabled"
+        android:title="@string/navigation_bar_enabled_title" />
+
     <Preference
             android:title="@string/navbar_buttons_title"
             android:summary="@string/navbar_buttons_summary">
