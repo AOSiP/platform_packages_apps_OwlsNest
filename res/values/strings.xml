@@ -110,6 +110,9 @@
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
     <string name="navigation_category">Navigation</string>
 
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Enable navigation bar</string>
+
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardware buttons</string>
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
