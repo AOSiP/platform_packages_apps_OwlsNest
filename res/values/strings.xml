@@ -47,6 +47,10 @@
     <string name="icon_category">Icons</string>
     <string name="traffic_category">Traffic</string>
 
+    <!-- Statusbar logo -->
+    <string name="status_bar_logo_title">Kronic Logo</string>
+    <string name="status_bar_logo_summary">Enable to show Kronic in the statusbar</string>
+
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Show net activity in statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
