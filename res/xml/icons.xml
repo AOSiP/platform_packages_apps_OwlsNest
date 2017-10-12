@@ -29,11 +29,13 @@
                 android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
     </Preference>
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.owlsnest.preference.SystemSettingListPreference
         android:key="status_bar_logo"
         android:title="@string/status_bar_logo_title"
-        android:summary="@string/status_bar_logo_summary"
-        android:defaultValue="false"/>
+        android:dialogTitle="@string/status_bar_logo_dialog_title"
+        android:entries="@array/status_bar_logo_entries"
+        android:entryValues="@array/status_bar_logo_values"
+        android:defaultValue="0" />
 
 </PreferenceScreen>
 

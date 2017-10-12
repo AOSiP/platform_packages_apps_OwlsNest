@@ -49,7 +49,10 @@
 
     <!-- Statusbar logo -->
     <string name="status_bar_logo_title">Kronic Logo</string>
-    <string name="status_bar_logo_summary">Enable to show Kronic in the statusbar</string>
+    <string name="status_bar_logo_dialog_title">Kronic logo position</string>
+    <string name="status_bar_logo_disabled">Disabled</string>
+    <string name="status_bar_logo_left">Left</string>
+    <string name="status_bar_logo_right">Right</string>
 
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Show net activity in statusbar</string>
