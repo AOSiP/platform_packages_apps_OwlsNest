@@ -21,6 +21,10 @@
     android:layout="@layout/tab_ui"
     android:title="@string/gesture_category" >
 
+    <PreferenceCategory
+        android:key="double_tap"
+        android:title="@string/double_tap_options" >
+
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
         android:title="@string/double_tap_sleep_lockscreen"
@@ -30,5 +34,7 @@
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:defaultValue="false" />
+
+     </PreferenceCategory> 
 
 </PreferenceScreen>
