@@ -121,12 +121,16 @@
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesture</string>
     <string name="gesture_summary">Gesture based options/actions</string>
+    <string name="double_tap_options">Double Tap to Sleep</string>
+
+    <!--Double Tap to Sleep Navbar-->
+    <string name="double_tap_sleep_navbar">Nav Bar</string>
 
     <!--Double Tap to Sleep Lockscreen-->
-    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_sleep_lockscreen">Lockscreen</string>
 
     <!--Double Tap to Sleep Statusbar-->
-    <string name="double_tap_sleep_gesture_title">Double tap to sleep on status bar</string>
+    <string name="double_tap_sleep_gesture_title">Status Bar</string>
 
 
     <!--Owlsnest lockscreen-->
