@@ -21,5 +21,9 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
+        <Preference
+            android:title="@string/app_ops_settings"
+            android:fragment="com.android.settings.applications.AppOpsSummary"/>
+
 </PreferenceScreen>
 
