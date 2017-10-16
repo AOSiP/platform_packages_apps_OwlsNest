@@ -16,17 +16,23 @@
 
 package com.aosip.owlsnest.notification;
 
+import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.provider.Settings;
 
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 public class NotificationCategory extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private static final String TAG = "NotificationCategory";
+
+    private ListPreference mTickerMode;
 
     @Override
     public int getMetricsCategory() {
@@ -39,6 +45,14 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.notification);
+
+        mTickerMode = (ListPreference) findPreference("ticker_mode");
+        mTickerMode.setOnPreferenceChangeListener(this);
+        int tickerMode = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_TICKER,
+                1, UserHandle.USER_CURRENT);
+        mTickerMode.setValue(String.valueOf(tickerMode));
+        mTickerMode.setSummary(mTickerMode.getEntry());
       }
 
     @Override
@@ -46,7 +60,17 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {      
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference.equals(mTickerMode)) {
+            int tickerMode = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_SHOW_TICKER, tickerMode, UserHandle.USER_CURRENT);
+            int index = mTickerMode.findIndexOfValue((String) newValue);
+            mTickerMode.setSummary(
+                    mTickerMode.getEntries()[index]);
+            return true;
+        }
        return false;
     }
 }
