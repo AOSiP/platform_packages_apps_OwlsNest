@@ -150,5 +150,6 @@
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
 
+    <string name="app_ops_settings_summary">Control apps permissions</string>
 </resources>
 
