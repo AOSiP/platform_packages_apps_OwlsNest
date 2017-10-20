@@ -21,6 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
+    <Preference
+        android:title="@string/app_ops_settings"
+        android:summary="@string/app_ops_settings_summary"
+        android:fragment="com.android.settings.applications.appops.AppOpsSummary"/>
+
     <com.aosip.owlsnest.preference.GlobalSettingSwitchPreference
         android:key="show_cpu_overlay"
         android:title="@string/show_cpu_info"
