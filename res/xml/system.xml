@@ -21,6 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
+        <Preference
+            android:title="@string/app_ops_settings"
+            android:summary="@string/app_ops_settings_summary"
+            android:fragment="com.android.settings.applications.AppOpsSummary"/>
+
         <ListPreference
             android:key="headset_connect_player"
             android:title="@string/headset_connect_player_title"
