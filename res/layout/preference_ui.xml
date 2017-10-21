@@ -11,7 +11,6 @@
     <com.aosip.owlsnest.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:background="@color/tab_background_color"
-        android:textColor="@color/tab_text_color"
         android:layout_width="match_parent"
         android:layout_height="40dip" />
 
