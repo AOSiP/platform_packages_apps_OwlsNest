@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.qssettings;
+package com.aosip.owlsnest.quicksettings;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class ExpandedCategory extends SettingsPreferenceFragment implements
+public class QSCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private CustomSeekBarPreference mQsRowsPort;
@@ -45,7 +45,7 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.expanded);
+        addPreferencesFromResource(R.xml.quicksettings);
         final ContentResolver resolver = getActivity().getContentResolver();
 
         int value = Settings.System.getIntForUser(resolver,

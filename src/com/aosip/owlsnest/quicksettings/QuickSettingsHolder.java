@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.qssettings;
+package com.aosip.owlsnest.quicksettings;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -31,10 +31,11 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.qssettings.ExpandedCategory;
+import com.aosip.owlsnest.quicksettings.ExpandedCategory;
+import com.aosip.owlsnest.quicksettings.QSCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
-public class QsSettingsHolder extends SettingsPreferenceFragment {
+public class QuickSettingsHolder extends SettingsPreferenceFragment {
 
     ViewPager mViewPager;
     String titleString[];
@@ -84,6 +85,7 @@ public class QsSettingsHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new ExpandedCategory();
+            frags[1] = new QSCategory();
         }
 
         @Override
@@ -105,9 +107,8 @@ public class QsSettingsHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.expanded_category)};
+                    getString(R.string.expanded_category),
+                    getString(R.string.quicksettings_title)};
         return titleString;
     }
 }
-
-
