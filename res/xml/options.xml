@@ -52,6 +52,12 @@
         android:key="secure_lockscreen"
         android:title="@string/secure_lockscreen" >
 
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:defaultValue="true" />
+
         <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
             android:key="face_auto_unlock"
             android:title="@string/face_auto_unlock_title"
