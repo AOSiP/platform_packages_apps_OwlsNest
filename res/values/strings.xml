@@ -222,5 +222,9 @@
     <string name="notifications_cat_title">Notifications</string>
     <string name="qs_cat_title">Quick settings panel</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+
 </resources>
 
