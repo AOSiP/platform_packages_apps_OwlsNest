@@ -138,6 +138,10 @@
     <string name="gesture_summary">Gesture based options/actions</string>
     <string name="double_tap_options">Double Tap to Sleep</string>
 
+    <!--3-Finger screenshot-->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
     <!--Double Tap to Sleep Navbar-->
     <string name="double_tap_sleep_navbar">Nav Bar</string>
 
