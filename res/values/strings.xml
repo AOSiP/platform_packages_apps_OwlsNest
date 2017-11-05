@@ -341,6 +341,10 @@
     <string name="double_tap_options">Double Tap to Sleep</string>
     <string name="aosp_gesture_title">AOSP Gestures</string>
 
+    <!--3-Finger screenshot-->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
     <!--Double Tap to Sleep Navbar-->
     <string name="double_tap_sleep_navbar">Nav Bar</string>
 
