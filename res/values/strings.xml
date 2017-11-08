@@ -118,6 +118,11 @@
     <string name="toast_icon_title">Toast app icon</string>
     <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
 
+    <!-- Heads up -->
+    <string name="heads_up_title">Enable</string>
+    <string name="heads_up_summary_enabled">Heads up notifications are enabled</string>
+    <string name="heads_up_summary_disabled">Heads up notifications are disabled</string>
+
 
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
