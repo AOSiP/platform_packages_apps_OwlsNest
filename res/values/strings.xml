@@ -53,6 +53,10 @@
     <string name="notification_category">Notifications</string>
     <string name="headsup_category">Heads Up</string>
 
+    <!-- Heads up -->
+    <string name="heads_up_summary_enabled">Pop-up notifications are enabled</string>
+    <string name="heads_up_summary_disabled">Pop-up notifications are disabled</string>
+
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
