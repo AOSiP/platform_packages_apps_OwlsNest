@@ -51,6 +51,7 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
         int tickerMode = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.STATUS_BAR_SHOW_TICKER,
                 0, UserHandle.USER_CURRENT);
+        updatePrefs();
         mTickerMode.setValue(String.valueOf(tickerMode));
         mTickerMode.setSummary(mTickerMode.getEntry());
       }
@@ -66,12 +67,24 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
             int tickerMode = Integer.parseInt(((String) newValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.STATUS_BAR_SHOW_TICKER, tickerMode, UserHandle.USER_CURRENT);
+            updatePrefs();
             int index = mTickerMode.findIndexOfValue((String) newValue);
             mTickerMode.setSummary(
                     mTickerMode.getEntries()[index]);
             return true;
         }
-       return false;
+        return false;
+    }
+
+    private void updatePrefs() {
+          ContentResolver resolver = getActivity().getContentResolver();
+          boolean enabled = (Settings.Global.getInt(resolver,
+                  Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 0) == 1);
+        if (enabled) {
+            Settings.System.putInt(resolver,
+                Settings.System.STATUS_BAR_SHOW_TICKER, 0);
+            mTickerMode.setEnabled(false);
+        }
     }
 }
 

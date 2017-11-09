@@ -18,6 +18,7 @@ package com.aosip.owlsnest.notification;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -40,6 +41,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.aosip.owlsnest.preference.PackageListAdapter;
 import com.aosip.owlsnest.preference.PackageListAdapter.PackageItem;
+import com.aosip.owlsnest.preference.GlobalSettingSwitchPreference;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -53,6 +55,8 @@ public class HeadsUpCategory extends SettingsPreferenceFragment implements
 
     private static final int DIALOG_BLACKLIST_APPS = 0;
 
+    private static final String KEY_HEADS_UP_NOTIFICATIONS_ENABLED = "heads_up_notifications_enabled";
+
     private PackageListAdapter mPackageAdapter;
     private PackageManager mPackageManager;
     private PreferenceGroup mBlacklistPrefList;
@@ -60,6 +64,8 @@ public class HeadsUpCategory extends SettingsPreferenceFragment implements
 
     private String mBlacklistPackageList;
     private Map<String, Package> mBlacklistPackages;
+
+    private GlobalSettingSwitchPreference mHeadsUpNotificationsEnabled;
 
     @Override
     public int getMetricsCategory() {
@@ -81,6 +87,9 @@ public class HeadsUpCategory extends SettingsPreferenceFragment implements
 
         mAddBlacklistPref = findPreference("add_blacklist_packages");
         mAddBlacklistPref.setOnPreferenceClickListener(this);
+
+        mHeadsUpNotificationsEnabled = (GlobalSettingSwitchPreference) findPreference(KEY_HEADS_UP_NOTIFICATIONS_ENABLED);
+        updatePrefs();
     }
 
     @Override
@@ -206,6 +215,7 @@ public class HeadsUpCategory extends SettingsPreferenceFragment implements
 
         builder.show();
         }
+        updatePrefs();
         return true;
     }
 
@@ -283,6 +293,20 @@ public class HeadsUpCategory extends SettingsPreferenceFragment implements
         }
         Settings.System.putString(getContentResolver(),
                 Settings.System.HEADS_UP_BLACKLIST_VALUES, value);
+    }
+
+    private void updatePrefs() {
+          ContentResolver resolver = getActivity().getContentResolver();
+          boolean enabled = (Settings.System.getInt(resolver,
+                  Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 1) ||
+                  (Settings.System.getInt(resolver,
+                  Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 2);
+        if (enabled) {
+            Settings.Global.putInt(resolver,
+                Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 0);
+            mBlacklistPrefList.setEnabled(false);
+            mHeadsUpNotificationsEnabled.setEnabled(false);
+        }
     }
 }
 
