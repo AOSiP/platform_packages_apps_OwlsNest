@@ -51,6 +51,7 @@
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
+    <string name="headsup_category">Heads Up</string>
 
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
@@ -71,7 +72,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
-    <string name="stock_recent_category">Stock</string>
+    <string name="stock_recent">Stock</string>
 
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesture</string>
