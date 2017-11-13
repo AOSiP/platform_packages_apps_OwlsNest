@@ -57,6 +57,7 @@
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
     <string name="battery_light">Battery LED</string>
+    <string name="headsup_category">Heads Up</string>
 
     <!-- Statusbar ticker -->
     <string name="ticker_mode_title">Statusbar notification ticker</string>

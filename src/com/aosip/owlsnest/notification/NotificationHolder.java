@@ -32,6 +32,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.notification.BatteryLightSettings;
+import com.aosip.owlsnest.notification.HeadsUpCategory;
 import com.aosip.owlsnest.notification.NotificationCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
@@ -85,7 +86,8 @@ public class NotificationHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new BatteryLightSettings();
-            frags[1] = new NotificationCategory();
+            frags[1] = new HeadsUpCategory();
+            frags[2] = new NotificationCategory();
         }
 
         @Override
@@ -108,6 +110,7 @@ public class NotificationHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.battery_light),
+                    getString(R.string.headsup_category),
                     getString(R.string.notification_category)};
         return titleString;
     }
