@@ -19,27 +19,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:layout="@layout/tab_ui"
-    android:title="@string/notification_category" >
+    android:title="@string/headsup_category" >
 
-    <!--<PreferenceCategory
-        android:key="notifications_cat"
-        android:title="@string/notifications_cat_title" >
-
-        <Preference
-                android:title="@string/powern_notifications_title"
-                android:summary="@string/powern_notifications_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.systemui"
-                    android:targetClass="com.android.systemui.tuner.PowerNotificationsTunerActivity" />
-        </Preference>
-    </PreferenceCategory>-->
-
-    <ListPreference
-        android:key="ticker_mode"
-        android:entries="@array/ticker_mode_entries"
-        android:entryValues="@array/ticker_mode_values"
-        android:summary="%s"
-        android:title="@string/ticker_mode_title" />
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="true" />
 
 </PreferenceScreen>
 
