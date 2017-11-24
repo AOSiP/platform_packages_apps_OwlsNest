@@ -167,9 +167,6 @@
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
-    <!--Double Tap to Sleep Navbar-->
-    <string name="double_tap_sleep_navbar">Nav Bar</string>
-
     <!--Double Tap to Sleep Lockscreen-->
     <string name="double_tap_sleep_lockscreen">Lockscreen</string>
 

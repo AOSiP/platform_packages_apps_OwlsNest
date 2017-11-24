@@ -31,11 +31,6 @@
         android:defaultValue="false" />
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_navbar"
-        android:title="@string/double_tap_sleep_navbar"
-        android:defaultValue="false" />
-
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:defaultValue="false" />
