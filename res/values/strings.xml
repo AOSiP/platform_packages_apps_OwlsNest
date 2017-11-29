@@ -57,6 +57,10 @@
     <string name="status_bar_tuner_title">Status bar items</string>
     <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
 
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Roaming indicator</string>
+    <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
+
     <!-- Status bar clock options -->
     <string name="clock_category">Clock</string>
     <string name="status_bar_clock">Clock and Date</string>
