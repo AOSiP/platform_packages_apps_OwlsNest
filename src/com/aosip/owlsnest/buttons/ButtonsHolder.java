@@ -86,6 +86,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new PowermenuCategory();
             frags[1] = new VolumeCategory();
+            frags[2] = new ButtonsCategory();
         }
 
         @Override
@@ -108,7 +109,8 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.powermenu_category),
-                    getString(R.string.volume_category)};
+                    getString(R.string.volume_category),
+                    getString(R.string.button_category)};
         return titleString;
     }
 }
