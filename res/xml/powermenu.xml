@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2017 Android Open Source Illusion Project
+<!--  Copyright (C) 2017-2018 Android Open Source Illusion Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,6 +20,28 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:layout="@layout/tab_ui"
     android:title="@string/powermenu_category" >
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="powermenu_reboot"
+        android:title="@string/powermenu_reboot_title"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="powermenu_advanced_reboot"
+        android:title="@string/powermenu_advanced_reboot_title"
+        android:summary="@string/powermenu_advanced_reboot_summary"
+        android:dependency="powermenu_reboot"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="powermenu_screenshot"
+        android:title="@string/powermenu_screenshot_title"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="powermenu_airplane"
+        android:title="@string/powermenu_airplane_title"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
 
