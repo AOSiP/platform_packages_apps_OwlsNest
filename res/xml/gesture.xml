@@ -25,6 +25,12 @@
         android:title="@string/aosp_gesture_title"
         android:fragment="com.android.settings.gestures.GestureSettings" />
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_toggle_brightness"
+        android:summary="@string/status_bar_toggle_brightness_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="double_tap"
         android:title="@string/double_tap_options" >
