@@ -87,6 +87,10 @@
     <string name="network_traffic_state_title">Show network activity in statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Network activity autohide threshold (KB/s)</string>
 
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
