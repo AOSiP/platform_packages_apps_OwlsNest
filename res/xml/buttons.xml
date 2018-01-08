@@ -189,4 +189,40 @@
         </com.aosip.owlsnest.preference.ActionPreference>
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="utouch_key"
+        android:title="@string/hardware_keys_utouch_key_title" >
+
+        <com.aosip.owlsnest.preference.ActionPreference
+            android:key="hwkeys_button_back_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.aosip.owlsnest.preference.ActionPreference>
+
+        <com.aosip.owlsnest.preference.ActionPreference
+            android:key="hwkeys_button_back_double_tap"
+            android:summary="@string/hardware_keys_double_tap_summary"
+            android:title="@string/hardware_keys_double_tap_title" >
+        </com.aosip.owlsnest.preference.ActionPreference>
+
+        <com.aosip.owlsnest.preference.ActionPreference
+            android:key="hwkeys_button_assist_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_utouch_long_tap_title" >
+        </com.aosip.owlsnest.preference.ActionPreference>
+
+        <com.aosip.owlsnest.preference.ActionPreference
+            android:key="hwkeys_button_overview_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_utouch_left_swipe_title" >
+        </com.aosip.owlsnest.preference.ActionPreference>
+
+        <com.aosip.owlsnest.preference.ActionPreference
+            android:key="hwkeys_button_menu_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_utouch_right_swipe_title" >
+        </com.aosip.owlsnest.preference.ActionPreference>
+
+    </PreferenceCategory>
 </PreferenceScreen>
