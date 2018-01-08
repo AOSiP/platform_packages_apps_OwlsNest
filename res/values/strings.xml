@@ -773,7 +773,6 @@
     <string name="alarm_blocker_warning_title">Proceed with caution</string>
     <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
 
-
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">SystemUI restart required</string>
     <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
@@ -782,6 +781,10 @@
     <string name="sensor_block_title">Sensor block per-package</string>
     <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
 
+    <!-- UTouch -->
+    <string name="hardware_keys_utouch_key_title">U-Touch</string>
+    <string name="hardware_keys_utouch_long_tap_title">Long tap action</string>
+    <string name="hardware_keys_utouch_left_swipe_title">Left swipe action </string>
+    <string name="hardware_keys_utouch_right_swipe_title">Right swipe action </string>
+
 </resources>
-
-

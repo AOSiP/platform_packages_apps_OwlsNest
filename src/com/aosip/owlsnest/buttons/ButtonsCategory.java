@@ -52,6 +52,7 @@ public class ButtonsCategory extends ActionFragment implements Preference.OnPref
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_POWER = "power_key";
+    private static final String CATEGORY_UTOUCH = "utouch_key";
     private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
     private static final String KEY_BUTON_BACKLIGHT_OPTIONS = "button_backlight_options_category";
@@ -168,6 +169,19 @@ public class ButtonsCategory extends ActionFragment implements Preference.OnPref
         // search/assist key
         if (!hasAssistKey) {
             prefScreen.removePreference(assistCategory);
+        }
+
+        final PreferenceCategory mUTouchCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_UTOUCH);
+        final boolean useUTouch = getResources().getBoolean(
+                com.android.internal.R.bool.config_use_utouch_hwkeys_binding);
+        if (useUTouch){
+            prefScreen.removePreference(backCategory);
+            prefScreen.removePreference(assistCategory);
+            prefScreen.removePreference(appSwitchCategory);
+            prefScreen.removePreference(menuCategory);
+        } else {
+            prefScreen.removePreference(mUTouchCategory);
         }
 
         // let super know we can load ActionPreferences
