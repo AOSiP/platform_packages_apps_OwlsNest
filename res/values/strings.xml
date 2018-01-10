@@ -87,6 +87,7 @@
     <string name="headsup_category">Heads Up</string>
     <string name="battery_light">Battery LED</string>
 
+    <!-- Heads up -->
     <string name="heads_up_title">Allow Heads up</string>
     <string name="heads_up_summary_enabled">Heads-up notifications are enabled</string>
     <string name="heads_up_summary_disabled">Heads-up notifications are disabled</string>
@@ -396,6 +397,14 @@
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="weather_category">Weather</string>
     <string name="options_category">Various</string>
+
+    <!-- Hide Lockscreen clock, date, & alarm -->
+    <string name="hide_lockscreen_clock_title">Clock widget</string>
+    <string name="hide_lockscreen_clock_summary">Change the clock widget\'s visibility</string>
+    <string name="hide_lockscreen_date_title">Date widget</string>
+    <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
+    <string name="hide_lockscreen_alarm_title">Alarm text</string>
+    <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
 
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
