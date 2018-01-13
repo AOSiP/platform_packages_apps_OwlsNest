@@ -53,7 +53,7 @@ public class TrafficCategory extends SettingsPreferenceFragment implements
         mNetMonitor = (SystemSettingSwitchPreference) findPreference("network_traffic_state");
         mNetMonitor.setChecked(isNetMonitorEnabled);
         mNetMonitor.setOnPreferenceChangeListener(this);
-  
+
         int value = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
         mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");

@@ -18,9 +18,9 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory android:key="hardware_keys"
-	android:title="@string/hardware_keys_category">
-	<SwitchPreference android:key="hardware_keys_disable"
-		android:title="@string/hardware_keys_disable_title" />
+    android:title="@string/hardware_keys_category">
+    <SwitchPreference android:key="hardware_keys_disable"
+        android:title="@string/hardware_keys_disable_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -97,7 +97,7 @@
             android:summary="@string/hardware_keys_single_tap_summary"
             android:title="@string/hardware_keys_single_tap_title" >
         </com.aosip.owlsnest.preference.ActionPreference>
- 
+
         <com.aosip.owlsnest.preference.ActionPreference
             android:key="hwkeys_button_home_long_press"
             android:summary="@string/hardware_keys_long_press_summary"
@@ -114,7 +114,7 @@
 
     <PreferenceCategory
         android:key="app_switch_key"
-        android:title="@string/hardware_keys_appswitch_key_title" >        
+        android:title="@string/hardware_keys_appswitch_key_title" >
 
         <com.aosip.owlsnest.preference.ActionPreference
             android:key="hwkeys_button_overview_single_tap"
@@ -138,7 +138,7 @@
 
     <PreferenceCategory
         android:key="menu_key"
-        android:title="@string/hardware_keys_menu_key_title" >        
+        android:title="@string/hardware_keys_menu_key_title" >
 
         <com.aosip.owlsnest.preference.ActionPreference
             android:key="hwkeys_button_menu_single_tap"

@@ -102,9 +102,9 @@
             settings:interval="200"
             settings:units="ms"
             android:dependency="pulse_fading_bars_category"/>
-	</PreferenceCategory>
+    </PreferenceCategory>
 
-	<PreferenceCategory
+    <PreferenceCategory
         android:key="pulse_2"
         android:title="@string/pulse_solid_dimen_category" >
 
@@ -138,6 +138,6 @@
             settings:interval="200"
             settings:units="ms"
             android:dependency="pulse_2"/>
-	</PreferenceCategory>
+    </PreferenceCategory>
 
 </PreferenceScreen>

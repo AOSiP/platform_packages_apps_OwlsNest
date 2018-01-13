@@ -213,7 +213,7 @@
             settings:min="10"
             settings:units="%"
             android:persistent="false" />
-            
+
         <com.aosip.owlsnest.preference.CustomSeekBarPreference
             android:key="du_fling_longswipe_land_right"
             android:title="@string/landscape_right_swipe_title"
@@ -222,7 +222,7 @@
             settings:min="10"
             settings:units="%"
             android:persistent="false" />
-            
+
         <com.aosip.owlsnest.preference.CustomSeekBarPreference
             android:key="du_fling_longswipe_land_left"
             android:title="@string/landscape_left_swipe_title"

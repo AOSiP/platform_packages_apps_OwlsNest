@@ -15,7 +15,7 @@
  *
  * Simple preference class implementing ActionHolder interface to assign
  * actions to buttons. It is ABSOLUTELY IMPERITIVE that the preference
- * key is identical to the target ConfigMap tag in ActionConstants 
+ * key is identical to the target ConfigMap tag in ActionConstants
  */
 
 package com.aosip.owlsnest.preference;
