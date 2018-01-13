@@ -87,9 +87,8 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new CarrierCategory();
-            frags[1] = new BatteryCategory();
-            frags[2] = new IconsCategory();
-            frags[3] = new TrafficCategory();
+            frags[1] = new IconsCategory();
+            frags[2] = new TrafficCategory();
         }
 
         @Override
@@ -112,7 +111,6 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.carrier_category),
-                    getString(R.string.battery_category),
                     getString(R.string.icon_category),
                     getString(R.string.traffic_category)};
         return titleString;
