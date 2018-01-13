@@ -84,10 +84,14 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
         private Fragment frags[] = new Fragment[titles.length];
 
         public StatusBarAdapter(FragmentManager fm) {
-            super(fm);
-            frags[0] = new NavigationCategory();
-            frags[1] = new PowermenuCategory();
-            frags[2] = new VolumeCategory();
+        	super(fm);
+        	frags[0] = new PowermenuCategory();
+        	frags[1] = new VolumeCategory();
+		try {
+		        frags[2] = new NavigationCategory();
+		} catch (IndexOutOfBoundsException e) {
+			// Do nothing
+		    }
         }
 
         @Override
@@ -107,12 +111,15 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
     }
 
     private String[] getTitles() {
-        String titleString[];
-        titleString = new String[]{
-                    getString(R.string.hardware_keys_category),
-                    getString(R.string.powermenu_category),
-                    getString(R.string.volume_category)};
-        return titleString;
+	if (getResources().getInteger(
+            com.android.internal.R.integer.config_deviceHardwareKeys) > 64) {
+	        return new String[] { getString(R.string.powermenu_category),
+	                              getString(R.string.volume_category),
+	                              getString(R.string.hardware_keys_category)};
+	} else {
+		return new String[] { getString(R.string.powermenu_category),
+                              getString(R.string.volume_category)};
+	    }
     }
 }
 
