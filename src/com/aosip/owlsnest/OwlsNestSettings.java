@@ -14,6 +14,7 @@ import com.android.settings.Utils;
 
 public class OwlsNestSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
     private static final String TAG = "OwlsNestSettings";
 
     @Override
@@ -29,7 +30,6 @@ public class OwlsNestSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-
         return true;
     }
 }
