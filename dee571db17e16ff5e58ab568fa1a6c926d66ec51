@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "22a52922_4ff386ae",
+        "filename": "src/com/aosip/owlsnest/buttons/ButtonsHolder.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2018-01-13T17:14:45Z",
+      "side": 1,
+      "message": "here",
+      "revId": "dee571db17e16ff5e58ab568fa1a6c926d66ec51",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "41adef0f_3df3ac23",
+        "filename": "src/com/aosip/owlsnest/buttons/ButtonsHolder.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2018-01-13T17:14:45Z",
+      "side": 1,
+      "message": "and here, checks for the overlay value\nand if needed, don\u0027t add the fragment.",
+      "revId": "dee571db17e16ff5e58ab568fa1a6c926d66ec51",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": false
+    }
+  ]
+}
