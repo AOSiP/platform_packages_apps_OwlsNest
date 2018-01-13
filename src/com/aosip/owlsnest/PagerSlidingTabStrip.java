@@ -78,7 +78,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
 	private boolean shouldExpand = false;
 	private boolean textAllCaps = true;
-    private boolean isPaddingMiddle = false;
+	private boolean isPaddingMiddle = false;
 
 	private int scrollOffset = 52;
 	private int indicatorHeight = 2;
@@ -127,7 +127,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 		dividerWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dividerWidth, dm);
 		tabTextSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, tabTextSize, dm);
 
-		// get system attrs (android:textSize and android:textColor)
+		// Get system attrs (android:textSize and android:textColor)
 		TypedArray a = context.obtainStyledAttributes(attrs, ATTRS);
 
 		tabTextSize = a.getDimensionPixelSize(0, tabTextSize);
@@ -135,7 +135,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
 		a.recycle();
 
-		// get custom attrs
+		// Get custom attrs
 		a = context.obtainStyledAttributes(attrs, R.styleable.PagerSlidingTabStrip);
 
 		indicatorColor = context.getResources().getColor(R.color.theme_accent);
@@ -280,15 +280,15 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
 		final int height = getHeight();
 
-		// draw indicator line
+		// Draw indicator line
 		rectPaint.setColor(indicatorColor);
 
-		// default: line below current tab
+		// Default: line below current tab
 		View currentTab = tabsContainer.getChildAt(currentPosition);
 		float lineLeft = currentTab.getLeft();
 		float lineRight = currentTab.getRight();
 
-		// if there is an offset, start interpolating left and right coordinates between current and next tab
+		// If there is an offset, start interpolating left and right coordinates between current and next tab
 		if (currentPositionOffset > 0f && currentPosition < tabCount - 1) {
 
 			View nextTab = tabsContainer.getChildAt(currentPosition + 1);
@@ -301,11 +301,11 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
 		canvas.drawRect(lineLeft, height - indicatorHeight, lineRight, height, rectPaint);
 
-		// draw underline
+		// Draw underline
 		rectPaint.setColor(underlineColor);
 		canvas.drawRect(0, height - underlineHeight, tabsContainer.getWidth(), height, rectPaint);
 
-		// draw divider
+		// Draw divider
 		dividerPaint.setColor(dividerColor);
 		for (int i = 0; i < tabCount - 1; i++) {
 			View tab = tabsContainer.getChildAt(i);
