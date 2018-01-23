@@ -31,6 +31,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
+import com.aosip.owlsnest.advanced.ScreenStateToggles;
+import com.aosip.owlsnest.advanced.SmartPixels;
 import com.aosip.owlsnest.advanced.SystemCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
@@ -84,6 +86,7 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new SystemCategory();
+            frags[1] = new SmartPixels();
         }
 
         @Override
@@ -105,7 +108,8 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.system_category)};
+                    getString(R.string.system_category),
+                    getString(R.string.smart_pixels_title)};
         return titleString;
     }
 }
