@@ -31,8 +31,10 @@ import com.android.settings.SettingsPreferenceFragment;
 public class PowermenuCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
+    private ListPreference mScreenOffAnimation;
     private ListPreference mTorchPowerButton;
 
     @Override
@@ -46,6 +48,13 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.powermenu);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
 
         if (!DUActionUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = prefScreen.findPreference(TORCH_POWER_BUTTON_GESTURE);
@@ -70,7 +79,14 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mTorchPowerButton) {
+        if (preference == mScreenOffAnimation) {
+            String value = (String) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
+            int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
+            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
+            return true;
+        } else if (preference == mTorchPowerButton) {
             int mTorchPowerButtonValue = Integer.valueOf((String) newValue);
             int index = mTorchPowerButton.findIndexOfValue((String) newValue);
             mTorchPowerButton.setSummary(
