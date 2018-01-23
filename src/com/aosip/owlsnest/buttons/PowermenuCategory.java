@@ -30,6 +30,9 @@ import com.android.settings.SettingsPreferenceFragment;
 public class PowermenuCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+
+    private ListPreference mScreenOffAnimation;
 
     @Override
     public int getMetricsCategory() {
@@ -40,6 +43,17 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.powermenu);
+
+        ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.Global.getInt(resolver,
+                Settings.Global.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -48,6 +62,15 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mScreenOffAnimation) {
+            String value = (String) newValue;
+            Settings.Global.putInt(resolver,
+                    Settings.Global.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
+            int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
+            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
+            return true;
+        }
         return false;
     }
 }
