@@ -21,18 +21,12 @@
     android:layout="@layout/tab_ui"
     android:title="@string/notification_category" >
 
-    <!--<PreferenceCategory
-        android:key="notifications_cat"
-        android:title="@string/notifications_cat_title" >
-
-        <Preference
-                android:title="@string/powern_notifications_title"
-                android:summary="@string/powern_notifications_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.systemui"
-                    android:targetClass="com.android.systemui.tuner.PowerNotificationsTunerActivity" />
-        </Preference>
-    </PreferenceCategory>-->
+    <ListPreference
+        android:key="notification_sound_vib_screen_on"
+        android:title="@string/notification_sound_vib_screen_on_title"
+        android:entries="@array/notification_sound_vib_screen_on_entries"
+        android:entryValues="@array/notification_sound_vib_screen_on_values"
+        android:summary="%s" />
 
     <ListPreference
         android:key="ticker_mode"

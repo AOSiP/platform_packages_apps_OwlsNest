@@ -32,6 +32,7 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private static final String TAG = "NotificationCategory";
 
+    private ListPreference mNoisyNotification;
     private ListPreference mTickerMode;
 
     @Override
@@ -53,6 +54,14 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
                 0, UserHandle.USER_CURRENT);
         mTickerMode.setValue(String.valueOf(tickerMode));
         mTickerMode.setSummary(mTickerMode.getEntry());
+
+        mNoisyNotification = (ListPreference) findPreference("notification_sound_vib_screen_on");
+        mNoisyNotification.setOnPreferenceChangeListener(this);
+        int mode = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON,
+                1, UserHandle.USER_CURRENT);
+        mNoisyNotification.setValue(String.valueOf(mode));
+        mNoisyNotification.setSummary(mNoisyNotification.getEntry());
       }
 
     @Override
@@ -69,6 +78,14 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
             int index = mTickerMode.findIndexOfValue((String) newValue);
             mTickerMode.setSummary(
                     mTickerMode.getEntries()[index]);
+            return true;
+        } else if (preference.equals(mNoisyNotification)) {
+            int mode = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON, mode, UserHandle.USER_CURRENT);
+            int index = mNoisyNotification.findIndexOfValue((String) newValue);
+            mNoisyNotification.setSummary(
+                    mNoisyNotification.getEntries()[index]);
             return true;
         }
        return false;
