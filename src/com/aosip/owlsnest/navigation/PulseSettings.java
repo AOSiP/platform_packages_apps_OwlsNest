@@ -50,10 +50,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
     private static final String PULSE_SOLID_UNITS_OPACITY = "pulse_solid_units_opacity";
     //private static final String PULSE_CUSTOM_BUTTONS_OPACITY = "pulse_custom_buttons_opacity";
 
-    SwitchPreference mShowPulse;
-    ListPreference mRenderMode;
     ColorPickerPreference mPulseColor;
-    SwitchPreference mLavaLampEnabled;
     CustomSeekBarPreference mCustomDimen;
     CustomSeekBarPreference mCustomDiv;
     CustomSeekBarPreference mFilled;
@@ -65,6 +62,10 @@ public class PulseSettings extends SettingsPreferenceFragment implements
     CustomSeekBarPreference mSolidCount;
     CustomSeekBarPreference mSolidOpacity;
     //CustomSeekBarPreference mNavButtonsOpacity;
+    ListPreference mRenderMode;
+    SwitchPreference mAutoColor;
+    SwitchPreference mLavaLampEnabled;
+    SwitchPreference mShowPulse;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -82,6 +83,11 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mRenderMode = (ListPreference) findPreference("pulse_render_mode");
         mRenderMode.setValue(String.valueOf(renderMode));
         mRenderMode.setOnPreferenceChangeListener(this);
+
+        mAutoColor = (SwitchPreference) findPreference("pulse_auto_color");
+        mAutoColor.setChecked(Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.System.PULSE_AUTO_COLOR, 0, UserHandle.USER_CURRENT) == 1);
+        mAutoColor.setOnPreferenceChangeListener(this);
 
         PreferenceCategory fadingBarsCat = (PreferenceCategory)findPreference("pulse_fading_bars_category");
         fadingBarsCat.setEnabled(renderMode == RENDER_STYLE_FADING_BARS);
@@ -188,6 +194,11 @@ public class PulseSettings extends SettingsPreferenceFragment implements
             boolean enabled = ((Boolean) newValue).booleanValue();
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.FLING_PULSE_ENABLED, enabled ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference.equals(mAutoColor)) {
+            boolean enabled = ((Boolean) newValue).booleanValue();
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.PULSE_AUTO_COLOR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         } else if (preference.equals(mPulseColor)) {
             int color = ((Integer) newValue).intValue();
