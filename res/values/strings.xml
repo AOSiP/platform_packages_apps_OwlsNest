@@ -87,6 +87,12 @@
     <string name="headsup_category">Heads Up</string>
     <string name="battery_light">Battery LED</string>
 
+    <!-- Suppress notification sound/vibration -->
+    <string name="notification_sound_vib_screen_on_title">Notifications sound and vibration if screen is on</string>
+    <string name="notification_sound_vib_screen_on_never">Never</string>
+    <string name="notification_sound_vib_screen_on_always">Always (default)</string>
+    <string name="notification_sound_vib_screen_on_nomedia">If no media is playing</string>
+
     <!-- Heads up -->
     <string name="heads_up_title">Allow Heads up</string>
     <string name="heads_up_summary_enabled">Heads-up notifications are enabled</string>
