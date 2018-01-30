@@ -400,7 +400,7 @@
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="weather_category">Weather</string>
     <string name="options_category">Various</string>
-    <string name="ambient_category">Ambient Display</string>
+    <string name="ambient_category">Music Ticker</string>
 
     <!-- Ambient music -->
     <string name="ambient_display_category">Ambient display options</string>
