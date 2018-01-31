@@ -44,7 +44,8 @@
         android:defaultValue="false" />
 
     <PreferenceCategory
-        android:title="@string/powermenu_category_other">
+        android:key="powermenu_category_visibility"
+        android:title="@string/powermenu_category_visibility">
 
         <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
             android:key="powermenu_lockscreen"
@@ -63,6 +64,34 @@
             android:title="@string/torch_power_button_gesture_title"
             android:entries="@array/torch_power_button_gesture_entries"
             android:entryValues="@array/torch_power_button_gesture_values" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="powermenu_ls_reboot"
+            android:title="@string/powermenu_reboot_title"
+            android:summary="@string/powermenu_ls_reboot_summary"
+            android:dependency="powermenu_reboot"
+            android:defaultValue="true" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="powermenu_ls_advanced_reboot"
+            android:title="@string/powermenu_advanced_reboot_title"
+            android:summary="@string/powermenu_ls_advanced_reboot_summary"
+            android:dependency="powermenu_advanced_reboot"
+            android:defaultValue="false" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="powermenu_ls_screenshot"
+            android:title="@string/powermenu_screenshot_title"
+            android:summary="@string/powermenu_ls_screenshot_summary"
+            android:dependency="powermenu_screenshot"
+            android:defaultValue="false" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="powermenu_ls_airplane"
+            android:title="@string/powermenu_airplane_title"
+            android:summary="@string/powermenu_ls_airplane_summary"
+            android:dependency="powermenu_airplane"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
