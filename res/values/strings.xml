@@ -506,6 +506,10 @@
 
     <string name="app_ops_settings_summary">Control apps permissions</string>
 
+    <!-- Face unlock toggle -->
+    <string name="face_auto_unlock_title">Face auto unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
+
     <string name="less_notification_sounds_title">Smart notification sounds</string>
     <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
     <string name="less_notification_sounds_default">App default</string>
