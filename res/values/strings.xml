@@ -488,6 +488,10 @@
     <string name="ringtone_focus_mode_dynamic">From headset if connected and playing music</string>
     <string name="ringtone_focus_mode_stock">"From speakerphone (aosp default)"</string>
 
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+
     <!-- Hardware button navigation -->
     <string name="hardware_keys_volume_keys_title">Volume rocker</string>
     <string name="hardware_keys_home_key_title">Home button</string>

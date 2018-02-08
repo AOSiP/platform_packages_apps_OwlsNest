@@ -32,6 +32,12 @@
             android:entries="@array/headset_connect_player_entries"
             android:entryValues="@array/headset_connect_player_values" />
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
+
         <ListPreference
             android:key="ringtone_focus_mode"
             android:title="@string/ringtone_focus_mode_title"
