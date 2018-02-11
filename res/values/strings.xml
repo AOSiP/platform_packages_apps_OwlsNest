@@ -168,6 +168,7 @@
     <string name="gesture_category">Gesture</string>
     <string name="gesture_summary">Gesture based options/actions</string>
     <string name="double_tap_options">Double Tap to Sleep</string>
+    <string name="aosp_gesture_title">AOSP Gestures</string>
 
     <!--Double Tap to Sleep Navbar-->
     <string name="double_tap_sleep_navbar">Nav Bar</string>
