@@ -21,5 +21,9 @@
     android:layout="@layout/tab_ui"
     android:title="@string/battery_category" >
 
+<Preference
+            android:key="battery_settings"
+            android:title="@string/battery_style_category_title"
+            android:fragment="com.aosip.owlsnest.statusbar.BatteryCategory" />
 </PreferenceScreen>
 
