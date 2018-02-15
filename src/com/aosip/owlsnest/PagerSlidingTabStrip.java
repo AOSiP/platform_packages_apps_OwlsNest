@@ -40,6 +40,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Locale;
+
 import com.android.settings.R;
 
 public class PagerSlidingTabStrip extends HorizontalScrollView {
@@ -49,9 +50,9 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     }
 
     // @formatter:off
-    private static final int[] ATTRS = new int[] {
-        android.R.attr.textSize,
-        android.R.attr.textColor
+    private static final int[] ATTRS = new int[]{
+            android.R.attr.textSize,
+            android.R.attr.textColor
     };
 
     // @formatter:on
@@ -350,36 +351,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         invalidate();
     }
 
-    public void setIndicatorColorResource(int resId) {
-        this.indicatorColor = getResources().getColor(resId);
-        invalidate();
-    }
-
     public int getIndicatorColor() {
         return this.indicatorColor;
-    }
-
-    public void setIndicatorHeight(int indicatorLineHeightPx) {
-        this.indicatorHeight = indicatorLineHeightPx;
-        invalidate();
-    }
-
-    public int getIndicatorHeight() {
-        return indicatorHeight;
-    }
-
-    public void setUnderlineColor(int underlineColor) {
-        this.underlineColor = underlineColor;
-        invalidate();
-    }
-
-    public void setUnderlineColorResource(int resId) {
-        this.underlineColor = getResources().getColor(resId);
-        invalidate();
-    }
-
-    public int getUnderlineColor() {
-        return underlineColor;
     }
 
     public void setDividerColor(int dividerColor) {
@@ -387,22 +360,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         invalidate();
     }
 
-    public void setDividerColorResource(int resId) {
-        this.dividerColor = getResources().getColor(resId);
-        invalidate();
-    }
-
     public int getDividerColor() {
         return dividerColor;
-    }
-
-    public void setUnderlineHeight(int underlineHeightPx) {
-        this.underlineHeight = underlineHeightPx;
-        invalidate();
-    }
-
-    public int getUnderlineHeight() {
-        return underlineHeight;
     }
 
     public void setDividerPadding(int dividerPaddingPx) {
@@ -421,15 +380,6 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
     public int getScrollOffset() {
         return scrollOffset;
-    }
-
-    public void setShouldExpand(boolean shouldExpand) {
-        this.shouldExpand = shouldExpand;
-        requestLayout();
-    }
-
-    public boolean getShouldExpand() {
-        return shouldExpand;
     }
 
     public boolean isTextAllCaps() {
@@ -454,11 +404,6 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         updateTabStyles();
     }
 
-    public void setTextColorResource(int resId) {
-        this.tabTextColor = getResources().getColor(resId);
-        updateTabStyles();
-    }
-
     public int getTextColor() {
         return tabTextColor;
     }
@@ -475,15 +420,6 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
     public int getTabBackground() {
         return tabBackgroundResId;
-    }
-
-    public void setTabPaddingLeftRight(int paddingPx) {
-        this.tabPadding = paddingPx;
-        updateTabStyles();
-    }
-
-    public int getTabPaddingLeftRight() {
-        return tabPadding;
     }
 
     @Override
