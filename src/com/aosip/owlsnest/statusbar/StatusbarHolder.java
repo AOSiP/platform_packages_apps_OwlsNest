@@ -32,6 +32,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.statusbar.BatteryCategory;
+import com.aosip.owlsnest.statusbar.ClockDateSettings;
 import com.aosip.owlsnest.statusbar.IconsCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
@@ -84,8 +85,9 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new BatteryCategory();
-            frags[1] = new IconsCategory();
+            frags[0] = new ClockDateSettings();
+            frags[1] = new BatteryCategory();
+            frags[2] = new IconsCategory();
         }
 
         @Override
@@ -107,6 +109,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
+                    getString(R.string.clock_category),
                     getString(R.string.battery_category),
                     getString(R.string.icon_category)};
         return titleString;
