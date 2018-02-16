@@ -17,4 +17,9 @@
     <color name="tab_background_color">@android:color/transparent</color>
     <color name="tab_text_color">@*android:color/accent_device_default_light</color>
     <color name="white">#FFF</color>
+
+    <!-- Accent picker -->
+    <color name="accent_picker_white_accent">@android:color/white</color>
+    <color name="accent_picker_dark_accent">@android:color/black</color>
+
 </resources>
