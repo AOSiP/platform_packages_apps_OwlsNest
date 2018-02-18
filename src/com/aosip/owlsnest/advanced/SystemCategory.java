@@ -33,11 +33,9 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
-    private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
 
     private ListPreference mLaunchPlayerHeadsetConnection;
     private ListPreference mHeadsetRingtoneFocus;
-    private ListPreference mSystemUIThemeStyle;
 
     @Override
     public int getMetricsCategory() {
@@ -65,15 +63,6 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
         mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
         mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
-
-        mSystemUIThemeStyle = (ListPreference) findPreference(SYSTEMUI_THEME_STYLE);
-        int systemUIThemeStyle = Settings.System.getInt(resolver,
-                Settings.System.SYSTEM_UI_THEME, 0);
-        int valueIndex = mSystemUIThemeStyle.findIndexOfValue(String.valueOf(systemUIThemeStyle));
-        mSystemUIThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
-        mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntry());
-        mSystemUIThemeStyle.setOnPreferenceChangeListener(this);
-
     }
 
     @Override
@@ -98,13 +87,6 @@ public class SystemCategory extends SettingsPreferenceFragment implements
                     mHeadsetRingtoneFocus.getEntries()[index]);
             Settings.Global.putInt(resolver, Settings.Global.RINGTONE_FOCUS_MODE,
                     mHeadsetRingtoneFocusValue);
-            return true;
-        } else if (preference == mSystemUIThemeStyle) {
-            String value = (String) newValue;
-            Settings.System.putInt(resolver,
-                    Settings.System.SYSTEM_UI_THEME, Integer.valueOf(value));
-            int valueIndex = mSystemUIThemeStyle.findIndexOfValue(value);
-            mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntries()[valueIndex]);
             return true;
         }
         return false;
