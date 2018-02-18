@@ -546,11 +546,6 @@
     <string name="less_notification_sounds_1m">Every minute</string>
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
-    <string name="systemui_theme_style_title">Tiles panel and power menu style</string>
-    <string name="systemui_theme_style_auto">Wallpaper based</string>
-    <string name="systemui_theme_style_light">Light style</string>
-    <string name="systemui_theme_style_dark">Dark style</string>
-
     <!-- Status bar clock options -->
     <string name="clock_category">Clock</string>
     <string name="status_bar_clock">Clock and Date</string>
@@ -590,3 +585,4 @@
     <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
 
 </resources>
+
