@@ -619,6 +619,7 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Battery style</string>
     <string name="status_bar_battery_style_port">Portrait</string>
+    <string name="status_bar_battery_style_land">Landscape</string>
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
     <string name="status_bar_battery_style_text">Text</string>

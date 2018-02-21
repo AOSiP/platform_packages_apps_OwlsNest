@@ -405,6 +405,7 @@
 
     <string-array name="entries_status_bar_battery" translatable="false">
         <item>@string/status_bar_battery_style_port</item>
+        <item>@string/status_bar_battery_style_land</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
         <item>@string/status_bar_battery_style_square</item>
@@ -419,6 +420,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
     <!--- Volume key cursor control -->
