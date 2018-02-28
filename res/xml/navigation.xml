@@ -83,6 +83,12 @@
                 settings:min="65"
                 settings:units="%" />
 
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="navbar_dynamic"
+            android:title="@string/navbar_dynamic_title"
+            android:summary="@string/navbar_dynamic_summary"
+            android:defaultValue="false" />
+
         <PreferenceScreen
             android:key="pulse_settings"
             android:title="@string/pulse_settings"

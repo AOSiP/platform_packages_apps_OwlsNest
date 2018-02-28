@@ -622,4 +622,9 @@
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
 
+    <!-- Dynamic Navbar -->
+    <string name="navbar_dynamic_title">Dynamic navbar color</string>
+    <string name="navbar_dynamic_summary">Adapt navbar color to match foreground running app</string>
+    <string name="restart_app_required">Restart respective app to see effect</string>
+
 </resources>
