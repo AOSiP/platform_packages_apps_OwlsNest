@@ -79,6 +79,10 @@
     <string name="show_carrier_statusbar">Statusbar only</string>
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
 
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Show data disabled icon</string>
+    <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Show network activity in statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Network activity autohide threshold (KB/s)</string>
@@ -672,3 +676,4 @@
     <string name="large_battery_icon_summary">Enlarge the battery icon in the status bar</string>
 
 </resources>
+
