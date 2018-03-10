@@ -424,6 +424,12 @@
     <string name="immersive_recents_statusbar">Statusbar only</string>
     <string name="immersive_recents_navbar">Navbar only</string>
 
+   <!-- AOSP Recents Style -->
+    <string name="recents_type_title">Recents Layout</string>
+    <string name="recents_stock">Stock</string>
+    <string name="recents_grid">Grid</string>
+    <string name="recents_go">Android Go</string>
+
     <!-- Clear all recents -->
     <string name="aosp_recents_title">AOSP recents</string>
     <string name="show_clear_all_recents_button_title">Clear-all FAB</string>
