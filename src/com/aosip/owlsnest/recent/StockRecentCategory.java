@@ -27,6 +27,7 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.aosip.owlsnest.utils.Utils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -35,9 +36,11 @@ public class StockRecentCategory extends SettingsPreferenceFragment implements
 
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String RECENTS_TYPE = "recents_layout_style";
 
     private ListPreference mImmersiveRecents;
     private ListPreference mRecentsClearAllLocation;
+    private ListPreference mRecentsType;
 
     @Override
     public int getMetricsCategory() {
@@ -65,6 +68,14 @@ public class StockRecentCategory extends SettingsPreferenceFragment implements
                 resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
         mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+        // recents type
+        mRecentsType = (ListPreference) findPreference(RECENTS_TYPE);
+        int style = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_LAYOUT_STYLE, 0, UserHandle.USER_CURRENT);
+        mRecentsType.setValue(String.valueOf(style));
+        mRecentsType.setSummary(mRecentsType.getEntry());
+        mRecentsType.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -87,6 +98,14 @@ public class StockRecentCategory extends SettingsPreferenceFragment implements
             mImmersiveRecents.setValue(String.valueOf(newValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             return true;
+        } else if (preference == mRecentsType) {
+            int style = Integer.valueOf((String) newValue);
+            int index = mRecentsType.findIndexOfValue((String) newValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_LAYOUT_STYLE, style, UserHandle.USER_CURRENT);
+            mRecentsType.setSummary(mRecentsType.getEntries()[index]);
+            Utils.restartSystemUi(getContext());
+        return true;
         }
         return false;
     }
