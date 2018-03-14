@@ -129,18 +129,13 @@ public class ScreenshotEditPackageListAdapter extends BaseAdapter implements Run
 
     @Override
     public void run() {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_EDIT);
-        // setData is needed because some apps like PhotoEditor need an uri for the EDIT intent action,
-        // otherwise they don't answer to the intent query. So we give them the generic EXTERNAL_CONTENT_URI
-        // as a fake uri here.
-        intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/png");
-        List<ResolveInfo> installedAppsInfo = mPm.queryIntentActivities(intent, 0);
-        for (ResolveInfo info : installedAppsInfo) {
-            ApplicationInfo appInfo = info.activityInfo.applicationInfo;
-            final PackageItem item = new PackageItem(appInfo.packageName,
-                    appInfo.loadLabel(mPm), appInfo.loadIcon(mPm));
-            mHandler.obtainMessage(0, item).sendToTarget();
+        List<ApplicationInfo> installedAppsInfo = mPm.getInstalledApplications(PackageManager.GET_META_DATA);
+        for (ApplicationInfo appInfo : installedAppsInfo) {
+            if (appInfo.icon != 0) {
+                final PackageItem item = new PackageItem(appInfo.packageName,
+                        appInfo.loadLabel(mPm), appInfo.loadIcon(mPm));
+                mHandler.obtainMessage(0, item).sendToTarget();
+            }
         }
     }
 
