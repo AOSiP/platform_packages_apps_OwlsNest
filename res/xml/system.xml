@@ -44,5 +44,8 @@
             android:entries="@array/ringtone_focus_mode_entries"
             android:entryValues="@array/ringtone_focus_mode_values" />
 
+        <Preference
+            android:key="screenshot_edit_app"
+            android:title="@string/screenshot_edit_app"
+            android:summary="@string/screenshot_edit_app_summary" />
 </PreferenceScreen>
-

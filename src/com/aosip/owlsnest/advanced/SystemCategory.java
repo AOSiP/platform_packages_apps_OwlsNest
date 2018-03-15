@@ -16,6 +16,8 @@
 
 package com.aosip.owlsnest.advanced;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.content.ContentResolver;
 import android.os.UserHandle;
@@ -23,19 +25,30 @@ import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.aosip.owlsnest.advanced.ScreenshotEditPackageListAdapter;
+import com.aosip.owlsnest.advanced.ScreenshotEditPackageListAdapter.PackageItem;
 
 public class SystemCategory extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
 
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
 
+    private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
+
     private ListPreference mLaunchPlayerHeadsetConnection;
     private ListPreference mHeadsetRingtoneFocus;
+
+    private Preference mScreenshotEditAppPref;
+    private ScreenshotEditPackageListAdapter mPackageAdapter;
 
     @Override
     public int getMetricsCategory() {
@@ -63,6 +76,60 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
         mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
         mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
+
+        mPackageAdapter = new ScreenshotEditPackageListAdapter(getActivity());
+        mScreenshotEditAppPref = findPreference("screenshot_edit_app");
+        mScreenshotEditAppPref.setOnPreferenceClickListener(this);
+    }
+
+    @Override
+    public Dialog onCreateDialog(int dialogId) {
+        switch (dialogId) {
+            case DIALOG_SCREENSHOT_EDIT_APP: {
+                Dialog dialog;
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+                final ListView list = new ListView(getActivity());
+                list.setAdapter(mPackageAdapter);
+                alertDialog.setTitle(R.string.profile_choose_app);
+                alertDialog.setView(list);
+                dialog = alertDialog.create();
+                list.setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        // Add empty application definition, the user will be able to edit it later
+                        PackageItem info = (PackageItem) parent.getItemAtPosition(position);
+                        Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.SCREENSHOT_EDIT_USER_APP, info.packageName);
+                        dialog.cancel();
+                    }
+                });
+                return dialog;
+            }
+         }
+        return super.onCreateDialog(dialogId);
+    }
+
+    @Override
+    public int getDialogMetricsCategory(int dialogId) {
+        switch (dialogId) {
+            case DIALOG_SCREENSHOT_EDIT_APP:
+                return MetricsEvent.OWLSNEST;
+            default:
+                return 0;
+        }
+    }
+
+
+    @Override
+    public boolean onPreferenceClick(Preference preference) {
+        // Don't show the dialog if there are no available editor apps
+        if (preference == mScreenshotEditAppPref && mPackageAdapter.getCount() > 0) {
+            showDialog(DIALOG_SCREENSHOT_EDIT_APP);
+        } else {
+            Toast.makeText(getActivity(), getActivity().getString(R.string.screenshot_edit_app_no_editor),
+                    Toast.LENGTH_LONG).show();
+        }
+        return true;
     }
 
     @Override
