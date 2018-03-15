@@ -570,6 +570,10 @@
     <string name="less_notification_sounds_1m">Every minute</string>
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
+    <string name="screenshot_edit_app">Screenshot edit app</string>
+    <string name="screenshot_edit_app_summary">Choose which app should be launched when tapping on the screenshot notification edit button</string>
+    <string name="screenshot_edit_app_no_editor">No image editor available</string>
+
     <!-- Status bar clock options -->
     <string name="clock_category">Clock</string>
     <string name="status_bar_clock">Clock and Date</string>
@@ -664,4 +668,5 @@
     <string name="qs_tile_animation_duration_fast">fast</string>
     <string name="qs_set_animation_style">Animation is set to %1$s</string>
     <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+
 </resources>
