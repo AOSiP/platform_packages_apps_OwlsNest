@@ -23,6 +23,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 
+import com.aosip.owlsnest.preference.CustomSeekBarPreference;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -33,7 +34,9 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
 
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
+    private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
 
+    private CustomSeekBarPreference mQsPanelAlpha;
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
 
@@ -66,6 +69,12 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
         mTileAnimationDuration.setValue(String.valueOf(tileAnimationDuration));
         updateTileAnimationDurationSummary(tileAnimationDuration);
         mTileAnimationDuration.setOnPreferenceChangeListener(this);
+
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
+        mQsPanelAlpha.setValue(qsPanelAlpha);
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -88,9 +97,15 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
 			tileAnimationDuration, UserHandle.USER_CURRENT);
 		updateTileAnimationDurationSummary(tileAnimationDuration);
 		return true;
+    } else if (preference == mQsPanelAlpha) {
+        int bgAlpha = (Integer) newValue;
+        Settings.System.putIntForUser(getContentResolver(),
+                Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
+                UserHandle.USER_CURRENT);
+        return true;
 	}
-        return false;
-    }
+    return false;
+  }
 
     private void updateTileAnimationStyleSummary(int tileAnimationStyle) {
         String prefix = (String) mTileAnimationStyle.getEntries()[mTileAnimationStyle.findIndexOfValue(String
