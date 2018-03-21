@@ -12,6 +12,7 @@
    limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- AOSiP device info settings -->
     <string name="aosip_version">AOSiP version</string>
     <string name="aosip_version_default">Unknown</string>
@@ -37,7 +38,7 @@
     <string name="button_manual_brightness">Brightness level</string>
     <string name="button_timeout_title">Backlight timeout</string>
     <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_backlight_on_touch_only_summary">Buttons will only light up when they are pressed rather than the backlight being on all the time. Timeout still impacts this feature.</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -67,7 +68,7 @@
     <string name="carrier_category">Carrier label</string>
     <string name="carrier_options">Select display locations</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_explain">Please enter a new label (Max 14 characters). Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
     <string name="show_carrier_title">Is displayed on</string>
     <string name="show_carrier_disabled">Nowhere</string>
@@ -76,8 +77,8 @@
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
 
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Show net activity in statusbar</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="network_traffic_state_title">Show network activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Network activity autohide threshold (KB/s)</string>
 
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
@@ -124,7 +125,7 @@
     <string name="battery_light_low_color">Low battery</string>
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full (100) battery</string>
+    <string name="battery_light_reallyfull_color">Full (100%) battery</string>
 
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
