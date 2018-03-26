@@ -45,6 +45,12 @@
         android:summary="@string/lockscreen_enable_power_menu_summary"
         android:defaultValue="true"/>
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_show_status_bar"
+        android:title="@string/lockscreen_show_status_bar_title"
+        android:summary="@string/lockscreen_show_status_bar_summary"
+        android:defaultValue="true" />
+
     <Preference
         android:title="@string/lockscreen_visualizer_title"
         android:summary="@string/lockscreen_visualizer_summary"
