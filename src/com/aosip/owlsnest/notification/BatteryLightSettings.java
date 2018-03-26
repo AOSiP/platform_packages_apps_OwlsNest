@@ -36,6 +36,7 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private SystemSettingSwitchPreference mBatteryLightEnabled;
     private ColorPickerPreference mLowColor;
     private ColorPickerPreference mMediumColor;
     private ColorPickerPreference mFullColor;
@@ -51,6 +52,16 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
         mColorCategory = (PreferenceCategory) findPreference("battery_light_cat");
+
+        mBatteryLightEnabled = (SystemSettingSwitchPreference)prefSet.findPreference("battery_light_enabled");
+        if (getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            mBatteryLightEnabled.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                            Settings.System.BATTERY_LIGHT_ENABLED, 1, UserHandle.USER_CURRENT) == 1);
+            mBatteryLightEnabled.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mBatteryLightEnabled);
+        }
 
         mLowBatteryBlinking = (SystemSettingSwitchPreference)prefSet.findPreference("battery_light_low_blinking");
         if (getResources().getBoolean(
@@ -105,7 +116,14 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference.equals(mLowColor)) {
+        if (preference == mBatteryLightEnabled) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.BATTERY_LIGHT_ENABLED, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            mBatteryLightEnabled.setChecked(value);
+            return true;
+        } else if (preference.equals(mLowColor)) {
             int color = ((Integer) newValue).intValue();
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.BATTERY_LIGHT_LOW_COLOR, color,
