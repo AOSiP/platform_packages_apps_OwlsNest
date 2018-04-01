@@ -671,4 +671,8 @@
     <string name="large_battery_icon_title">Show large icon</string>
     <string name="large_battery_icon_summary">Enlarge the battery icon in the status bar</string>
 
+    <!-- System default animation -->
+    <string name="system_default_animation_title">Android P animation style</string>
+    <string name="system_default_animation_summary">Enable Android P \"Default\" animations</string>
+
 </resources>
