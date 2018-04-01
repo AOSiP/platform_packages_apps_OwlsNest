@@ -42,4 +42,11 @@
             android:key="screenshot_edit_app"
             android:title="@string/screenshot_edit_app"
             android:summary="@string/screenshot_edit_app_summary" />
+
+        <com.aosip.owlsnest.preference.GlobalSettingSwitchPreference
+            android:key="system_default_animation"
+            android:title="@string/system_default_animation_title"
+            android:summary="@string/system_default_animation_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
