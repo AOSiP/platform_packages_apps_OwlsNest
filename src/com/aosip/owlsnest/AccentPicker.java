@@ -16,6 +16,8 @@
 
 package com.aosip.owlsnest;
 
+import static com.android.settingslib.ThemeUtils.*;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -397,30 +399,6 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
                 gridlayout.setColumnCount(8);
             }
         }
-    }
-
-    // Check for the dark theme overlay
-    private boolean isUsingDarkTheme() {
-        OverlayInfo themeInfo = null;
-        try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
-                    UserHandle.USER_CURRENT);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return themeInfo != null && themeInfo.isEnabled();
-    }
-
-    // Check for the blackaf theme overlay
-    private boolean isUsingBlackAFTheme() {
-        OverlayInfo themeInfo = null;
-        try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.blackaf",
-                    UserHandle.USER_CURRENT);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return themeInfo != null && themeInfo.isEnabled();
     }
 
     @Override
