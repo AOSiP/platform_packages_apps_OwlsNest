@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f0f6390_92407d33",
+        "filename": "src/com/aosip/owlsnest/AccentPicker.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 414,
+      "author": {
+        "id": 1000044
+      },
+      "writtenOn": "2018-04-04T08:59:14Z",
+      "side": 1,
+      "message": "Same as 3124. Probably time to make a common helper class in SettingsLib for all these functions and save the hassle everywhere?",
+      "revId": "85cb8bdb86653c204f5493f2558a4c5b35dca008",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": false
+    }
+  ]
+}
