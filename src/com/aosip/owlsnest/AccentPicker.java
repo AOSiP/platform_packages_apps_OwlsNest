@@ -42,8 +42,10 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
+import com.android.settingslib.ThemeUtils;
 
-public class AccentPicker extends InstrumentedDialogFragment implements OnClickListener {
+public class AccentPicker extends InstrumentedDialogFragment implements
+        OnClickListener {
 
     private static final String TAG_ACCENT_PICKER = "accent_picker";
 
@@ -62,7 +64,8 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        mView = LayoutInflater.from(getActivity()).inflate(R.layout.accent_picker, null);
+        mView = LayoutInflater.from(getActivity()).inflate(
+                R.layout.accent_picker, null);
         initView();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -367,11 +370,15 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         Button blackAccent = null;
         if (mView != null) {
             blackAccent = mView.findViewById(R.id.blackAccent);
-            // Change the accent picker button depending on whether or not the dark theme is applied
-            blackAccent.setBackgroundColor(getResources().getColor(
-                    isUsingDarkTheme() || isUsingBlackAFTheme() ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+            // Change the accent picker button depending on whether or not the
+            // dark theme is applied
+            int color = ThemeUtils.canUseBlackAccent() ?
+                    R.color.accent_picker_dark_accent :
+                    R.color.accent_picker_white_accent;
+
+            blackAccent.setBackgroundColor(getResources().getColor(color);
             blackAccent.setBackgroundTintList(getResources().getColorStateList(
-                    isUsingDarkTheme() || isUsingBlackAFTheme() ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                    color);
         }
         if (blackAccent != null) {
             blackAccent.setOnClickListener(new View.OnClickListener() {
@@ -397,30 +404,6 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
                 gridlayout.setColumnCount(8);
             }
         }
-    }
-
-    // Check for the dark theme overlay
-    private boolean isUsingDarkTheme() {
-        OverlayInfo themeInfo = null;
-        try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
-                    UserHandle.USER_CURRENT);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return themeInfo != null && themeInfo.isEnabled();
-    }
-
-    // Check for the blackaf theme overlay
-    private boolean isUsingBlackAFTheme() {
-        OverlayInfo themeInfo = null;
-        try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.blackaf",
-                    UserHandle.USER_CURRENT);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return themeInfo != null && themeInfo.isEnabled();
     }
 
     @Override
