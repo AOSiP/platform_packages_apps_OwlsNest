@@ -42,6 +42,7 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
+import com.android.settingslib.ThemeUtils;
 
 public class AccentPicker extends InstrumentedDialogFragment implements OnClickListener {
 
@@ -369,9 +370,13 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
             blackAccent = mView.findViewById(R.id.blackAccent);
             // Change the accent picker button depending on whether or not the dark theme is applied
             blackAccent.setBackgroundColor(getResources().getColor(
-                    isUsingDarkTheme() || isUsingBlackAFTheme() ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                    ThemeUtils.canUseBlackTheme() ?
+                            R.color.accent_picker_white_accent :
+                            R.color.accent_picker_dark_accent));
             blackAccent.setBackgroundTintList(getResources().getColorStateList(
-                    isUsingDarkTheme() || isUsingBlackAFTheme() ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                    ThemeUtils.canUseBlackTheme() ?
+                    R.color.accent_picker_white_accent :
+                    R.color.accent_picker_dark_accent));
         }
         if (blackAccent != null) {
             blackAccent.setOnClickListener(new View.OnClickListener() {
@@ -397,30 +402,6 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
                 gridlayout.setColumnCount(8);
             }
         }
-    }
-
-    // Check for the dark theme overlay
-    private boolean isUsingDarkTheme() {
-        OverlayInfo themeInfo = null;
-        try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
-                    UserHandle.USER_CURRENT);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return themeInfo != null && themeInfo.isEnabled();
-    }
-
-    // Check for the blackaf theme overlay
-    private boolean isUsingBlackAFTheme() {
-        OverlayInfo themeInfo = null;
-        try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.blackaf",
-                    UserHandle.USER_CURRENT);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        return themeInfo != null && themeInfo.isEnabled();
     }
 
     @Override
