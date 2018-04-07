@@ -104,6 +104,7 @@
   <string name="less_boring_heads_up_title">Сделать всплывающие уведомления менее раздражающими</string>
   <string name="less_boring_heads_up_summary">Показать всплывающие уведомления только для звонков или сообщений (если они не на переднем плане)</string>
   <!-- Battery light -->
+  <string name="battery_light_enable">Включить</string>
   <string name="battery_light_allow_on_dnd_title">Индикатор батареи в режиме Не беспокоить</string>
   <string name="battery_light_low_blinking_title">Световая индикация при низком заряде батареи</string>
   <string name="battery_light_cat">Цвет индикации при зарядке</string>
@@ -213,7 +214,7 @@
   <string name="fling_longpress_title">Задержка долгого нажатия</string>
   <string name="fling_longpress_summary">Увеличить или уменьшить время, необходимое для длительного нажатия</string>
   <string name="fling_keyboard_cursors_title">Перемещение курсора клавиатуры</string>
-  <string name="fling_keyboard_cursors_summary">Двойные нажатия слева/справа управляют движениями курсора влево/вправо при открытой клавиатуре</string>
+  <string name="fling_keyboard_cursors_move_summary">Когда активен текстовый ввод, удерживайте влево/вправо для перемещения курсора.\nПродолжайте удерживать для того, чтобы курсор продолжал перемещаться, или нажмите один раз на панель, чтобы вернуться на домашний экран.</string>
   <string name="fling_logo_opacity_title">Прозрачность логотипа жеста</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Пульсация не работает с некоторыми источниками звука во время прослушивания через динамик</string>
@@ -314,24 +315,6 @@
   <!--Vol media all time-->
   <string name="volume_keys_control_media_stream_title">Клавиши громкости регулируют уровень громкости мультимедиа</string>
   <string name="volume_keys_control_media_stream_summary">Панель громкости отображает слайдер громкости Мультимедиа по умолчанию</string>
-  <!-- Pocket judge -->
-  <string name="pocket_judge_title">Режим В кармане</string>
-  <string name="pocket_judge_summary">Блокировать экран и кнопки, когда устройство находится в кармане</string>
-  <!-- Hardware button navigation -->
-  <string name="hardware_keys_volume_keys_title">Регулировка громкости</string>
-  <string name="hardware_keys_home_key_title">Кнопка Домой</string>
-  <string name="hardware_keys_menu_key_title">Кнопка Меню</string>
-  <string name="hardware_keys_assist_key_title">Кнопка Поиск</string>
-  <string name="hardware_keys_appswitch_key_title">Кнопка Обзор</string>
-  <string name="hardware_keys_back_key_title">Кнопка Назад</string>
-  <string name="hardware_keys_double_tap_summary">Установить действие по двойному нажатию</string>
-  <string name="hardware_keys_single_tap_summary">Установить действие по одиночному нажатию</string>
-  <string name="hardware_keys_long_press_summary">Установить действие по долгому нажатию</string>
-  <string name="hardware_keys_single_tap_title">Действие при одиночном нажатии</string>
-  <string name="hardware_keys_long_press_title">Действие при долгом нажатии</string>
-  <string name="hardware_keys_double_tap_title">Действие при двойном нажатии</string>
-  <string name="hardware_keys_category">Кнопки навигации</string>
-  <string name="hardware_keys_disable_title">Отключить кнопки навигации</string>
   <!-- Power Menu -->
   <string name="powermenu_reboot_title">Перезагрузка</string>
   <string name="powermenu_advanced_reboot_title">Расширенная перезагрузка</string>
@@ -428,7 +411,7 @@
   <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
-  <string name="lockscreen_battery_info_summary">Показывать примерное максимальное текущие ток, напряжение и температуру аккумулятора на экране блокировки во время зарядки</string>
+  <string name="lockscreen_battery_info_summary">Отображение тока, напряжения и температуры батареи на экране блокировки во время зарядки</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Вибрация при распознавании отпечатка пальцев</string>
   <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>
@@ -442,6 +425,7 @@
   <string name="systemui_theme_style_auto">Автоматический (на основе обоев)</string>
   <string name="systemui_theme_style_light">Светлый</string>
   <string name="systemui_theme_style_dark">Темный</string>
+  <string name="systemui_theme_style_blackaf">BlackAF</string>
   <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string>
   <string name="theme_applied_toast">Тема применена!</string>
   <string name="accent_picker_dialog_title">Выберите цветовой оттенок</string>
@@ -460,10 +444,10 @@
   <string name="qs_show_brightness_mode">Показывать переключатель режима яркости</string>
   <string name="qs_show_brightness_mode_summary">Показывать переключатель автоподсветки в панели быстрых настроек</string>
   <string name="vol_dnd_category_title">Режим Не беспокоить</string>
-  <string name="volbtn_down_zen_title">Включение режима Не беспокоить снижением громкости</string>
-  <string name="volbtn_down_zen_summary">Разрешает переход в режим Не беспокоить снижением громкости</string>
+  <string name="volbtn_down_zen_title">Выключение режима Не беспокоить снижением громкости</string>
+  <string name="volbtn_down_zen_summary">Разрешает вход в режим Не беспокоить снижением громкости</string>
   <string name="volbtn_up_zen_title">Включение режима Не беспокоить увеличением громкости</string>
-  <string name="volbtn_up_zen_summary">Разрешает переход в режим Не беспокоить увеличением громкости</string>
+  <string name="volbtn_up_zen_summary">Разрешает выход из режима Не беспокоить увеличением громкости</string>
   <string name="vol_zen_title">Переключатель режима Не беспокоить</string>
   <string name="vol_zen_summary">Показывать переключатель режима Не беспокоить в звуковой панели</string>
   <string name="doze_always_on_title">Постоянно активный дисплей</string>
@@ -484,6 +468,21 @@
   <string name="ringtone_focus_mode_title">Играть мелодию вызова через</string>
   <string name="ringtone_focus_mode_dynamic">Наушники, если они подключены и включена музыка</string>
   <string name="ringtone_focus_mode_stock">"Через динамик (опция по умолчанию)"</string>
+  <!-- Hardware button navigation -->
+  <string name="hardware_keys_volume_keys_title">Регулировка громкости</string>
+  <string name="hardware_keys_home_key_title">Кнопка Домой</string>
+  <string name="hardware_keys_menu_key_title">Кнопка Меню</string>
+  <string name="hardware_keys_assist_key_title">Кнопка Поиск</string>
+  <string name="hardware_keys_appswitch_key_title">Кнопка Обзор</string>
+  <string name="hardware_keys_back_key_title">Кнопка Назад</string>
+  <string name="hardware_keys_double_tap_summary">Установить действие по двойному нажатию</string>
+  <string name="hardware_keys_single_tap_summary">Установить действие по одиночному нажатию</string>
+  <string name="hardware_keys_long_press_summary">Установить действие по долгому нажатию</string>
+  <string name="hardware_keys_single_tap_title">Действие при одиночном нажатии</string>
+  <string name="hardware_keys_long_press_title">Действие при долгом нажатии</string>
+  <string name="hardware_keys_double_tap_title">Действие при двойном нажатии</string>
+  <string name="hardware_keys_category">Кнопки навигации</string>
+  <string name="hardware_keys_disable_title">Отключить кнопки навигации</string>
   <string name="app_ops_settings_summary">Управление правами доступа приложений</string>
   <!-- Face unlock toggle -->
   <string name="face_auto_unlock_title">Автоматическая разблокировка лицом</string>
@@ -495,6 +494,9 @@
   <string name="less_notification_sounds_30s">Каждые 30 секунд</string>
   <string name="less_notification_sounds_1m">Каждую минуту</string>
   <string name="less_notification_sounds_2m">Каждые 2 минуты</string>
+  <string name="screenshot_edit_app">Приложение для изменения скриншотов</string>
+  <string name="screenshot_edit_app_summary">Выберите, какое приложение должно быть запущено при нажатии на кнопку редактирования в уведомлении скриншота</string>
+  <string name="screenshot_edit_app_no_editor">Нет доступного редактора изображений</string>
   <!-- Status bar clock options -->
   <string name="clock_category">Время</string>
   <string name="status_bar_clock">Время и дата</string>
@@ -540,6 +542,7 @@
   <!-- Status bar battery style-->
   <string name="status_bar_battery_style_title">Стиль батареи</string>
   <string name="status_bar_battery_style_port">Портреная ориентация</string>
+  <string name="status_bar_battery_style_land">Landscape</string>
   <string name="status_bar_battery_style_circle">Круглый значок</string>
   <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
   <string name="status_bar_battery_style_text">Текст</string>
