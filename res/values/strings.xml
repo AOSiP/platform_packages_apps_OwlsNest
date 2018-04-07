@@ -335,7 +335,7 @@
     <string name="smartbar_longpress_delay_long">Long delay</string>
     <string name="smartbar_custom_icon_size_title">Custom icon scaling</string>
     <string name="one_handed_mode_title">One handed mode</string>
-    <string name="one_handed_mode_summary">Allows swiping on the navigation bar to enable one handed mode</string>
+    <string name="one_handed_mode_summary">Swiping on the navigation bar enables one handed mode</string>
     <string name="smartbar_double_tap_sleep_title">Double tap to sleep</string>
     <string name="smartbar_double_tap_sleep_summary">Double tap on empty navbar areas to sleep</string>
 
@@ -631,7 +631,7 @@
     <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
 
     <!-- Screen state service -->
-    <string name="screen_state_toggles_summary">@null</string>
+    <string name="screen_state_toggles_summary" translatable="false">@null</string>
     <string name="screen_state_toggles_title">Suspend Actions</string>
     <string name="screen_state_toggles_enable_title">Enable</string>
     <string name="screen_state_toggles_enable_summary">Actions will be executed on screen off. On screen on the previous state will be restored.</string>
