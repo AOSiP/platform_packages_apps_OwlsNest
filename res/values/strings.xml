@@ -139,6 +139,7 @@
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
     <string name="expanded_category">Expanded</string>
+    <string name="qs_footer">Options for QS rows/column count and option to hide labels are located in QS edit menu under the 3-dot menu</string>
 
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Transparency</string>

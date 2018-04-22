@@ -52,6 +52,8 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
 
 	ContentResolver resolver = getActivity().getContentResolver();
 
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.qs_footer);
+
 	// QS animation
         mTileAnimationStyle = (ListPreference) findPreference(PREF_TILE_ANIM_STYLE);
         int tileAnimationStyle = Settings.System.getIntForUser(resolver,
