@@ -72,6 +72,8 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements OnP
 
         addPreferencesFromResource(R.xml.clock_date_settings);
 
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.clock_footer);
+
         mClockStyle = (ListPreference) findPreference(PREF_CLOCK_STYLE);
         mClockStyle.setOnPreferenceChangeListener(this);
         mClockStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
