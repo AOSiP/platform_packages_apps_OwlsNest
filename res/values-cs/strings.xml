@@ -68,6 +68,9 @@
   <string name="show_carrier_keyguard">Pouze na zamykací obrazovce</string>
   <string name="show_carrier_statusbar">Pouze stavová lišta</string>
   <string name="show_carrier_enabled">Zamykací obrazovka &amp; stavová lišta</string>
+  <!-- Data disabled icon -->
+  <string name="data_disabled_icon_title">Zobrazit ikonu při vypnutí dat</string>
+  <string name="data_disabled_icon_summary">Zobrazit křížek na ikoně signálu sítě při vypnutých datech</string>
   <!-- Statusbar net monitor -->
   <string name="network_traffic_state_title">Zobrazit indikátor síťové aktivity ve stavové liště</string>
   <string name="network_traffic_autohide_threshold_title">Prahová hodnota pro automatické skrytí síťové aktivity (KB/s)</string>
@@ -116,6 +119,7 @@
   <string name="quicksettings_title">Rychlá nastavení</string>
   <string name="quicksettings_summary">Spravá dlaždic rychlého nastavení a rozšířené stavové lišty</string>
   <string name="expanded_category">Rozšíření</string>
+  <string name="qs_footer">Options for QS rows/column count and to hide qs labels are located in QS edit menu under the 3-dot menu</string>
   <!-- QuickSettings Panel Transparency -->
   <string name="qs_panel_alpha_title">Průhlednost</string>
   <!--Quick pulldown-->
@@ -295,7 +299,7 @@
   <string name="smartbar_longpress_delay_long">Dlouhá prodleva</string>
   <string name="smartbar_custom_icon_size_title">Vlastní velikost ikon</string>
   <string name="one_handed_mode_title">Režim jedné ruky</string>
-  <string name="one_handed_mode_summary">Umožnit zapnutí režimu jednou rukou posunutím přes navigační panel</string>
+  <string name="one_handed_mode_summary">Přejetím přes navigační panel povolíte režim jedné ruky</string>
   <string name="smartbar_double_tap_sleep_title">Uspat dvojím poklepáním</string>
   <string name="smartbar_double_tap_sleep_summary">Dvojím poklepáním na prázdné místo navigačního panelu uspat zařízení</string>
   <!--Owlsnest buttons-->
@@ -499,6 +503,7 @@
   <string name="screenshot_edit_app_no_editor">Není k dispozici žádný editor obrázků</string>
   <!-- Status bar clock options -->
   <string name="clock_category">Hodiny</string>
+  <string name="clock_footer">Center clock has been added but use it at your own discretion as due to some changes in Oreo, there will be some issues with center clock and ticker/notification icon overflow</string>
   <string name="status_bar_clock">Hodiny a datum</string>
   <string name="status_bar_clock_summary">Konfigurace zobrazení hodin a data ve stavové liště</string>
   <string name="clock_title_enable">Zarovnání</string>
@@ -512,6 +517,7 @@
   <string name="enable_clock_weekday">Den v týdnu</string>
   <string name="enable_clock_weekday_summary">Zobrazit zkratku dne v týdnu před hodinami</string>
   <string name="right_clock">Hodiny vpravo</string>
+  <string name="center_clock">Hodiny uprostřed</string>
   <string name="left_clock">Hodiny vlevo</string>
   <string name="dont_show">Nezobrazovat</string>
   <string name="clock_date_display">Datum</string>
@@ -529,7 +535,7 @@
   <string name="clock_date_style_normal">Normální</string>
   <string name="clock_date_style_lowercase">Malá písmena</string>
   <string name="clock_date_style_uppercase">Velká písmena</string>
-  <string name="clock_date_format_custom">Vlastní formát java</string>
+  <string name="clock_date_format_custom">Vlastní formát Java</string>
   <!-- Lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Hudební vizualizace</string>
   <string name="lockscreen_visualizer_summary">Přepne zobrazení vizualizací na zamykací obrazovce</string>
@@ -542,7 +548,7 @@
   <!-- Status bar battery style-->
   <string name="status_bar_battery_style_title">Styl baterie</string>
   <string name="status_bar_battery_style_port">Na výšku</string>
-  <string name="status_bar_battery_style_land">Landscape</string>
+  <string name="status_bar_battery_style_land">Na šířku</string>
   <string name="status_bar_battery_style_circle">Kruh</string>
   <string name="status_bar_battery_style_dotted_circle">Tečkovaný kruh</string>
   <string name="status_bar_battery_style_text">Text</string>
@@ -552,7 +558,6 @@
   <string name="notification_guts_kill_app_button_title">Tlačítko \"Ukončit aplikaci\"</string>
   <string name="notification_guts_kill_app_button_summary">Zobrazit tlačítko \"Ukončit aplikaci\" při dlouhém stisku v nabídce oznámení</string>
   <!-- Screen state service -->
-  <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Akce po zhasnutí obrazovky</string>
   <string name="screen_state_toggles_enable_title">Povolit</string>
   <string name="screen_state_toggles_enable_summary">Akce budou provedeny při vypnutí obrazovky. Při zapnutí a uvedení do předchozího stavu budou obnoveny.</string>
@@ -585,4 +590,7 @@
   <string name="qs_tile_animation_duration_fast">rychlá</string>
   <string name="qs_set_animation_style">Animace je nastavena na %1$s</string>
   <string name="qs_set_animation_duration">Délka animace je nastavena na %1$s</string>
+  <!-- Battery icon size -->
+  <string name="large_battery_icon_title">Zobrazit velkou ikonu</string>
+  <string name="large_battery_icon_summary">Zvětšit ikonu baterie ve stavové liště</string>
 </resources>

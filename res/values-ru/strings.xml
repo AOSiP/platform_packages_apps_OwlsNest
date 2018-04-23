@@ -68,6 +68,9 @@
   <string name="show_carrier_keyguard">Только на экране блокировки</string>
   <string name="show_carrier_statusbar">Только в строке состояния</string>
   <string name="show_carrier_enabled">На экране блокировки и в строке состояния</string>
+  <!-- Data disabled icon -->
+  <string name="data_disabled_icon_title">Показывать значок отключенной передачи данных</string>
+  <string name="data_disabled_icon_summary">Показывать крест над значком сети, когда передача данных отключена</string>
   <!-- Statusbar net monitor -->
   <string name="network_traffic_state_title">Показывать сетевую активность в строке состояния</string>
   <string name="network_traffic_autohide_threshold_title">Порог автоскрытия индикатора сетевого трафика (KB/s)</string>
@@ -116,6 +119,7 @@
   <string name="quicksettings_title">Быстрые настройки</string>
   <string name="quicksettings_summary">Управление быстрыми настройками и раскрытой строкой состояния</string>
   <string name="expanded_category">Расширенная</string>
+  <string name="qs_footer">Options for QS rows/column count and to hide qs labels are located in QS edit menu under the 3-dot menu</string>
   <!-- QuickSettings Panel Transparency -->
   <string name="qs_panel_alpha_title">Прозрачность</string>
   <!--Quick pulldown-->
@@ -425,7 +429,7 @@
   <string name="systemui_theme_style_auto">Автоматический (на основе обоев)</string>
   <string name="systemui_theme_style_light">Светлый</string>
   <string name="systemui_theme_style_dark">Темный</string>
-  <string name="systemui_theme_style_blackaf">BlackAF</string>
+  <string name="systemui_theme_style_blackaf">Черная</string>
   <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string>
   <string name="theme_applied_toast">Тема применена!</string>
   <string name="accent_picker_dialog_title">Выберите цветовой оттенок</string>
@@ -499,6 +503,7 @@
   <string name="screenshot_edit_app_no_editor">Нет доступного редактора изображений</string>
   <!-- Status bar clock options -->
   <string name="clock_category">Время</string>
+  <string name="clock_footer">Center clock has been added but use it at your own discretion as due to some changes in Oreo, there will be some issues with center clock and ticker/notification icon overflow</string>
   <string name="status_bar_clock">Время и дата</string>
   <string name="status_bar_clock_summary">Настройка отображения даты и времени</string>
   <string name="clock_title_enable">Выравнивание</string>
@@ -512,6 +517,7 @@
   <string name="enable_clock_weekday">День недели</string>
   <string name="enable_clock_weekday_summary">Сокращенный день недели перед временем</string>
   <string name="right_clock">Часы справа</string>
+  <string name="center_clock">Часы по центру</string>
   <string name="left_clock">Часы слева</string>
   <string name="dont_show">Не показывать</string>
   <string name="clock_date_display">Дата</string>
@@ -542,7 +548,7 @@
   <!-- Status bar battery style-->
   <string name="status_bar_battery_style_title">Стиль батареи</string>
   <string name="status_bar_battery_style_port">Портреная ориентация</string>
-  <string name="status_bar_battery_style_land">Landscape</string>
+  <string name="status_bar_battery_style_land">Горизонтально</string>
   <string name="status_bar_battery_style_circle">Круглый значок</string>
   <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
   <string name="status_bar_battery_style_text">Текст</string>
@@ -552,7 +558,6 @@
   <string name="notification_guts_kill_app_button_title">Кнопка закрытия приложения</string>
   <string name="notification_guts_kill_app_button_summary">Показывать кнопку закрытия приложения при долгом нажатии на уведомление</string>
   <!-- Screen state service -->
-  <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Действия при переходе в режим ожидания</string>
   <string name="screen_state_toggles_enable_title">Включить</string>
   <string name="screen_state_toggles_enable_summary">Действия будут выполняться при выключении экрана. При включении экрана будет восстановлено предыдущее состояние.</string>
@@ -585,4 +590,7 @@
   <string name="qs_tile_animation_duration_fast">быстро</string>
   <string name="qs_set_animation_style">Вид анимации: %1$s</string>
   <string name="qs_set_animation_duration">Скорость анимации: %1$s</string>
+  <!-- Battery icon size -->
+  <string name="large_battery_icon_title">Показывать большую иконку</string>
+  <string name="large_battery_icon_summary">Увеличение иконки батареи в строке состояния</string>
 </resources>

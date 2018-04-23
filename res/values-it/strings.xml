@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- AOSiP device info settings -->
-  <string name="aosip_version">Versione della AOSiP</string>
+  <string name="aosip_version">Versione AOSiP</string>
   <string name="aosip_version_default">Sconosciuta</string>
   <!-- AOSiP custom settings main -->
   <string name="header_category_personalization">Impostazioni UI</string>
@@ -32,7 +32,7 @@
   <string name="choose_app">Scegli app</string>
   <!-- Button brightness -->
   <string name="button_backlight_options_category">Opzioni retroilluminazione</string>
-  <string name="button_backlight_enable_title">Consenti retroilluminazione pulsanti</string>
+  <string name="button_backlight_enable_title">Abilita retroilluminazione pulsanti</string>
   <string name="button_link_brightness">Collega alla luminosità dello schermo</string>
   <string name="button_link_brightness_summary">La luminosità della retroilluminazione dei pulsanti si regolerà in base al livello di luminosità dello schermo</string>
   <string name="button_manual_brightness">Livello di luminosità</string>
@@ -52,7 +52,7 @@
   <string name="icon_category">Icone</string>
   <string name="traffic_category">Traffico dati</string>
   <!-- Statusbar logo -->
-  <string name="status_bar_logo_title">Logo</string>
+  <string name="status_bar_logo_title">Kronic Logo</string>
   <string name="status_bar_logo_dialog_title">Posizione del logo</string>
   <string name="status_bar_logo_disabled">Disattivato</string>
   <string name="status_bar_logo_left">Sinistra</string>
@@ -61,13 +61,16 @@
   <string name="carrier_category">Nome operatore</string>
   <string name="carrier_options">Seleziona la posizione di visualizzazione</string>
   <string name="custom_carrier_label_title">Nome operatore personalizzato</string>
-  <string name="custom_carrier_label_explain">Si prega di inserire un testo personalizzato (14 caratteri massimo). Lascia vuoto per tornare a quello predefinito.</string>
+  <string name="custom_carrier_label_explain">Si prega di inserire un testo personalizzato (massimo 14 caratteri). Lascia vuoto per tornare a quello predefinito.</string>
   <string name="custom_carrier_label_notset">Etichetta operatore personalizzata attualmente non impostata</string>
   <string name="show_carrier_title">Si vede</string>
   <string name="show_carrier_disabled">Da nessuna parte</string>
   <string name="show_carrier_keyguard">Solo schermata di blocco</string>
   <string name="show_carrier_statusbar">Solo barra di stato</string>
   <string name="show_carrier_enabled">Schermata di blocco &amp; barra di stato</string>
+  <!-- Data disabled icon -->
+  <string name="data_disabled_icon_title">Show data disabled icon</string>
+  <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
   <!-- Statusbar net monitor -->
   <string name="network_traffic_state_title">Mostra attività di rete nella barra di stato</string>
   <string name="network_traffic_autohide_threshold_title">Attività di rete automaticamente nascoste ad una certa soglia (KB/s)</string>
@@ -78,16 +81,16 @@
   <string name="headsup_category">Notifiche a comparsa</string>
   <string name="battery_light">LED batteria</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Suono e vibrazione delle notifiche a schermo acceso</string>
+  <string name="notification_sound_vib_screen_on_title">Suono e vibrazione delle notifiche se lo schermo é acceso</string>
   <string name="notification_sound_vib_screen_on_never">Mai</string>
   <string name="notification_sound_vib_screen_on_always">Sempre (predefinito)</string>
   <string name="notification_sound_vib_screen_on_nomedia">Se nessun media è in riproduzione</string>
   <!-- Heads up -->
-  <string name="heads_up_title">Attiva heads up</string>
-  <string name="heads_up_summary_enabled">Le notifiche fluttuanti sono abilitate</string>
-  <string name="heads_up_summary_disabled">Le notifiche fluttuanti sono disabilitate</string>
+  <string name="heads_up_title">Abilita heads up</string>
+  <string name="heads_up_summary_enabled">Le notifiche Heads-up sono abilitate</string>
+  <string name="heads_up_summary_disabled">Le notifiche Heads-up sono disabilitate</string>
   <string name="heads_up_blacklist_add_package_title">Aggiungi app</string>
-  <string name="heads_up_blacklist_add_package_summary">Disabilita le notifiche fluttuanti in queste app</string>
+  <string name="heads_up_blacklist_add_package_summary">Disabilita le notifiche Heads-up in queste app</string>
   <string name="heads_up_blacklist_title">Lista nera</string>
   <string name="heads_up_blacklist_choose_app">Seleziona app</string>
   <string name="heads_up_blacklist_dialog_delete_title">Elimina</string>
@@ -101,10 +104,10 @@
   <string name="ticker_animation_mode_alpha_fade">Dissolvenza</string>
   <string name="ticker_animation_mode_scroll">Scorrimento</string>
   <!-- Heads up options -->
-  <string name="less_boring_heads_up_title">Rendi le notifiche heads up meno invasive</string>
-  <string name="less_boring_heads_up_summary">Mostra heads up solo per il telefono o i messaggi se non sono in primo piano</string>
+  <string name="less_boring_heads_up_title">Rendi le notifiche Heads-up meno invasive</string>
+  <string name="less_boring_heads_up_summary">Mostra Heads-up solo per il telefono o i messaggi se non sono in primo piano</string>
   <!-- Battery light -->
-  <string name="battery_light_enable">Attiva</string>
+  <string name="battery_light_enable">Abilita</string>
   <string name="battery_light_allow_on_dnd_title">Luce della batteria in modalità Non Disturbare</string>
   <string name="battery_light_low_blinking_title">Luce lampeggiante a batteria quasi scarica</string>
   <string name="battery_light_cat">Colore della luce durante la carica</string>
@@ -116,6 +119,7 @@
   <string name="quicksettings_title">Impostazioni rapide</string>
   <string name="quicksettings_summary">Gestisci le tue impostazioni rapide e la barra di stato espansa</string>
   <string name="expanded_category">Esteso</string>
+  <string name="qs_footer">Options for QS rows/column count and to hide qs labels are located in QS edit menu under the 3-dot menu</string>
   <!-- QuickSettings Panel Transparency -->
   <string name="qs_panel_alpha_title">Trasparenza</string>
   <!--Quick pulldown-->
@@ -295,7 +299,7 @@
   <string name="smartbar_longpress_delay_long">Ritardo lungo</string>
   <string name="smartbar_custom_icon_size_title">Dimensione personalizzata dell\'icona</string>
   <string name="one_handed_mode_title">Modalità ad una mano</string>
-  <string name="one_handed_mode_summary">Consente di attivare la modalità ad una mano strisciando sulla barra di navigazione</string>
+  <string name="one_handed_mode_summary">Attiva la modalità ad una mano strisciando sulla barra di navigazione</string>
   <string name="smartbar_double_tap_sleep_title">Doppio tocco per spegnere lo schermo</string>
   <string name="smartbar_double_tap_sleep_summary">Doppio tocco su uno spazio vuoto della barra di navigazione per spegnere lo schermo</string>
   <!--Owlsnest buttons-->
@@ -410,7 +414,7 @@
   <string name="media_art_title">Copertina applicazioni multimediali</string>
   <string name="media_art_summary">Abilita la visualizzazione della copertina dei file multimediali nella schermata di blocco</string>
   <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Informazioni sulla ricarica nella schermata blocco</string>
+  <string name="lockscreen_battery_info_title">Informazioni sulla ricarica</string>
   <string name="lockscreen_battery_info_summary">Visualizza la corrente, il voltaggio e la temperatura della batteria nella schermata di blocco</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Vibrazione all\'autenticazione con l\'impronta digitale</string>
@@ -425,7 +429,7 @@
   <string name="systemui_theme_style_auto">Automatico (basato sullo sfondo)</string>
   <string name="systemui_theme_style_light">Chiaro</string>
   <string name="systemui_theme_style_dark">Scuro</string>
-  <string name="systemui_theme_style_blackaf">BlackAF</string>
+  <string name="systemui_theme_style_blackaf">Nerissimo</string>
   <string name="applying_theme_toast">Applicazione del tema, si prega di attendere...</string>
   <string name="theme_applied_toast">Tema applicato!</string>
   <string name="accent_picker_dialog_title">Seleziona un colore in rilievo</string>
@@ -444,9 +448,9 @@
   <string name="qs_show_brightness_mode">Mostra interruttore per il cursore della luminosità</string>
   <string name="qs_show_brightness_mode_summary">Mostra il cursore della luminosità automatica nelle impostazioni rapide</string>
   <string name="vol_dnd_category_title">Modalità non disturbare</string>
-  <string name="volbtn_down_zen_title">Tieni premuto Vol - per attivare la modalità non disturbare</string>
+  <string name="volbtn_down_zen_title">Premi ulteriormente Vol - per attivare la modalità non disturbare</string>
   <string name="volbtn_down_zen_summary">Permetti di entrare nella modalità non disturbare con il tasto Vol -</string>
-  <string name="volbtn_up_zen_title">Tieni premuto Vol + per attivare la modalità non disturbare</string>
+  <string name="volbtn_up_zen_title">Premi Vol + per disattivare la modalità non disturbare</string>
   <string name="volbtn_up_zen_summary">Permetti di uscire nella modalità non disturbare con il tasto Vol +</string>
   <string name="vol_zen_title">Interruttore non disturbare</string>
   <string name="vol_zen_summary">Mostra lo switch per il non disturbare nel pannello volume</string>
@@ -499,6 +503,7 @@
   <string name="screenshot_edit_app_no_editor">Nessuna app per modifica disponibile</string>
   <!-- Status bar clock options -->
   <string name="clock_category">Orologio</string>
+  <string name="clock_footer">Center clock has been added but use it at your own discretion as due to some changes in Oreo, there will be some issues with center clock and ticker/notification icon overflow</string>
   <string name="status_bar_clock">Data e Ora</string>
   <string name="status_bar_clock_summary">Configura l\'ora nella barra di stato e l\'aspetto della data</string>
   <string name="clock_title_enable">Allineamento</string>
@@ -512,6 +517,7 @@
   <string name="enable_clock_weekday">Giorno della settimana</string>
   <string name="enable_clock_weekday_summary">Giorno della settimana abbreviato prima dell\'orario</string>
   <string name="right_clock">Ora a destra</string>
+  <string name="center_clock">Center clock</string>
   <string name="left_clock">Ora a sinistra</string>
   <string name="dont_show">Non mostrare</string>
   <string name="clock_date_display">Data</string>
@@ -542,7 +548,7 @@
   <!-- Status bar battery style-->
   <string name="status_bar_battery_style_title">Stile batteria</string>
   <string name="status_bar_battery_style_port">Verticale</string>
-  <string name="status_bar_battery_style_land">Landscape</string>
+  <string name="status_bar_battery_style_land">Orizzontale</string>
   <string name="status_bar_battery_style_circle">Cerchio</string>
   <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
   <string name="status_bar_battery_style_text">Testo</string>
@@ -552,7 +558,6 @@
   <string name="notification_guts_kill_app_button_title">Pulsante chiusura forzata app</string>
   <string name="notification_guts_kill_app_button_summary">Mostra un pulsante per la chiusura forzata nel menù a pressione prolungata delle notifiche</string>
   <!-- Screen state service -->
-  <string name="screen_state_toggles_summary">\@null</string>
   <string name="screen_state_toggles_title">Azioni a schermo spento</string>
   <string name="screen_state_toggles_enable_title">Attiva</string>
   <string name="screen_state_toggles_enable_summary">Le azioni saranno eseguite a schermo spento. A schermo acceso verrà ripristinato lo stato precedente.</string>
@@ -583,6 +588,9 @@
   <string name="qs_tile_animation_duration_low">bassa</string>
   <string name="qs_tile_animation_duration_default">predefinita</string>
   <string name="qs_tile_animation_duration_fast">veloce</string>
-  <string name="qs_set_animation_style">Durata impostata a %1$s</string>
+  <string name="qs_set_animation_style">Animazione impostata su %1$s</string>
   <string name="qs_set_animation_duration">Durata dell\'animazione impostata a %1$s</string>
+  <!-- Battery icon size -->
+  <string name="large_battery_icon_title">Mostra icona grande</string>
+  <string name="large_battery_icon_summary">Allarga l\'icona della batteria nella barra di stato</string>
 </resources>
