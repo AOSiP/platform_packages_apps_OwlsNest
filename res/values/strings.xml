@@ -33,6 +33,7 @@
     <string name="add">Add</string>
     <string name="choose_app">Choose app</string>
 
+
     <!-- Button brightness -->
     <string name="button_backlight_options_category">Backlight options</string>
     <string name="button_backlight_enable_title">Enable button backlight</string>
@@ -790,6 +791,13 @@
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
     <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+
+    <!-- Rounded Corners -->
+    <string name="corners_category">Corners</string>
+    <string name="corner_radius">Rounded Corner Radius</string>
+    <string name="content_padding">Corner Content Padding</string>
+    <string name="corner_fwvals">Use framework values</string>
+    <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
 </resources>
 
 
