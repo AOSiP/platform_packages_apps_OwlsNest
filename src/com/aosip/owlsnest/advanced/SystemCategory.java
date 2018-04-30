@@ -18,8 +18,11 @@ package com.aosip.owlsnest.advanced;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.os.Bundle;
 import android.content.ContentResolver;
+import android.content.Context;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Resources;
+import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -39,6 +42,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.aosip.owlsnest.advanced.ScreenshotEditPackageListAdapter;
 import com.aosip.owlsnest.advanced.ScreenshotEditPackageListAdapter.PackageItem;
 import com.aosip.owlsnest.utils.TelephonyUtils;
+import com.aosip.owlsnest.preference.CustomSeekBarPreference;
 
 public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
@@ -46,14 +50,19 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
+    private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
+    private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
 
     private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
 
+    private CustomSeekBarPreference mCornerRadius;
+    private CustomSeekBarPreference mContentPadding;
     private ListPreference mLaunchPlayerHeadsetConnection;
     private ListPreference mHeadsetRingtoneFocus;
 
     private Preference mScreenshotEditAppPref;
     private ScreenshotEditPackageListAdapter mPackageAdapter;
+    private Context mContext;
 
     @Override
     public int getMetricsCategory() {
@@ -68,6 +77,29 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
+
+        mContext = getContext();
+        Resources res = null;
+        try {
+            res = mContext.getPackageManager().getResourcesForApplication("com.android.systemui");
+        } catch (NameNotFoundException e) {
+            e.printStackTrace();
+        }
+         float displayDensity = getResources().getDisplayMetrics().density;
+         // Rounded Corner Radius
+        int resourceIdRadius = res.getIdentifier("com.android.systemui:dimen/rounded_corner_radius", null, null);
+        mCornerRadius = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_SIZE);
+        int cornerRadius = Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_SIZE, (int) (res.getDimension(resourceIdRadius)/displayDensity));
+        mCornerRadius.setValue(cornerRadius / 1);
+        mCornerRadius.setOnPreferenceChangeListener(this);
+         // Rounded Content Padding
+        int resourceIdPadding = res.getIdentifier("com.android.systemui:dimen/rounded_corner_content_padding", null, null);
+        mContentPadding = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_CONTENT_PADDING);
+        int contentPadding = Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, (int) (res.getDimension(resourceIdPadding)/displayDensity));
+        mContentPadding.setValue(contentPadding / 1);
+        mContentPadding.setOnPreferenceChangeListener(this);
 
         mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
         int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
@@ -165,6 +197,16 @@ public class SystemCategory extends SettingsPreferenceFragment implements
                     mHeadsetRingtoneFocus.getEntries()[index]);
             Settings.Global.putInt(resolver, Settings.Global.RINGTONE_FOCUS_MODE,
                     mHeadsetRingtoneFocusValue);
+            return true;
+        } else if (preference == mCornerRadius) {
+            int value = ((Integer) newValue) * 1;
+            Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_SIZE, value, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mContentPadding) {
+            int value = ((Integer) newValue) * 1;
+            Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING, value, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
