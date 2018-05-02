@@ -31,6 +31,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
+import com.aosip.owlsnest.advanced.PrivacyGuardManager;
 import com.aosip.owlsnest.advanced.ScreenStateToggles;
 import com.aosip.owlsnest.advanced.SmartPixels;
 import com.aosip.owlsnest.advanced.SystemCategory;
@@ -86,8 +87,9 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new SystemCategory();
-            frags[1] = new ScreenStateToggles();
-            frags[2] = new SmartPixels();
+            frags[1] = new PrivacyGuardManager();
+            frags[2] = new ScreenStateToggles();
+            frags[3] = new SmartPixels();
         }
 
         @Override
@@ -110,6 +112,7 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.system_category),
+                    getString(R.string.privacy_guard_label),
                     getString(R.string.screen_state_toggles_title),
                     getString(R.string.smart_pixels_title)};
         return titleString;
