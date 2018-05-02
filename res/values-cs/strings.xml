@@ -66,7 +66,7 @@
   <string name="show_carrier_title">Je zobrazeno</string>
   <string name="show_carrier_disabled">Nikde</string>
   <string name="show_carrier_keyguard">Pouze na zamykací obrazovce</string>
-  <string name="show_carrier_statusbar">Pouze stavová lišta</string>
+  <string name="show_carrier_statusbar">Pouze na stavové liště</string>
   <string name="show_carrier_enabled">Zamykací obrazovka &amp; stavová lišta</string>
   <!-- Data disabled icon -->
   <string name="data_disabled_icon_title">Zobrazit ikonu při vypnutí dat</string>
@@ -80,6 +80,9 @@
   <string name="notification_category">Oznámení</string>
   <string name="headsup_category">Plovoucí oznámení</string>
   <string name="battery_light">LED kontrolka baterie</string>
+  <!-- Toast icon -->
+  <string name="toast_icon_title">App\'s icon in toast</string>
+  <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
   <!-- Suppress notification sound/vibration -->
   <string name="notification_sound_vib_screen_on_title">Zvuky a vibrace oznámení při zapnuté obrazovce</string>
   <string name="notification_sound_vib_screen_on_never">Nikdy</string>
@@ -96,10 +99,10 @@
   <string name="heads_up_blacklist_dialog_delete_title">Vymazat</string>
   <string name="heads_up_blacklist_dialog_delete_message">Odstranit vybranou položku?</string>
   <!-- Statusbar ticker -->
-  <string name="ticker_mode_title">Notifikační oznámení ve stavové liště</string>
+  <string name="ticker_mode_title">Textové oznámení ve stavové liště</string>
   <string name="ticker_disabled">Zakázáno</string>
-  <string name="ticker_enabled">Notifikační oznámení</string>
-  <string name="ticker_media_enabled">Notifikační a hudební oznámení</string>
+  <string name="ticker_enabled">Text oznámení</string>
+  <string name="ticker_media_enabled">Textové a hudební oznámení</string>
   <string name="ticker_animation_mode_title">Styl animace oznámení</string>
   <string name="ticker_animation_mode_alpha_fade">Slábnutí</string>
   <string name="ticker_animation_mode_scroll">Rolování</string>
@@ -119,7 +122,7 @@
   <string name="quicksettings_title">Rychlá nastavení</string>
   <string name="quicksettings_summary">Spravá dlaždic rychlého nastavení a rozšířené stavové lišty</string>
   <string name="expanded_category">Rozšíření</string>
-  <string name="qs_footer">Options for QS rows/column count and to hide qs labels are located in QS edit menu under the 3-dot menu</string>
+  <string name="qs_footer">Možnosti pro počet řádků/sloupců QS a skrytí popisků jsou umístěny v nabídce úprav QS pod nabídkou se třemi tečkami</string>
   <!-- QuickSettings Panel Transparency -->
   <string name="qs_panel_alpha_title">Průhlednost</string>
   <!--Quick pulldown-->
@@ -220,6 +223,17 @@
   <string name="fling_keyboard_cursors_title">Akce kurzorů dynamické klávesnice</string>
   <string name="fling_keyboard_cursors_move_summary">Když se klávesnice zobrazí, dlouhým stiskem vlevo nebo vpravo přesunete textový kurzor doleva nebo doprava.\nDlouhým stiskem pokračujete v pohybu kurzoru, jedním klepnutím na panel přejdete na domovskou obrazovku.</string>
   <string name="fling_logo_opacity_title">Průhlednost loga Fling</string>
+  <string name="fling_factory_reset_title">Reset to stock</string>
+  <string name="fling_factory_reset_confirm">Are you sure you want to reset Fling to stock settings?</string>
+  <string name="fling_backup_current_config_title">Save profile</string>
+  <string name="fling_restore_config_title">Restore profile</string>
+  <string name="fling_config_name_edit_dialog_title">Fling profile name</string>
+  <string name="fling_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="fling_config_dialog_title">Fling profiles</string>
+  <string name="fling_config_backup_success_toast">Fling profile successfully saved</string>
+  <string name="fling_config_restore_success_toast">Fling profile successfully restored</string>
+  <string name="fling_config_backup_error_toast">Error saving Fling profile</string>
+  <string name="fling_config_restore_error_toast">Error restoring Fling profile</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse nefunguje s některými zvukovými zdroji při poslechu z reproduktoru zařízení</string>
   <string name="pulse_settings">Pulse</string>
@@ -473,7 +487,7 @@
   <string name="ringtone_focus_mode_dynamic">Ze sluchátek, pokud jsou připojena a hraje hudby</string>
   <string name="ringtone_focus_mode_stock">"Z reproduktoru (AOSP výchozí)"</string>
   <!-- Hardware button navigation -->
-  <string name="hardware_keys_volume_keys_title">Probudit tlačítky</string>
+  <string name="hardware_keys_volume_keys_title">Tlačítka hlasitosti</string>
   <string name="hardware_keys_home_key_title">Tlačítko Domů</string>
   <string name="hardware_keys_menu_key_title">Tlačítko Menu</string>
   <string name="hardware_keys_assist_key_title">Tlačítko Hledat</string>
@@ -503,7 +517,7 @@
   <string name="screenshot_edit_app_no_editor">Není k dispozici žádný editor obrázků</string>
   <!-- Status bar clock options -->
   <string name="clock_category">Hodiny</string>
-  <string name="clock_footer">Center clock has been added but use it at your own discretion as due to some changes in Oreo, there will be some issues with center clock and ticker/notification icon overflow</string>
+  <string name="clock_footer">Nastavení hodin uprostřed bylo přidáno, ale používejte jej podle vlastního uvážení, protože kvůli změnám v Android Oreo se může vyskytnout kolize s hodinami uprostřed a oznámením</string>
   <string name="status_bar_clock">Hodiny a datum</string>
   <string name="status_bar_clock_summary">Konfigurace zobrazení hodin a data ve stavové liště</string>
   <string name="clock_title_enable">Zarovnání</string>
@@ -593,4 +607,15 @@
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Zobrazit velkou ikonu</string>
   <string name="large_battery_icon_summary">Zvětšit ikonu baterie ve stavové liště</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart Pixels</string>
+  <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend you set the amount of disabled pixels at 75 percent.</string>
+  <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+  <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+  <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+  <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+  <string name="smart_pixels_percent">Percent of pixels to disable</string>
+  <string name="smart_pixels_shift_title">Burn-in protection</string>
+  <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
 </resources>

@@ -80,6 +80,9 @@
   <string name="notification_category">Notificaciones</string>
   <string name="headsup_category">Aviso</string>
   <string name="battery_light">LED de batería</string>
+  <!-- Toast icon -->
+  <string name="toast_icon_title">App\'s icon in toast</string>
+  <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
   <!-- Suppress notification sound/vibration -->
   <string name="notification_sound_vib_screen_on_title">Notificaciones de sonido y vibración si la pantalla está encendida</string>
   <string name="notification_sound_vib_screen_on_never">Nunca</string>
@@ -119,7 +122,7 @@
   <string name="quicksettings_title">Ajustes rápidos</string>
   <string name="quicksettings_summary">Administre sus mosaicos rápidos y barra de estado expandida</string>
   <string name="expanded_category">Expandido</string>
-  <string name="qs_footer">Options for QS rows/column count and to hide qs labels are located in QS edit menu under the 3-dot menu</string>
+  <string name="qs_footer">Las opciones para los ajustes rápidos para cambiar el número de filas/columnas y ocultar las etiquetas están en el menú de edición de los ajustes rápidos, en el menú de los 3 puntos</string>
   <!-- QuickSettings Panel Transparency -->
   <string name="qs_panel_alpha_title">Transparencia</string>
   <!--Quick pulldown-->
@@ -220,6 +223,17 @@
   <string name="fling_keyboard_cursors_title">Acción dinámica de los cursores del teclado</string>
   <string name="fling_keyboard_cursors_move_summary">Cuando se muestre el teclado, realiza una pulsación larga a la izquierda o derecha para mover el cursor de texto.\nMantén la pulsación larga para seguir moviéndolo, toca en la barra para ir a la pantalla de inicio.</string>
   <string name="fling_logo_opacity_title">Lanzador logo opacidad</string>
+  <string name="fling_factory_reset_title">Reset to stock</string>
+  <string name="fling_factory_reset_confirm">Are you sure you want to reset Fling to stock settings?</string>
+  <string name="fling_backup_current_config_title">Save profile</string>
+  <string name="fling_restore_config_title">Restore profile</string>
+  <string name="fling_config_name_edit_dialog_title">Fling profile name</string>
+  <string name="fling_config_name_edit_dialog_message">Enter name or leave blank</string>
+  <string name="fling_config_dialog_title">Fling profiles</string>
+  <string name="fling_config_backup_success_toast">Fling profile successfully saved</string>
+  <string name="fling_config_restore_success_toast">Fling profile successfully restored</string>
+  <string name="fling_config_backup_error_toast">Error saving Fling profile</string>
+  <string name="fling_config_restore_error_toast">Error restoring Fling profile</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">La Pulsación no funciona con algunas fuentes de audio cuando escucha en el altavoz del dispositivo</string>
   <string name="pulse_settings">Pulsación</string>
@@ -503,7 +517,7 @@
   <string name="screenshot_edit_app_no_editor">No hay ningún editor de imágenes disponible</string>
   <!-- Status bar clock options -->
   <string name="clock_category">Reloj</string>
-  <string name="clock_footer">Center clock has been added but use it at your own discretion as due to some changes in Oreo, there will be some issues with center clock and ticker/notification icon overflow</string>
+  <string name="clock_footer">El reloj en el centro ha sido añadido, pero úsalo bajo tu propia responsabilidad, ya que, debido a algunos cambios en Android Oreo, podría haber algunos problemas con cómo se muestran los iconos de notificación en la barra superior</string>
   <string name="status_bar_clock">Reloj y fecha</string>
   <string name="status_bar_clock_summary">Configurar el reloj de la barra de estado y la apariencia de la fecha</string>
   <string name="clock_title_enable">Alineación</string>
@@ -517,7 +531,7 @@
   <string name="enable_clock_weekday">Día de la semana</string>
   <string name="enable_clock_weekday_summary">Día abreviado de la semana anterior a la hora</string>
   <string name="right_clock">Reloj a la derecha</string>
-  <string name="center_clock">Reloj en el centro</string>
+  <string name="center_clock">Reloj Centrado</string>
   <string name="left_clock">Reloj a la izquierda</string>
   <string name="dont_show">No mostrar</string>
   <string name="clock_date_display">Fecha</string>
@@ -591,6 +605,17 @@
   <string name="qs_set_animation_style">La animación está establecida en %1$s</string>
   <string name="qs_set_animation_duration">La duración de la animación está establecida en %1$s</string>
   <!-- Battery icon size -->
-  <string name="large_battery_icon_title">Mostrar icono más grande</string>
+  <string name="large_battery_icon_title">Mostrar el icono más grande</string>
   <string name="large_battery_icon_summary">Hace más grande el icono de la batería en la barra de estado</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart Pixels</string>
+  <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend you set the amount of disabled pixels at 75 percent.</string>
+  <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+  <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+  <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+  <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+  <string name="smart_pixels_percent">Percent of pixels to disable</string>
+  <string name="smart_pixels_shift_title">Burn-in protection</string>
+  <string name="smart_pixels_shift_summary">Prevents burn-in on OLED devices by shifting pixels every so often</string>
 </resources>
