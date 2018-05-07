@@ -398,11 +398,11 @@
     <string name="powermenu_ls_airplane_summary">Show the airplane mode option on the lockscreen</string>
     <string name="lockscreen_items_other">Other</string>
 
-  <!-- Screen Off animation -->
-  <string name="screen_off_animation_title">Screen off animation</string>
-  <string name="screen_off_animation_default">Default</string>
-  <string name="screen_off_animation_crt">CRT</string>
-  <string name="screen_off_animation_scale">Scale</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
 
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Screen off power button torch</string>
@@ -573,6 +573,7 @@
     <string name="hardware_keys_category">Navigation buttons</string>
     <string name="hardware_keys_disable_title">Disable navigation buttons</string>
 
+    <!-- AppOps -->
     <string name="app_ops_settings_summary">Control apps permissions</string>
 
     <!-- Face unlock toggle -->
@@ -677,15 +678,15 @@
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
     <!-- Tiles animation style -->
-    <string name="animation_title">Animations</string>
+    <string name="animation_title">Tile animations</string>
     <string name="qs_tile_animation_style_title">Animation style</string>
     <string name="qs_tile_animation_duration_title">Animation duration</string>
-    <string name="qs_tile_animation_style_off">no animation</string>
-    <string name="qs_tile_animation_style_flip">flip</string>
-    <string name="qs_tile_animation_style_rotate">rotate</string>
-    <string name="qs_tile_animation_duration_low">low</string>
-    <string name="qs_tile_animation_duration_default">default</string>
-    <string name="qs_tile_animation_duration_fast">fast</string>
+    <string name="qs_tile_animation_style_off">No animation</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">Default</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
     <string name="qs_set_animation_style">Animation is set to %1$s</string>
     <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
 
