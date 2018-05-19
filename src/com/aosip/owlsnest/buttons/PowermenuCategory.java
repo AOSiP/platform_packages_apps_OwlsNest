@@ -33,9 +33,13 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
 
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String KEY_LOCKSCREEN_CLOCK_SELECTION = "lockscreen_clock_selection";
+    private static final String KEY_LOCKSCREEN_DATE_SELECTION = "lockscreen_date_selection";
 
     private ListPreference mScreenOffAnimation;
     private ListPreference mTorchPowerButton;
+    private ListPreference mLockscreenClockSelection;
+    private ListPreference mLockscreenDateSelection;
 
     @Override
     public int getMetricsCategory() {
@@ -69,7 +73,6 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
             mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
             mTorchPowerButton.setOnPreferenceChangeListener(this);
         }
-
     }
 
     @Override
