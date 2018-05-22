@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1cabaea4_0780d00e",
+        "filename": "src/com/aosip/owlsnest/buttons/ButtonsCategory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2018-05-22T17:36:53Z",
+      "side": 1,
+      "message": "} else {",
+      "revId": "50b3f6573359ec3f538110d6085e3a3007db75a5",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": false
+    }
+  ]
+}
