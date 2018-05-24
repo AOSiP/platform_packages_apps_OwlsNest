@@ -105,6 +105,12 @@
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values" />
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="wallpaper_power_menu_tint"
+        android:title="@string/wallpaper_tint_power_menu"
+        android:summary="@string/wallpaper_tint_summary"
+        android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
