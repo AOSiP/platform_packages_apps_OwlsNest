@@ -22,6 +22,12 @@
     android:title="@string/notification_category" >
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="wallpaper_notification_shade_wallpaper_tint"
+        android:title="@string/wallpaper_tint_notification_shade"
+        android:summary="@string/wallpaper_tint_summary"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary"
