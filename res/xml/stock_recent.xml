@@ -30,6 +30,12 @@
                  android:targetClass="com.aosip.owlsnest.recent.HAFRAppListActivity" />
      </PreferenceScreen>
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="wallpaper_recents_tint"
+        android:title="@string/wallpaper_tint_recents"
+        android:summary="@string/wallpaper_tint_summary"
+        android:defaultValue="true" />
+
     <ListPreference
         android:key="immersive_recents"
         android:title="@string/immersive_recents_title"
