@@ -94,6 +94,10 @@
     <string name="headsup_category">Heads Up</string>
     <string name="battery_light">Battery LED</string>
 
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
     <!-- Toast icon -->
     <string name="toast_icon_title">App\'s icon in toast</string>
     <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
