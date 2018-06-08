@@ -80,6 +80,9 @@
   <string name="notification_category">Bildirimler</string>
   <string name="headsup_category">Bildirim pencereleri</string>
   <string name="battery_light">Pil ışığı</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Show notification count</string>
+  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">Bildirim simgesi</string>
   <string name="toast_icon_summary">Bildirim ile uyumlu uygulama simgesini görüntüle</string>
@@ -417,8 +420,19 @@
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">Saat widgeti</string>
   <string name="hide_lockscreen_clock_summary">Saat widget\'inin görünürlüğünü değiştirin</string>
+  <string name="lockscreen_clock_selection_title">Clock style</string>
+  <string name="lockscreen_clock_selection_digital">Default</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
   <string name="hide_lockscreen_date_title">Tarih widgeti</string>
   <string name="hide_lockscreen_date_summary">Saat widgeti\'nin altındaki tarihin görünürlüğünü değiştirin</string>
+  <string name="lockscreen_date_selection_title">Date style</string>
+  <string name="lockscreen_date_selection_default">Default</string>
+  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
+  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
   <string name="hide_lockscreen_alarm_title">Alarm metni</string>
   <string name="hide_lockscreen_alarm_summary">Saat widget\'inin altındaki alarm metninin görünürlüğünü değiştirin</string>
   <!-- Media art -->
@@ -591,25 +605,25 @@
   <string name="volume_key_cursor_control_on">Ses arttırma/azaltma imleci sola/sağa kaydırır</string>
   <string name="volume_key_cursor_control_on_reverse">Ses arttırma/azaltma imleci sağ/sola kaydırır</string>
   <!-- Tiles animation style -->
-  <string name="animation_title">Tile animations</string>
+  <string name="animation_title">Kare animasyonları</string>
   <string name="qs_tile_animation_style_title">Animasyon stili</string>
   <string name="qs_tile_animation_duration_title">Animasyon süresi</string>
-  <string name="qs_tile_animation_style_off">No animation</string>
-  <string name="qs_tile_animation_style_flip">Flip</string>
-  <string name="qs_tile_animation_style_rotate">Rotate</string>
-  <string name="qs_tile_animation_duration_low">Low</string>
-  <string name="qs_tile_animation_duration_default">Default</string>
-  <string name="qs_tile_animation_duration_fast">Fast</string>
+  <string name="qs_tile_animation_style_off">Animasyon yok</string>
+  <string name="qs_tile_animation_style_flip">Çevir</string>
+  <string name="qs_tile_animation_style_rotate">Döndür</string>
+  <string name="qs_tile_animation_duration_low">Yavaş</string>
+  <string name="qs_tile_animation_duration_default">Varsayılan</string>
+  <string name="qs_tile_animation_duration_fast">Hızlı</string>
   <string name="qs_set_animation_style">Animasyon %1$s olarak ayarlandı</string>
   <string name="qs_set_animation_duration">Animasyon süresi %1$s olarak ayarlandı</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">Büyük simge göster</string>
   <string name="large_battery_icon_summary">Durum çubuğundaki pil simgesini büyüt</string>
   <!-- Incall vibrate options -->
-  <string name="incall_vibration_category">In-call vibration options</string>
-  <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-  <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-  <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+  <string name="incall_vibration_category">Görüşme sırasında ki titreşim seçenekleri</string>
+  <string name="incall_vibrate_connect_title">Bağlanınca titre</string>
+  <string name="incall_vibrate_call_wait_title">Arama bekletildiğinde titre</string>
+  <string name="incall_vibrate_disconnect_title">Bağlantı kesildiğinde titre</string>
   <!-- Smart Pixels -->
   <string name="smart_pixels_title">Akıllı Pikseller</string>
   <string name="smart_pixels_warning_text">Akıllı pikseller bir güç tasarrufu özelliğidir. Kaç piksele karar verdiğinize bağlı olarak, pil ömründe önemli bir iyileşme görebilirsiniz. İyi bir kullanıcı deneyimi için devre dışı bırakılmış piksel miktarını yüzde 75 olarak ayarlamanızı öneririz.</string>
@@ -622,12 +636,18 @@
   <string name="smart_pixels_shift_title">Yanma koruması</string>
   <string name="smart_pixels_shift_summary">OLED cihazlarda yanmaları önler ve sık sık pikselleri kaydırır</string>
   <!-- Activity Blacklist -->
-  <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
-  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on a Share button</string>
-  <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
-  <string name="chooser_activity_blacklist_pref_title">Add app</string>
-  <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
-  <string name="profile_choose_app">Choose app</string>
-  <string name="dialog_delete_title">Delete</string>
-  <string name="dialog_delete_message">Remove selected item?</string>
+  <string name="chooser_activity_blacklist_title">Seçici etkinlik kara listesi</string>
+  <string name="chooser_activity_blacklist_summary">Paylaş tuşuna dokunulduğunda gösterilmeyecek uygulamalar</string>
+  <string name="chooser_activity_blacklist_cat_title">Kara liste</string>
+  <string name="chooser_activity_blacklist_pref_title">Uygulama ekle</string>
+  <string name="chooser_activity_blacklist_pref_summary">Eklemek için buraya dokunun, kaldırmak için eklenmiş olan uygulamaya dokunun</string>
+  <string name="profile_choose_app">Uygulama seçin</string>
+  <string name="dialog_delete_title">Sil</string>
+  <string name="dialog_delete_message">Seçili öğe kaldırılsın mı?</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
+  <string name="wallpaper_tint_recents">Recents background tint</string>
+  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
+  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
+  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
 </resources>

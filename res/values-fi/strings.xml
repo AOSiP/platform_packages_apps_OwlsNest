@@ -80,6 +80,9 @@
   <string name="notification_category">Ilmoitukset</string>
   <string name="headsup_category">Leijuvat ilmoitukset</string>
   <string name="battery_light">Akun merkkivalo</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Show notification count</string>
+  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">Sovelluksen ikoni ponnahdusikkunassa</string>
   <string name="toast_icon_summary">Näytä vastaava sovelluksen kuvake toast-ilmoituksessa</string>
@@ -417,8 +420,19 @@
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">Kellowidget</string>
   <string name="hide_lockscreen_clock_summary">Change the clock widget\'s visibility</string>
+  <string name="lockscreen_clock_selection_title">Clock style</string>
+  <string name="lockscreen_clock_selection_digital">Default</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
   <string name="hide_lockscreen_date_title">Päivämääräwidget</string>
   <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
+  <string name="lockscreen_date_selection_title">Date style</string>
+  <string name="lockscreen_date_selection_default">Default</string>
+  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
+  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
   <string name="hide_lockscreen_alarm_title">Alarm text</string>
   <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
   <!-- Media art -->
@@ -630,4 +644,10 @@
   <string name="profile_choose_app">Choose app</string>
   <string name="dialog_delete_title">Delete</string>
   <string name="dialog_delete_message">Remove selected item?</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
+  <string name="wallpaper_tint_recents">Recents background tint</string>
+  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
+  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
+  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
 </resources>

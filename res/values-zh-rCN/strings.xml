@@ -80,6 +80,9 @@
   <string name="notification_category">通知</string>
   <string name="headsup_category">浮动通知</string>
   <string name="battery_light">电池指示灯</string>
+  <!-- Notification count -->
+  <string name="status_bar_notif_count_title">Show notification count</string>
+  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">Toast 通知上显示应用图标</string>
   <string name="toast_icon_summary">在 Toast 通知上显示对应应用的图标</string>
@@ -417,8 +420,19 @@
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">时钟小部件</string>
   <string name="hide_lockscreen_clock_summary">更改时钟部件的可见性</string>
+  <string name="lockscreen_clock_selection_title">Clock style</string>
+  <string name="lockscreen_clock_selection_digital">Default</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+  <string name="lockscreen_clock_selection_analog">Analog</string>
+  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
   <string name="hide_lockscreen_date_title">日期小部件</string>
   <string name="hide_lockscreen_date_summary">更改时钟部件下方的日期可见性</string>
+  <string name="lockscreen_date_selection_title">Date style</string>
+  <string name="lockscreen_date_selection_default">Default</string>
+  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
+  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
   <string name="hide_lockscreen_alarm_title">闹钟文本</string>
   <string name="hide_lockscreen_alarm_summary">更改时钟部件下方闹钟文本的可见性</string>
   <!-- Media art -->
@@ -591,25 +605,25 @@
   <string name="volume_key_cursor_control_on">音量+/-控制光标左/右移动</string>
   <string name="volume_key_cursor_control_on_reverse">音量+/-控制光标右/左移动</string>
   <!-- Tiles animation style -->
-  <string name="animation_title">Tile animations</string>
+  <string name="animation_title">瓷贴动画</string>
   <string name="qs_tile_animation_style_title">动画样式</string>
   <string name="qs_tile_animation_duration_title">动画时长</string>
-  <string name="qs_tile_animation_style_off">No animation</string>
-  <string name="qs_tile_animation_style_flip">Flip</string>
-  <string name="qs_tile_animation_style_rotate">Rotate</string>
-  <string name="qs_tile_animation_duration_low">Low</string>
-  <string name="qs_tile_animation_duration_default">Default</string>
-  <string name="qs_tile_animation_duration_fast">Fast</string>
+  <string name="qs_tile_animation_style_off">无动画</string>
+  <string name="qs_tile_animation_style_flip">翻转</string>
+  <string name="qs_tile_animation_style_rotate">旋转</string>
+  <string name="qs_tile_animation_duration_low">低</string>
+  <string name="qs_tile_animation_duration_default">默认</string>
+  <string name="qs_tile_animation_duration_fast">快</string>
   <string name="qs_set_animation_style">动画已设为%1$s</string>
   <string name="qs_set_animation_duration">动画时长已设为%1$s</string>
   <!-- Battery icon size -->
   <string name="large_battery_icon_title">显示大图标</string>
   <string name="large_battery_icon_summary">增大状态栏电池图标</string>
   <!-- Incall vibrate options -->
-  <string name="incall_vibration_category">In-call vibration options</string>
-  <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-  <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-  <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+  <string name="incall_vibration_category">通话振动选项</string>
+  <string name="incall_vibrate_connect_title">接通时振动</string>
+  <string name="incall_vibrate_call_wait_title">呼叫等待时振动</string>
+  <string name="incall_vibrate_disconnect_title">挂断时振动</string>
   <!-- Smart Pixels -->
   <string name="smart_pixels_title">智能像素</string>
   <string name="smart_pixels_warning_text">智能像素是一种省电功能。根据您决定关闭的像素数量，您可以看到手机续航时间有了显著的改善。为了良好的用户体验，建议您将禁用的像素数量设置为75%。</string>
@@ -622,12 +636,18 @@
   <string name="smart_pixels_shift_title">烧屏保护</string>
   <string name="smart_pixels_shift_summary">通过经常移动像素来防止 OLED 屏幕的设备发生烧屏</string>
   <!-- Activity Blacklist -->
-  <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
-  <string name="chooser_activity_blacklist_summary">Apps to not show when tapping on a Share button</string>
-  <string name="chooser_activity_blacklist_cat_title">Blacklist</string>
-  <string name="chooser_activity_blacklist_pref_title">Add app</string>
-  <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
-  <string name="profile_choose_app">Choose app</string>
-  <string name="dialog_delete_title">Delete</string>
-  <string name="dialog_delete_message">Remove selected item?</string>
+  <string name="chooser_activity_blacklist_title">选择器活动黑名单</string>
+  <string name="chooser_activity_blacklist_summary">在点击 \"分享\" 按钮时不显示的应用程序</string>
+  <string name="chooser_activity_blacklist_cat_title">黑名单</string>
+  <string name="chooser_activity_blacklist_pref_title">添加应用</string>
+  <string name="chooser_activity_blacklist_pref_summary">点击此处来添加, 点击已添加的应用程序来删除</string>
+  <string name="profile_choose_app">选择应用</string>
+  <string name="dialog_delete_title">删除</string>
+  <string name="dialog_delete_message">移除所选项目？</string>
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
+  <string name="wallpaper_tint_recents">Recents background tint</string>
+  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
+  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
+  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
 </resources>
