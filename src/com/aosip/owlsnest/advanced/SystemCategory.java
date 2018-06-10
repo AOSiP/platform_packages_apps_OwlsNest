@@ -23,7 +23,6 @@ import android.content.ContentResolver;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
@@ -38,13 +37,11 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.aosip.owlsnest.advanced.ScreenshotEditPackageListAdapter;
 import com.aosip.owlsnest.advanced.ScreenshotEditPackageListAdapter.PackageItem;
-import com.aosip.owlsnest.utils.TelephonyUtils;
 
 public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
 
     private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
-    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
 
     private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
@@ -67,7 +64,6 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.system);
 
         final ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefSet = getPreferenceScreen();
 
         mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
         int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
@@ -86,11 +82,6 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         mPackageAdapter = new ScreenshotEditPackageListAdapter(getActivity());
         mScreenshotEditAppPref = findPreference("screenshot_edit_app");
         mScreenshotEditAppPref.setOnPreferenceClickListener(this);
-
-        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
-        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
-			prefSet.removePreference(incallVibCategory);
-        }
     }
 
     @Override
