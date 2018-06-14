@@ -21,27 +21,6 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:title="@string/incall_vibration_category" >
-
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
-
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="false" />
-
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
-
         <Preference
             android:title="@string/app_ops_settings"
             android:summary="@string/app_ops_settings_summary"
@@ -70,4 +49,25 @@
             android:key="screenshot_edit_app"
             android:title="@string/screenshot_edit_app"
             android:summary="@string/screenshot_edit_app_summary" />
+
+    <PreferenceCategory
+        android:key="incall_vib_options"
+        android:title="@string/incall_vibration_category" >
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_connect"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="false" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="false" />
+
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_disconnect"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
