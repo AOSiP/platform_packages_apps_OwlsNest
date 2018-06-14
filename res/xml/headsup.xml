@@ -32,7 +32,7 @@
         android:key="less_boring_heads_up"
         android:title="@string/less_boring_heads_up_title"
         android:summary="@string/less_boring_heads_up_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <PreferenceCategory
         android:title="@string/heads_up_blacklist_title"
