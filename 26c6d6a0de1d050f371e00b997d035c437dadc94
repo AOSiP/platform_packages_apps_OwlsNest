@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "31788ddc_55eae956",
+        "filename": "res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000086
+      },
+      "writtenOn": "2018-06-20T11:03:18Z",
+      "side": 1,
+      "message": "Please move this to fwb/core/res/res/aosip_config.xml",
+      "revId": "26c6d6a0de1d050f371e00b997d035c437dadc94",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6978e254_db2a7220",
+        "filename": "src/com/aosip/owlsnest/buttons/ButtonsCategory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1000086
+      },
+      "writtenOn": "2018-06-20T11:03:18Z",
+      "side": 1,
+      "message": "Change it to `mUTouchCategory` or anything else that conveys the meaning and doesn\u0027t need the first letter to be in capitals.",
+      "revId": "26c6d6a0de1d050f371e00b997d035c437dadc94",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
