@@ -72,11 +72,11 @@
        android:summary="@string/gesture_summary"
        android:icon="@drawable/ic_owlsnest_gesture_background" />
 
-    <!--PreferenceScreen
+    <PreferenceScreen
        android:key="advanced"
        android:fragment="com.aosip.owlsnest.advanced.AdvancedHolder"
        android:title="@string/advanced_title"
        android:summary="@string/advanced_summary"
-       android:icon="@drawable/ic_owlsnest_advanced_background" / -->
+       android:icon="@drawable/ic_owlsnest_advanced_background" />
 
 </PreferenceScreen>
