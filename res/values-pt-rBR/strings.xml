@@ -74,6 +74,9 @@
   <!-- Statusbar net monitor -->
   <string name="network_traffic_state_title">Mostrar a atividade da rede na barra de status</string>
   <string name="network_traffic_autohide_threshold_title">Limite para ocultar automaticamente a atividade de rede (KB/s)</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Brightness control</string>
+  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">Notificação</string>
   <string name="notification_summary">Ajustar LEDs e comportamento de notificação</string>
@@ -81,11 +84,11 @@
   <string name="headsup_category">Notificações pop-up</string>
   <string name="battery_light">LED de bateria</string>
   <!-- Notification count -->
-  <string name="status_bar_notif_count_title">Show notification count</string>
-  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+  <string name="status_bar_notif_count_title">Mostrar a contador de notificações</string>
+  <string name="status_bar_notif_count_summary">Exibir o número de notificações pendentes</string>
   <!-- Toast icon -->
-  <string name="toast_icon_title">Ícone do aplicativo no balão</string>
-  <string name="toast_icon_summary">Exibir o ícone do aplicativo correspondente ao balão de mensagens</string>
+  <string name="toast_icon_title">Ícone do aplicativo no pop-up</string>
+  <string name="toast_icon_summary">Exibir o ícone do aplicativo correspondente ao pop-up de mensagens</string>
   <!-- Suppress notification sound/vibration -->
   <string name="notification_sound_vib_screen_on_title">Notificações de som e vibração se a tela estiver ativada</string>
   <string name="notification_sound_vib_screen_on_never">Nunca</string>
@@ -114,7 +117,7 @@
   <string name="less_boring_heads_up_summary">Mostrar pop-up apenas para discadores ou aplicativos de mensagens, se eles não estiverem em primeiro plano</string>
   <!-- Battery light -->
   <string name="battery_light_enable">Habilitar</string>
-  <string name="battery_light_allow_on_dnd_title">Luz da bateria no modo Não Perturbe</string>
+  <string name="battery_light_allow_on_dnd_title">Luz da bateria no modo não perturbe</string>
   <string name="battery_light_low_blinking_title">Luz piscante sob baixa bateria</string>
   <string name="battery_light_cat">Cor da luz da bateria ao carregar</string>
   <string name="battery_light_low_color">Bateria fraca</string>
@@ -371,6 +374,11 @@
   <string name="immersive_recents_fullscreen">Tela cheia</string>
   <string name="immersive_recents_statusbar">Apenas Barra de status</string>
   <string name="immersive_recents_navbar">Apenas barra de navegação</string>
+  <!-- AOSP Recents Style -->
+  <string name="recents_type_title">Recents Layout</string>
+  <string name="recents_stock">Stock</string>
+  <string name="recents_grid">Grid</string>
+  <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
   <string name="aosp_recents_title">AOSP recentes</string>
   <string name="show_clear_all_recents_button_title">Limpar todos recentes</string>
@@ -420,19 +428,23 @@
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">Widget do relógio</string>
   <string name="hide_lockscreen_clock_summary">Altere a visibilidade do widget do relógio</string>
-  <string name="lockscreen_clock_selection_title">Clock style</string>
-  <string name="lockscreen_clock_selection_digital">Default</string>
-  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-  <string name="lockscreen_clock_selection_analog">Analog</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
-  <string name="lockscreen_clock_selection_sammy">Sammy</string>
-  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+  <string name="lockscreen_clock_selection_title">Estilo do relógio</string>
+  <string name="lockscreen_clock_selection_digital">Padrão</string>
+  <string name="lockscreen_clock_selection_digital_bold">Digital (negrito)</string>
+  <string name="lockscreen_clock_selection_sammy">Informal</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Informal (negrito)</string>
+  <string name="lockscreen_clock_selection_analog">Analógico</string>
   <string name="hide_lockscreen_date_title">Widget de data</string>
   <string name="hide_lockscreen_date_summary">Mudar a visibilidade da data abaixo do widget do relógio</string>
-  <string name="lockscreen_date_selection_title">Date style</string>
-  <string name="lockscreen_date_selection_default">Default</string>
-  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
-  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
+  <string name="lockscreen_date_selection_title">Estilo da data</string>
+  <string name="lockscreen_date_selection_default_aosp">Default</string>
+  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_str_box">Caixa semi-transparente</string>
+  <string name="lockscreen_date_selection_str_round">Caixa semi-transparente (arredondada)</string>
+  <string name="lockscreen_date_selection_str_accent">Rounded, simple and with accent</string>
+  <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
+  <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
+  <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
   <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
   <string name="hide_lockscreen_alarm_summary">Mudar a visibilidade do alarme abaixo do widget do relógio</string>
   <!-- Media art -->
@@ -472,14 +484,14 @@
   <string name="qs_brightness_slider_summary">Mostrar controle deslizante de brilho no painel configuração rápida</string>
   <string name="qs_show_brightness_mode">Mostrar alternador de brilho</string>
   <string name="qs_show_brightness_mode_summary">Mostrar controle deslizante de brilho no painel configuração rápida</string>
-  <string name="vol_dnd_category_title">Não pertube</string>
-  <string name="volbtn_down_zen_title">Diminuir volume para o modo Não perturbar</string>
-  <string name="volbtn_down_zen_summary">Permite entrar em Modo não perturbar quando diminui o volume</string>
-  <string name="volbtn_up_zen_title">Aumentar volume no Modo não perturbar</string>
+  <string name="vol_dnd_category_title">Não perturbe</string>
+  <string name="volbtn_down_zen_title">Diminuir volume para o modo não perturbe</string>
+  <string name="volbtn_down_zen_summary">Permite entrar em modo não perturbe quando diminui o volume</string>
+  <string name="volbtn_up_zen_title">Aumentar volume no modo não perturbe</string>
   <string name="volbtn_up_zen_summary">Permitir que o botão de aumentar volume saia do modo Não perturbe</string>
-  <string name="vol_zen_title">Interruptor não pertube</string>
+  <string name="vol_zen_title">Interruptor não perturbe</string>
   <string name="vol_zen_summary">Mostrar a função \"Não perturbe\" no painel de volume</string>
-  <string name="doze_always_on_title">Tela Ambiente Sempre Ligado</string>
+  <string name="doze_always_on_title">Tela Ambiente sempre Ligado</string>
   <string name="doze_always_on_summary">O ambiente estará ligado quando o sensor de proximidade for descoberto</string>
   <string name="powern_notifications_title">Notificações de energia</string>
   <string name="powern_notifications_summary">Controle avançado de notificações no pressionamento longo</string>
@@ -645,9 +657,32 @@
   <string name="dialog_delete_title">Excluir</string>
   <string name="dialog_delete_message">Excluir item selecionado?</string>
   <!-- Wallpaper tint -->
-  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
-  <string name="wallpaper_tint_recents">Recents background tint</string>
-  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
-  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
-  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
+  <string name="wallpaper_tint_power_menu">Tonalidade de fundo do Menu de energia</string>
+  <string name="wallpaper_tint_recents">Tonalidade de fundo dos Recentes</string>
+  <string name="wallpaper_tint_keyguard">Tonalidade de fundo da Tela de bloqueio</string>
+  <string name="wallpaper_tint_notification_shade">Tonalidade da sombra de Notificação</string>
+  <string name="wallpaper_tint_summary">Aplicar uma tonalidade no fundo com base no papel de parede da tela inicial</string>
+  <!-- Wakelock blocker -->
+  <string name="wakelock_blocker_title">Wakelock Blocker</string>
+  <string name="wakelock_blocker_summary">Block system wakelocks</string>
+  <string name="wakelock_blocker_save">Save</string>
+  <string name="wakelock_list_header">Available wakelocks</string>
+  <string name="wakelock_blocker_reload">Reload</string>
+  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
+  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <!-- Alarm blocker -->
+  <string name="alarm_blocker">Alarm blocker</string>
+  <string name="alarm_blocker_title">Enable</string>
+  <string name="alarm_blocker_summary">Block alarms while screen off</string>
+  <string name="alarm_blocker_save">Save</string>
+  <string name="alarm_list_header">Available alarms</string>
+  <string name="alarm_blocker_reload">Reload</string>
+  <string name="alarm_blocker_warning_title">Proceed with caution</string>
+  <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+  <!-- SystemUI Restart -->
+  <string name="systemui_restart_title">SystemUI restart required</string>
+  <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+  <!-- Sensor block per-package -->
+  <string name="sensor_block_title">Sensor block per-package</string>
+  <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
 </resources>

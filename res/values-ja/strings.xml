@@ -25,7 +25,7 @@
   <string name="aosip_title">AOSiP設定</string>
   <string name="owlsnest_settings_title">カテゴリー</string>
   <!-- General strings -->
-  <string name="ok">はい</string>
+  <string name="ok">OK</string>
   <string name="reset">リセット</string>
   <string name="enabled">有効</string>
   <string name="add">追加</string>
@@ -74,15 +74,18 @@
   <!-- Statusbar net monitor -->
   <string name="network_traffic_state_title">ステータスバーに通信速度を表示</string>
   <string name="network_traffic_autohide_threshold_title">自動的に非表示にする通信速度のしきい値（KB/s）</string>
+  <!-- Brightness control -->
+  <string name="status_bar_toggle_brightness">Brightness control</string>
+  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">通知</string>
   <string name="notification_summary">LEDと通知の動作を調節する</string>
   <string name="notification_category">通知</string>
-  <string name="headsup_category">Heads Up通知</string>
+  <string name="headsup_category">Heads Up</string>
   <string name="battery_light">電池のLED</string>
   <!-- Notification count -->
-  <string name="status_bar_notif_count_title">Show notification count</string>
-  <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+  <string name="status_bar_notif_count_title">通知の数を表示</string>
+  <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">トースト通知のアプリアイコン</string>
   <string name="toast_icon_summary">トースト通知と共にアプリのアイコンを表示する</string>
@@ -114,13 +117,13 @@
   <string name="less_boring_heads_up_summary">ダイヤラやメッセージングアプリがフォアグラウンドではない場合はHeads Upのみを表示する</string>
   <!-- Battery light -->
   <string name="battery_light_enable">有効</string>
-  <string name="battery_light_allow_on_dnd_title">おやすみモード中のバッテリーライト</string>
+  <string name="battery_light_allow_on_dnd_title">マナーモード中のバッテリーライト</string>
   <string name="battery_light_low_blinking_title">バッテリ低下時の点滅</string>
   <string name="battery_light_cat">充電中のLEDの色</string>
   <string name="battery_light_low_color">バッテリー残量低下</string>
   <string name="battery_light_medium_color">中程度のバッテリー残量</string>
-  <string name="battery_light_full_color">おおむねフル充電</string>
-  <string name="battery_light_reallyfull_color">フル充電</string>
+  <string name="battery_light_full_color">ほぼ充電完了</string>
+  <string name="battery_light_reallyfull_color">充電完了</string>
   <!--Owlsnest Quick settings-->
   <string name="quicksettings_title">クイック設定</string>
   <string name="quicksettings_summary">クイックタイルと拡張ステータスバーを管理する</string>
@@ -308,7 +311,7 @@
   <string name="navbar_buttons_alpha_title">ボタンの透明度</string>
   <string name="smartbar_longpress_delay_title">ボタンの長押し遅延</string>
   <string name="smartbar_longpress_delay_summary">長押し動作を検知するまでの待機時間を設定する</string>
-  <string name="smartbar_longpress_delay_default">規定の遅延（高速）</string>
+  <string name="smartbar_longpress_delay_default">既定の遅延（高速）</string>
   <string name="smartbar_longpress_delay_normal">通常の遅延</string>
   <string name="smartbar_longpress_delay_long">長い遅延</string>
   <string name="smartbar_custom_icon_size_title">カスタムアイコンスケーリング</string>
@@ -371,12 +374,17 @@
   <string name="immersive_recents_fullscreen">フルスクリーン</string>
   <string name="immersive_recents_statusbar">ステータスバーのみ</string>
   <string name="immersive_recents_navbar">ナビゲーションバーのみ</string>
+  <!-- AOSP Recents Style -->
+  <string name="recents_type_title">Recents Layout</string>
+  <string name="recents_stock">Stock</string>
+  <string name="recents_grid">Grid</string>
+  <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
   <string name="aosp_recents_title">AOSPのアプリ履歴</string>
-  <string name="show_clear_all_recents_button_title">最近使用したアプリの一括消去ボタン</string>
-  <string name="show_clear_all_recents_button_summary_on">全てを終了ボタンを表示する</string>
-  <string name="show_clear_all_recents_button_summary_off">AOSPのすべて消去ボタンを表示</string>
-  <string name="recents_clear_all_location_title">全てを終了ボタンの位置</string>
+  <string name="show_clear_all_recents_button_title">最近使用したアプリの全て終了ボタン</string>
+  <string name="show_clear_all_recents_button_summary_on">全て終了ボタンを表示する</string>
+  <string name="show_clear_all_recents_button_summary_off">AOSPの全て終了ボタンを表示</string>
+  <string name="recents_clear_all_location_title">全て終了ボタンの位置</string>
   <string name="recents_clear_all_location_top_right">右上</string>
   <string name="recents_clear_all_location_top_left">左上</string>
   <string name="recents_clear_all_location_top_center">中央上</string>
@@ -411,7 +419,7 @@
   <string name="ambient_display_category">アンビエント表示のオプション</string>
   <string name="force_ambient_for_media_pref_title">アンビエントミュージックティッカー</string>
   <string name="force_ambient_for_media_pref_summary">アンビエントミュージックティッカーを設定する</string>
-  <string name="ambient_ticker_footer">この機能を使用すると、アンビエント表示の有無にかかわらずロック画面の現在の音楽トラック情報を表示することができます。\n\n通常と最小の2つのレイアウトから選択できます。この機能は周囲のディスプレイを利用しますが、それに依存しません。\n\nミニマルビューには、画面の中央にティッカーだけが表示されます。</string>
+  <string name="ambient_ticker_footer">この機能を使用すると、アンビエント表示を有効または無効にした時に、ロック画面上に現在の曲情報を表示することができます。\n\n通常表示と最小表示の2つのレイアウトから選択できます。この機能はアンビエント表示を利用しますが、その設定に依存しません。「強制」オプションを使用することでアンビエント表示を有効にせずにトリガーさせることができます。\n\n通常表示には、ロック画面の時計、日付、ティッカーが含まれます。\n\n最小表示には、画面中央にティッカーだけが含まれます。</string>
   <string name="force_ambient_for_media_title">レイアウトの選択</string>
   <string name="force_ambient_for_media_off">無効</string>
   <string name="force_ambient_for_media_on">標準</string>
@@ -420,19 +428,23 @@
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">時計ウィジェット</string>
   <string name="hide_lockscreen_clock_summary">時計ウィジェットの表示を変更する</string>
-  <string name="lockscreen_clock_selection_title">Clock style</string>
-  <string name="lockscreen_clock_selection_digital">Default</string>
-  <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-  <string name="lockscreen_clock_selection_analog">Analog</string>
-  <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
+  <string name="lockscreen_clock_selection_title">時計のスタイル</string>
+  <string name="lockscreen_clock_selection_digital">既定</string>
+  <string name="lockscreen_clock_selection_digital_bold">デジタル（太字）</string>
   <string name="lockscreen_clock_selection_sammy">Sammy</string>
-  <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy（太字）</string>
+  <string name="lockscreen_clock_selection_analog">アナログ</string>
   <string name="hide_lockscreen_date_title">日付ウィジェット</string>
   <string name="hide_lockscreen_date_summary">時計ウィジェットの下の日付の表示を変更する</string>
-  <string name="lockscreen_date_selection_title">Date style</string>
-  <string name="lockscreen_date_selection_default">Default</string>
-  <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
-  <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
+  <string name="lockscreen_date_selection_title">日付のスタイル</string>
+  <string name="lockscreen_date_selection_default_aosp">Default</string>
+  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_str_box">半透明ボックス</string>
+  <string name="lockscreen_date_selection_str_round">半透明ボックス（円形）</string>
+  <string name="lockscreen_date_selection_str_accent">Rounded, simple and with accent</string>
+  <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
+  <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
+  <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
   <string name="hide_lockscreen_alarm_title">アラームテキスト</string>
   <string name="hide_lockscreen_alarm_summary">時計ウィジェットの下のアラームテキストの表示を変更する</string>
   <!-- Media art -->
@@ -443,7 +455,7 @@
   <string name="lockscreen_battery_info_summary">ロック画面に充電電流・電圧・バッテリー温度を表示する</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">指紋認証時に振動する</string>
-  <string name="fprint_sucess_vib_summary">指紋認証が成功したときに振動する</string>
+  <string name="fprint_sucess_vib_summary">指紋認証が成功したときに振動させる</string>
   <!--Owlsnest advanced-->
   <string name="advanced_title">高度な設定</string>
   <string name="advanced_summary">その他のシステム設定</string>
@@ -472,7 +484,7 @@
   <string name="qs_brightness_slider_summary">クイック設定パネルに明るさスライダーを表示する</string>
   <string name="qs_show_brightness_mode">照度センサーボタンを表示</string>
   <string name="qs_show_brightness_mode_summary">クイック設定パネルに照度センサーボタンを表示する</string>
-  <string name="vol_dnd_category_title">おやすみモード</string>
+  <string name="vol_dnd_category_title">マナーモード</string>
   <string name="volbtn_down_zen_title">音量を下げてマナーモードにする</string>
   <string name="volbtn_down_zen_summary">音量を下げ続けてマナーモードにする</string>
   <string name="volbtn_up_zen_title">音量を上げてマナーモードを解除する</string>
@@ -645,9 +657,32 @@
   <string name="dialog_delete_title">削除</string>
   <string name="dialog_delete_message">選択した項目を削除しますか？</string>
   <!-- Wallpaper tint -->
-  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
-  <string name="wallpaper_tint_recents">Recents background tint</string>
-  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
-  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
-  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
+  <string name="wallpaper_tint_power_menu">電源メニューの背景の色合い</string>
+  <string name="wallpaper_tint_recents">アプリ履歴の背景の色合い</string>
+  <string name="wallpaper_tint_keyguard">ロック画面の背景の色合い</string>
+  <string name="wallpaper_tint_notification_shade">通知の影の色合い</string>
+  <string name="wallpaper_tint_summary">ホーム画面の壁紙に基づく色合いを背景に適用する</string>
+  <!-- Wakelock blocker -->
+  <string name="wakelock_blocker_title">Wakelock Blocker</string>
+  <string name="wakelock_blocker_summary">Block system wakelocks</string>
+  <string name="wakelock_blocker_save">Save</string>
+  <string name="wakelock_list_header">Available wakelocks</string>
+  <string name="wakelock_blocker_reload">Reload</string>
+  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
+  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <!-- Alarm blocker -->
+  <string name="alarm_blocker">Alarm blocker</string>
+  <string name="alarm_blocker_title">Enable</string>
+  <string name="alarm_blocker_summary">Block alarms while screen off</string>
+  <string name="alarm_blocker_save">Save</string>
+  <string name="alarm_list_header">Available alarms</string>
+  <string name="alarm_blocker_reload">Reload</string>
+  <string name="alarm_blocker_warning_title">Proceed with caution</string>
+  <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+  <!-- SystemUI Restart -->
+  <string name="systemui_restart_title">SystemUI restart required</string>
+  <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+  <!-- Sensor block per-package -->
+  <string name="sensor_block_title">Sensor block per-package</string>
+  <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
 </resources>
