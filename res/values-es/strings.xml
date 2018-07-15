@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Subir volumen en no molestar</string>
   <string name="volbtn_up_zen_summary">Subir el volumen puede quitar el Modo No Molestar</string>
   <string name="vol_zen_title">Interruptor No molestar</string>
-  <string name="vol_zen_summary">Mostrar el interruptor no molestar en el panel de volumen</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">Pantalla ambiente siempre activa</string>
   <string name="doze_always_on_summary">El ambiente estará encendido cuando el sensor de proximidad esté descubierto</string>
   <string name="powern_notifications_title">Notificaciones de energía</string>

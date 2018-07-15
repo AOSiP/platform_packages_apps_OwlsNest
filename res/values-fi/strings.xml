@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
   <string name="volbtn_up_zen_summary">Let volume up exit do not disturb mode</string>
   <string name="vol_zen_title">Do not disturb switch</string>
-  <string name="vol_zen_summary">Show do not disturb swith on volume panel</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">Always-on Ambient Display</string>
   <string name="doze_always_on_summary">Ambient will be on when the proximity sensor is uncovered</string>
   <string name="powern_notifications_title">Power notifications</string>

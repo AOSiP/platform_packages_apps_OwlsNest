@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Включение режима Не беспокоить увеличением громкости</string>
   <string name="volbtn_up_zen_summary">Разрешает выход из режима Не беспокоить увеличением громкости</string>
   <string name="vol_zen_title">Переключатель режима Не беспокоить</string>
-  <string name="vol_zen_summary">Показывать переключатель режима Не беспокоить в звуковой панели</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">Постоянно активный дисплей</string>
   <string name="doze_always_on_summary">Активный дисплей будет включен, если сенсор движения не прикрыт</string>
   <string name="powern_notifications_title">Уведомления о состоянии питания</string>

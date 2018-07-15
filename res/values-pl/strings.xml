@@ -75,8 +75,8 @@
   <string name="network_traffic_state_title">Pokazuj aktywność sieci w pasku statusu</string>
   <string name="network_traffic_autohide_threshold_title">Próg auto ukrywania wskaźnika aktywności sieci (KB/s)</string>
   <!-- Brightness control -->
-  <string name="status_bar_toggle_brightness">Brightness control</string>
-  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+  <string name="status_bar_toggle_brightness">Regulacja jasności</string>
+  <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">Powiadomienia</string>
   <string name="notification_summary">Dostosuj diodę LED oraz zachowanie powiadomień</string>
@@ -375,9 +375,9 @@
   <string name="immersive_recents_statusbar">Tylko pasek statusu</string>
   <string name="immersive_recents_navbar">Tylko pasek nawigacji</string>
   <!-- AOSP Recents Style -->
-  <string name="recents_type_title">Recents Layout</string>
-  <string name="recents_stock">Stock</string>
-  <string name="recents_grid">Grid</string>
+  <string name="recents_type_title">Wygląd panelu ostatnich aplikacji</string>
+  <string name="recents_stock">Standardowy</string>
+  <string name="recents_grid">Siatka</string>
   <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
   <string name="aosp_recents_title">Ostatnio uruchomione AOSP</string>
@@ -437,14 +437,14 @@
   <string name="hide_lockscreen_date_title">Widżet daty</string>
   <string name="hide_lockscreen_date_summary">Zmień widoczność daty poniżej widgetu zegarka</string>
   <string name="lockscreen_date_selection_title">Styl daty</string>
-  <string name="lockscreen_date_selection_default_aosp">Default</string>
-  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_default_aosp">Domyślny</string>
+  <string name="lockscreen_date_selection_default">Domyślna (większa)</string>
   <string name="lockscreen_date_selection_str_box">Półprzezroczysty</string>
   <string name="lockscreen_date_selection_str_round">Półprzezroczysty (zaokrąglony)</string>
-  <string name="lockscreen_date_selection_str_accent">Rounded, simple and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
-  <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
+  <string name="lockscreen_date_selection_str_accent">Zaokrąglony, prosty z podkreśleniem</string>
+  <string name="lockscreen_date_selection_str_accent_day">Zaokrąglony, prosty z akcentem kolorystycznym</string>
+  <string name="lockscreen_date_selection_str_accent_transparent">Zaokrąglony, przezroczysty z akcentem kolorystycznym</string>
+  <string name="lockscreen_date_selection_str_accent_transparent_day">Zaokrąglony, przezroczysty z akcentem kolorystycznym</string>
   <string name="hide_lockscreen_alarm_title">Tekst alarmu</string>
   <string name="hide_lockscreen_alarm_summary">Zmień widoczność notatki alarmu poniżej widgetu zegarka</string>
   <!-- Media art -->
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Pogłaśnianie w trybie Nie przeszkadzać</string>
   <string name="volbtn_up_zen_summary">Zwiększenie głośności powoduje wyłączenie trybu \"Nie przeszkadzać\"</string>
   <string name="vol_zen_title">Przełącznik Nie przeszkadzać</string>
-  <string name="vol_zen_summary">Pokaż przełącznik trybu Nie przeszkadzać na panelu głośności</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">Zawsze na ekranie</string>
   <string name="doze_always_on_summary">Ambient zostanie włączony, gdy czujnik zbliżeniowy zostanie odkryty</string>
   <string name="powern_notifications_title">Powiadomienia zasilania</string>
@@ -663,26 +663,26 @@
   <string name="wallpaper_tint_notification_shade">Wygląd obszaru powiadomień</string>
   <string name="wallpaper_tint_summary">Zastosuj motyw bazujący na tapecie</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Wakelock Blocker</string>
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
-  <string name="wakelock_blocker_save">Save</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
-  <string name="wakelock_blocker_reload">Reload</string>
-  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_title">Blokada wybudzeń (wakelock)</string>
+  <string name="wakelock_blocker_summary">Blokuj wybudzenia systemowe</string>
+  <string name="wakelock_blocker_save">Zapisz</string>
+  <string name="wakelock_list_header">Dostępne wybudzenia</string>
+  <string name="wakelock_blocker_reload">Przeładuj</string>
+  <string name="wakelock_blocker_warning_title">Postępuj ostrożnie</string>
+  <string name="wakelock_blocker_warning">Blokowanie wybudzeń może powodować niestabilność, awarię lub utratę danych</string>
   <!-- Alarm blocker -->
-  <string name="alarm_blocker">Alarm blocker</string>
-  <string name="alarm_blocker_title">Enable</string>
-  <string name="alarm_blocker_summary">Block alarms while screen off</string>
-  <string name="alarm_blocker_save">Save</string>
-  <string name="alarm_list_header">Available alarms</string>
-  <string name="alarm_blocker_reload">Reload</string>
-  <string name="alarm_blocker_warning_title">Proceed with caution</string>
-  <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+  <string name="alarm_blocker">Blokada alarmów</string>
+  <string name="alarm_blocker_title">Włącz</string>
+  <string name="alarm_blocker_summary">Blokuj alarmy, kiedy ekran jest wyłączony</string>
+  <string name="alarm_blocker_save">Zapisz</string>
+  <string name="alarm_list_header">Dostępne alarmy</string>
+  <string name="alarm_blocker_reload">Przeładuj</string>
+  <string name="alarm_blocker_warning_title">Postępuj ostrożnie</string>
+  <string name="alarm_blocker_warning">Blokowanie alarmów może w znacznym stopniu prowadzić do niestabilności, wyłączeń lub utraty danych.</string>
   <!-- SystemUI Restart -->
-  <string name="systemui_restart_title">SystemUI restart required</string>
-  <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+  <string name="systemui_restart_title">Wymagany restart SystemUI</string>
+  <string name="systemui_restart_message">Aby wszystkie zmiany zostały wprowadzone wymagany jest restart SystemUI. Zrestartować SystemUI teraz?</string>
   <!-- Sensor block per-package -->
-  <string name="sensor_block_title">Sensor block per-package</string>
-  <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+  <string name="sensor_block_title">Blokada czujników dla aplikacji</string>
+  <string name="sensor_block_summary">Blokuj dostęp do niektórych czujników dla części aplikacji, aby oszczędzać baterię.</string>
 </resources>

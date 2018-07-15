@@ -75,8 +75,8 @@
   <string name="network_traffic_state_title">ステータスバーに通信速度を表示</string>
   <string name="network_traffic_autohide_threshold_title">自動的に非表示にする通信速度のしきい値（KB/s）</string>
   <!-- Brightness control -->
-  <string name="status_bar_toggle_brightness">Brightness control</string>
-  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+  <string name="status_bar_toggle_brightness">明るさのコントロール</string>
+  <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">通知</string>
   <string name="notification_summary">LEDと通知の動作を調節する</string>
@@ -92,7 +92,7 @@
   <!-- Suppress notification sound/vibration -->
   <string name="notification_sound_vib_screen_on_title">画面が点灯中に通知とサウンドを有効</string>
   <string name="notification_sound_vib_screen_on_never">なし</string>
-  <string name="notification_sound_vib_screen_on_always">常に（既定）</string>
+  <string name="notification_sound_vib_screen_on_always">常時（既定）</string>
   <string name="notification_sound_vib_screen_on_nomedia">メディアが再生されていない場合</string>
   <!-- Heads up -->
   <string name="heads_up_title">Heads Upを有効化</string>
@@ -335,7 +335,7 @@
   <string name="volume_rocker_music_controls_summary">画面消灯時に音量キーを長押しして曲をシークする</string>
   <!--Vol media all time-->
   <string name="volume_keys_control_media_stream_title">音量キーでメディア音量をコントロールする</string>
-  <string name="volume_keys_control_media_stream_summary">音量パネルにデフォルトでメディア音量のスライダーを表示します</string>
+  <string name="volume_keys_control_media_stream_summary">音量パネルに既定でメディア音量のスライダーを表示します</string>
   <!-- Power Menu -->
   <string name="powermenu_reboot_title">再起動</string>
   <string name="powermenu_advanced_reboot_title">高度な再起動</string>
@@ -375,13 +375,13 @@
   <string name="immersive_recents_statusbar">ステータスバーのみ</string>
   <string name="immersive_recents_navbar">ナビゲーションバーのみ</string>
   <!-- AOSP Recents Style -->
-  <string name="recents_type_title">Recents Layout</string>
-  <string name="recents_stock">Stock</string>
-  <string name="recents_grid">Grid</string>
+  <string name="recents_type_title">アプリ履歴のレイアウト</string>
+  <string name="recents_stock">標準</string>
+  <string name="recents_grid">グリッド</string>
   <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
   <string name="aosp_recents_title">AOSPのアプリ履歴</string>
-  <string name="show_clear_all_recents_button_title">最近使用したアプリの全て終了ボタン</string>
+  <string name="show_clear_all_recents_button_title">全て終了ボタン</string>
   <string name="show_clear_all_recents_button_summary_on">全て終了ボタンを表示する</string>
   <string name="show_clear_all_recents_button_summary_off">AOSPの全て終了ボタンを表示</string>
   <string name="recents_clear_all_location_title">全て終了ボタンの位置</string>
@@ -437,14 +437,14 @@
   <string name="hide_lockscreen_date_title">日付ウィジェット</string>
   <string name="hide_lockscreen_date_summary">時計ウィジェットの下の日付の表示を変更する</string>
   <string name="lockscreen_date_selection_title">日付のスタイル</string>
-  <string name="lockscreen_date_selection_default_aosp">Default</string>
-  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_default_aosp">既定</string>
+  <string name="lockscreen_date_selection_default">既定（大きなサイズ）</string>
   <string name="lockscreen_date_selection_str_box">半透明ボックス</string>
   <string name="lockscreen_date_selection_str_round">半透明ボックス（円形）</string>
-  <string name="lockscreen_date_selection_str_accent">Rounded, simple and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
-  <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
+  <string name="lockscreen_date_selection_str_accent">丸くてアクセントがあってシンプル</string>
+  <string name="lockscreen_date_selection_str_accent_day">丸くてアクセントがあってシンプル（代替）</string>
+  <string name="lockscreen_date_selection_str_accent_transparent">丸くてアクセントがって透明</string>
+  <string name="lockscreen_date_selection_str_accent_transparent_day">丸くてアクセントがって透明（代替）</string>
   <string name="hide_lockscreen_alarm_title">アラームテキスト</string>
   <string name="hide_lockscreen_alarm_summary">時計ウィジェットの下のアラームテキストの表示を変更する</string>
   <!-- Media art -->
@@ -482,15 +482,15 @@
   <string name="navbar_buttons_summary">ナビゲーションバーレイアウトとカスタムボタン</string>
   <string name="qs_brightness_slider_title">明るさスライダー</string>
   <string name="qs_brightness_slider_summary">クイック設定パネルに明るさスライダーを表示する</string>
-  <string name="qs_show_brightness_mode">照度センサーボタンを表示</string>
-  <string name="qs_show_brightness_mode_summary">クイック設定パネルに照度センサーボタンを表示する</string>
+  <string name="qs_show_brightness_mode">明るさセンサーボタンを表示する</string>
+  <string name="qs_show_brightness_mode_summary">クイック設定パネルに明るさセンサーボタンを表示する</string>
   <string name="vol_dnd_category_title">マナーモード</string>
   <string name="volbtn_down_zen_title">音量を下げてマナーモードにする</string>
   <string name="volbtn_down_zen_summary">音量を下げ続けてマナーモードにする</string>
   <string name="volbtn_up_zen_title">音量を上げてマナーモードを解除する</string>
   <string name="volbtn_up_zen_summary">音量を上げ続けてマナーモードを終了する</string>
   <string name="vol_zen_title">マナーモードスイッチ</string>
-  <string name="vol_zen_summary">音量パネルにマナーモードのスイッチを表示する</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">アンビエント表示は常に有効</string>
   <string name="doze_always_on_summary">近接センサーが反応なしの時アンビエント表示はオンになります</string>
   <string name="powern_notifications_title">電源の通知</string>
@@ -508,7 +508,7 @@
   <!-- Headset ringtone audio focus -->
   <string name="ringtone_focus_mode_title">着信音の再生デバイスの指定</string>
   <string name="ringtone_focus_mode_dynamic">ヘッドセットを接続して音楽再生中ならヘッドセットから</string>
-  <string name="ringtone_focus_mode_stock">"内蔵スピーカー（AOSPデフォルト）"</string>
+  <string name="ringtone_focus_mode_stock">"内蔵スピーカー（AOSP既定）"</string>
   <!-- Hardware button navigation -->
   <string name="hardware_keys_volume_keys_title">音量ボタン制御</string>
   <string name="hardware_keys_home_key_title">ホームボタン</string>
@@ -579,7 +579,7 @@
   <string name="lockscreen_visualizer_summary">ロック画面のビジュアライザー表示を切り替えます</string>
   <!-- Battery percentage -->
   <string name="battery_style_category_title">バッテリーアイコン</string>
-  <string name="status_bar_battery_percentage_title">バッテリー残量表示のスタイル</string>
+  <string name="status_bar_battery_percentage_title">電池のパーセント表示</string>
   <string name="status_bar_battery_percentage_default">非表示</string>
   <string name="status_bar_battery_percentage_text_next">アイコンの隣</string>
   <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
@@ -663,26 +663,26 @@
   <string name="wallpaper_tint_notification_shade">通知の影の色合い</string>
   <string name="wallpaper_tint_summary">ホーム画面の壁紙に基づく色合いを背景に適用する</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Wakelock Blocker</string>
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
-  <string name="wakelock_blocker_save">Save</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
-  <string name="wakelock_blocker_reload">Reload</string>
-  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_title">WakeLockブロッカー</string>
+  <string name="wakelock_blocker_summary">システムのWakeLockをブロックする</string>
+  <string name="wakelock_blocker_save">保存</string>
+  <string name="wakelock_list_header">有効なWakeLock</string>
+  <string name="wakelock_blocker_reload">再読込</string>
+  <string name="wakelock_blocker_warning_title">注意して進めてください</string>
+  <string name="wakelock_blocker_warning">WakeLockのブロックは、端末が不安定になったりクラッシュやデータ損失などが発生する可能性があります。</string>
   <!-- Alarm blocker -->
-  <string name="alarm_blocker">Alarm blocker</string>
-  <string name="alarm_blocker_title">Enable</string>
-  <string name="alarm_blocker_summary">Block alarms while screen off</string>
-  <string name="alarm_blocker_save">Save</string>
-  <string name="alarm_list_header">Available alarms</string>
-  <string name="alarm_blocker_reload">Reload</string>
-  <string name="alarm_blocker_warning_title">Proceed with caution</string>
-  <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+  <string name="alarm_blocker">Alarmブロッカー</string>
+  <string name="alarm_blocker_title">有効</string>
+  <string name="alarm_blocker_summary">画面がオフの間はAlarmをブロックする</string>
+  <string name="alarm_blocker_save">保存</string>
+  <string name="alarm_list_header">使用可能なAlarm</string>
+  <string name="alarm_blocker_reload">再読込</string>
+  <string name="alarm_blocker_warning_title">注意して進めてください</string>
+  <string name="alarm_blocker_warning">Alarmのブロックは端末を不安定にしたり、クラッシュやデータの損失などを起こす可能性があります。</string>
   <!-- SystemUI Restart -->
-  <string name="systemui_restart_title">SystemUI restart required</string>
-  <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+  <string name="systemui_restart_title">システムUIの再起動が必要です</string>
+  <string name="systemui_restart_message">すべての変更を反映するには、システムUIの再起動が必要です。再起動しますか？</string>
   <!-- Sensor block per-package -->
-  <string name="sensor_block_title">Sensor block per-package</string>
-  <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+  <string name="sensor_block_title">パッケージごとのセンサーの無効化</string>
+  <string name="sensor_block_summary">バッテリーを節約するためにアプリから特定のセンサーへのアクセスを無効化</string>
 </resources>

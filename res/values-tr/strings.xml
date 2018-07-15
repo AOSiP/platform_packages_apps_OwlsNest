@@ -75,8 +75,8 @@
   <string name="network_traffic_state_title">Durum çubuğunda ağ etkinliğini göster</string>
   <string name="network_traffic_autohide_threshold_title">Ağ etkinliği otomatik gizleme eşiği (KB/s)</string>
   <!-- Brightness control -->
-  <string name="status_bar_toggle_brightness">Brightness control</string>
-  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+  <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
+  <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">Bildirimler</string>
   <string name="notification_summary">LED\'leri ve bildirim davranışını ayarlayın</string>
@@ -375,9 +375,9 @@
   <string name="immersive_recents_statusbar">Yalnızca durum çubuğu</string>
   <string name="immersive_recents_navbar">Yalnızca gezinme çubuğu</string>
   <!-- AOSP Recents Style -->
-  <string name="recents_type_title">Recents Layout</string>
-  <string name="recents_stock">Stock</string>
-  <string name="recents_grid">Grid</string>
+  <string name="recents_type_title">Son Uygulamalar Düzeni</string>
+  <string name="recents_stock">Varsayılan</string>
+  <string name="recents_grid">Izgara</string>
   <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
   <string name="aosp_recents_title">AOSP son uygulamalar</string>
@@ -437,14 +437,14 @@
   <string name="hide_lockscreen_date_title">Tarih widgeti</string>
   <string name="hide_lockscreen_date_summary">Saat widgeti\'nin altındaki tarihin görünürlüğünü değiştirin</string>
   <string name="lockscreen_date_selection_title">Tarih stili</string>
-  <string name="lockscreen_date_selection_default_aosp">Default</string>
-  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_default_aosp">Varsayılan</string>
+  <string name="lockscreen_date_selection_default">Varsayılan (büyük boy)</string>
   <string name="lockscreen_date_selection_str_box">Yarı şeffaf kutu</string>
   <string name="lockscreen_date_selection_str_round">Yarı şeffaf kutu (yuvarlak)</string>
-  <string name="lockscreen_date_selection_str_accent">Rounded, simple and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
-  <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
+  <string name="lockscreen_date_selection_str_accent">Yuvarlak, basit ve vurgu rengi içerir</string>
+  <string name="lockscreen_date_selection_str_accent_day">Yuvarlak, basit ve vurgu rengi içerir (alt)</string>
+  <string name="lockscreen_date_selection_str_accent_transparent">Yuvarlak, şeffaf ve vurgu rengi içerir</string>
+  <string name="lockscreen_date_selection_str_accent_transparent_day">Yuvarlak, şeffaf ve vurgu rengi içerir (alt)</string>
   <string name="hide_lockscreen_alarm_title">Alarm metni</string>
   <string name="hide_lockscreen_alarm_summary">Saat widget\'inin altındaki alarm metninin görünürlüğünü değiştirin</string>
   <!-- Media art -->
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Rahatsız etmeyin modundan çıkmak için sesi açın</string>
   <string name="volbtn_up_zen_summary">Ses seviyesini arttırarak rahatsız etmeyin modundan çıkmaya izin verir</string>
   <string name="vol_zen_title">Rahatsız etmeyin değiştirici</string>
-  <string name="vol_zen_summary">Ses panelinde rahatsız etmeyin değiştiriciyi gösterir</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">Her zaman açık Ortam Ekranı</string>
   <string name="doze_always_on_summary">Yakınlık sensörü açıkken ortam ekranı açık olacaktır</string>
   <string name="powern_notifications_title">Güç bildirimleri</string>
@@ -663,26 +663,26 @@
   <string name="wallpaper_tint_notification_shade">Bildirim gölge tonu</string>
   <string name="wallpaper_tint_summary">Ana ekran duvar kağıdına dayalı olarak arkaplana renk tonu uygulayın</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Wakelock Blocker</string>
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
-  <string name="wakelock_blocker_save">Save</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
-  <string name="wakelock_blocker_reload">Reload</string>
-  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_title">Uyandırma Kilidi Engelleyicisi</string>
+  <string name="wakelock_blocker_summary">Sistem uyandırma kilitlerini engelle</string>
+  <string name="wakelock_blocker_save">Kaydet</string>
+  <string name="wakelock_list_header">Mevcut uyandırma kilitleri</string>
+  <string name="wakelock_blocker_reload">Yeniden yükle</string>
+  <string name="wakelock_blocker_warning_title">Dikkatli devam edin</string>
+  <string name="wakelock_blocker_warning">Uyandırma kilitlerini engelleme, istikrarsızlık, çökme veya veri kaybına neden olma potansiyeline sahiptir</string>
   <!-- Alarm blocker -->
-  <string name="alarm_blocker">Alarm blocker</string>
-  <string name="alarm_blocker_title">Enable</string>
-  <string name="alarm_blocker_summary">Block alarms while screen off</string>
-  <string name="alarm_blocker_save">Save</string>
-  <string name="alarm_list_header">Available alarms</string>
-  <string name="alarm_blocker_reload">Reload</string>
-  <string name="alarm_blocker_warning_title">Proceed with caution</string>
-  <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+  <string name="alarm_blocker">Alarm engelleyici</string>
+  <string name="alarm_blocker_title">Etkin</string>
+  <string name="alarm_blocker_summary">Ekran kapalıyken alarmları engelleyin</string>
+  <string name="alarm_blocker_save">Kaydet</string>
+  <string name="alarm_list_header">Kullanılabilir alarmlar</string>
+  <string name="alarm_blocker_reload">Yeniden yükle</string>
+  <string name="alarm_blocker_warning_title">Dikkatli devam edin</string>
+  <string name="alarm_blocker_warning">Alarmları engellemek istikrarsızlık, çökme veya veri kaybına neden olabilir.</string>
   <!-- SystemUI Restart -->
-  <string name="systemui_restart_title">SystemUI restart required</string>
-  <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+  <string name="systemui_restart_title">Sistem arayüzünün yeniden başlatılması gerekir</string>
+  <string name="systemui_restart_message">Tüm değişikliklerin etkili olması için Sistem arayüzünün yeniden başlatılması gerekiyor. Sistem arayüzünü şimdi yeniden başlatmak ister misiniz?</string>
   <!-- Sensor block per-package -->
-  <string name="sensor_block_title">Sensor block per-package</string>
-  <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+  <string name="sensor_block_title">Uygulama başına sensör engelleme</string>
+  <string name="sensor_block_summary">Bazı uygulamaların pil tasarrufu yapması için belirli sensörlere erişimi engelleyin.</string>
 </resources>

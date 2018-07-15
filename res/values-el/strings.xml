@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Αύξιση έντασης για την λειτουργία \"Μην Ενοχλείτε\"</string>
   <string name="volbtn_up_zen_summary">Η αύξηση έντασης ήχου επιτρέπει την είσοδο στην λειτουργία \"Μην Ενοχλείτε\"</string>
   <string name="vol_zen_title">Διακόπτης \"Μην Ενοχλείτε\"</string>
-  <string name="vol_zen_summary">Εμφάνιση του διακόπτη \"Μην Ενοχλείτε\" στον πίνακα έντασης</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">Οθόνη περιβάλλοντος Always-on</string>
   <string name="doze_always_on_summary">Η οθόνη περιβάλλοντος θα είναι ενεργό όταν ο αισθητήτας εγγύτητας δεν είναι καλυμμένο</string>
   <string name="powern_notifications_title">Ειδοποιήσεις ενέργειας</string>

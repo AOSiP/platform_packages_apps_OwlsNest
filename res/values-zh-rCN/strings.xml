@@ -75,8 +75,8 @@
   <string name="network_traffic_state_title">在状态栏显示网络状态</string>
   <string name="network_traffic_autohide_threshold_title">网络活动自动隐藏阈值 (KB/s)</string>
   <!-- Brightness control -->
-  <string name="status_bar_toggle_brightness">Brightness control</string>
-  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+  <string name="status_bar_toggle_brightness">亮度控制</string>
+  <string name="status_bar_toggle_brightness_summary">通过在状态栏上滑动来调整亮度</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">通知</string>
   <string name="notification_summary">调节 LED 灯和通知行为</string>
@@ -375,9 +375,9 @@
   <string name="immersive_recents_statusbar">仅状态栏</string>
   <string name="immersive_recents_navbar">仅导航栏</string>
   <!-- AOSP Recents Style -->
-  <string name="recents_type_title">Recents Layout</string>
-  <string name="recents_stock">Stock</string>
-  <string name="recents_grid">Grid</string>
+  <string name="recents_type_title">最近任务布局</string>
+  <string name="recents_stock">原生</string>
+  <string name="recents_grid">网格</string>
   <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
   <string name="aosp_recents_title">AOSP 最近任务</string>
@@ -437,14 +437,14 @@
   <string name="hide_lockscreen_date_title">日期小部件</string>
   <string name="hide_lockscreen_date_summary">更改时钟部件下方的日期可见性</string>
   <string name="lockscreen_date_selection_title">日期样式</string>
-  <string name="lockscreen_date_selection_default_aosp">Default</string>
-  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_default_aosp">默认</string>
+  <string name="lockscreen_date_selection_default">默认（更大）</string>
   <string name="lockscreen_date_selection_str_box">半透明方块</string>
   <string name="lockscreen_date_selection_str_round">半透明方块（圆弧）</string>
-  <string name="lockscreen_date_selection_str_accent">Rounded, simple and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
-  <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
+  <string name="lockscreen_date_selection_str_accent">圆角、简约、带有强调色</string>
+  <string name="lockscreen_date_selection_str_accent_day">圆角、简约、带有强调色（alt）</string>
+  <string name="lockscreen_date_selection_str_accent_transparent">圆角、透明、带有强调色</string>
+  <string name="lockscreen_date_selection_str_accent_transparent_day">圆角、透明、带有强调色（alt）</string>
   <string name="hide_lockscreen_alarm_title">闹钟文本</string>
   <string name="hide_lockscreen_alarm_summary">更改时钟部件下方闹钟文本的可见性</string>
   <!-- Media art -->
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">音量增大键进入勿扰模式</string>
   <string name="volbtn_up_zen_summary">允许使用音量增加键退出勿扰模式</string>
   <string name="vol_zen_title">勿扰模式开关</string>
-  <string name="vol_zen_summary">在音量面板显示勿扰模式开关</string>
+  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
   <string name="doze_always_on_title">始终开启环境显示</string>
   <string name="doze_always_on_summary">当距离传感器被遮盖时主动显示将会开启</string>
   <string name="powern_notifications_title">高级通知控制</string>
@@ -663,26 +663,26 @@
   <string name="wallpaper_tint_notification_shade">通知栏阴影色调</string>
   <string name="wallpaper_tint_summary">根据桌面壁纸为背景应用一种色调</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Wakelock Blocker</string>
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
-  <string name="wakelock_blocker_save">Save</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
-  <string name="wakelock_blocker_reload">Reload</string>
-  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_title">唤醒锁拦截器</string>
+  <string name="wakelock_blocker_summary">拦截系统唤醒锁</string>
+  <string name="wakelock_blocker_save">保存</string>
+  <string name="wakelock_list_header">可用唤醒</string>
+  <string name="wakelock_blocker_reload">重新加载</string>
+  <string name="wakelock_blocker_warning_title">请谨慎操作</string>
+  <string name="wakelock_blocker_warning">阻断唤醒有可能会导致系统不稳定，崩溃或数据丢失。</string>
   <!-- Alarm blocker -->
-  <string name="alarm_blocker">Alarm blocker</string>
-  <string name="alarm_blocker_title">Enable</string>
-  <string name="alarm_blocker_summary">Block alarms while screen off</string>
-  <string name="alarm_blocker_save">Save</string>
-  <string name="alarm_list_header">Available alarms</string>
-  <string name="alarm_blocker_reload">Reload</string>
-  <string name="alarm_blocker_warning_title">Proceed with caution</string>
-  <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+  <string name="alarm_blocker">警报拦截器</string>
+  <string name="alarm_blocker_title">启用</string>
+  <string name="alarm_blocker_summary">在屏幕关闭时禁用警报</string>
+  <string name="alarm_blocker_save">保存</string>
+  <string name="alarm_list_header">可用警报</string>
+  <string name="alarm_blocker_reload">重新加载</string>
+  <string name="alarm_blocker_warning_title">请谨慎操作</string>
+  <string name="alarm_blocker_warning">阻止警报有可能导致系统不稳定、崩溃或数据丢失。</string>
   <!-- SystemUI Restart -->
-  <string name="systemui_restart_title">SystemUI restart required</string>
-  <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+  <string name="systemui_restart_title">需要重启系统界面</string>
+  <string name="systemui_restart_message">要使所有更改生效，需要重新启动系统界面。现在重新启动系统界面吗？</string>
   <!-- Sensor block per-package -->
-  <string name="sensor_block_title">Sensor block per-package</string>
-  <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+  <string name="sensor_block_title">阻止某些应用访问传感器</string>
+  <string name="sensor_block_summary">阻止某些应用使用特定的传感器以节省电量。</string>
 </resources>
