@@ -154,7 +154,7 @@
     <string name="qs_footer">Options for QS rows/column count and to hide qs labels are located in QS edit menu under the 3-dot menu</string>
 
     <!-- QuickSettings Panel Transparency -->
-    <string name="qs_panel_alpha_title">Transparency</string>
+    <string name="qs_panel_alpha_title">Opacity</string>
 
     <!--Quick pulldown-->
     <string name="status_bar_quick_qs_pulldown">Quick Pulldown</string>
