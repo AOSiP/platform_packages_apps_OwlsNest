@@ -130,7 +130,7 @@
   <string name="expanded_category">展開中</string>
   <string name="qs_footer">クイック設定の行/列の数と編集メニューの3ドットメニューの下にあるラベルを隠す</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">透明度</string>
+  <string name="qs_panel_alpha_title">不透明度</string>
   <!--Quick pulldown-->
   <string name="status_bar_quick_qs_pulldown">クイックプルダウン</string>
   <string name="status_bar_quick_qs_pulldown_summary">ステータスバーの右側でプルダウンするとクイック設定パネルを表示します</string>
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">音量を上げてマナーモードを解除する</string>
   <string name="volbtn_up_zen_summary">音量を上げ続けてマナーモードを終了する</string>
   <string name="vol_zen_title">マナーモードスイッチ</string>
-  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+  <string name="vol_zen_summary">音量パネルにマナーモードのスイッチを表示する</string>
   <string name="doze_always_on_title">アンビエント表示は常に有効</string>
   <string name="doze_always_on_summary">近接センサーが反応なしの時アンビエント表示はオンになります</string>
   <string name="powern_notifications_title">電源の通知</string>
@@ -685,4 +685,18 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">パッケージごとのセンサーの無効化</string>
   <string name="sensor_block_summary">バッテリーを節約するためにアプリから特定のセンサーへのアクセスを無効化</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">エッジジェスチャー</string>
+  <string name="edge_gestures_summary">画面の端からスワイプして操作する</string>
+  <string name="edge_gestures_feedback_duration_title">振動フィードバックの長さ</string>
+  <string name="edge_gestures_long_press_delay_title">長押し開始までの遅延時間</string>
+  <string name="edge_gestures_back_category_title">戻るジェスチャー</string>
+  <string name="edge_gestures_back_edges_title">戻るジェスチャーを始める場所</string>
+  <string name="edge_gestures_landscape_back_edges_title">横向きで戻るジェスチャーを始める場所</string>
+  <string name="edge_gestures_back_screen_percent_title">戻るジェスチャーは以下の画面の下からの割合から始めます</string>
+  <string name="edge_gestures_back_screen_percent_summary">画面の以下の割合より下から始める</string>
+  <string name="edge_gestures_back_show_ui_feedback_title">戻るジェスチャーアニメーション</string>
+  <string name="edge_gestures_back_show_ui_feedback_summary">戻るジェスチャーを使った時のエッジのアニメーションフィードバックを表示する</string>
+  <string name="edge_gestures_back_use_black_arrow_title">ダークカラーの戻るボタン</string>
+  <string name="edge_gestures_back_use_black_arrow_summary">白色の代わりに黒の戻るボタンを表示する</string>
 </resources>

@@ -130,7 +130,7 @@
   <string name="expanded_category">Genişletilmiş</string>
   <string name="qs_footer">Hızlı ayarlar satır ve sütun sayısı etiketlerini gizlemek için 3 nokta menü altındaki hızlı ayarlar düzenleme menüsünde bulunur</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">Şeffaflık</string>
+  <string name="qs_panel_alpha_title">Saydamlık</string>
   <!--Quick pulldown-->
   <string name="status_bar_quick_qs_pulldown">Hızlı aşağı çekme</string>
   <string name="status_bar_quick_qs_pulldown_summary">Durum çubuğunun sağ kenarı hızlı ayarları aşağı çeker</string>
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Rahatsız etmeyin modundan çıkmak için sesi açın</string>
   <string name="volbtn_up_zen_summary">Ses seviyesini arttırarak rahatsız etmeyin modundan çıkmaya izin verir</string>
   <string name="vol_zen_title">Rahatsız etmeyin değiştirici</string>
-  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+  <string name="vol_zen_summary">Ses panelinde rahatsız etmeyin değiştiriciyi göster</string>
   <string name="doze_always_on_title">Her zaman açık Ortam Ekranı</string>
   <string name="doze_always_on_summary">Yakınlık sensörü açıkken ortam ekranı açık olacaktır</string>
   <string name="powern_notifications_title">Güç bildirimleri</string>
@@ -685,4 +685,18 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Uygulama başına sensör engelleme</string>
   <string name="sensor_block_summary">Bazı uygulamaların pil tasarrufu yapması için belirli sensörlere erişimi engelleyin.</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Kenar hareketleri</string>
+  <string name="edge_gestures_summary">Gezinmek için ekranınızın kenarlarından kaydırın</string>
+  <string name="edge_gestures_feedback_duration_title">Dokunsal geribildirim süresi</string>
+  <string name="edge_gestures_long_press_delay_title">Uzun basma eylemi başlayana kadar gecikme</string>
+  <string name="edge_gestures_back_category_title">Geri hareketi</string>
+  <string name="edge_gestures_back_edges_title">Geri hareketini tetikle</string>
+  <string name="edge_gestures_landscape_back_edges_title">Yatay geri tetikleme hareketi</string>
+  <string name="edge_gestures_back_screen_percent_title">Geri hareketi ekranın bu yüzdesinin altında başlamalıdır</string>
+  <string name="edge_gestures_back_screen_percent_summary">Ekranın % altında tetikle</string>
+  <string name="edge_gestures_back_show_ui_feedback_title">Geri hareket animasyonu</string>
+  <string name="edge_gestures_back_show_ui_feedback_summary">Geri hareketi kullanıldığında kenarlarda animasyonlu geri bildirim gösterir</string>
+  <string name="edge_gestures_back_use_black_arrow_title">Koyu renk geri tuşu</string>
+  <string name="edge_gestures_back_use_black_arrow_summary">Beyaz versiyonun yerine siyah geri tuşu gösterir</string>
 </resources>

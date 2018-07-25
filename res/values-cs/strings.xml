@@ -130,7 +130,7 @@
   <string name="expanded_category">Rozšíření</string>
   <string name="qs_footer">Možnosti pro počet řádků/sloupců QS a skrytí popisků jsou umístěny v nabídce úprav QS pod nabídkou se třemi tečkami</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">Průhlednost</string>
+  <string name="qs_panel_alpha_title">Neprůhlednost</string>
   <!--Quick pulldown-->
   <string name="status_bar_quick_qs_pulldown">Rychlé vysunutí nabídky</string>
   <string name="status_bar_quick_qs_pulldown_summary">Stáhněte stavovou lištu na pravé straně k rychlému zobrazení panelu rychlého nastavení</string>
@@ -506,7 +506,7 @@
   <string name="headset_connect_player_both_no_carkit">Jakákoliv sluchátka (ne připojení v autě) jsou připojena</string>
   <string name="headset_connect_player_both">Jakákoliv sluchátka jsou připojena</string>
   <!-- Headset ringtone audio focus -->
-  <string name="ringtone_focus_mode_title">Kde budou hrát melodie</string>
+  <string name="ringtone_focus_mode_title">Kde bude hrát vyzváněcí tón</string>
   <string name="ringtone_focus_mode_dynamic">Ze sluchátek, pokud jsou připojena a hraje hudba</string>
   <string name="ringtone_focus_mode_stock">"Z reproduktoru (AOSP výchozí)"</string>
   <!-- Hardware button navigation -->
@@ -685,4 +685,18 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blokování senzorů dle aplikací</string>
   <string name="sensor_block_summary">Zamezení přístupu k některým senzorům pro některé aplikace za účelem úspory energie.</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Gesta na okraji</string>
+  <string name="edge_gestures_summary">Přejeďte prstem od okrajů obrazovky pro navigaci</string>
+  <string name="edge_gestures_feedback_duration_title">Doba trvání hmatové odezvy</string>
+  <string name="edge_gestures_long_press_delay_title">Zpoždění, než se spustí akce po dlouhém stisknutí</string>
+  <string name="edge_gestures_back_category_title">Gesto zpět</string>
+  <string name="edge_gestures_back_edges_title">Spustit gesto zpět od</string>
+  <string name="edge_gestures_landscape_back_edges_title">Spustit gesto zpět od (v režimu na šířku)</string>
+  <string name="edge_gestures_back_screen_percent_title">Gesto zpět musí být nastaveno pod tímto procentním rozměrem obrazovky</string>
+  <string name="edge_gestures_back_screen_percent_summary">Spustit pod procentem obrazovky</string>
+  <string name="edge_gestures_back_show_ui_feedback_title">Animace gesta Zpět</string>
+  <string name="edge_gestures_back_show_ui_feedback_summary">Zobrazit animace na okrajích při použití gesta Zpět</string>
+  <string name="edge_gestures_back_use_black_arrow_title">Tmavá barva tlačítka Zpět</string>
+  <string name="edge_gestures_back_use_black_arrow_summary">Zobrazit černé tlačítko Zpět namísto bílého</string>
 </resources>

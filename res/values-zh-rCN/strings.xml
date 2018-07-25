@@ -130,7 +130,7 @@
   <string name="expanded_category">扩展桌面</string>
   <string name="qs_footer">QS 行/列数和隐藏 QS 标签的选项位于 QS 编辑菜单中的三点菜单下</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">透明度</string>
+  <string name="qs_panel_alpha_title">Opacity</string>
   <!--Quick pulldown-->
   <string name="status_bar_quick_qs_pulldown">快速下拉</string>
   <string name="status_bar_quick_qs_pulldown_summary">从右侧下拉状态栏显示快速设置面板</string>
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">音量增大键进入勿扰模式</string>
   <string name="volbtn_up_zen_summary">允许使用音量增加键退出勿扰模式</string>
   <string name="vol_zen_title">勿扰模式开关</string>
-  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+  <string name="vol_zen_summary">在音量面板显示勿扰模式开关</string>
   <string name="doze_always_on_title">始终开启环境显示</string>
   <string name="doze_always_on_summary">当距离传感器被遮盖时主动显示将会开启</string>
   <string name="powern_notifications_title">高级通知控制</string>
@@ -685,4 +685,18 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">阻止某些应用访问传感器</string>
   <string name="sensor_block_summary">阻止某些应用使用特定的传感器以节省电量。</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Edge gestures</string>
+  <string name="edge_gestures_summary">Swipe from the edges of your screen to navigate</string>
+  <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
+  <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
+  <string name="edge_gestures_back_category_title">Back gesture</string>
+  <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
+  <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
+  <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
+  <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
+  <string name="edge_gestures_back_show_ui_feedback_title">Back gesture animation</string>
+  <string name="edge_gestures_back_show_ui_feedback_summary">Show animated feedback on edges when back gesture is used</string>
+  <string name="edge_gestures_back_use_black_arrow_title">Back button dark color</string>
+  <string name="edge_gestures_back_use_black_arrow_summary">Show black back button instead of the white version</string>
 </resources>

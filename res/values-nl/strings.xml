@@ -17,66 +17,66 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- AOSiP device info settings -->
-  <string name="aosip_version">AOSiP version</string>
-  <string name="aosip_version_default">Unknown</string>
+  <string name="aosip_version">AOSiP versie</string>
+  <string name="aosip_version_default">Onbekend</string>
   <!-- AOSiP custom settings main -->
-  <string name="header_category_personalization">UI settings</string>
+  <string name="header_category_personalization">UI instellingen</string>
   <string name="nest_title">OwlsNest</string>
-  <string name="aosip_title">AOSiP Settings</string>
-  <string name="owlsnest_settings_title">Categories</string>
+  <string name="aosip_title">AOSiP instellingen</string>
+  <string name="owlsnest_settings_title">Categorieën</string>
   <!-- General strings -->
-  <string name="ok">OK</string>
-  <string name="reset">Reset</string>
-  <string name="enabled">Enabled</string>
-  <string name="add">Add</string>
-  <string name="choose_app">Choose app</string>
+  <string name="ok">Ok</string>
+  <string name="reset">Terug naar standaard</string>
+  <string name="enabled">Ingeschakeld</string>
+  <string name="add">Voeg toe</string>
+  <string name="choose_app">Kies app</string>
   <!-- Button brightness -->
-  <string name="button_backlight_options_category">Backlight options</string>
-  <string name="button_backlight_enable_title">Enable button backlight</string>
-  <string name="button_link_brightness">Link to screen brightness</string>
-  <string name="button_link_brightness_summary">Button backlight brightness will adjust based on the screen\'s brightness level</string>
-  <string name="button_manual_brightness">Brightness level</string>
-  <string name="button_timeout_title">Backlight timeout</string>
-  <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
+  <string name="button_backlight_options_category">Achtergrondverlichting opties</string>
+  <string name="button_backlight_enable_title">Achtergrondverlichting knoppen inschakelen</string>
+  <string name="button_link_brightness">Aan helderheid van scherm aanpassen</string>
+  <string name="button_link_brightness_summary">Achtergrondverlichting van knoppen zal aangepast worden aan de hand van de schermhelderheid</string>
+  <string name="button_manual_brightness">Helderheidsniveau</string>
+  <string name="button_timeout_title">Time-out achtergrondverlichting</string>
+  <string name="button_backlight_on_touch_only_title">Achtergrondverlichting van knoppen bij aanraken</string>
   <string name="button_backlight_on_touch_only_summary">Buttons will only light up when they are pressed rather than the backlight being on all the time. Timeout still impacts this feature.</string>
   <!-- Color Picker -->
-  <string name="dialog_color_picker">Color Picker</string>
-  <string name="press_color_to_apply">Press on color below to apply</string>
+  <string name="dialog_color_picker">Kleurkiezer</string>
+  <string name="press_color_to_apply">Druk op kleur hieronder om toe te passen</string>
   <string name="hex">Hex:</string>
-  <string name="set">Set</string>
-  <string name="color_default">Default</string>
+  <string name="set">Instellen</string>
+  <string name="color_default">Standaard</string>
   <!--Owlsnest statusbar-->
-  <string name="statusbar_bar_title">Statusbar</string>
+  <string name="statusbar_bar_title">Statusbalk</string>
   <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
-  <string name="battery_category">Battery</string>
-  <string name="icon_category">Icons</string>
-  <string name="traffic_category">Traffic</string>
+  <string name="battery_category">Batterij</string>
+  <string name="icon_category">Pictogrammen</string>
+  <string name="traffic_category">Verkeer</string>
   <!-- Statusbar logo -->
   <string name="status_bar_logo_title">Kronic Logo</string>
-  <string name="status_bar_logo_dialog_title">Kronic logo position</string>
-  <string name="status_bar_logo_disabled">Disabled</string>
-  <string name="status_bar_logo_left">Left</string>
-  <string name="status_bar_logo_right">Right</string>
+  <string name="status_bar_logo_dialog_title">Positie Kronic logo</string>
+  <string name="status_bar_logo_disabled">Uitgeschakeld</string>
+  <string name="status_bar_logo_left">Links</string>
+  <string name="status_bar_logo_right">Rechts</string>
   <!-- Carrier Label -->
-  <string name="carrier_category">Carrier label</string>
-  <string name="carrier_options">Select display locations</string>
-  <string name="custom_carrier_label_title">Custom carrier label</string>
-  <string name="custom_carrier_label_explain">Please enter a new label (Max 14 characters). Leave blank to revert to stock label.</string>
-  <string name="custom_carrier_label_notset">Custom label currently not set</string>
-  <string name="show_carrier_title">Is displayed on</string>
-  <string name="show_carrier_disabled">Nowhere</string>
-  <string name="show_carrier_keyguard">Lockscreen only</string>
-  <string name="show_carrier_statusbar">Statusbar only</string>
-  <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+  <string name="carrier_category">Providernaam</string>
+  <string name="carrier_options">Selecteer weergavelocaties</string>
+  <string name="custom_carrier_label_title">Aangepaste providernaam</string>
+  <string name="custom_carrier_label_explain">Geef een nieuwe naam in (Max 14 tekens). Laat leeg om terug te keren naar de originele naam.</string>
+  <string name="custom_carrier_label_notset">Geen aangepaste naam</string>
+  <string name="show_carrier_title">Wordt getoond op</string>
+  <string name="show_carrier_disabled">Nergens</string>
+  <string name="show_carrier_keyguard">Alleen vergrendelscherm</string>
+  <string name="show_carrier_statusbar">Enkel statusbalk</string>
+  <string name="show_carrier_enabled">Vergrendelingsscherm &amp; statusbalk</string>
   <!-- Data disabled icon -->
-  <string name="data_disabled_icon_title">Show data disabled icon</string>
-  <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+  <string name="data_disabled_icon_title">Toon mobiele gegevens uitgeschakeld pictogram</string>
+  <string name="data_disabled_icon_summary">Toon het kruisje naast de signaalsterkte wanneer mobiele gegevens zijn uitgeschakeld</string>
   <!-- Statusbar net monitor -->
-  <string name="network_traffic_state_title">Show network activity in statusbar</string>
-  <string name="network_traffic_autohide_threshold_title">Network activity autohide threshold (KB/s)</string>
+  <string name="network_traffic_state_title">Netwerkactiviteit weergeven in statusbalk</string>
+  <string name="network_traffic_autohide_threshold_title">Weergavedrempel voor netwerkactiviteit (KB/s)</string>
   <!-- Brightness control -->
-  <string name="status_bar_toggle_brightness">Brightness control</string>
-  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+  <string name="status_bar_toggle_brightness">Helderheid beheren</string>
+  <string name="status_bar_toggle_brightness_summary">Helderheid aanpassen door over de statusbalk te vegen</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">Notification</string>
   <string name="notification_summary">Adjust LEDs and notification behavior</string>
@@ -130,7 +130,7 @@
   <string name="expanded_category">Expanded</string>
   <string name="qs_footer">Options for QS rows/column count and to hide qs labels are located in QS edit menu under the 3-dot menu</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">Transparency</string>
+  <string name="qs_panel_alpha_title">Opacity</string>
   <!--Quick pulldown-->
   <string name="status_bar_quick_qs_pulldown">Quick Pulldown</string>
   <string name="status_bar_quick_qs_pulldown_summary">Pulldown statusbar from right side to show QS panel</string>
@@ -138,59 +138,59 @@
   <string name="lockscreen_qs_disabled_title">No QS when secured</string>
   <string name="lockscreen_qs_disabled_summary">Disable quick settings tiles on secured lockscreen</string>
   <!--Owlsnest navigation-->
-  <string name="navigation_title">Navigation</string>
-  <string name="navigation_summary">Customize navigation bar style and behavior</string>
-  <string name="navigation_category">Navigation</string>
+  <string name="navigation_title">Navigatie</string>
+  <string name="navigation_summary">Aanpassen navigatiebalk stijl en gedrag</string>
+  <string name="navigation_category">Navigatie</string>
   <!-- DUI -->
   <string name="navbar_interface_title">Interface</string>
-  <string name="navbar_size">Bar size</string>
-  <string name="navbar_mode">Navigation mode</string>
-  <string name="navbar_mode_summary">Select which navigation mode to use on your device</string>
-  <string name="navbar_visibility">Show navigation bar</string>
-  <string name="navigationbar_settings_title">Navigation bar</string>
-  <string name="navigationbar_settings_summary">Customize navigation style and behavior</string>
-  <string name="navbar_general_title">Advanced</string>
-  <string name="navigation_bar_left_title">Left-handed mode</string>
-  <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
+  <string name="navbar_size">Balk afmeting</string>
+  <string name="navbar_mode">Navigatiemodus</string>
+  <string name="navbar_mode_summary">Selecteer welke navigatiemodus gebruikt wordt op uw apparaat</string>
+  <string name="navbar_visibility">Navigatiebalk tonen</string>
+  <string name="navigationbar_settings_title">Navigatiebalk</string>
+  <string name="navigationbar_settings_summary">Aanpassen navigatiebalk stijl en gedrag</string>
+  <string name="navbar_general_title">Geavanceerd</string>
+  <string name="navigation_bar_left_title">Linkshandige modus</string>
+  <string name="navigation_bar_left_summary">Navigatiebalk aan de linkerkant van scherm weergeven op liggend scherm</string>
   <string name="smartbar_interface">SmartBar</string>
-  <string name="icon_pack_picker_dialog_title">Icon packs</string>
-  <string name="image_exceeds_max_allowed_size">Image must not exceed 512x512</string>
-  <string name="invalid_icon_from_uri">Unable to load image from content provider</string>
-  <string name="picker_activities">Activities</string>
-  <string name="select_custom_app_title">Select custom app</string>
-  <string name="select_custom_activity_title">Select custom activity</string>
-  <string name="profile_applist_title">Applications</string>
-  <string name="default_string">Stock</string>
-  <string name="default_settings">Stock settings</string>
-  <string name="default_settings_summary">Stock AOSP navigation bar</string>
+  <string name="icon_pack_picker_dialog_title">Pictogrampakketten</string>
+  <string name="image_exceeds_max_allowed_size">Beeld mag niet groter zijn dan 512 x 512</string>
+  <string name="invalid_icon_from_uri">Kan afbeelding niet laden</string>
+  <string name="picker_activities">Activiteiten</string>
+  <string name="select_custom_app_title">Kies aangepaste app</string>
+  <string name="select_custom_activity_title">Aangepaste activiteit kiezen</string>
+  <string name="profile_applist_title">Toepassingen</string>
+  <string name="default_string">Standaard</string>
+  <string name="default_settings">Standaard instellingen</string>
+  <string name="default_settings_summary">Standaard AOSP navigatiebalk</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
-  <string name="choose_action_title">Choose action</string>
-  <string name="action_entry_default_action">Default settings</string>
-  <string name="action_entry_select_app">Select application</string>
-  <string name="action_entry_custom_action">Select custom action</string>
+  <string name="choose_action_title">Kies actie</string>
+  <string name="action_entry_default_action">Standaardinstellingen</string>
+  <string name="action_entry_select_app">Selecteer applicatie</string>
+  <string name="action_entry_custom_action">Selecteer aangepaste actie</string>
   <!-- Fling -->
-  <string name="fling_settings">Fling settings</string>
-  <string name="fling_settings_summary">A very unique and fully-customizable gesture-based navigation bar</string>
+  <string name="fling_settings">Fling instellingen</string>
+  <string name="fling_settings_summary">Een zeer unieke en volledig aanpasbare gebarengestuurde navigatiebalk</string>
   <string name="fling_interface">Fling</string>
-  <string name="fling_enable_title">Enable Fling</string>
+  <string name="fling_enable_title">Fling inschakelen</string>
   <string name="fling_back_home_policy">Back and Home are required to be set at all times. To change a Back or Home assignment, set the desired assignment first.\n\nAlso, setting a double tap action will delay single tap a bit.</string>
-  <string name="fling_split_bar_policy">When only a right or left action is assigned, the action applies to the full bar.</string>
-  <string name="fling_def_summary">No action set</string>
-  <string name="fling_swipe_actions">Swipe gestures</string>
-  <string name="fling_tap_actions">Tap gestures</string>
-  <string name="fling_short_swipe_right">Right short swipe</string>
-  <string name="fling_short_swipe_left">Left short swipe</string>
-  <string name="fling_long_swipe_right">Right long swipe</string>
-  <string name="fling_long_swipe_left">Left long swipe</string>
-  <string name="fling_right_up_swipe">Right side swipe up</string>
-  <string name="fling_left_up_swipe">Left side swipe up</string>
-  <string name="fling_single_tap">Single tap right</string>
-  <string name="fling_double_tap">Double tap right</string>
-  <string name="fling_long_press">Long press right</string>
-  <string name="fling_single_left_tap">Single tap left</string>
-  <string name="fling_double_left_tap">Double tap left</string>
-  <string name="fling_long_left_press">Long press left</string>
-  <string name="long_swipe_portrait_title">Portrait</string>
+  <string name="fling_split_bar_policy">Wanneer alleen een rechts of links actie is toegewezen, is de actie van toepassing op de volledige balk.</string>
+  <string name="fling_def_summary">Geen actie ingesteld</string>
+  <string name="fling_swipe_actions">Veeg gebaren</string>
+  <string name="fling_tap_actions">Tik gebaren</string>
+  <string name="fling_short_swipe_right">Korte veeg naar rechts</string>
+  <string name="fling_short_swipe_left">Korte veeg naar links</string>
+  <string name="fling_long_swipe_right">Lange veeg naar rechts</string>
+  <string name="fling_long_swipe_left">Lange veeg naar links</string>
+  <string name="fling_right_up_swipe">Rechts omhoog vegen</string>
+  <string name="fling_left_up_swipe">Links omhoog vegen</string>
+  <string name="fling_single_tap">Enkele tik rechts</string>
+  <string name="fling_double_tap">Dubbel tikken rechts</string>
+  <string name="fling_long_press">Lang duwen rechts</string>
+  <string name="fling_single_left_tap">Enkele tik links</string>
+  <string name="fling_double_left_tap">Dubbel tikken links</string>
+  <string name="fling_long_left_press">Lange druk links</string>
+  <string name="long_swipe_portrait_title">Staand</string>
   <string name="long_swipe_landscape_title">Landscape</string>
   <string name="portrait_right_swipe_title">Portrait right swipe</string>
   <string name="portrait_left_swipe_title">Portrait left swipe</string>
@@ -241,12 +241,12 @@
   <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
   <string name="pulse_settings">Pulse</string>
   <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
-  <string name="fling_show_pulse_title">Enable Pulse</string>
-  <string name="fling_show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-  <string name="pulse_render_mode_title">Render mode</string>
-  <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-  <string name="pulse_render_mode_solid_lines">Solid lines</string>
-  <string name="fling_pulse_color">Pulse color</string>
+  <string name="fling_show_pulse_title">Pulse inschakelen</string>
+  <string name="fling_show_pulse_summary">Equalizer op de navigatiebalk</string>
+  <string name="pulse_render_mode_title">Weergave modus</string>
+  <string name="pulse_render_mode_fading_bars">Vervagende blokken</string>
+  <string name="pulse_render_mode_solid_lines">Balken</string>
+  <string name="fling_pulse_color">Pulse kleur</string>
   <string name="fling_pulse_color_summary">Used also as fallback for automatic color</string>
   <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
   <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
@@ -685,4 +685,18 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Sensor block per-package</string>
   <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Edge gestures</string>
+  <string name="edge_gestures_summary">Swipe from the edges of your screen to navigate</string>
+  <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
+  <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
+  <string name="edge_gestures_back_category_title">Back gesture</string>
+  <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
+  <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
+  <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
+  <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
+  <string name="edge_gestures_back_show_ui_feedback_title">Back gesture animation</string>
+  <string name="edge_gestures_back_show_ui_feedback_summary">Show animated feedback on edges when back gesture is used</string>
+  <string name="edge_gestures_back_use_black_arrow_title">Back button dark color</string>
+  <string name="edge_gestures_back_use_black_arrow_summary">Show black back button instead of the white version</string>
 </resources>

@@ -130,7 +130,7 @@
   <string name="expanded_category">Expandido</string>
   <string name="qs_footer">Opções para configuração rápidas de linhas / contagem de colunas e para ocultar configuração rápidas e etiquetas estão localizadas no menu de edição configuração rápidas sob o menu de 3 pontos</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">Transparência</string>
+  <string name="qs_panel_alpha_title">Opacidade</string>
   <!--Quick pulldown-->
   <string name="status_bar_quick_qs_pulldown">Puxar rápido para baixo</string>
   <string name="status_bar_quick_qs_pulldown_summary">Use o lado direito da barra de status para exibir as configurações rápidas expandidas</string>
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Aumentar volume no modo não perturbe</string>
   <string name="volbtn_up_zen_summary">Permitir que o botão de aumentar volume saia do modo Não perturbe</string>
   <string name="vol_zen_title">Interruptor não perturbe</string>
-  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+  <string name="vol_zen_summary">Mostrar a função \"Não perturbe\" no painel de volume</string>
   <string name="doze_always_on_title">Tela Ambiente sempre Ligado</string>
   <string name="doze_always_on_summary">O ambiente estará ligado quando o sensor de proximidade for descoberto</string>
   <string name="powern_notifications_title">Notificações de energia</string>
@@ -685,4 +685,18 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Restringir o uso dos sensores</string>
   <string name="sensor_block_summary">Bloquear o acesso de alguns aplicativos a determinados sensores para economizar bateria.</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Gestos na borda da tela</string>
+  <string name="edge_gestures_summary">Deslize pelas bordas da tela para navegar</string>
+  <string name="edge_gestures_feedback_duration_title">Duração do retorno tátil</string>
+  <string name="edge_gestures_long_press_delay_title">Atraso para iniciar a ação de toque longo</string>
+  <string name="edge_gestures_back_category_title">Gesto para Voltar</string>
+  <string name="edge_gestures_back_edges_title">Ativar o gesto para Voltar a partir de</string>
+  <string name="edge_gestures_landscape_back_edges_title">Ativar o gesto para Voltar no modo paisagem a partir de</string>
+  <string name="edge_gestures_back_screen_percent_title">O gesto para Voltar deve iniciar abaixo desta porcentagem da tela</string>
+  <string name="edge_gestures_back_screen_percent_summary">Ativar abaixo de % da tela</string>
+  <string name="edge_gestures_back_show_ui_feedback_title">Animações do gesto de Voltar</string>
+  <string name="edge_gestures_back_show_ui_feedback_summary">Mostrar feedback animado nas bordas quando o gesto voltar é usado</string>
+  <string name="edge_gestures_back_use_black_arrow_title">Cor escura no botão Voltar</string>
+  <string name="edge_gestures_back_use_black_arrow_summary">Mostrar botão preto de volta em vez da versão branca</string>
 </resources>

@@ -75,8 +75,8 @@
   <string name="network_traffic_state_title">Показывать сетевую активность в строке состояния</string>
   <string name="network_traffic_autohide_threshold_title">Порог автоскрытия индикатора сетевого трафика (KB/s)</string>
   <!-- Brightness control -->
-  <string name="status_bar_toggle_brightness">Brightness control</string>
-  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+  <string name="status_bar_toggle_brightness">Регулировка яркости</string>
+  <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
   <!--Owlsnest Notification-->
   <string name="notification_title">Уведомление</string>
   <string name="notification_summary">Отрегулируйте поведение подсветки светодиодов и уведомлений</string>
@@ -375,9 +375,9 @@
   <string name="immersive_recents_statusbar">Только строка состояния</string>
   <string name="immersive_recents_navbar">Только панель навигации</string>
   <!-- AOSP Recents Style -->
-  <string name="recents_type_title">Recents Layout</string>
-  <string name="recents_stock">Stock</string>
-  <string name="recents_grid">Grid</string>
+  <string name="recents_type_title">Последние слои</string>
+  <string name="recents_stock">По умолчанию</string>
+  <string name="recents_grid">Сетка</string>
   <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
   <string name="aosp_recents_title">Панель недавних приложений AOSP</string>
@@ -437,14 +437,14 @@
   <string name="hide_lockscreen_date_title">Виджет даты</string>
   <string name="hide_lockscreen_date_summary">Изменить видимость даты под виджетом часов</string>
   <string name="lockscreen_date_selection_title">Стиль даты</string>
-  <string name="lockscreen_date_selection_default_aosp">Default</string>
-  <string name="lockscreen_date_selection_default">Default (bigger size)</string>
+  <string name="lockscreen_date_selection_default_aosp">По умолчанию</string>
+  <string name="lockscreen_date_selection_default">По умолчанию (большие)</string>
   <string name="lockscreen_date_selection_str_box">Полупрозрачный</string>
   <string name="lockscreen_date_selection_str_round">Полупрозрачная подложка (скругленная)</string>
-  <string name="lockscreen_date_selection_str_accent">Rounded, simple and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_day">Rounded, simple and with accent (alt)</string>
-  <string name="lockscreen_date_selection_str_accent_transparent">Rounded, transparent and with accent</string>
-  <string name="lockscreen_date_selection_str_accent_transparent_day">Rounded, transparent and with accent (alt)</string>
+  <string name="lockscreen_date_selection_str_accent">Округлый, простой и с акцентом</string>
+  <string name="lockscreen_date_selection_str_accent_day">Округлый, простой и с акцентом (альт)</string>
+  <string name="lockscreen_date_selection_str_accent_transparent">Округлый, простой и с акцентом</string>
+  <string name="lockscreen_date_selection_str_accent_transparent_day">Округленный, прозрачный и с акцентом (альт)</string>
   <string name="hide_lockscreen_alarm_title">Текст будильника</string>
   <string name="hide_lockscreen_alarm_summary">Изменить видимость текста будильника под виджетом часов</string>
   <!-- Media art -->
@@ -490,7 +490,7 @@
   <string name="volbtn_up_zen_title">Включение режима Не беспокоить увеличением громкости</string>
   <string name="volbtn_up_zen_summary">Разрешает выход из режима Не беспокоить увеличением громкости</string>
   <string name="vol_zen_title">Переключатель режима Не беспокоить</string>
-  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+  <string name="vol_zen_summary">Показывать переключатель Не беспокоить в звуковой панели</string>
   <string name="doze_always_on_title">Постоянно активный дисплей</string>
   <string name="doze_always_on_summary">Активный дисплей будет включен, если сенсор движения не прикрыт</string>
   <string name="powern_notifications_title">Уведомления о состоянии питания</string>
@@ -663,26 +663,40 @@
   <string name="wallpaper_tint_notification_shade">Затенение фона шторки уведомлений</string>
   <string name="wallpaper_tint_summary">Примените оттенок к фону на основе обоев рабочего стола</string>
   <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Wakelock Blocker</string>
-  <string name="wakelock_blocker_summary">Block system wakelocks</string>
-  <string name="wakelock_blocker_save">Save</string>
-  <string name="wakelock_list_header">Available wakelocks</string>
-  <string name="wakelock_blocker_reload">Reload</string>
-  <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-  <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+  <string name="wakelock_blocker_title">Блокировка пробуждений</string>
+  <string name="wakelock_blocker_summary">Блокировать системные пробуждения</string>
+  <string name="wakelock_blocker_save">Сохранить</string>
+  <string name="wakelock_list_header">Доступные вэйклоки</string>
+  <string name="wakelock_blocker_reload">Перезагрузить</string>
+  <string name="wakelock_blocker_warning_title">Продолжайте с осторожностью</string>
+  <string name="wakelock_blocker_warning">Блокировка пробуждений может вызвать нестабильность, ошибки и потерю данных</string>
   <!-- Alarm blocker -->
-  <string name="alarm_blocker">Alarm blocker</string>
-  <string name="alarm_blocker_title">Enable</string>
-  <string name="alarm_blocker_summary">Block alarms while screen off</string>
-  <string name="alarm_blocker_save">Save</string>
-  <string name="alarm_list_header">Available alarms</string>
-  <string name="alarm_blocker_reload">Reload</string>
-  <string name="alarm_blocker_warning_title">Proceed with caution</string>
-  <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+  <string name="alarm_blocker">Блокировщик будящих процессов</string>
+  <string name="alarm_blocker_title">Включить</string>
+  <string name="alarm_blocker_summary">Заблокировать уведомления при выключенном экране</string>
+  <string name="alarm_blocker_save">Сохранить</string>
+  <string name="alarm_list_header">Доступные процессы</string>
+  <string name="alarm_blocker_reload">Перезагрузить</string>
+  <string name="alarm_blocker_warning_title">Продолжайте с осторожностью</string>
+  <string name="alarm_blocker_warning">Блокировка уведомлений может вызвать нестабильность приложений, принудительные закрытия или потерю данных.</string>
   <!-- SystemUI Restart -->
-  <string name="systemui_restart_title">SystemUI restart required</string>
-  <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+  <string name="systemui_restart_title">Необходима перезагрузка интерфейса</string>
+  <string name="systemui_restart_message">Чтобы все изменения вступили в силу, требуется перезагрузка пользовательского интерфейса. Перезагрузить интерфейс?</string>
   <!-- Sensor block per-package -->
-  <string name="sensor_block_title">Sensor block per-package</string>
-  <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+  <string name="sensor_block_title">Блокировка датчиков попакетно</string>
+  <string name="sensor_block_summary">Заблокировать доступ к датчикам для некоторых приложений для экономии заряда батареи.</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Жесты</string>
+  <string name="edge_gestures_summary">Проведите пальцем от краев экрана для навигации</string>
+  <string name="edge_gestures_feedback_duration_title">Длительность виброотклика</string>
+  <string name="edge_gestures_long_press_delay_title">Величина задержки при долгом удержании нажатия</string>
+  <string name="edge_gestures_back_category_title">Жест назад</string>
+  <string name="edge_gestures_back_edges_title">Область жеста назад</string>
+  <string name="edge_gestures_landscape_back_edges_title">Область жеста в альбомной ориентации</string>
+  <string name="edge_gestures_back_screen_percent_title">Жест назад будет выполняться в области экрана ниже этого показателя</string>
+  <string name="edge_gestures_back_screen_percent_summary">Область срабатывания жеста</string>
+  <string name="edge_gestures_back_show_ui_feedback_title">Анимация жеста назад</string>
+  <string name="edge_gestures_back_show_ui_feedback_summary">Show animated feedback on edges when back gesture is used</string>
+  <string name="edge_gestures_back_use_black_arrow_title">Кнопка назад темного цвета</string>
+  <string name="edge_gestures_back_use_black_arrow_summary">Показывать черную кнопку назад вместо белой</string>
 </resources>
