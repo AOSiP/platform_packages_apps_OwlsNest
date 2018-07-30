@@ -32,10 +32,8 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private static final String TAG = "NotificationCategory";
 
-    private ListPreference mTickerAnimation;
     private ListPreference mAnnoyingNotification;
     private ListPreference mNoisyNotification;
-    private ListPreference mTickerMode;
 
     @Override
     public int getMetricsCategory() {
@@ -48,22 +46,6 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.notification);
-
-        mTickerMode = (ListPreference) findPreference("ticker_mode");
-        mTickerMode.setOnPreferenceChangeListener(this);
-        int tickerMode = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_SHOW_TICKER,
-                0, UserHandle.USER_CURRENT);
-        mTickerMode.setValue(String.valueOf(tickerMode));
-        mTickerMode.setSummary(mTickerMode.getEntry());
-
-        mTickerAnimation = (ListPreference) findPreference("status_bar_ticker_animation_mode");
-        mTickerAnimation.setOnPreferenceChangeListener(this);
-        int tickerAnimationMode = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_TICKER_ANIMATION_MODE,
-                1, UserHandle.USER_CURRENT);
-        mTickerAnimation.setValue(String.valueOf(tickerAnimationMode));
-        mTickerAnimation.setSummary(mTickerAnimation.getEntry());
 
         mNoisyNotification = (ListPreference) findPreference("notification_sound_vib_screen_on");
         mNoisyNotification.setOnPreferenceChangeListener(this);
@@ -88,15 +70,7 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference.equals(mTickerMode)) {
-            int tickerMode = Integer.parseInt(((String) newValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.STATUS_BAR_SHOW_TICKER, tickerMode, UserHandle.USER_CURRENT);
-            int index = mTickerMode.findIndexOfValue((String) newValue);
-            mTickerMode.setSummary(
-                    mTickerMode.getEntries()[index]);
-            return true;
-        } else if (preference.equals(mNoisyNotification)) {
+        if (preference.equals(mNoisyNotification)) {
             int mode = Integer.parseInt(((String) newValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON, mode, UserHandle.USER_CURRENT);
@@ -108,14 +82,6 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
             int mode = Integer.parseInt(((String) newValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference.equals(mTickerAnimation)) {
-            int tickerAnimationMode = Integer.parseInt(((String) newValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.STATUS_BAR_TICKER_ANIMATION_MODE, tickerAnimationMode, UserHandle.USER_CURRENT);
-            int index = mTickerAnimation.findIndexOfValue((String) newValue);
-            mTickerAnimation.setSummary(
-                    mTickerAnimation.getEntries()[index]);
             return true;
         }
        return false;

@@ -153,6 +153,7 @@
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
+    <string name="ticker_category">Ticker</string>
     <string name="headsup_category">Heads Up</string>
     <string name="battery_light">Battery LED</string>
 
@@ -179,7 +180,7 @@
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
     <!-- Notification count -->
-    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_title">Notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
     <!-- Notification guts kill app button -->
