@@ -664,7 +664,7 @@
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
 
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_title">Charging info</string>
     <string name="lockscreen_battery_info_summary">Display charging current, voltage, battery temperature on the lock screen</string>
 
     <!-- Fingerprint authentication vibration -->
@@ -694,7 +694,7 @@
     <!--SysUI tuner options -->
     <string name="status_bar_icon_blacklist_title">Status bar icons</string>
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
-    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_title">Shortcuts</string>
     <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
     <string name="navbar_buttons_title">Navbar buttons</string>
     <string name="navbar_buttons_summary">Navbar layout and custom buttons</string>
