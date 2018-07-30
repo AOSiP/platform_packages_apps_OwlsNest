@@ -30,8 +30,9 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.lockscreen.OptionsCategory;
 import com.aosip.owlsnest.lockscreen.AmbientCategory;
+import com.aosip.owlsnest.lockscreen.LockClockCategory;
+import com.aosip.owlsnest.lockscreen.OptionsCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 
@@ -85,7 +86,8 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new AmbientCategory();
-            frags[1] = new OptionsCategory();
+            frags[1] = new LockClockCategory();
+            frags[2] = new OptionsCategory();
         }
 
         @Override
@@ -108,6 +110,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.ambient_category),
+                    getString(R.string.clock_category),
                     getString(R.string.options_category)};
         return titleString;
     }
