@@ -60,6 +60,63 @@
     <string name="icon_category">Icons</string>
     <string name="traffic_category">Traffic</string>
 
+    <!-- Battery icon size -->
+    <string name="large_battery_icon_title">Show large icon</string>
+    <string name="large_battery_icon_summary">Enlarge the battery icon in the status bar</string>
+
+    <!-- Battery percentage -->
+    <string name="battery_style_category_title">Battery icon</string>
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+
+    <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_port">Portrait</string>
+    <string name="status_bar_battery_style_land">Landscape</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <string name="status_bar_battery_style_square">Square</string>
+
+    <!-- Status bar clock options -->
+    <string name="clock_category">Clock</string>
+    <string name="clock_footer">Center clock has been added but use it at your own discretion as due to some changes in Oreo, there will be some issues with center clock and ticker/notification icon overflow</string>
+    <string name="status_bar_clock">Clock and Date</string>
+    <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
+    <string name="clock_title_enable">Alignment</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_clock_seconds_title">Show seconds</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="enable_clock_weekday">Day of the week</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="right_clock">Right clock</string>
+    <string name="center_clock">Center clock</string>
+    <string name="left_clock">Left clock</string>
+    <string name="dont_show">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+
     <!-- Statusbar logo -->
     <string name="status_bar_logo_title">Kronic Logo</string>
     <string name="status_bar_logo_dialog_title">Kronic logo position</string>
@@ -91,6 +148,7 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
@@ -98,9 +156,35 @@
     <string name="headsup_category">Heads Up</string>
     <string name="battery_light">Battery LED</string>
 
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">Wired headset plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">BT headset (no carkit) plugged in</string>
+    <string name="headset_connect_player_bt">BT headset plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">Any headset (no carkit) plugged in</string>
+    <string name="headset_connect_player_both">Any headset plugged in</string>
+
+    <!-- Headset ringtone audio focus -->
+    <string name="ringtone_focus_mode_title">Where to play ringtones from</string>
+    <string name="ringtone_focus_mode_dynamic">From headset if connected and playing music</string>
+    <string name="ringtone_focus_mode_stock">"From speakerphone (aosp default)"</string>
+
+    <string name="less_notification_sounds_title">Smart notification sounds</string>
+    <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
+    <string name="less_notification_sounds_default">App default</string>
+    <string name="less_notification_sounds_10s">Every 10 seconds</string>
+    <string name="less_notification_sounds_30s">Every 30 seconds</string>
+    <string name="less_notification_sounds_1m">Every minute</string>
+    <string name="less_notification_sounds_2m">Every 2 minutes</string>
+
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
 
     <!-- Toast icon -->
     <string name="toast_icon_title">App\'s icon in toast</string>
@@ -116,7 +200,6 @@
     <string name="heads_up_title">Enable Heads up</string>
     <string name="heads_up_summary_enabled">Heads-up notifications are enabled</string>
     <string name="heads_up_summary_disabled">Heads-up notifications are disabled</string>
-
     <string name="heads_up_blacklist_add_package_title">Add app</string>
     <string name="heads_up_blacklist_add_package_summary">Disable heads-up notifications in these applications</string>
     <string name="heads_up_blacklist_title">Blacklist</string>
@@ -147,6 +230,7 @@
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full (100%) battery</string>
 
+
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
@@ -156,6 +240,19 @@
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Opacity</string>
 
+    <!-- Tiles animation style -->
+    <string name="animation_title">Tile animations</string>
+    <string name="qs_tile_animation_style_title">Animation style</string>
+    <string name="qs_tile_animation_duration_title">Animation duration</string>
+    <string name="qs_tile_animation_style_off">No animation</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">Default</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_set_animation_style">Animation is set to %1$s</string>
+    <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+
     <!--Quick pulldown-->
     <string name="status_bar_quick_qs_pulldown">Quick Pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">Pulldown statusbar from right side to show QS panel</string>
@@ -163,6 +260,7 @@
     <!-- Disable QS on secure Lockscreen -->
     <string name="lockscreen_qs_disabled_title">No QS when secured</string>
     <string name="lockscreen_qs_disabled_summary">Disable quick settings tiles on secured lockscreen</string>
+
 
     <!--Owlsnest navigation-->
     <string name="navigation_title">Navigation</string>
@@ -363,12 +461,19 @@
     <string name="smartbar_double_tap_sleep_title">Double tap to sleep</string>
     <string name="smartbar_double_tap_sleep_summary">Double tap on empty navbar areas to sleep</string>
 
+
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardware buttons</string>
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
     <string name="powermenu_category">Power</string>
     <string name="volume_category">Volume</string>
     <string name="button_category">Keys</string>
+
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
     <!-- ANBI -->
     <string name="anbi_title">Accidental touch</string>
@@ -402,6 +507,22 @@
     <string name="powermenu_ls_airplane_summary">Show the airplane mode option on the lockscreen</string>
     <string name="lockscreen_items_other">Other</string>
 
+    <!-- Hardware button navigation -->
+    <string name="hardware_keys_volume_keys_title">Volume rocker</string>
+    <string name="hardware_keys_home_key_title">Home button</string>
+    <string name="hardware_keys_menu_key_title">Menu button</string>
+    <string name="hardware_keys_assist_key_title">Search button</string>
+    <string name="hardware_keys_appswitch_key_title">Overview button</string>
+    <string name="hardware_keys_back_key_title">Back button</string>
+    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
+    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
+    <string name="hardware_keys_long_press_summary">Set long press action</string>
+    <string name="hardware_keys_single_tap_title">Single tap action</string>
+    <string name="hardware_keys_long_press_title">Long press action</string>
+    <string name="hardware_keys_double_tap_title">Double tap action</string>
+    <string name="hardware_keys_category">Navigation buttons</string>
+    <string name="hardware_keys_disable_title">Disable navigation buttons</string>
+
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Screen off animation</string>
     <string name="screen_off_animation_default">Default</string>
@@ -413,6 +534,7 @@
     <string name="torch_power_button_gesture_none">Disabled</string>
     <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
     <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+
 
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
@@ -452,11 +574,27 @@
     <string name="hide_from_recents_add_app">Add App</string>
     <string name="hide_apps_from_recents_summary">Pick which apps to exclude from the recents panel</string>
 
+
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesture</string>
     <string name="gesture_summary">Gesture based options/actions</string>
     <string name="double_tap_options">Double Tap to Sleep</string>
     <string name="aosp_gesture_title">AOSP Gestures</string>
+
+    <!-- Edge gestures -->
+    <string name="edge_gestures_title">Edge gestures</string>
+    <string name="edge_gestures_summary">Swipe from the edges of your screen to navigate</string>
+    <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
+    <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
+    <string name="edge_gestures_back_category_title">Back gesture</string>
+    <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
+    <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
+    <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
+    <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
+    <string name="edge_gestures_back_show_ui_feedback_title">Back gesture animation</string>
+    <string name="edge_gestures_back_show_ui_feedback_summary">Show animated feedback on edges when back gesture is used</string>
+    <string name="edge_gestures_back_use_black_arrow_title">Back button dark color</string>
+    <string name="edge_gestures_back_use_black_arrow_summary">Show black back button instead of the white version</string>
 
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Three finger gesture</string>
@@ -470,6 +608,7 @@
 
     <!--Double Tap to Sleep Statusbar-->
     <string name="double_tap_sleep_gesture_title">Status Bar</string>
+
 
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
@@ -512,6 +651,14 @@
     <string name="hide_lockscreen_alarm_title">Alarm text</string>
     <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
 
+    <!-- Face unlock toggle -->
+    <string name="face_auto_unlock_title">Face auto unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
+
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Music visualizer</string>
+    <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
+
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
@@ -523,6 +670,7 @@
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
@@ -568,115 +716,12 @@
     <string name="notifications_cat_title">Notifications</string>
     <string name="qs_cat_title">Quick settings panel</string>
 
-    <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app on headset connection</string>
-    <string name="headset_connect_player_disabled">Disabled</string>
-    <string name="headset_connect_player_wired">Wired headset plugged in</string>
-    <string name="headset_connect_player_bt_no_carkit">BT headset (no carkit) plugged in</string>
-    <string name="headset_connect_player_bt">BT headset plugged in</string>
-    <string name="headset_connect_player_both_no_carkit">Any headset (no carkit) plugged in</string>
-    <string name="headset_connect_player_both">Any headset plugged in</string>
-
-    <!-- Headset ringtone audio focus -->
-    <string name="ringtone_focus_mode_title">Where to play ringtones from</string>
-    <string name="ringtone_focus_mode_dynamic">From headset if connected and playing music</string>
-    <string name="ringtone_focus_mode_stock">"From speakerphone (aosp default)"</string>
-
-    <!-- Hardware button navigation -->
-    <string name="hardware_keys_volume_keys_title">Volume rocker</string>
-    <string name="hardware_keys_home_key_title">Home button</string>
-    <string name="hardware_keys_menu_key_title">Menu button</string>
-    <string name="hardware_keys_assist_key_title">Search button</string>
-    <string name="hardware_keys_appswitch_key_title">Overview button</string>
-    <string name="hardware_keys_back_key_title">Back button</string>
-    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
-    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
-    <string name="hardware_keys_long_press_summary">Set long press action</string>
-    <string name="hardware_keys_single_tap_title">Single tap action</string>
-    <string name="hardware_keys_long_press_title">Long press action</string>
-    <string name="hardware_keys_double_tap_title">Double tap action</string>
-    <string name="hardware_keys_category">Navigation buttons</string>
-    <string name="hardware_keys_disable_title">Disable navigation buttons</string>
-
     <!-- AppOps -->
     <string name="app_ops_settings_summary">Control apps permissions</string>
-
-    <!-- Face unlock toggle -->
-    <string name="face_auto_unlock_title">Face auto unlock</string>
-    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
-
-    <string name="less_notification_sounds_title">Smart notification sounds</string>
-    <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
-    <string name="less_notification_sounds_default">App default</string>
-    <string name="less_notification_sounds_10s">Every 10 seconds</string>
-    <string name="less_notification_sounds_30s">Every 30 seconds</string>
-    <string name="less_notification_sounds_1m">Every minute</string>
-    <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
     <string name="screenshot_edit_app">Screenshot edit app</string>
     <string name="screenshot_edit_app_summary">Choose which app should be launched when tapping on the screenshot notification edit button</string>
     <string name="screenshot_edit_app_no_editor">No image editor available</string>
-
-    <!-- Status bar clock options -->
-    <string name="clock_category">Clock</string>
-    <string name="clock_footer">Center clock has been added but use it at your own discretion as due to some changes in Oreo, there will be some issues with center clock and ticker/notification icon overflow</string>
-    <string name="status_bar_clock">Clock and Date</string>
-    <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
-    <string name="clock_title_enable">Alignment</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_clock_style_reset">Reset color</string>
-    <string name="status_bar_show_clock_title">Show clock and date</string>
-    <string name="status_bar_clock_seconds_title">Show seconds</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="left_clock">Left clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
-    <string name="clock_date_format_custom">Custom java format</string>
-
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Music visualizer</string>
-    <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
-
-    <!-- Battery percentage -->
-    <string name="battery_style_category_title">Battery icon</string>
-    <string name="status_bar_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_battery_percentage_default">Hidden</string>
-    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
-    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-
-    <!-- Status bar battery style-->
-    <string name="status_bar_battery_style_title">Battery style</string>
-    <string name="status_bar_battery_style_port">Portrait</string>
-    <string name="status_bar_battery_style_land">Landscape</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
-    <string name="status_bar_battery_style_text">Text</string>
-    <string name="status_bar_battery_style_hidden">Hidden</string>
-    <string name="status_bar_battery_style_square">Square</string>
-
-    <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
 
     <!-- Screen state service -->
     <string name="screen_state_toggles_summary" translatable="false">@null</string>
@@ -695,29 +740,6 @@
     <string name="screen_state_off_delay_summary">Number of seconds to wait before performing actions after screen off</string>
     <string name="screen_state_on_delay_title">Screen On actions delay</string>
     <string name="screen_state_on_delay_summary">Number of seconds to wait before performing actions after screen on</string>
-
-    <!-- Cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
-
-    <!-- Tiles animation style -->
-    <string name="animation_title">Tile animations</string>
-    <string name="qs_tile_animation_style_title">Animation style</string>
-    <string name="qs_tile_animation_duration_title">Animation duration</string>
-    <string name="qs_tile_animation_style_off">No animation</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_set_animation_style">Animation is set to %1$s</string>
-    <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
-
-    <!-- Battery icon size -->
-    <string name="large_battery_icon_title">Show large icon</string>
-    <string name="large_battery_icon_summary">Enlarge the battery icon in the status bar</string>
 
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration options</string>
@@ -773,7 +795,6 @@
     <string name="alarm_blocker_warning_title">Proceed with caution</string>
     <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
 
-
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">SystemUI restart required</string>
     <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
@@ -781,21 +802,6 @@
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
     <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
-
-    <!-- Edge gestures -->
-    <string name="edge_gestures_title">Edge gestures</string>
-    <string name="edge_gestures_summary">Swipe from the edges of your screen to navigate</string>
-    <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
-    <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
-    <string name="edge_gestures_back_category_title">Back gesture</string>
-    <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
-    <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
-    <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
-    <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
-    <string name="edge_gestures_back_show_ui_feedback_title">Back gesture animation</string>
-    <string name="edge_gestures_back_show_ui_feedback_summary">Show animated feedback on edges when back gesture is used</string>
-    <string name="edge_gestures_back_use_black_arrow_title">Back button dark color</string>
-    <string name="edge_gestures_back_use_black_arrow_summary">Show black back button instead of the white version</string>
 
 </resources>
 
