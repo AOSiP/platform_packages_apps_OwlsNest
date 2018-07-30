@@ -552,13 +552,12 @@
     <string name="immersive_recents_navbar">Navbar only</string>
 
    <!-- AOSP Recents Style -->
-    <string name="recents_type_title">Recents Layout</string>
+    <string name="recents_type_title">Layout</string>
     <string name="recents_stock">Stock</string>
     <string name="recents_grid">Grid</string>
     <string name="recents_go">Android Go</string>
 
     <!-- Clear all recents -->
-    <string name="aosp_recents_title">AOSP recents</string>
     <string name="show_clear_all_recents_button_title">Clear-all FAB</string>
     <string name="show_clear_all_recents_button_summary_on">Show clear all FAB</string>
     <string name="show_clear_all_recents_button_summary_off">Show AOSP clear all</string>
@@ -772,8 +771,7 @@
 
     <!-- Wallpaper tint -->
     <string name="wallpaper_tint_power_menu">Power menu background tint</string>
-    <string name="wallpaper_tint_recents">Recents background tint</string>
-    <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
+    <string name="wallpaper_tint">Background tint</string>
     <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
     <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
 
