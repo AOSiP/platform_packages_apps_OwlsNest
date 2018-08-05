@@ -31,7 +31,6 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.gesture.EdgeGesturesSettings;
 import com.aosip.owlsnest.gesture.GestureCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
@@ -84,8 +83,7 @@ public class GestureHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new EdgeGesturesSettings();
-            frags[1] = new GestureCategory();
+            frags[0] = new GestureCategory();
         }
 
         @Override
@@ -107,7 +105,6 @@ public class GestureHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.edge_gestures_title),
                     getString(R.string.gesture_category)};
         return titleString;
     }
