@@ -35,6 +35,7 @@ import android.provider.Settings;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.aosip.owlsnest.preference.CustomSeekBarPreference;
+import com.aosip.owlsnest.preference.SystemSettingSwitchPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.Config;
@@ -44,6 +45,7 @@ import com.android.settings.R;
 
 public class NavigationCategory extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
     private static final String NAVBAR_VISIBILITY = "navbar_visibility";
+    private static final String KEY_GESTURE_NAVIGATION = "use_bottom_gesture_navigation";
     private static final String KEY_NAVBAR_MODE = "navbar_mode";
     private static final String KEY_DEFAULT_NAVBAR_SETTINGS = "default_settings";
     private static final String KEY_FLING_NAVBAR_SETTINGS = "fling_settings";
@@ -57,6 +59,7 @@ public class NavigationCategory extends SettingsPreferenceFragment implements Pr
     private static final String KEY_PULSE_SETTINGS = "pulse_settings";
 
     private SwitchPreference mNavbarVisibility;
+    private SystemSettingsSwitchPrefernce mGestureNavigation;
     private ListPreference mNavbarMode;
     private PreferenceScreen mFlingSettings;
     private PreferenceCategory mNavInterface;
@@ -77,6 +80,7 @@ public class NavigationCategory extends SettingsPreferenceFragment implements Pr
         addPreferencesFromResource(R.xml.navigation);
 
         mNavInterface = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_INTERFACE);
+        mGestureNavigation = (SystemSettingsSwitchPreference) findPreference(KEY_GESTURE_NAVIGATION);
         mNavGeneral = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_GENERAL);
         mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
         mNavbarMode = (ListPreference) findPreference(KEY_NAVBAR_MODE);
@@ -118,6 +122,12 @@ public class NavigationCategory extends SettingsPreferenceFragment implements Pr
             mBarHeightLand = (CustomSeekBarPreference) findPreference(KEY_NAVIGATION_HEIGHT_LAND);
             mBarHeightLand.setValue(size);
             mBarHeightLand.setOnPreferenceChangeListener(this);
+        }
+
+        if (mGestureNavigation.isChecked()) {
+            mNavbarVisibility.setDisabled(true);
+        } else if (mNavbarVisibility.isChecked()) {
+            mGestureNavigation.setDisabled(true);
         }
 
         mHandler = new Handler();
@@ -163,6 +173,12 @@ public class NavigationCategory extends SettingsPreferenceFragment implements Pr
         mNavbarVisibility.setChecked(showing);
         mNavInterface.setEnabled(mNavbarVisibility.isChecked());
         mNavGeneral.setEnabled(mNavbarVisibility.isChecked());
+        mGestureNavigation.setEnabled(!showing);
+    }
+
+    private void updateGestures(boolean showing) {
+        mGestureNavigation.setChecked(showing);
+        mNavbarVisibility.setEnabled(!showing);
     }
 
     @Override
@@ -189,6 +205,11 @@ public class NavigationCategory extends SettingsPreferenceFragment implements Pr
                 }
             }, 1500);
             return true;
+        } else if (preference == mGestureNavigation) {
+            boolean showing = ((Boolean)newValue);
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.USE_BOTTOM_GESTURE_NAVIGATION,
+                    showing ? 1 : 0);
+            updateGestures(showing);
         } else if (preference == mBarHeightPort) {
             int val = (Integer) newValue;
             Settings.Secure.putIntForUser(getContentResolver(),
