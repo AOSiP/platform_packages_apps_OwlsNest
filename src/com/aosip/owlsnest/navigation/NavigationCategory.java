@@ -170,7 +170,6 @@ public class NavigationCategory extends SettingsPreferenceFragment implements Pr
 
     private void updateBarVisibleAndUpdatePrefs(boolean showing) {
         mNavbarVisibility.setChecked(showing);
-        mGestureNavigation.setChecked(!showing);
         mGestureNavigation.setEnabled(!showing);
         mNavInterface.setEnabled(mNavbarVisibility.isChecked());
         mNavGeneral.setEnabled(mNavbarVisibility.isChecked());
@@ -178,10 +177,9 @@ public class NavigationCategory extends SettingsPreferenceFragment implements Pr
 
     private void updateGestures(boolean showing) {
         mGestureNavigation.setChecked(showing);
-        mNavbarVisibility.setChecked(!showing);
         mNavbarVisibility.setEnabled(!showing);
-        mNavInterface.setEnabled(mNavbarVisibility.isChecked());
-        mNavGeneral.setEnabled(mNavbarVisibility.isChecked());
+        mNavInterface.setEnabled(mNavbarVisibility.isEnabled());
+        mNavGeneral.setEnabled(mNavbarVisibility.isEnabled());
     }
 
     @Override
