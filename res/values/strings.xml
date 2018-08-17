@@ -52,6 +52,8 @@
     <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
     <string name="icon_category">Icons</string>
 
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
 
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>
@@ -70,6 +72,8 @@
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
     <string name="navigation_category">Navigation</string>
 
+    <string name="navbar_tuner_title">Edit navigation bar</string>
+    <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
 
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardware buttons</string>
@@ -93,11 +97,15 @@
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="options_category">Various</string>
 
+    <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
+
+
 
 
 </resources>
