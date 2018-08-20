@@ -32,6 +32,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.gesture.GestureCategory;
+import com.aosip.owlsnest.gesture.OPGestureCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class GestureHolder extends SettingsPreferenceFragment {
@@ -84,6 +85,7 @@ public class GestureHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new GestureCategory();
+            frags[1] = new OPGestureCategory();
         }
 
         @Override
@@ -105,7 +107,8 @@ public class GestureHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.gesture_category)};
+                    getString(R.string.gesture_category),
+                    getString(R.string.gesture_settings_title)};
         return titleString;
     }
 }
