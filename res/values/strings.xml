@@ -216,7 +216,7 @@
     <string name="show_info_header_title">Show information header</string>
 
     <!-- Tiles animation style  -->
-    <string name="qs_tile_animation_title">Animations</string>  
+    <string name="qs_tile_animation_title">Animations</string>
     <string name="qs_tile_animation_style_title">Animation style</string>
     <string name="qs_tile_animation_duration_title">Animation duration</string>
     <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
@@ -399,6 +399,12 @@
 
     <!--Double Tap to Sleep Statusbar-->
     <string name="double_tap_sleep_gesture_title">Status Bar</string>
+
+    <!-- Bottom navigation gestures -->
+    <string name="gesture_settings_title">Navigation Gestures</string>
+    <string name="gesture_settings_info">Navigation bar must be disabled!\n\nAvailable gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLast app\n- Short swipe up and hold in the center</string>
+    <string name="use_bottom_gesture_title">Navigation gestures</string>
+    <string name="use_bottom_gesture_summary">Use bottom swipe up gestures for navigation</string>
 
 
     <!--Owlsnest lockscreen-->
