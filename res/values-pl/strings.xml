@@ -51,6 +51,59 @@
   <string name="battery_category">Bateria</string>
   <string name="icon_category">Ikony</string>
   <string name="traffic_category">Ruch</string>
+  <!-- Battery icon size -->
+  <string name="large_battery_icon_title">Pokaż dużą ikonę</string>
+  <string name="large_battery_icon_summary">Powiększenie ikony baterii w pasku statusu</string>
+  <!-- Battery percentage -->
+  <string name="battery_style_category_title">Ikona baterii</string>
+  <string name="status_bar_battery_percentage_title">Procent baterii</string>
+  <string name="status_bar_battery_percentage_default">Ukryta</string>
+  <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
+  <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
+  <!-- Status bar battery style-->
+  <string name="status_bar_battery_style_title">Styl paska baterii</string>
+  <string name="status_bar_battery_style_port">Pionowy</string>
+  <string name="status_bar_battery_style_land">Poziomy</string>
+  <string name="status_bar_battery_style_circle">Okrąg</string>
+  <string name="status_bar_battery_style_dotted_circle">Przerywany okrąg</string>
+  <string name="status_bar_battery_style_text">Tekst</string>
+  <string name="status_bar_battery_style_hidden">Ukryty</string>
+  <string name="status_bar_battery_style_square">Kwadrat</string>
+  <!-- Status bar clock options -->
+  <string name="clock_category">Zegar</string>
+  <string name="clock_footer">Centralny zegar zostanie włączony, jednakże z powodów pewnych zmian w androidzie Oreo może on nie działać poprawnie</string>
+  <string name="status_bar_clock">Zegar i data</string>
+  <string name="status_bar_clock_summary">Skonfiguruj wygląd daty i zegara na pasku stanu</string>
+  <string name="clock_title_enable">Wyrównanie</string>
+  <string name="clock_enabled">Włączono</string>
+  <string name="clock_disabled">Wyłączony</string>
+  <string name="status_bar_clock_style_reset">Zresetuj kolor</string>
+  <string name="status_bar_show_clock_title">Pokaż zegar i datę</string>
+  <string name="status_bar_clock_seconds_title">Pokaż sekundy</string>
+  <string name="status_bar_am_pm_title">Czas 12/24 godzinny</string>
+  <string name="status_bar_am_pm_info">24 godzinny format zegara jest włączony</string>
+  <string name="enable_clock_weekday">Dzień tygodnia</string>
+  <string name="enable_clock_weekday_summary">Skrót dnia tygodnia przed zegarem</string>
+  <string name="right_clock">Zegar po prawej</string>
+  <string name="center_clock">Zegar na środku</string>
+  <string name="left_clock">Zegar po lewej</string>
+  <string name="dont_show">Nie pokazuj</string>
+  <string name="clock_date_display">Data</string>
+  <string name="clock_date_display_summary">Wyświetl zmodyfikowaną datę przed zegarem</string>
+  <string name="clock_date_style">Styl daty</string>
+  <string name="clock_date_format">Format daty</string>
+  <string name="clock_date_string_edittext_title">Musi być w formacie np. MM/dd/rr</string>
+  <string name="clock_date_string_edittext_summary">Wprowadź ciąg</string>
+  <string name="am_pm_clock_normal">Normalny rozmiar czcionki</string>
+  <string name="am_pm_clock_small">Mały rozmiar czcionki</string>
+  <string name="am_pm_clock_none">Nie pokazuj</string>
+  <string name="clock_date_display_none">Nie pokazuj</string>
+  <string name="clock_date_display_small">Mały rozmiar czcionki</string>
+  <string name="clock_date_display_normal">Normalny rozmiar czcionki</string>
+  <string name="clock_date_style_normal">Standardowy</string>
+  <string name="clock_date_style_lowercase">Małe litery</string>
+  <string name="clock_date_style_uppercase">Duże litery</string>
+  <string name="clock_date_format_custom">Własny format (java)</string>
   <!-- Statusbar logo -->
   <string name="status_bar_logo_title">Logo AOSiP</string>
   <string name="status_bar_logo_dialog_title">Położenie loga AOSiP</string>
@@ -81,11 +134,34 @@
   <string name="notification_title">Powiadomienia</string>
   <string name="notification_summary">Dostosuj diodę LED oraz zachowanie powiadomień</string>
   <string name="notification_category">Powiadomienia</string>
+  <string name="ticker_category">Powiadomienia w pasku statusu</string>
   <string name="headsup_category">Wyskakujące powiadomienia</string>
   <string name="battery_light">Dioda LED baterii</string>
+  <!-- Launch music player when headset is connected -->
+  <string name="headset_connect_player_title">Uruchom aplikację do słuchania muzyki przy podłączeniu zestawu słuchawkowego</string>
+  <string name="headset_connect_player_disabled">Wyłączony</string>
+  <string name="headset_connect_player_wired">Gdy jest podłączony przewodowy zestaw słuchawkowy</string>
+  <string name="headset_connect_player_bt_no_carkit">Gdy jest podłączony zestaw słuchawkowy BT (nie zestaw głośnomówiący)</string>
+  <string name="headset_connect_player_bt">Bezprzewodowy zestaw słuchawkowy podłączony</string>
+  <string name="headset_connect_player_both_no_carkit">Podłączony zestaw słuchawkowy (nie zestaw głośnomówiący)</string>
+  <string name="headset_connect_player_both">Podłączony zestaw słuchawkowy</string>
+  <!-- Headset ringtone audio focus -->
+  <string name="ringtone_focus_mode_title">Wybierz, za pomocą czego odtwarzać dzwonki</string>
+  <string name="ringtone_focus_mode_dynamic">Z zestawu słuchawkowego, jeżeli jest podłączony i odtwarza muzykę</string>
+  <string name="ringtone_focus_mode_stock">"Z głośnika (domyślny Aosp)"</string>
+  <string name="less_notification_sounds_title">Inteligentne dźwięki powiadomień</string>
+  <string name="less_notification_sounds_summary">Włącz dźwięki powiadomienia aplikacji raz na określony okres czasu</string>
+  <string name="less_notification_sounds_default">Domyślna aplikacja</string>
+  <string name="less_notification_sounds_10s">Co 10 sekund</string>
+  <string name="less_notification_sounds_30s">Co 30 sekund</string>
+  <string name="less_notification_sounds_1m">Co minutę</string>
+  <string name="less_notification_sounds_2m">Co 2 minuty</string>
   <!-- Notification count -->
-  <string name="status_bar_notif_count_title">Pokaż liczbę powiadomień</string>
+  <string name="status_bar_notif_count_title">Liczba powiadomień</string>
   <string name="status_bar_notif_count_summary">Wyświetlaj liczbę oczekujących powiadomień</string>
+  <!-- Notification guts kill app button -->
+  <string name="notification_guts_kill_app_button_title">Przycisk zabijania aplikacji</string>
+  <string name="notification_guts_kill_app_button_summary">Pokaż przycisk zabijania aplikacji po długim przytrzymaniu w menu powiadomień</string>
   <!-- Toast icon -->
   <string name="toast_icon_title">Ikona aplikacji w dymku</string>
   <string name="toast_icon_summary">Wyświetl ikonę aplikacji w dymku</string>
@@ -130,7 +206,19 @@
   <string name="expanded_category">Rozszerzony</string>
   <string name="qs_footer">Opcje edycji kolumn/wierszy szybkich ustawień ukażą się po wciśnięciu trzech kropek w menu edycji szybkich ustawień</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">Opacity</string>
+  <string name="qs_panel_alpha_title">Przezroczystość</string>
+  <!-- Tiles animation style -->
+  <string name="animation_title">Kafelek animacji</string>
+  <string name="qs_tile_animation_style_title">Styl animacji</string>
+  <string name="qs_tile_animation_duration_title">Czas trwania animacji</string>
+  <string name="qs_tile_animation_style_off">Brak animacji</string>
+  <string name="qs_tile_animation_style_flip">Obróć</string>
+  <string name="qs_tile_animation_style_rotate">Obrót</string>
+  <string name="qs_tile_animation_duration_low">Powoli</string>
+  <string name="qs_tile_animation_duration_default">Domyślna</string>
+  <string name="qs_tile_animation_duration_fast">Szybka</string>
+  <string name="qs_set_animation_style">Ustawiono animację %1$s</string>
+  <string name="qs_set_animation_duration">Długość animacji %1$s</string>
   <!--Quick pulldown-->
   <string name="status_bar_quick_qs_pulldown">Szybkie rozwijanie</string>
   <string name="status_bar_quick_qs_pulldown_summary">Przeciągnij po prawej na pasku statusu, aby wyświetlić panel szybkich ustawień</string>
@@ -325,6 +413,11 @@
   <string name="powermenu_category">Przycisk zasilania</string>
   <string name="volume_category">Głośność</string>
   <string name="button_category">Klawisze</string>
+  <!-- Cursor control -->
+  <string name="volume_key_cursor_control_title">Kontrola kursora przyciskami głośności</string>
+  <string name="volume_key_cursor_control_off">Wyłączony</string>
+  <string name="volume_key_cursor_control_on">Głośność góra/dół porusza kursorem w lewo/prawo</string>
+  <string name="volume_key_cursor_control_on_reverse">Głośność góra/dół przesuwa kursor w prawo/lewo</string>
   <!-- ANBI -->
   <string name="anbi_title">Przypadkowe dotknięcie</string>
   <string name="anbi_summary">Zapobiegaj przypadkowemu użyciu przycisków nawigacyjnych, gdy dotykasz ekranu</string>
@@ -352,6 +445,21 @@
   <string name="powermenu_ls_screenshot_summary">Pokaż opcję zrzutu ekranu na ekranie blokady</string>
   <string name="powermenu_ls_airplane_summary">Pokaż opcję Tryb samolotowy na ekranie blokady</string>
   <string name="lockscreen_items_other">Inne</string>
+  <!-- Hardware button navigation -->
+  <string name="hardware_keys_volume_keys_title">Przyciski głośności</string>
+  <string name="hardware_keys_home_key_title">Przycisk Home</string>
+  <string name="hardware_keys_menu_key_title">Przycisk Menu</string>
+  <string name="hardware_keys_assist_key_title">Przycisk Szukaj</string>
+  <string name="hardware_keys_appswitch_key_title">Przycisk listy aplikacji</string>
+  <string name="hardware_keys_back_key_title">Przycisk Wstecz</string>
+  <string name="hardware_keys_double_tap_summary">Akcja podwójnego naciśnięcia</string>
+  <string name="hardware_keys_single_tap_summary">Działanie pojedynczego dotknięcia</string>
+  <string name="hardware_keys_long_press_summary">Akcja długiego naciśnięcia</string>
+  <string name="hardware_keys_single_tap_title">Akcja po pojedynczym dotknięciu</string>
+  <string name="hardware_keys_long_press_title">Akcja długiego naciśnięcia</string>
+  <string name="hardware_keys_double_tap_title">Akcja podwójnego naciśnięcia</string>
+  <string name="hardware_keys_category">Przyciski nawigacyjne</string>
+  <string name="hardware_keys_disable_title">Wyłącz przyciski nawigacji</string>
   <!-- Screen Off animation -->
   <string name="screen_off_animation_title">Animacja wyłączenia ekranu</string>
   <string name="screen_off_animation_default">Domyślna</string>
@@ -375,12 +483,11 @@
   <string name="immersive_recents_statusbar">Tylko pasek statusu</string>
   <string name="immersive_recents_navbar">Tylko pasek nawigacji</string>
   <!-- AOSP Recents Style -->
-  <string name="recents_type_title">Wygląd panelu ostatnich aplikacji</string>
+  <string name="recents_type_title">Wygląd</string>
   <string name="recents_stock">Standardowy</string>
   <string name="recents_grid">Siatka</string>
   <string name="recents_go">Android Go</string>
   <!-- Clear all recents -->
-  <string name="aosp_recents_title">Ostatnio uruchomione AOSP</string>
   <string name="show_clear_all_recents_button_title">Przycisk \"Wyczyść wszystkie\"</string>
   <string name="show_clear_all_recents_button_summary_on">Pokaż przycisk \"Wyczyść wszystkie\"</string>
   <string name="show_clear_all_recents_button_summary_off">Pokaż AOSP \"Wyczyść wszystkie\"</string>
@@ -409,6 +516,9 @@
   <string name="double_tap_sleep_lockscreen">Ekran blokady</string>
   <!--Double Tap to Sleep Statusbar-->
   <string name="double_tap_sleep_gesture_title">Pasek statusu</string>
+  <!--OmniGesture-->
+  <string name="use_bottom_gesture_title">Use swipe up gestures for navigation</string>
+  <string name="use_bottom_gesture_summary">Works only with navigation bar disable</string>
   <!--Owlsnest lockscreen-->
   <string name="lockscreen_title">Ekran blokady</string>
   <string name="lockscreen_summary">Konfiguruj opcje oraz wygląd ekranu blokadu</string>
@@ -447,11 +557,17 @@
   <string name="lockscreen_date_selection_str_accent_transparent_day">Zaokrąglony, przezroczysty z akcentem kolorystycznym</string>
   <string name="hide_lockscreen_alarm_title">Tekst alarmu</string>
   <string name="hide_lockscreen_alarm_summary">Zmień widoczność notatki alarmu poniżej widgetu zegarka</string>
+  <!-- Face unlock toggle -->
+  <string name="face_auto_unlock_title">Odblokuj automatycznie twarzą</string>
+  <string name="face_auto_unlock_summary">Nie pokazuj ekranu blokady po odblokowaniu twarzą</string>
+  <!-- Lock screen visualizer -->
+  <string name="lockscreen_visualizer_title">Wizualizator muzyki</string>
+  <string name="lockscreen_visualizer_summary">Przełącznik wizualizacji na ekranie blokady</string>
   <!-- Media art -->
   <string name="media_art_title">Okładka albumu</string>
   <string name="media_art_summary">Włącz okładkę albumu na ekranie blokady</string>
   <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Informacje o ładowaniu na ekranie blokady</string>
+  <string name="lockscreen_battery_info_title">Informacje o ładowaniu</string>
   <string name="lockscreen_battery_info_summary">Wyświetl napięcie, natężenie oraz temperaturę baterii na ekranie blokady podczas ładowania</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Wibracja podczas uwierzytelniania odcisku palca</string>
@@ -476,7 +592,7 @@
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">Ikony paska stanu</string>
   <string name="status_bar_icon_blacklist_summary">Skonfiguruj jakie ikony są pokazywane na pasku statusu</string>
-  <string name="lockscreen_shortcuts_title">Skróty ekranu blokady</string>
+  <string name="lockscreen_shortcuts_title">Skróty</string>
   <string name="lockscreen_shortcuts_summary">Dolne skróty ekranu blokady</string>
   <string name="navbar_buttons_title">Przyciski paska nawigacji</string>
   <string name="navbar_buttons_summary">Wygląd i dodatkowe przyciski paska nawigacji</string>
@@ -490,111 +606,18 @@
   <string name="volbtn_up_zen_title">Pogłaśnianie w trybie Nie przeszkadzać</string>
   <string name="volbtn_up_zen_summary">Zwiększenie głośności powoduje wyłączenie trybu \"Nie przeszkadzać\"</string>
   <string name="vol_zen_title">Przełącznik Nie przeszkadzać</string>
-  <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+  <string name="vol_zen_summary">Pokaż przełącznik nie przeszkadzać na panelu głośości</string>
   <string name="doze_always_on_title">Zawsze na ekranie</string>
   <string name="doze_always_on_summary">Ambient zostanie włączony, gdy czujnik zbliżeniowy zostanie odkryty</string>
   <string name="powern_notifications_title">Powiadomienia zasilania</string>
   <string name="powern_notifications_summary">Zaawansowane sterowanie powiadomieniami - naciśnij długo</string>
   <string name="notifications_cat_title">Powiadomienia</string>
   <string name="qs_cat_title">Panel Szybkich Ustawień</string>
-  <!-- Launch music player when headset is connected -->
-  <string name="headset_connect_player_title">Uruchom aplikację do słuchania muzyki przy podłączeniu zestawu słuchawkowego</string>
-  <string name="headset_connect_player_disabled">Wyłączony</string>
-  <string name="headset_connect_player_wired">Gdy jest podłączony przewodowy zestaw słuchawkowy</string>
-  <string name="headset_connect_player_bt_no_carkit">Gdy jest podłączony zestaw słuchawkowy BT (nie zestaw głośnomówiący)</string>
-  <string name="headset_connect_player_bt">Bezprzewodowy zestaw słuchawkowy podłączony</string>
-  <string name="headset_connect_player_both_no_carkit">Podłączony zestaw słuchawkowy (nie zestaw głośnomówiący)</string>
-  <string name="headset_connect_player_both">Podłączony zestaw słuchawkowy</string>
-  <!-- Headset ringtone audio focus -->
-  <string name="ringtone_focus_mode_title">Wybierz, za pomocą czego odtwarzać dzwonki</string>
-  <string name="ringtone_focus_mode_dynamic">Z zestawu słuchawkowego, jeżeli jest podłączony i odtwarza muzykę</string>
-  <string name="ringtone_focus_mode_stock">"Z głośnika (domyślny Aosp)"</string>
-  <!-- Hardware button navigation -->
-  <string name="hardware_keys_volume_keys_title">Przyciski głośności</string>
-  <string name="hardware_keys_home_key_title">Przycisk Home</string>
-  <string name="hardware_keys_menu_key_title">Przycisk Menu</string>
-  <string name="hardware_keys_assist_key_title">Przycisk Szukaj</string>
-  <string name="hardware_keys_appswitch_key_title">Przycisk listy aplikacji</string>
-  <string name="hardware_keys_back_key_title">Przycisk Wstecz</string>
-  <string name="hardware_keys_double_tap_summary">Akcja podwójnego naciśnięcia</string>
-  <string name="hardware_keys_single_tap_summary">Działanie pojedynczego dotknięcia</string>
-  <string name="hardware_keys_long_press_summary">Akcja długiego naciśnięcia</string>
-  <string name="hardware_keys_single_tap_title">Akcja po pojedynczym dotknięciu</string>
-  <string name="hardware_keys_long_press_title">Akcja długiego naciśnięcia</string>
-  <string name="hardware_keys_double_tap_title">Akcja podwójnego naciśnięcia</string>
-  <string name="hardware_keys_category">Przyciski nawigacyjne</string>
-  <string name="hardware_keys_disable_title">Wyłącz przyciski nawigacji</string>
   <!-- AppOps -->
   <string name="app_ops_settings_summary">Uprawnienia sterowania</string>
-  <!-- Face unlock toggle -->
-  <string name="face_auto_unlock_title">Odblokuj automatycznie twarzą</string>
-  <string name="face_auto_unlock_summary">Nie pokazuj ekranu blokady po odblokowaniu twarzą</string>
-  <string name="less_notification_sounds_title">Inteligentne dźwięki powiadomień</string>
-  <string name="less_notification_sounds_summary">Włącz dźwięki powiadomienia aplikacji raz na określony okres czasu</string>
-  <string name="less_notification_sounds_default">Domyślna aplikacja</string>
-  <string name="less_notification_sounds_10s">Co 10 sekund</string>
-  <string name="less_notification_sounds_30s">Co 30 sekund</string>
-  <string name="less_notification_sounds_1m">Co minutę</string>
-  <string name="less_notification_sounds_2m">Co 2 minuty</string>
   <string name="screenshot_edit_app">Edytuj zrzuty ekranu</string>
   <string name="screenshot_edit_app_summary">Wybierz aplikację która ma być uruchomiona gdy zostanie naciśnięty przycisk edycji zrzutu ekranu</string>
   <string name="screenshot_edit_app_no_editor">Brak dostępnych aplikacji edycji zrzutów ekranu</string>
-  <!-- Status bar clock options -->
-  <string name="clock_category">Zegar</string>
-  <string name="clock_footer">Centralny zegar zostanie włączony, jednakże z powodów pewnych zmian w androidzie Oreo może on nie działać poprawnie</string>
-  <string name="status_bar_clock">Zegar i data</string>
-  <string name="status_bar_clock_summary">Skonfiguruj wygląd daty i zegara na pasku stanu</string>
-  <string name="clock_title_enable">Wyrównanie</string>
-  <string name="clock_enabled">Włączono</string>
-  <string name="clock_disabled">Wyłączony</string>
-  <string name="status_bar_clock_style_reset">Zresetuj kolor</string>
-  <string name="status_bar_show_clock_title">Pokaż zegar i datę</string>
-  <string name="status_bar_clock_seconds_title">Pokaż sekundy</string>
-  <string name="status_bar_am_pm_title">Czas 12/24 godzinny</string>
-  <string name="status_bar_am_pm_info">24 godzinny format zegara jest włączony</string>
-  <string name="enable_clock_weekday">Dzień tygodnia</string>
-  <string name="enable_clock_weekday_summary">Skrót dnia tygodnia przed zegarem</string>
-  <string name="right_clock">Zegar po prawej</string>
-  <string name="center_clock">Zegar na środku</string>
-  <string name="left_clock">Zegar po lewej</string>
-  <string name="dont_show">Nie pokazuj</string>
-  <string name="clock_date_display">Data</string>
-  <string name="clock_date_display_summary">Wyświetl zmodyfikowaną datę przed zegarem</string>
-  <string name="clock_date_style">Styl daty</string>
-  <string name="clock_date_format">Format daty</string>
-  <string name="clock_date_string_edittext_title">Musi być w formacie np. MM/dd/rr</string>
-  <string name="clock_date_string_edittext_summary">Wprowadź ciąg</string>
-  <string name="am_pm_clock_normal">Normalny rozmiar czcionki</string>
-  <string name="am_pm_clock_small">Mały rozmiar czcionki</string>
-  <string name="am_pm_clock_none">Nie pokazuj</string>
-  <string name="clock_date_display_none">Nie pokazuj</string>
-  <string name="clock_date_display_small">Mały rozmiar czcionki</string>
-  <string name="clock_date_display_normal">Normalny rozmiar czcionki</string>
-  <string name="clock_date_style_normal">Standardowy</string>
-  <string name="clock_date_style_lowercase">Małe litery</string>
-  <string name="clock_date_style_uppercase">Duże litery</string>
-  <string name="clock_date_format_custom">Własny format (java)</string>
-  <!-- Lock screen visualizer -->
-  <string name="lockscreen_visualizer_title">Wizualizator muzyki</string>
-  <string name="lockscreen_visualizer_summary">Przełącznik wizualizacji na ekranie blokady</string>
-  <!-- Battery percentage -->
-  <string name="battery_style_category_title">Ikona baterii</string>
-  <string name="status_bar_battery_percentage_title">Procent baterii</string>
-  <string name="status_bar_battery_percentage_default">Ukryta</string>
-  <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
-  <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
-  <!-- Status bar battery style-->
-  <string name="status_bar_battery_style_title">Styl paska baterii</string>
-  <string name="status_bar_battery_style_port">Pionowy</string>
-  <string name="status_bar_battery_style_land">Poziomy</string>
-  <string name="status_bar_battery_style_circle">Okrąg</string>
-  <string name="status_bar_battery_style_dotted_circle">Przerywany okrąg</string>
-  <string name="status_bar_battery_style_text">Tekst</string>
-  <string name="status_bar_battery_style_hidden">Ukryty</string>
-  <string name="status_bar_battery_style_square">Kwadrat</string>
-  <!-- Notification guts kill app button -->
-  <string name="notification_guts_kill_app_button_title">Przycisk zabijania aplikacji</string>
-  <string name="notification_guts_kill_app_button_summary">Pokaż przycisk zabijania aplikacji po długim przytrzymaniu w menu powiadomień</string>
   <!-- Screen state service -->
   <string name="screen_state_toggles_title">Akcje po uśpieniu</string>
   <string name="screen_state_toggles_enable_title">Włącz</string>
@@ -611,26 +634,6 @@
   <string name="screen_state_off_delay_summary">Liczba sekund oczekiwania przed wykonaniem akcji po wyłączeniu ekranu</string>
   <string name="screen_state_on_delay_title">Opóźnienie akcji po włączeniu ekranu</string>
   <string name="screen_state_on_delay_summary">Liczba sekund oczekiwania przed wykonaniem akcji po włączeniu ekranu</string>
-  <!-- Cursor control -->
-  <string name="volume_key_cursor_control_title">Kontrola kursora przyciskami głośności</string>
-  <string name="volume_key_cursor_control_off">Wyłączony</string>
-  <string name="volume_key_cursor_control_on">Głośność góra/dół porusza kursorem w lewo/prawo</string>
-  <string name="volume_key_cursor_control_on_reverse">Głośność góra/dół przesuwa kursor w prawo/lewo</string>
-  <!-- Tiles animation style -->
-  <string name="animation_title">Kafelek animacji</string>
-  <string name="qs_tile_animation_style_title">Styl animacji</string>
-  <string name="qs_tile_animation_duration_title">Czas trwania animacji</string>
-  <string name="qs_tile_animation_style_off">Brak animacji</string>
-  <string name="qs_tile_animation_style_flip">Obróć</string>
-  <string name="qs_tile_animation_style_rotate">Obrót</string>
-  <string name="qs_tile_animation_duration_low">Powoli</string>
-  <string name="qs_tile_animation_duration_default">Domyślna</string>
-  <string name="qs_tile_animation_duration_fast">Szybka</string>
-  <string name="qs_set_animation_style">Ustawiono animację %1$s</string>
-  <string name="qs_set_animation_duration">Długość animacji %1$s</string>
-  <!-- Battery icon size -->
-  <string name="large_battery_icon_title">Pokaż dużą ikonę</string>
-  <string name="large_battery_icon_summary">Powiększenie ikony baterii w pasku statusu</string>
   <!-- Incall vibrate options -->
   <string name="incall_vibration_category">Opcji wibracji w trakcie rozmowy</string>
   <string name="incall_vibrate_connect_title">Wibracja przy połączeniu</string>
@@ -658,8 +661,7 @@
   <string name="dialog_delete_message">Usunąć wybraną pozycję?</string>
   <!-- Wallpaper tint -->
   <string name="wallpaper_tint_power_menu">Przyciemnienie tła menu zasilania</string>
-  <string name="wallpaper_tint_recents">Przyciemnienie tła ostatnio uruchomionych</string>
-  <string name="wallpaper_tint_keyguard">Przyciemnienie tła ekranu blokady</string>
+  <string name="wallpaper_tint">Styl tła</string>
   <string name="wallpaper_tint_notification_shade">Wygląd obszaru powiadomień</string>
   <string name="wallpaper_tint_summary">Zastosuj motyw bazujący na tapecie</string>
   <!-- Wakelock blocker -->
@@ -685,18 +687,10 @@
   <!-- Sensor block per-package -->
   <string name="sensor_block_title">Blokada czujników dla aplikacji</string>
   <string name="sensor_block_summary">Blokuj dostęp do niektórych czujników dla części aplikacji, aby oszczędzać baterię.</string>
-  <!-- Edge gestures -->
-  <string name="edge_gestures_title">Edge gestures</string>
-  <string name="edge_gestures_summary">Swipe from the edges of your screen to navigate</string>
-  <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
-  <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
-  <string name="edge_gestures_back_category_title">Back gesture</string>
-  <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
-  <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
-  <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
-  <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
-  <string name="edge_gestures_back_show_ui_feedback_title">Back gesture animation</string>
-  <string name="edge_gestures_back_show_ui_feedback_summary">Show animated feedback on edges when back gesture is used</string>
-  <string name="edge_gestures_back_use_black_arrow_title">Back button dark color</string>
-  <string name="edge_gestures_back_use_black_arrow_summary">Show black back button instead of the white version</string>
+  <!-- Rounded Corners -->
+  <string name="corners_category">Corners</string>
+  <string name="corner_radius">Rounded Corner Radius</string>
+  <string name="content_padding">Corner Content Padding</string>
+  <string name="corner_fwvals">Use framework values</string>
+  <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
 </resources>
