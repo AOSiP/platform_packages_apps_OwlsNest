@@ -30,6 +30,12 @@
     </Preference>
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_charging_current"
+        android:title="@string/lockscreen_charging_current_title"
+        android:summary="@string/lockscreen_charging_current_summary"
+        android:defaultValue="false" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary"
