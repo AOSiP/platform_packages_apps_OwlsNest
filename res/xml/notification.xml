@@ -21,5 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/notification_category" >
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="toast_icon"
+        android:title="@string/toast_icon_title"
+        android:summary="@string/toast_icon_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
 
