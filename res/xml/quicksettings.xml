@@ -47,6 +47,16 @@
         android:summary="%s"
         android:defaultValue="1" />
 
+    <com.aosip.support.preference.CustomSeekBarPreference
+        android:key="qs_panel_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:summary="@string/qs_panel_alpha_summary"
+        android:max="100"
+        settings:min="0"
+        android:persistent="false"
+        settings:units="%"
+        android:defaultValue="100" />
+
     <PreferenceCategory
         android:key="string/qs_brightness_category"
         android:title="@string/qs_brightness_category_title">
