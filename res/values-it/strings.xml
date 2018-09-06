@@ -517,8 +517,8 @@
   <!--Double Tap to Sleep Statusbar-->
   <string name="double_tap_sleep_gesture_title">Barra di Stato</string>
   <!--OmniGesture-->
-  <string name="use_bottom_gesture_title">Use swipe up gestures for navigation</string>
-  <string name="use_bottom_gesture_summary">Works only with navigation bar disable</string>
+  <string name="use_bottom_gesture_title">Usa le gesture con swipe in alto per la navigazione</string>
+  <string name="use_bottom_gesture_summary">Funziona solo se la barra di navigazione è diattivata</string>
   <!--Owlsnest lockscreen-->
   <string name="lockscreen_title">Schermata di sblocco</string>
   <string name="lockscreen_summary">Modifica la configurazione e le opzioni della schermata di sblocco</string>
@@ -688,9 +688,9 @@
   <string name="sensor_block_title">Blocco sensori per app</string>
   <string name="sensor_block_summary">Impedisci l\'accesso a determinati sensori per alcune app per risparmiare batteria.</string>
   <!-- Rounded Corners -->
-  <string name="corners_category">Corners</string>
-  <string name="corner_radius">Rounded Corner Radius</string>
-  <string name="content_padding">Corner Content Padding</string>
-  <string name="corner_fwvals">Use framework values</string>
-  <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
+  <string name="corners_category">Angoli</string>
+  <string name="corner_radius">Raggio degli angoli arrotondati</string>
+  <string name="content_padding">Spazio dei contenuti dagli angoli</string>
+  <string name="corner_fwvals">Usa i valori del framework</string>
+  <string name="corner_fwvals_summary">Utile se il dispositivo ha effettivamente gli angoli arrotondati</string>
 </resources>

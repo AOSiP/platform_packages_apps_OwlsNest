@@ -157,7 +157,7 @@
   <string name="less_notification_sounds_1m">A cada minuto</string>
   <string name="less_notification_sounds_2m">A cada 2 minutos</string>
   <!-- Notification count -->
-  <string name="status_bar_notif_count_title">Notification count</string>
+  <string name="status_bar_notif_count_title">Contador de notificações</string>
   <string name="status_bar_notif_count_summary">Exibir o número de notificações pendentes</string>
   <!-- Notification guts kill app button -->
   <string name="notification_guts_kill_app_button_title">Botão de encerrar aplicativo</string>
@@ -567,7 +567,7 @@
   <string name="media_art_title">Mostrar capa do album de música</string>
   <string name="media_art_summary">Habilitar a arte da capa de mídia na tela de bloqueio</string>
   <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Charging info</string>
+  <string name="lockscreen_battery_info_title">Informação de carregamento</string>
   <string name="lockscreen_battery_info_summary">Exibe corrente de carga, voltagem, temperatura da bateria na tela de bloqueio</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Vibração na autenticação da impressão digital</string>
@@ -592,7 +592,7 @@
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">Ícones da barra de status</string>
   <string name="status_bar_icon_blacklist_summary">Configure quais ícones são mostrados na barra de status</string>
-  <string name="lockscreen_shortcuts_title">Shortcuts</string>
+  <string name="lockscreen_shortcuts_title">Atalhos</string>
   <string name="lockscreen_shortcuts_summary">Atalho inferior da tela de bloqueio</string>
   <string name="navbar_buttons_title">Botões da barra de navegação</string>
   <string name="navbar_buttons_summary">Layout de barra de navegação e botões personalizados</string>
@@ -661,7 +661,7 @@
   <string name="dialog_delete_message">Excluir item selecionado?</string>
   <!-- Wallpaper tint -->
   <string name="wallpaper_tint_power_menu">Tonalidade de fundo do Menu de energia</string>
-  <string name="wallpaper_tint">Background tint</string>
+  <string name="wallpaper_tint">Tonalidade de fundo</string>
   <string name="wallpaper_tint_notification_shade">Tonalidade da sombra de Notificação</string>
   <string name="wallpaper_tint_summary">Aplicar uma tonalidade no fundo com base no papel de parede da tela inicial</string>
   <!-- Wakelock blocker -->
@@ -688,9 +688,9 @@
   <string name="sensor_block_title">Restringir o uso dos sensores</string>
   <string name="sensor_block_summary">Bloquear o acesso de alguns aplicativos a determinados sensores para economizar bateria.</string>
   <!-- Rounded Corners -->
-  <string name="corners_category">Corners</string>
-  <string name="corner_radius">Rounded Corner Radius</string>
-  <string name="content_padding">Corner Content Padding</string>
-  <string name="corner_fwvals">Use framework values</string>
-  <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
+  <string name="corners_category">Cantos</string>
+  <string name="corner_radius">Raio dos cantos arredondados</string>
+  <string name="content_padding">Espaçamento dos cantos</string>
+  <string name="corner_fwvals">Use valores de estrutura</string>
+  <string name="corner_fwvals_summary">Útil se o dispositivo tiver cantos arredondados</string>
 </resources>

@@ -134,7 +134,7 @@
   <string name="notification_title">Уведомление</string>
   <string name="notification_summary">Отрегулируйте поведение подсветки светодиодов и уведомлений</string>
   <string name="notification_category">Уведомления</string>
-  <string name="ticker_category">Ticker</string>
+  <string name="ticker_category">Бегущая строка</string>
   <string name="headsup_category">Всплывающие уведомления</string>
   <string name="battery_light">Индикатор батареи</string>
   <!-- Launch music player when headset is connected -->
@@ -157,7 +157,7 @@
   <string name="less_notification_sounds_1m">Каждую минуту</string>
   <string name="less_notification_sounds_2m">Каждые 2 минуты</string>
   <!-- Notification count -->
-  <string name="status_bar_notif_count_title">Notification count</string>
+  <string name="status_bar_notif_count_title">Счётчик уведомлений</string>
   <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
   <!-- Notification guts kill app button -->
   <string name="notification_guts_kill_app_button_title">Кнопка закрытия приложения</string>
@@ -483,7 +483,7 @@
   <string name="immersive_recents_statusbar">Только строка состояния</string>
   <string name="immersive_recents_navbar">Только панель навигации</string>
   <!-- AOSP Recents Style -->
-  <string name="recents_type_title">Layout</string>
+  <string name="recents_type_title">Расположение</string>
   <string name="recents_stock">По умолчанию</string>
   <string name="recents_grid">Сетка</string>
   <string name="recents_go">Android Go</string>
@@ -517,8 +517,8 @@
   <!--Double Tap to Sleep Statusbar-->
   <string name="double_tap_sleep_gesture_title">Строка состояния</string>
   <!--OmniGesture-->
-  <string name="use_bottom_gesture_title">Use swipe up gestures for navigation</string>
-  <string name="use_bottom_gesture_summary">Works only with navigation bar disable</string>
+  <string name="use_bottom_gesture_title">Свайп вверх для навигации</string>
+  <string name="use_bottom_gesture_summary">Работает только с отключенной панелью навигации</string>
   <!--Owlsnest lockscreen-->
   <string name="lockscreen_title">Экран блокировки</string>
   <string name="lockscreen_summary">Настройка разметки и опций экрана блокировки</string>
@@ -567,7 +567,7 @@
   <string name="media_art_title">Обложка альбома</string>
   <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
   <!-- Lockscreen battery info indicator  -->
-  <string name="lockscreen_battery_info_title">Charging info</string>
+  <string name="lockscreen_battery_info_title">Информация о зарядке</string>
   <string name="lockscreen_battery_info_summary">Отображение тока, напряжения и температуры батареи на экране блокировки во время зарядки</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Вибрация при распознавании отпечатка пальцев</string>
@@ -592,7 +592,7 @@
   <!--SysUI tuner options -->
   <string name="status_bar_icon_blacklist_title">Значки в строке состояния</string>
   <string name="status_bar_icon_blacklist_summary">Настроить иконки в строке состояния</string>
-  <string name="lockscreen_shortcuts_title">Shortcuts</string>
+  <string name="lockscreen_shortcuts_title">Ярлыки</string>
   <string name="lockscreen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
   <string name="navbar_buttons_title">Кнопки панели навигации</string>
   <string name="navbar_buttons_summary">Макет панели навигации и пользовательские кнопки</string>
@@ -661,7 +661,7 @@
   <string name="dialog_delete_message">Удалить выбранный элемент?</string>
   <!-- Wallpaper tint -->
   <string name="wallpaper_tint_power_menu">Затенение фона меню питания</string>
-  <string name="wallpaper_tint">Background tint</string>
+  <string name="wallpaper_tint">Стиль фона</string>
   <string name="wallpaper_tint_notification_shade">Затенение фона шторки уведомлений</string>
   <string name="wallpaper_tint_summary">Примените оттенок к фону на основе обоев рабочего стола</string>
   <!-- Wakelock blocker -->
@@ -688,9 +688,9 @@
   <string name="sensor_block_title">Блокировка датчиков попакетно</string>
   <string name="sensor_block_summary">Заблокировать доступ к датчикам для некоторых приложений для экономии заряда батареи.</string>
   <!-- Rounded Corners -->
-  <string name="corners_category">Corners</string>
-  <string name="corner_radius">Rounded Corner Radius</string>
+  <string name="corners_category">Угловые</string>
+  <string name="corner_radius">Радиус скругления углов</string>
   <string name="content_padding">Corner Content Padding</string>
-  <string name="corner_fwvals">Use framework values</string>
-  <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
+  <string name="corner_fwvals">Использовать значения framework\'а</string>
+  <string name="corner_fwvals_summary">Полезно, если устройство не имеет скруглённых углов</string>
 </resources>
