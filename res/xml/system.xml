@@ -32,6 +32,12 @@
         android:summary="@string/show_cpu_info_summary" 
         android:defaultValue="false" />
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />
+
     <!-- Flashlight on incoming calls -->
     <ListPreference
         android:key="flashlight_on_call"
