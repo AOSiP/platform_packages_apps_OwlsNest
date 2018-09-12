@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.categorys;
+package com.aosip.owlsnest.categories.recents;
 
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
