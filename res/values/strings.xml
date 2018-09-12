@@ -155,6 +155,10 @@
     <string name="swap_volume_buttons">Rotation Swap</string>
     <string name="volume_keys_swap_summary">Swap volume buttons based on device rotation</string>
 
+    <!--Volume keys wake -->
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
