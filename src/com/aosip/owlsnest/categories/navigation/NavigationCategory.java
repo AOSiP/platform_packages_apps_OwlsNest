@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.categorys;
+package com.aosip.owlsnest.categories.navigation;
 
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
@@ -24,7 +24,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class StatusbarCategory extends SettingsPreferenceFragment implements
+public class NavigationCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
@@ -36,7 +36,7 @@ public class StatusbarCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.statusbar);
+        addPreferencesFromResource(R.xml.navigation);
 
     }
 
