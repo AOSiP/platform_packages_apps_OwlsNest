@@ -229,6 +229,10 @@
     <string name="ambient_visualizer_title">Ambient visualizer</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
 
+    <!-- Media art -->
+    <string name="media_art_title">Show media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
