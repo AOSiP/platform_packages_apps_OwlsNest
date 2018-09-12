@@ -27,4 +27,10 @@
         android:summary="@string/volume_keys_swap_summary"
         android:defaultValue="false" />
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:title="@string/volume_rocker_wake_title" 
+        android:defaultValue="false" />
+
 </PreferenceScreen>
