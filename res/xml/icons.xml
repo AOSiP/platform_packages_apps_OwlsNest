@@ -29,5 +29,11 @@
             android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
     </Preference>
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+         android:key="use_old_mobiletype"
+         android:title="@string/use_old_mobiletype_title"
+         android:summary="@string/use_old_mobiletype_summary"
+         android:defaultValue="false" />
+
 </PreferenceScreen>
 
