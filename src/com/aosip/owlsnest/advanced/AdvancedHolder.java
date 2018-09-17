@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Android Open Source Illusion Project
+ *  Copyright (C) 2015-2018 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,11 +31,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.advanced.AlarmBlocker;
-import com.aosip.owlsnest.advanced.ScreenStateToggles;
-import com.aosip.owlsnest.advanced.SmartPixels;
 import com.aosip.owlsnest.advanced.SystemCategory;
-import com.aosip.owlsnest.advanced.WakeLockBlocker;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class AdvancedHolder extends SettingsPreferenceFragment {
@@ -88,14 +84,6 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new SystemCategory();
-            frags[1] = new AlarmBlocker();
-            frags[2] = new ScreenStateToggles();
-            frags[3] = new WakeLockBlocker();
-            try {
-                frags[4] = new SmartPixels();
-            } catch (IndexOutOfBoundsException e) {
-                // Do nothing
-            }
         }
 
         @Override
@@ -116,20 +104,9 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
 
     private String[] getTitles() {
         String titleString[];
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        if (enableSmartPixels) {
-            return new String[]{ getString(R.string.system_category),
-                    getString(R.string.alarm_blocker),
-                    getString(R.string.screen_state_toggles_title),
-                    getString(R.string.wakelock_blocker_title),
-                    getString(R.string.smart_pixels_title)};
-        } else {
-            return new String[]{ getString(R.string.system_category),
-                    getString(R.string.alarm_blocker),
-                    getString(R.string.screen_state_toggles_title),
-                    getString(R.string.wakelock_blocker_title)};
-        }
+        titleString = new String[]{
+                    getString(R.string.system_category)};
+        return titleString;
     }
 }
 

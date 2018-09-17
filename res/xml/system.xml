@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2017 Android Open Source Illusion Project
+<!--  Copyright (C) 2015-2018 Android Open Source Illusion Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -21,90 +21,4 @@
     android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
 
-        <Preference
-            android:title="@string/app_ops_settings"
-            android:summary="@string/app_ops_settings_summary"
-            android:fragment="com.android.settings.applications.AppOpsSummary"/>
-
-        <Preference
-            android:key="chooser_activity_blacklist"
-            android:fragment="com.aosip.owlsnest.advanced.ChooserActivityBlacklist"
-            android:title="@string/chooser_activity_blacklist_title"
-            android:summary="@string/chooser_activity_blacklist_summary"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="headset_connect_player"
-            android:title="@string/headset_connect_player_title"
-            android:entries="@array/headset_connect_player_entries"
-            android:entryValues="@array/headset_connect_player_values" />
-
-        <ListPreference
-            android:key="ringtone_focus_mode"
-            android:title="@string/ringtone_focus_mode_title"
-            android:entries="@array/ringtone_focus_mode_entries"
-            android:entryValues="@array/ringtone_focus_mode_values" />
-
-        <Preference
-            android:key="screenshot_edit_app"
-            android:title="@string/screenshot_edit_app"
-            android:summary="@string/screenshot_edit_app_summary" />
-
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="sensor_block"
-            android:title="@string/sensor_block_title"
-            android:summary="@string/sensor_block_summary"
-            android:defaultValue="false" />
-
-    <PreferenceCategory
-        android:key="corners_category"
-        android:title="@string/corners_category" >
-
-         <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
-            android:key="sysui_rounded_fwvals"
-            android:title="@string/corner_fwvals"
-            android:summary="@string/corner_fwvals_summary"
-            android:defaultValue="true"
-            android:disableDependentsState="true" />
-
-         <com.aosip.owlsnest.preference.CustomSeekBarPreference
-	        android:key="sysui_rounded_size"
-	        android:title="@string/corner_radius"
-	        android:max="25"
-	        settings:min="0"
-	        settings:units=""
-	        android:persistent="false" 
-            android:dependency="sysui_rounded_fwvals" />
-
-         <com.aosip.owlsnest.preference.CustomSeekBarPreference
-	        android:key="sysui_rounded_content_padding"
-	        android:title="@string/content_padding"
-	        android:max="10"
-	        settings:min="0"
-	        settings:units=""
-            android:persistent="false"
-            android:dependency="sysui_rounded_fwvals" />
-
-     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:title="@string/incall_vibration_category" >
-
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
-
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="false" />
-
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
 </PreferenceScreen>

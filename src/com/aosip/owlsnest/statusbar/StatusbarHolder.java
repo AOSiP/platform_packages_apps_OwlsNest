@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Android Open Source Illusion Project
+ *  Copyright (C) 2015-2018 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,11 +31,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.statusbar.ClockDateSettings;
-import com.aosip.owlsnest.statusbar.BatteryCategory;
-import com.aosip.owlsnest.statusbar.CarrierCategory;
 import com.aosip.owlsnest.statusbar.IconsCategory;
-import com.aosip.owlsnest.statusbar.TrafficCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class StatusbarHolder extends SettingsPreferenceFragment {
@@ -87,11 +83,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new BatteryCategory();
-            frags[1] = new CarrierCategory();
-            frags[2] = new ClockDateSettings();
-            frags[3] = new IconsCategory();
-            frags[4] = new TrafficCategory();
+            frags[0] = new IconsCategory();
         }
 
         @Override
@@ -113,11 +105,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.battery_category),
-                    getString(R.string.carrier_category),
-                    getString(R.string.clock_category),
-                    getString(R.string.icon_category),
-                    getString(R.string.traffic_category)};
+                    getString(R.string.icon_category)};
         return titleString;
     }
 }

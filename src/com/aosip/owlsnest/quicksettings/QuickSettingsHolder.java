@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.lockscreen;
+package com.aosip.owlsnest.quicksettings;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -26,15 +26,15 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.lockscreen.OptionsCategory;
+import com.aosip.owlsnest.quicksettings.ExpandedCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
-
-public class LockscreenHolder extends SettingsPreferenceFragment {
+public class QuickSettingsHolder extends SettingsPreferenceFragment {
 
     ViewPager mViewPager;
     String titleString[];
@@ -83,7 +83,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new OptionsCategory();
+            frags[0] = new ExpandedCategory();
         }
 
         @Override
@@ -105,7 +105,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.options_category)};
+                    getString(R.string.expanded_category)};
         return titleString;
     }
 }

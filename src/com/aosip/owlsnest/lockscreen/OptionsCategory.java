@@ -18,15 +18,12 @@ package com.aosip.owlsnest.lockscreen;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
-import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.support.v14.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -34,11 +31,6 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class OptionsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
-    private static final String PREF_FINGERPRINT_VIBE = "fingerprint_success_vib";
-
-    private FingerprintManager mFingerprintManager;
-    private SwitchPreference mFingerprintSuccessVib;
 
     @Override
     public int getMetricsCategory() {
@@ -49,16 +41,6 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.options);
-
-        final PreferenceScreen prefSet = getPreferenceScreen();
-
-        // Remove the fingerprint success vibe switch if the device doesnt support it
-        mFingerprintManager = (FingerprintManager) this.getSystemService(
-                Context.FINGERPRINT_SERVICE);
-        mFingerprintSuccessVib = (SwitchPreference) findPreference(PREF_FINGERPRINT_VIBE);
-        if (mFingerprintManager == null) {
-            getPreferenceScreen().removePreference(mFingerprintSuccessVib);
-        }
     }
 
     @Override

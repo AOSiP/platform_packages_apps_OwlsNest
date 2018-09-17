@@ -14,38 +14,41 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.navigation;
+package com.aosip.owlsnest.quicksettings;
 
-import android.content.Intent;
+import android.content.ContentResolver;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 import android.provider.Settings;
 
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.settings.R;
+public class ExpandedCategory extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
-public class NavigationCategory extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+    @Override
+    public int getMetricsCategory() {
+        return MetricsEvent.OWLSNEST;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.navigation);
+        addPreferencesFromResource(R.xml.expanded);
 
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+    }
+
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.OWLSNEST;
-    }
+    return false;
+  }
 }

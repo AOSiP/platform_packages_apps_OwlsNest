@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016-2017 AOSiP
+<!-- Copyright (C) 2015-2018 AOSiP
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -18,8 +19,14 @@
     <color name="tab_text_color">@*android:color/accent_device_default_light</color>
     <color name="white">#FFF</color>
 
-    <!-- Accent picker -->
-    <color name="accent_picker_white_accent">@android:color/white</color>
-    <color name="accent_picker_dark_accent">@android:color/black</color>
+    <color name="owlsnest_oval_advanced">#ff6868</color>
+    <color name="owlsnest_oval_buttons">#31aa5c</color>
+    <color name="owlsnest_oval_gesture">#ffaf66</color>
+    <color name="owlsnest_oval_lockscreen">#84a7f4</color>
+    <color name="owlsnest_oval_nav">#f4d484</color>
+    <color name="owlsnest_oval_notif">#9863d8</color>
+    <color name="owlsnest_oval_qs">#fa6dff</color>
+    <color name="owlsnest_oval_recents">#6fdb3d</color>
+    <color name="owlsnest_oval_status">#8da2e8</color>
 
 </resources>

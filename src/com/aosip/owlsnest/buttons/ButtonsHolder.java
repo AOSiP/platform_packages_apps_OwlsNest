@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Android Open Source Illusion Project
+ *  Copyright (C) 2015-2018 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.buttons.PowermenuCategory;
-import com.aosip.owlsnest.buttons.VolumeCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class ButtonsHolder extends SettingsPreferenceFragment {
@@ -85,12 +84,6 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new PowermenuCategory();
-            frags[1] = new VolumeCategory();
-        try {
-                frags[2] = new ButtonsCategory();
-        } catch (IndexOutOfBoundsException e) {
-            // Do nothing
-        }
         }
 
         @Override
@@ -110,15 +103,10 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
     }
 
     private String[] getTitles() {
-        if (getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys) > 64) {
-            return new String[] { getString(R.string.powermenu_category),
-                    getString(R.string.volume_category),
-                    getString(R.string.button_category)};
-        } else {
-            return new String[] { getString(R.string.powermenu_category),
-                    getString(R.string.volume_category)};
-        }
+        String titleString[];
+        titleString = new String[]{
+                    getString(R.string.powermenu_category)};
+        return titleString;
     }
 }
 
