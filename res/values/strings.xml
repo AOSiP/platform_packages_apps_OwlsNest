@@ -47,6 +47,7 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
+
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Statusbar</string>
     <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
@@ -83,6 +84,9 @@
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
     <string name="expanded_category">Expanded</string>
 
+    <string name="brightness_slider_bottom_title">Bottom brightness slider</string>
+    <string name="brightness_slider_bottom_summary">Show brightness slider on the bottom of the quick settings panel</string>
+
 
     <!--Owlsnest navigation-->
     <string name="navigation_title">Navigation</string>
@@ -91,6 +95,7 @@
 
     <string name="navbar_tuner_title">Edit navigation bar</string>
     <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
+
 
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardware buttons</string>
@@ -134,6 +139,7 @@
 
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
