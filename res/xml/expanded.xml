@@ -25,7 +25,7 @@
         android:key="qs_show_brightness"
         android:title="@string/qs_show_brightness_title"
         android:summary="@string/qs_show_brightness_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
         android:key="qs_brightness_position_bottom"
