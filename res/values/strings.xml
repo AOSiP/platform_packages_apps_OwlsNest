@@ -112,6 +112,7 @@
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
+    <string name="headsup_category">Heads-Up</string>
 
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast app icon</string>

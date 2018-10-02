@@ -32,7 +32,7 @@
 
     <PreferenceScreen
        android:key="notification"
-       android:fragment="com.aosip.owlsnest.notification.NotificationCategory"
+       android:fragment="com.aosip.owlsnest.notification.NotificationHolder"
        android:title="@string/notification_title"
        android:summary="@string/notification_summary"
        android:icon="@drawable/ic_owlsnest_notif_background"/>
