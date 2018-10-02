@@ -46,7 +46,7 @@
 
     <PreferenceScreen
        android:key="buttons"
-       android:fragment="com.aosip.owlsnest.buttons.PowermenuCategory"
+       android:fragment="com.aosip.owlsnest.buttons.ButtonsHolder"
        android:title="@string/buttons_title"
        android:summary="@string/buttons_summary"
        android:icon="@drawable/ic_owlsnest_buttons_background" />

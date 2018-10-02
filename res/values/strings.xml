@@ -138,6 +138,7 @@
     <string name="buttons_title">Hardware buttons</string>
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
     <string name="powermenu_category">Power</string>
+    <string name="volume_category">Volume</string>
 
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Reboot</string>
