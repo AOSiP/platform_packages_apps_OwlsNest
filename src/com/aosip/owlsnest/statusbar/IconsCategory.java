@@ -16,9 +16,11 @@
 
 package com.aosip.owlsnest.statusbar;
 
+import android.content.ContentResolver;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -26,6 +28,8 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class IconsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String KEY_HIDE_NOTCH = "statusbar_hide_notch";
 
     @Override
     public int getMetricsCategory() {
@@ -37,6 +41,16 @@ public class IconsCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.icons);
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        final String displayCutout = getResources().getString(
+                com.android.internal.R.string.config_mainBuiltInDisplayCutout);
+        if(displayCutout.isEmpty()) {
+            final Preference hideNotchPref =
+                (Preference) getPreferenceScreen().findPreference(KEY_HIDE_NOTCH);
+            getPreferenceScreen().removePreference(hideNotchPref);
+        }
 
     }
 
