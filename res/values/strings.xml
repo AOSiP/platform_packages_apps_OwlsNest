@@ -296,4 +296,8 @@
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
 
+    <!-- Hide notch -->
+    <string name="hide_notch_title">Hide notch</string>
+    <string name="hide_notch_summary">If enabled it hides notch and fills in side gaps</string>
+
 </resources>
