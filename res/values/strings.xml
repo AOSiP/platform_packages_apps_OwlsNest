@@ -441,6 +441,11 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
+
     <!-- Themes -->
     <string name="theme_category_title">Theme options</string>
     <string name="accent_picker_dialog_title">Select an accent color</string>
