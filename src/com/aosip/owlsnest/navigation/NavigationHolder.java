@@ -32,7 +32,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.aosip.owlsnest.navigation.NavigationCategory;
-import com.aosip.owlsnest.navigation.PulseSettings;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class NavigationHolder extends SettingsPreferenceFragment {
@@ -85,7 +84,6 @@ public class NavigationHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new NavigationCategory();
-            frags[1] = new PulseSettings();
         }
 
         @Override
@@ -107,8 +105,7 @@ public class NavigationHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.navigation_category),
-                    getString(R.string.pulse_settings)};
+                    getString(R.string.navigation_category)};
         return titleString;
     }
 }
