@@ -50,4 +50,10 @@
         settings:interval="5"
         android:defaultValue="255" />
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="status_bar_locked_on_secure_keyguard"
+        android:title="@string/lockscreen_qs_disabled_title"
+        android:summary="@string/lockscreen_qs_disabled_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
