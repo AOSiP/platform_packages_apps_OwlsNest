@@ -61,6 +61,10 @@
     <string name="roaming_indicator_icon_title">Roaming indicator</string>
     <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
 
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
+
     <!-- Status bar clock options -->
     <string name="clock_category">Clock</string>
     <string name="status_bar_clock">Clock and Date</string>
