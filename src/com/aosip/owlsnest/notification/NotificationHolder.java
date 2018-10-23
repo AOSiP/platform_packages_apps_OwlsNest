@@ -25,6 +25,7 @@ import android.provider.Settings;
 import android.provider.SearchIndexableResource;
 import android.widget.Toast;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -49,6 +50,8 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         return MetricsEvent.OWLSNEST;
     }
 
+    private Preference mBatteryLightPref;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,6 +70,13 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
             mEdgeLightColorPreference.setSummary(edgeLightColorHex);
         }
         mEdgeLightColorPreference.setNewPreviewColor(edgeLightColor);
+
+        mBatteryLightPref = (Preference) findPreference("charging_light");
+        PreferenceScreen prefSet = getPreferenceScreen();
+        if (!getResources().getBoolean(
+                com.android.internal.R.bool.config_deviceHasLED)) {
+            prefSet.removePreference(mBatteryLightPref);
+        }
       }
 
     @Override
