@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -40,12 +41,21 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         return MetricsEvent.OWLSNEST;
     }
 
+    private Preference mBatteryLightPref;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.notification);
+        addPreferencesFromResource(R.xml.notification);;
+
+        mBatteryLightPref = (Preference) findPreference("charging_light");
+        PreferenceScreen prefSet = getPreferenceScreen();
+        if (!getResources().getBoolean(
+                com.android.internal.R.bool.config_deviceHasLED)) {
+            prefSet.removePreference(mBatteryLightPref);
+        }
       }
 
     @Override
