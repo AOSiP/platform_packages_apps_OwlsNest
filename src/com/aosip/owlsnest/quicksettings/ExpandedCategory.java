@@ -26,6 +26,7 @@ import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 
+import com.aosip.support.preference.CustomSeekBarPreference;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -38,9 +39,11 @@ import java.util.List;
 public class ExpandedCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String QUICK_PULLDOWN = "quick_pulldown";
 
+    private CustomSeekBarPreference mQsPanelAlpha;
     private ListPreference mQuickPulldown;
     ListPreference mSmartPulldown;
 
@@ -54,6 +57,13 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.expanded);
         ContentResolver resolver = getActivity().getContentResolver();
+
+        // QS transparency
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
+        mQsPanelAlpha.setValue(qsPanelAlpha);
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
 
         // Quick Pulldown
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
@@ -84,6 +94,12 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(resolver, Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
             updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) newValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
+                    UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mSmartPulldown) {
             int smartPulldown = Integer.valueOf((String) newValue);

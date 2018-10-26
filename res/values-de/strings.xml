@@ -487,4 +487,5 @@
     <string name="dialog_delete_title">Löschen</string>
     <string name="dialog_delete_message">Ausgewähltes Objekt entfernen?</string>
     <string name="app_ops_settings_summary">App-Berechtigungen verwalten</string>
+
 </resources>

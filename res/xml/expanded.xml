@@ -21,6 +21,13 @@
     android:layout="@layout/tab_ui"
     android:title="@string/quicksettings_title" >
 
+    <com.aosip.support.preference.CustomSeekBarPreference
+	    android:key="qs_panel_alpha"
+	    android:title="@string/qs_panel_alpha_title"
+	    android:max="255"
+	    settings:min="0"
+	    settings:units="" />
+
     <com.aosip.support.preference.SecureSettingSwitchPreference
         android:key="qs_show_info_header"
         android:title="@string/show_info_header_title"
