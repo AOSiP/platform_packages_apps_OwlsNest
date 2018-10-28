@@ -18,25 +18,30 @@ package com.aosip.owlsnest.statusbar;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceScreen;
-import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.widget.EditText;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CarrierCategory extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
 
@@ -108,5 +113,26 @@ public class CarrierCategory extends SettingsPreferenceFragment implements
             mCustomCarrierLabel.setSummary(mCustomCarrierLabelText);
         }
     }
+
+    /**
+     * For Search.
+     */
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                 @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                     final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.carrier;
+                    result.add(sir);
+                    return result;
+                }
+                 @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    final List<String> keys = super.getNonIndexableKeys(context);
+                    return keys;
+                }
+    };
 }
 
