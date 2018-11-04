@@ -86,7 +86,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
         mAutoColor = (SwitchPreference) findPreference("pulse_auto_color");
         mAutoColor.setChecked(Settings.Secure.getIntForUser(getContentResolver(),
-                Settings.Secure.PULSE_AUTO_COLOR, 0, UserHandle.USER_CURRENT) == 1);
+                Settings.System.PULSE_AUTO_COLOR, 0, UserHandle.USER_CURRENT) == 1);
         mAutoColor.setOnPreferenceChangeListener(this);
 
         PreferenceCategory fadingBarsCat = (PreferenceCategory)findPreference("pulse_fading_bars_category");
@@ -198,7 +198,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         } else if (preference.equals(mAutoColor)) {
             boolean enabled = ((Boolean) newValue).booleanValue();
             Settings.Secure.putIntForUser(getContentResolver(),
-                    Settings.Secure.PULSE_AUTO_COLOR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
+                    Settings.System.PULSE_AUTO_COLOR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         } else if (preference.equals(mPulseColor)) {
             int color = ((Integer) newValue).intValue();
