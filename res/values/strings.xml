@@ -97,6 +97,10 @@
     <string name="lockscreen_battery_info_title">Battery info</string>
     <string name="lockscreen_battery_info_summary">Display negotiated charger max current-voltage and battery temperature on lockscreen while charging</string>
 
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lock screen</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
