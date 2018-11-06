@@ -66,6 +66,14 @@
     <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
     <string name="status_bar_logo_style_title">Custom logo style</string>
 
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Ticker</string>
+    <string name="ticker_summary">Notification preview in status bar</string>
+    <string name="ticker_animation_mode_title">Ticker animation</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
+
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Enabled</string>
     <string name="clock_disabled">Disabled</string>
@@ -554,5 +562,4 @@
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
     <string name="app_ops_settings_summary">Control apps permissions</string>
-
 </resources>
