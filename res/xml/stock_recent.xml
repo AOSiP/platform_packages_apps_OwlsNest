@@ -21,6 +21,11 @@
     android:layout="@layout/tab_ui"
     android:title="@string/stock_recent" >
 
+    <Preference
+        android:key="recents_icon_pack"
+        android:title="@string/recents_icon_pack_title"
+        android:summary="@string/recents_icon_pack_summary" />
+
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="show_clear_all_recents"
         android:title="@string/show_clear_all_recents_button_title"
