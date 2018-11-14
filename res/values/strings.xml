@@ -283,6 +283,10 @@
     <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
     <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
 
+    <!-- Disable Quick QS -->
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_animation_options_title">Animations</string>
     <string name="qs_tile_animation_style_title">Style</string>
