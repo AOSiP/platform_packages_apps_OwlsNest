@@ -18,5 +18,4 @@
         android:key="force_ambient_for_media"
         android:title="@string/force_ambient_for_media_title"
         android:defaultValue="true" />
-
 </PreferenceScreen>
