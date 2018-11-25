@@ -24,6 +24,7 @@
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="powermenu_reboot"
         android:title="@string/powermenu_reboot_title"
+        android:summary="@string/powermenu_reboot_summary"
         android:defaultValue="true" />
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
@@ -36,6 +37,7 @@
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="powermenu_screenshot"
         android:title="@string/powermenu_screenshot_title"
+        android:summary="@string/powermenu_screenshot_summary"
         android:defaultValue="false" />
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
