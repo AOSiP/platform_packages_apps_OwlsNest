@@ -377,6 +377,7 @@
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="options_category">Various</string>
+    <string name="secure_lockscreen">Secure lockscreen options</string>
 
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
