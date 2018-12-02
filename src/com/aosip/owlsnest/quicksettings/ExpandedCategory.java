@@ -57,6 +57,7 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.expanded);
+        getActivity().getActionBar().setTitle(R.string.expanded_category);
         PreferenceScreen prefs = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 

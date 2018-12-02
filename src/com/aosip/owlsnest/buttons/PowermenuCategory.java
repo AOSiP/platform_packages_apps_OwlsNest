@@ -50,6 +50,7 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.powermenu);
+        getActivity().getActionBar().setTitle(R.string.powermenu_category);
 
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();

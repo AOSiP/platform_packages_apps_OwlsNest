@@ -48,6 +48,7 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        getActivity().getActionBar().setTitle(R.string.system_category);
         final PreferenceScreen prefSet = getPreferenceScreen();
 
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);

@@ -58,6 +58,7 @@ public class HeadsUpCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.headsup);
+        getActivity().getActionBar().setTitle(R.string.headsup_category);
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 

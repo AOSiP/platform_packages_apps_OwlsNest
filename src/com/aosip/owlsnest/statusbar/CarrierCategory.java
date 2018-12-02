@@ -56,7 +56,7 @@ public class CarrierCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        getActivity().getActionBar().setTitle(R.string.carrier_category);
         addPreferencesFromResource(R.xml.carrier);
 
         // custom carrier label
