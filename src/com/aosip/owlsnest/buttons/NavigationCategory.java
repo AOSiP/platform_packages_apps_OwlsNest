@@ -69,6 +69,7 @@ public class NavigationCategory extends ActionFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.hardware_navigation);
+        getActivity().getActionBar().setTitle(R.string.hardware_keys_category);
         final PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getContentResolver();
         final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());

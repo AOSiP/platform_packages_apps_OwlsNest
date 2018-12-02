@@ -50,6 +50,7 @@ public class GestureCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.gesture);
+        getActivity().getActionBar().setTitle(R.string.gesture_category);
 
     }
 

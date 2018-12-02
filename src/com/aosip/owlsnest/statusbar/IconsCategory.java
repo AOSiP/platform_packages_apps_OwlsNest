@@ -47,6 +47,7 @@ public class IconsCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.icons);
+        getActivity().getActionBar().setTitle(R.string.icon_category);
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 

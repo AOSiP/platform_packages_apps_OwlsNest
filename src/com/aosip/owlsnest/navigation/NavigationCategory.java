@@ -37,6 +37,7 @@ public class NavigationCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.navigation);
+        getActivity().getActionBar().setTitle(R.string.navigation_category);
 
     }
 

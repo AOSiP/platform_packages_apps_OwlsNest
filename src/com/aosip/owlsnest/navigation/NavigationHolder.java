@@ -31,7 +31,6 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.navigation.NavigationCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class NavigationHolder extends SettingsPreferenceFragment {

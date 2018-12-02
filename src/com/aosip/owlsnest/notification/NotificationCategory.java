@@ -50,6 +50,7 @@ public class NotificationCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.notification);
+        getActivity().getActionBar().setTitle(R.string.notification_category);
       }
 
     @Override

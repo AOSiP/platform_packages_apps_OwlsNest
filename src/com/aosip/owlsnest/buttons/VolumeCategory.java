@@ -47,6 +47,7 @@ public class VolumeCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.volume);
+        getActivity().getActionBar().setTitle(R.string.volume_category);
     }
 
     @Override

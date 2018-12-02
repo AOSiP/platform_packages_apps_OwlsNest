@@ -92,6 +92,7 @@ public class StockRecentCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.stock_recent);
+        getActivity().getActionBar().setTitle(R.string.stock_recent);
         ContentResolver resolver = getActivity().getContentResolver();
 
         // clear all recents

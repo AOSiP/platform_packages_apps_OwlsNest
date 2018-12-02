@@ -55,7 +55,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.battery_light_settings);
-
+        getActivity().getActionBar().setTitle(R.string.battery_light_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
         mColorCategory = (PreferenceCategory) findPreference("battery_light_cat");
 

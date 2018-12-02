@@ -46,6 +46,7 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.options);
+        getActivity().getActionBar().setTitle(R.string.options_category);
     }
 
     @Override

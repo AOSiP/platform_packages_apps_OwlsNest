@@ -49,7 +49,7 @@ public class BatteryCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.battery_settings);
-
+        getActivity().getActionBar().setTitle(R.string.battery_category);
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mStatusBarBatteryShowPercent =

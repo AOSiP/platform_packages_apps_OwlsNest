@@ -68,6 +68,7 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.clock_date_settings);
+        getActivity().getActionBar().setTitle(R.string.clock_category);
 
         mClockStyle = (ListPreference) findPreference(PREF_CLOCK_STYLE);
         mClockStyle.setOnPreferenceChangeListener(this);
