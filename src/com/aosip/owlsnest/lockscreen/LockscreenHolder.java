@@ -30,7 +30,6 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.aosip.owlsnest.lockscreen.OptionsCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 
@@ -45,15 +44,12 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContainer = container;
-
         View view = inflater.inflate(R.layout.preference_ui, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
         mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
         mTabs.setViewPager(mViewPager);
-
-        setHasOptionsMenu(true);
         return view;
     }
 

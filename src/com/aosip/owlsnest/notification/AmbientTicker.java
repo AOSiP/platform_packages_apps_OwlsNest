@@ -30,9 +30,6 @@ public class AmbientTicker extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.ambient_ticker);
-
-        getActivity().getActionBar().setTitle(R.string.force_ambient_for_media_pref_title);
-
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.ambient_ticker_footer);
     }
 
