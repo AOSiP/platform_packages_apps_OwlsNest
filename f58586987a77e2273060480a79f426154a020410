@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "88d653e4_c51c7f64",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2018-12-04T01:33:14Z",
+      "side": 1,
+      "message": "when adding in nest check strings for the title of each category. so this would be in gestures so check for the \"Owlsnest Gesture\" section",
+      "revId": "f58586987a77e2273060480a79f426154a020410",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": false
+    }
+  ]
+}
