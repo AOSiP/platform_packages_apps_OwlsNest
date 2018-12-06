@@ -20,8 +20,10 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -36,6 +38,9 @@ public class IconsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String KEY_HIDE_NOTCH = "statusbar_hide_notch";
+    private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
+
+    private SwitchPreference mShowKronicLogo;
 
     @Override
     public int getMetricsCategory() {
@@ -58,6 +63,11 @@ public class IconsCategory extends SettingsPreferenceFragment implements
             getPreferenceScreen().removePreference(hideNotchPref);
         }
 
+        mShowKronicLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
+        mShowKronicLogo.setChecked((Settings.System.getInt(getContentResolver(),
+             Settings.System.STATUS_BAR_LOGO, 0) == 1));
+        mShowKronicLogo.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -65,7 +75,13 @@ public class IconsCategory extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if  (preference == mShowKronicLogo) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
