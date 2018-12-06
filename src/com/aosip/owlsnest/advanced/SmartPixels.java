@@ -149,8 +149,11 @@ public class SmartPixels extends SettingsPreferenceFragment implements
                  @Override
                 public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
                         boolean enabled) {
+                    if (context.getResources().getBoolean(com.android.internal.R.bool.config_enableSmartPixels))
+                        return new ArrayList<SearchIndexableResource>();
+
                     final ArrayList<SearchIndexableResource> result = new ArrayList<>();
-                     final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    final SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.smart_pixels;
                     result.add(sir);
                     return result;
