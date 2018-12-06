@@ -140,6 +140,10 @@
     <string name="show_network_traffic_all">Both</string>
     <string name="nettraf_font_size">Single net font size</string>
 
+    <!-- DU logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+
 
     <!--Owlsnest Notification-->
     <string name="notification_title">Notification</string>

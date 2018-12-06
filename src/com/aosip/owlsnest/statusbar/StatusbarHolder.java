@@ -51,6 +51,7 @@ import java.util.List;
 public class StatusbarHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
     private static final String PREF_AM_PM_STYLE = "status_bar_am_pm";
     private static final String PREF_CLOCK_DATE_DISPLAY = "clock_date_display";
     private static final String PREF_CLOCK_DATE_STYLE = "clock_date_style";
@@ -92,11 +93,18 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mThreshold;
     private SystemSettingSwitchPreference mShowArrows;
 
+    private SwitchPreference mShowKronicLogo;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.statusbar);
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mShowKronicLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
+        mShowKronicLogo.setChecked((Settings.System.getInt(getContentResolver(),
+             Settings.System.STATUS_BAR_LOGO, 0) == 1));
+        mShowKronicLogo.setOnPreferenceChangeListener(this);
 
         mClockAmPmStyle = (ListPreference) findPreference(PREF_AM_PM_STYLE);
         mClockAmPmStyle.setOnPreferenceChangeListener(this);
@@ -211,7 +219,12 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         AlertDialog dialog;
-        if (preference == mNetTrafficLocation) {
+        if  (preference == mShowKronicLogo) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
+            return true;
+        } else if (preference == mNetTrafficLocation) {
             int location = Integer.valueOf((String) objValue);
             int index = mNetTrafficLocation.findIndexOfValue((String) objValue);
             mNetTrafficLocation.setSummary(mNetTrafficLocation.getEntries()[index]);
