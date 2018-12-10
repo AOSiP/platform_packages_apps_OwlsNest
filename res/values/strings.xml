@@ -99,6 +99,9 @@
     <string name="clock_date_style_lowercase">Lowercase</string>
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
+    <!-- Smart Clock -->
+    <string name="use_smart_clock">Smart Clock</string>
+    <string name="use_smart_clock_summary">Show statusbar clock periodically</string>
 
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Battery icon</string>
