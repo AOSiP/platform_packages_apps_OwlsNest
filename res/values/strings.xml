@@ -212,6 +212,9 @@
     <string name="brightness_slider_bottom_title">Bottom brightness slider</string>
     <string name="brightness_slider_bottom_summary">Show brightness slider on the bottom of the quick settings panel</string>
 
+    <string name="show_secure_title">Show security footer</string>
+    <string name="show_info_header_title">Show information header</string>
+
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animations</string>  
     <string name="qs_tile_animation_style_title">Animation style</string>
