@@ -56,7 +56,7 @@
             android:dependency="qs_show_brightness"
             android:defaultValue="true" />
 
-     </PreferenceCategory>
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="qs_tiles"
@@ -89,7 +89,17 @@
             android:entryValues="@array/qs_tile_animation_interpolator_values"
             android:persistent="false" />
 
-     </PreferenceCategory>
+    </PreferenceCategory>
+
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="qs_show_info_header"
+        android:title="@string/show_info_header_title"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        android:key="qs_show_secure"
+        android:title="@string/show_secure_title"
+        android:defaultValue="true" />
 
 </PreferenceScreen>
 
