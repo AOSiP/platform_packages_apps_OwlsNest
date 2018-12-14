@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- QS Tile Styles -->
+    <dimen name="qs_styles_layout_opacity" format="float">0.50</dimen>
     <dimen name="qs_styles_layout_background_size">70dp</dimen>
     <dimen name="qs_styles_layout_foreground_size">30dp</dimen>
     <dimen name="qs_styles_tile_preview_spacing">15dp</dimen>
