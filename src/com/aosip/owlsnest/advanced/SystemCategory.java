@@ -18,6 +18,8 @@ package com.aosip.owlsnest.advanced;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.res.Resources;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -33,6 +35,8 @@ import com.android.settings.search.Indexable;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.aosip.owlsnest.utils.TelephonyUtils;
 import com.aosip.owlsnest.utils.Utils;
+import com.aosip.owlsnest.preference.CustomSeekBarPreference;
+import com.aosip.owlsnest.preference.SecureSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,8 +46,14 @@ public class SystemCategory extends SettingsPreferenceFragment implements
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
+    private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
+    private static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
+    private static final String SYSUI_ROUNDED_FWVALS = "sysui_rounded_fwvals";
 
     private ListPreference mFlashlightOnCall;
+    private CustomSeekBarPreference mCornerRadius;
+    private CustomSeekBarPreference mContentPadding;
+    private SecureSettingSwitchPreference mRoundedFwvals;
 
     @Override
     public int getMetricsCategory() {
@@ -73,6 +83,57 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         if (!TelephonyUtils.isVoiceCapable(getActivity())) {
 			prefSet.removePreference(incallVibCategory);
         }
+
+        Resources res = null;
+        Context ctx = getContext();
+        float density = Resources.getSystem().getDisplayMetrics().density;
+
+        try {
+            res = ctx.getPackageManager().getResourcesForApplication("com.android.systemui");
+        } catch (NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        // Rounded Corner Radius
+        mCornerRadius = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_SIZE);
+        mCornerRadius.setOnPreferenceChangeListener(this);
+        int resourceIdRadius = res.getIdentifier("com.android.systemui:dimen/rounded_corner_radius", null, null);
+        int cornerRadius = Settings.Secure.getInt(ctx.getContentResolver(), Settings.Secure.SYSUI_ROUNDED_SIZE,
+                (int) (res.getDimension(resourceIdRadius) / density));
+        mCornerRadius.setValue(cornerRadius / 1);
+
+        // Rounded Content Padding
+        mContentPadding = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_CONTENT_PADDING);
+        mContentPadding.setOnPreferenceChangeListener(this);
+        int resourceIdPadding = res.getIdentifier("com.android.systemui:dimen/rounded_corner_content_padding", null,
+                null);
+        int contentPadding = Settings.Secure.getInt(ctx.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING,
+                (int) (res.getDimension(resourceIdPadding) / density));
+        mContentPadding.setValue(contentPadding / 1);
+
+        // Rounded use Framework Values
+        mRoundedFwvals = (SecureSettingSwitchPreference) findPreference(SYSUI_ROUNDED_FWVALS);
+        mRoundedFwvals.setOnPreferenceChangeListener(this);
+
+    }
+
+    private void restoreCorners() {
+        Resources res = null;
+        float density = Resources.getSystem().getDisplayMetrics().density;
+
+        try {
+            res = getContext().getPackageManager().getResourcesForApplication("com.android.systemui");
+        } catch (NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        int resourceIdRadius = res.getIdentifier("com.android.systemui:dimen/rounded_corner_radius", null, null);
+        int resourceIdPadding = res.getIdentifier("com.android.systemui:dimen/rounded_corner_content_padding", null,
+                null);
+        mCornerRadius.setValue((int) (res.getDimension(resourceIdRadius) / density));
+        mContentPadding.setValue((int) (res.getDimension(resourceIdPadding) / density));
+
     }
 
     @Override
@@ -88,6 +149,14 @@ public class SystemCategory extends SettingsPreferenceFragment implements
             mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
             mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
             return true;
+        } else if (preference == mCornerRadius) {
+            Settings.Secure.putInt(getContext().getContentResolver(), Settings.Secure.SYSUI_ROUNDED_SIZE,
+                    ((int) newValue) * 1);
+        } else if (preference == mContentPadding) {
+            Settings.Secure.putInt(getContext().getContentResolver(), Settings.Secure.SYSUI_ROUNDED_CONTENT_PADDING,
+                    ((int) newValue) * 1);
+        } else if (preference == mRoundedFwvals) {
+            restoreCorners();
         }
         return false;
     }
