@@ -173,11 +173,11 @@
     <string name="quicksettings_title">快速設定</string>
     <string name="quicksettings_summary">管理快速設定和擴展導覽列</string>
     <string name="expanded_category">延伸</string>
-    <string name="qs_tile_title">Expanded</string>
+    <string name="qs_tile_title">延伸</string>
     <!-- Brigntess Slider -->
-    <string name="tuner_show_auto_brightness">Adaptive brightness button</string>
-    <string name="tuner_auto_brightness_right">Right position for adaptive brightness button</string>
-    <string name="tuner_show_brightness_buttons">Brightness control buttons</string>
+    <string name="tuner_show_auto_brightness">自動調整亮度按鈕</string>
+    <string name="tuner_auto_brightness_right">自動調整亮度按鈕的右側</string>
+    <string name="tuner_show_brightness_buttons">亮度控制按鈕</string>
     <string name="qs_show_brightness_title">亮度滑塊</string>
     <string name="qs_show_brightness_summary">顯示或隱藏快速圖塊區亮度滑塊的選項</string>
     <string name="brightness_slider_bottom_title">底部亮度滑塊</string>
@@ -213,20 +213,20 @@
     <string name="navbar_tuner_title">編輯導覽列</string>
     <string name="navbar_tuner_summary">編輯導覽列佈局和按鈕</string>
     <!-- Hardware button navigation -->
-    <string name="hardware_keys_volume_keys_title">Volume rocker</string>
-    <string name="hardware_keys_home_key_title">Home button</string>
-    <string name="hardware_keys_menu_key_title">Menu button</string>
-    <string name="hardware_keys_assist_key_title">Search button</string>
-    <string name="hardware_keys_appswitch_key_title">Overview button</string>
-    <string name="hardware_keys_back_key_title">Back button</string>
-    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
-    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
-    <string name="hardware_keys_long_press_summary">Set long press action</string>
-    <string name="hardware_keys_single_tap_title">Single tap action</string>
-    <string name="hardware_keys_long_press_title">Long press action</string>
-    <string name="hardware_keys_double_tap_title">Double tap action</string>
-    <string name="hardware_keys_category">Navigation</string>
-    <string name="hardware_keys_disable_title">Disable navigation buttons</string>
+    <string name="hardware_keys_volume_keys_title">音量滑動條</string>
+    <string name="hardware_keys_home_key_title">主螢幕按鈕</string>
+    <string name="hardware_keys_menu_key_title">選單鍵</string>
+    <string name="hardware_keys_assist_key_title">搜尋按鈕</string>
+    <string name="hardware_keys_appswitch_key_title">預覽按鍵佈局</string>
+    <string name="hardware_keys_back_key_title">返回鍵</string>
+    <string name="hardware_keys_double_tap_summary">設定輕觸兩下動作</string>
+    <string name="hardware_keys_single_tap_summary">設定輕觸一下動作</string>
+    <string name="hardware_keys_long_press_summary">設定長按動作</string>
+    <string name="hardware_keys_single_tap_title">輕觸一下動作</string>
+    <string name="hardware_keys_long_press_title">長按動作</string>
+    <string name="hardware_keys_double_tap_title">雙擊動作</string>
+    <string name="hardware_keys_category">導覽</string>
+    <string name="hardware_keys_disable_title">停用導覽欄按鍵</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">實體按鍵</string>
     <string name="buttons_summary">自定義裝置的物理按鍵行為</string>
@@ -250,8 +250,8 @@
     <string name="volume_rocker_music_controls_title">播放控制</string>
     <string name="volume_rocker_music_controls_summary">螢幕關閉時，長按音量鍵即可切換曲目</string>
     <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
-    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
+    <string name="volume_keys_control_ring_tone_title">控制鈴聲音量</string>
+    <string name="volume_keys_control_ring_tone_summary">在預設情況下，音量按鈕將控制媒體音量。啓用此選項以切換到鈴聲音量</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">音量鍵接聽</string>
     <string name="volume_answer_call_summary">按下音量鍵時接聽電話</string>
@@ -288,8 +288,8 @@
     <string name="double_tap_options">輕觸兩下即可休眠</string>
     <string name="aosp_gesture_title">AOSP 手勢</string>
     <!--3-Finger screenshot-->
-    <string name="three_finger_gesture">Three finger gesture</string>
-    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+    <string name="three_finger_gesture">三指手勢</string>
+    <string name="three_finger_gesture_summary">同時滑動三支手指以擷取螢幕畫面</string>
     <!--Double Tap to Sleep Navbar-->
     <string name="double_tap_sleep_navbar">導覽列</string>
     <!--Double Tap to Sleep Lockscreen-->
@@ -326,8 +326,8 @@
     <string name="unlock_quick_unlock_control_title">快速解鎖</string>
     <string name="unlock_quick_unlock_control_summary">輸入正確的 PIN/密碼時手機將自動解鎖</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
-    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_sucess_vib_title">指紋認證震動</string>
+    <string name="fprint_sucess_vib_summary">成功認證指紋時震動</string>
     <!--Owlsnest advanced-->
     <string name="advanced_title">進階設定</string>
     <string name="advanced_summary">其他和額外的系統設定</string>
@@ -345,10 +345,10 @@
     <string name="accent_picker_material_colors">材料設計</string>
     <string name="accent_picker_custom_colors">使用者請求</string>
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">通話震動選項</string>
+    <string name="incall_vibrate_connect_title">接通時震動</string>
+    <string name="incall_vibrate_call_wait_title">通話等待時震動</string>
+    <string name="incall_vibrate_disconnect_title">掛斷時震動</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">智慧 Pixels</string>
     <string name="smart_pixels_warning_text">智慧 Pixels 是一項省電功能。這取決於你要關掉多少像素，你就可以看見電池的續航力有明顯的改進。為了讓使用者有比較好的體驗，我們建議你將停用的像素數量設置為75%。</string>
@@ -374,5 +374,5 @@
     <string name="force_ambient_for_media_pref_summary">配置環境音樂通知</string>
     <string name="ambient_ticker_footer">鎖定螢幕音樂通知會在關閉的螢幕上顯示正在播放的音樂曲目資訊。\n\n即使鎖定螢幕音樂通知被禁用，在播放新曲目時它仍會被觸發，強制在螢幕中央顯示簡潔的曲目資訊。\n\n您也可以雙擊曲目資訊以跳過此曲目。</string>
     <string name="force_ambient_for_media_title">啟用</string>
-    <string name="app_ops_settings_summary">Control apps permissions</string>
+    <string name="app_ops_settings_summary">控制應用权限</string>
 </resources>
