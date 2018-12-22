@@ -26,6 +26,12 @@
         android:summary="@string/app_ops_settings_summary"
         android:fragment="com.android.settings.applications.appops.AppOpsSummary"/>
 
+    <Preference
+        android:key="default_usb_configuration"
+        android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment"
+        android:title="@string/usb_default_config_title"
+        android:summary="@string/usb_default_config_summary"/>
+
     <com.aosip.support.preference.GlobalSettingSwitchPreference
         android:key="show_cpu_overlay"
         android:title="@string/show_cpu_info"
