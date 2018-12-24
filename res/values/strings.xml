@@ -143,6 +143,8 @@
     <!-- DU logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="status_bar_logo_style_title">Custom logo style</string>
+
 
 
     <!--Owlsnest Notification-->
