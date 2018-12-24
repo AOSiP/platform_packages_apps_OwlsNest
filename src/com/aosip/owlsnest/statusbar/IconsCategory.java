@@ -19,8 +19,10 @@ package com.aosip.owlsnest.statusbar;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.SwitchPreference;
@@ -41,6 +43,7 @@ public class IconsCategory extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
 
     private SwitchPreference mShowKronicLogo;
+    private ListPreference mLogoStyle;
 
     @Override
     public int getMetricsCategory() {
@@ -68,6 +71,13 @@ public class IconsCategory extends SettingsPreferenceFragment implements
              Settings.System.STATUS_BAR_LOGO, 0) == 1));
         mShowKronicLogo.setOnPreferenceChangeListener(this);
 
+        mLogoStyle = (ListPreference) findPreference("status_bar_logo_style");
+        mLogoStyle.setOnPreferenceChangeListener(this);
+        int logoStyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_LOGO_STYLE,
+                0, UserHandle.USER_CURRENT);
+        mLogoStyle.setValue(String.valueOf(logoStyle));
+        mLogoStyle.setSummary(mLogoStyle.getEntry());
     }
 
     @Override
@@ -80,6 +90,14 @@ public class IconsCategory extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
+            return true;
+        } else if (preference.equals(mLogoStyle)) {
+            int logoStyle = Integer.parseInt(((String) objValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO_STYLE, logoStyle, UserHandle.USER_CURRENT);
+            int index = mLogoStyle.findIndexOfValue((String) objValue);
+            mLogoStyle.setSummary(
+                    mLogoStyle.getEntries()[index]);
             return true;
         }
         return false;
