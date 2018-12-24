@@ -94,6 +94,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mShowArrows;
 
     private SwitchPreference mShowKronicLogo;
+    private ListPreference mLogoStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,6 +106,14 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
         mShowKronicLogo.setChecked((Settings.System.getInt(getContentResolver(),
              Settings.System.STATUS_BAR_LOGO, 0) == 1));
         mShowKronicLogo.setOnPreferenceChangeListener(this);
+
+        mLogoStyle = (ListPreference) findPreference("status_bar_logo_style");
+        mLogoStyle.setOnPreferenceChangeListener(this);
+        int logoStyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_LOGO_STYLE,
+                0, UserHandle.USER_CURRENT);
+        mLogoStyle.setValue(String.valueOf(logoStyle));
+        mLogoStyle.setSummary(mLogoStyle.getEntry());
 
         mClockAmPmStyle = (ListPreference) findPreference(PREF_AM_PM_STYLE);
         mClockAmPmStyle.setOnPreferenceChangeListener(this);
@@ -223,6 +232,14 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
+            return true;
+        } else if (preference.equals(mLogoStyle)) {
+            int logoStyle = Integer.parseInt(((String) objValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO_STYLE, logoStyle, UserHandle.USER_CURRENT);
+            int index = mLogoStyle.findIndexOfValue((String) objValue);
+            mLogoStyle.setSummary(
+                    mLogoStyle.getEntries()[index]);
             return true;
         } else if (preference == mNetTrafficLocation) {
             int location = Integer.valueOf((String) objValue);
