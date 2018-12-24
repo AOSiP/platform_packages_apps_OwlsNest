@@ -373,6 +373,11 @@
     <string name="lockscreen_visualizer_title">Music visualizer</string>
     <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
 
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_unit_metric" translatable="false">Celsius</string>
+    <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
+
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
@@ -457,4 +462,5 @@
     <string name="force_ambient_for_media_title">Enable</string>
 
     <string name="app_ops_settings_summary">Control apps permissions</string>
+
 </resources>
