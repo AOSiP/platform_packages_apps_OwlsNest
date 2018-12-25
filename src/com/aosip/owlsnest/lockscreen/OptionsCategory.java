@@ -31,11 +31,15 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.aosip.owlsnest.preference.SystemSettingListPreference;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class OptionsCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
+
+    private static final String KEY_WEATHER_TEMP = "weather_lockscreen_unit";
 
     @Override
     public int getMetricsCategory() {
@@ -46,6 +50,13 @@ public class OptionsCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.options);
+
+        SystemSettingListPreference mWeatherTemp =
+                (SystemSettingListPreference) findPreference(KEY_WEATHER_TEMP);
+        if (!com.android.internal.util.aosip.aosipUtils.isPackageInstalled(
+                getActivity(), "org.pixelexperience.weather.client")) {
+            getPreferenceScreen().removePreference(mWeatherTemp);
+        }
     }
 
     @Override
