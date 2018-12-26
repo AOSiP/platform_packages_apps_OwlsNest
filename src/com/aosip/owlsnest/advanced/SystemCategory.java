@@ -16,9 +16,12 @@
 
 package com.aosip.owlsnest.advanced;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
@@ -29,6 +32,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.aosip.owlsnest.utils.TelephonyUtils;
+import com.aosip.owlsnest.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +41,9 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
+
+    private ListPreference mFlashlightOnCall;
 
     @Override
     public int getMetricsCategory() {
@@ -50,6 +57,18 @@ public class SystemCategory extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.system);
         final PreferenceScreen prefSet = getPreferenceScreen();
 
+        mFlashlightOnCall = (ListPreference) findPreference(FLASHLIGHT_ON_CALL);
+        Preference FlashOnCall = findPreference("flashlight_on_call");
+        if (!Utils.deviceSupportsFlashLight(getActivity())) {
+            prefSet.removePreference(FlashOnCall);
+        } else {
+        int flashlightValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.FLASHLIGHT_ON_CALL, 1);
+        mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
+        mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
+        mFlashlightOnCall.setOnPreferenceChangeListener(this);
+        }
+
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!TelephonyUtils.isVoiceCapable(getActivity())) {
 			prefSet.removePreference(incallVibCategory);
@@ -62,6 +81,14 @@ public class SystemCategory extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mFlashlightOnCall) {
+            int flashlightValue = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.FLASHLIGHT_ON_CALL, flashlightValue);
+            mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
+            mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
+            return true;
+        }
         return false;
     }
 
