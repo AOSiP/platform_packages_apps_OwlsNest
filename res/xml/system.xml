@@ -32,6 +32,13 @@
         android:summary="@string/show_cpu_info_summary" 
         android:defaultValue="false" />
 
+    <!-- Flashlight on incoming calls -->
+    <ListPreference
+        android:key="flashlight_on_call"
+        android:title="@string/flashlight_on_call_title"
+        android:entries="@array/flashlight_on_call_entries"
+        android:entryValues="@array/flashlight_on_call_values" />
+
     <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
