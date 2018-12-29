@@ -74,7 +74,7 @@
     <string name="clock_date_display_summary">시계 앞에 사용자 지정 날짜 표시</string>
     <string name="clock_date_style">날짜 스타일</string>
     <string name="clock_date_format">날짜 형식</string>
-    <string name="clock_date_string_edittext_title">DateFormat으로 입력해야합니다. 예: MM/dd/yy</string>
+    <string name="clock_date_string_edittext_title">날짜 형식이어야 합니다. 예) MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">문자열 입력</string>
     <string name="am_pm_clock_normal">보통 글꼴 크기</string>
     <string name="am_pm_clock_small">작은 글꼴 크기</string>
@@ -131,7 +131,7 @@
     <string name="notification_title">알림</string>
     <string name="notification_summary">LED와 알림 방식을 설정합니다</string>
     <string name="notification_category">알림</string>
-    <string name="headsup_category">헤드업</string>
+    <string name="headsup_category">헤드업 알림</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">앱 아이콘 토스트 알림</string>
     <string name="toast_icon_summary">토스트 알림을 보낸 앱의 아이콘을 같이 표시합니다</string>
@@ -140,8 +140,8 @@
     <string name="notification_sound_vib_screen_on_summary">화면이 켜져있을 때 소리 및 진동 알림을 재생합니다.</string>
     <!-- Heads up -->
     <string name="heads_up_title">활성화</string>
-    <string name="heads_up_summary_enabled">헤드 업 알림이 활성화됨</string>
-    <string name="heads_up_summary_disabled">헤드 업 알림이 활성화됨</string>
+    <string name="heads_up_summary_enabled">헤드업 알림이 활성화 되었습니다</string>
+    <string name="heads_up_summary_disabled">헤드업 알림이 활성화됨</string>
     <string name="heads_up_time_out_title">시간 초과</string>
     <string name="heads_up_time_out_summary">헤드업 알림은 <xliff:g id="number">%d</xliff:g>초 동안 표시됩니다</string>
     <string name="heads_up_time_out_2sec">2초</string>
@@ -159,6 +159,11 @@
     <string name="heads_up_snooze_10min">10분</string>
     <string name="heads_up_snooze_15min">15분</string>
     <string name="heads_up_snooze_20min">20분</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
+    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
+    <string name="heads_up_stoplist_title">Stoplist</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
     <!-- Battery light -->
     <string name="battery_light_settings">배터리 LED</string>
     <string name="battery_light_enable">활성화</string>
@@ -337,7 +342,7 @@
     <string name="show_cpu_info_summary">화면에 현재 CPU 정보를 표시합니다</string>
     <!-- Themes -->
     <string name="theme_category_title">테마 옵션</string>
-    <string name="accent_picker_dialog_title">강조 색 선택</string>
+    <string name="accent_picker_dialog_title">강조색 선택</string>
     <string name="theme_accent_picker_title">강조 색상</string>
     <string name="theme_accent_picker_summary">시스템 테마 강조 색상 선택</string>
     <string name="theme_accent_picker_default">확인</string>
@@ -369,9 +374,9 @@
     <string name="dialog_delete_title">삭제</string>
     <string name="dialog_delete_message">선택된 항목을 삭제하시겠습니까?</string>
     <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">음악 알림</string>
-    <string name="force_ambient_for_media_pref_summary">음악 티커 구성</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker는 Ambient 디스플레이 화면 내에서 음악 트랙 정보를 재생하는 것을 보여줍니다.\n\n새 트랙이 시작될 때 Ambient Display가 비활성화되어있어 화면 중간에 트랙 정보가있는 깨끗한 주변 화면을 강제 실행합니다.\n\n또한 트랙 정보를 두 번 탭하여 트랙을 건너 뛸 수 있습니다.</string>
+    <string name="force_ambient_for_media_pref_title">앰비언트 뮤직 티커</string>
+    <string name="force_ambient_for_media_pref_summary">앰비언트 뮤직 티커 구성</string>
+    <string name="ambient_ticker_footer">앰비언트 뮤직 티커는 앰비언트 디스플레이 화면에 현재 재생되는 음악 트랙 정보를 나타냅니다.\n\n 만약 새 트랙이 시작될 때 앰비언트 화면이 꺼져 있을 경우, 화면 중간에 트랙 정보를 담은 깨끗한 앰비언트 화면을 강제로 표시합니다.\n\n또한 트랙 정보를 두 번 눌러서 트랙을 건너 뛸 수 있습니다.</string>
     <string name="force_ambient_for_media_title">활성화</string>
     <string name="app_ops_settings_summary">앱 권한 조정</string>
 </resources>

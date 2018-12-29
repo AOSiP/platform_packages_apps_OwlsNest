@@ -20,7 +20,7 @@
     <string name="aosip_version">AOSiP 版本 </string>
     <string name="aosip_version_default">未知</string>
     <!-- AOSiP custom settings main -->
-    <string name="header_category_personalization">UI设置</string>
+    <string name="header_category_personalization">界面设置</string>
     <string name="nest_title">鹰巢</string>
     <string name="aosip_title">AOSiP 设置</string>
     <string name="owlsnest_settings_title">类别</string>
@@ -31,8 +31,8 @@
     <string name="add">添加</string>
     <string name="choose_app">选择应用程序</string>
     <!-- SystemUI Restart -->
-    <string name="systemui_restart_title">请求重启SystemUI</string>
-    <string name="systemui_restart_message">要使所有更改生效，需要重启SystemUI。现在重启SystemUI？</string>
+    <string name="systemui_restart_title">需要重启系统界面</string>
+    <string name="systemui_restart_message">要使所有更改生效，需要重新启动系统界面。现在重新启动系统界面吗？</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">调色板</string>
     <string name="press_color_to_apply">轻触下方颜色以套用</string>
@@ -41,7 +41,7 @@
     <string name="color_default">预设</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">状态栏</string>
-    <string name="statusbar_bar_summary">调整状态栏元素</string>
+    <string name="statusbar_bar_summary">调整各类状态栏项目</string>
     <string name="icon_category">图标</string>
     <string name="battery_category">电池</string>
     <string name="status_bar_tuner_title">状态栏图标</string>
@@ -101,7 +101,7 @@
     <string name="status_bar_battery_style_hidden">隐藏</string>
     <!-- Old Style Mobile -->
     <string name="use_old_mobiletype_title">使用旧的移动信号图标</string>
-    <string name="use_old_mobiletype_summary">使用Android O或更老的移动信号图标\nSystemUI将会重启</string>
+    <string name="use_old_mobiletype_summary">使用Android O或更老的移动信号图标\n系统界面将会重启</string>
     <!-- Hide notch -->
     <string name="hide_notch_title">隐藏刘海</string>
     <string name="hide_notch_summary">隐藏刘海将会填充刘海周围的缝隙</string>
@@ -114,8 +114,8 @@
     <string name="show_carrier_title">显示在</string>
     <string name="show_carrier_disabled">不显示</string>
     <string name="show_carrier_keyguard">仅锁定屏幕界面</string>
-    <string name="show_carrier_statusbar">仅显示状态栏</string>
-    <string name="show_carrier_enabled">锁定屏幕 &amp; 状态栏</string>
+    <string name="show_carrier_statusbar">仅状态栏</string>
+    <string name="show_carrier_enabled">锁屏和状态栏</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">流量</string>
     <string name="network_traffic_state_title">在状态栏中显示网络活动</string>
@@ -159,6 +159,11 @@
     <string name="heads_up_snooze_10min">10 分钟</string>
     <string name="heads_up_snooze_15min">15 分钟</string>
     <string name="heads_up_snooze_20min">20分钟</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
+    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
+    <string name="heads_up_stoplist_title">Stoplist</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
     <!-- Battery light -->
     <string name="battery_light_settings">电量指示灯</string>
     <string name="battery_light_enable">启用</string>
@@ -171,7 +176,7 @@
     <string name="battery_light_reallyfull_color">满电 (100%)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">快速设置</string>
-    <string name="quicksettings_summary">管理快速设置和扩展导览列</string>
+    <string name="quicksettings_summary">管理您的快速设置瓷贴和扩展状态栏</string>
     <string name="expanded_category">延伸</string>
     <string name="qs_tile_title">扩展</string>
     <!-- Brigntess Slider -->
@@ -181,7 +186,7 @@
     <string name="qs_show_brightness_title">亮度滑块</string>
     <string name="qs_show_brightness_summary">显示或隐藏快速图块区亮度滑块的选项</string>
     <string name="brightness_slider_bottom_title">底部亮度滑块</string>
-    <string name="brightness_slider_bottom_summary">在快速图块皮肤底部显示亮度滑块</string>
+    <string name="brightness_slider_bottom_summary">显示快速设置面板底部的亮度滑块</string>
     <string name="show_secure_title">显示安全页脚</string>
     <string name="show_info_header_title">显示信息标题</string>
     <!-- Tiles animation style  -->
@@ -204,8 +209,8 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">预测</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">预测超调</string>
     <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">触摸时震动</string>
-    <string name="quick_settings_vibrate_summary">触摸快速图块瓷砖时发出振动</string>
+    <string name="quick_settings_vibrate_title">触摸时振动</string>
+    <string name="quick_settings_vibrate_summary">触摸快速设置瓷块时振动</string>
     <!--Owlsnest navigation-->
     <string name="navigation_title">导览</string>
     <string name="navigation_summary">自定义导航样式和行为</string>
@@ -236,7 +241,7 @@
     <string name="powermenu_reboot_title">重新启动</string>
     <string name="powermenu_reboot_summary">启用或禁用正常重启按钮</string>
     <string name="powermenu_advanced_reboot_title">高级重新启动</string>
-    <string name="powermenu_advanced_reboot_summary">于电源菜单中启用高级重启选项，比如热重启、Recovery和 Bootloader。还有重启 SystemUI 的选项</string>
+    <string name="powermenu_advanced_reboot_summary">启用高级重启以选择重启到恢复模式，引导模式，重启系统界面，或软重启</string>
     <string name="powermenu_screenshot_title">屏幕截屏</string>
     <string name="powermenu_screenshot_summary">在电源菜单中显示用于截图的按钮</string>
     <string name="powermenu_airplane_title">飞行模式</string>
@@ -273,8 +278,7 @@
     <string name="default_iconpack_title">默认图标</string>
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">清除全部按键</string>
-    <string name="show_clear_all_recents_button_summary">在最近应用程序中显示旧式清除所有按钮
-																																					    （已卸载 Launcher3 QuickStep）</string>
+    <string name="show_clear_all_recents_button_summary">在旧版上显示清除所有按钮 (已卸载 Launcher3 QuickStep 时)</string>
     <string name="recents_clear_all_location_title">全部清除按键位置</string>
     <string name="recents_clear_all_location_top_right">右上角</string>
     <string name="recents_clear_all_location_top_left">左上角</string>
@@ -324,7 +328,7 @@
     <string name="unlock_scramble_pin_layout_summary">解锁设备时拼接 PIN 键盘布局</string>
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">快速解锁</string>
-    <string name="unlock_quick_unlock_control_summary">输入正确的 PIN/密码时手机将自动解锁</string>
+    <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码或密码后自动解锁</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">验证指纹时振动</string>
     <string name="fprint_sucess_vib_summary">验证指纹身份成功时振动</string>
@@ -335,7 +339,7 @@
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">显示 CPU 信息</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-    <string name="show_cpu_info_summary">在荧幕右上角显示当前的 CPU 信息</string>
+    <string name="show_cpu_info_summary">在屏幕叠加层显示 CPU 信息</string>
     <!-- Themes -->
     <string name="theme_category_title">系统主题</string>
     <string name="accent_picker_dialog_title">选取一个强调色</string>

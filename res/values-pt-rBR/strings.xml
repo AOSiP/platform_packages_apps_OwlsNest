@@ -159,6 +159,11 @@
     <string name="heads_up_snooze_10min">10 minutos</string>
     <string name="heads_up_snooze_15min">15 minutos</string>
     <string name="heads_up_snooze_20min">20 minutos</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
+    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
+    <string name="heads_up_stoplist_title">Stoplist</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
     <!-- Battery light -->
     <string name="battery_light_settings">LED de bateria</string>
     <string name="battery_light_enable">Habilitar</string>
@@ -182,7 +187,7 @@
     <string name="qs_show_brightness_summary">Opção para mostrar ou ocultar o controle deslizante de brilho no Qs</string>
     <string name="brightness_slider_bottom_title">Controle deslizante de brilho em baixo das configurações rápidas</string>
     <string name="brightness_slider_bottom_summary">Mostrar controle deslizante de brilho na parte de baixo do painel de configurações rápidas</string>
-    <string name="show_secure_title">Show security footer</string>
+    <string name="show_secure_title">Mostrar rodapé de segurança</string>
     <string name="show_info_header_title">Mostrar Informações do cabeçalho</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animações</string>
