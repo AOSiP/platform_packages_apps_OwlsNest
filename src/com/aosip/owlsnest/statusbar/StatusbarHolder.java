@@ -35,6 +35,7 @@ import com.aosip.owlsnest.statusbar.BatteryCategory;
 import com.aosip.owlsnest.statusbar.CarrierCategory;
 import com.aosip.owlsnest.statusbar.ClockDateSettings;
 import com.aosip.owlsnest.statusbar.IconsCategory;
+import com.aosip.owlsnest.statusbar.TrafficCategory;
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class StatusbarHolder extends SettingsPreferenceFragment {
