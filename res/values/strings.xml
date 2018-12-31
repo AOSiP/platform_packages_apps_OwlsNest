@@ -396,6 +396,10 @@
     <string name="lockscreen_visualizer_title">Music visualizer</string>
     <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
 
+    <!-- ambient visualizer -->
+    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Clock widget</string>
     <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
