@@ -382,6 +382,12 @@
     <string name="lockscreen_charging_current_title">Charging info</string>
     <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
 
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
+    <string name="force_ambient_for_media_pref_summary">Configure the Ambient music ticker</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Enable</string>
+
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
@@ -450,12 +456,6 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
-
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
-    <string name="force_ambient_for_media_pref_summary">Configure the Ambient music ticker</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.</string>
-    <string name="force_ambient_for_media_title">Enable</string>
 
     <string name="app_ops_settings_summary">Control apps permissions</string>
 
