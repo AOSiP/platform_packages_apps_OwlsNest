@@ -56,6 +56,18 @@
         android:entryValues="@array/weather_unit_values"
         android:defaultValue="0" />
 
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_clock"
+        android:title="@string/lockscreen_clock_title"
+        android:summary="@string/lockscreen_clock_summary"
+        android:defaultValue="true" />
+
+    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_info"
+        android:title="@string/lockscreen_info_title"
+        android:summary="@string/lockscreen_info_summary"
+        android:defaultValue="true" />
+
 
     <PreferenceCategory
         android:key="secure_lockscreen"
