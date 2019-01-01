@@ -105,7 +105,7 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.expanded_category)};
+                    getString(R.string.quicksettings_title)};
         return titleString;
     }
 }
