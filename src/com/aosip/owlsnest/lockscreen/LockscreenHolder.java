@@ -50,6 +50,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
         mTabs.setViewPager(mViewPager);
+        getActivity().getActionBar().setTitle(R.string.lockscreen_title);
         return view;
     }
 

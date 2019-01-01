@@ -50,6 +50,7 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment {
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
         mTabs.setViewPager(mViewPager);
+        getActivity().getActionBar().setTitle(R.string.quicksettings_title);
         return view;
     }
 
@@ -105,5 +106,3 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment {
         return titleString;
     }
 }
-
-

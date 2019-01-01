@@ -50,6 +50,7 @@ public class NotificationHolder extends SettingsPreferenceFragment {
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
         mTabs.setViewPager(mViewPager);
+        getActivity().getActionBar().setTitle(R.string.notification_title);
         return view;
     }
 
