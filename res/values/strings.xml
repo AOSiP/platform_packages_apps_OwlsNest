@@ -206,7 +206,6 @@
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
     <string name="expanded_category">Expanded</string>
-    <string name="qs_tile_title">Expanded</string>
 
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Adaptive brightness button</string>
@@ -249,9 +248,8 @@
 
 
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Navigation</string>
-    <string name="navigation_summary">Customize navigation bar style and behavior</string>
     <string name="navigation_category">Navigation</string>
+    <string name="navigation_summary">Customize navigation bar style and behavior</string>
 
     <string name="navbar_tuner_title">Edit navigation bar</string>
     <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
@@ -319,7 +317,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
-    <string name="stock_recent">Stock</string>
 
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Icon Pack</string>
@@ -363,7 +360,6 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
-    <string name="options_category">Various</string>
     <string name="secure_lockscreen">Secure lockscreen options</string>
 
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
