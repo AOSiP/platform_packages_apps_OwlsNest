@@ -50,6 +50,7 @@ public class NavigationHolder extends SettingsPreferenceFragment {
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
         mTabs.setViewPager(mViewPager);
+        getActivity().getActionBar().setTitle(R.string.navigation_category);
         return view;
     }
 

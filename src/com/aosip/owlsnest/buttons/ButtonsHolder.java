@@ -50,6 +50,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
         mTabs.setViewPager(mViewPager);
+        getActivity().getActionBar().setTitle(R.string.buttons_title);
         return view;
     }
 
