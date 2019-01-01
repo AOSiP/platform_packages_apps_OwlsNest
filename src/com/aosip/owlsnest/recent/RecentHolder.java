@@ -105,7 +105,7 @@ public class RecentHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.stock_recent)};
+                    getString(R.string.recent_title)};
         return titleString;
     }
 }
