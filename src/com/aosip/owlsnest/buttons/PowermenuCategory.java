@@ -55,8 +55,8 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
-        int screenOffStyle = Settings.Global.getInt(resolver,
-                Settings.Global.SCREEN_OFF_ANIMATION, 0);
+        int screenOffStyle = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
         mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
         mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
         mScreenOffAnimation.setOnPreferenceChangeListener(this);
@@ -72,8 +72,8 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mScreenOffAnimation) {
             String value = (String) newValue;
-            Settings.Global.putInt(resolver,
-                    Settings.Global.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
+            Settings.System.putInt(resolver,
+                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
             int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
             return true;
