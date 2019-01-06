@@ -386,6 +386,9 @@
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="secure_lockscreen">Secure lockscreen options</string>
 
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
 
