@@ -16,11 +16,13 @@
 
 package com.aosip.owlsnest.buttons;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -40,9 +42,11 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String KEY_LOCKDOWN_IN_POWER_MENU = "lockdown_in_power_menu";
+    private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final int MY_USER_ID = UserHandle.myUserId();
 
     private SwitchPreference mPowerMenuLockDown;
+    private ListPreference mScreenOffAnimation;
 
     @Override
     public int getMetricsCategory() {
@@ -64,6 +68,14 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
         } else {
             prefSet.removePreference(mPowerMenuLockDown);
         }
+
+        // Screen Off Animations
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.System.getInt(getContentResolver(),
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -76,6 +88,12 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
             boolean value = (Boolean) newValue;
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.LOCKDOWN_IN_POWER_MENU, value ? 1 : 0);
+            return true;
+        } else if (preference == mScreenOffAnimation) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf((String) newValue));
+            int valueIndex = mScreenOffAnimation.findIndexOfValue((String) newValue);
+            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
             return true;
         }
         return false;
