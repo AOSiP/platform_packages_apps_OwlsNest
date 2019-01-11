@@ -159,11 +159,11 @@
     <string name="heads_up_snooze_10min">10 minut</string>
     <string name="heads_up_snooze_15min">15 minut</string>
     <string name="heads_up_snooze_20min">20 minut</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="add_heads_up_package">Dodaj aplikację</string>
+    <string name="add_heads_up_stoplist_summary">Wyłącz wyskakujące powiadomienia będąc w tych aplikacjach</string>
+    <string name="add_heads_up_blacklist_summary">Wyłącz wyskakujące powiadomienia z tych aplikacji</string>
+    <string name="heads_up_stoplist_title">Lista wstrzymanych</string>
+    <string name="heads_up_blacklist_title">Czarna lista</string>
     <!-- Battery light -->
     <string name="battery_light_settings">Dioda LED baterii</string>
     <string name="battery_light_enable">Włącz</string>
@@ -178,7 +178,6 @@
     <string name="quicksettings_title">Szybkie ustawienia</string>
     <string name="quicksettings_summary">Zarządzaj szybkimi ustawieniami oraz rozszerzonym paskiem statusu</string>
     <string name="expanded_category">Rozszerzony</string>
-    <string name="qs_tile_title">Rozszerzony</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Przycisk automatycznej jasności</string>
     <string name="tuner_auto_brightness_right">Przycisk automatycznej jasności po prawej stronie</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">Wibracja przy dotknięciu</string>
     <string name="quick_settings_vibrate_summary">Wibruj podczas dotykania przełączników</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Nawigacja</string>
-    <string name="navigation_summary">Dostosuj styl nawigacji i zachowanie</string>
     <string name="navigation_category">Nawigacja</string>
+    <string name="navigation_summary">Dostosuj styl nawigacji i zachowanie</string>
     <string name="navbar_tuner_title">Edytuj pasek nawigacji</string>
     <string name="navbar_tuner_summary">Edytuj układ i przyciski paska nawigacji</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Odbierz przyciskiem głośności</string>
     <string name="volume_answer_call_summary">Odbierz połączenie naciskając przycisk głośności</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animacja wyłączenia ekranu</string>
     <string name="screen_off_animation_fade">Proste zanikanie</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Ostatnio uruchomione</string>
     <string name="recent_summary">Konfiguruj ustawienia ostatnich aplikacji</string>
-    <string name="stock_recent">Standardowy</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Zestaw ikon</string>
     <string name="recents_icon_pack_summary">Zastosuj niestandardowy zestaw ikon dla Ostatnich aplikacji</string>
@@ -303,19 +305,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Ekran blokady</string>
     <string name="lockscreen_summary">Konfiguruj opcje oraz wygląd ekranu blokadu</string>
-    <string name="options_category">Różne</string>
     <string name="secure_lockscreen">Ustawienia zabezpieczonego ekranu blokady</string>
     <string name="lock_screen_shortcuts_title">Skróty ekranu blokady</string>
     <string name="lock_screen_shortcuts_summary">Zarządzaj dolnymi skrótami ekranu blokady</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Wizualizator muzyki</string>
     <string name="lockscreen_visualizer_summary">Przełącznik wizualizacji na ekranie blokady</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Odblokuj automatycznie twarzą</string>
     <string name="face_auto_unlock_summary">Nie pokazuj ekranu blokady po odblokowaniu twarzą</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Informacje o ładowaniu</string>
     <string name="lockscreen_charging_current_summary">Wyświetla informacje o natężeniu i napięciu prądu na ekranie blokady</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Nazwa utworu na ekranie Ambient</string>
+    <string name="force_ambient_for_media_pref_summary">Konfiguracja nazw utworów na ekranie Ambient</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Włącz</string>
     <!-- Media art -->
     <string name="media_art_title">Okładka albumu</string>
     <string name="media_art_summary">Włącz okładkę albumu na ekranie blokady</string>
@@ -373,10 +381,5 @@
     <string name="profile_choose_app">Wybierz aplikację</string>
     <string name="dialog_delete_title">Usuń</string>
     <string name="dialog_delete_message">Usunąć wybraną pozycję?</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Nazwa utworu na ekranie Ambient</string>
-    <string name="force_ambient_for_media_pref_summary">Konfiguracja nazw utworów na ekranie Ambient</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker pokazuje informacje o odtwarzanej muzyce w ekranie Ambient Display.\n\nZostanie także pokazany, jeśli ekran Ambient Display jest wyłączony i zostanie odtworzony nowy utwór, wyświetlając czysty ekran Ambient z informacjami o utworze na środku ekranu.\n\nMożesz także nacisnąć dwukrotnie informacje o utworze, aby go przeskoczyć.</string>
-    <string name="force_ambient_for_media_title">Włącz</string>
     <string name="app_ops_settings_summary">Sprawdź uprawnienia aplikacji</string>
 </resources>

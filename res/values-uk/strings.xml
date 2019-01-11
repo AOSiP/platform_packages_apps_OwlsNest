@@ -178,7 +178,6 @@
     <string name="quicksettings_title">Швидкі налаштування</string>
     <string name="quicksettings_summary">Керування швидкими настройками та розширеним рядком стану</string>
     <string name="expanded_category">Розширена</string>
-    <string name="qs_tile_title">Expanded</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Adaptive brightness button</string>
     <string name="tuner_auto_brightness_right">Right position for adaptive brightness button</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">Вібрувати при дотику</string>
     <string name="quick_settings_vibrate_summary">Вібрувати при натисканні плитки швидких налаштувань</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Навігація</string>
-    <string name="navigation_summary">Налаштувати панель навігації</string>
     <string name="navigation_category">Навігація</string>
+    <string name="navigation_summary">Налаштувати панель навігації</string>
     <string name="navbar_tuner_title">Редагувати панель навігації</string>
     <string name="navbar_tuner_summary">Редагувати відображення панелі навігації та її кнопки</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Відповідь клавішами гучності</string>
     <string name="volume_answer_call_summary">Відповісти на виклик натисканням клавіші гучності</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Анімація вимкнення екрану</string>
     <string name="screen_off_animation_fade">Просте згасання</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Нещодавні додатки</string>
     <string name="recent_summary">Налаштування параметрів і стилю меню нещоданіх додатків</string>
-    <string name="stock_recent">Стокове</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Набір іконок</string>
     <string name="recents_icon_pack_summary">Застосувати користувацький набір іконок для панелі нещодавніх додатків</string>
@@ -303,19 +305,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Екран блокування</string>
     <string name="lockscreen_summary">Налаштування відображення та параметрів екрану блокування</string>
-    <string name="options_category">Різне</string>
     <string name="secure_lockscreen">Безпека пристрою</string>
     <string name="lock_screen_shortcuts_title">Ярлики екрану блокування</string>
     <string name="lock_screen_shortcuts_summary">Керування ярликами внизу екрану блокування</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Візуалізація музики</string>
     <string name="lockscreen_visualizer_summary">Відображення візуалізатора на екрані блокування</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматичне розблокування обличчям</string>
     <string name="face_auto_unlock_summary">Прибрати екран блокування після розблокування обличчям</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Інформація про зарядку</string>
     <string name="lockscreen_charging_current_summary">Відображати силу струму і напругу підключенного зарядного пристрою на екрані блокування</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
+    <string name="force_ambient_for_media_pref_summary">Налаштування музичного тікера на Ambient Display</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Увімкнути</string>
     <!-- Media art -->
     <string name="media_art_title">Обкладинка медіа</string>
     <string name="media_art_summary">Увімкнути обкладинки на екрані блокування</string>
@@ -373,10 +381,5 @@
     <string name="profile_choose_app">Оберіть додаток</string>
     <string name="dialog_delete_title">Видалити</string>
     <string name="dialog_delete_message">Видалити обрані елементи?</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
-    <string name="force_ambient_for_media_pref_summary">Налаштування музичного тікера на Ambient Display</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker відображає інформацію про поточний музичний трек, використовуючи Ambient Display.\n\nВін також запускається, якщо Ambient Display вимкнений, коли починається новий трек і вмикає його, відображючи інформацією про трек на середені екрану.\n\nНатисніть двічі на інформацію про трек, щоб пропустити його.</string>
-    <string name="force_ambient_for_media_title">Увімкнути</string>
     <string name="app_ops_settings_summary">Control apps permissions</string>
 </resources>

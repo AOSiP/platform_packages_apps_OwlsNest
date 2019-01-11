@@ -178,7 +178,6 @@
     <string name="quicksettings_title">Definições rápidas</string>
     <string name="quicksettings_summary">Controlar as definições rápidas e a barra de estado expandida</string>
     <string name="expanded_category">Expandida</string>
-    <string name="qs_tile_title">Expandida</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Botão de brilho adaptável</string>
     <string name="tuner_auto_brightness_right">Posição direita para o botão do brilho adaptivo</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">Vibrar ao tocar</string>
     <string name="quick_settings_vibrate_summary">Vibrar ao tocar nos mosaicos das definições rápidas</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Navegação</string>
-    <string name="navigation_summary">Personalizar o comportamento e estilo da barra de navegação</string>
     <string name="navigation_category">Navegação</string>
+    <string name="navigation_summary">Personalizar o comportamento e estilo da barra de navegação</string>
     <string name="navbar_tuner_title">Editar a barra de navegação</string>
     <string name="navbar_tuner_summary">Editar o esquema e os botões da barra de navegação</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Tecla de volume para responder</string>
     <string name="volume_answer_call_summary">Atender a chamada quando pressionado as teclas de volume</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animação ao desligar o ecrã</string>
     <string name="screen_off_animation_fade">Desvanecer</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recentes</string>
     <string name="recent_summary">Configurar o estilo de recentes e opções</string>
-    <string name="stock_recent">Predefinida</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Pacote de ícones</string>
     <string name="recents_icon_pack_summary">Aplicar um pacote de ícones personalizado para o painel de recentes</string>
@@ -304,19 +306,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Ecrã de bloqueio</string>
     <string name="lockscreen_summary">Customizar layout do ecrã de bloqueio e opções</string>
-    <string name="options_category">Vários</string>
     <string name="secure_lockscreen">Opções de segurança do ecrã de bloqueio</string>
     <string name="lock_screen_shortcuts_title">Atalhos do ecrã de bloqueio</string>
     <string name="lock_screen_shortcuts_summary">Gerir os atalhos inferiores do ecrã de bloqueio</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Visualizador de música</string>
     <string name="lockscreen_visualizer_summary">Ativa/desativa o visualizador de música no ecrã de bloqueio</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Dispensar o ecrã de bloqueio depois do desbloqueio facial</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Informações de carregamento</string>
     <string name="lockscreen_charging_current_summary">Mostra a tensão e a corrente máxima do carregador no ecrã de bloqueio</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
+    <string name="force_ambient_for_media_pref_summary">Configurar o ícone de música ambiente</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Ativar</string>
     <!-- Media art -->
     <string name="media_art_title">Capa da multimédia</string>
     <string name="media_art_summary">Mostrar a capa da multimédia no ecrã de bloqueio</string>
@@ -374,10 +382,5 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
-    <string name="force_ambient_for_media_pref_summary">Configurar o ícone de música ambiente</string>
-    <string name="ambient_ticker_footer">O ícone de música ambiente mostra a informação de música que esteja a ser reproduzida no Ecrã ambiente.\n\nTambém é ativado quando o display ambiente está desativado quando uma música nova é reproduzida, forçando um display de ambiente limpo com a informação da música no meio do ecrã.\n\nTambém pode tocar duas vezes na informação da música para saltar a música.</string>
-    <string name="force_ambient_for_media_title">Ativar</string>
     <string name="app_ops_settings_summary">Gerir permissões das aplicações</string>
 </resources>

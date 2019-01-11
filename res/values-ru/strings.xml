@@ -159,11 +159,11 @@
     <string name="heads_up_snooze_10min">10 минут</string>
     <string name="heads_up_snooze_15min">15 минут</string>
     <string name="heads_up_snooze_20min">20 минут</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="add_heads_up_package">Добавить приложение</string>
+    <string name="add_heads_up_stoplist_summary">Отключить всплывающие уведомления из этих приложений</string>
+    <string name="add_heads_up_blacklist_summary">Не показывать всплывающие уведомления от этих приложений</string>
+    <string name="heads_up_stoplist_title">Стоплист</string>
+    <string name="heads_up_blacklist_title">Чёрный список</string>
     <!-- Battery light -->
     <string name="battery_light_settings">Индикатор батареи</string>
     <string name="battery_light_enable">Включить</string>
@@ -178,10 +178,9 @@
     <string name="quicksettings_title">Быстрые настройки</string>
     <string name="quicksettings_summary">Управление быстрыми настройками и раскрытой строкой состояния</string>
     <string name="expanded_category">Расширенная</string>
-    <string name="qs_tile_title">Расширенный</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Кнопка адаптивной яркости</string>
-    <string name="tuner_auto_brightness_right">Right position for adaptive brightness button</string>
+    <string name="tuner_auto_brightness_right">Правое положение для кнопки адаптивной яркости</string>
     <string name="tuner_show_brightness_buttons">Ползунок яркости</string>
     <string name="qs_show_brightness_title">Ползунок яркости</string>
     <string name="qs_show_brightness_summary">Показать или скрыть ползунок яркости</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">Вибрировать при касании</string>
     <string name="quick_settings_vibrate_summary">Вибрировать при нажатии на плитки быстрых настроек</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Панель навигации</string>
-    <string name="navigation_summary">Настроить стиль и поведение панели навигации</string>
     <string name="navigation_category">Панель навигации</string>
+    <string name="navigation_summary">Настроить стиль и поведение панели навигации</string>
     <string name="navbar_tuner_title">Изменить панель навигации</string>
     <string name="navbar_tuner_summary">Изменить схему панели навигации и кнопки</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ на звонок кнопками регулировки громкости</string>
     <string name="volume_answer_call_summary">Ответ на звонок, когда нажата кнопка громкости</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Анимация выключения экрана</string>
     <string name="screen_off_animation_fade">Простое затухание</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Недавние приложения</string>
     <string name="recent_summary">Настройка параметров и стиля меню недавних приложений</string>
-    <string name="stock_recent">По умолчанию</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Набор иконок</string>
     <string name="recents_icon_pack_summary">Применить пользовательский набор иконок для панели недавних приложений</string>
@@ -303,19 +305,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Экран блокировки</string>
     <string name="lockscreen_summary">Настройка разметки и опций экрана блокировки</string>
-    <string name="options_category">Разное</string>
     <string name="secure_lockscreen">Настройка экрана блокировки</string>
     <string name="lock_screen_shortcuts_title">Ярлыки экрана блокировки</string>
     <string name="lock_screen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Визуализатор музыки</string>
     <string name="lockscreen_visualizer_summary">Переключение отображения визуализатора на экране блокировки</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматическая разблокировка лицом</string>
     <string name="face_auto_unlock_summary">Убарть экран блокировки после разблокировки сканером лица</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Информация о зарядке</string>
     <string name="lockscreen_charging_current_summary">Отображение тока зарядки и вольтажа на заблокированном экране</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Функция Сейчас играет</string>
+    <string name="force_ambient_for_media_pref_summary">Информация о текущем треке в режиме активного дисплея</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Включить</string>
     <!-- Media art -->
     <string name="media_art_title">Обложка альбома</string>
     <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
@@ -373,10 +381,5 @@
     <string name="profile_choose_app">Выберите приложение</string>
     <string name="dialog_delete_title">Удалить</string>
     <string name="dialog_delete_message">Удалить выбранный элемент?</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Функция Сейчас играет</string>
-    <string name="force_ambient_for_media_pref_summary">Информация о текущем треке в режиме активного дисплея</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker отображает информацию о текущем треке используя «Ambient Display»\n\nСрабатывает также, если «Ambient Display» отключен при проигрывании нового трека, принудительно очищает экран и показывает информацию о треке в середине экрана.\n\nДля пропуска дважды коснитесь информации о треке.</string>
-    <string name="force_ambient_for_media_title">Включить</string>
     <string name="app_ops_settings_summary">Управление правами доступа приложений</string>
 </resources>

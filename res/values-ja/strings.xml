@@ -159,11 +159,11 @@
     <string name="heads_up_snooze_10min">10分</string>
     <string name="heads_up_snooze_15min">15分</string>
     <string name="heads_up_snooze_20min">20分</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="add_heads_up_package">アプリを追加</string>
+    <string name="add_heads_up_stoplist_summary">これらのアプリ起動中にはHeads Upを無効化する</string>
+    <string name="add_heads_up_blacklist_summary">このアプリのHeads Upを無効にする</string>
+    <string name="heads_up_stoplist_title">ストップリスト</string>
+    <string name="heads_up_blacklist_title">ブラックリスト</string>
     <!-- Battery light -->
     <string name="battery_light_settings">バッテリーLED</string>
     <string name="battery_light_enable">有効</string>
@@ -178,7 +178,6 @@
     <string name="quicksettings_title">クイック設定</string>
     <string name="quicksettings_summary">クイックタイルと拡張ステータスバーを管理する</string>
     <string name="expanded_category">展開中</string>
-    <string name="qs_tile_title">展開中</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">明るさ自動調節ボタン</string>
     <string name="tuner_auto_brightness_right">明るさ自動調節ボタンを右側に配置</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">タッチ時に振動</string>
     <string name="quick_settings_vibrate_summary">クイック設定タイルに触れた時に振動させる</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">ナビゲーション</string>
-    <string name="navigation_summary">ナビゲーションバーのスタイルと動作を編集する</string>
     <string name="navigation_category">ナビゲーション</string>
+    <string name="navigation_summary">ナビゲーションバーのスタイルと動作を編集する</string>
     <string name="navbar_tuner_title">ナビゲーションバーを編集</string>
     <string name="navbar_tuner_summary">ナビゲーションバーのレイアウトとボタンを編集する</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">音量ボタンで着信に出る</string>
     <string name="volume_answer_call_summary">電話着信時に音量ボタンを押して応答する</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">スクリーンオフアニメーション</string>
     <string name="screen_off_animation_fade">シンプルフェード</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">アプリ履歴</string>
     <string name="recent_summary">アプリ履歴とオプションを設定する</string>
-    <string name="stock_recent">標準</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">アイコンパック</string>
     <string name="recents_icon_pack_summary">カスタムアイコンパックをアプリ履歴パネルに適用する</string>
@@ -303,19 +305,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">ロック画面</string>
     <string name="lockscreen_summary">ロック画面のレイアウトとオプションを編集する</string>
-    <string name="options_category">その他</string>
     <string name="secure_lockscreen">セキュアなロック画面の設定</string>
     <string name="lock_screen_shortcuts_title">ロック画面のショートカット</string>
     <string name="lock_screen_shortcuts_summary">ロック画面下部のショートカットを編集する</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">ミュージックビジュアライザー</string>
     <string name="lockscreen_visualizer_summary">ロック画面のビジュアライザー表示を切り替えます</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">充電情報</string>
     <string name="lockscreen_charging_current_summary">ロック画面に接続された充電器の最大電流と最大電圧を表示する</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">アンビエントミュージックティッカー</string>
+    <string name="force_ambient_for_media_pref_summary">アンビエントミュージックティッカーを設定する</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">有効</string>
     <!-- Media art -->
     <string name="media_art_title">メディアアルバムアート</string>
     <string name="media_art_summary">ロック画面にアルバムアートを表示する</string>
@@ -373,10 +381,5 @@
     <string name="profile_choose_app">アプリを選択</string>
     <string name="dialog_delete_title">削除</string>
     <string name="dialog_delete_message">選択した項目を削除しますか？</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">アンビエントミュージックティッカー</string>
-    <string name="force_ambient_for_media_pref_summary">アンビエントミュージックティッカーを設定する</string>
-    <string name="ambient_ticker_footer">アンビエント音楽ティッカーはアンビエント表示内で再生中の音楽トラック情報を表示します。\n\n新しいトラックが開始された時にアンビエント表示が無効になっていても起動し、アンビエント表示とトラック情報を画面中央に強制表示します。\n\nトラック情報をダブルタップしてスキップできます。</string>
-    <string name="force_ambient_for_media_title">有効</string>
     <string name="app_ops_settings_summary">アプリの権限を管理する</string>
 </resources>

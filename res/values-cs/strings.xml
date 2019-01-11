@@ -159,11 +159,11 @@
     <string name="heads_up_snooze_10min">10 minut</string>
     <string name="heads_up_snooze_15min">15 minut</string>
     <string name="heads_up_snooze_20min">20 minut</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
+    <string name="add_heads_up_package">Přidat aplikaci</string>
+    <string name="add_heads_up_stoplist_summary">Zakázat plovoucí oznámení v těchto aplikacích</string>
+    <string name="add_heads_up_blacklist_summary">Zakázat plovoucí oznámení z těchto aplikací</string>
     <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="heads_up_blacklist_title">Černá listina</string>
     <!-- Battery light -->
     <string name="battery_light_settings">LED kontrolka baterie</string>
     <string name="battery_light_enable">Povolit</string>
@@ -178,7 +178,6 @@
     <string name="quicksettings_title">Rychlá nastavení</string>
     <string name="quicksettings_summary">Spravá dlaždic rychlého nastavení a rozšířené stavové lišty</string>
     <string name="expanded_category">Rozšíření</string>
-    <string name="qs_tile_title">Rozšířená</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Tlačítko adaptivního jasu</string>
     <string name="tuner_auto_brightness_right">Umístění tlačítka adaptivního jasu vpravo</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">Vibrace při dotyku</string>
     <string name="quick_settings_vibrate_summary">Vibrovat při dotyku QS dlaždice</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Navigace</string>
-    <string name="navigation_summary">Upravit styl navigačního panelu a chování</string>
     <string name="navigation_category">Navigace</string>
+    <string name="navigation_summary">Upravit styl navigačního panelu a chování</string>
     <string name="navbar_tuner_title">Upravit navigační lištu</string>
     <string name="navbar_tuner_summary">Upravit rozložení navigačního panelu a tlačítek</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Přijmout hovor tlačítky hlasitosti</string>
     <string name="volume_answer_call_summary">Přijetí hovoru při stisknutí tlačítek hlasitosti</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animace vypnutí obrazovky</string>
     <string name="screen_off_animation_fade">Jednoduché vyblednutí</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Nedávné</string>
     <string name="recent_summary">Nakonfigurujte styl a možnosti nedávných</string>
-    <string name="stock_recent">Stock</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Balíček ikon</string>
     <string name="recents_icon_pack_summary">Použít vlastní balíček ikon pro aplikace v panelu</string>
@@ -303,19 +305,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Zamykací obrazovka</string>
     <string name="lockscreen_summary">Přizpůsobení možností a rozložení zamykací obrazovky</string>
-    <string name="options_category">Různé</string>
     <string name="secure_lockscreen">Možnosti zabezpečení zamykací obrazovky</string>
     <string name="lock_screen_shortcuts_title">Zkratky na zamykací obrazovce</string>
     <string name="lock_screen_shortcuts_summary">Nastavit dolní zkratky zamykací obrazovky</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Hudební vizualizace</string>
     <string name="lockscreen_visualizer_summary">Přepne zobrazení vizualizací na zamykací obrazovce</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatické odemčení pomocí obličeje</string>
     <string name="face_auto_unlock_summary">Odstraní zamykací obrazovku po odemknutí obličejem</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Informace o nabíjení</string>
     <string name="lockscreen_charging_current_summary">Zobrazit maximální proud a napětí při nabíjení na zamykací obrazovce</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Hudební oznámení na Ambientním displeji</string>
+    <string name="force_ambient_for_media_pref_summary">Nastavení hudebního oznámení na Ambientním displeji</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Povolit</string>
     <!-- Media art -->
     <string name="media_art_title">Obal alba</string>
     <string name="media_art_summary">Povolit zobrazení obalu alba na zamykací obrazovce</string>
@@ -373,10 +381,5 @@
     <string name="profile_choose_app">Vybrat aplikaci</string>
     <string name="dialog_delete_title">Vymazat</string>
     <string name="dialog_delete_message">Odstranit vybranou položku?</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Hudební oznámení na Ambientním displeji</string>
-    <string name="force_ambient_for_media_pref_summary">Nastavení hudebního oznámení na Ambientním displeji</string>
-    <string name="ambient_ticker_footer">Hudební oznámení na Ambientním displeji zobrazuje informace o přehrávaných skladbách.\n\nJe spuštěno i v případě, že je při spuštění nové skladby zakázán Ambientní displej, což znamená, že se uprostřed obrazovky zobrazí informace o přehrávané skladbě.\n\nMůžete také dvojitým klepnutím na informaci o skladbě skladbu přeskočit.</string>
-    <string name="force_ambient_for_media_title">Povolit</string>
     <string name="app_ops_settings_summary">Ovládání oprávnění aplikací</string>
 </resources>

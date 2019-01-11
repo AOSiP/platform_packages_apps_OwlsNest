@@ -159,11 +159,11 @@
     <string name="heads_up_snooze_10min">10 دقائق</string>
     <string name="heads_up_snooze_15min">15 دقيقة</string>
     <string name="heads_up_snooze_20min">20 دقيقة</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="add_heads_up_package">إضافة تطبيق</string>
+    <string name="add_heads_up_stoplist_summary">تعطيـل الاشعارات العلوية في هذا التطبيق</string>
+    <string name="add_heads_up_blacklist_summary">تعطيـل الاشعارات العلوية من هذه التطبيقات</string>
+    <string name="heads_up_stoplist_title">قائمة الموقوف</string>
+    <string name="heads_up_blacklist_title">القائمة السوداء</string>
     <!-- Battery light -->
     <string name="battery_light_settings">ضوء البطارية</string>
     <string name="battery_light_enable">تفعيل</string>
@@ -178,7 +178,6 @@
     <string name="quicksettings_title">الإعدادات السريعة</string>
     <string name="quicksettings_summary">إدارة المربعات السريعة وشريط الحالة الموسع</string>
     <string name="expanded_category">موسّع</string>
-    <string name="qs_tile_title">موسّع</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">زر السطوع التلقائي</string>
     <string name="tuner_auto_brightness_right">الموقع في اليمين لزر السطوع التلقائي</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">الإهتزاز عند اللمس</string>
     <string name="quick_settings_vibrate_summary">الإهتزاز عند لمس مربعات الإعدادات السريعة</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">التنقل</string>
-    <string name="navigation_summary">تخصيص نمط وسلوك شريط التنقل</string>
     <string name="navigation_category">التنقل</string>
+    <string name="navigation_summary">تخصيص نمط وسلوك شريط التنقل</string>
     <string name="navbar_tuner_title">تعديل شريط التنقل</string>
     <string name="navbar_tuner_summary">تعديل تخطيط وأزرار شريط التنقل</string>
     <!-- Hardware button navigation -->
@@ -261,6 +259,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">الرد على المكالمة بأزرار الصوت</string>
     <string name="volume_answer_call_summary">أجب على المكالمة عند الضغط على مفاتيح الصوت</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">مؤثرات اغلاق الشاشة</string>
     <string name="screen_off_animation_fade">تلاشي بسيط</string>
@@ -270,7 +273,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">التطبيقات المستخدمة مؤخرًا</string>
     <string name="recent_summary">إعداد نمط وخيارت التطبيقات المستخدمة مؤخرا</string>
-    <string name="stock_recent">إلافتراضي</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">حزمة الأيقونات</string>
     <string name="recents_icon_pack_summary">تطبيق حزمة أيقونات مخصصة للتطبيقات في اللوحة</string>
@@ -304,19 +306,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">شاشة القفل</string>
     <string name="lockscreen_summary">تخصيص تخطيط وخيارات شاشة القفل</string>
-    <string name="options_category">متنوع</string>
     <string name="secure_lockscreen">إعدادات تأمين شاشة القفل</string>
     <string name="lock_screen_shortcuts_title">اختصارات شاشة القفل</string>
     <string name="lock_screen_shortcuts_summary">إدارة الإختصارات أسفل شاشة القفل</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">مرئيات الموسيقى</string>
     <string name="lockscreen_visualizer_summary">تبديل عرض مرئي في شاشة القفل</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">إلغاء قفل الوجه تلقائياً</string>
     <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">معلومات الشحن</string>
     <string name="lockscreen_charging_current_summary">عرض تيار الشحن الأقصى والفولتية على شاشة القفل</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">الشريط الموسيقي المحيطي</string>
+    <string name="force_ambient_for_media_pref_summary">تهيئة شريط الموسيقى المحيطي</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">تفعيل</string>
     <!-- Media art -->
     <string name="media_art_title">رسم غطاء الوسائط</string>
     <string name="media_art_summary">فعّل رسم غطاء الوسائط على شاشة القفل</string>
@@ -374,10 +382,5 @@
     <string name="profile_choose_app">اختـر تطبيق</string>
     <string name="dialog_delete_title">حذف</string>
     <string name="dialog_delete_message">حذف العنصر المحدد؟</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">الشريط الموسيقي المحيطي</string>
-    <string name="force_ambient_for_media_pref_summary">تهيئة شريط الموسيقى المحيطي</string>
-    <string name="ambient_ticker_footer">يعرض الشريط الموسيقي المحيطي معلومات عن مسار الموسيقى ضمن شاشة العرض المحيطة. \n\nكما يتم تشغيله أيضاً في حالة تعطيل \"الشاشة المحيطة\" عند بدء مسار جديد ، مما يؤدي إلى عرض شاشة محيطة نظيفة تحتوي على معلومات المسار في منتصف الشاشة. \n\nيمكن أيضاً النقر المزدوج على معلومات المسار لتخطي المسار.</string>
-    <string name="force_ambient_for_media_title">تفعيل</string>
     <string name="app_ops_settings_summary">التحكم بأذونات التطبيقات</string>
 </resources>

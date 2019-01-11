@@ -121,9 +121,9 @@
     <string name="network_traffic_state_title">Mostra rete attività nella varra dello stato</string>
     <string name="network_traffic_autohide">Nascondi automaticamente</string>
     <string name="network_traffic_autohide_summary">Nascondi il monitor traffico quando non c\'è attività</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="network_traffic_autohide_threshold_title">Nascondi l\'attività di rete sotto (KB/s)</string>
     <string name="network_traffic_hidearrow">Nascondi frecce</string>
-    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
+    <string name="network_traffic_hidearrow_summary">Nascondi frecce dell\'attività di rete</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Controllo luminosità</string>
     <string name="status_bar_toggle_brightness_summary">Regola la luminosità facendo scorrere il dito sulla barra di stato</string>
@@ -133,37 +133,37 @@
     <string name="notification_category">Notifiche</string>
     <string name="headsup_category">Heads-Up</string>
     <!-- Toast app icon -->
-    <string name="toast_icon_title">Toast app icon</string>
-    <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
+    <string name="toast_icon_title">Icona notifica toast</string>
+    <string name="toast_icon_summary">Mostra l\'icona corrispondente alla notifica toast</string>
     <!-- Notifications while screen on -->
-    <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
-    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+    <string name="notification_sound_vib_screen_on_title">Notifiche con suono a schermo acceso</string>
+    <string name="notification_sound_vib_screen_on_summary">Riproduci suono e vibrazione per notifiche a schermo accesso</string>
     <!-- Heads up -->
-    <string name="heads_up_title">Enable</string>
-    <string name="heads_up_summary_enabled">Heads up notifications are enabled</string>
-    <string name="heads_up_summary_disabled">Heads up notifications are disabled</string>
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_5sec">5 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
+    <string name="heads_up_title">Attiva</string>
+    <string name="heads_up_summary_enabled">Notifiche Heads-Up attive</string>
+    <string name="heads_up_summary_disabled">Notifiche Heads-Up disattive</string>
+    <string name="heads_up_time_out_title">Tempo di visualizzazione</string>
+    <string name="heads_up_time_out_summary">Le notifiche heads up verranno visualizzate per <xliff:g id="number">%d</xliff:g> secondi</string>
+    <string name="heads_up_time_out_2sec">2 secondi</string>
+    <string name="heads_up_time_out_4sec">4 secondi</string>
+    <string name="heads_up_time_out_5sec">5 secondi</string>
+    <string name="heads_up_time_out_6sec">6 secondi</string>
+    <string name="heads_up_time_out_8sec">8 secondi</string>
+    <string name="heads_up_time_out_10sec">10 secondi</string>
+    <string name="heads_up_snooze_title">Tempo di sospensione</string>
+    <string name="heads_up_snooze_summary_one_minute">Scorri in alto la notifica Heads-Up per sospendere le notifiche Heads-Up dell\'app per 1 minuto</string>
+    <string name="heads_up_snooze_summary">Scorri in alto la notifica Heads-Up per sospendere le notifiche Heads-Up dell\'app per <xliff:g id="number">%d</xliff:g> minuti</string>
+    <string name="heads_up_snooze_disabled_summary">Sospensione notifiche disattivato</string>
     <string name="heads_up_snooze_1min">1 minuto</string>
     <string name="heads_up_snooze_5min">5 minuti</string>
     <string name="heads_up_snooze_10min">10 minuti</string>
     <string name="heads_up_snooze_15min">15 minuti</string>
     <string name="heads_up_snooze_20min">20 minuti</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="add_heads_up_package">Aggiungi app</string>
+    <string name="add_heads_up_stoplist_summary">Disattiva notifiche Heads-Up in queste app</string>
+    <string name="add_heads_up_blacklist_summary">Disattiva notifiche Heads-Up di queste app</string>
+    <string name="heads_up_stoplist_title">Lista sospensioni</string>
+    <string name="heads_up_blacklist_title">Lista divieti</string>
     <!-- Battery light -->
     <string name="battery_light_settings">LED batteria</string>
     <string name="battery_light_enable">Abilita</string>
@@ -178,15 +178,14 @@
     <string name="quicksettings_title">Impostazioni rapide</string>
     <string name="quicksettings_summary">Gestisci le tue impostazioni rapide e la barra di stato espansa</string>
     <string name="expanded_category">Esteso</string>
-    <string name="qs_tile_title">Esteso</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Pulsante luminosità adattivo</string>
-    <string name="tuner_auto_brightness_right">Right position for adaptive brightness button</string>
-    <string name="tuner_show_brightness_buttons">Brightness control buttons</string>
-    <string name="qs_show_brightness_title">Brightness slider</string>
-    <string name="qs_show_brightness_summary">Option to show or hide the qs brightness slider</string>
-    <string name="brightness_slider_bottom_title">Bottom brightness slider</string>
-    <string name="brightness_slider_bottom_summary">Show brightness slider on the bottom of the quick settings panel</string>
+    <string name="tuner_auto_brightness_right">Icona luminosità adattiva a destra</string>
+    <string name="tuner_show_brightness_buttons">Controlli luminosità</string>
+    <string name="qs_show_brightness_title">Cursore luminosità</string>
+    <string name="qs_show_brightness_summary">Mostra o nascondi barra luminosità nelle impostazioni rapide</string>
+    <string name="brightness_slider_bottom_title">Barra luminosità in basso</string>
+    <string name="brightness_slider_bottom_summary">Mostra barra luminosità in basso nelle impostazioni rapide</string>
     <string name="show_secure_title">Show security footer</string>
     <string name="show_info_header_title">Show information header</string>
     <!-- Tiles animation style  -->
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Navigazione</string>
-    <string name="navigation_summary">Personalizza stile e comportamento della barra di navigazione</string>
     <string name="navigation_category">Navigazione</string>
+    <string name="navigation_summary">Personalizza stile e comportamento della barra di navigazione</string>
     <string name="navbar_tuner_title">Edit navigation bar</string>
     <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Volume keys answer</string>
     <string name="volume_answer_call_summary">Answer the call when volume keys pressed</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animazione Spegnimento Schermo</string>
     <string name="screen_off_animation_fade">Simple fade</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">App Recenti</string>
     <string name="recent_summary">Impostazioni delle app recenti</string>
-    <string name="stock_recent">Predefinito</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Icon Pack</string>
     <string name="recents_icon_pack_summary">Apply a custom icon pack for Recents panel</string>
@@ -303,19 +305,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Schermata di sblocco</string>
     <string name="lockscreen_summary">Modifica la configurazione e le opzioni della schermata di sblocco</string>
-    <string name="options_category">Varie</string>
     <string name="secure_lockscreen">Secure lockscreen options</string>
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Visualizzatore musicale</string>
     <string name="lockscreen_visualizer_summary">Attiva il visualizzatore musicale nella schermata di blocco</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Sblocco automatico con viso</string>
     <string name="face_auto_unlock_summary">Sblocca automaticamente il dispositivo dopo il riconoscimento del viso</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Charging info</string>
     <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Ticker Ambient Music</string>
+    <string name="force_ambient_for_media_pref_summary">Configura il ticker Ambient Music</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Enable</string>
     <!-- Media art -->
     <string name="media_art_title">Copertina applicazioni multimediali</string>
     <string name="media_art_summary">Abilita la visualizzazione della copertina dei file multimediali nella schermata di blocco</string>
@@ -373,10 +381,5 @@
     <string name="profile_choose_app">Scegli app</string>
     <string name="dialog_delete_title">Elimina</string>
     <string name="dialog_delete_message">Rimuovere l\'elemento selezionato?</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ticker Ambient Music</string>
-    <string name="force_ambient_for_media_pref_summary">Configura il ticker Ambient Music</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.</string>
-    <string name="force_ambient_for_media_title">Enable</string>
     <string name="app_ops_settings_summary">Control apps permissions</string>
 </resources>

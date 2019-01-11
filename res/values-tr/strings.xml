@@ -159,11 +159,11 @@
     <string name="heads_up_snooze_10min">10 dakika</string>
     <string name="heads_up_snooze_15min">15 dakika</string>
     <string name="heads_up_snooze_20min">20 dakika</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="add_heads_up_package">Uygulama ekle</string>
+    <string name="add_heads_up_stoplist_summary">Bu uygulamalarda bildirim pencerelerini devre dışı bırak</string>
+    <string name="add_heads_up_blacklist_summary">Bu uygulamalarda bildirim pencereleri devre dışı</string>
+    <string name="heads_up_stoplist_title">Durdurma listesi</string>
+    <string name="heads_up_blacklist_title">Kara liste</string>
     <!-- Battery light -->
     <string name="battery_light_settings">Pil ışığı</string>
     <string name="battery_light_enable">Etkinleştir</string>
@@ -178,7 +178,6 @@
     <string name="quicksettings_title">Hızlı Ayarlar</string>
     <string name="quicksettings_summary">Hızlı karelerinizi ve genişletilmiş durum çubuğunuzu yönetin</string>
     <string name="expanded_category">Genişletilmiş</string>
-    <string name="qs_tile_title">Genişletilmiş</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Uyarlanabilir parlaklık tuşu</string>
     <string name="tuner_auto_brightness_right">Uyarlanabilir parlaklık tuşu için sağ konum</string>
@@ -212,9 +211,8 @@
     <string name="quick_settings_vibrate_title">Dokunulduğunda titreşim</string>
     <string name="quick_settings_vibrate_summary">Hızlı ayarlar kerelerine dokunulduğunda titret</string>
     <!--Owlsnest navigation-->
-    <string name="navigation_title">Gezinme Çubuğu</string>
-    <string name="navigation_summary">Gezinme çubuğu stilini ve davranışını özelleştirin</string>
     <string name="navigation_category">Gezinme çubuğu</string>
+    <string name="navigation_summary">Gezinme çubuğu stilini ve davranışını özelleştirin</string>
     <string name="navbar_tuner_title">Gezinme çubuğunu düzenle</string>
     <string name="navbar_tuner_summary">Gezinme çubuğu düzenini ve tuşları düzenle</string>
     <!-- Hardware button navigation -->
@@ -260,6 +258,11 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ses tuşlarıyla cevapla</string>
     <string name="volume_answer_call_summary">Ses tuşlarına basıldığında aramaya cevap ver</string>
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Ekran kapanma animasyonu</string>
     <string name="screen_off_animation_fade">Basit karart</string>
@@ -269,7 +272,6 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Son Uygulamalar</string>
     <string name="recent_summary">Son uygulamalar stilini ve seçeneklerini yapılandırma</string>
-    <string name="stock_recent">Varsayılan</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Simge paketi</string>
     <string name="recents_icon_pack_summary">Son kullanılan uygulamalar için özel bir simge paketi uygulayın</string>
@@ -303,19 +305,25 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Kilit Ekranı</string>
     <string name="lockscreen_summary">Kilit ekranı düzenini ve seçeneklerini özelleştirme</string>
-    <string name="options_category">Çeşitli</string>
     <string name="secure_lockscreen">Güvenli kilit ekranı seçenekleri</string>
     <string name="lock_screen_shortcuts_title">Kilit ekranı kısayolları</string>
     <string name="lock_screen_shortcuts_summary">Kilit ekranı kısayollarını düzenle</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Müzik görselleştirici</string>
     <string name="lockscreen_visualizer_summary">Kilit ekranında müzik görselleştiriciyi gösterir</string>
+    <!-- Weather -->
+    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Yüz ile otomatik kilit açma</string>
     <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını kapat</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Şarj bilgisi</string>
     <string name="lockscreen_charging_current_summary">Kilit ekranı üzerinde şarj cihazının maksimum akım voltajını ve pil sıcaklığını görüntüle</string>
+    <!-- Ambient display music ticker -->
+    <string name="force_ambient_for_media_pref_title">Ortam ekranı müzik bilgisi</string>
+    <string name="force_ambient_for_media_pref_summary">Ortam ekranında müzik bilgisini yapılandırma</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Etkinleştir</string>
     <!-- Media art -->
     <string name="media_art_title">Medya kapak resmi</string>
     <string name="media_art_summary">Kilit ekranında medya albüm kapağını etkinleştir</string>
@@ -373,10 +381,5 @@
     <string name="profile_choose_app">Uygulama seçin</string>
     <string name="dialog_delete_title">Sil</string>
     <string name="dialog_delete_message">Seçili öğe kaldırılsın mı?</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ortam ekranı müzik bilgisi</string>
-    <string name="force_ambient_for_media_pref_summary">Ortam ekranında müzik bilgisini yapılandırma</string>
-    <string name="ambient_ticker_footer">Ortam ekranı müzik bilgisi, ortam ekranında müzik parça bilgilerini gösterir.\n\nYeni bir parça başlatıldığında ortam ekranı devre dışı bırakılmışsa, ekranın ortasında parça bilgisi içeren temiz bir ortam ekranına zorlamak için de kullanılır.\n\nParçayı atlamak için parça bilgisine de iki kez dokunabilirsiniz.</string>
-    <string name="force_ambient_for_media_title">Etkinleştir</string>
     <string name="app_ops_settings_summary">Uygulama izinlerini kontrol edin</string>
 </resources>
