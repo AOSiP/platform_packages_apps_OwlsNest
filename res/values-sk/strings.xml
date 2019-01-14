@@ -311,6 +311,19 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Hudobné vizualizácie</string>
     <string name="lockscreen_visualizer_summary">Prepne zobrazenie vizualizácií na obrazovke uzamknutia</string>
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <!-- Weather -->
     <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
@@ -348,6 +361,10 @@
     <string name="show_cpu_info">Show CPU info</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">Theme options</string>
     <string name="accent_picker_dialog_title">Vyberte farbu témy</string>
@@ -372,12 +389,6 @@
     <string name="smart_pixels_percent">Percento pixelov, ktoré chcete zakázať</string>
     <string name="smart_pixels_shift_title">Ochrana pred vypálením pixelov</string>
     <string name="smart_pixels_shift_summary">Zabraňuje vypáleniu OLED displejov zariadení častou zmenou pixelov</string>
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">Nevybrateľné aplikácie</string>
-    <string name="chooser_activity_blacklist_summary">Aplikácie, ktoré sa nezobrazia pri kliknutí na tlačidlo Zdieľať</string>
-    <string name="chooser_activity_blacklist_cat_title">Čierna listina</string>
-    <string name="chooser_activity_blacklist_pref_title">Pridať aplikáciu</string>
-    <string name="chooser_activity_blacklist_pref_summary">Kliknutím sem pridáte, kliknutím na pridanú aplikáciu ju môžete odstrániť</string>
     <string name="profile_choose_app">Vybrať aplikáciu</string>
     <string name="dialog_delete_title">Vymazať</string>
     <string name="dialog_delete_message">Vymazať vybranú položku?</string>

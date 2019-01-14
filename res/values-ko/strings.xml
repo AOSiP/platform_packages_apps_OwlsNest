@@ -259,10 +259,10 @@
     <string name="volume_answer_call_title">볼륨 버튼 응답</string>
     <string name="volume_answer_call_summary">볼륨 버튼을 눌러서 전화를 받습니다</string>
     <!-- Cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">볼륨키로 커서 제어</string>
+    <string name="volume_key_cursor_control_off">비활성화됨</string>
+    <string name="volume_key_cursor_control_on">음량 증가/감소 버튼으로 커서를 왼쪽/오른쪽으로 이동</string>
+    <string name="volume_key_cursor_control_on_reverse">음량 증가/감소 버튼으로 커서를 오른쪽/왼쪽으로 이동</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">화면 꺼짐 애니메이션</string>
     <string name="screen_off_animation_fade">단순 페이드</string>
@@ -311,8 +311,21 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">음악 시각화</string>
     <string name="lockscreen_visualizer_summary">잠금 화면의 시각화 토글</string>
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <!-- Weather -->
-    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_unit">온도 단위</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">자동 안면 잠금해제</string>
     <string name="face_auto_unlock_summary">얼굴 잠금 해제 후 잠금 화면 닫기</string>
@@ -322,7 +335,7 @@
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">앰비언트 뮤직 티커</string>
     <string name="force_ambient_for_media_pref_summary">앰비언트 뮤직 티커 구성</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="ambient_ticker_footer">앰비언트 뮤직 티커는 앰비언트 디스플레이 화면에 현재 재생되는 음악 트랙 정보를 나타냅니다.\n\n 만약 새 트랙이 시작될 때 앰비언트 화면이 꺼져 있을 경우, 화면 중간에 트랙 정보를 담은 깨끗한 앰비언트 화면을 강제로 표시합니다.\n\n또한 트랙 정보를 두 번 눌러서 트랙을 건너 뛸 수 있습니다.\n\n 픽셀을 가지고 있고 Now Playing 및 시스템 오디오 설정에서 알림을 사용할 경우 앰비언트 뮤직 티커도 그 안에서 작동합니다.</string>
     <string name="force_ambient_for_media_title">활성화</string>
     <!-- Media art -->
     <string name="media_art_title">미디어 커버 아트</string>
@@ -348,6 +361,10 @@
     <string name="show_cpu_info">CPU 정보 보기</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">화면에 현재 CPU 정보를 표시합니다</string>
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">테마 옵션</string>
     <string name="accent_picker_dialog_title">강조색 선택</string>
@@ -372,12 +389,6 @@
     <string name="smart_pixels_percent">사용 중지 할 픽셀 비율</string>
     <string name="smart_pixels_shift_title">번인 방지</string>
     <string name="smart_pixels_shift_summary">픽셀을 자주 이동시켜 OLED 장치의 번인을 방지합니다.</string>
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">앱 선택기 제외 목록</string>
-    <string name="chooser_activity_blacklist_summary">공유 버튼을 누를 때 표시되지 않을 앱</string>
-    <string name="chooser_activity_blacklist_cat_title">블랙리스트</string>
-    <string name="chooser_activity_blacklist_pref_title">앱 추가</string>
-    <string name="chooser_activity_blacklist_pref_summary">추가하려면 여기를 누르고, 추가된 앱을 눌러 제거하십시오.</string>
     <string name="profile_choose_app">앱을 선택하세요</string>
     <string name="dialog_delete_title">삭제</string>
     <string name="dialog_delete_message">선택된 항목을 삭제하시겠습니까?</string>

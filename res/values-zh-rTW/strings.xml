@@ -312,6 +312,19 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">音樂視覺化</string>
     <string name="lockscreen_visualizer_summary">在鎖定畫面上切換視覺化檢視</string>
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <!-- Weather -->
     <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
@@ -349,6 +362,10 @@
     <string name="show_cpu_info">顯示 CPU 資訊</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">在熒幕右上角顯示當前的 CPU 資訊</string>
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">系統主題</string>
     <string name="accent_picker_dialog_title">選取一個強調色</string>
@@ -373,12 +390,6 @@
     <string name="smart_pixels_percent">要停用的像素的百分比</string>
     <string name="smart_pixels_shift_title">螢幕烙印保護</string>
     <string name="smart_pixels_shift_summary">透過經常移動像素塊來防止使用 OLED 螢幕的裝置烙印</string>
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">選擇器活動黑名單</string>
-    <string name="chooser_activity_blacklist_summary">在輕觸分享鍵時不顯示的應用程式</string>
-    <string name="chooser_activity_blacklist_cat_title">黑名單</string>
-    <string name="chooser_activity_blacklist_pref_title">新增應用程式</string>
-    <string name="chooser_activity_blacklist_pref_summary">輕觸這裡新增、輕觸新增應用程式並移除</string>
     <string name="profile_choose_app">選擇應用程式</string>
     <string name="dialog_delete_title">刪除</string>
     <string name="dialog_delete_message">刪除所選的項目?</string>

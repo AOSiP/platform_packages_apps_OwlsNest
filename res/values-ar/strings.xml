@@ -260,10 +260,10 @@
     <string name="volume_answer_call_title">الرد على المكالمة بأزرار الصوت</string>
     <string name="volume_answer_call_summary">أجب على المكالمة عند الضغط على مفاتيح الصوت</string>
     <!-- Cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">التحكم بالمؤشر بأزرار مستوى الصوت</string>
+    <string name="volume_key_cursor_control_off">معطّل</string>
+    <string name="volume_key_cursor_control_on">زر الصوت لأعلى/لأسفل يحرك المؤشر لليسار/لليمين</string>
+    <string name="volume_key_cursor_control_on_reverse">زر الصوت لأعلى/لأسفل يحرك المؤشر لليمين/لليسار</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">مؤثرات اغلاق الشاشة</string>
     <string name="screen_off_animation_fade">تلاشي بسيط</string>
@@ -312,8 +312,21 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">مرئيات الموسيقى</string>
     <string name="lockscreen_visualizer_summary">تبديل عرض مرئي في شاشة القفل</string>
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <!-- Weather -->
-    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_unit">وحدة درجة الحرارة</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">إلغاء قفل الوجه تلقائياً</string>
     <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>
@@ -323,7 +336,7 @@
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">الشريط الموسيقي المحيطي</string>
     <string name="force_ambient_for_media_pref_summary">تهيئة شريط الموسيقى المحيطي</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="ambient_ticker_footer">يعرض الشريط الموسيقي المحيطي معلومات عن مسار الموسيقى ضمن شاشة العرض المحيطة.\n\nكما يتم تشغيله أيضًا في حالة تعطيل العرض المحيط عند بدء مسار جديد، مما يؤدي إلى عرض شاشة محيطة نظيفة تحتوي على معلومات المسار في منتصف الشاشة.\n\nيمكنك أيضًا النقر مزدوجًا على معلومات المسار لتخطي المسار.\n\nإذا كنت تملك Pixel وتمكّن التشغيل الآن وإشعاره في إعدادات صوت النظام، فسيعمل شريط الموسيقى المحيطي أيضًا معه.</string>
     <string name="force_ambient_for_media_title">تفعيل</string>
     <!-- Media art -->
     <string name="media_art_title">رسم غطاء الوسائط</string>
@@ -349,6 +362,10 @@
     <string name="show_cpu_info">إظهار معلومات المُعالج</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">عرض طبقة شاشة تظهر معلومات المُعالج الحالية</string>
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">خيارات السمة</string>
     <string name="accent_picker_dialog_title">حدد لون اللكنة</string>
@@ -373,12 +390,6 @@
     <string name="smart_pixels_percent">نسبة البكسلات ليتم تعطيلها</string>
     <string name="smart_pixels_shift_title">الحماية من الاحتراق</string>
     <string name="smart_pixels_shift_summary">منع الاحتراق في اجهزة OLED عن طريق نقل وحدات البكسل بين الحين والآخر</string>
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">القائمة السوداء للنشاط المختار</string>
-    <string name="chooser_activity_blacklist_summary">تطبيقات لا تظهر عند النقر على زر المشاركة</string>
-    <string name="chooser_activity_blacklist_cat_title">القائمة السوداء</string>
-    <string name="chooser_activity_blacklist_pref_title">إضافة تطبيق</string>
-    <string name="chooser_activity_blacklist_pref_summary">اضغط هنا للأضافة، اضغط على التطبيق المضاف لإزالته</string>
     <string name="profile_choose_app">اختـر تطبيق</string>
     <string name="dialog_delete_title">حذف</string>
     <string name="dialog_delete_message">حذف العنصر المحدد؟</string>

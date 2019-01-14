@@ -186,7 +186,7 @@
     <string name="qs_show_brightness_summary">Показать или скрыть ползунок яркости</string>
     <string name="brightness_slider_bottom_title">Ползунок яркости снизу</string>
     <string name="brightness_slider_bottom_summary">Показать ползунок яркости снизу панели быстрых настроек</string>
-    <string name="show_secure_title">Show security footer</string>
+    <string name="show_secure_title">Показать футер безопасности</string>
     <string name="show_info_header_title">Показать заголовок</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Анимации</string>
@@ -259,10 +259,10 @@
     <string name="volume_answer_call_title">Ответ на звонок кнопками регулировки громкости</string>
     <string name="volume_answer_call_summary">Ответ на звонок, когда нажата кнопка громкости</string>
     <!-- Cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Перемещение курсора кнопками громкости</string>
+    <string name="volume_key_cursor_control_off">Выключено</string>
+    <string name="volume_key_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>
+    <string name="volume_key_cursor_control_on_reverse">Громкость вверх/вниз перемещает курсор вправо/влево</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Анимация выключения экрана</string>
     <string name="screen_off_animation_fade">Простое затухание</string>
@@ -311,8 +311,21 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Визуализатор музыки</string>
     <string name="lockscreen_visualizer_summary">Переключение отображения визуализатора на экране блокировки</string>
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <!-- Weather -->
-    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_unit">Единицы измерения температуры</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматическая разблокировка лицом</string>
     <string name="face_auto_unlock_summary">Убарть экран блокировки после разблокировки сканером лица</string>
@@ -348,6 +361,10 @@
     <string name="show_cpu_info">Показывать информацию о процессоре</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Накладываемый слой, показывающий текущую информацию о процессоре</string>
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">Настройки темы</string>
     <string name="accent_picker_dialog_title">Выберите цветовой оттенок</string>
@@ -372,12 +389,6 @@
     <string name="smart_pixels_percent">Процент пикселей для отключения</string>
     <string name="smart_pixels_shift_title">Защита от выгорания</string>
     <string name="smart_pixels_shift_summary">Предотвращение выгорания на OLED устройствах путем смещения пикселей с некоторой частотой</string>
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">Добавить активность в черный список</string>
-    <string name="chooser_activity_blacklist_summary">Список приложений, не отображающихся при нажатии на кнопку Поделиться</string>
-    <string name="chooser_activity_blacklist_cat_title">Черный список</string>
-    <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
-    <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить новое приложение; нажмите на добавленное приложение, чтобы удалить его</string>
     <string name="profile_choose_app">Выберите приложение</string>
     <string name="dialog_delete_title">Удалить</string>
     <string name="dialog_delete_message">Удалить выбранный элемент?</string>
