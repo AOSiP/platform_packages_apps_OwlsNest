@@ -311,6 +311,19 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Musikvisualisierung</string>
     <string name="lockscreen_visualizer_summary">Zeigt Musikvisualisierung auf dem Sperrbildschirm</string>
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <!-- Weather -->
     <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
@@ -348,6 +361,10 @@
     <string name="show_cpu_info">CPU-Info anzeigen</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Einblendung aktueller CPU-Infos auf dem Bildschirm</string>
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">Themen-Optionen</string>
     <string name="accent_picker_dialog_title">Wähle eine Akzentfarbe</string>
@@ -372,12 +389,6 @@
     <string name="smart_pixels_percent">Prozentsatz der abzuschaltenden Pixel</string>
     <string name="smart_pixels_shift_title">Einbrenn-Schutz</string>
     <string name="smart_pixels_shift_summary">Verhindert das Einbrennen auf OLED-Displays durch das Verlagern von Pixeln</string>
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">Auswahl Activity blacklist</string>
-    <string name="chooser_activity_blacklist_summary">Apps, die nicht bei Auswahl der Teilen Funktion angezeigt werden sollen</string>
-    <string name="chooser_activity_blacklist_cat_title">Sperrliste</string>
-    <string name="chooser_activity_blacklist_pref_title">App hinzufügen</string>
-    <string name="chooser_activity_blacklist_pref_summary">Hier zum Hinzufügen tippen, zum Entfernen auf eine vorhandene App tippen</string>
     <string name="profile_choose_app">App auswählen</string>
     <string name="dialog_delete_title">Löschen</string>
     <string name="dialog_delete_message">Ausgewähltes Objekt entfernen?</string>

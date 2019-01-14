@@ -311,6 +311,19 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Visualizador de música</string>
     <string name="lockscreen_visualizer_summary">Alterna la visualización del visualizador en la pantalla de bloqueo</string>
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
     <!-- Weather -->
     <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
@@ -348,6 +361,10 @@
     <string name="show_cpu_info">Mostrar información de la CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Muestra la información actual del procesador en la pantalla</string>
+    <!-- AOSP Recents component Style -->
+    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">Configuración de Temas</string>
     <string name="accent_picker_dialog_title">Seleccione un color de acento</string>
@@ -372,12 +389,6 @@
     <string name="smart_pixels_percent">Porcentaje de píxeles a desactivar</string>
     <string name="smart_pixels_shift_title">Protección ante el quemado de pantalla</string>
     <string name="smart_pixels_shift_summary">Previene el quemado de la pantalla en dispositivos con tecnología OLED alternando píxeles de vez en cuando</string>
-    <!-- ChooserActivity blacklist -->
-    <string name="chooser_activity_blacklist_title">Selector de actividades en lista negra</string>
-    <string name="chooser_activity_blacklist_summary">Aplicaciones que no se muestran cuando se pulsa el botón de compartir</string>
-    <string name="chooser_activity_blacklist_cat_title">Lista negra</string>
-    <string name="chooser_activity_blacklist_pref_title">Añadir aplicación</string>
-    <string name="chooser_activity_blacklist_pref_summary">Toca aquí para añadir, toca en la aplicación agregada para eliminarla</string>
     <string name="profile_choose_app">Elegir aplicación</string>
     <string name="dialog_delete_title">Eliminar</string>
     <string name="dialog_delete_message">¿Eliminar el elemento seleccionado?</string>
