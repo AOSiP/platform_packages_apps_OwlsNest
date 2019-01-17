@@ -20,8 +20,6 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.os.PowerManager;
-import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
@@ -38,7 +36,6 @@ import com.android.settings.smartnav.ActionFragment;
 
 import com.android.internal.utils.ActionConstants;
 import com.android.internal.utils.ActionUtils;
-import com.aosip.owlsnest.preference.CustomSeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,9 +44,6 @@ public class NavigationCategory extends ActionFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
-    private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
-    private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
-    private static final String KEY_BUTON_BACKLIGHT_OPTIONS = "button_backlight_options_category";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -70,9 +64,6 @@ public class NavigationCategory extends ActionFragment implements
     public static final int KEY_MASK_VOLUME = 0x40;
 
     private SwitchPreference mHwKeyDisable;
-    private CustomSeekBarPreference mButtonTimoutBar;
-    private CustomSeekBarPreference mManualButtonBrightness;
-    private PreferenceCategory mButtonBackLightCategory;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -80,33 +71,6 @@ public class NavigationCategory extends ActionFragment implements
         addPreferencesFromResource(R.xml.hardware_navigation);
         final PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getContentResolver();
-
-	mManualButtonBrightness = (CustomSeekBarPreference) findPreference(
-                KEY_BUTTON_MANUAL_BRIGHTNESS_NEW);
-        final int customButtonBrightness = getResources().getInteger(
-                com.android.internal.R.integer.config_button_brightness_default);
-        final int currentBrightness = Settings.System.getInt(resolver,
-                Settings.System.CUSTOM_BUTTON_BRIGHTNESS, customButtonBrightness);
-        PowerManager pm = (PowerManager)getActivity().getSystemService(Context.POWER_SERVICE);
-        mManualButtonBrightness.setMax(pm.getMaximumScreenBrightnessSetting());
-        mManualButtonBrightness.setValue(currentBrightness);
-        mManualButtonBrightness.setOnPreferenceChangeListener(this);
-
-        mButtonTimoutBar = (CustomSeekBarPreference) findPreference(KEY_BUTTON_TIMEOUT);
-        int currentTimeout = Settings.System.getInt(resolver,
-                Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
-        mButtonTimoutBar.setValue(currentTimeout);
-        mButtonTimoutBar.setOnPreferenceChangeListener(this);
-
-        final boolean enableBacklightOptions = getResources().getBoolean(
-                com.android.internal.R.bool.config_button_brightness_support);
-
-        mButtonBackLightCategory = (PreferenceCategory) findPreference(KEY_BUTON_BACKLIGHT_OPTIONS);
-
-        if (!enableBacklightOptions) {
-            prefScreen.removePreference(mButtonBackLightCategory);
-        }
-
         final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());
         final PreferenceCategory hwkeyCat = (PreferenceCategory) prefScreen
                 .findPreference(CATEGORY_HWKEY);
@@ -178,14 +142,6 @@ public class NavigationCategory extends ActionFragment implements
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
-        } else if (preference == mButtonTimoutBar) {
-            int buttonTimeout = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, buttonTimeout);
-        } else if (preference == mManualButtonBrightness) {
-            int buttonBrightness = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.CUSTOM_BUTTON_BRIGHTNESS, buttonBrightness);
         } else {
             return false;
         }

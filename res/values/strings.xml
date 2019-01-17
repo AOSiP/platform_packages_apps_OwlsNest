@@ -289,6 +289,7 @@
     <string name="hardware_keys_disable_title">Disable navigation buttons</string>
 
     <!-- Button brightness -->
+    <string name="button_lights_category">Backlight</string>
     <string name="button_backlight_options_category">Backlight options</string>
     <string name="button_backlight_enable_title">Allow button backlight</string>
     <string name="button_link_brightness">Link to screen brightness</string>
