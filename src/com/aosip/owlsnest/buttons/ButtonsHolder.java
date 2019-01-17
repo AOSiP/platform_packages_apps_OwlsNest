@@ -85,6 +85,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
         	frags[1] = new VolumeCategory();
 		try {
 		        frags[2] = new NavigationCategory();
+                        frags[3] = new LightsCategory();
 		} catch (IndexOutOfBoundsException e) {
 			// Do nothing
 		    }
@@ -111,7 +112,8 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
             com.android.internal.R.integer.config_deviceHardwareKeys) > 64) {
 	        return new String[] { getString(R.string.powermenu_category),
 	                              getString(R.string.volume_category),
-	                              getString(R.string.hardware_keys_category)};
+	                              getString(R.string.hardware_keys_category),
+                                      getString(R.string.button_lights_category)};
 	} else {
 		return new String[] { getString(R.string.powermenu_category),
                               getString(R.string.volume_category)};
