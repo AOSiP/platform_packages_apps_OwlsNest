@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "42de7065_ea92374e",
+        "filename": "src/com/aosip/owlsnest/buttons/LightsCategory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1000086
+      },
+      "writtenOn": "2019-01-18T20:31:48Z",
+      "side": 1,
+      "message": "why tab",
+      "revId": "0dd409c32dd677cbf8166e05cb4ec186811e4189",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0b3a2707_26ccc9a0",
+        "filename": "src/com/aosip/owlsnest/buttons/LightsCategory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1000086
+      },
+      "writtenOn": "2019-01-18T20:31:48Z",
+      "side": 1,
+      "message": "One blank line and proper indent please",
+      "revId": "0dd409c32dd677cbf8166e05cb4ec186811e4189",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a74449e_b15759a2",
+        "filename": "src/com/aosip/owlsnest/buttons/LightsCategory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000086
+      },
+      "writtenOn": "2019-01-18T20:31:48Z",
+      "side": 1,
+      "message": "tab",
+      "revId": "0dd409c32dd677cbf8166e05cb4ec186811e4189",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73187cc8_6deac18b",
+        "filename": "src/com/aosip/owlsnest/buttons/LightsCategory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1000086
+      },
+      "writtenOn": "2019-01-18T20:31:48Z",
+      "side": 1,
+      "message": "Indent",
+      "revId": "0dd409c32dd677cbf8166e05cb4ec186811e4189",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "41cb61cb_72677dbb",
+        "filename": "src/com/aosip/owlsnest/buttons/LightsCategory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1000086
+      },
+      "writtenOn": "2019-01-18T20:31:48Z",
+      "side": 1,
+      "message": "Indent",
+      "revId": "0dd409c32dd677cbf8166e05cb4ec186811e4189",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
