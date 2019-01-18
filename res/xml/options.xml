@@ -116,6 +116,12 @@
             android:summary="@string/unlock_scramble_pin_layout_summary"
             android:defaultValue="false" />
 
+        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+            android:key="fp_unlock_keystore"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+            android:defaultValue="false" />
+
      </PreferenceCategory>
 
 
