@@ -57,6 +57,7 @@ public class RecentHolder extends SettingsPreferenceFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        setHasOptionsMenu(false);
     }
 
     @Override
