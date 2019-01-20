@@ -58,4 +58,10 @@
 	android:entryValues="@array/volume_key_cursor_control_values"
 	android:key="volume_key_cursor_control"
 	android:title="@string/volume_key_cursor_control_title" />
+
+    <Preference
+        android:key="vol_steps"
+        android:fragment="com.aosip.owlsnest.buttons.VolumeStepsFragment"
+        android:title="@string/volume_steps_fragment_title"
+        android:summary="@string/volume_steps_summary" />
 </PreferenceScreen>
