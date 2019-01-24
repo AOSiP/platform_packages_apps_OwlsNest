@@ -86,7 +86,7 @@
         android:key="secure_lockscreen"
         android:title="@string/secure_lockscreen" >
 
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
             android:key="lockscreen_qs_disabled"
             android:title="@string/lockscreen_qs_disabled_title"
             android:summary="@string/lockscreen_qs_disabled_summary"
