@@ -86,6 +86,9 @@
     <string name="clock_date_style_lowercase">Kisbetűs</string>
     <string name="clock_date_style_uppercase">Nagybetűs</string>
     <string name="clock_date_format_custom">Egyéni java formátum</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Akkumulátorikon</string>
     <string name="status_bar_battery_percentage_title">Akkumulátor százalék</string>
@@ -188,6 +191,22 @@
     <string name="brightness_slider_bottom_summary">Fényerőszabályzó-csúszka megjelenítése a gyorsbeállítások panel alján</string>
     <string name="show_secure_title">Biztonsági-lábléc megjelenítése</string>
     <string name="show_info_header_title">Inferomációs fejléc megjelenítése</string>
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+    <string name="quick_pulldown_always">Always</string>
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
+    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_none">no notifications</string>
+    <string name="smart_pulldown_dismissable">no dismissable</string>
+    <string name="smart_pulldown_ongoing">no ongoing</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animációk</string>
     <string name="qs_tile_animation_style_title">Az animáció stílusa</string>
@@ -306,24 +325,29 @@
     <string name="lockscreen_title">Záróképernyőn</string>
     <string name="lockscreen_summary">Zárképernyő elrendezésének testreszabása</string>
     <string name="secure_lockscreen">Biztonságos zárképernyő opciók</string>
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
     <string name="lock_screen_shortcuts_title">Zárképernyő hivatkozások</string>
     <string name="lock_screen_shortcuts_summary">Kezelheti a Zárképernyő alsó parancsikonjait</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Zenei vizualizáció</string>
     <string name="lockscreen_visualizer_summary">Vizualizációk kapcsolása a zárképernyőn</string>
+    <!-- ambient visualizer -->
+    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
-    <string name="lockscreen_clock_title">Clock widget</string>
-    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
-    <string name="lockscreen_info_title">Items underneath the clock</string>
-    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <string name="lockscreen_clock_title">Óra modul</string>
+    <string name="lockscreen_clock_summary">Óra modul megjelenítése a zárképernyőn</string>
+    <string name="lockscreen_info_title">Az elemek az óra alatt helyezkednek el</string>
+    <string name="lockscreen_info_summary">Mutassa a dátumot, időjárást, ébresztést a zárképernyőn</string>
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_title">Clock style</string>
-    <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-    <string name="lockscreen_clock_selection_analog">Analog</string>
-    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_title">Óra stílusa</string>
+    <string name="lockscreen_clock_selection_digital">Alapértelmezett</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digitális (félkövér)</string>
+    <string name="lockscreen_clock_selection_analog">Analóg</string>
+    <string name="lockscreen_clock_selection_du">Analóg (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
-    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
     <!-- Weather -->
     <string name="weather_unit">Hőmérséklet mértékegysége</string>
     <!-- Facelock toggle -->
@@ -361,8 +385,15 @@
     <string name="show_cpu_info">A CPU információk megjelenítése</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Aktuális CPU-adatok megjelenítése egy képernyő-fedőrétegen</string>
+    <!-- Call notifications -->
+    <string name="call_notifications_cat">Call Notification Options</string>
+    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
+    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
+    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
+    <string name="flashlight_on_call_always">Always blink flashlight</string>
     <!-- AOSP Recents component Style -->
-    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_component_type_title">Előzmények stílusa</string>
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->

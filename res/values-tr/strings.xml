@@ -86,6 +86,9 @@
     <string name="clock_date_style_lowercase">Küçük harf</string>
     <string name="clock_date_style_uppercase">Büyük harf</string>
     <string name="clock_date_format_custom">Özel java biçimi</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Pil simgesi</string>
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
@@ -188,6 +191,22 @@
     <string name="brightness_slider_bottom_summary">Hızlı ayarlar paneli altında parlaklık kaydırıcısını göster</string>
     <string name="show_secure_title">Güvenlik altbilgisini göster</string>
     <string name="show_info_header_title">Başlık bilgisini göster</string>
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+    <string name="quick_pulldown_always">Always</string>
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
+    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_none">no notifications</string>
+    <string name="smart_pulldown_dismissable">no dismissable</string>
+    <string name="smart_pulldown_ongoing">no ongoing</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animasyonlar</string>
     <string name="qs_tile_animation_style_title">Animasyon stili</string>
@@ -306,24 +325,29 @@
     <string name="lockscreen_title">Kilit Ekranı</string>
     <string name="lockscreen_summary">Kilit ekranı düzenini ve seçeneklerini özelleştirme</string>
     <string name="secure_lockscreen">Güvenli kilit ekranı seçenekleri</string>
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
     <string name="lock_screen_shortcuts_title">Kilit ekranı kısayolları</string>
     <string name="lock_screen_shortcuts_summary">Kilit ekranı kısayollarını düzenle</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Müzik görselleştirici</string>
     <string name="lockscreen_visualizer_summary">Kilit ekranında müzik görselleştiriciyi gösterir</string>
+    <!-- ambient visualizer -->
+    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
-    <string name="lockscreen_clock_title">Clock widget</string>
-    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
-    <string name="lockscreen_info_title">Items underneath the clock</string>
-    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <string name="lockscreen_clock_title">Saat widget\'ı</string>
+    <string name="lockscreen_clock_summary">Kilit ekranında saat widget\'ını göster</string>
+    <string name="lockscreen_info_title">Saatin altındaki öğeler</string>
+    <string name="lockscreen_info_summary">Kilit ekranında tarih, hava durumu ve alarmı göster</string>
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_title">Clock style</string>
-    <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_title">Saat stili</string>
+    <string name="lockscreen_clock_selection_digital">Varsayılan</string>
+    <string name="lockscreen_clock_selection_digital_bold">Dijital (kalın)</string>
     <string name="lockscreen_clock_selection_analog">Analog</string>
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
-    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (kalın)</string>
     <!-- Weather -->
     <string name="weather_unit">Sıcaklık birimi</string>
     <!-- Facelock toggle -->
@@ -361,8 +385,15 @@
     <string name="show_cpu_info">İşlemci bilgisini göster</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Geçerli işlemci bilgisini gösteren ekran yer paylaşımı</string>
+    <!-- Call notifications -->
+    <string name="call_notifications_cat">Call Notification Options</string>
+    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
+    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
+    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
+    <string name="flashlight_on_call_always">Always blink flashlight</string>
     <!-- AOSP Recents component Style -->
-    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_component_type_title">Son uygulamalar stili</string>
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->

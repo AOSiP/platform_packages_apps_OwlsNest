@@ -86,6 +86,9 @@
     <string name="clock_date_style_lowercase">소문자</string>
     <string name="clock_date_style_uppercase">대문자</string>
     <string name="clock_date_format_custom">사용자 지정 java 형식</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">배터리 아이콘</string>
     <string name="status_bar_battery_percentage_title">배터리 잔량 표시</string>
@@ -188,6 +191,22 @@
     <string name="brightness_slider_bottom_summary">밝기 슬라이더를 빠른 설정 패널의 아래쪽에 표시</string>
     <string name="show_secure_title">보안 꼬리말 보기</string>
     <string name="show_info_header_title">정보 머리말을 표시</string>
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+    <string name="quick_pulldown_always">Always</string>
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
+    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_none">no notifications</string>
+    <string name="smart_pulldown_dismissable">no dismissable</string>
+    <string name="smart_pulldown_ongoing">no ongoing</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">애니메이션</string>
     <string name="qs_tile_animation_style_title">애니메이션 스타일</string>
@@ -301,29 +320,34 @@
     <!--Double Tap to Sleep Lockscreen-->
     <string name="double_tap_sleep_lockscreen">잠금 화면</string>
     <!--Double Tap to Sleep Statusbar-->
-    <string name="double_tap_sleep_gesture_title">상태표시줄</string>
+    <string name="double_tap_sleep_gesture_title">상태 표시줄</string>
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">잠금 화면</string>
     <string name="lockscreen_summary">잠금 화면 레이아웃과 옵션을 변경합니다</string>
     <string name="secure_lockscreen">잠금 화면 구성</string>
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
     <string name="lock_screen_shortcuts_title">잠금 화면 바로 가기</string>
     <string name="lock_screen_shortcuts_summary">잠금화면 아래 바로가기 관리</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">음악 시각화</string>
     <string name="lockscreen_visualizer_summary">잠금 화면의 시각화 토글</string>
+    <!-- ambient visualizer -->
+    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
-    <string name="lockscreen_clock_title">Clock widget</string>
-    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
-    <string name="lockscreen_info_title">Items underneath the clock</string>
-    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <string name="lockscreen_clock_title">시계 위젯</string>
+    <string name="lockscreen_clock_summary">잠금 화면에 시계 위젯을 표시합니다</string>
+    <string name="lockscreen_info_title">항목을 시계 밑에 두기</string>
+    <string name="lockscreen_info_summary">잠금 화면에 날짜, 날씨, 알람 표시</string>
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_title">Clock style</string>
-    <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-    <string name="lockscreen_clock_selection_analog">Analog</string>
-    <string name="lockscreen_clock_selection_du">Analog (du)</string>
-    <string name="lockscreen_clock_selection_sammy">Sammy</string>
-    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_title">시계 스타일</string>
+    <string name="lockscreen_clock_selection_digital">기본값</string>
+    <string name="lockscreen_clock_selection_digital_bold">디지털 (굵게)</string>
+    <string name="lockscreen_clock_selection_analog">아날로그</string>
+    <string name="lockscreen_clock_selection_du">아날로그 (du)</string>
+    <string name="lockscreen_clock_selection_sammy">새미</string>
+    <string name="lockscreen_clock_selection_sammy_bold">새미 (굵게)</string>
     <!-- Weather -->
     <string name="weather_unit">온도 단위</string>
     <!-- Facelock toggle -->
@@ -335,7 +359,7 @@
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">앰비언트 뮤직 티커</string>
     <string name="force_ambient_for_media_pref_summary">앰비언트 뮤직 티커 구성</string>
-    <string name="ambient_ticker_footer">앰비언트 뮤직 티커는 앰비언트 디스플레이 화면에 현재 재생되는 음악 트랙 정보를 나타냅니다.\n\n 만약 새 트랙이 시작될 때 앰비언트 화면이 꺼져 있을 경우, 화면 중간에 트랙 정보를 담은 깨끗한 앰비언트 화면을 강제로 표시합니다.\n\n또한 트랙 정보를 두 번 눌러서 트랙을 건너 뛸 수 있습니다.\n\n 픽셀을 가지고 있고 Now Playing 및 시스템 오디오 설정에서 알림을 사용할 경우 앰비언트 뮤직 티커도 그 안에서 작동합니다.</string>
+    <string name="ambient_ticker_footer">앰비언트 뮤직 티커는 앰비언트 디스플레이 화면에 현재 재생되는 음악 트랙 정보를 나타냅니다.\n\n만약에 새 트랙이 시작될 때 앰비언트 화면이 꺼져 있을 경우, 화면 중간에 트랙 정보를 담은 깨끗한 앰비언트 화면을 강제로 표시합니다.\n\n또한 트랙 정보를 두 번 눌러서 트랙을 건너 뛸 수 있습니다.\n\n픽셀을 소유한 상태에서 Now Playing 및 시스템 오디오 설정에서 알림을 사용할 경우 앰비언트 뮤직 티커도 그 안에서 작동합니다.</string>
     <string name="force_ambient_for_media_title">활성화</string>
     <!-- Media art -->
     <string name="media_art_title">미디어 커버 아트</string>
@@ -361,10 +385,17 @@
     <string name="show_cpu_info">CPU 정보 보기</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">화면에 현재 CPU 정보를 표시합니다</string>
+    <!-- Call notifications -->
+    <string name="call_notifications_cat">Call Notification Options</string>
+    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
+    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
+    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
+    <string name="flashlight_on_call_always">Always blink flashlight</string>
     <!-- AOSP Recents component Style -->
-    <string name="recents_component_type_title">Recents Style</string>
-    <string name="recents_pie">Pie</string>
-    <string name="recents_oreo">Oreo</string>
+    <string name="recents_component_type_title">최근 실행 목록 스타일</string>
+    <string name="recents_pie">파이</string>
+    <string name="recents_oreo">오레오</string>
     <!-- Themes -->
     <string name="theme_category_title">테마 옵션</string>
     <string name="accent_picker_dialog_title">강조색 선택</string>
@@ -381,7 +412,7 @@
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">스마트 픽셀</string>
     <string name="smart_pixels_warning_text">스마트 픽셀은 절전 기능입니다. 끄기로 결정한 픽셀 수에 따라 배터리 수명이 크게 향상될 수 있습니다. 좋은 사용자 환경을 위해 비활성화된 픽셀의 양을 75%로 설정하는 것이 좋습니다.</string>
-    <string name="smart_pixels_summary">여분의 픽셀을 차단하여 배터리 절약</string>
+    <string name="smart_pixels_summary">여분의 픽셀을 차단하여 배터리를 절약합니다</string>
     <string name="smart_pixels_enable_title">스마트 픽셀 켜기</string>
     <string name="smart_pixels_enable_summary">픽셀을 차단하여 전력 소비를 줄입니다.</string>
     <string name="smart_pixels_on_power_save_title">배터리 세이버 자동 실행</string>
