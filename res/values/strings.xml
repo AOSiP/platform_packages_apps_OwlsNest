@@ -158,13 +158,17 @@
     <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
     <string name="status_bar_logo_style_title">Custom logo style</string>
 
-    <!-- Show carrier label and custom -->
+    <!-- Carrier Label -->
     <string name="status_carrier_title">Carrier Label</string>
-    <string name="show_status_bar_carrier_title">Status bar carrier</string>
-    <string name="show_status_bar_carrier_summary">Show carrier in status bar</string>
+    <string name="carrier_options">Select display locations</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Lockscreen</string>
+    <string name="show_carrier_statusbar">Status bar</string>
+    <string name="show_carrier_enabled">Both</string>
 
 
     <!--Owlsnest Notification-->

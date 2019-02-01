@@ -82,8 +82,8 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
 
     private static final String NETWORK_TRAFFIC_FONT_SIZE  = "network_traffic_font_size";
 
-    private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
-    private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+    private static final String KEY_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+    private static final String KEY_STATUS_BAR_SHOW_CARRIER = "status_bar_show_carrier";
 
     private SecureSettingIntListPreference mClockPosition;
     private ListPreference mClockAmPmStyle;
@@ -106,8 +106,8 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
     private SwitchPreference mShowKronicLogo;
     private ListPreference mLogoStyle;
 
-    private SwitchPreference mStatusBarCarrier;
-    private PreferenceScreen mCustomCarrierLabel;
+    private ListPreference mShowCarrierLabel;
+    private Preference mCustomCarrierLabel;
 
     private String mCustomCarrierLabelText;
 
@@ -253,11 +253,14 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
         }
         mNetTrafficLocation.setSummary(mNetTrafficLocation.getEntry());
 
-        mStatusBarCarrier = (SwitchPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
-        mStatusBarCarrier.setChecked((Settings.System.getInt(
-                    resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
-        mStatusBarCarrier.setOnPreferenceChangeListener(this);
-        mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
+        mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
+        int showCarrierLabel = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_SHOW_CARRIER, 1);
+        mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
+        mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
+        mShowCarrierLabel.setOnPreferenceChangeListener(this);
+
+        mCustomCarrierLabel = (Preference) findPreference(KEY_CUSTOM_CARRIER_LABEL);
         updateCustomLabelTextSummary();
     }
 
@@ -406,18 +409,21 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
             int value = Integer.parseInt((String) objValue);
             updateBatteryOptions(value);
             return true;
-        } else if (preference == mStatusBarCarrier) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_CARRIER, value ? 1 : 0);
-            return true;
+        } else if (preference == mShowCarrierLabel) {
+            int showCarrierLabel = Integer.valueOf((String) objValue);
+            int index = mShowCarrierLabel.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver, Settings.System.
+                    STATUS_BAR_SHOW_CARRIER, showCarrierLabel);
+            mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
         }
         return false;
     }
 
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
-            final Preference preference) {
+    @Override
+    public boolean onPreferenceTreeClick(final Preference preference) {
+        super.onPreferenceTreeClick(preference);
         final ContentResolver resolver = getActivity().getContentResolver();
-        if (preference.getKey().equals(CUSTOM_CARRIER_LABEL)) {
+        if (preference.getKey().equals(KEY_CUSTOM_CARRIER_LABEL)) {
             AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
             alert.setTitle(R.string.custom_carrier_label_title);
             alert.setMessage(R.string.custom_carrier_label_explain);
@@ -436,12 +442,12 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
                             Intent i = new Intent();
                             i.setAction(Intent.ACTION_CUSTOM_CARRIER_LABEL_CHANGED);
                             getActivity().sendBroadcast(i);
-                }
-            });
+                        }
+                    });
             alert.setNegativeButton(getString(android.R.string.cancel), null);
             alert.show();
         }
-        return false;
+        return true;
     }
 
     private void updateCustomLabelTextSummary() {
