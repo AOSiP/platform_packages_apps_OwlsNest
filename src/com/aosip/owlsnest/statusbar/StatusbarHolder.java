@@ -30,6 +30,7 @@ import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.format.DateFormat;
+import android.text.InputFilter;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.util.Log;
@@ -430,7 +431,9 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
 
             // Set an EditText view to get user input
             final EditText input = new EditText(getActivity());
+            int maxLength = 10;
             input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "" : mCustomCarrierLabelText);
+            input.setFilters(new InputFilter[] {new InputFilter.LengthFilter(maxLength)});
             input.setSelection(input.getText().length());
             alert.setView(input);
             alert.setPositiveButton(getString(android.R.string.ok),
