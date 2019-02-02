@@ -109,8 +109,8 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
 
     private ListPreference mShowCarrierLabel;
     private Preference mCustomCarrierLabel;
-
     private String mCustomCarrierLabelText;
+    private int showCarrierLabel;
 
     private Context mContext;
 
@@ -255,14 +255,17 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
         mNetTrafficLocation.setSummary(mNetTrafficLocation.getEntry());
 
         mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
-        int showCarrierLabel = Settings.System.getInt(resolver,
+        showCarrierLabel = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_SHOW_CARRIER, 1);
         mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
         mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
 
         mCustomCarrierLabel = (Preference) findPreference(KEY_CUSTOM_CARRIER_LABEL);
+
         updateCustomLabelTextSummary();
+        mCustomCarrierLabel.setEnabled(!mShowCarrierLabel.getEntryValues()
+                [showCarrierLabel].equals("0"));
     }
 
     @Override
@@ -416,6 +419,9 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver, Settings.System.
                     STATUS_BAR_SHOW_CARRIER, showCarrierLabel);
             mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
+            mCustomCarrierLabel.setEnabled(!mShowCarrierLabel.getEntryValues()
+                    [showCarrierLabel].equals("0"));
+            return true;
         }
         return false;
     }
