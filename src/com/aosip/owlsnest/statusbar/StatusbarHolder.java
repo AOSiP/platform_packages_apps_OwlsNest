@@ -435,13 +435,19 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
             alert.setTitle(R.string.custom_carrier_label_title);
             alert.setMessage(R.string.custom_carrier_label_explain);
 
-            // Set an EditText view to get user input
+            LinearLayout container = new LinearLayout(getActivity());
+            container.setOrientation(LinearLayout.VERTICAL);
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+            lp.setMargins(55, 20, 55, 20);
             final EditText input = new EditText(getActivity());
             int maxLength = 10;
+            input.setLayoutParams(lp);
+            input.setGravity(android.view.Gravity.TOP| Gravity.START);
             input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "" : mCustomCarrierLabelText);
             input.setFilters(new InputFilter[] {new InputFilter.LengthFilter(maxLength)});
-            input.setSelection(input.getText().length());
-            alert.setView(input);
+            container.addView(input);
+            alert.setView(container);
             alert.setPositiveButton(getString(android.R.string.ok),
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
