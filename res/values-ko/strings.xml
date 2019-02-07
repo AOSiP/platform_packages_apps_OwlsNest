@@ -86,9 +86,9 @@
     <string name="clock_date_style_lowercase">소문자</string>
     <string name="clock_date_style_uppercase">대문자</string>
     <string name="clock_date_format_custom">사용자 지정 java 형식</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">시계 우측</string>
+    <string name="clock_date_left">시계 좌측</string>
+    <string name="clock_date_position">날짜 위치</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">배터리 아이콘</string>
     <string name="status_bar_battery_percentage_title">배터리 잔량 표시</string>
@@ -109,12 +109,12 @@
     <string name="hide_notch_title">노치 숨기기</string>
     <string name="hide_notch_summary">이것을 활성화하면, 노치를 숨기고 사이드 간격이 채워집니다.</string>
     <!-- Custom carrier label and position -->
-    <string name="carrier_category">통신사 라벨</string>
-    <string name="carrier_label_settings_summary">통신사 문구를 사용자가 직접 설정합니다</string>
-    <string name="custom_carrier_label_title">사용자 설정 통신사 문구</string>
-    <string name="custom_carrier_label_explain">새 문구를 입력해주세요. 아무것도 입력하지 않을 시 기본 문구로 돌아갑니다.</string>
-    <string name="custom_carrier_label_notset">사용자가 설정한 통신사 문구 없음</string>
-    <string name="show_carrier_title">통신사 문구</string>
+    <string name="carrier_category">통신사 이름</string>
+    <string name="carrier_label_settings_summary">통신사 이름을 사용자가 직접 설정합니다</string>
+    <string name="custom_carrier_label_title">사용자 설정 통신사 이름</string>
+    <string name="custom_carrier_label_explain">새 이름을 입력해주세요. 아무것도 입력하지 않을 시 기본 이름으로 돌아갑니다.</string>
+    <string name="custom_carrier_label_notset">사용자가 설정한 통신사 이름 없음</string>
+    <string name="show_carrier_title">통신사 이름</string>
     <string name="show_carrier_disabled">비활성화됨</string>
     <string name="show_carrier_keyguard">잠금 화면에만 표시</string>
     <string name="show_carrier_statusbar">상태 표시줄만 표시</string>
@@ -192,21 +192,21 @@
     <string name="show_secure_title">보안 꼬리말 보기</string>
     <string name="show_info_header_title">정보 머리말을 표시</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_always">Always</string>
+    <string name="quick_pulldown_title">빠르게 패널 내리기</string>
+    <string name="quick_pulldown_summary">상태 표시줄의 %1$s 가장자리를 끌어내려 빠른 설정을 표시합니다.</string>
+    <string name="quick_pulldown_summary_always">상태 표시줄을 끌어내릴 때 항상 빠른 설정 패널 보기</string>
+    <string name="quick_pulldown_off">끄기</string>
+    <string name="quick_pulldown_left">왼쪽</string>
+    <string name="quick_pulldown_right">오른쪽</string>
+    <string name="quick_pulldown_always">항상</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">스마트 내리기</string>
+    <string name="smart_pulldown_summary">%1$s개 이상의 알림이 있으면 빠른 설정을 표시합니다</string>
+    <string name="smart_pulldown_none_summary">표시할 알림이 없으면 빠른 설정을 표시합니다</string>
+    <string name="smart_pulldown_off">끄기</string>
+    <string name="smart_pulldown_none">알림이 없습니다</string>
+    <string name="smart_pulldown_dismissable">지울 수 있는 알림 없음</string>
+    <string name="smart_pulldown_ongoing">진행 중 알림 없음</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">애니메이션</string>
     <string name="qs_tile_animation_style_title">애니메이션 스타일</string>
@@ -249,6 +249,16 @@
     <string name="hardware_keys_double_tap_title">두 번 누르기 동작</string>
     <string name="hardware_keys_category">내비게이션</string>
     <string name="hardware_keys_disable_title">내비게이션 버튼 사용 중지</string>
+    <!-- Button brightness -->
+    <string name="button_lights_category">Backlight</string>
+    <string name="button_backlight_options_category">Backlight options</string>
+    <string name="button_backlight_enable_title">Allow button backlight</string>
+    <string name="button_link_brightness">Link to screen brightness</string>
+    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
+    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">하드웨어 버튼</string>
     <string name="buttons_summary">물리 버튼의 반응을 조정합니다</string>
@@ -325,16 +335,16 @@
     <string name="lockscreen_title">잠금 화면</string>
     <string name="lockscreen_summary">잠금 화면 레이아웃과 옵션을 변경합니다</string>
     <string name="secure_lockscreen">잠금 화면 구성</string>
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">잠금 화면에서 빠른 설정 비활성화</string>
+    <string name="lockscreen_qs_disabled_summary">보안 잠금 화면에서 빠른 설정 패널 확장을 비활성화 합니다.</string>
     <string name="lock_screen_shortcuts_title">잠금 화면 바로 가기</string>
     <string name="lock_screen_shortcuts_summary">잠금화면 아래 바로가기 관리</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">음악 시각화</string>
     <string name="lockscreen_visualizer_summary">잠금 화면의 시각화 토글</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
-    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+    <string name="ambient_visualizer_title">앰비언트 디스플레이에서 시각화 막대 나타내기</string>
+    <string name="ambient_visualizer_summary">앰비언트 디스플레이에 시각화 막대를 표시합니다 (덜 불투명함)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">시계 위젯</string>
     <string name="lockscreen_clock_summary">잠금 화면에 시계 위젯을 표시합니다</string>
@@ -359,7 +369,7 @@
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">앰비언트 뮤직 티커</string>
     <string name="force_ambient_for_media_pref_summary">앰비언트 뮤직 티커 구성</string>
-    <string name="ambient_ticker_footer">앰비언트 뮤직 티커는 앰비언트 디스플레이 화면에 현재 재생되는 음악 트랙 정보를 나타냅니다.\n\n만약에 새 트랙이 시작될 때 앰비언트 화면이 꺼져 있을 경우, 화면 중간에 트랙 정보를 담은 깨끗한 앰비언트 화면을 강제로 표시합니다.\n\n또한 트랙 정보를 두 번 눌러서 트랙을 건너 뛸 수 있습니다.\n\n픽셀을 소유한 상태에서 Now Playing 및 시스템 오디오 설정에서 알림을 사용할 경우 앰비언트 뮤직 티커도 그 안에서 작동합니다.</string>
+    <string name="ambient_ticker_footer">앰비언트 뮤직 티커는 앰비언트 디스플레이 화면에 현재 재생되는 음악 트랙 정보를 나타냅니다.\n\n새 트랙이 시작될 때 앰비언트 화면이 꺼져있을 경우에는, 화면 중간에 트랙 정보를 담은 깨끗한 앰비언트 화면을 강제로 표시합니다.\n\n트랙 정보를 두 번 눌러서 트랙을 건너뛸 수도 있습니다.\n\n픽셀을 소유하고 Now Playing 및 시스템 오디오 설정에서 알림을 사용할 경우에는 앰비언트 뮤직 티커도 그 안에서 작동합니다.</string>
     <string name="force_ambient_for_media_title">활성화</string>
     <!-- Media art -->
     <string name="media_art_title">미디어 커버 아트</string>
@@ -386,16 +396,16 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">화면에 현재 CPU 정보를 표시합니다</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Call Notification Options</string>
-    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-    <string name="flashlight_on_call_always">Always blink flashlight</string>
+    <string name="call_notifications_cat">통화 알림 옵션</string>
+    <string name="flashlight_on_call_title">전화 올 때 손전등 깜빡임</string>
+    <string name="flashlight_on_call_disabled">비활성화됨</string>
+    <string name="flashlight_on_call_not_dnd">벨소리 모드일 때만 손전등 깜빡임</string>
+    <string name="flashlight_on_call_dnd">방해 금지 모드일 때만 손전등 깜빡임</string>
+    <string name="flashlight_on_call_always">항상 손전등 깜빡임</string>
     <!-- AOSP Recents component Style -->
     <string name="recents_component_type_title">최근 실행 목록 스타일</string>
-    <string name="recents_pie">파이</string>
-    <string name="recents_oreo">오레오</string>
+    <string name="recents_pie">Pie</string>
+    <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">테마 옵션</string>
     <string name="accent_picker_dialog_title">강조색 선택</string>

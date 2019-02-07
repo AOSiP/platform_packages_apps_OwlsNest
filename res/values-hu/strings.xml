@@ -86,9 +86,9 @@
     <string name="clock_date_style_lowercase">Kisbetűs</string>
     <string name="clock_date_style_uppercase">Nagybetűs</string>
     <string name="clock_date_format_custom">Egyéni java formátum</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Az órától jobbra</string>
+    <string name="clock_date_left">Az órától balra</string>
+    <string name="clock_date_position">Dátum pozíciója</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Akkumulátorikon</string>
     <string name="status_bar_battery_percentage_title">Akkumulátor százalék</string>
@@ -131,7 +131,7 @@
     <string name="status_bar_toggle_brightness">Fényerő-szabályozás</string>
     <string name="status_bar_toggle_brightness_summary">Engedélyezi, hogy az állapotsávon az ujjaival szabályozhassa a fényerőt</string>
     <!--Owlsnest Notification-->
-    <string name="notification_title">Értesítés</string>
+    <string name="notification_title">Értesítések</string>
     <string name="notification_summary">LED és értesítés viselkedéseinek beállítása</string>
     <string name="notification_category">Értesítések</string>
     <string name="headsup_category">Lebegő értesítés</string>
@@ -192,21 +192,21 @@
     <string name="show_secure_title">Biztonsági-lábléc megjelenítése</string>
     <string name="show_info_header_title">Inferomációs fejléc megjelenítése</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_always">Always</string>
+    <string name="quick_pulldown_title">Gyors legördítés</string>
+    <string name="quick_pulldown_summary">A Gyorsbeállítások megjelenítése az állapotsor %1$s oldalán történő lehúzásakor</string>
+    <string name="quick_pulldown_summary_always">Mindig jelenítse meg a gyors beállításokat az állapotsor lehúzásakor</string>
+    <string name="quick_pulldown_off">Ki</string>
+    <string name="quick_pulldown_left">Bal</string>
+    <string name="quick_pulldown_right">Jobb</string>
+    <string name="quick_pulldown_always">Mindig</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">Intelligens legördítés</string>
+    <string name="smart_pulldown_summary">Gyorsbeállítások megnyitása, ha %1$s értesítés</string>
+    <string name="smart_pulldown_none_summary">Gyorsbeállítások megnyitása, ha nincsenek értesítések</string>
+    <string name="smart_pulldown_off">Ki</string>
+    <string name="smart_pulldown_none">nincsenek értesítések</string>
+    <string name="smart_pulldown_dismissable">nincsenek törölhető értesítések</string>
+    <string name="smart_pulldown_ongoing">nincsenek folyamatban lévő értesítések</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animációk</string>
     <string name="qs_tile_animation_style_title">Az animáció stílusa</string>
@@ -249,6 +249,16 @@
     <string name="hardware_keys_double_tap_title">A dupla érintés művelete</string>
     <string name="hardware_keys_category">Navigáció</string>
     <string name="hardware_keys_disable_title">Navigációs gombok letiltása</string>
+    <!-- Button brightness -->
+    <string name="button_lights_category">Backlight</string>
+    <string name="button_backlight_options_category">Backlight options</string>
+    <string name="button_backlight_enable_title">Allow button backlight</string>
+    <string name="button_link_brightness">Link to screen brightness</string>
+    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
+    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardvergombok</string>
     <string name="buttons_summary">Az eszköz fizikai gombjainak testreszabása</string>
@@ -308,7 +318,7 @@
     <string name="recents_clear_all_location_bottom_left">Lent balra</string>
     <string name="recents_clear_all_location_bottom_center">Lent középen</string>
     <!--Owlsnest Gestures-->
-    <string name="gesture_category">Gesztus</string>
+    <string name="gesture_category">Gesztusok</string>
     <string name="gesture_summary">Gesztus által vezérelt opció</string>
     <string name="double_tap_options">Dupla érintésre alvás</string>
     <string name="aosp_gesture_title">AOSP gesztusok</string>
@@ -322,19 +332,19 @@
     <!--Double Tap to Sleep Statusbar-->
     <string name="double_tap_sleep_gesture_title">Állapotsor</string>
     <!--Owlsnest lockscreen-->
-    <string name="lockscreen_title">Záróképernyőn</string>
+    <string name="lockscreen_title">Záróképernyő</string>
     <string name="lockscreen_summary">Zárképernyő elrendezésének testreszabása</string>
     <string name="secure_lockscreen">Biztonságos zárképernyő opciók</string>
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">A gyorsbeállítások tiltása zárolt állapotban</string>
+    <string name="lockscreen_qs_disabled_summary">Megelőzi a gyorsbeállítások lehúzását a biztonságos zárképernyőn</string>
     <string name="lock_screen_shortcuts_title">Zárképernyő hivatkozások</string>
     <string name="lock_screen_shortcuts_summary">Kezelheti a Zárképernyő alsó parancsikonjait</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Zenei vizualizáció</string>
     <string name="lockscreen_visualizer_summary">Vizualizációk kapcsolása a zárképernyőn</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
-    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+    <string name="ambient_visualizer_title">Zene-vizualizáció a Környezeti kijelzőn</string>
+    <string name="ambient_visualizer_summary">Mutassa a zenevizualizációt a környezeti kijelzőn is (kevésbé átlátszó)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Óra modul</string>
     <string name="lockscreen_clock_summary">Óra modul megjelenítése a zárképernyőn</string>
@@ -386,12 +396,12 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Aktuális CPU-adatok megjelenítése egy képernyő-fedőrétegen</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Call Notification Options</string>
-    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-    <string name="flashlight_on_call_always">Always blink flashlight</string>
+    <string name="call_notifications_cat">Hívás értesítéseinek beállítása</string>
+    <string name="flashlight_on_call_title">Vaku villogása híváskor</string>
+    <string name="flashlight_on_call_disabled">Letiltva</string>
+    <string name="flashlight_on_call_not_dnd">Vaku villogása csak hangos módban</string>
+    <string name="flashlight_on_call_dnd">Vaku villogása csak Ne zavarjanak (DND) módban</string>
+    <string name="flashlight_on_call_always">Vaku villogása minden alkalommal</string>
     <!-- AOSP Recents component Style -->
     <string name="recents_component_type_title">Előzmények stílusa</string>
     <string name="recents_pie">Pie</string>

@@ -86,9 +86,9 @@
     <string name="clock_date_style_lowercase">Küçük harf</string>
     <string name="clock_date_style_uppercase">Büyük harf</string>
     <string name="clock_date_format_custom">Özel java biçimi</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Saatin sağında</string>
+    <string name="clock_date_left">Saatin solunda</string>
+    <string name="clock_date_position">Tarih konumu</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Pil simgesi</string>
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
@@ -192,21 +192,21 @@
     <string name="show_secure_title">Güvenlik altbilgisini göster</string>
     <string name="show_info_header_title">Başlık bilgisini göster</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_always">Always</string>
+    <string name="quick_pulldown_title">Hızlı aşağı çekme</string>
+    <string name="quick_pulldown_summary">Durum çubuğunun %1$s kenarı Hızlı Ayarları aşağı çeker</string>
+    <string name="quick_pulldown_summary_always">Durum çubuğunu aşağıya çekince her zaman Hızlı Ayarları göster</string>
+    <string name="quick_pulldown_off">Kapalı</string>
+    <string name="quick_pulldown_left">Sol</string>
+    <string name="quick_pulldown_right">Sağ</string>
+    <string name="quick_pulldown_always">Her zaman</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">Akıllı aşağı çekme</string>
+    <string name="smart_pulldown_summary">%1$s hızlı ayarları açar</string>
+    <string name="smart_pulldown_none_summary">Bildirim olmadığında hızlı ayarları aç</string>
+    <string name="smart_pulldown_off">Kapalı</string>
+    <string name="smart_pulldown_none">Bildirim yoksa</string>
+    <string name="smart_pulldown_dismissable">Kapatılabilir bildirim yoksa</string>
+    <string name="smart_pulldown_ongoing">Devam eden bildirim yoksa</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animasyonlar</string>
     <string name="qs_tile_animation_style_title">Animasyon stili</string>
@@ -249,6 +249,16 @@
     <string name="hardware_keys_double_tap_title">Çift basma eylemi</string>
     <string name="hardware_keys_category">Gezinme</string>
     <string name="hardware_keys_disable_title">Gezinme tuşlarını devre dışı bırak</string>
+    <!-- Button brightness -->
+    <string name="button_lights_category">Backlight</string>
+    <string name="button_backlight_options_category">Backlight options</string>
+    <string name="button_backlight_enable_title">Allow button backlight</string>
+    <string name="button_link_brightness">Link to screen brightness</string>
+    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
+    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Donanım Tuşları</string>
     <string name="buttons_summary">Cihazınızın fiziksel tuş hareketlerini yapılandırma</string>
@@ -325,16 +335,16 @@
     <string name="lockscreen_title">Kilit Ekranı</string>
     <string name="lockscreen_summary">Kilit ekranı düzenini ve seçeneklerini özelleştirme</string>
     <string name="secure_lockscreen">Güvenli kilit ekranı seçenekleri</string>
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">Kilit ekranında hızlı ayarları devre dışı bırak</string>
+    <string name="lockscreen_qs_disabled_summary">Güvenli kilit ekranlarında hızlı ayarların genişletilmesini devre dışı bırakın</string>
     <string name="lock_screen_shortcuts_title">Kilit ekranı kısayolları</string>
     <string name="lock_screen_shortcuts_summary">Kilit ekranı kısayollarını düzenle</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Müzik görselleştirici</string>
     <string name="lockscreen_visualizer_summary">Kilit ekranında müzik görselleştiriciyi gösterir</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
-    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+    <string name="ambient_visualizer_title">Ortam Ekranında Kilit Ekranı Görselleştiriciyi Göster</string>
+    <string name="ambient_visualizer_summary">Görselleştirme çubuklarını ortam ekranında da gösterir (ancak daha az opak)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Saat widget\'ı</string>
     <string name="lockscreen_clock_summary">Kilit ekranında saat widget\'ını göster</string>
@@ -386,12 +396,12 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Geçerli işlemci bilgisini gösteren ekran yer paylaşımı</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Call Notification Options</string>
-    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-    <string name="flashlight_on_call_always">Always blink flashlight</string>
+    <string name="call_notifications_cat">Çağrı Bildirimi Seçenekleri</string>
+    <string name="flashlight_on_call_title">Görüşme sırasında el feneri yanıp söner</string>
+    <string name="flashlight_on_call_disabled">Devre dışı</string>
+    <string name="flashlight_on_call_not_dnd">Yanıp sönen el feneri sadece Zil sesi modunda</string>
+    <string name="flashlight_on_call_dnd">Yanıp sönen el feneri sadece Rahatız etmeyin modunda</string>
+    <string name="flashlight_on_call_always">Daima yanıp sönen el feneri</string>
     <!-- AOSP Recents component Style -->
     <string name="recents_component_type_title">Son uygulamalar stili</string>
     <string name="recents_pie">Pie</string>

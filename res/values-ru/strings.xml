@@ -86,9 +86,9 @@
     <string name="clock_date_style_lowercase">Нижний регистр</string>
     <string name="clock_date_style_uppercase">Верхний регистр</string>
     <string name="clock_date_format_custom">Пользовательский java-формат</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Справа от часов</string>
+    <string name="clock_date_left">Слева от часов</string>
+    <string name="clock_date_position">Расположение даты</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Значок батареи</string>
     <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
@@ -192,21 +192,21 @@
     <string name="show_secure_title">Показать футер безопасности</string>
     <string name="show_info_header_title">Показать заголовок</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_always">Always</string>
+    <string name="quick_pulldown_title">Быстрое вытягивание</string>
+    <string name="quick_pulldown_summary">%1$s край строки состояния при опускании вниз открывает панель быстрых настроек</string>
+    <string name="quick_pulldown_summary_always">Всегда вытягивать быстрые настройки</string>
+    <string name="quick_pulldown_off">Выключить</string>
+    <string name="quick_pulldown_left">Слева</string>
+    <string name="quick_pulldown_right">Справа</string>
+    <string name="quick_pulldown_always">Всегда</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">Умное открытие</string>
+    <string name="smart_pulldown_summary">Открывать быстрые настройки, если %1$s уведомлений</string>
+    <string name="smart_pulldown_none_summary">Открывать панель быстрых настроек когда уведомления отсутствуют</string>
+    <string name="smart_pulldown_off">Выключено</string>
+    <string name="smart_pulldown_none">нет уведомлений</string>
+    <string name="smart_pulldown_dismissable">нет удаляемых</string>
+    <string name="smart_pulldown_ongoing">нет постоянных</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Анимации</string>
     <string name="qs_tile_animation_style_title">Стиль анимации</string>
@@ -249,6 +249,16 @@
     <string name="hardware_keys_double_tap_title">Действие при двойном нажатии</string>
     <string name="hardware_keys_category">Навигация</string>
     <string name="hardware_keys_disable_title">Отключить кнопки навигации</string>
+    <!-- Button brightness -->
+    <string name="button_lights_category">Backlight</string>
+    <string name="button_backlight_options_category">Backlight options</string>
+    <string name="button_backlight_enable_title">Allow button backlight</string>
+    <string name="button_link_brightness">Link to screen brightness</string>
+    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
+    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Аппаратные кнопки</string>
     <string name="buttons_summary">Настройка действий аппаратных кнопок Вашего устройства</string>
@@ -325,27 +335,27 @@
     <string name="lockscreen_title">Экран блокировки</string>
     <string name="lockscreen_summary">Настройка разметки и опций экрана блокировки</string>
     <string name="secure_lockscreen">Настройка экрана блокировки</string>
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">Отключить быстрые настройки на экране блокировки</string>
+    <string name="lockscreen_qs_disabled_summary">Запретить выдвигать панель на защищённом экране блокировки</string>
     <string name="lock_screen_shortcuts_title">Ярлыки экрана блокировки</string>
     <string name="lock_screen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Визуализатор музыки</string>
     <string name="lockscreen_visualizer_summary">Переключение отображения визуализатора на экране блокировки</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_title">Визуализация на Ambient Display</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Виджет часов</string>
     <string name="lockscreen_clock_summary">Показывать виджет часов на экране блокировки</string>
-    <string name="lockscreen_info_title">Items underneath the clock</string>
-    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <string name="lockscreen_info_title">Информация под часами</string>
+    <string name="lockscreen_info_summary">Показывать дату, будильник, погоду и дзен на экране блокировки</string>
     <!-- Lockscreen clock styles -->
     <string name="lockscreen_clock_selection_title">Стиль часов</string>
     <string name="lockscreen_clock_selection_digital">По умолчанию</string>
     <string name="lockscreen_clock_selection_digital_bold">Цифровые (жирный)</string>
     <string name="lockscreen_clock_selection_analog">Аналоговые</string>
-    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_du">Аналоговые (du)</string>
     <string name="lockscreen_clock_selection_sammy">Вертикальные</string>
     <string name="lockscreen_clock_selection_sammy_bold">Вертикальные (жирные)</string>
     <!-- Weather -->
@@ -386,12 +396,12 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Накладываемый слой, показывающий текущую информацию о процессоре</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Call Notification Options</string>
-    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-    <string name="flashlight_on_call_always">Always blink flashlight</string>
+    <string name="call_notifications_cat">Параметры уведомлений вызова</string>
+    <string name="flashlight_on_call_title">Мигание фонарика при звонке</string>
+    <string name="flashlight_on_call_disabled">Выключено</string>
+    <string name="flashlight_on_call_not_dnd">Фонарик мигает только в режиме звонка</string>
+    <string name="flashlight_on_call_dnd">Фонарик мигает только в режиме \"Не беспокоить\"</string>
+    <string name="flashlight_on_call_always">Фонарик мигает всегда</string>
     <!-- AOSP Recents component Style -->
     <string name="recents_component_type_title">Стиль недавних приложений</string>
     <string name="recents_pie">Pie</string>

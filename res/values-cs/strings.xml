@@ -86,9 +86,9 @@
     <string name="clock_date_style_lowercase">Malá písmena</string>
     <string name="clock_date_style_uppercase">Velká písmena</string>
     <string name="clock_date_format_custom">Vlastní formát Java</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Vpravo od času</string>
+    <string name="clock_date_left">Vlevo od času</string>
+    <string name="clock_date_position">Pozice data</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Ikona baterie</string>
     <string name="status_bar_battery_percentage_title">Procenta baterie</string>
@@ -192,21 +192,21 @@
     <string name="show_secure_title">Zobrazit bezpečnostní zápatí</string>
     <string name="show_info_header_title">Zobrazit záhlaví informací</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_always">Always</string>
+    <string name="quick_pulldown_title">Rychlé stažení nabídky</string>
+    <string name="quick_pulldown_summary">%1$s okraj stavové lišty umožňuje rychlé stažení nabídky nastavení</string>
+    <string name="quick_pulldown_summary_always">Vždy zobrazovat rychlé nastavení na stavové liště</string>
+    <string name="quick_pulldown_off">Vyp.</string>
+    <string name="quick_pulldown_left">Levý</string>
+    <string name="quick_pulldown_right">Pravý</string>
+    <string name="quick_pulldown_always">Vždy</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">Chytré rozbalení lišty</string>
+    <string name="smart_pulldown_summary">Otevře nabídku rychlého nastavení, kde jsou přítomna %1$s oznámení</string>
+    <string name="smart_pulldown_none_summary">Otevře nabídku rychlého nastavení, kde nejsou přítomna oznámení</string>
+    <string name="smart_pulldown_off">Vyp.</string>
+    <string name="smart_pulldown_none">žádná oznámení</string>
+    <string name="smart_pulldown_dismissable">žádné zrušitelné</string>
+    <string name="smart_pulldown_ongoing">žádné probíhající</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animace</string>
     <string name="qs_tile_animation_style_title">Styl animace</string>
@@ -249,6 +249,16 @@
     <string name="hardware_keys_double_tap_title">Akce dvojím poklepáním</string>
     <string name="hardware_keys_category">Navigace</string>
     <string name="hardware_keys_disable_title">Zakázat navigační tlačítka</string>
+    <!-- Button brightness -->
+    <string name="button_lights_category">Backlight</string>
+    <string name="button_backlight_options_category">Backlight options</string>
+    <string name="button_backlight_enable_title">Allow button backlight</string>
+    <string name="button_link_brightness">Link to screen brightness</string>
+    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
+    <string name="button_manual_brightness">Brightness level</string>
+    <string name="button_timeout_title">Backlight timeout</string>
+    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
+    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardwarová tlačítka</string>
     <string name="buttons_summary">Upravte akce fyzických tlačítek zařízení</string>
@@ -325,16 +335,16 @@
     <string name="lockscreen_title">Zamykací obrazovka</string>
     <string name="lockscreen_summary">Přizpůsobení možností a rozložení zamykací obrazovky</string>
     <string name="secure_lockscreen">Možnosti zabezpečení zamykací obrazovky</string>
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">Zakázat rychlé nastavení při uzamčení</string>
+    <string name="lockscreen_qs_disabled_summary">Zakázat rozšířené rychlé nastavení na zabezpečené zamčené obrazovce</string>
     <string name="lock_screen_shortcuts_title">Zkratky na zamykací obrazovce</string>
     <string name="lock_screen_shortcuts_summary">Nastavit dolní zkratky zamykací obrazovky</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Hudební vizualizace</string>
     <string name="lockscreen_visualizer_summary">Přepne zobrazení vizualizací na zamykací obrazovce</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
-    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+    <string name="ambient_visualizer_title">Zobrazit LS vizualizér na Ambientním displeji</string>
+    <string name="ambient_visualizer_summary">Zobrazuje vizualizační panely také na Ambientním displeji (ale méně průhledné)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget hodin</string>
     <string name="lockscreen_clock_summary">Zobrazit widget hodin na zamykací obrazovce</string>
@@ -386,12 +396,12 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Překrytí obrazovky informacemi o aktuálním vytížení CPU</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Call Notification Options</string>
-    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-    <string name="flashlight_on_call_always">Always blink flashlight</string>
+    <string name="call_notifications_cat">Možnosti upozornění na volání</string>
+    <string name="flashlight_on_call_title">Blikání svítilny při volání</string>
+    <string name="flashlight_on_call_disabled">Vypnuto</string>
+    <string name="flashlight_on_call_not_dnd">Blikání svítilny pouze při vyzvánění</string>
+    <string name="flashlight_on_call_dnd">Blikání svítilny pouze v režimu Nerušit</string>
+    <string name="flashlight_on_call_always">Vždy blikat svítilnou</string>
     <!-- AOSP Recents component Style -->
     <string name="recents_component_type_title">Styl nedávných aplikací</string>
     <string name="recents_pie">Pie</string>
