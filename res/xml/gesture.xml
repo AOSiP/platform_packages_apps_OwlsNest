@@ -25,6 +25,12 @@
         android:title="@string/aosp_gesture_title"
         android:fragment="com.android.settings.gestures.GestureSettings" />
 
+    <Preference
+        android:key="active_edge_category"
+        android:title="@string/active_edge_title"
+        android:summary="@string/active_edge_summary"
+        android:fragment="com.aosip.owlsnest.gesture.ActiveEdge" />
+
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
         android:title="@string/status_bar_toggle_brightness"
