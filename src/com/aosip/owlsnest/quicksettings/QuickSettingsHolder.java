@@ -202,11 +202,11 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     private void updateAnimTileStyle(int tileAnimationStyle) {
         if (mTileAnimationDuration != null) {
             if (tileAnimationStyle == 0) {
-                mTileAnimationDuration.setSelectable(false);
-                mTileAnimationInterpolator.setSelectable(false);
+                mTileAnimationDuration.setEnabled(false);
+                mTileAnimationInterpolator.setEnabled(false);
             } else {
-                mTileAnimationDuration.setSelectable(true);
-                mTileAnimationInterpolator.setSelectable(true);
+                mTileAnimationDuration.setEnabled(true);
+                mTileAnimationInterpolator.setEnabled(true);
             }
         }
     }
