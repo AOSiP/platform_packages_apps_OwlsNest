@@ -18,6 +18,7 @@ package com.aosip.owlsnest.statusbar;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.os.Bundle;
@@ -30,14 +31,16 @@ import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.view.Menu;
+import android.view.View;
 import android.widget.EditText;
+
+import com.android.internal.util.bootleggers.BootlegUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
-
 import com.android.internal.logging.nano.MetricsProto;
 import com.aosip.owlsnest.preference.SecureSettingListPreference;
+import com.aosip.owlsnest.preference.SecureSettingIntListPreference;
 import com.android.settings.R;
 import java.util.Date;
 
@@ -47,11 +50,15 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "StatusBarClockSettings";
 
     private static final String CLOCK_DATE_FORMAT = "statusbar_clock_date_format";
+    private static final String CLOCK_POSITION = "status_bar_clock_position";
+
+    private Context mContext;
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
     private static final int CUSTOM_CLOCK_DATE_FORMAT_INDEX = 18;
 
+    private SecureSettingIntListPreference mClockPosition;
     private SecureSettingListPreference mClockDateFormat;
 
     @Override
@@ -61,6 +68,17 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
 
+        mClockPosition = (SecureSettingIntListPreference) findPreference(CLOCK_POSITION);
+
+        // Adjust status bar clock prefs for notched devices
+        if (BootlegUtils.hasVisibleNotch(getActivity())) {
+            mClockPosition.setEntries(R.array.clock_position_entries_notch);
+            mClockPosition.setEntryValues(R.array.clock_position_values_notch);
+        } else {
+            mClockPosition.setEntries(R.array.clock_position_entries);
+            mClockPosition.setEntryValues(R.array.clock_position_values);
+        }
+
         mClockDateFormat = (SecureSettingListPreference) findPreference(CLOCK_DATE_FORMAT);
         mClockDateFormat.setOnPreferenceChangeListener(this);
         if (mClockDateFormat.getValue() == null) {
@@ -68,6 +86,19 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements
         }
 
         parseClockDateFormats();
+    }
+
+    public void onResume(Context context) {
+        super.onResume();
+
+        // Adjust status bar clock prefs for notched devices
+        if (BootlegUtils.hasVisibleNotch(getActivity())) {
+            mClockPosition.setEntries(R.array.clock_position_entries_notch);
+            mClockPosition.setEntryValues(R.array.clock_position_values_notch);
+        } else {
+            mClockPosition.setEntries(R.array.clock_position_entries);
+            mClockPosition.setEntryValues(R.array.clock_position_values);
+        }
     }
 
     @Override
