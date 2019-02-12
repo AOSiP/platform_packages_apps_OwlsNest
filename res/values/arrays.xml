@@ -142,6 +142,28 @@
         <item>@string/clock_date_format_custom</item>
     </string-array>
 
+    <string-array name="clock_position_entries" translatable="false">
+        <item>@string/clock_position_right</item>
+        <item>@string/clock_position_center</item>
+        <item>@string/clock_position_left</item>
+    </string-array>
+
+    <string-array name="clock_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_position_entries_notch" translatable="false">
+        <item>@string/clock_position_right</item>
+        <item>@string/clock_position_left</item>
+    </string-array>
+
+    <string-array name="clock_position_values_notch" translatable="false">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Quick Pulldown -->
     <string-array name="quick_pulldown_entries" translatable="false">
         <item>@string/quick_pulldown_off</item>
