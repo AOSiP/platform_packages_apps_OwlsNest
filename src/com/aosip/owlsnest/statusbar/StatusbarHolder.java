@@ -36,12 +36,14 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 
+import com.android.internal.util.aosip.aosipUtils;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.aosip.support.preference.CustomSeekBarPreference;
+import com.aosip.support.preference.SecureSettingIntListPreference;
 import com.aosip.support.preference.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
@@ -52,6 +54,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
+    private static final String CLOCK_POSITION = "status_bar_clock_position";
     private static final String PREF_AM_PM_STYLE = "status_bar_am_pm";
     private static final String PREF_CLOCK_DATE_DISPLAY = "clock_date_display";
     private static final String PREF_CLOCK_DATE_STYLE = "clock_date_style";
@@ -76,6 +79,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
 
     private static final String NETWORK_TRAFFIC_FONT_SIZE  = "network_traffic_font_size";
 
+    private SecureSettingIntListPreference mClockPosition;
     private ListPreference mClockAmPmStyle;
     private ListPreference mClockDateDisplay;
     private ListPreference mClockDateStyle;
@@ -96,6 +100,8 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
     private SwitchPreference mShowKronicLogo;
     private ListPreference mLogoStyle;
 
+    private Context mContext;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,6 +120,17 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
                 0, UserHandle.USER_CURRENT);
         mLogoStyle.setValue(String.valueOf(logoStyle));
         mLogoStyle.setSummary(mLogoStyle.getEntry());
+
+        mClockPosition = (SecureSettingIntListPreference) findPreference(CLOCK_POSITION);
+
+        // Adjust status bar clock prefs for notched devices
+        if (aosipUtils.hasNotch(getActivity())) {
+            mClockPosition.setEntries(R.array.clock_position_entries_notch);
+            mClockPosition.setEntryValues(R.array.clock_position_values_notch);
+        } else {
+            mClockPosition.setEntries(R.array.clock_position_entries);
+            mClockPosition.setEntryValues(R.array.clock_position_values);
+        }
 
         mClockAmPmStyle = (ListPreference) findPreference(PREF_AM_PM_STYLE);
         mClockAmPmStyle.setOnPreferenceChangeListener(this);
@@ -430,6 +447,19 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
                 break;
             default: 
                 break;
+        }
+    }
+
+    public void onResume(Context context) {
+        super.onResume();
+
+        // Adjust status bar clock prefs for notched devices
+        if (aosipUtils.hasNotch(getActivity())) {
+            mClockPosition.setEntries(R.array.clock_position_entries_notch);
+            mClockPosition.setEntryValues(R.array.clock_position_values_notch);
+        } else {
+            mClockPosition.setEntries(R.array.clock_position_entries);
+            mClockPosition.setEntryValues(R.array.clock_position_values);
         }
     }
 

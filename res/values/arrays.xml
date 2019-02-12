@@ -45,6 +45,29 @@
         <item>2</item>
     </string-array>
 
+    <!-- Statusbar Clock options -->
+    <string-array name="clock_position_entries" translatable="false">
+        <item>@string/clock_position_right</item>
+        <item>@string/clock_position_center</item>
+        <item>@string/clock_position_left</item>
+    </string-array>
+
+    <string-array name="clock_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_position_entries_notch" translatable="false">
+        <item>@string/clock_position_right</item>
+        <item>@string/clock_position_left</item>
+    </string-array>
+
+    <string-array name="clock_position_values_notch" translatable="false">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
      <string-array name="clock_date_display_entries">
         <item>@string/clock_date_display_none</item>
         <item>@string/clock_date_display_small</item>

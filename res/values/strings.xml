@@ -81,6 +81,7 @@
     <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
     <string name="dont_show">Don\'t show</string>
     <string name="clock_date_display">Date</string>
+    <string name="status_bar_time_cat">Time</string>
     <string name="clock_date_display_summary">Display custom date before the clock</string>
     <string name="clock_date_style">Date style</string>
     <string name="clock_date_format">Date format</string>
@@ -98,6 +99,10 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
+    <string name="clock_position">Clock position</string>
+    <string name="clock_position_right">Right clock</string>
+    <string name="clock_position_center">Center clock</string>
+    <string name="clock_position_left">Left clock</string>
 
     <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Status bar icons</string>
