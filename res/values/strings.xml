@@ -428,11 +428,6 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
 
-    <!-- Weather -->
-    <string name="weather_unit">Temperature unit</string>
-    <string name="weather_unit_metric" translatable="false">Celsius</string>
-    <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
-
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
