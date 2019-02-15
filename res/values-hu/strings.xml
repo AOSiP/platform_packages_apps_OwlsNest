@@ -250,15 +250,15 @@
     <string name="hardware_keys_category">Navigáció</string>
     <string name="hardware_keys_disable_title">Navigációs gombok letiltása</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">Háttérvilágítás</string>
+    <string name="button_backlight_options_category">Háttérvilágítás beállításai</string>
+    <string name="button_backlight_enable_title">A gombok háttérvilágításának engedélyezése</string>
+    <string name="button_link_brightness">Igazodjon a képernyő fényerejéhez</string>
+    <string name="button_link_brightness_summary">A gombok háttérvilágításának fényerejét a képernyő fényerőszintje alapján fogja módosítani</string>
+    <string name="button_manual_brightness">Fényerőszint</string>
+    <string name="button_timeout_title">Háttérvilágítási időkorlát</string>
+    <string name="button_backlight_on_touch_only_title">A gombok háttérvilágítása csak érintéskor</string>
+    <string name="button_backlight_on_touch_only_summary">A gomb háttérvilágítása csak a gombok megnyomásakor jelenik meg, és nem mindig. Az időkorlát továbbra is hatással van erre a szolgáltatásra.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardvergombok</string>
     <string name="buttons_summary">Az eszköz fizikai gombjainak testreszabása</string>
@@ -358,8 +358,6 @@
     <string name="lockscreen_clock_selection_du">Analóg (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
-    <!-- Weather -->
-    <string name="weather_unit">Hőmérséklet mértékegysége</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatikus arcfeloldás</string>
     <string name="face_auto_unlock_summary">Záróképernyő kihagyása sikeres arcfeloldás után</string>

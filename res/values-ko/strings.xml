@@ -250,15 +250,15 @@
     <string name="hardware_keys_category">내비게이션</string>
     <string name="hardware_keys_disable_title">내비게이션 버튼 사용 중지</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">백라이트</string>
+    <string name="button_backlight_options_category">백라이트 옵션</string>
+    <string name="button_backlight_enable_title">버튼 백라이트 켜기</string>
+    <string name="button_link_brightness">화면 밝기 바로가기</string>
+    <string name="button_link_brightness_summary">화면의 밝기 수준에 따라 버튼 백라이트 밝기가 조정됩니다.</string>
+    <string name="button_manual_brightness">밝기 수준</string>
+    <string name="button_timeout_title">백라이트 시간 제한</string>
+    <string name="button_backlight_on_touch_only_title">눌렀을 때 버튼 백라이트</string>
+    <string name="button_backlight_on_touch_only_summary">버튼 백라이트가 버튼을 누르는 경우에만 나타납니다. 시간 제한은 여전히 이 기능에 영향을 줍니다.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">하드웨어 버튼</string>
     <string name="buttons_summary">물리 버튼의 반응을 조정합니다</string>
@@ -358,8 +358,6 @@
     <string name="lockscreen_clock_selection_du">아날로그 (du)</string>
     <string name="lockscreen_clock_selection_sammy">새미</string>
     <string name="lockscreen_clock_selection_sammy_bold">새미 (굵게)</string>
-    <!-- Weather -->
-    <string name="weather_unit">온도 단위</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">자동 안면 잠금해제</string>
     <string name="face_auto_unlock_summary">얼굴 잠금 해제 후 잠금 화면 닫기</string>

@@ -250,15 +250,15 @@
     <string name="hardware_keys_category">Navegação</string>
     <string name="hardware_keys_disable_title">Desativar botões de navegação</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">Luz de fundo</string>
+    <string name="button_backlight_options_category">Opções de luz de fundo</string>
+    <string name="button_backlight_enable_title">Permitir luz de fundo dos botões</string>
+    <string name="button_link_brightness">Acompanhar o brilho da tela</string>
+    <string name="button_link_brightness_summary">A luz de fundo dos botões será ajustada baseada no nível de brilho atual da tela</string>
+    <string name="button_manual_brightness">Nível de brilho</string>
+    <string name="button_timeout_title">Tempo limite da luz de fundo</string>
+    <string name="button_backlight_on_touch_only_title">Tempo de iluminação ao tocar nos botões</string>
+    <string name="button_backlight_on_touch_only_summary">Os botões seram iluminados apenas quando pressionados, ao invés de acender a todo momento. Está opção ainda será afetada pelo tempo limite da luz de fundo.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Teclas Físicas</string>
     <string name="buttons_summary">Ajustar as ações das teclas do seu dispositivo físico</string>
@@ -358,8 +358,6 @@
     <string name="lockscreen_clock_selection_du">Analógico (du)</string>
     <string name="lockscreen_clock_selection_sammy">Samsung</string>
     <string name="lockscreen_clock_selection_sammy_bold">Samsung (negrito)</string>
-    <!-- Weather -->
-    <string name="weather_unit">Unidade de temperatura</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Descartar o bloqueio após o desbloqueio com rosto</string>

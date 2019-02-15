@@ -250,15 +250,15 @@
     <string name="hardware_keys_category">التنقل</string>
     <string name="hardware_keys_disable_title">تعطيل أزرار التنقل</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">ضوء الأزرار</string>
+    <string name="button_backlight_options_category">خيارات إضاءة الأزرار</string>
+    <string name="button_backlight_enable_title">تمكين إضاءة الأزرار</string>
+    <string name="button_link_brightness">ربط بسطوع الشاشة</string>
+    <string name="button_link_brightness_summary">سيتم ضبط سطوع إضاءة الأزرار استناداً إلى مستوى سطوع الشاشة</string>
+    <string name="button_manual_brightness">مستوى السطوع</string>
+    <string name="button_timeout_title">مهلة إضاءة الأزرار</string>
+    <string name="button_backlight_on_touch_only_title">إضاءة الأزرار عند لمسها</string>
+    <string name="button_backlight_on_touch_only_summary">سوف يعمل ضوء الأزرار فقط عند الضغط على عليها بدلاً من ان تعمل كل الوقت. المهلة لا تزال تؤثر في هذه الميزة.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">أزرار الهاتف</string>
     <string name="buttons_summary">تعديل تصرفات الأزرار المادية بجهازك</string>
@@ -359,8 +359,6 @@
     <string name="lockscreen_clock_selection_du">تناظري (du)</string>
     <string name="lockscreen_clock_selection_sammy">سامي</string>
     <string name="lockscreen_clock_selection_sammy_bold">سامي (عريض)</string>
-    <!-- Weather -->
-    <string name="weather_unit">وحدة درجة الحرارة</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">إلغاء قفل الوجه تلقائياً</string>
     <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>

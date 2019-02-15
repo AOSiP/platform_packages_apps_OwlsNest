@@ -358,8 +358,6 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (Fett)</string>
-    <!-- Weather -->
-    <string name="weather_unit">Temperatureinheit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Entsperren per Gesichtserkennung</string>
     <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtserkennung automatisch übergehen</string>

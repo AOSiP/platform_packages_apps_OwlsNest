@@ -203,7 +203,7 @@
     <string name="smart_pulldown_title">Smart pulldown</string>
     <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
     <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_off">關閉</string>
     <string name="smart_pulldown_none">no notifications</string>
     <string name="smart_pulldown_dismissable">no dismissable</string>
     <string name="smart_pulldown_ongoing">no ongoing</string>
@@ -353,14 +353,12 @@
     <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
     <!-- Lockscreen clock styles -->
     <string name="lockscreen_clock_selection_title">Clock style</string>
-    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital">預設</string>
     <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
     <string name="lockscreen_clock_selection_analog">Analog</string>
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
-    <!-- Weather -->
-    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">臉部自動解鎖</string>
     <string name="face_auto_unlock_summary">解除鎖定畫面後的臉部解鎖</string>
@@ -399,7 +397,7 @@
     <!-- Call notifications -->
     <string name="call_notifications_cat">Call Notification Options</string>
     <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_disabled">已停用</string>
     <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
     <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
     <string name="flashlight_on_call_always">Always blink flashlight</string>

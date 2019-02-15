@@ -116,8 +116,8 @@
     <string name="custom_carrier_label_notset">Özel etiket ayarlanmadı</string>
     <string name="show_carrier_title">Operatör etiketi</string>
     <string name="show_carrier_disabled">Devre dışı</string>
-    <string name="show_carrier_keyguard">Yalnızca kilit ekranı</string>
-    <string name="show_carrier_statusbar">Yalnızca durum çubuğu</string>
+    <string name="show_carrier_keyguard">Sadece kilit ekranı</string>
+    <string name="show_carrier_statusbar">Sadece durum çubuğu</string>
     <string name="show_carrier_enabled">Kilit ekranı ve durum çubuğu</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Ağ trafiği</string>
@@ -250,15 +250,15 @@
     <string name="hardware_keys_category">Gezinme</string>
     <string name="hardware_keys_disable_title">Gezinme tuşlarını devre dışı bırak</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">Aydınlatma ışığı</string>
+    <string name="button_backlight_options_category">Aydınlatma ışığı seçenekleri</string>
+    <string name="button_backlight_enable_title">Tuş aydınlatmasına izin ver</string>
+    <string name="button_link_brightness">Ekran parlaklığına bağla</string>
+    <string name="button_link_brightness_summary">Tuş arka aydınlatma parlaklığını ekran parlaklığı seviyesine göre ayarlar</string>
+    <string name="button_manual_brightness">Parlaklık seviyesi</string>
+    <string name="button_timeout_title">Aydınlatma ışığı zaman aşımı</string>
+    <string name="button_backlight_on_touch_only_title">Tuşa dokunulduğunda aydınlat</string>
+    <string name="button_backlight_on_touch_only_summary">Tuş aydınlatma ışığı sadece tuşlara basıldığında değil her zaman görünür. Zaman aşımı yine de bu özelliği etkiler.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Donanım Tuşları</string>
     <string name="buttons_summary">Cihazınızın fiziksel tuş hareketlerini yapılandırma</string>
@@ -358,8 +358,6 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (kalın)</string>
-    <!-- Weather -->
-    <string name="weather_unit">Sıcaklık birimi</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Yüz ile otomatik kilit açma</string>
     <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını kapat</string>
@@ -376,7 +374,7 @@
     <string name="media_art_summary">Kilit ekranında medya albüm kapağını etkinleştir</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Kilit ekranında güç menüsünü devre dışı bırak</string>
-    <string name="lockscreen_power_menu_disabled_summary">Bu seçenek yalnızca güvenli kilit ekranlarındaki güç menüsünü devre dışı bırakacaktır</string>
+    <string name="lockscreen_power_menu_disabled_summary">Bu seçenek sadece güvenli kilit ekranlarındaki güç menüsünü devre dışı bırakacaktır</string>
     <string name="lockscreen_items_other">Diğer</string>
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Karışık düzen</string>

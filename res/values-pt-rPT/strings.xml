@@ -359,8 +359,6 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
-    <!-- Weather -->
-    <string name="weather_unit">Temperature unit</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Dispensar o ecrã de bloqueio depois do desbloqueio facial</string>

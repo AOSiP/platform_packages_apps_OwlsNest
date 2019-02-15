@@ -358,8 +358,6 @@
     <string name="lockscreen_clock_selection_du">アナログ（du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy（太字）</string>
-    <!-- Weather -->
-    <string name="weather_unit">温度単位</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>

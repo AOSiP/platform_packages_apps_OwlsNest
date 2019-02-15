@@ -250,15 +250,15 @@
     <string name="hardware_keys_category">Navigace</string>
     <string name="hardware_keys_disable_title">Zakázat navigační tlačítka</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">Podsvícení</string>
+    <string name="button_backlight_options_category">Možnosti podsvícení</string>
+    <string name="button_backlight_enable_title">Povolit podsvícení tlačítek</string>
+    <string name="button_link_brightness">Sjednotit s jasem obrazovky</string>
+    <string name="button_link_brightness_summary">Jas podsvícení tlačítek bude nastaven na aktuální úroveň jasu obrazovky</string>
+    <string name="button_manual_brightness">Úroveň jasu</string>
+    <string name="button_timeout_title">Délka podsvícení</string>
+    <string name="button_backlight_on_touch_only_title">Délka podsvícení tlačítek při dotyku</string>
+    <string name="button_backlight_on_touch_only_summary">Podsvícení tlačítek bude zobrazeno pouze při stisknutí, nikoli po celou dobu. Časový limit stále ovlivňuje tuto funkci.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardwarová tlačítka</string>
     <string name="buttons_summary">Upravte akce fyzických tlačítek zařízení</string>
@@ -358,8 +358,6 @@
     <string name="lockscreen_clock_selection_du">Analogové (DU)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (tučné)</string>
-    <!-- Weather -->
-    <string name="weather_unit">Jednotky teploty</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatické odemčení pomocí obličeje</string>
     <string name="face_auto_unlock_summary">Odstraní zamykací obrazovku po odemknutí obličejem</string>
