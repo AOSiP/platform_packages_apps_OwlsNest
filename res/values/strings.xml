@@ -241,7 +241,7 @@
     <string name="smart_pulldown_ongoing">no ongoing</string>
 
     <!-- Tiles animation style  -->
-    <string name="qs_tile_animation_title">Animations</string>  
+    <string name="qs_tile_animation_title">Animations</string>
     <string name="qs_tile_animation_style_title">Animation style</string>
     <string name="qs_tile_animation_duration_title">Animation duration</string>
     <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
@@ -387,6 +387,8 @@
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Allow when screen is off</string>
     <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
+    <string name="active_edge_app_select_title">Select app</string>
+    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
     <string name="action_nothing">No action</string>
     <string name="action_menu">Menu</string>
@@ -404,6 +406,7 @@
     <string name="action_power_menu">Power menu</string>
     <string name="action_screenshot">Screenshot</string>
     <string name="action_qs_panel">QS panel</string>
+    <string name="action_app_action">Application</string>
 
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Three finger gesture</string>
