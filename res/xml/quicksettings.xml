@@ -20,6 +20,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quicksettings_title" >
 
+    <!-- QS clock -->
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="show_qs_clock"
+        android:title="@string/qs_clock_title"
+        android:summary="@string/qs_clock_summary"
+        android:defaultValue="true" />
+
     <!-- Battery mode -->
     <com.aosip.support.preference.SystemSettingListPreference
         android:key="qs_battery_mode"
