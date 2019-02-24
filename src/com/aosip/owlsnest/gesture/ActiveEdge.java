@@ -47,15 +47,10 @@ import java.util.List;
 public class ActiveEdge extends SimpleActionFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String KEY_SQUEEZE_VIDEO = "squeeze_video";
-    private static final String KEY_VIDEO_PAUSED = "key_video_paused";
     private static final String KEY_SQUEEZE_SMART_ACTION = "squeeze_selection_smart_action";
-
-    private boolean mVideoPaused;
 
     private CustomSeekBarPreference mActiveEdgeSensitivity;
     private SwitchPreference mActiveEdgeWake;
-    private VideoPreference mVideoPreference;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,12 +58,6 @@ public class ActiveEdge extends SimpleActionFragment implements
         addPreferencesFromResource(R.xml.active_edge);
 
         final ContentResolver resolver = getActivity().getContentResolver();
-
-        if (savedInstanceState != null) {
-            mVideoPaused = savedInstanceState.getBoolean(KEY_VIDEO_PAUSED, false);
-        }
-
-        mVideoPreference = (VideoPreference) findPreference(KEY_SQUEEZE_VIDEO);
 
         int sensitivity = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.ASSIST_GESTURE_SENSITIVITY, 2, UserHandle.USER_CURRENT);
@@ -83,28 +72,6 @@ public class ActiveEdge extends SimpleActionFragment implements
         mActiveEdgeWake.setOnPreferenceChangeListener(this);
 
         onPreferenceScreenLoaded(null);
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        outState.putBoolean(KEY_VIDEO_PAUSED, mVideoPaused);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        if (mVideoPreference != null) {
-            mVideoPaused = mVideoPreference.isVideoPaused();
-            mVideoPreference.onViewInvisible();
-        }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        if (mVideoPreference != null) {
-            mVideoPreference.onViewVisible(mVideoPaused);
-        }
     }
 
     @Override
