@@ -177,8 +177,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         mGestureSystemNavigation = (Preference) findPreference(KEY_GESTURE_SYSTEM);
 
         mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
-        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")
-                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
+        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back")
@@ -555,31 +554,14 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             }
         }
 
-<<<<<<< HEAD
-        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")
-                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
+        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back_nopill")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back")
                 || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
-                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")) {
-            mHomeCategory.setEnabled(false);
-            mBackCategory.setEnabled(false);
-            mMenuCategory.setEnabled(false);
-            mAssistCategory.setEnabled(false);
-            mAppSwitchCategory.setEnabled(false);
-            mCameraCategory.setEnabled(false);
-=======
-        if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural")
-                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")
-                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back")
-                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back")
-                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_extra_wide_back_nopill")
-                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back")
-                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_narrow_back_nopill")
-                || Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")
+                || aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_wide_back_nopill")
                 && navigationBar) {
             homeCategory.setEnabled(false);
             backCategory.setEnabled(false);
@@ -589,14 +571,13 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             cameraCategory.setEnabled(false);
         }
 
-        if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && navigationBar) {
-            homeCategory.setEnabled(false);
+        if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && navigationBar) {
+            homeCategory.setEnabled(true);
             backCategory.setEnabled(true);
             menuCategory.setEnabled(false);
             assistCategory.setEnabled(false);
             appSwitchCategory.setEnabled(false);
             cameraCategory.setEnabled(false);
->>>>>>> 92f91716... Navbar: Ensure backlight brightness plays well with everything
         }
 
         if (aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
