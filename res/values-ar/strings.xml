@@ -324,33 +324,29 @@
     <string name="double_tap_options">الضغط المزدوج لإسبات الجهاز</string>
     <string name="aosp_gesture_title">إيماءات AOSP</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="active_edge_title">الحافة النشطة</string>
+    <string name="active_edge_summary">تهيئة خيارات الحافة النشطة</string>
+    <string name="active_edge_actions_title">إجراء الضغط</string>
+    <string name="active_edge_sensitivity_title">حساسية الضغط</string>
+    <string name="active_edge_wake_title">السماح عندما تكون الشاشة مغلقة</string>
+    <string name="active_edge_wake_summary">تشغيل إجراء معين عندما تكون الشاشة مغلقة</string>
+    <string name="active_edge_footer_info">ليس كل إجراءات الضغط داخل الحافة النشطة لديها القدرة على تنشيط العرض</string>
+    <string name="action_nothing">لا إجراء</string>
+    <string name="action_menu">القائمة</string>
+    <string name="action_app_switch">الحديثة</string>
+    <string name="action_search">المساعد</string>
+    <string name="action_voice_search">البحث الصوتي</string>
+    <string name="action_launch_camera">الكاميرا</string>
+    <string name="action_last_app">التطبيق الأخير</string>
+    <string name="action_splitscreen">تقسيم الشاشة</string>
+    <string name="action_flashlight">الكشاف</string>
+    <string name="action_clear_notifications">مسح الإشعارات</string>
+    <string name="action_volume_panel">لوحة مستوى الصوت</string>
+    <string name="action_screen_off">إيقاف الشاشة</string>
+    <string name="action_notifications">الإشعارات</string>
+    <string name="action_power_menu">قـائمة التشغيل</string>
+    <string name="action_screenshot">لقطة الشاشة</string>
+    <string name="action_qs_panel">لوحة الإعدادات السريعة</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">إيماءة الثلاثة أصابع</string>
     <string name="three_finger_gesture_summary">السحب بثلاثة أصابع لأخذ لقطة للشاشة</string>
@@ -408,9 +404,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">ترتيب عشوائي</string>
     <string name="unlock_scramble_pin_layout_summary">ترتيب أرقام PIN بصورة عشوائية عند فك قفل الجهاز</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">فتح سريع للقفل</string>
-    <string name="unlock_quick_unlock_control_summary">الفتح تلقائياً عند إدخال الرمز/كلمة المرور الصحيحة</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">إهتزاز تصريح البصمة</string>
     <string name="fprint_sucess_vib_summary">اهتزاز عند نجاح المصادقة على بصمة الاصبع</string>

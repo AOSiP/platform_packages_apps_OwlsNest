@@ -323,33 +323,29 @@
     <string name="double_tap_options">Çift dokunuşla uyutma</string>
     <string name="aosp_gesture_title">AOSP Hareketleri</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="active_edge_title">Aktif Kenar</string>
+    <string name="active_edge_summary">Aktif Kenar seçeneklerini yapılandırın</string>
+    <string name="active_edge_actions_title">Sıkma eylemi</string>
+    <string name="active_edge_sensitivity_title">Sıkma hassasiyeti</string>
+    <string name="active_edge_wake_title">Ekran kapalıyken izin ver</string>
+    <string name="active_edge_wake_summary">Ekran kapalıyken bir eylemi tetikleyin</string>
+    <string name="active_edge_footer_info">Aktif Kenar içindeki sıkma eylemlerinin tümü ekranı etkinleştirme özelliğine sahip değildir</string>
+    <string name="action_nothing">Eylem yok</string>
+    <string name="action_menu">Menü</string>
+    <string name="action_app_switch">Son uygulamalar</string>
+    <string name="action_search">Asistan</string>
+    <string name="action_voice_search">Sesli arama</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Son uygulama</string>
+    <string name="action_splitscreen">Bölünmüş ekran</string>
+    <string name="action_flashlight">El feneri</string>
+    <string name="action_clear_notifications">Bildirimleri temizle</string>
+    <string name="action_volume_panel">Ses paneli</string>
+    <string name="action_screen_off">Ekranı kapat</string>
+    <string name="action_notifications">Bildirimler</string>
+    <string name="action_power_menu">Güç menüsü</string>
+    <string name="action_screenshot">Ekran görüntüsü</string>
+    <string name="action_qs_panel">Hızlı ayarlar paneli</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Üç parmak hareketi</string>
     <string name="three_finger_gesture_summary">Ekran görüntüsü almak için üç parmağınızı ekran üzerinde kaydırın</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Karışık düzen</string>
     <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştır</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
-    <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde kilit otomatik açılır</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Parmak izi kimlik doğrulama titreşimi</string>
     <string name="fprint_sucess_vib_summary">Başarılı parmak izi kimlik doğrulanmasında titreşim</string>

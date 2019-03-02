@@ -324,32 +324,28 @@
     <string name="aosp_gesture_title">Gesta AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
+    <string name="active_edge_summary">Konfigurovat možnosti Active Edge</string>
+    <string name="active_edge_actions_title">Akce při zmáčknutí</string>
+    <string name="active_edge_sensitivity_title">Citlivost zmáčknutí</string>
+    <string name="active_edge_wake_title">Povolit při vypnuté obrazovce</string>
+    <string name="active_edge_wake_summary">Spuštění akce při vypnuté obrazovce</string>
+    <string name="active_edge_footer_info">Ne všechny akce zmáčknutím v Active Edge mají schopnost aktivovat obrazovku</string>
+    <string name="action_nothing">Žádná akce</string>
     <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="action_app_switch">Nedávné</string>
+    <string name="action_search">Asistent</string>
+    <string name="action_voice_search">Hlasové vyhledávání</string>
+    <string name="action_launch_camera">Fotoaparát</string>
+    <string name="action_last_app">Poslední aplikace</string>
+    <string name="action_splitscreen">Rozdělená obrazovka</string>
+    <string name="action_flashlight">Svítilna</string>
+    <string name="action_clear_notifications">Vymazat oznámení</string>
+    <string name="action_volume_panel">Panel hlasitosti</string>
+    <string name="action_screen_off">Vypnout obrazovku</string>
+    <string name="action_notifications">Oznámení</string>
+    <string name="action_power_menu">Menu napájení</string>
+    <string name="action_screenshot">Snímek obrazovky</string>
+    <string name="action_qs_panel">Panel QS</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto třemi prsty</string>
     <string name="three_finger_gesture_summary">Snímek obrazovky přejetím tří prstů</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
     <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení pro zadání PINu při odemykání zařízení</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
-    <string name="unlock_quick_unlock_control_summary">Automatické odemknutí pokud je zadán správný PIN/heslo</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Vibrovat při ověření otisků prstů</string>
     <string name="fprint_sucess_vib_summary">Vibrovat při úspěšném ověření otisku prstu</string>

@@ -323,33 +323,29 @@
     <string name="double_tap_options">Toque duplo para desligar a tela</string>
     <string name="aosp_gesture_title">AOSP Gestos</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
+    <string name="active_edge_title">Borda ativa</string>
+    <string name="active_edge_summary">Configurações da borda ativa</string>
+    <string name="active_edge_actions_title">Ação ao apertar</string>
+    <string name="active_edge_sensitivity_title">Sensibilidade</string>
+    <string name="active_edge_wake_title">Permitir com a tela apagada</string>
+    <string name="active_edge_wake_summary">Uma ação ocorre quando a tela está apagada</string>
+    <string name="active_edge_footer_info">Nem todas as ações de apertar com a borda ativa tem a capacidade de ativar a tela</string>
+    <string name="action_nothing">Nenhuma ação</string>
     <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="action_app_switch">Recentes</string>
+    <string name="action_search">Assistente</string>
+    <string name="action_voice_search">Busca por voz</string>
+    <string name="action_launch_camera">Câmera</string>
+    <string name="action_last_app">Último app</string>
+    <string name="action_splitscreen">Dividir a tela</string>
+    <string name="action_flashlight">Lanterna</string>
+    <string name="action_clear_notifications">Limpar notificações</string>
+    <string name="action_volume_panel">Painel de volume</string>
+    <string name="action_screen_off">Desligar tela</string>
+    <string name="action_notifications">Notificações</string>
+    <string name="action_power_menu">Menu de Energia</string>
+    <string name="action_screenshot">Captura de tela</string>
+    <string name="action_qs_panel">Painel de configurações rápidas</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto de três dedos</string>
     <string name="three_finger_gesture_summary">Deslize três dedos para a captura da tela</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Embaralhar layout</string>
     <string name="unlock_scramble_pin_layout_summary">Embaralhar PIN ao desbloquear o dispositivo</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
-    <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN/Senha correto é inserido</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Vibração na autenticação da impressão digital</string>
     <string name="fprint_sucess_vib_summary">Vibrar na autenticação bem sucedida da impressão digital</string>

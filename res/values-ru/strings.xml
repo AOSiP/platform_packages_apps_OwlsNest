@@ -327,29 +327,25 @@
     <string name="active_edge_summary">Configure Active Edge options</string>
     <string name="active_edge_actions_title">Squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
+    <string name="active_edge_wake_title">Разрешить, при выключенном экране</string>
     <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="action_nothing">Нет действия</string>
+    <string name="action_menu">Меню</string>
+    <string name="action_app_switch">Недавние приложения</string>
+    <string name="action_search">Помощник</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_last_app">Последнее приложение</string>
+    <string name="action_splitscreen">Разделение экрана</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Отключить экран</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_power_menu">Меню кнопки питания</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_qs_panel">Панель быстрых настроек</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Жест тремя пальцами</string>
     <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
@@ -372,7 +368,7 @@
     <string name="lockscreen_visualizer_summary">Переключение отображения визуализатора на экране блокировки</string>
     <!-- ambient visualizer -->
     <string name="ambient_visualizer_title">Визуализация на Ambient Display</string>
-    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+    <string name="ambient_visualizer_summary">Показывать визуализацию музыки на Ambient Display</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Виджет часов</string>
     <string name="lockscreen_clock_summary">Показывать виджет часов на экране блокировки</string>
@@ -395,7 +391,7 @@
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">Функция Сейчас играет</string>
     <string name="force_ambient_for_media_pref_summary">Информация о текущем треке в режиме активного дисплея</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker отображает проигрываемый музыкальный трек на Ambient display.\n\nТакже срабатывает при выключенном Ambient display во время запуска нового трека, показывая пустой Ambient display с информацией о треке в центре экрана.\n\nВы также можете пропустить трек двойным нажатем на нём.\n\nЕсли у вас есть Pixel, включите функцию Now Playing и её нотификации в системных настройках звука. Ambient Music Ticker также будет работать с этой функцией.</string>
     <string name="force_ambient_for_media_title">Включить</string>
     <!-- Media art -->
     <string name="media_art_title">Обложка альбома</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
     <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случайном порядке</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
-    <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, когда введён корректный PIN-код/пароль</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Вибрация при распознавании отпечатка пальцев</string>
     <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>

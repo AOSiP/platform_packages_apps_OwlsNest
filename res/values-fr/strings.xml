@@ -324,32 +324,28 @@
     <string name="aosp_gesture_title">Gestes AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
+    <string name="active_edge_summary">Configurer les options Active Edge</string>
+    <string name="active_edge_actions_title">Action de secousse</string>
+    <string name="active_edge_sensitivity_title">Sensibilité de la secousse</string>
+    <string name="active_edge_wake_title">Autoriser lorsque l\'écran est éteint</string>
+    <string name="active_edge_wake_summary">Déclencher une action lorsque l\'écran est éteint</string>
+    <string name="active_edge_footer_info">Toutes les actions de secousse dans Active Edge ne permettent pas d\'activer l\'affichage</string>
+    <string name="action_nothing">Aucune action</string>
     <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
+    <string name="action_app_switch">Applications récentes</string>
     <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
+    <string name="action_voice_search">Recherche vocale</string>
+    <string name="action_launch_camera">Appareil photo</string>
+    <string name="action_last_app">Dernière application</string>
+    <string name="action_splitscreen">Partager l\'écran</string>
+    <string name="action_flashlight">Lampe de poche</string>
+    <string name="action_clear_notifications">Supprimer les notifications</string>
+    <string name="action_volume_panel">Panneau de volume</string>
+    <string name="action_screen_off">Écran éteint</string>
     <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="action_power_menu">Menu Marche/Arrêt</string>
+    <string name="action_screenshot">Capture d\'écran</string>
+    <string name="action_qs_panel">Panneau des réglages rapides</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Geste avec trois doigts</string>
     <string name="three_finger_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Disposer aléatoirement les touches lors du déverrouillage</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
-    <string name="unlock_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le bon code PIN/mot de passe est saisi</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Vibration lors d\'authentification par empreintes digitales</string>
     <string name="fprint_sucess_vib_summary">Vibrer en cas d\'authentification réussie par empreintes digitales</string>
@@ -433,10 +426,10 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Options du thème</string>
+    <string name="theme_category_title">Thème</string>
     <string name="accent_picker_dialog_title">Choisir une couleur d\'accentuation</string>
     <string name="theme_accent_picker_title">Couleur d\'accentuation</string>
-    <string name="theme_accent_picker_summary">Choisir la couleur d\'accentuation du thème système</string>
+    <string name="theme_accent_picker_summary">Choisir la couleur d\'accentuation du thème</string>
     <string name="theme_accent_picker_default">Par Défaut</string>
     <string name="accent_picker_material_colors">Palette material</string>
     <string name="accent_picker_custom_colors">Utilisateur demandé</string>

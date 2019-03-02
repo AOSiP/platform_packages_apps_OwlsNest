@@ -323,33 +323,29 @@
     <string name="double_tap_options">ダブルタップでスリープ</string>
     <string name="aosp_gesture_title">AOSP ジェスチャー</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="active_edge_title">アクティブエッジ</string>
+    <string name="active_edge_summary">アクティブエッジの設定を編集する</string>
+    <string name="active_edge_actions_title">握りアクション</string>
+    <string name="active_edge_sensitivity_title">握りの感度</string>
+    <string name="active_edge_wake_title">画面消灯中は許可</string>
+    <string name="active_edge_wake_summary">画面消灯中にアクションを起動する</string>
+    <string name="active_edge_footer_info">全てのアクティブエッジ内の握りアクションがディスプレイをアクティブにできる訳ではありません</string>
+    <string name="action_nothing">なし</string>
+    <string name="action_menu">メニュー</string>
+    <string name="action_app_switch">アプリ履歴</string>
+    <string name="action_search">アシスタント</string>
+    <string name="action_voice_search">音声検索</string>
+    <string name="action_launch_camera">カメラ</string>
+    <string name="action_last_app">直前のアプリ</string>
+    <string name="action_splitscreen">画面分割</string>
+    <string name="action_flashlight">フラッシュライト</string>
+    <string name="action_clear_notifications">通知を消去</string>
+    <string name="action_volume_panel">音量パネル</string>
+    <string name="action_screen_off">画面を消灯</string>
+    <string name="action_notifications">通知</string>
+    <string name="action_power_menu">電源メニュー</string>
+    <string name="action_screenshot">スクリーンショット</string>
+    <string name="action_qs_panel">クイック設定パネル</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">3本指でのジェスチャー</string>
     <string name="three_finger_gesture_summary">3本指でスワイプしてスクリーンショットを取得する</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">ランダムなレイアウト</string>
     <string name="unlock_scramble_pin_layout_summary">端末のロック解除時に PIN レイアウトをランダムにする</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">クイックアンロック</string>
-    <string name="unlock_quick_unlock_control_summary">正しい PIN/パスワード が入力された時はロックを自動的に解除する</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">指紋認証時の振動</string>
     <string name="fprint_sucess_vib_summary">指紋認証が成功した時に振動させる</string>

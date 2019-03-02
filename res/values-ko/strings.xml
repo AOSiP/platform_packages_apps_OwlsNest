@@ -323,33 +323,29 @@
     <string name="double_tap_options">두 번 눌러서 끄기</string>
     <string name="aosp_gesture_title">AOSP 제스처</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="active_edge_title">액티브 엣지</string>
+    <string name="active_edge_summary">액티브 엣지 옵션을 설정합니다.</string>
+    <string name="active_edge_actions_title">스퀴즈 액션</string>
+    <string name="active_edge_sensitivity_title">쥐는 민감도</string>
+    <string name="active_edge_wake_title">화면 꺼짐에도 허용</string>
+    <string name="active_edge_wake_summary">화면이 꺼져있을 때 액션 트리거</string>
+    <string name="active_edge_footer_info">액티브 엣지의 모든 쥐는 액션이 디스플레이를 활성화 할 수 있는 것은 아닙니다</string>
+    <string name="action_nothing">동작 없음</string>
+    <string name="action_menu">메뉴</string>
+    <string name="action_app_switch">최근 앱 목록</string>
+    <string name="action_search">어시스턴트</string>
+    <string name="action_voice_search">음성 검색</string>
+    <string name="action_launch_camera">카메라</string>
+    <string name="action_last_app">마지막으로 사용한 앱</string>
+    <string name="action_splitscreen">화면 분할</string>
+    <string name="action_flashlight">손전등</string>
+    <string name="action_clear_notifications">알림 지우기</string>
+    <string name="action_volume_panel">볼륨 패널</string>
+    <string name="action_screen_off">화면 끄기</string>
+    <string name="action_notifications">알림</string>
+    <string name="action_power_menu">전원 메뉴</string>
+    <string name="action_screenshot">스크린샷</string>
+    <string name="action_qs_panel">빠른 설정 패널</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">세 손가락 제스처</string>
     <string name="three_finger_gesture_summary">세 손가락으로 밀어서 스크린샷을 찍습니다</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">레이아웃 섞기</string>
     <string name="unlock_scramble_pin_layout_summary">기기 잠금을 해제할 때 PIN 레이아웃을 섞습니다.</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">빠른 잠금 해제</string>
-    <string name="unlock_quick_unlock_control_summary">PIN/비밀번호를 올바르게 입력하면 자동으로 잠금을 해제합니다</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">지문 인식 진동</string>
     <string name="fprint_sucess_vib_summary">지문이 인식되면 진동이 울립니다</string>

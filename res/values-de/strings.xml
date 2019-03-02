@@ -250,15 +250,15 @@
     <string name="hardware_keys_category">Navigation</string>
     <string name="hardware_keys_disable_title">Navigationstasten deaktivieren</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">Tastenbeleuchtung</string>
+    <string name="button_backlight_options_category">Tastenbeleuchtungsoptionen</string>
+    <string name="button_backlight_enable_title">Tastenbeleuchtung erlauben</string>
+    <string name="button_link_brightness">Mit Bildschirmhelligkeit verknüpfen</string>
+    <string name="button_link_brightness_summary">Die Tastenbeleuchtung wird an die Bildschirmhelligkeit angepasst</string>
+    <string name="button_manual_brightness">Helligkeitsstufe</string>
+    <string name="button_timeout_title">Timeout für Tastenbeleuchtung</string>
+    <string name="button_backlight_on_touch_only_title">Tastenbeleuchtung bei Berührung</string>
+    <string name="button_backlight_on_touch_only_summary">Tastenbeleuchtung nur einschalten, wenn die Tasten bedient werden. Das Timeout der Beleuchtung beeinflusst die Beleuchtungszeit weiterhin.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardwaretasten</string>
     <string name="buttons_summary">Verändern Sie die Aktionen der physischen Tasten Ihrer Geräte</string>
@@ -324,32 +324,28 @@
     <string name="aosp_gesture_title">AOSP Gesten</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
+    <string name="active_edge_summary">Active Edge konfigurieren</string>
     <string name="active_edge_actions_title">Squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
+    <string name="active_edge_wake_title">Erlauben, wenn Bildschirm aus ist</string>
     <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_app_select_title">Select app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
+    <string name="action_nothing">Keine Aktion</string>
+    <string name="action_menu">Menü</string>
+    <string name="action_app_switch">Anwendungsverlauf</string>
+    <string name="action_search">Assistent</string>
+    <string name="action_voice_search">Sprachsuche</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Letzte App</string>
+    <string name="action_splitscreen">Geteilter Bildschirm</string>
+    <string name="action_flashlight">Taschenlampe</string>
+    <string name="action_clear_notifications">Benachrichtigungen löschen</string>
+    <string name="action_volume_panel">Lautstärkeregler</string>
+    <string name="action_screen_off">Bildschirm aus</string>
+    <string name="action_notifications">Benachrichtigungen</string>
+    <string name="action_power_menu">Powermenü</string>
+    <string name="action_screenshot">Bildschirmfoto</string>
+    <string name="action_qs_panel">Schnelleinstellungen</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Drei-Finger-Geste</string>
     <string name="three_finger_gesture_summary">Wische mit drei Fingern für Screenshot</string>
@@ -407,9 +403,6 @@
     <!-- Scramble PIN layout when unlocking -->
     <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
     <string name="unlock_scramble_pin_layout_summary">Bein Entsperren das PIN-Layout zufällig neu anordnen</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
-    <string name="unlock_quick_unlock_control_summary">Automatisch entsperren, sobald die PIN-/Passwort-Anfrage korrekt beantwortet wurde</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Vibrieren bei Fingerabdruck-Authentifizierung</string>
     <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruck-Erkennung vibrieren</string>
