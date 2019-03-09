@@ -37,8 +37,9 @@ import java.util.List;
 public class GestureCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "GestureCategory";
-    private static final String ACTIVE_EDGE_CATEGORY = "active_edge_category";
+    private static final String ACTIVE_EDGE_CATEGORY = "active_edge";
 
+    private Preference mActiveEdge;
 
     @Override
     public int getMetricsCategory() {
@@ -51,13 +52,14 @@ public class GestureCategory extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.gesture);
 
-        Preference ActiveEdge = findPreference(ACTIVE_EDGE_CATEGORY);
-        if (!getResources().getBoolean(R.bool.has_active_edge)) {
-            getPreferenceScreen().removePreference(ActiveEdge);
+        mActiveEdge = (Preference) findPreference(ACTIVE_EDGE_CATEGORY);
+        PreferenceScreen preferenceScreen = getPreferenceScreen();
+            if (!getResources().getBoolean(com.android.internal.R.bool.config_hasActiveEdge)) {
+                getPreferenceScreen().removePreference(mActiveEdge);
         } else {
             if (!getContext().getPackageManager().hasSystemFeature(
                     "android.hardware.sensor.assist")) {
-                getPreferenceScreen().removePreference(ActiveEdge);
+                getPreferenceScreen().removePreference(mActiveEdge);
             }
         }
     }
