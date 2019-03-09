@@ -72,8 +72,8 @@
     <string name="dont_show">Ne jelenjenítse meg</string>
     <string name="clock_date_display">Dátum</string>
     <string name="clock_date_display_summary">Egyéni dátum megjelenítése az óra előtt</string>
-    <string name="clock_date_style">A dátum stílusa</string>
-    <string name="clock_date_format">A Dátum formátuma</string>
+    <string name="clock_date_style">Dátum stílusa</string>
+    <string name="clock_date_format">Dátum formátuma</string>
     <string name="clock_date_string_edittext_title">A dátumformátum pl. HH/nn/éé kell legyen</string>
     <string name="clock_date_string_edittext_summary">Adja meg a karakterláncot</string>
     <string name="am_pm_clock_normal">Normál betűméret</string>
@@ -154,8 +154,8 @@
     <string name="heads_up_time_out_8sec">8 másodperc</string>
     <string name="heads_up_time_out_10sec">10 másodperc</string>
     <string name="heads_up_snooze_title">Az elhalasztás időzítése</string>
-    <string name="heads_up_snooze_summary_one_minute">A Lebegő értesítésen való felfelé csúsztatás 1 percre késlelteti annak újbóli megjelenését</string>
-    <string name="heads_up_snooze_summary">A Lebegő értesítésen való felfelé csúsztatás <xliff:g id="number">%d</xliff:g> percre késlelteti annak újbóli megjelenését</string>
+    <string name="heads_up_snooze_summary_one_minute">Lebegő értesítésen való felfelé csúsztatás 1 percre késlelteti annak újbóli megjelenését</string>
+    <string name="heads_up_snooze_summary">Lebegő értesítésen való felfelé csúsztatás <xliff:g id="number">%d</xliff:g> percre késlelteti annak újbóli megjelenését</string>
     <string name="heads_up_snooze_disabled_summary">Az elhalasztási időzítés letiltva</string>
     <string name="heads_up_snooze_1min">1 perc</string>
     <string name="heads_up_snooze_5min">5 perc</string>
@@ -163,7 +163,7 @@
     <string name="heads_up_snooze_15min">15 perc</string>
     <string name="heads_up_snooze_20min">20 perc</string>
     <string name="add_heads_up_package">Alkalmazás hozzáadása</string>
-    <string name="add_heads_up_stoplist_summary">A Lebegő értesítések letiltása ezeknél az alkalmazásoknál</string>
+    <string name="add_heads_up_stoplist_summary">Lebegő értesítések letiltása ezeknél az alkalmazásoknál</string>
     <string name="add_heads_up_blacklist_summary">Lebegő értesítések letiltása ezekben az alkalmazásokban</string>
     <string name="heads_up_stoplist_title">Letiltottak listája</string>
     <string name="heads_up_blacklist_title">Tiltólista</string>
@@ -187,9 +187,9 @@
     <string name="tuner_show_brightness_buttons">Fényerő-vezérlési gombok</string>
     <string name="qs_show_brightness_title">Fényerőszabályzó-csúszka</string>
     <string name="qs_show_brightness_summary">Fényerőszabályozó-csúszka megjelenítése vagy elrejtése</string>
-    <string name="brightness_slider_bottom_title">Fényerőszabályozó-csúszka megjelenítése alul</string>
+    <string name="brightness_slider_bottom_title">Fényerőszabályzó-csúszka megjelenítése alul</string>
     <string name="brightness_slider_bottom_summary">Fényerőszabályzó-csúszka megjelenítése a gyorsbeállítások panel alján</string>
-    <string name="show_secure_title">Biztonsági-lábléc megjelenítése</string>
+    <string name="show_secure_title">Biztonsági lábléc megjelenítése</string>
     <string name="show_info_header_title">Inferomációs fejléc megjelenítése</string>
     <!-- Quick pull down-->
     <string name="quick_pulldown_title">Gyors legördítés</string>
@@ -362,7 +362,7 @@
     <string name="lockscreen_qs_disabled_title">A gyorsbeállítások tiltása zárolt állapotban</string>
     <string name="lockscreen_qs_disabled_summary">Megelőzi a gyorsbeállítások lehúzását a biztonságos zárképernyőn</string>
     <string name="lock_screen_shortcuts_title">Zárképernyő hivatkozások</string>
-    <string name="lock_screen_shortcuts_summary">Kezelheti a Zárképernyő alsó parancsikonjait</string>
+    <string name="lock_screen_shortcuts_summary">Kezelheti a zárképernyő alsó parancsikonjait</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Zenei vizualizáció</string>
     <string name="lockscreen_visualizer_summary">Vizualizációk kapcsolása a zárképernyőn</string>

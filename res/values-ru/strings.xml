@@ -323,13 +323,13 @@
     <string name="double_tap_options">Двойное нажатие для отключения экрана</string>
     <string name="aosp_gesture_title">Стандартные жесты AOSP</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
+    <string name="active_edge_title">Активные стороны</string>
+    <string name="active_edge_summary">Конфигурировать функцию \'Активные стороны\'</string>
+    <string name="active_edge_actions_title">Действие после Сжатия</string>
+    <string name="active_edge_sensitivity_title">Чувствительность Сжатия</string>
     <string name="active_edge_wake_title">Разрешить, при выключенном экране</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+    <string name="active_edge_wake_summary">Запустить действие, когда экран выключен</string>
+    <string name="active_edge_footer_info">Не все действия Сжатия, функции Активные стороны, имеют функцию включить экран</string>
     <string name="action_nothing">Нет действия</string>
     <string name="action_menu">Меню</string>
     <string name="action_app_switch">Недавние приложения</string>
