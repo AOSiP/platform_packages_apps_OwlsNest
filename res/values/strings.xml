@@ -378,7 +378,7 @@
 
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Allow when screen is off</string>
