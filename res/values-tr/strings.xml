@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Müzik kontrolü</string>
     <string name="volume_rocker_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun basmak şarkıyı değiştirir</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Zil sesi kontrolü</string>
-    <string name="volume_keys_control_ring_tone_summary">Tuşlar varsayılan olarak medya kaydırıcısını kontrol eder. Zil sesi kaydırıcısına geçmek için etkinleştirin.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ses tuşlarıyla cevapla</string>
     <string name="volume_answer_call_summary">Ses tuşlarına basıldığında aramaya cevap ver</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">AOSP Hareketleri</string>
     <!-- Active edge -->
     <string name="active_edge_title">Aktif Kenar</string>
-    <string name="active_edge_summary">Aktif Kenar seçeneklerini yapılandırın</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Sıkma eylemi</string>
     <string name="active_edge_sensitivity_title">Sıkma hassasiyeti</string>
     <string name="active_edge_wake_title">Ekran kapalıyken izin ver</string>

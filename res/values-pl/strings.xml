@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Sterowanie odtwarzaniem</string>
     <string name="volume_rocker_music_controls_summary">Przełączaj utwory przyciskami głośności, gdy ekran jest wyłączony</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Kontroluj głośność dzwonka</string>
-    <string name="volume_keys_control_ring_tone_summary">Przyciski domyślnie sterują suwakiem multimediów. Włącz, aby sterowały suwakiem dzwonka.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Odbierz przyciskiem głośności</string>
     <string name="volume_answer_call_summary">Odbierz połączenie naciskając przycisk głośności</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">Gesty AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Allow when screen is off</string>

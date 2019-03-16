@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Control de reproducción</string>
     <string name="volume_rocker_music_controls_summary">Cuando la pantalla está apagada, al presionar prolongadamente las teclas de volumen buscarán pistas de música</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Control del volumen del tono de llamada</string>
-    <string name="volume_keys_control_ring_tone_summary">Los botones de volumen controlan el volumen multimedia de forma predeterminada. Activar para cambiar a control del tono de llamada.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Responder con las teclas de volumen</string>
     <string name="volume_answer_call_summary">Responder a la llamada cuando se presionen las teclas de volumen</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">Gestos AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Borde activo</string>
-    <string name="active_edge_summary">Configurar las opciones del borde activo</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Acción de apretar</string>
     <string name="active_edge_sensitivity_title">Sensibilidad al apretar</string>
     <string name="active_edge_wake_title">Permitir cuando la pantalla esté apagada</string>

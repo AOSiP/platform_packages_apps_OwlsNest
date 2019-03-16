@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">재생 컨트롤</string>
     <string name="volume_rocker_music_controls_summary">화면이 꺼져있을 때 음량 버튼을 길게 눌러 음악 재생 순서를 변경합니다.</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">벨소리 볼륨 조정</string>
-    <string name="volume_keys_control_ring_tone_summary">버튼을 누르면 기본적으로 미디어 조정 슬라이더가 뜹니다. 벨소리 슬라이더로 바꾸려면 활성화하세요.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">볼륨 버튼 응답</string>
     <string name="volume_answer_call_summary">볼륨 버튼을 눌러서 전화를 받습니다</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">AOSP 제스처</string>
     <!-- Active edge -->
     <string name="active_edge_title">액티브 엣지</string>
-    <string name="active_edge_summary">액티브 엣지 옵션을 설정합니다.</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">스퀴즈 액션</string>
     <string name="active_edge_sensitivity_title">쥐는 민감도</string>
     <string name="active_edge_wake_title">화면 꺼짐에도 허용</string>

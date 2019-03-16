@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">再生コントロール</string>
     <string name="volume_rocker_music_controls_summary">画面消灯時に音量ボタンを長押しで曲をシークする</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">着信音量の制御</string>
-    <string name="volume_keys_control_ring_tone_summary">既定では音量キーはメディア音量を制御します。有効にすると着信音量に切り替わります。</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">音量ボタンで着信に出る</string>
     <string name="volume_answer_call_summary">電話着信時に音量ボタンを押して応答する</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">AOSP ジェスチャー</string>
     <!-- Active edge -->
     <string name="active_edge_title">アクティブエッジ</string>
-    <string name="active_edge_summary">アクティブエッジの設定を編集する</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">握りアクション</string>
     <string name="active_edge_sensitivity_title">握りの感度</string>
     <string name="active_edge_wake_title">画面消灯中は許可</string>

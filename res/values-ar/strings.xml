@@ -282,9 +282,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">التحكم في الموسيقى</string>
     <string name="volume_rocker_music_controls_summary">عند إيقاف تشغيل الشاشة، الضغط مطولا على مفاتيح الصوت سيغير ملف الموسيقى</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">تحكم بمستوى نغمة الرنين</string>
-    <string name="volume_keys_control_ring_tone_summary">المفاتيح تتحكم بصوت الوسائط بشكل افتراضي. تمكين التبديل إلى التحكم بنغمة الرنين.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">الرد على المكالمة بأزرار الصوت</string>
     <string name="volume_answer_call_summary">أجب على المكالمة عند الضغط على مفاتيح الصوت</string>
@@ -325,7 +322,7 @@
     <string name="aosp_gesture_title">إيماءات AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">الحافة النشطة</string>
-    <string name="active_edge_summary">تهيئة خيارات الحافة النشطة</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">إجراء الضغط</string>
     <string name="active_edge_sensitivity_title">حساسية الضغط</string>
     <string name="active_edge_wake_title">السماح عندما تكون الشاشة مغلقة</string>

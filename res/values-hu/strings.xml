@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Zene vezérlése</string>
     <string name="volume_rocker_music_controls_summary">Kikapcsolt képernyőnél a hangerő gombok hosszan nyomásával léptethet zeneszámokat</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Csengési hangerő vezérlése</string>
-    <string name="volume_keys_control_ring_tone_summary">A gombok alapértelmezetten a médiahangerőt vezérlik. Lehetővé teszi, hogy a csengőhang erejét állítsa.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Hívásfogadás a hangerőgombokkal</string>
     <string name="volume_answer_call_summary">Hívásfogadás hangerőgombok lenyomásakor</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">AOSP gesztusok</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Active Edge beállítások</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Szorítási műveletek</string>
     <string name="active_edge_sensitivity_title">Szórítás érzékenysége</string>
     <string name="active_edge_wake_title">Engedélyezi amikor a képernyő ki van kapcsolva</string>

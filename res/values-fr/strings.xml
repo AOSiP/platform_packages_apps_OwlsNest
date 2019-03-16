@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Contrôle de lecture</string>
     <string name="volume_rocker_music_controls_summary">Lorsque l\'écran est éteint, appuyez longuement sur les touches de volume va chercher des morceaux de musique</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Contrôle du volume de la sonnerie</string>
-    <string name="volume_keys_control_ring_tone_summary">Les touches contrôlent le curseur de média par défaut. Activer pour passer au curseur de la sonnerie.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Décrocher par les touches de volume</string>
     <string name="volume_answer_call_summary">Répondre à l’appel lors de l\'appui des touches de volume</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">Gestes AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configurer les options Active Edge</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Action de secousse</string>
     <string name="active_edge_sensitivity_title">Sensibilité de la secousse</string>
     <string name="active_edge_wake_title">Autoriser lorsque l\'écran est éteint</string>

@@ -139,7 +139,7 @@
     <string name="toast_icon_title">Ikona aplikace Toast</string>
     <string name="toast_icon_summary">Zobrazit ikonu aplikací v oznámení Toast</string>
     <!-- Notifications while screen on -->
-    <string name="notification_sound_vib_screen_on_title">Hlučné oznámení, pokud je obrazovka zapnuta</string>
+    <string name="notification_sound_vib_screen_on_title">Hlasité oznámení, pokud je obrazovka zapnuta</string>
     <string name="notification_sound_vib_screen_on_summary">Přehrát zvuk a vibrace pro oznámení při zapnuté obrazovce</string>
     <!-- Heads up -->
     <string name="heads_up_title">Povolit</string>
@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Ovládání přehrávání</string>
     <string name="volume_rocker_music_controls_summary">Když je obrazovka vypnutá, dlouhý stisk tlačítka hlasitosti posune na další skladbu</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Ovládání hlasitosti vyzvánění</string>
-    <string name="volume_keys_control_ring_tone_summary">Tlačítka ovládají hlasitost médií ve výchozím nastavení. Povolením přepnete na ovládání hlasitosti vyzvánění.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Přijmout hovor tlačítky hlasitosti</string>
     <string name="volume_answer_call_summary">Přijetí hovoru při stisknutí tlačítek hlasitosti</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">Gesta AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Konfigurovat možnosti Active Edge</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Akce při zmáčknutí</string>
     <string name="active_edge_sensitivity_title">Citlivost zmáčknutí</string>
     <string name="active_edge_wake_title">Povolit při vypnuté obrazovce</string>

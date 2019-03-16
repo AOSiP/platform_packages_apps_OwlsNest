@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Управление воспроизведением</string>
     <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие на кнопки громкости переключает композиции</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Управление громкостью звонка</string>
-    <string name="volume_keys_control_ring_tone_summary">По умолчанию клавиши управляют громкостью мультимедиа. Включите, чтобы управлять громкостью мелодии звонка.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ на звонок кнопками регулировки громкости</string>
     <string name="volume_answer_call_summary">Ответ на звонок, когда нажата кнопка громкости</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">Стандартные жесты AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Активные стороны</string>
-    <string name="active_edge_summary">Конфигурировать функцию \'Активные стороны\'</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Действие после Сжатия</string>
     <string name="active_edge_sensitivity_title">Чувствительность Сжатия</string>
     <string name="active_edge_wake_title">Разрешить, при выключенном экране</string>

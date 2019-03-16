@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Musiksteuerung</string>
     <string name="volume_rocker_music_controls_summary">Bei ausgeschaltetem Bildschirm wird durch langes Drücken der Lautstärketaste der Musiktitel gewechselt</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Klingelton-Lautstärke ändern</string>
-    <string name="volume_keys_control_ring_tone_summary">Die Tasten steuern standardmäßig die Medienlautstärke. Aktivieren Sie diese Option, um die Klingeltonlautstärke zu steuern.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Gesprächsannahme mit Lautstärke-Tasten</string>
     <string name="volume_answer_call_summary">Anruf mit den Lautstärketasten annehmen</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">AOSP Gesten</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Active Edge konfigurieren</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Erlauben, wenn Bildschirm aus ist</string>

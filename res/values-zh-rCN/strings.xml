@@ -281,9 +281,6 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">播放控制</string>
     <string name="volume_rocker_music_controls_summary">当屏幕关闭时，长按音量键将搜索音乐曲目</string>
-    <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">控制铃声音量</string>
-    <string name="volume_keys_control_ring_tone_summary">默认情况下，音量键控制媒体音量滑块。启用以切换到铃声音量滑块。</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">音量键接听</string>
     <string name="volume_answer_call_summary">按下音量键时接听电话</string>
@@ -324,7 +321,7 @@
     <string name="aosp_gesture_title">AOSP 手势</string>
     <!-- Active edge -->
     <string name="active_edge_title">活动边缘</string>
-    <string name="active_edge_summary">配置活动边缘选项</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">挤压动作</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Allow when screen is off</string>
