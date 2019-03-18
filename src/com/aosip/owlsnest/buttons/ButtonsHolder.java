@@ -18,6 +18,7 @@ package com.aosip.owlsnest.buttons;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.preference.Preference;
@@ -31,14 +32,16 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
+import java.util.ArrayList;
+
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
 public class ButtonsHolder extends SettingsPreferenceFragment {
 
-    ViewPager mViewPager;
-    String titleString[];
-    ViewGroup mContainer;
-    PagerSlidingTabStrip mTabs;
+    private ViewPager mViewPager;
+    private String titleString[];
+    private ViewGroup mContainer;
+    private PagerSlidingTabStrip mTabs;
 
     static Bundle mSavedState;
 
@@ -83,11 +86,11 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
         	super(fm);
         	frags[0] = new PowermenuCategory();
         	frags[1] = new VolumeCategory();
-		try {
+		    try {
 		        frags[2] = new NavigationCategory();
-                        frags[3] = new LightsCategory();
-		} catch (IndexOutOfBoundsException e) {
-			// Do nothing
+                frags[3] = new LightsCategory();
+		    } catch (IndexOutOfBoundsException ignored) {
+			    // Do nothing
 		    }
         }
 
@@ -108,15 +111,17 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
     }
 
     private String[] getTitles() {
-	if (getResources().getInteger(
-            com.android.internal.R.integer.config_deviceHardwareKeys) > 64) {
-	        return new String[] { getString(R.string.powermenu_category),
-	                              getString(R.string.volume_category),
-	                              getString(R.string.hardware_keys_category),
-                                      getString(R.string.button_lights_category)};
-	} else {
-		return new String[] { getString(R.string.powermenu_category),
-                              getString(R.string.volume_category)};
-	    }
+        final ArrayList<String> titles = new ArrayList();
+        final Resources res = getResources();
+        titles.add(getString(R.string.powermenu_category));
+        titles.add(getString(R.string.volume_category));
+        if (res.getInteger(com.android.internal.R.integer.config_deviceHardwareKeys) > 64) {
+            titles.add(getString(R.string.volume_category));
+            titles.add(getString(R.string.hardware_keys_category));
+            if (res.getBoolean(com.android.internal.R.bool.config_button_brightness_support)) {
+                titles.add(getString(R.string.button_lights_category));
+            }
+        }
+        return titles.toArray(new String[0]);
     }
 }
