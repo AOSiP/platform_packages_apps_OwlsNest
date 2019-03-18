@@ -77,7 +77,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
 
     class StatusBarAdapter extends FragmentPagerAdapter {
         String titles[] = getTitles();
-        private Fragment frags[] = new Fragment[titles.length];
+        private Fragment frags[] = new Fragment[0];
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
