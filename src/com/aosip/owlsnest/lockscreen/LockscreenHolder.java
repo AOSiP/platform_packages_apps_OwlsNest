@@ -82,6 +82,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new OptionsCategory();
+            frags[1] = new LockVisualizerCategory();
         }
 
         @Override
@@ -103,7 +104,8 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.lockscreen_title)};
+                    getString(R.string.lockscreen_title),
+                    getString(R.string.lockscreen_visualizer_title)};
         return titleString;
     }
 }
