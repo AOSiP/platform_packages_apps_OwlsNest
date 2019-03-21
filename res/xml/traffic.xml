@@ -24,6 +24,7 @@
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_state_title"
+        android:summary="@string/network_traffic_state_summary"
         android:defaultValue="false" />
 
     <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
@@ -36,11 +37,18 @@
     <com.aosip.owlsnest.preference.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
+        android:dependency="network_traffic_state"
         android:max="10"
         android:min="0"
         settings:unitsLeft=""
         settings:unitsRight=""
-        android:defaultValue="0"
-        android:dependency="network_traffic_state" />
+        android:defaultValue="0" />
 
+    <com.aosip.owlsnest.preference.SystemSettingListPreference
+        android:key="network_traffic_view_location"
+        android:title="@string/network_traffic_location_title"
+        android:summary="@string/network_traffic_location_summary"
+        android:entries="@array/network_traffic_location_entries"
+        android:entryValues="@array/network_traffic_location_values"
+        android:defaultValue="1" />
 </PreferenceScreen>
