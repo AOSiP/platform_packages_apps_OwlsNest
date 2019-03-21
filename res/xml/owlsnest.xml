@@ -60,7 +60,7 @@
 
     <PreferenceScreen
        android:key="lockscreen"
-       android:fragment="com.aosip.owlsnest.lockscreen.OptionsCategory"
+       android:fragment="com.aosip.owlsnest.lockscreen.LockscreenHolder"
        android:title="@string/lockscreen_title"
        android:summary="@string/lockscreen_summary"
        android:icon="@drawable/ic_owlsnest_lockscreen_background" />
