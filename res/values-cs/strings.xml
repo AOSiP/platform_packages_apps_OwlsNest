@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Ovládání přehrávání</string>
     <string name="volume_rocker_music_controls_summary">Když je obrazovka vypnutá, dlouhý stisk tlačítka hlasitosti posune na další skladbu</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Ovládání hlasitosti vyzvánění</string>
+    <string name="volume_keys_control_ring_tone_summary">Tlačítka ovládají hlasitost médií ve výchozím nastavení. Povolením přepnete na ovládání hlasitosti vyzvánění.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Přijmout hovor tlačítky hlasitosti</string>
     <string name="volume_answer_call_summary">Přijetí hovoru při stisknutí tlačítek hlasitosti</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animace vypnutí obrazovky</string>
     <string name="screen_off_animation_fade">Jednoduché vyblednutí</string>
-    <string name="screen_off_animation_color">Barevné vyblednutí</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Měřítko</string>
     <!--Owlsnest recentscreen-->
@@ -321,28 +323,13 @@
     <string name="aosp_gesture_title">Gesta AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Pokročilá verze funkce zmáčknutím Pixel</string>
     <string name="active_edge_actions_title">Akce při zmáčknutí</string>
+    <string name="active_edge_long_squeeze_actions_title">Akce při dlouhém zmáčknutí</string>
     <string name="active_edge_sensitivity_title">Citlivost zmáčknutí</string>
     <string name="active_edge_wake_title">Povolit při vypnuté obrazovce</string>
     <string name="active_edge_wake_summary">Spuštění akce při vypnuté obrazovce</string>
     <string name="active_edge_footer_info">Ne všechny akce zmáčknutím v Active Edge mají schopnost aktivovat obrazovku</string>
-    <string name="action_nothing">Žádná akce</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Nedávné</string>
-    <string name="action_search">Asistent</string>
-    <string name="action_voice_search">Hlasové vyhledávání</string>
-    <string name="action_launch_camera">Fotoaparát</string>
-    <string name="action_last_app">Poslední aplikace</string>
-    <string name="action_splitscreen">Rozdělená obrazovka</string>
-    <string name="action_flashlight">Svítilna</string>
-    <string name="action_clear_notifications">Vymazat oznámení</string>
-    <string name="action_volume_panel">Panel hlasitosti</string>
-    <string name="action_screen_off">Vypnout obrazovku</string>
-    <string name="action_notifications">Oznámení</string>
-    <string name="action_power_menu">Menu napájení</string>
-    <string name="action_screenshot">Snímek obrazovky</string>
-    <string name="action_qs_panel">Panel QS</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto třemi prsty</string>
     <string name="three_finger_gesture_summary">Snímek obrazovky přejetím tří prstů</string>

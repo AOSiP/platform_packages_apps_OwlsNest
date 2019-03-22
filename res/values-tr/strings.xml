@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Müzik kontrolü</string>
     <string name="volume_rocker_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun basmak şarkıyı değiştirir</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Zil sesi kontrolü</string>
+    <string name="volume_keys_control_ring_tone_summary">Tuşlar varsayılan olarak medya kaydırıcısını kontrol eder. Zil sesi kaydırıcısına geçmek için etkinleştirin.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ses tuşlarıyla cevapla</string>
     <string name="volume_answer_call_summary">Ses tuşlarına basıldığında aramaya cevap ver</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Ekran kapanma animasyonu</string>
     <string name="screen_off_animation_fade">Basit karart</string>
-    <string name="screen_off_animation_color">Renkli karart</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Ölçek</string>
     <!--Owlsnest recentscreen-->
@@ -321,28 +323,13 @@
     <string name="aosp_gesture_title">AOSP Hareketleri</string>
     <!-- Active edge -->
     <string name="active_edge_title">Aktif Kenar</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Pixel sıkma özelliğinin gelişmiş bir sürümü</string>
     <string name="active_edge_actions_title">Sıkma eylemi</string>
+    <string name="active_edge_long_squeeze_actions_title">Uzun basma eylemi</string>
     <string name="active_edge_sensitivity_title">Sıkma hassasiyeti</string>
     <string name="active_edge_wake_title">Ekran kapalıyken izin ver</string>
     <string name="active_edge_wake_summary">Ekran kapalıyken bir eylemi tetikleyin</string>
     <string name="active_edge_footer_info">Aktif Kenar içindeki sıkma eylemlerinin tümü ekranı etkinleştirme özelliğine sahip değildir</string>
-    <string name="action_nothing">Eylem yok</string>
-    <string name="action_menu">Menü</string>
-    <string name="action_app_switch">Son uygulamalar</string>
-    <string name="action_search">Asistan</string>
-    <string name="action_voice_search">Sesli arama</string>
-    <string name="action_launch_camera">Kamera</string>
-    <string name="action_last_app">Son uygulama</string>
-    <string name="action_splitscreen">Bölünmüş ekran</string>
-    <string name="action_flashlight">El feneri</string>
-    <string name="action_clear_notifications">Bildirimleri temizle</string>
-    <string name="action_volume_panel">Ses paneli</string>
-    <string name="action_screen_off">Ekranı kapat</string>
-    <string name="action_notifications">Bildirimler</string>
-    <string name="action_power_menu">Güç menüsü</string>
-    <string name="action_screenshot">Ekran görüntüsü</string>
-    <string name="action_qs_panel">Hızlı ayarlar paneli</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Üç parmak hareketi</string>
     <string name="three_finger_gesture_summary">Ekran görüntüsü almak için üç parmağınızı ekran üzerinde kaydırın</string>

@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Musiksteuerung</string>
     <string name="volume_rocker_music_controls_summary">Bei ausgeschaltetem Bildschirm wird durch langes Drücken der Lautstärketaste der Musiktitel gewechselt</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Klingelton Lautstärke kontrollieren</string>
+    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Gesprächsannahme mit Lautstärke-Tasten</string>
     <string name="volume_answer_call_summary">Anruf mit den Lautstärketasten annehmen</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Stil der Abschaltanimation</string>
     <string name="screen_off_animation_fade">Einfaches verblassen</string>
-    <string name="screen_off_animation_color">Farbig verblassen</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Maßstab</string>
     <!--Owlsnest recentscreen-->
@@ -323,26 +325,11 @@
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Erlauben, wenn Bildschirm aus ist</string>
     <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">Keine Aktion</string>
-    <string name="action_menu">Menü</string>
-    <string name="action_app_switch">Anwendungsverlauf</string>
-    <string name="action_search">Assistent</string>
-    <string name="action_voice_search">Sprachsuche</string>
-    <string name="action_launch_camera">Kamera</string>
-    <string name="action_last_app">Letzte App</string>
-    <string name="action_splitscreen">Geteilter Bildschirm</string>
-    <string name="action_flashlight">Taschenlampe</string>
-    <string name="action_clear_notifications">Benachrichtigungen löschen</string>
-    <string name="action_volume_panel">Lautstärkeregler</string>
-    <string name="action_screen_off">Bildschirm aus</string>
-    <string name="action_notifications">Benachrichtigungen</string>
-    <string name="action_power_menu">Powermenü</string>
-    <string name="action_screenshot">Bildschirmfoto</string>
-    <string name="action_qs_panel">Schnelleinstellungen</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Drei-Finger-Geste</string>
     <string name="three_finger_gesture_summary">Wische mit drei Fingern für Screenshot</string>

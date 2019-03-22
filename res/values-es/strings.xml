@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Control de reproducción</string>
     <string name="volume_rocker_music_controls_summary">Cuando la pantalla está apagada, al presionar prolongadamente las teclas de volumen buscarán pistas de música</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
+    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Responder con las teclas de volumen</string>
     <string name="volume_answer_call_summary">Responder a la llamada cuando se presionen las teclas de volumen</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Pantalla de animación</string>
     <string name="screen_off_animation_fade">Atenuación simple</string>
-    <string name="screen_off_animation_color">Atenuación de color</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Escala</string>
     <!--Owlsnest recentscreen-->
@@ -323,26 +325,11 @@
     <string name="active_edge_title">Borde activo</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Acción de apretar</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Sensibilidad al apretar</string>
     <string name="active_edge_wake_title">Permitir cuando la pantalla esté apagada</string>
     <string name="active_edge_wake_summary">Activar una acción cuando la pantalla esté apagada</string>
     <string name="active_edge_footer_info">No todas las acciones de compresión dentro del borde activo tienen la capacidad de activar la pantalla</string>
-    <string name="action_nothing">Ninguna acción</string>
-    <string name="action_menu">Menú</string>
-    <string name="action_app_switch">Recientes</string>
-    <string name="action_search">Asistente</string>
-    <string name="action_voice_search">Búsqueda por voz</string>
-    <string name="action_launch_camera">Cámara</string>
-    <string name="action_last_app">Última aplicación</string>
-    <string name="action_splitscreen">Pantalla dividida</string>
-    <string name="action_flashlight">Linterna</string>
-    <string name="action_clear_notifications">Borrar notificaciones</string>
-    <string name="action_volume_panel">Panel de volumen</string>
-    <string name="action_screen_off">Apagar pantalla</string>
-    <string name="action_notifications">Notificaciones</string>
-    <string name="action_power_menu">Menú de apagado</string>
-    <string name="action_screenshot">Captura de pantalla</string>
-    <string name="action_qs_panel">Panel de ajustes rápidos</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto de tres dedos</string>
     <string name="three_finger_gesture_summary">Deslizar tres dedos para hacer una captura de pantalla</string>

@@ -282,6 +282,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">التحكم في الموسيقى</string>
     <string name="volume_rocker_music_controls_summary">عند إيقاف تشغيل الشاشة، الضغط مطولا على مفاتيح الصوت سيغير ملف الموسيقى</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">التحكم بمستوى نغمة الرنين</string>
+    <string name="volume_keys_control_ring_tone_summary">المفاتيح تتحكم بصوت الوسائط بشكل افتراضي. تمكين التبديل إلى التحكم بنغمة الرنين.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">الرد على المكالمة بأزرار الصوت</string>
     <string name="volume_answer_call_summary">أجب على المكالمة عند الضغط على مفاتيح الصوت</string>
@@ -293,7 +296,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">مؤثرات اغلاق الشاشة</string>
     <string name="screen_off_animation_fade">تلاشي بسيط</string>
-    <string name="screen_off_animation_color">تلاشي اللون</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
     <!--Owlsnest recentscreen-->
@@ -322,28 +324,13 @@
     <string name="aosp_gesture_title">إيماءات AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">الحافة النشطة</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">نسخة متقدمة من ميزة ضغط Pixel</string>
     <string name="active_edge_actions_title">إجراء الضغط</string>
+    <string name="active_edge_long_squeeze_actions_title">إجراء الضغط الطويل</string>
     <string name="active_edge_sensitivity_title">حساسية الضغط</string>
     <string name="active_edge_wake_title">السماح عندما تكون الشاشة مغلقة</string>
     <string name="active_edge_wake_summary">تشغيل إجراء معين عندما تكون الشاشة مغلقة</string>
     <string name="active_edge_footer_info">ليس كل إجراءات الضغط داخل الحافة النشطة لديها القدرة على تنشيط العرض</string>
-    <string name="action_nothing">لا إجراء</string>
-    <string name="action_menu">القائمة</string>
-    <string name="action_app_switch">الحديثة</string>
-    <string name="action_search">المساعد</string>
-    <string name="action_voice_search">البحث الصوتي</string>
-    <string name="action_launch_camera">الكاميرا</string>
-    <string name="action_last_app">التطبيق الأخير</string>
-    <string name="action_splitscreen">تقسيم الشاشة</string>
-    <string name="action_flashlight">الكشاف</string>
-    <string name="action_clear_notifications">مسح الإشعارات</string>
-    <string name="action_volume_panel">لوحة مستوى الصوت</string>
-    <string name="action_screen_off">إيقاف الشاشة</string>
-    <string name="action_notifications">الإشعارات</string>
-    <string name="action_power_menu">قـائمة التشغيل</string>
-    <string name="action_screenshot">لقطة الشاشة</string>
-    <string name="action_qs_panel">لوحة الإعدادات السريعة</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">إيماءة الثلاثة أصابع</string>
     <string name="three_finger_gesture_summary">السحب بثلاثة أصابع لأخذ لقطة للشاشة</string>

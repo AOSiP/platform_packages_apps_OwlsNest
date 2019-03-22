@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">再生コントロール</string>
     <string name="volume_rocker_music_controls_summary">画面消灯時に音量ボタンを長押しで曲をシークする</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">着信音量の制御</string>
+    <string name="volume_keys_control_ring_tone_summary">既定では音量キーはメディア音量を制御します。有効にすると着信音量に切り替わります。</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">音量ボタンで着信に出る</string>
     <string name="volume_answer_call_summary">電話着信時に音量ボタンを押して応答する</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">画面消灯時のアニメーション</string>
     <string name="screen_off_animation_fade">シンプルフェード</string>
-    <string name="screen_off_animation_color">カラーフェード</string>
     <string name="screen_off_animation_crt">ブラウン管</string>
     <string name="screen_off_animation_scale">縮小</string>
     <!--Owlsnest recentscreen-->
@@ -321,28 +323,13 @@
     <string name="aosp_gesture_title">AOSP ジェスチャー</string>
     <!-- Active edge -->
     <string name="active_edge_title">アクティブエッジ</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Pixel の握りアクションの高度なバージョン</string>
     <string name="active_edge_actions_title">握りアクション</string>
+    <string name="active_edge_long_squeeze_actions_title">長い握りのアクション</string>
     <string name="active_edge_sensitivity_title">握りの感度</string>
     <string name="active_edge_wake_title">画面消灯中は許可</string>
     <string name="active_edge_wake_summary">画面消灯中にアクションを起動する</string>
     <string name="active_edge_footer_info">全てのアクティブエッジ内の握りアクションがディスプレイをアクティブにできる訳ではありません</string>
-    <string name="action_nothing">なし</string>
-    <string name="action_menu">メニュー</string>
-    <string name="action_app_switch">アプリ履歴</string>
-    <string name="action_search">アシスタント</string>
-    <string name="action_voice_search">音声検索</string>
-    <string name="action_launch_camera">カメラ</string>
-    <string name="action_last_app">直前のアプリ</string>
-    <string name="action_splitscreen">画面分割</string>
-    <string name="action_flashlight">フラッシュライト</string>
-    <string name="action_clear_notifications">通知を消去</string>
-    <string name="action_volume_panel">音量パネル</string>
-    <string name="action_screen_off">画面を消灯</string>
-    <string name="action_notifications">通知</string>
-    <string name="action_power_menu">電源メニュー</string>
-    <string name="action_screenshot">スクリーンショット</string>
-    <string name="action_qs_panel">クイック設定パネル</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">3本指でのジェスチャー</string>
     <string name="three_finger_gesture_summary">3本指でスワイプしてスクリーンショットを取得する</string>

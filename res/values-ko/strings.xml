@@ -261,7 +261,7 @@
     <string name="button_backlight_on_touch_only_summary">버튼 백라이트가 버튼을 누르는 경우에만 나타납니다. 시간 제한은 여전히 이 기능에 영향을 줍니다.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">하드웨어 버튼</string>
-    <string name="buttons_summary">물리 버튼의 반응을 조정합니다</string>
+    <string name="buttons_summary">물리 버튼의 동작을 조정합니다</string>
     <string name="powermenu_category">전원</string>
     <string name="volume_category">음량</string>
     <!-- Power Menu -->
@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">재생 컨트롤</string>
     <string name="volume_rocker_music_controls_summary">화면이 꺼져있을 때 음량 버튼을 길게 눌러 음악 재생 순서를 변경합니다.</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">벨소리 볼륨 조정</string>
+    <string name="volume_keys_control_ring_tone_summary">버튼을 누르면 기본적으로 미디어 조정 슬라이더가 뜹니다. 벨소리 슬라이더로 바꾸려면 활성화하세요.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">볼륨 버튼 응답</string>
     <string name="volume_answer_call_summary">볼륨 버튼을 눌러서 전화를 받습니다</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">화면 꺼짐 애니메이션</string>
     <string name="screen_off_animation_fade">단순 페이드</string>
-    <string name="screen_off_animation_color">컬러 페이드</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">스케일</string>
     <!--Owlsnest recentscreen-->
@@ -316,33 +318,18 @@
     <string name="recents_clear_all_location_bottom_center">하단 중앙</string>
     <!--Owlsnest Gestures-->
     <string name="gesture_category">제스처</string>
-    <string name="gesture_summary">옵션/액션에 따른 제스처</string>
+    <string name="gesture_summary">옵션/동작에 따른 제스처</string>
     <string name="double_tap_options">두 번 눌러서 끄기</string>
     <string name="aosp_gesture_title">AOSP 제스처</string>
     <!-- Active edge -->
     <string name="active_edge_title">액티브 엣지</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
-    <string name="active_edge_actions_title">스퀴즈 액션</string>
+    <string name="active_edge_summary">픽셀 쥐기 기능의 고급 버전입니다</string>
+    <string name="active_edge_actions_title">쥐는 동작</string>
+    <string name="active_edge_long_squeeze_actions_title">길게 쥐는 동작</string>
     <string name="active_edge_sensitivity_title">쥐는 민감도</string>
     <string name="active_edge_wake_title">화면 꺼짐에도 허용</string>
-    <string name="active_edge_wake_summary">화면이 꺼져있을 때 액션 트리거</string>
-    <string name="active_edge_footer_info">액티브 엣지의 모든 쥐는 액션이 디스플레이를 활성화 할 수 있는 것은 아닙니다</string>
-    <string name="action_nothing">동작 없음</string>
-    <string name="action_menu">메뉴</string>
-    <string name="action_app_switch">최근 앱 목록</string>
-    <string name="action_search">어시스턴트</string>
-    <string name="action_voice_search">음성 검색</string>
-    <string name="action_launch_camera">카메라</string>
-    <string name="action_last_app">마지막으로 사용한 앱</string>
-    <string name="action_splitscreen">화면 분할</string>
-    <string name="action_flashlight">손전등</string>
-    <string name="action_clear_notifications">알림 지우기</string>
-    <string name="action_volume_panel">볼륨 패널</string>
-    <string name="action_screen_off">화면 끄기</string>
-    <string name="action_notifications">알림</string>
-    <string name="action_power_menu">전원 메뉴</string>
-    <string name="action_screenshot">스크린샷</string>
-    <string name="action_qs_panel">빠른 설정 패널</string>
+    <string name="active_edge_wake_summary">화면이 꺼져있을 때 동작 트리거</string>
+    <string name="active_edge_footer_info">액티브 엣지의 모든 쥐는 동작이 디스플레이를 활성화 할 수 있는 것은 아닙니다</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">세 손가락 제스처</string>
     <string name="three_finger_gesture_summary">세 손가락으로 밀어서 스크린샷을 찍습니다</string>

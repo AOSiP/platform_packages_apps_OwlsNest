@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Управление воспроизведением</string>
     <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие на кнопки громкости переключает композиции</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Управление громкостью звонка</string>
+    <string name="volume_keys_control_ring_tone_summary">По умолчанию клавиши управляют громкостью мультимедиа. Включите, чтобы управлять громкостью мелодии звонка.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ на звонок кнопками регулировки громкости</string>
     <string name="volume_answer_call_summary">Ответ на звонок, когда нажата кнопка громкости</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Анимация выключения экрана</string>
     <string name="screen_off_animation_fade">Простое затухание</string>
-    <string name="screen_off_animation_color">Затухание цвета</string>
     <string name="screen_off_animation_crt">Эффект телевизора</string>
     <string name="screen_off_animation_scale">Масштабирование</string>
     <!--Owlsnest recentscreen-->
@@ -323,26 +325,11 @@
     <string name="active_edge_title">Активные стороны</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Действие после Сжатия</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Чувствительность Сжатия</string>
     <string name="active_edge_wake_title">Разрешить, при выключенном экране</string>
     <string name="active_edge_wake_summary">Запустить действие, когда экран выключен</string>
     <string name="active_edge_footer_info">Не все действия Сжатия, функции Активные стороны, имеют функцию включить экран</string>
-    <string name="action_nothing">Нет действия</string>
-    <string name="action_menu">Меню</string>
-    <string name="action_app_switch">Недавние приложения</string>
-    <string name="action_search">Помощник</string>
-    <string name="action_voice_search">Голосовой поиск</string>
-    <string name="action_launch_camera">Камера</string>
-    <string name="action_last_app">Последнее приложение</string>
-    <string name="action_splitscreen">Разделение экрана</string>
-    <string name="action_flashlight">Фонарик</string>
-    <string name="action_clear_notifications">Очистить уведомления</string>
-    <string name="action_volume_panel">Панель громкости</string>
-    <string name="action_screen_off">Отключить экран</string>
-    <string name="action_notifications">Уведомления</string>
-    <string name="action_power_menu">Меню кнопки питания</string>
-    <string name="action_screenshot">Скриншот</string>
-    <string name="action_qs_panel">Панель быстрых настроек</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Жест тремя пальцами</string>
     <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>

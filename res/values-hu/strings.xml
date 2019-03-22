@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Zene vezérlése</string>
     <string name="volume_rocker_music_controls_summary">Kikapcsolt képernyőnél a hangerő gombok hosszan nyomásával léptethet zeneszámokat</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Csengési hangerő vezérlése</string>
+    <string name="volume_keys_control_ring_tone_summary">A gombok alapértelmezetten a médiahangerőt vezérlik. Lehetővé teszi, hogy a csengőhang erejét állítsa.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Hívásfogadás a hangerőgombokkal</string>
     <string name="volume_answer_call_summary">Hívásfogadás hangerőgombok lenyomásakor</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Képernyő-kikapcsolási animáció</string>
     <string name="screen_off_animation_fade">Egyszerű elhalványulás</string>
-    <string name="screen_off_animation_color">Színes elhalványulás</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skála</string>
     <!--Owlsnest recentscreen-->
@@ -323,26 +325,11 @@
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Szorítási műveletek</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Szórítás érzékenysége</string>
     <string name="active_edge_wake_title">Engedélyezi amikor a képernyő ki van kapcsolva</string>
     <string name="active_edge_wake_summary">Egy művelet végrehajtása a képernyő kikapcsolásakor</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">Nincs művelet</string>
-    <string name="action_menu">Menü</string>
-    <string name="action_app_switch">Előzmények</string>
-    <string name="action_search">Asszisztens</string>
-    <string name="action_voice_search">Hangalapú keresés</string>
-    <string name="action_launch_camera">Kamera</string>
-    <string name="action_last_app">Utolsó alkalmazás</string>
-    <string name="action_splitscreen">Osztott képernyő</string>
-    <string name="action_flashlight">Zseblámpa</string>
-    <string name="action_clear_notifications">Értesítések törlése</string>
-    <string name="action_volume_panel">Hangerő panel</string>
-    <string name="action_screen_off">Képernyő ki</string>
-    <string name="action_notifications">Értesítések</string>
-    <string name="action_power_menu">Kikapcsolómenü</string>
-    <string name="action_screenshot">Képernyőmentés</string>
-    <string name="action_qs_panel">Gyorsbeállítások panel</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Háromujjas csúsztatási mozdulat</string>
     <string name="three_finger_gesture_summary">Csúsztasson egyszerre három ujjal a képernyőmentéshez</string>

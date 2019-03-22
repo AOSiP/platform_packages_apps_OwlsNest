@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">Controle de reprodução</string>
     <string name="volume_rocker_music_controls_summary">Quando a tela estiver desligada, segurar os botões de volume avançam ou retrocedem músicas</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
+    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Atender com os botões de volume</string>
     <string name="volume_answer_call_summary">Atender a chamada quando pressionado os botões de volume</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animação ao desligar tela</string>
     <string name="screen_off_animation_fade">Desvanecer simples</string>
-    <string name="screen_off_animation_color">Cor de desvanecer</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Escala</string>
     <!--Owlsnest recentscreen-->
@@ -321,28 +323,13 @@
     <string name="aosp_gesture_title">AOSP Gestos</string>
     <!-- Active edge -->
     <string name="active_edge_title">Borda ativa</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Uma versão avançada do recurso dos Pixels de apertar as bordas</string>
     <string name="active_edge_actions_title">Ação ao apertar</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Sensibilidade</string>
     <string name="active_edge_wake_title">Permitir com a tela apagada</string>
     <string name="active_edge_wake_summary">Uma ação ocorre quando a tela está apagada</string>
     <string name="active_edge_footer_info">Nem todas as ações de apertar com a borda ativa tem a capacidade de ativar a tela</string>
-    <string name="action_nothing">Nenhuma ação</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recentes</string>
-    <string name="action_search">Assistente</string>
-    <string name="action_voice_search">Busca por voz</string>
-    <string name="action_launch_camera">Câmera</string>
-    <string name="action_last_app">Último app</string>
-    <string name="action_splitscreen">Dividir a tela</string>
-    <string name="action_flashlight">Lanterna</string>
-    <string name="action_clear_notifications">Limpar notificações</string>
-    <string name="action_volume_panel">Painel de volume</string>
-    <string name="action_screen_off">Desligar tela</string>
-    <string name="action_notifications">Notificações</string>
-    <string name="action_power_menu">Menu de Energia</string>
-    <string name="action_screenshot">Captura de tela</string>
-    <string name="action_qs_panel">Painel de configurações rápidas</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto de três dedos</string>
     <string name="three_finger_gesture_summary">Deslize três dedos para a captura da tela</string>

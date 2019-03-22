@@ -281,6 +281,9 @@
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">播放控制</string>
     <string name="volume_rocker_music_controls_summary">当屏幕关闭时，长按音量键将搜索音乐曲目</string>
+    <!-- Volume keys control rint tone stream -->
+    <string name="volume_keys_control_ring_tone_title">控制铃声音量</string>
+    <string name="volume_keys_control_ring_tone_summary">默认情况下，音量键控制媒体音量滑块。启用以切换到铃声音量滑块。</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">音量键接听</string>
     <string name="volume_answer_call_summary">按下音量键时接听电话</string>
@@ -292,7 +295,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">屏幕关闭动画</string>
     <string name="screen_off_animation_fade">简单的淡入淡出</string>
-    <string name="screen_off_animation_color">有颜色的淡入淡出</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">缩放</string>
     <!--Owlsnest recentscreen-->
@@ -321,28 +323,13 @@
     <string name="aosp_gesture_title">AOSP 手势</string>
     <!-- Active edge -->
     <string name="active_edge_title">活动边缘</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">像素挤压功能的高级版本</string>
     <string name="active_edge_actions_title">挤压动作</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
+    <string name="active_edge_long_squeeze_actions_title">长挤压动作</string>
+    <string name="active_edge_sensitivity_title">挤压灵敏度</string>
+    <string name="active_edge_wake_title">屏幕关闭时允许</string>
+    <string name="active_edge_wake_summary">屏幕关闭时触发操作</string>
+    <string name="active_edge_footer_info">并非活动边缘中的所有挤压操作都能够激活显示器</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">三指滑动手势</string>
     <string name="three_finger_gesture_summary">三指下滑截屏</string>
