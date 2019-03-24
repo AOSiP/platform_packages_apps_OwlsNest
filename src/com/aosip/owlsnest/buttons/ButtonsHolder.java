@@ -80,15 +80,15 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
         private Fragment frags[] = new Fragment[titles.length];
 
         public StatusBarAdapter(FragmentManager fm) {
-        	super(fm);
-        	frags[0] = new PowermenuCategory();
-        	frags[1] = new VolumeCategory();
-		try {
-		        frags[2] = new NavigationCategory();
-                        frags[3] = new LightsCategory();
-		} catch (IndexOutOfBoundsException e) {
-			// Do nothing
-		    }
+            super(fm);
+            frags[0] = new PowermenuCategory();
+            frags[1] = new VolumeCategory();
+        try {
+            frags[2] = new NavigationCategory();
+            frags[3] = new LightsCategory();
+        } catch (IndexOutOfBoundsException e) {
+            // Do nothing
+            }
         }
 
         @Override
@@ -108,15 +108,26 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
     }
 
     private String[] getTitles() {
-	if (getResources().getInteger(
-            com.android.internal.R.integer.config_deviceHardwareKeys) > 64) {
-	        return new String[] { getString(R.string.powermenu_category),
-	                              getString(R.string.volume_category),
-	                              getString(R.string.hardware_keys_category),
-                                      getString(R.string.button_lights_category)};
-	} else {
-		return new String[] { getString(R.string.powermenu_category),
-                              getString(R.string.volume_category)};
-	    }
+        boolean hasBacklight = getResources().getBoolean(com.android.internal.R.bool.config_button_brightness_support);
+        boolean hasHardwareKeys = getResources().getInteger(com.android.internal.R.integer.config_deviceHardwareKeys) > 64;
+        if (hasBacklight && hasHardwareKeys) {
+            return new String[] {
+                                getString(R.string.powermenu_category),
+                                getString(R.string.volume_category),
+                                getString(R.string.hardware_keys_category),
+                                getString(R.string.button_lights_category)
+                            };
+        } else if (hasHardwareKeys) {
+            return new String[] {
+                                getString(R.string.powermenu_category),
+                                getString(R.string.volume_category),
+                                getString(R.string.hardware_keys_category)
+                            };
+        } else {
+            return new String[] {
+                                getString(R.string.powermenu_category),
+                                getString(R.string.volume_category),
+                            };
+        }
     }
 }
