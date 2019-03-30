@@ -310,6 +310,8 @@
     <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
     <string name="powermenu_advanced_reboot_summary">Enables the advanced reboot menu for options to reboot to recovery, bootloader, restart systemui or trigger a hot reboot</string>
     <string name="powermenu_screenshot_title">Screenshot</string>
+    <string name="powermenu_lockdown">Lock down</string>
+    <string name="powermenu_lockdown_summary">Display power button option that turns off Smart Lock, fingerprint unlocking, and notifications on the lock screen</string>
     <string name="powermenu_screenshot_summary">Show a button in the power menu to take screenshots</string>
     <string name="powermenu_airplane_title">Airplane mode</string>
 
