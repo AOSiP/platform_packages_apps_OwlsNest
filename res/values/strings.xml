@@ -360,6 +360,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recents</string>
     <string name="recent_summary">Configure which recents style and options</string>
+    <string name="aosp_recents_category">Oreo recents options</string>
 
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Icon Pack</string>
