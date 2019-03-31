@@ -46,9 +46,6 @@
     <string name="battery_category">電池</string>
     <string name="status_bar_tuner_title">狀態列圖示</string>
     <string name="status_bar_tuner_summary">修改狀態列圖示和設定</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">漫遊指示計</string>
-    <string name="roaming_indicator_icon_summary">在訊號區域顯示漫遊圖示</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE 圖示</string>
     <string name="volte_icon_summary">顯示 VoLTE 圖示</string>
@@ -349,10 +346,14 @@
     <string name="lock_screen_shortcuts_title">鎖定螢幕捷徑</string>
     <string name="lock_screen_shortcuts_summary">管理鎖定螢幕底部的捷徑</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">音樂視覺化</string>
-    <string name="lockscreen_visualizer_summary">在鎖定畫面上切換視覺化檢視</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Clock widget</string>

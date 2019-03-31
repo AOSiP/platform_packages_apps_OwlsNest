@@ -46,9 +46,6 @@
     <string name="battery_category">Batterie</string>
     <string name="status_bar_tuner_title">Éléments de la barre d\'état</string>
     <string name="status_bar_tuner_summary">Editer les icônes et les options de la barre d\'état</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Indicateur d\'itinérance</string>
-    <string name="roaming_indicator_icon_summary">Afficher l\'indicateur d\'itinérance dans l\'icône du signal lorsque celle-ci est active</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Icône VoLTE</string>
     <string name="volte_icon_summary">Afficher l\'icône VoLTE</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">Raccourcis de l\'écran de verrouillage</string>
     <string name="lock_screen_shortcuts_summary">Gérer les raccourcis du bas de l\'écran de verrouillage</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Spectre musical</string>
-    <string name="lockscreen_visualizer_summary">Active/désactive l\'affichage du visualiseur sur l\'écran de verrouillage</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Afficher LS Visualize sur Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Affiche les barres de visualisation également sur un affichage ambiant (mais moins opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget horloge</string>

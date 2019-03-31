@@ -46,9 +46,6 @@
     <string name="battery_category">배터리</string>
     <string name="status_bar_tuner_title">상태 표시줄 항목</string>
     <string name="status_bar_tuner_summary">상태 표시줄 아이콘과 옵션을 수정합니다</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">로밍 상태 표시</string>
-    <string name="roaming_indicator_icon_summary">로밍 모드에서 신호 아이콘에 로밍 표시기를 나타냅니다</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE 아이콘</string>
     <string name="volte_icon_summary">VoLTE 아이콘 표시</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">잠금 화면 바로 가기</string>
     <string name="lock_screen_shortcuts_summary">잠금화면 아래 바로가기 관리</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">음악 시각화</string>
-    <string name="lockscreen_visualizer_summary">잠금 화면의 시각화 토글</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">앰비언트 디스플레이에서 시각화 막대 나타내기</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">앰비언트 디스플레이에 시각화 막대를 표시합니다 (덜 불투명함)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">시계 위젯</string>

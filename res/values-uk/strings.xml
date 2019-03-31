@@ -46,9 +46,6 @@
     <string name="battery_category">Акумулятор</string>
     <string name="status_bar_tuner_title">Значки у рядку стану</string>
     <string name="status_bar_tuner_summary">Редагувати значки рядку стану та налаштування</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Індикатор роумінгу</string>
-    <string name="roaming_indicator_icon_summary">Відображати індикатор роумінгу на іконці сигналу коли у роумінгу</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Значок VoLTE</string>
     <string name="volte_icon_summary">Відображати значок VoLTE</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">Ярлики екрану блокування</string>
     <string name="lock_screen_shortcuts_summary">Керування ярликами внизу екрану блокування</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Візуалізація музики</string>
-    <string name="lockscreen_visualizer_summary">Відображення візуалізатора на екрані блокування</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Clock widget</string>

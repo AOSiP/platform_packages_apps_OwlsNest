@@ -46,9 +46,6 @@
     <string name="battery_category">電池</string>
     <string name="status_bar_tuner_title">ステータスバーのアイテム</string>
     <string name="status_bar_tuner_summary">ステータスバーのアイコンやオプションを編集する</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">ローミング表示</string>
-    <string name="roaming_indicator_icon_summary">ローミング中に電波アイコンにローミング表示をする</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE アイコン</string>
     <string name="volte_icon_summary">VoLTE アイコンを表示する</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">ロック画面のショートカット</string>
     <string name="lock_screen_shortcuts_summary">ロック画面下部のショートカットを編集する</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">ミュージックビジュアライザー</string>
-    <string name="lockscreen_visualizer_summary">ロック画面のビジュアライザー表示を切り替えます</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">アンビエント表示のロック画面ビジュアライザーを表示</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">視覚効果バーをアンビエント画面にも表示する (ただし不透明度は低下します)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">時計ウィジェット</string>

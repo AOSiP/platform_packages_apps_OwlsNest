@@ -46,9 +46,6 @@
     <string name="battery_category">Bateria</string>
     <string name="status_bar_tuner_title">Ikony paska stanu</string>
     <string name="status_bar_tuner_summary">Edytuj opcje oraz ikony paska stanu</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Wskaźnik roamingu</string>
-    <string name="roaming_indicator_icon_summary">Wyświetl wskaźnik sygnału roamingu w trybie roamingu</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Ikona VoLTE</string>
     <string name="volte_icon_summary">Wyświetl ikonę VoLTE</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">Skróty ekranu blokady</string>
     <string name="lock_screen_shortcuts_summary">Zarządzaj dolnymi skrótami ekranu blokady</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Wizualizator muzyki</string>
-    <string name="lockscreen_visualizer_summary">Przełącznik wizualizacji na ekranie blokady</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Clock widget</string>

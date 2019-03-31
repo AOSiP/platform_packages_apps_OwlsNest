@@ -46,9 +46,6 @@
     <string name="battery_category">Akku</string>
     <string name="status_bar_tuner_title">Statusleisten-Symbole</string>
     <string name="status_bar_tuner_summary">Ändern der Statusleistensymbole und Einstellungen</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Roaming-Indikator</string>
-    <string name="roaming_indicator_icon_summary">Den Roaming-Indikator anzeigen, wenn man im Roamingmodus ist</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE-Symbol</string>
     <string name="volte_icon_summary">VoLTE-Symbol anzeigen</string>
@@ -283,7 +280,7 @@
     <string name="volume_rocker_music_controls_summary">Bei ausgeschaltetem Bildschirm wird durch langes Drücken der Lautstärketaste der Musiktitel gewechselt</string>
     <!-- Volume keys control rint tone stream -->
     <string name="volume_keys_control_ring_tone_title">Klingelton Lautstärke kontrollieren</string>
-    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
+    <string name="volume_keys_control_ring_tone_summary">Die Tasten steuern standardmäßig die Medienlautstärke. Aktivieren, um die Klingelton-Lautstärke zu steuern.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Gesprächsannahme mit Lautstärke-Tasten</string>
     <string name="volume_answer_call_summary">Anruf mit den Lautstärketasten annehmen</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">Sperrbildschirm-Verknüpfungen</string>
     <string name="lock_screen_shortcuts_summary">Sperrbildschirm-Verknüpfungen verwalten</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Musikvisualisierung</string>
-    <string name="lockscreen_visualizer_summary">Zeigt Musikvisualisierung auf dem Sperrbildschirm</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Zeige LS Visualisierer auf Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Zeigt die Visualisierungsbalken auch auf dem Ambient Display (weniger intensiv)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Uhr-Widget</string>

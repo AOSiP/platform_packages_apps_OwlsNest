@@ -46,9 +46,6 @@
     <string name="battery_category">Bateria</string>
     <string name="status_bar_tuner_title">Itens da barra de estado</string>
     <string name="status_bar_tuner_summary">Editar ícones e opções da barra de estado</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Indicador de Roaming</string>
-    <string name="roaming_indicator_icon_summary">Mostrar o indicador no ícone de sinal quando o dispositivo estiver em roaming</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Ícone do VoLTE</string>
     <string name="volte_icon_summary">Exibir ícone VoLTE</string>
@@ -282,8 +279,8 @@
     <string name="volume_rocker_music_controls_title">Controle de reprodução</string>
     <string name="volume_rocker_music_controls_summary">Quando a tela estiver desligada, segurar os botões de volume avançam ou retrocedem músicas</string>
     <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
-    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
+    <string name="volume_keys_control_ring_tone_title">Controle o volume do toque</string>
+    <string name="volume_keys_control_ring_tone_summary">Teclas controlam o volume de midia por padrão. Habilite para trocar pelo controle do volume de toque.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Atender com os botões de volume</string>
     <string name="volume_answer_call_summary">Atender a chamada quando pressionado os botões de volume</string>
@@ -325,7 +322,7 @@
     <string name="active_edge_title">Borda ativa</string>
     <string name="active_edge_summary">Uma versão avançada do recurso dos Pixels de apertar as bordas</string>
     <string name="active_edge_actions_title">Ação ao apertar</string>
-    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Ação de pressão longa</string>
     <string name="active_edge_sensitivity_title">Sensibilidade</string>
     <string name="active_edge_wake_title">Permitir com a tela apagada</string>
     <string name="active_edge_wake_summary">Uma ação ocorre quando a tela está apagada</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">Atalhos na Tela de bloqueio</string>
     <string name="lock_screen_shortcuts_summary">Gerencie os atalhos na Tela de bloqueio</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Visualizador de música</string>
-    <string name="lockscreen_visualizer_summary">Exibir os alternadores de visualização na tela de bloqueio</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Visualizar na tela ambiente</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Mostrar as barras de visualização também na tela ambiente (Porém menos opacas)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget do Relógio</string>

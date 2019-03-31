@@ -46,9 +46,6 @@
     <string name="battery_category">Pil</string>
     <string name="status_bar_tuner_title">Durum çubuğu simgeleri</string>
     <string name="status_bar_tuner_summary">Durum çubuğu simgelerini ve seçeneklerini düzenle</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Dolaşım göstergesi</string>
-    <string name="roaming_indicator_icon_summary">Dolaşım modundayken sinyal simgesinde dolaşım göstergesini görüntüle</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE simgesi</string>
     <string name="volte_icon_summary">VoLTE simgesini görüntüle</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">Kilit ekranı kısayolları</string>
     <string name="lock_screen_shortcuts_summary">Kilit ekranı kısayollarını düzenle</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Müzik görselleştirici</string>
-    <string name="lockscreen_visualizer_summary">Kilit ekranında müzik görselleştiriciyi gösterir</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ortam Ekranında Kilit Ekranı Görselleştiriciyi Göster</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Görselleştirme çubuklarını ortam ekranında da gösterir (ancak daha az opak)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Saat widget\'ı</string>

@@ -46,9 +46,6 @@
     <string name="battery_category">Батарея</string>
     <string name="status_bar_tuner_title">Значки в строке состояния</string>
     <string name="status_bar_tuner_summary">Изменить значки в строке состояния и настройки</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Индикатор роуминга</string>
-    <string name="roaming_indicator_icon_summary">Отображать индикатор роуминга в значке сети в роуминге</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Значок VoLTE</string>
     <string name="volte_icon_summary">Показывать значок VoLTE</string>
@@ -325,7 +322,7 @@
     <string name="active_edge_title">Активные стороны</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
     <string name="active_edge_actions_title">Действие после Сжатия</string>
-    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Действие по долгому сжиманию</string>
     <string name="active_edge_sensitivity_title">Чувствительность Сжатия</string>
     <string name="active_edge_wake_title">Разрешить, при выключенном экране</string>
     <string name="active_edge_wake_summary">Запустить действие, когда экран выключен</string>
@@ -348,10 +345,14 @@
     <string name="lock_screen_shortcuts_title">Ярлыки экрана блокировки</string>
     <string name="lock_screen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Визуализатор музыки</string>
-    <string name="lockscreen_visualizer_summary">Переключение отображения визуализатора на экране блокировки</string>
+    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
+    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
+    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
+    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Визуализация на Ambient Display</string>
+    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Показывать визуализацию музыки на Ambient Display</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Виджет часов</string>
