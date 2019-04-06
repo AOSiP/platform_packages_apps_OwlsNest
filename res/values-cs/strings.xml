@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Hodiny a datum</string>
     <string name="status_bar_clock_summary">Konfigurace zobrazení hodin a data ve stavové liště</string>
     <string name="clock_title_enable">Zarovnání</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Povoleno</string>
     <string name="clock_disabled">Zakázáno</string>
     <string name="status_bar_clock_style_reset">Obnovit barvu</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">Zkratky na zamykací obrazovce</string>
     <string name="lock_screen_shortcuts_summary">Nastavit dolní zkratky zamykací obrazovky</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Vizualizér</string>
+    <string name="lockscreen_visualizer_title">Povolit vizualizér na zamykací obrazovce</string>
+    <string name="lockscreen_visualizer_summary">Zobrazit vizualizér na zamykací obrazovce při přehrávání hudby</string>
+    <string name="lockscreen_visualizer_enable_custom">Použít vlastní barvu</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Použít přednastavenou barvu namísto barvy generované</string>
+    <string name="lockscreen_visualizer_custom_color">Barva vizualizéru</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Vizualizér okolní hudby</string>
     <string name="ambient_visualizer_summary">Zobrazuje vizualizační panely také na Ambientním displeji (ale méně průhledné)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget hodin</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analogové (DU)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (tučné)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatické odemčení pomocí obličeje</string>
     <string name="face_auto_unlock_summary">Odstraní zamykací obrazovku po odemknutí obličejem</string>

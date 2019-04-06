@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Relógio e data</string>
     <string name="status_bar_clock_summary">Configurar o relógio da barra de status e a aparência da data</string>
     <string name="clock_title_enable">Alinhamento</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Desabilitado</string>
     <string name="status_bar_clock_style_reset">Redefinir a cor</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">Atalhos na Tela de bloqueio</string>
     <string name="lock_screen_shortcuts_summary">Gerencie os atalhos na Tela de bloqueio</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Visualizador</string>
+    <string name="lockscreen_visualizer_title">Ativar visualizador na tela de bloqueio</string>
+    <string name="lockscreen_visualizer_summary">Mostrar um efeito na tela de bloqueio quando uma música estiver sendo reproduzida</string>
+    <string name="lockscreen_visualizer_enable_custom">Usar cor personalizada</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Use uma cor predefinida em vez da cor gerada</string>
+    <string name="lockscreen_visualizer_custom_color">Cor do visualizador</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Visualizador de música na tela ambiente</string>
     <string name="ambient_visualizer_summary">Mostrar as barras de visualização também na tela ambiente (Porém menos opacas)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget do Relógio</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analógico (du)</string>
     <string name="lockscreen_clock_selection_sammy">Samsung</string>
     <string name="lockscreen_clock_selection_sammy_bold">Samsung (negrito)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Descartar o bloqueio após o desbloqueio com rosto</string>

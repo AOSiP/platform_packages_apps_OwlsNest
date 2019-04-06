@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Hodiny a dátum</string>
     <string name="status_bar_clock_summary">Konfigurácia zobrazenia hodín a dátumu v stavovom riadku</string>
     <string name="clock_title_enable">Zarovnávanie</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Zapnuté</string>
     <string name="clock_disabled">Vypnuté</string>
     <string name="status_bar_clock_style_reset">Resetovať farby</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatické odomknutie pomocou tváre</string>
     <string name="face_auto_unlock_summary">Nezobraziť obrazovku uzamknutia po odomknutí pomocou tváre</string>

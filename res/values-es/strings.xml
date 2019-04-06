@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Reloj y fecha</string>
     <string name="status_bar_clock_summary">Configurar el reloj de la barra de estado y la apariencia de la fecha</string>
     <string name="clock_title_enable">Alineación</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Deshabilitado</string>
     <string name="status_bar_clock_style_reset">Restablecer color</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analógico (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrita)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueo automático de cara</string>
     <string name="face_auto_unlock_summary">Descartar pantalla de bloqueo después de desbloquear la cara</string>

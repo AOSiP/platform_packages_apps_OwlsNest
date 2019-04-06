@@ -54,6 +54,10 @@
     <string name="status_bar_clock">時鐘與日期</string>
     <string name="status_bar_clock_summary">配置狀態列時鐘和日期外觀</string>
     <string name="clock_title_enable">對齊</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">已啟用</string>
     <string name="clock_disabled">已禁用</string>
     <string name="status_bar_clock_style_reset">重設顏色</string>
@@ -368,6 +372,11 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">臉部自動解鎖</string>
     <string name="face_auto_unlock_summary">解除鎖定畫面後的臉部解鎖</string>

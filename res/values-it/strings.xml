@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Data e Ora</string>
     <string name="status_bar_clock_summary">Configura l\'ora nella barra di stato e l\'aspetto della data</string>
     <string name="clock_title_enable">Allineamento</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Abilitata</string>
     <string name="clock_disabled">Disabilitata</string>
     <string name="status_bar_clock_style_reset">Reimposta colore</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">Scorciatoie schermata di sblocco</string>
     <string name="lock_screen_shortcuts_summary">Gestisci scorciatoie nella schermata di blocco</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Visualizzatore</string>
+    <string name="lockscreen_visualizer_title">Abilita visualizzatore musicale nella schermata di blocco</string>
+    <string name="lockscreen_visualizer_summary">Mostra il visualizzatore sulla schermata di blocco durante la riproduzione della musica</string>
+    <string name="lockscreen_visualizer_enable_custom">Utilizza un colore personalizzato</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Usa un colore predefinito al posto del colore autogenerato</string>
+    <string name="lockscreen_visualizer_custom_color">Colore del visualizzatore</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Visualizzatore nel display Ambient</string>
     <string name="ambient_visualizer_summary">Mostra il visualizzatore audio anche in ambient display (semitrasparente)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget orologio</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analogico (stile DU)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (grassetto)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Sblocco automatico con viso</string>
     <string name="face_auto_unlock_summary">Sblocca automaticamente il dispositivo dopo il riconoscimento del viso</string>

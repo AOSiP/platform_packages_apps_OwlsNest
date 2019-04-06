@@ -54,6 +54,10 @@
     <string name="status_bar_clock">时钟和日期</string>
     <string name="status_bar_clock_summary">配置状态栏时钟和日期外观</string>
     <string name="clock_title_enable">对齐方式</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">启用</string>
     <string name="clock_disabled">禁用</string>
     <string name="status_bar_clock_style_reset">重置颜色</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">锁定屏幕快捷方式</string>
     <string name="lock_screen_shortcuts_summary">管理锁定屏幕底部的快捷方式</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">可视化</string>
+    <string name="lockscreen_visualizer_title">启用锁屏音乐可视化</string>
+    <string name="lockscreen_visualizer_summary">当播放音乐时在锁屏界面显示可视化效果</string>
+    <string name="lockscreen_visualizer_enable_custom">使用自定义颜色</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">使用预设的颜色，而不是生成的颜色</string>
+    <string name="lockscreen_visualizer_custom_color">可视化效果颜色</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">环境音乐可视化</string>
     <string name="ambient_visualizer_summary">在环境显示中也显示可视化条 (但不太透明)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">时钟小部件</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">摸拟时钟 (du)</string>
     <string name="lockscreen_clock_selection_sammy">竖式时钟</string>
     <string name="lockscreen_clock_selection_sammy_bold">竖式时钟 (粗体)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">面部自动解锁</string>
     <string name="face_auto_unlock_summary">人脸解锁后自动解除锁屏</string>

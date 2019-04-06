@@ -54,6 +54,10 @@
     <string name="status_bar_clock">الساعة والتاريخ</string>
     <string name="status_bar_clock_summary">تهيئة مظهر الساعة و التاريخ في شريط الحالة</string>
     <string name="clock_title_enable">المحاذاة</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">مفعّل</string>
     <string name="clock_disabled">معطّل</string>
     <string name="status_bar_clock_style_reset">إعادة تعيين الألوان</string>
@@ -346,14 +350,14 @@
     <string name="lock_screen_shortcuts_title">اختصارات شاشة القفل</string>
     <string name="lock_screen_shortcuts_summary">إدارة الإختصارات أسفل شاشة القفل</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">المتخيل المرئي</string>
+    <string name="lockscreen_visualizer_title">تمكين المؤثرات البصرية لشاشة القفل</string>
+    <string name="lockscreen_visualizer_summary">إظهار تأثير على قفل الشاشة عندما يتم تشغيل الموسيقى</string>
+    <string name="lockscreen_visualizer_enable_custom">إستخدام لون مخصص</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">إستخدام لون مسبق الإعداد بدلاً من اللون الذي تم إنشاؤه</string>
+    <string name="lockscreen_visualizer_custom_color">لون المتخيل المرئي</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">المتخيل المرئي للموسيقى المحيطة</string>
     <string name="ambient_visualizer_summary">عرض أشرطة التمثيل البصري أيضاً على الشاشة المحيطة (ولكن أقل تعتيماً)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">أداة الساعة</string>
@@ -368,6 +372,11 @@
     <string name="lockscreen_clock_selection_du">تناظري (du)</string>
     <string name="lockscreen_clock_selection_sammy">سامي</string>
     <string name="lockscreen_clock_selection_sammy_bold">سامي (عريض)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">إلغاء قفل الوجه تلقائياً</string>
     <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>

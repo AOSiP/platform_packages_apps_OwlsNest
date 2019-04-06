@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Saat ve Tarih</string>
     <string name="status_bar_clock_summary">Durum çubuğu saatini ve tarih görünümünü yapılandırın</string>
     <string name="clock_title_enable">Hizalama</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Etkin</string>
     <string name="clock_disabled">Devre dışı</string>
     <string name="status_bar_clock_style_reset">Rengi sıfırla</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">Kilit ekranı kısayolları</string>
     <string name="lock_screen_shortcuts_summary">Kilit ekranı kısayollarını düzenle</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Görselleştirme</string>
+    <string name="lockscreen_visualizer_title">Kilit ekranı müzik görselleştirici</string>
+    <string name="lockscreen_visualizer_summary">Müzik çalarken kilit ekranında görselleştiriciyi göster</string>
+    <string name="lockscreen_visualizer_enable_custom">Özel renk kullan</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Oluşturulan renk yerine önceden belirlenmiş bir renk kullanın</string>
+    <string name="lockscreen_visualizer_custom_color">Görselleştirici rengi</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Ortam ekranı görselleştiricisi</string>
     <string name="ambient_visualizer_summary">Görselleştirme çubuklarını ortam ekranında da gösterir (ancak daha az opak)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Saat widget\'ı</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (kalın)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Yüz ile otomatik kilit açma</string>
     <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını kapat</string>

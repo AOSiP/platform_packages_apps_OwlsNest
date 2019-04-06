@@ -17,66 +17,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- AOSiP device info settings -->
-    <string name="aosip_version">AOSiP version</string>
-    <string name="aosip_version_default">Unknown</string>
+    <string name="aosip_version">Phiên bản AOSiP</string>
+    <string name="aosip_version_default">Không rõ</string>
     <!-- AOSiP custom settings main -->
-    <string name="header_category_personalization">UI settings</string>
+    <string name="header_category_personalization">Cài đặt Giao diện</string>
     <string name="nest_title">OwlsNest</string>
-    <string name="aosip_title">AOSiP Settings</string>
-    <string name="owlsnest_settings_title">Categories</string>
+    <string name="aosip_title">Cài đặt AOSiP</string>
+    <string name="owlsnest_settings_title">Danh mục</string>
     <!-- General strings -->
     <string name="ok">OK</string>
-    <string name="reset">Reset</string>
-    <string name="enabled">Enabled</string>
-    <string name="add">Add</string>
-    <string name="choose_app">Choose app</string>
+    <string name="reset">Đặt lại</string>
+    <string name="enabled">Bật</string>
+    <string name="add">Thêm</string>
+    <string name="choose_app">Chọn ứng dụng</string>
     <!-- SystemUI Restart -->
-    <string name="systemui_restart_title">SystemUI restart required</string>
-    <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+    <string name="systemui_restart_title">Yêu cầu khởi động lại SystemUI</string>
+    <string name="systemui_restart_message">Để các thay đổi có hiệu lực, SystemUI cần phải khởi động lại. Khởi động lại SystemUI ngay?</string>
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="dialog_color_picker">Bảng chọn Màu</string>
+    <string name="press_color_to_apply">Chạm vào màu phía dưới để áp dụng</string>
     <string name="hex">Hex:</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
+    <string name="set">Đặt</string>
+    <string name="color_default">Mặc định</string>
     <!--Owlsnest statusbar-->
-    <string name="statusbar_bar_title">Statusbar</string>
-    <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
-    <string name="icon_category">Icons</string>
-    <string name="battery_category">Battery</string>
-    <string name="status_bar_tuner_title">Status bar items</string>
-    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
+    <string name="statusbar_bar_title">Thanh trạng thái</string>
+    <string name="statusbar_bar_summary">Tùy chỉnh các thành phần trên thanh trạng thái</string>
+    <string name="icon_category">Biểu tượng</string>
+    <string name="battery_category">Pin</string>
+    <string name="status_bar_tuner_title">Biểu tượng thanh trạng thái</string>
+    <string name="status_bar_tuner_summary">Chỉnh sửa các biểu tượng thanh trạng thái</string>
     <!-- Show VoLTE icon on statusbar -->
-    <string name="volte_icon_title">VoLTE icon</string>
-    <string name="volte_icon_summary">Display VoLTE icon</string>
+    <string name="volte_icon_title">Biểu tượng VoLTE</string>
+    <string name="volte_icon_summary">Hiển thị biểu tượng VoLTE</string>
     <!-- Status bar clock options -->
-    <string name="clock_category">Clock</string>
-    <string name="status_bar_clock">Clock and Date</string>
-    <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
-    <string name="clock_title_enable">Alignment</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_clock_style_reset">Reset color</string>
-    <string name="status_bar_show_clock_title">Show clock and date</string>
-    <string name="status_bar_clock_seconds_title">Show seconds</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="left_clock">Left clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_category">Đồng hồ</string>
+    <string name="status_bar_clock">Đồng hồ và Ngày</string>
+    <string name="status_bar_clock_summary">Tùy chỉnh đồng hồ và ngày trên thanh trạng thái</string>
+    <string name="clock_title_enable">Vị trí</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
+    <string name="clock_enabled">Bật</string>
+    <string name="clock_disabled">Tắt</string>
+    <string name="status_bar_clock_style_reset">Đặt lại màu</string>
+    <string name="status_bar_show_clock_title">Hiển thị đồng hồ và ngày</string>
+    <string name="status_bar_clock_seconds_title">Hiển thị giây</string>
+    <string name="status_bar_am_pm_title">SA/CH</string>
+    <string name="status_bar_am_pm_info">Định dạng đồng hồ 24 giờ đang bật</string>
+    <string name="enable_clock_weekday">Ngày trong tuần</string>
+    <string name="enable_clock_weekday_summary">Viết tắt ngày trong tuần</string>
+    <string name="right_clock">Đồng hồ bên phải</string>
+    <string name="center_clock">Đồng hồ ở giữa</string>
+    <string name="left_clock">Đồng hồ bên trái</string>
+    <string name="dont_show">Không hiển thị</string>
+    <string name="clock_date_display">Ngày</string>
+    <string name="clock_date_display_summary">Hiển thị ngày tùy chỉnh trước đồng hồ</string>
+    <string name="clock_date_style">Kiểu ngày</string>
+    <string name="clock_date_format">Định dạng ngày</string>
+    <string name="clock_date_string_edittext_title">Phải là định dạng ngày, vd. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Nhập chuỗi định dạng</string>
+    <string name="am_pm_clock_normal">Kích thước font bình thường</string>
+    <string name="am_pm_clock_small">Kích thước font nhỏ</string>
+    <string name="am_pm_clock_none">Không hiển thị</string>
+    <string name="clock_date_display_none">Không hiển thị</string>
     <string name="clock_date_display_small">Small font size</string>
     <string name="clock_date_display_normal">Normal font size</string>
     <string name="clock_date_style_normal">Normal</string>
@@ -133,8 +137,8 @@
     <string name="notification_category">Notifications</string>
     <string name="headsup_category">Heads-Up</string>
     <!-- Toast app icon -->
-    <string name="toast_icon_title">Toast app icon</string>
-    <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
+    <string name="toast_icon_title">Biểu tượng thông báo nhanh</string>
+    <string name="toast_icon_summary">Hiển thị biểu tượng ứng dụng tương ứng với thông báo nhanh</string>
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>

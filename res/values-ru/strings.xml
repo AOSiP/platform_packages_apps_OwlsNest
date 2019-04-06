@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Время и дата</string>
     <string name="status_bar_clock_summary">Настройка отображения даты и времени</string>
     <string name="clock_title_enable">Выравнивание</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Включено</string>
     <string name="clock_disabled">Выключено</string>
     <string name="status_bar_clock_style_reset">Сбросить цвет</string>
@@ -345,12 +349,12 @@
     <string name="lock_screen_shortcuts_title">Ярлыки экрана блокировки</string>
     <string name="lock_screen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Визуализатор</string>
+    <string name="lockscreen_visualizer_title">Визуализатор на экране болкировки</string>
+    <string name="lockscreen_visualizer_summary">Показывать визуализацию музыки на экране блокировки во время воспроизведения</string>
+    <string name="lockscreen_visualizer_enable_custom">Использовать свой цвет</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Использовать свой цвет вместо сгенерированного</string>
+    <string name="lockscreen_visualizer_custom_color">Цвет визуализатора</string>
     <!-- ambient visualizer -->
     <string name="ambient_visualizer_title">Ambient Music visualizer</string>
     <string name="ambient_visualizer_summary">Показывать визуализацию музыки на Ambient Display</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Аналоговые (du)</string>
     <string name="lockscreen_clock_selection_sammy">Вертикальные</string>
     <string name="lockscreen_clock_selection_sammy_bold">Вертикальные (жирные)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматическая разблокировка лицом</string>
     <string name="face_auto_unlock_summary">Убарть экран блокировки после разблокировки сканером лица</string>

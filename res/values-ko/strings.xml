@@ -54,6 +54,10 @@
     <string name="status_bar_clock">시간 및 날짜</string>
     <string name="status_bar_clock_summary">상태 표시줄 시계와 날짜 외관 설정</string>
     <string name="clock_title_enable">시계 위치</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">활성화됨</string>
     <string name="clock_disabled">비활성화됨</string>
     <string name="status_bar_clock_style_reset">색 초기화</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">잠금 화면 바로 가기</string>
     <string name="lock_screen_shortcuts_summary">잠금화면 아래 바로가기 관리</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">시각화</string>
+    <string name="lockscreen_visualizer_title">잠금 화면 시각화 켜기</string>
+    <string name="lockscreen_visualizer_summary">음악이 재생 중이면 시각화를 잠금 화면에 표시합니다</string>
+    <string name="lockscreen_visualizer_enable_custom">사용자 지정 색상 사용</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">생성된 색상 대신 기존 색상을 사용합니다.</string>
+    <string name="lockscreen_visualizer_custom_color">시각화 색상</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">앰비언트 뮤직 시각화</string>
     <string name="ambient_visualizer_summary">앰비언트 디스플레이에 시각화 막대를 표시합니다 (덜 불투명함)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">시계 위젯</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">아날로그 (du)</string>
     <string name="lockscreen_clock_selection_sammy">새미</string>
     <string name="lockscreen_clock_selection_sammy_bold">새미 (굵게)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">자동 안면 잠금해제</string>
     <string name="face_auto_unlock_summary">얼굴 잠금 해제 후 잠금 화면 닫기</string>

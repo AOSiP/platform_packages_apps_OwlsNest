@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Horloge et date</string>
     <string name="status_bar_clock_summary">Configurer l\'apparence de l\'horloge et de la date dans la barre d\'état</string>
     <string name="clock_title_enable">Alignement</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">Raccourcis de l\'écran de verrouillage</string>
     <string name="lock_screen_shortcuts_summary">Gérer les raccourcis du bas de l\'écran de verrouillage</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Visualiseur</string>
+    <string name="lockscreen_visualizer_title">Activer le visualiseur sur l\'écran de verrouillage</string>
+    <string name="lockscreen_visualizer_summary">Afficher le visualiseur sur l\'écran de verrouillage pendant la lecture de la musique</string>
+    <string name="lockscreen_visualizer_enable_custom">Utiliser une couleur personnalisée</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Utiliser une couleur prédéfinie au lieu d\'une couleur générée</string>
+    <string name="lockscreen_visualizer_custom_color">Couleur du visualiseur</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Visualiseur de l\'affichage ambiant</string>
     <string name="ambient_visualizer_summary">Affiche les barres de visualisation également sur un affichage ambiant (mais moins opaque)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget horloge</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analogique (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (gras)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Déverrouillage automatique par reconnaissance faciale</string>
     <string name="face_auto_unlock_summary">Ne pas afficher l\'écran de verrouillage après reconnaissance faciale</string>

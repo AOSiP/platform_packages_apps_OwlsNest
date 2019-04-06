@@ -34,7 +34,7 @@
     <string name="systemui_restart_title">システム UI の再起動が必要です</string>
     <string name="systemui_restart_message">全ての変更を反映するにはシステム UI の再起動が必要です。再起動しますか?</string>
     <!-- Color Picker -->
-    <string name="dialog_color_picker">カラーピッカー</string>
+    <string name="dialog_color_picker">色の選択</string>
     <string name="press_color_to_apply">色を選択して適用</string>
     <string name="hex">16進数:</string>
     <string name="set">設定</string>
@@ -54,6 +54,10 @@
     <string name="status_bar_clock">時計と日付</string>
     <string name="status_bar_clock_summary">ステータスバーの時計と日付の外観を設定する</string>
     <string name="clock_title_enable">配置</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">有効</string>
     <string name="clock_disabled">無効</string>
     <string name="status_bar_clock_style_reset">色のリセット</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">ロック画面のショートカット</string>
     <string name="lock_screen_shortcuts_summary">ロック画面下部のショートカットを編集する</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">ビジュアライザー</string>
+    <string name="lockscreen_visualizer_title">ロック画面ビジュアライザーの有効化</string>
+    <string name="lockscreen_visualizer_summary">音楽再生時にロック画面にビジュアライザーを表示する</string>
+    <string name="lockscreen_visualizer_enable_custom">選択した色を使用する</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">生成された色ではなくプリセットの色を使う</string>
+    <string name="lockscreen_visualizer_custom_color">ビジュアライザーの色</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">アンビエント音楽ビジュアライザー</string>
     <string name="ambient_visualizer_summary">視覚効果バーをアンビエント画面にも表示する (ただし不透明度は低下します)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">時計ウィジェット</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">アナログ (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (太字)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>

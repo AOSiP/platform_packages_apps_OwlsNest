@@ -54,6 +54,10 @@
     <string name="status_bar_clock">Óra és Dátum</string>
     <string name="status_bar_clock_summary">Állapotsori óra és dátum megjelenésének beállításai</string>
     <string name="clock_title_enable">Igazítás</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic Logo</string>
+    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <!-- Status bar clock and date options -->
     <string name="clock_enabled">Engedélyezve</string>
     <string name="clock_disabled">Letiltva</string>
     <string name="status_bar_clock_style_reset">Színek visszaállítása</string>
@@ -320,13 +324,13 @@
     <string name="aosp_gesture_title">AOSP gesztusok</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Haladó verziója a Pixel \"szorítás\" funkciójának</string>
     <string name="active_edge_actions_title">Szorítási műveletek</string>
-    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Hosszú szorítás művelete</string>
     <string name="active_edge_sensitivity_title">Szórítás érzékenysége</string>
     <string name="active_edge_wake_title">Engedélyezi amikor a képernyő ki van kapcsolva</string>
     <string name="active_edge_wake_summary">Egy művelet végrehajtása a képernyő kikapcsolásakor</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+    <string name="active_edge_footer_info">Néhány \"szorító művelet\" nem képes arra, hogy aktiválja a kijelzőt</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Háromujjas csúsztatási mozdulat</string>
     <string name="three_finger_gesture_summary">Csúsztasson egyszerre három ujjal a képernyőmentéshez</string>
@@ -345,14 +349,14 @@
     <string name="lock_screen_shortcuts_title">Zárképernyő hivatkozások</string>
     <string name="lock_screen_shortcuts_summary">Kezelheti a zárképernyő alsó parancsikonjait</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Vizualizáció</string>
+    <string name="lockscreen_visualizer_title">Zárképernyő vizualizáció engedélyezése</string>
+    <string name="lockscreen_visualizer_summary">Vizualizáció engedélyezése a zárképernyőn zenelejátszás közben</string>
+    <string name="lockscreen_visualizer_enable_custom">Egyéni szín használata</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Előre beállított szín használata a generált szín helyett</string>
+    <string name="lockscreen_visualizer_custom_color">Vizualizáció színe</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Környezeti kijelző vizualizációja</string>
     <string name="ambient_visualizer_summary">Mutassa a zenevizualizációt a környezeti kijelzőn is (kevésbé átlátszó)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Óra modul</string>
@@ -367,6 +371,11 @@
     <string name="lockscreen_clock_selection_du">Analóg (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatikus arcfeloldás</string>
     <string name="face_auto_unlock_summary">Záróképernyő kihagyása sikeres arcfeloldás után</string>
