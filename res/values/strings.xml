@@ -65,7 +65,6 @@
     <string name="status_bar_clock_adv_summary">Tweak the clock according to your tastes</string>
     <string name="status_bar_time_cat">Time</string>
     <string name="status_bar_show_clock_title">Show clock &amp; date</string>
-    <string name="clock_title_enable">Alignment</string>
     <string name="clock_position">Clock position</string>
     <string name="clock_position_right">Right clock</string>
     <string name="clock_position_center">Center clock</string>

@@ -22,27 +22,33 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.os.Bundle;
+import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
-import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 
-import com.android.internal.util.bootleggers.BootlegUtils;
+import com.android.internal.util.aosip.aosipUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.aosip.owlsnest.preference.SecureSettingListPreference;
 import com.aosip.owlsnest.preference.SecureSettingIntListPreference;
 import com.android.settings.R;
+
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class ClockDateSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
@@ -71,7 +77,7 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements
         mClockPosition = (SecureSettingIntListPreference) findPreference(CLOCK_POSITION);
 
         // Adjust status bar clock prefs for notched devices
-        if (BootlegUtils.hasVisibleNotch(getActivity())) {
+        if (aosipUtils.hasNotch(getActivity())) {
             mClockPosition.setEntries(R.array.clock_position_entries_notch);
             mClockPosition.setEntryValues(R.array.clock_position_values_notch);
         } else {
@@ -92,7 +98,7 @@ public class ClockDateSettings extends SettingsPreferenceFragment implements
         super.onResume();
 
         // Adjust status bar clock prefs for notched devices
-        if (BootlegUtils.hasVisibleNotch(getActivity())) {
+        if (aosipUtils.hasNotch(getActivity())) {
             mClockPosition.setEntries(R.array.clock_position_entries_notch);
             mClockPosition.setEntryValues(R.array.clock_position_values_notch);
         } else {
