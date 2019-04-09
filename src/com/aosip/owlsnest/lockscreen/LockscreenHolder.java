@@ -16,6 +16,7 @@
 
 package com.aosip.owlsnest.lockscreen;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.ServiceManager;
@@ -52,6 +53,11 @@ public class LockscreenHolder extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        LockScreenVisualizer.reset(mContext);
     }
 
     /**

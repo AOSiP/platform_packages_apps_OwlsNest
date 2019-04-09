@@ -48,10 +48,9 @@
         android:summary="@string/lockscreen_enable_power_menu_summary"
         android:defaultValue="true"/>
 
-    <com.aosip.support.preference.SecureSettingSwitchPreference
-        android:key="lockscreen_visualizer"
+    <Preference
         android:title="@string/lockscreen_visualizer_title"
         android:summary="@string/lockscreen_visualizer_summary"
-        android:defaultValue="false" />
+        android:fragment="com.aosip.owlsnest.lockscreen.LockScreenVisualizer" />
 
 </PreferenceScreen>
