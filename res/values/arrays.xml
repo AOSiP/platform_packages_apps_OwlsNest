@@ -55,6 +55,7 @@
         <item>@string/lockscreen_clock_selection_sammy_accent_bold</item>
         <item>@string/lockscreen_clock_selection_sammy_accent_alt</item>
         <item>@string/lockscreen_clock_selection_sammy_accent_alt_bold</item>
+        <item>@string/lockscreen_clock_selection_text</item>
     </string-array>
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
@@ -67,6 +68,7 @@
         <item>6</item>
         <item>7</item>
         <item>8</item>
+        <item>9</item>
     </string-array>
 
     <!-- Lockscreen cover art filter -->
