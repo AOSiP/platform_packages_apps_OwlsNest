@@ -56,7 +56,7 @@
     <string name="clock_title_enable">Ausrichtung</string>
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_summary">Wenn leute den Bildschrim sehen, lass alle wissen, dass du AOSiP nutzt</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Aktiviert</string>
     <string name="clock_disabled">Deaktiviert</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">Passe das LED- und Benachrichtigungsverhalten an</string>
     <string name="notification_category">Benachrichtigungen</string>
     <string name="headsup_category">Heads-Up</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast-Symbol</string>
     <string name="toast_icon_summary">Zeige das zugehörige App-Symbol an</string>
@@ -325,7 +328,7 @@
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
+    <string name="active_edge_actions_title">Aktion beim quetschen</string>
     <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
     <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
     <string name="active_edge_wake_title">Erlauben, wenn Bildschirm aus ist</string>
@@ -349,7 +352,7 @@
     <string name="lock_screen_shortcuts_title">Sperrbildschirm-Verknüpfungen</string>
     <string name="lock_screen_shortcuts_summary">Sperrbildschirm-Verknüpfungen verwalten</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
+    <string name="lockscreen_visualizer_category">Das Visualizer</string>
     <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
     <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
     <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
@@ -373,7 +376,7 @@
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (Fett)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_none">Keine</string>
     <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
     <string name="lockscreen_cover_filter_blur">Blur</string>
     <!-- Facelock toggle -->

@@ -136,6 +136,9 @@
     <string name="notification_summary">Ajuste los LED y el comportamiento de notificación</string>
     <string name="notification_category">Notificaciones</string>
     <string name="headsup_category">Notificaciones flotantes</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Icono en las notificaciones Toast</string>
     <string name="toast_icon_summary">Muestra el icono de la aplicación que ha emitido una notificación Toast</string>

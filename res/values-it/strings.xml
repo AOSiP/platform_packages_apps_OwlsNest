@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">Configura l\'ora nella barra di stato e l\'aspetto della data</string>
     <string name="clock_title_enable">Allineamento</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Logo Kronic</string>
+    <string name="kronic_logo_summary">Fai sapere a tutti che stai utilizzando AOSiP quando vedono il tuo schermo</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Abilitata</string>
     <string name="clock_disabled">Disabilitata</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">Configura il comportamento di LED e notifiche</string>
     <string name="notification_category">Notifiche</string>
     <string name="headsup_category">Heads-Up</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Pulsante chiusura forzata</string>
+    <string name="notification_guts_kill_app_button_summary">Mostra un pulsante per chiudere l\'applicazione quando si preme a lungo sulla notifica</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Icona notifica toast</string>
     <string name="toast_icon_summary">Mostra l\'icona corrispondente alla notifica toast</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (grassetto)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">Filtro copertina album su schermata blocco</string>
+    <string name="lockscreen_cover_filter_none">Nessuno</string>
+    <string name="lockscreen_cover_filter_grayscale">Scala di grigi</string>
+    <string name="lockscreen_cover_filter_blur">Sfocatura</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Sblocco automatico con viso</string>
     <string name="face_auto_unlock_summary">Sblocca automaticamente il dispositivo dopo il riconoscimento del viso</string>

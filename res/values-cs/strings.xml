@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">Konfigurace zobrazení hodin a data ve stavové liště</string>
     <string name="clock_title_enable">Zarovnání</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Logo Kronic</string>
+    <string name="kronic_logo_summary">Ať všichni vědí, že používáte AOSiP, když uvidí vaši obrazovku</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Povoleno</string>
     <string name="clock_disabled">Zakázáno</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">Nastavit chování kontrolky LED a oznámení</string>
     <string name="notification_category">Oznámení</string>
     <string name="headsup_category">Plovoucí oznámení</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Tlačítko \"Ukončit aplikaci\"</string>
+    <string name="notification_guts_kill_app_button_summary">Zobrazit tlačítko \"Ukončit aplikaci\" při dlouhém stisku v nabídce oznámení</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Ikona aplikace Toast</string>
     <string name="toast_icon_summary">Zobrazit ikonu aplikací v oznámení Toast</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (tučné)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">Filtr obalu alba na zamykací obrazovce</string>
+    <string name="lockscreen_cover_filter_none">Žádný</string>
+    <string name="lockscreen_cover_filter_grayscale">Černobílý</string>
+    <string name="lockscreen_cover_filter_blur">Rozostřený</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatické odemčení pomocí obličeje</string>
     <string name="face_auto_unlock_summary">Odstraní zamykací obrazovku po odemknutí obličejem</string>

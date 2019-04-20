@@ -136,6 +136,9 @@
     <string name="notification_summary">Dostosuj diodę LED oraz zachowanie powiadomień</string>
     <string name="notification_category">Powiadomienia</string>
     <string name="headsup_category">Wyskakujące powiadomienia</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Ikona w dymku powiadomień</string>
     <string name="toast_icon_summary">Wyświetl ikonę aplikacji w dymku</string>

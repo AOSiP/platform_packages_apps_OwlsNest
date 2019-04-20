@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">配置状态栏时钟和日期外观</string>
     <string name="clock_title_enable">对齐方式</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Kronic 标志</string>
+    <string name="kronic_logo_summary">让每个看到你手机屏幕的人都知道你正在使用 aosip</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">启用</string>
     <string name="clock_disabled">禁用</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">调节 LED 灯和通知行为</string>
     <string name="notification_category">通知</string>
     <string name="headsup_category">浮动通知</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">强制关闭应用按钮</string>
+    <string name="notification_guts_kill_app_button_summary">在通知长按菜单中显示强制关闭应用按钮</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast 通知图标</string>
     <string name="toast_icon_summary">Toast 通知显示相应的应用图标</string>
@@ -206,8 +209,8 @@
     <string name="smart_pulldown_none_summary">没有通知时打开快速设置面板</string>
     <string name="smart_pulldown_off">关闭</string>
     <string name="smart_pulldown_none">无通知时</string>
-    <string name="smart_pulldown_dismissable">没有可清除通知时</string>
-    <string name="smart_pulldown_ongoing">没有正在进行的通知时</string>
+    <string name="smart_pulldown_dismissable">没有清除</string>
+    <string name="smart_pulldown_ongoing">没有持续</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">动画</string>
     <string name="qs_tile_animation_style_title">动画样式</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">竖式时钟</string>
     <string name="lockscreen_clock_selection_sammy_bold">竖式时钟 (粗体)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">锁屏专辑艺术滤镜</string>
+    <string name="lockscreen_cover_filter_none">均不显示</string>
+    <string name="lockscreen_cover_filter_grayscale">灰度</string>
+    <string name="lockscreen_cover_filter_blur">模糊</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">面部自动解锁</string>
     <string name="face_auto_unlock_summary">人脸解锁后自动解除锁屏</string>

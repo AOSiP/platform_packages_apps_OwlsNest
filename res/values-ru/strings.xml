@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">Настройка отображения даты и времени</string>
     <string name="clock_title_enable">Выравнивание</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Логотип Кроника</string>
+    <string name="kronic_logo_summary">Покажите всем, что вы используете AOSiP, когда они видят ваш экран</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Включено</string>
     <string name="clock_disabled">Выключено</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">Отрегулируйте поведение подсветки светодиодов и уведомлений</string>
     <string name="notification_category">Уведомления</string>
     <string name="headsup_category">Всплывающие уведомления</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Кнопка закрытия приложения</string>
+    <string name="notification_guts_kill_app_button_summary">Показывать кнопку закрытия приложения в меню при долгом нажатии на уведомление</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Иконка всплывающего уведомления</string>
     <string name="toast_icon_summary">Отобразить иконку приложения на всплывающем уведомлении</string>
@@ -324,7 +327,7 @@
     <string name="aosp_gesture_title">Стандартные жесты AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Активные стороны</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Продвинутая версия функции Pixel\'a \'Активные бока\'</string>
     <string name="active_edge_actions_title">Действие после Сжатия</string>
     <string name="active_edge_long_squeeze_actions_title">Действие по долгому сжиманию</string>
     <string name="active_edge_sensitivity_title">Чувствительность Сжатия</string>
@@ -356,7 +359,7 @@
     <string name="lockscreen_visualizer_enable_custom_summary">Использовать свой цвет вместо сгенерированного</string>
     <string name="lockscreen_visualizer_custom_color">Цвет визуализатора</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Визуализация функции Ambient музыка</string>
     <string name="ambient_visualizer_summary">Показывать визуализацию музыки на Ambient Display</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Виджет часов</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">Вертикальные</string>
     <string name="lockscreen_clock_selection_sammy_bold">Вертикальные (жирные)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">Фильтр альбома артов на заблокированном экране</string>
+    <string name="lockscreen_cover_filter_none">Ничего</string>
+    <string name="lockscreen_cover_filter_grayscale">Оттенки серого</string>
+    <string name="lockscreen_cover_filter_blur">Размытие</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматическая разблокировка лицом</string>
     <string name="face_auto_unlock_summary">Убарть экран блокировки после разблокировки сканером лица</string>

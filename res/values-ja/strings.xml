@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">ステータスバーの時計と日付の外観を設定する</string>
     <string name="clock_title_enable">配置</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Kronic ロゴ</string>
+    <string name="kronic_logo_summary">あなたの画面を見た人にあなたが AOSiP を使っていることを知らせます</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">有効</string>
     <string name="clock_disabled">無効</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">LED と通知の動作を設定する</string>
     <string name="notification_category">通知</string>
     <string name="headsup_category">Heads Up</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">アプリ終了ボタン</string>
+    <string name="notification_guts_kill_app_button_summary">通知の長押しメニューにアプリ終了ボタンを表示する</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">トーストアプリアイコン</string>
     <string name="toast_icon_summary">トーストを表示したアプリのアイコンを表示する</string>
@@ -147,7 +150,7 @@
     <string name="heads_up_summary_enabled">Heads Up は有効です</string>
     <string name="heads_up_summary_disabled">Heads Up は無効です</string>
     <string name="heads_up_time_out_title">表示時間</string>
-    <string name="heads_up_time_out_summary">通知は <xliff:g id="number">%d</xliff:g> 秒間表示されます</string>
+    <string name="heads_up_time_out_summary">通知は<xliff:g id="number">%d</xliff:g>秒間表示されます</string>
     <string name="heads_up_time_out_2sec">2秒</string>
     <string name="heads_up_time_out_4sec">4秒</string>
     <string name="heads_up_time_out_5sec">5秒</string>
@@ -156,7 +159,7 @@
     <string name="heads_up_time_out_10sec">10秒</string>
     <string name="heads_up_snooze_title">スヌーズタイマー</string>
     <string name="heads_up_snooze_summary_one_minute">表示された通知を上にスワイプするとこのアプリからの通知を1分間無効にします</string>
-    <string name="heads_up_snooze_summary">表示された通知を上にスワイプするとこのアプリからの通知を <xliff:g id="number">%d</xliff:g> 分間無効にします</string>
+    <string name="heads_up_snooze_summary">表示された通知を上にスワイプするとこのアプリからの通知を<xliff:g id="number">%d</xliff:g>分間無効にします</string>
     <string name="heads_up_snooze_disabled_summary">スヌーズタイマーは無効です</string>
     <string name="heads_up_snooze_1min">1分</string>
     <string name="heads_up_snooze_5min">5分</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (太字)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">ロック画面のアルバムアートフィルタ</string>
+    <string name="lockscreen_cover_filter_none">なし</string>
+    <string name="lockscreen_cover_filter_grayscale">グレースケール</string>
+    <string name="lockscreen_cover_filter_blur">ぼかし</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>
