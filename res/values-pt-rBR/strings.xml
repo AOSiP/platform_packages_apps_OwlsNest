@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">Configurar o relógio da barra de status e a aparência da data</string>
     <string name="clock_title_enable">Alinhamento</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Logo do Kronic</string>
+    <string name="kronic_logo_summary">Deixe todo mundo saber que você está usando AOSIP quando olharem pra sua tela</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Desabilitado</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">Ajustar LEDs e comportamento de notificação</string>
     <string name="notification_category">Notificações</string>
     <string name="headsup_category">Notificações pop-up</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Botão de encerrar aplicativo</string>
+    <string name="notification_guts_kill_app_button_summary">Exibir um botão para encerrar o aplicativo ao tocar e segurar em uma notificação</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Ícone do Toast</string>
     <string name="toast_icon_summary">Exibir o ícone do aplicativo correspondente na mensagem Toast</string>
@@ -351,7 +354,7 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_category">Visualizador</string>
     <string name="lockscreen_visualizer_title">Ativar visualizador na tela de bloqueio</string>
-    <string name="lockscreen_visualizer_summary">Mostrar um efeito na tela de bloqueio quando uma música estiver sendo reproduzida</string>
+    <string name="lockscreen_visualizer_summary">Mostrar visualizador na tela de bloqueio quando uma música estiver sendo reproduzida</string>
     <string name="lockscreen_visualizer_enable_custom">Usar cor personalizada</string>
     <string name="lockscreen_visualizer_enable_custom_summary">Use uma cor predefinida em vez da cor gerada</string>
     <string name="lockscreen_visualizer_custom_color">Cor do visualizador</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">Samsung</string>
     <string name="lockscreen_clock_selection_sammy_bold">Samsung (negrito)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">Filtro da capa do álbum na tela de bloqueio</string>
+    <string name="lockscreen_cover_filter_none">Nenhum</string>
+    <string name="lockscreen_cover_filter_grayscale">Tons de cinza</string>
+    <string name="lockscreen_cover_filter_blur">Desfocar</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Descartar o bloqueio após o desbloqueio com rosto</string>

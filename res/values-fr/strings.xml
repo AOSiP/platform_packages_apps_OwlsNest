@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">Configurer l\'apparence de l\'horloge et de la date dans la barre d\'état</string>
     <string name="clock_title_enable">Alignement</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Logo Kronic</string>
+    <string name="kronic_logo_summary">Permettre à tout le monde de savoir que tu utilise AOSiP quand ils voient ton écran</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">Ajuster les voyants et le comportement de notification</string>
     <string name="notification_category">Notifications</string>
     <string name="headsup_category">Notifications flottantes</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Bouton pour forcer l\'arrêt des apps</string>
+    <string name="notification_guts_kill_app_button_summary">Afficher un bouton tuer l’application dans le menu lors d\'un appui long sur la notification</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Icône des bulles de notification</string>
     <string name="toast_icon_summary">Afficher l\'icône de l\'application correspondante dans la notification Toast</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (gras)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">Filtre de pochette d\'album sue l\'écran de verrouillage</string>
+    <string name="lockscreen_cover_filter_none">Aucun</string>
+    <string name="lockscreen_cover_filter_grayscale">Nuances de gris</string>
+    <string name="lockscreen_cover_filter_blur">Flou</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Déverrouillage automatique par reconnaissance faciale</string>
     <string name="face_auto_unlock_summary">Ne pas afficher l\'écran de verrouillage après reconnaissance faciale</string>

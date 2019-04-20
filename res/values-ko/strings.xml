@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">상태 표시줄 시계와 날짜 외관 설정</string>
     <string name="clock_title_enable">시계 위치</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Kronic 로고</string>
+    <string name="kronic_logo_summary">화면을 볼 때 AOSiP를 사용하고 있다는 것을 모두에게 알립니다.</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">활성화됨</string>
     <string name="clock_disabled">비활성화됨</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">LED와 알림 방식을 설정합니다</string>
     <string name="notification_category">알림</string>
     <string name="headsup_category">헤드업 알림</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">앱 아이콘 토스트 알림</string>
     <string name="toast_icon_summary">토스트 알림을 보낸 앱의 아이콘을 같이 표시합니다</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">새미</string>
     <string name="lockscreen_clock_selection_sammy_bold">새미 (굵게)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">잠금화면 앨범 아트 필터</string>
+    <string name="lockscreen_cover_filter_none">없음</string>
+    <string name="lockscreen_cover_filter_grayscale">회색조</string>
+    <string name="lockscreen_cover_filter_blur">흐릿하게</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">자동 안면 잠금해제</string>
     <string name="face_auto_unlock_summary">얼굴 잠금 해제 후 잠금 화면 닫기</string>

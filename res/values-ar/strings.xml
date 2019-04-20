@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">تهيئة مظهر الساعة و التاريخ في شريط الحالة</string>
     <string name="clock_title_enable">المحاذاة</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">شعار كرونيك</string>
+    <string name="kronic_logo_summary">دع الجميع يعرفون أنك تستخدم AOSiP عندما يرون شاشتك</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">مفعّل</string>
     <string name="clock_disabled">معطّل</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">ضبط اللمبات وسلوك الإشعار</string>
     <string name="notification_category">الإشعارات</string>
     <string name="headsup_category">الإشعارات العائمة</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">زر انهاء التطبيق</string>
+    <string name="notification_guts_kill_app_button_summary">أظهر زر إنهاء التطبيق في قائمة الضغط المطول على الإشعارات</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">أيقونة التطبيق المنبثقة</string>
     <string name="toast_icon_summary">عرض أيقونة التطبيق الخاص بالإشعار المنبثق</string>
@@ -373,10 +376,10 @@
     <string name="lockscreen_clock_selection_sammy">سامي</string>
     <string name="lockscreen_clock_selection_sammy_bold">سامي (عريض)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">فلتر غطاء الألبوم لشاشة القفل</string>
+    <string name="lockscreen_cover_filter_none">لا شيء</string>
+    <string name="lockscreen_cover_filter_grayscale">رمادي</string>
+    <string name="lockscreen_cover_filter_blur">ضبابي</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">إلغاء قفل الوجه تلقائياً</string>
     <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>

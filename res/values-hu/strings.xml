@@ -136,6 +136,9 @@
     <string name="notification_summary">LED és értesítés viselkedéseinek beállítása</string>
     <string name="notification_category">Értesítések</string>
     <string name="headsup_category">Lebegő értesítés</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Alkalmazás-buborékszöveg</string>
     <string name="toast_icon_summary">Megjeleníti a buborékszöveghez tartozó alkalmazás ikonját</string>
@@ -373,9 +376,9 @@
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_none">Nincs</string>
+    <string name="lockscreen_cover_filter_grayscale">Szürkeárnyalatos</string>
+    <string name="lockscreen_cover_filter_blur">Elmosódás</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatikus arcfeloldás</string>
     <string name="face_auto_unlock_summary">Záróképernyő kihagyása sikeres arcfeloldás után</string>

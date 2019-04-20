@@ -55,8 +55,8 @@
     <string name="status_bar_clock_summary">Durum çubuğu saatini ve tarih görünümünü yapılandırın</string>
     <string name="clock_title_enable">Hizalama</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_title">Kronik Logo</string>
+    <string name="kronic_logo_summary">Herkes ekranınızı gördüğünde AOSİP kullandığınızı bilmesini sağlayın</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Etkin</string>
     <string name="clock_disabled">Devre dışı</string>
@@ -136,6 +136,9 @@
     <string name="notification_summary">LED\'leri ve bildirim davranışını ayarlayın</string>
     <string name="notification_category">Bildirimler</string>
     <string name="headsup_category">Bildirim pencereleri</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Uygulama sonlandırma tuşu</string>
+    <string name="notification_guts_kill_app_button_summary">Bildirime uzun basma menüsünde uygulamayı sonlandırma tuşunu göster</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Uygulama bildirim simgesi</string>
     <string name="toast_icon_summary">Bildirim ile uyumlu uygulama simgesini görüntüle</string>
@@ -372,10 +375,10 @@
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (kalın)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_title">Kilit ekranı albüm kapağı filtresi</string>
+    <string name="lockscreen_cover_filter_none">Hiçbiri</string>
+    <string name="lockscreen_cover_filter_grayscale">Gri tonlama</string>
+    <string name="lockscreen_cover_filter_blur">Bulanık</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Yüz ile otomatik kilit açma</string>
     <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını kapat</string>
