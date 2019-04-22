@@ -142,7 +142,6 @@ public class StockRecentCategory extends SettingsPreferenceFragment implements
                Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED, 0);
             }
-            Utils.showSystemUiRestartDialog(getContext());
             updateOreoClearAll(type == 1);
         return true;
         }
