@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:layout="@layout/tab_ui"
-    android:title="@string/lockscreen_visualizer_title" >
+    android:title="@string/lockscreen_visualizer_category" >
 
     <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
         android:key="ambient_visualizer"

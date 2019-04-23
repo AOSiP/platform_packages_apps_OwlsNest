@@ -105,7 +105,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.lockscreen_title),
-                    getString(R.string.lockscreen_visualizer_title)};
+                    getString(R.string.lockscreen_visualizer_category)};
         return titleString;
     }
 }
