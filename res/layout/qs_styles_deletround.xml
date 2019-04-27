@@ -16,7 +16,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/QsTileStyleCircleGradient"
+    android:id="@+id/QsTileStyleJustIcons"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -29,8 +29,8 @@
             android:layout_width="@dimen/qs_styles_layout_background_size"
             android:layout_height="@dimen/qs_styles_layout_background_size"
             android:padding="@dimen/qs_styles_tile_preview_spacing"
-            android:src="@drawable/qs_styles_shape_circlegradient"
-            android:tint="@color/qs_tile_background_active"
+            android:src="@drawable/qs_styles_shape_deletround"
+            android:tint="#00ffffff"
             tools:ignore="ContentDescription" />
 
         <ImageView
@@ -38,7 +38,7 @@
             android:layout_height="@dimen/qs_styles_layout_foreground_size"
             android:layout_centerInParent="true"
             android:src="@drawable/qs_styles_wifi"
-            android:tint="@color/qs_tile_icon_active"
+            android:tint="@color/qs_tile_background_active"
             tools:ignore="ContentDescription" />
     </RelativeLayout>
 
@@ -51,8 +51,8 @@
             android:layout_width="@dimen/qs_styles_layout_background_size"
             android:layout_height="@dimen/qs_styles_layout_background_size"
             android:padding="@dimen/qs_styles_tile_preview_spacing"
-            android:src="@drawable/qs_styles_shape_circlegradient"
-            android:tint="@color/qs_tile_background_inactive"
+            android:src="@drawable/qs_styles_shape_deletround"
+            android:tint="#00ffffff"
             tools:ignore="ContentDescription" />
 
         <ImageView
@@ -73,8 +73,8 @@
             android:layout_width="@dimen/qs_styles_layout_background_size"
             android:layout_height="@dimen/qs_styles_layout_background_size"
             android:padding="@dimen/qs_styles_tile_preview_spacing"
-            android:src="@drawable/qs_styles_shape_circlegradient"
-            android:tint="@color/qs_tile_background_active"
+            android:src="@drawable/qs_styles_shape_deletround"
+            android:tint="#00ffffff"
             tools:ignore="ContentDescription" />
 
         <ImageView
@@ -82,7 +82,7 @@
             android:layout_height="@dimen/qs_styles_layout_foreground_size"
             android:layout_centerInParent="true"
             android:src="@drawable/qs_styles_dnd"
-            android:tint="@color/qs_tile_icon_active"
+            android:tint="@color/qs_tile_background_active"
             tools:ignore="ContentDescription" />
     </RelativeLayout>
 
@@ -95,8 +95,8 @@
             android:layout_width="@dimen/qs_styles_layout_background_size"
             android:layout_height="@dimen/qs_styles_layout_background_size"
             android:padding="@dimen/qs_styles_tile_preview_spacing"
-            android:src="@drawable/qs_styles_shape_circlegradient"
-            android:tint="@color/qs_tile_background_inactive"
+            android:src="@drawable/qs_styles_shape_deletround"
+            android:tint="#00ffffff"
             tools:ignore="ContentDescription" />
 
         <ImageView
