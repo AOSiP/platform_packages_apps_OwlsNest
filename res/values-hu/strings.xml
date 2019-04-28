@@ -56,7 +56,8 @@
     <string name="clock_title_enable">Igazítás</string>
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="kronic_logo_summary">Hadd lássa mindenki, hogy AOSiP-t használ, amikor ránéz a képernyőjére</string>
+    <string name="status_bar_logo_style_title">Custom logo style</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Engedélyezve</string>
     <string name="clock_disabled">Letiltva</string>
@@ -99,6 +100,7 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Akkumulátor stílus</string>
     <string name="status_bar_battery_style_port">Álló</string>
+    <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Kör</string>
     <string name="status_bar_battery_style_dotted_circle">Pontozott kör</string>
     <string name="status_bar_battery_style_text">Szöveg</string>
@@ -122,12 +124,17 @@
     <string name="show_carrier_enabled">Záróképernyőn &amp; állapotsoron</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Hálózati forgalom</string>
-    <string name="network_traffic_state_title">A hálózati aktivitás megjelenítése az állapotsoron</string>
+    <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_autohide">Automatikus elrejtés</string>
     <string name="network_traffic_autohide_summary">Rejtse el az adatforgalom-kijelzést, ha nincs aktivitás</string>
     <string name="network_traffic_autohide_threshold_title">A hálózati forgalom automatikus elrejtésének határértéke (KB/s)</string>
     <string name="network_traffic_hidearrow">Nyilak elrejtése</string>
     <string name="network_traffic_hidearrow_summary">Hálózati forgalmat jelző nyilak elrejtése</string>
+    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
+    <string name="network_traffic_location_title">Traffic indicator placement</string>
+    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
+    <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_header">Expanded header</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Fényerő-szabályozás</string>
     <string name="status_bar_toggle_brightness_summary">Engedélyezi, hogy az állapotsávon az ujjaival szabályozhassa a fényerőt</string>
@@ -137,8 +144,8 @@
     <string name="notification_category">Értesítések</string>
     <string name="headsup_category">Lebegő értesítés</string>
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+    <string name="notification_guts_kill_app_button_title">Az \'Alkalmazás kilövése\' gomb</string>
+    <string name="notification_guts_kill_app_button_summary">Jelenítse meg az értesítés hosszan nyomási menüjében az \'Alkalmazás kilövése\' gombot</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Alkalmazás-buborékszöveg</string>
     <string name="toast_icon_summary">Megjeleníti a buborékszöveghez tartozó alkalmazás ikonját</string>
@@ -304,6 +311,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Előzmények</string>
     <string name="recent_summary">Előzmények stílusa és beállításainak testreszabása</string>
+    <string name="aosp_recents_category">Oreo recents options</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Ikoncsomag</string>
     <string name="recents_icon_pack_summary">Egyéni ikoncsomag alkalmazása az Előzmények panelre</string>
@@ -374,11 +382,17 @@
     <string name="lockscreen_clock_selection_du">Analóg (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
     <string name="lockscreen_cover_filter_none">Nincs</string>
     <string name="lockscreen_cover_filter_grayscale">Szürkeárnyalatos</string>
+    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
     <string name="lockscreen_cover_filter_blur">Elmosódás</string>
+    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatikus arcfeloldás</string>
     <string name="face_auto_unlock_summary">Záróképernyő kihagyása sikeres arcfeloldás után</string>

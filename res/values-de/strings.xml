@@ -57,6 +57,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Wenn leute den Bildschrim sehen, lass alle wissen, dass du AOSiP nutzt</string>
+    <string name="status_bar_logo_style_title">Custom logo style</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Aktiviert</string>
     <string name="clock_disabled">Deaktiviert</string>
@@ -99,6 +100,7 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Akkustil</string>
     <string name="status_bar_battery_style_port">Hochformat</string>
+    <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Kreis</string>
     <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
     <string name="status_bar_battery_style_text">Text</string>
@@ -122,12 +124,17 @@
     <string name="show_carrier_enabled">Sperrbildschirm &amp; Statusleiste</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Netzwerkverkehr</string>
-    <string name="network_traffic_state_title">Netzwerkaktivität in der Statusleiste anzeigen</string>
+    <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_autohide">Automatisch ausblenden</string>
     <string name="network_traffic_autohide_summary">Netzwerkanzeige bei Inaktivität verbergen</string>
     <string name="network_traffic_autohide_threshold_title">Schwellenwert (in kB/s), ab dem die Netzwerk-Aktivitätsanzeige ausgeblendet wird</string>
     <string name="network_traffic_hidearrow">Pfeile verstecken</string>
     <string name="network_traffic_hidearrow_summary">Pfeile des Netzwerkverkehrs in der Statusleiste ausblenden</string>
+    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
+    <string name="network_traffic_location_title">Traffic indicator placement</string>
+    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
+    <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_header">Expanded header</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
     <string name="status_bar_toggle_brightness_summary">Helligkeit durch wischen über die Statusleiste ändern</string>
@@ -304,6 +311,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Anwendungsverlauf</string>
     <string name="recent_summary">Konfigurieren Sie den Stil und die Optionen des Anwendungsverlaufs</string>
+    <string name="aosp_recents_category">Oreo recents options</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Symbolpaket</string>
     <string name="recents_icon_pack_summary">Ein benutzerdefiniertes Symbolpaket für den Anwenungsverlauf anwenden</string>
@@ -374,11 +382,17 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (Fett)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
     <string name="lockscreen_cover_filter_none">Keine</string>
     <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
     <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Entsperren per Gesichtserkennung</string>
     <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtserkennung automatisch übergehen</string>

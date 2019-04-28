@@ -57,6 +57,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="status_bar_logo_style_title">Custom logo style</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Увімкнено</string>
     <string name="clock_disabled">Вимкнено</string>
@@ -99,6 +100,7 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Стиль значка акумулятора</string>
     <string name="status_bar_battery_style_port">Портретна орієнтація</string>
+    <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Коло</string>
     <string name="status_bar_battery_style_dotted_circle">Пунктирне коло</string>
     <string name="status_bar_battery_style_text">Текст</string>
@@ -122,12 +124,17 @@
     <string name="show_carrier_enabled">На екрані блокування &amp; та в рядку стану</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Мережевий трафік</string>
-    <string name="network_traffic_state_title">Відображати активність мережі у рядку стану</string>
+    <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_autohide">Автоматичне приховування</string>
     <string name="network_traffic_autohide_summary">Приховувати монітор трафіку, коли немає активності</string>
     <string name="network_traffic_autohide_threshold_title">Автоматичне приховування індикатора активності мережі (KБ/с)</string>
     <string name="network_traffic_hidearrow">Приховати стрілки</string>
     <string name="network_traffic_hidearrow_summary">Приховати стрілки індикатору мережевого трафіку</string>
+    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
+    <string name="network_traffic_location_title">Traffic indicator placement</string>
+    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
+    <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_header">Expanded header</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Керування яскравістю</string>
     <string name="status_bar_toggle_brightness_summary">Регулювання яскравості ковзанням вліво/вправо по рядку стану</string>
@@ -304,6 +311,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Нещодавні додатки</string>
     <string name="recent_summary">Налаштування параметрів і стилю меню нещоданіх додатків</string>
+    <string name="aosp_recents_category">Oreo recents options</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Набір іконок</string>
     <string name="recents_icon_pack_summary">Застосувати користувацький набір іконок для панелі нещодавніх додатків</string>
@@ -374,11 +382,17 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
     <string name="lockscreen_cover_filter_none">None</string>
     <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
     <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматичне розблокування обличчям</string>
     <string name="face_auto_unlock_summary">Прибрати екран блокування після розблокування обличчям</string>

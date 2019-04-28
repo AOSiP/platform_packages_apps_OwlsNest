@@ -57,6 +57,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
+    <string name="status_bar_logo_style_title">Custom logo style</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">已啟用</string>
     <string name="clock_disabled">已禁用</string>
@@ -99,6 +100,7 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">電池樣式</string>
     <string name="status_bar_battery_style_port">縱向</string>
+    <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">環形</string>
     <string name="status_bar_battery_style_dotted_circle">點陣環形</string>
     <string name="status_bar_battery_style_text">文字</string>
@@ -122,12 +124,17 @@
     <string name="show_carrier_enabled">鎖定螢幕 &amp; 狀態列</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">流量</string>
-    <string name="network_traffic_state_title">在狀態列中顯示網络活動</string>
+    <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_autohide">自動隱藏</string>
     <string name="network_traffic_autohide_summary">在沒有網路活動時隱藏流量指示計</string>
     <string name="network_traffic_autohide_threshold_title">網路活動自動隱藏下限 (KB/s)</string>
     <string name="network_traffic_hidearrow">隱藏箭頭</string>
     <string name="network_traffic_hidearrow_summary">隱藏網路流量指示箭頭</string>
+    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
+    <string name="network_traffic_location_title">Traffic indicator placement</string>
+    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
+    <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_header">Expanded header</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">在狀態列上滑動調節亮度</string>
@@ -304,6 +311,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">最近</string>
     <string name="recent_summary">配置最近風格和選項</string>
+    <string name="aosp_recents_category">Oreo recents options</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">圖示包</string>
     <string name="recents_icon_pack_summary">在最近應用程式面板中為應用程式套用自訂圖示包</string>
@@ -375,11 +383,17 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
     <string name="lockscreen_cover_filter_none">None</string>
     <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
     <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">臉部自動解鎖</string>
     <string name="face_auto_unlock_summary">解除鎖定畫面後的臉部解鎖</string>

@@ -57,6 +57,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Logo Kronic</string>
     <string name="kronic_logo_summary">Cho mọi người thấy rằng bạn đang dùng AOSiP :)</string>
+    <string name="status_bar_logo_style_title">Custom logo style</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Bật</string>
     <string name="clock_disabled">Tắt</string>
@@ -99,6 +100,7 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Kiểu biểu tượng pin</string>
     <string name="status_bar_battery_style_port">Biểu tượng dọc</string>
+    <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Vòng tròn</string>
     <string name="status_bar_battery_style_dotted_circle">Vòng tròng chấm</string>
     <string name="status_bar_battery_style_text">Văn bản</string>
@@ -122,12 +124,17 @@
     <string name="show_carrier_enabled">Màn hình khoá &amp; thanh trạng thái</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Tốc độ mạng</string>
-    <string name="network_traffic_state_title">Hiển thị tốc độ mạng trên thanh trạng thái</string>
+    <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_autohide">Tự động ẩn</string>
     <string name="network_traffic_autohide_summary">Ẩn tốc độ mạng khi không có hoạt động mạng</string>
     <string name="network_traffic_autohide_threshold_title">Ngưỡng tự động ẩn tốc độ mạng (KB/s)</string>
     <string name="network_traffic_hidearrow">Ẩn mũi tên</string>
     <string name="network_traffic_hidearrow_summary">Ẩn mũi tên bên cạnh tốc độ mạng</string>
+    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
+    <string name="network_traffic_location_title">Traffic indicator placement</string>
+    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
+    <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_header">Expanded header</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Điều chỉnh độ sáng</string>
     <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt ngang trên thanh trạng thái</string>
@@ -304,6 +311,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Màn hình Đa nhiệm</string>
     <string name="recent_summary">Tùy chỉnh màn hình đa nhiệm</string>
+    <string name="aosp_recents_category">Oreo recents options</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Gói biểu tượng</string>
     <string name="recents_icon_pack_summary">Áp dụng gói biểu tượng cho Màn hình Đa nhiệm</string>
@@ -374,11 +382,17 @@
     <string name="lockscreen_clock_selection_du">Đồng hồ kim (DU)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (đậm)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Bộ lọc ảnh bìa âm nhạc màn hình khoá</string>
     <string name="lockscreen_cover_filter_none">Không có</string>
     <string name="lockscreen_cover_filter_grayscale">Trắng đen</string>
+    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
     <string name="lockscreen_cover_filter_blur">Mờ nền</string>
+    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Tự động mở khoá khuôn mặt</string>
     <string name="face_auto_unlock_summary">Bỏ qua màn hình khoá khi khuôn mặt được nhận dạng</string>

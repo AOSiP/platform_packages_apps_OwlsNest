@@ -57,6 +57,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic ロゴ</string>
     <string name="kronic_logo_summary">あなたの画面を見た人にあなたが AOSiP を使っていることを知らせます</string>
+    <string name="status_bar_logo_style_title">Custom logo style</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">有効</string>
     <string name="clock_disabled">無効</string>
@@ -99,6 +100,7 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">バッテリースタイル</string>
     <string name="status_bar_battery_style_port">縦</string>
+    <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">サークル</string>
     <string name="status_bar_battery_style_dotted_circle">点線の円</string>
     <string name="status_bar_battery_style_text">文字</string>
@@ -122,12 +124,17 @@
     <string name="show_carrier_enabled">両方で表示</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">ネットワーク通信量</string>
-    <string name="network_traffic_state_title">ステータスバーに通信速度を表示</string>
+    <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にする</string>
-    <string name="network_traffic_autohide_threshold_title">自動的に非表示にする通信速度のしきい値 (KB/s)</string>
+    <string name="network_traffic_autohide_threshold_title">自動非表示にする通信速度しきい値 (KB/s)</string>
     <string name="network_traffic_hidearrow">矢印を非表示</string>
     <string name="network_traffic_hidearrow_summary">トラフィックモニターの矢印を隠す</string>
+    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
+    <string name="network_traffic_location_title">Traffic indicator placement</string>
+    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
+    <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_header">Expanded header</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">明るさのコントロール</string>
     <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
@@ -304,6 +311,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">アプリ履歴</string>
     <string name="recent_summary">アプリ履歴とオプションを設定する</string>
+    <string name="aosp_recents_category">Oreo recents options</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">アイコンパック</string>
     <string name="recents_icon_pack_summary">カスタムアイコンパックをアプリ履歴パネルに適用する</string>
@@ -374,11 +382,17 @@
     <string name="lockscreen_clock_selection_du">アナログ (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (太字)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">ロック画面のアルバムアートフィルタ</string>
     <string name="lockscreen_cover_filter_none">なし</string>
     <string name="lockscreen_cover_filter_grayscale">グレースケール</string>
+    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
     <string name="lockscreen_cover_filter_blur">ぼかし</string>
+    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>
