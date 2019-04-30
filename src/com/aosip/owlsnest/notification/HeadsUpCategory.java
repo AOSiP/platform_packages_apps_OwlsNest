@@ -47,8 +47,8 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
-import com.aosip.owlsnest.preference.PackageListAdapter.PackageItem;
-import com.aosip.owlsnest.preference.PackageListAdapter;
+import com.aosip.support.preference.PackageListAdapter.PackageItem;
+import com.aosip.support.preference.PackageListAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;

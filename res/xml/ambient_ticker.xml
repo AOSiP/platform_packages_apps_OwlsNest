@@ -14,7 +14,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="force_ambient_for_media"
         android:title="@string/force_ambient_for_media_title"
         android:defaultValue="true" />

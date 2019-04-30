@@ -25,32 +25,32 @@
         android:key="brightness_slider"
         android:title="@string/qs_show_brightness_title" >
 
-        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_show_brightness_title"
             android:summary="@string/qs_show_brightness_summary"
             android:defaultValue="true" />
 
-        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="qs_brightness_position_bottom"
             android:title="@string/brightness_slider_bottom_title"
             android:summary="@string/brightness_slider_bottom_summary"
             android:defaultValue="false"
             android:dependency="qs_show_brightness" />
 
-        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
             android:title="@string/tuner_show_auto_brightness"
             android:dependency="qs_show_brightness"
             android:defaultValue="true" />
 
-        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="qs_auto_brightness_right"
             android:title="@string/tuner_auto_brightness_right"
             android:dependency="qs_show_auto_brightness"
             android:defaultValue="true" />
 
-        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness_buttons"
             android:title="@string/tuner_show_brightness_buttons"
             android:dependency="qs_show_brightness"
@@ -76,7 +76,7 @@
         android:key="qs_tiles"
         android:title="@string/expanded_category" >
 
-        <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+        <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
@@ -105,12 +105,12 @@
 
     </PreferenceCategory>
 
-    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+    <com.aosip.support.preference.SecureSettingSwitchPreference
         android:key="qs_show_info_header"
         android:title="@string/show_info_header_title"
         android:defaultValue="true" />
 
-    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+    <com.aosip.support.preference.SecureSettingSwitchPreference
         android:key="qs_show_secure"
         android:title="@string/show_secure_title"
         android:defaultValue="true" />

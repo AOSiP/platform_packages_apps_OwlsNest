@@ -43,19 +43,19 @@
         android:dependency="status_bar_logo"
         android:title="@string/status_bar_logo_style_title" />
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="use_old_mobiletype"
         android:title="@string/use_old_mobiletype_title"
         android:summary="@string/use_old_mobiletype_summary"
         android:defaultValue="false" />
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="statusbar_hide_notch"
         android:title="@string/hide_notch_title"
         android:summary="@string/hide_notch_summary"
         android:defaultValue="false" />
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="volte_icon"
         android:title="@string/volte_icon_title"
         android:summary="@string/volte_icon_summary"

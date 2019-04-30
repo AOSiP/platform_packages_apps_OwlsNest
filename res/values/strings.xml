@@ -37,16 +37,6 @@
     <string name="systemui_restart_title">SystemUI restart required</string>
     <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
 
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right" translatable="false">→</string>
-    <string name="arrow_down" translatable="false">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint" translatable="false">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
-
 
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Statusbar</string>

@@ -38,7 +38,7 @@ import com.android.settings.smartnav.ActionFragment;
 
 import com.android.internal.utils.ActionConstants;
 import com.android.internal.utils.ActionUtils;
-import com.aosip.owlsnest.preference.CustomSeekBarPreference;
+import com.aosip.support.preference.CustomSeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.List;

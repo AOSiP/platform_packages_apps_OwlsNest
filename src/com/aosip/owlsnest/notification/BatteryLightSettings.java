@@ -29,13 +29,13 @@ import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.aosip.owlsnest.preference.SystemSettingSwitchPreference;
+import com.aosip.support.preference.SystemSettingSwitchPreference;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.aosip.support.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;

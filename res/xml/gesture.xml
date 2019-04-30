@@ -31,13 +31,13 @@
         android:summary="@string/active_edge_summary"
         android:fragment="com.aosip.owlsnest.gesture.ActiveEdge" />
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
         android:title="@string/status_bar_toggle_brightness"
         android:summary="@string/status_bar_toggle_brightness_summary"
         android:defaultValue="false" />
 
-      <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+      <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
@@ -47,12 +47,12 @@
         android:key="double_tap"
         android:title="@string/double_tap_options" >
 
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_anywhere"
             android:title="@string/double_tap_sleep_lockscreen"
             android:defaultValue="false" />
 
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
             android:title="@string/double_tap_sleep_gesture_title"
             android:defaultValue="false" />

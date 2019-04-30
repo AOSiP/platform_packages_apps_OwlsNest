@@ -21,7 +21,7 @@
     android:layout="@layout/tab_ui"
     android:title="@string/headsup_category" >
 
-    <com.aosip.owlsnest.preference.GlobalSettingSwitchPreference
+    <com.aosip.support.preference.GlobalSettingSwitchPreference
         android:key="heads_up_notifications_enabled"
         android:title="@string/heads_up_title"
         android:summaryOn="@string/heads_up_summary_enabled"

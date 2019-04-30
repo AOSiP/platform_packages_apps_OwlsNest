@@ -41,7 +41,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.aosip.owlsnest.preference.SystemSettingSwitchPreference;
+import com.aosip.support.preference.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -21,26 +21,26 @@
     android:layout="@layout/tab_ui"
     android:title="@string/powermenu_category" >
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="powermenu_reboot"
         android:title="@string/powermenu_reboot_title"
         android:summary="@string/powermenu_reboot_summary"
         android:defaultValue="true" />
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="powermenu_advanced_reboot"
         android:title="@string/powermenu_advanced_reboot_title"
         android:summary="@string/powermenu_advanced_reboot_summary"
         android:dependency="powermenu_reboot"
         android:defaultValue="false" />
 
-    <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="powermenu_screenshot"
         android:title="@string/powermenu_screenshot_title"
         android:summary="@string/powermenu_screenshot_summary"
         android:defaultValue="false" />
 
-    <com.aosip.owlsnest.preference.SecureSettingSwitchPreference
+    <com.aosip.support.preference.SecureSettingSwitchPreference
         android:key="lockscreen_power_menu_disabled"
         android:title="@string/lockscreen_power_menu_disabled_title"
         android:summary="@string/lockscreen_power_menu_disabled_summary"
