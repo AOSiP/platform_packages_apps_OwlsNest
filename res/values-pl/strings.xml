@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Wymagany restart SystemUI</string>
     <string name="systemui_restart_message">Aby wszystkie zmiany zostały wprowadzone wymagany jest restart SystemUI. Zrestartować SystemUI teraz?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Wybór koloru</string>
-    <string name="press_color_to_apply">Naciśnij przycisk poniżej aby zastosować kolor</string>
-    <string name="hex">Hex:</string>
-    <string name="set">Ustaw</string>
-    <string name="color_default">Domyślny</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Pasek statusu</string>
     <string name="statusbar_bar_summary">Dostosuj różne elementy paska statusu</string>
@@ -102,7 +96,9 @@
     <string name="status_bar_battery_style_port">Pionowy</string>
     <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Okrąg</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Przerywany okrąg</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Ukryty</string>
     <!-- Old Style Mobile -->
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Powiadomienia z dźwiękiem przy włączonym ekranie</string>
     <string name="notification_sound_vib_screen_on_summary">Odtwarzaj dźwięk i wibracje dla powiadomień, gdy ekran jest włączony</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Włącz</string>
     <string name="heads_up_summary_enabled">Wyskakujące powiadomienia są włączone</string>

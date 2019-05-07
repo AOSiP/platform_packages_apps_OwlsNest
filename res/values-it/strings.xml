@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">È richiesto il riavvio della SystemUI</string>
     <string name="systemui_restart_message">Per rendere effettive tutte le modifiche, è necessario un riavvio della SystemUI. Riavviare la SystemUI ora?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Selettore del colore</string>
-    <string name="press_color_to_apply">Seleziona un colore per applicarlo</string>
-    <string name="hex">Esadecimale:</string>
-    <string name="set">Imposta</string>
-    <string name="color_default">Predefinito</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Barra di stato</string>
     <string name="statusbar_bar_summary">Modifica vari elementi della barra di stato</string>
@@ -102,7 +96,9 @@
     <string name="status_bar_battery_style_port">Verticale</string>
     <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Cerchio</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_style_hidden">Nascosta</string>
     <!-- Old Style Mobile -->
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Notifiche con suono a schermo acceso</string>
     <string name="notification_sound_vib_screen_on_summary">Riproduci suono e vibrazione per notifiche a schermo accesso</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Attiva</string>
     <string name="heads_up_summary_enabled">Notifiche Heads-Up attive</string>

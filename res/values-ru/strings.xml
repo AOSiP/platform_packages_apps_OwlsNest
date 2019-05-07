@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Необходима перезагрузка системного интерфейса</string>
     <string name="systemui_restart_message">Чтобы все изменения вступили в силу, требуется перезагрузка системного интерфейса. Перезагрузить сейчас?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Палитра цветов</string>
-    <string name="press_color_to_apply">Нажмите на цвет для применения</string>
-    <string name="hex">Hex-код:</string>
-    <string name="set">Применить</string>
-    <string name="color_default">По умолчанию</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Строка состояния</string>
     <string name="statusbar_bar_summary">Отрегулировать элементы строки состояния</string>
@@ -57,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Логотип Кроника</string>
     <string name="kronic_logo_summary">Покажите всем, что вы используете AOSiP, когда они видят ваш экран</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">Пользовательский стиль логотипа</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Включено</string>
     <string name="clock_disabled">Выключено</string>
@@ -100,9 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Стиль батареи</string>
     <string name="status_bar_battery_style_port">Портреная ориентация</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Стиль Android Q</string>
     <string name="status_bar_battery_style_circle">Круглый значок</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Не показывать</string>
     <!-- Old Style Mobile -->
@@ -124,17 +120,17 @@
     <string name="show_carrier_enabled">На экране блокировки и в строке состояния</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Индикатор трафика</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Индикатор сетевого трафика</string>
     <string name="network_traffic_autohide">Скрывать автоматически</string>
     <string name="network_traffic_autohide_summary">Скрывать сетевой трафик, когда передача данных не осуществляется</string>
     <string name="network_traffic_autohide_threshold_title">Порог автоскрытия индикатора сетевого трафика (КБ/с)</string>
     <string name="network_traffic_hidearrow">Скрывать стрелки</string>
     <string name="network_traffic_hidearrow_summary">Скрывать стрелки индикатора сетевого трафика</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">Показывать скорость загрузки/выгрузки</string>
+    <string name="network_traffic_location_title">Расположение индикатора трафика</string>
+    <string name="network_traffic_location_summary">Расположение индикатора в строке состояния или заголовке быстрых настроек (рекомендуется для устройств с вырезами)</string>
+    <string name="network_traffic_statusbar">Строка состояния</string>
+    <string name="network_traffic_header">Заголовок быстрых настроек</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Регулировка яркости</string>
     <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Надоедливые уведомления при включенном экране</string>
     <string name="notification_sound_vib_screen_on_summary">Проигрывать звук и вибрацию для уведомлений при включенном экране</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Включить</string>
     <string name="heads_up_summary_enabled">Всплывающие уведомления включены</string>
@@ -311,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Недавние приложения</string>
     <string name="recent_summary">Настройка параметров и стиля меню недавних приложений</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Настройки недавних приложений в стиле Android Oreo</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Набор иконок</string>
     <string name="recents_icon_pack_summary">Применить пользовательский набор иконок для панели недавних приложений</string>
@@ -382,17 +381,17 @@
     <string name="lockscreen_clock_selection_du">Аналоговые (du)</string>
     <string name="lockscreen_clock_selection_sammy">Вертикальные</string>
     <string name="lockscreen_clock_selection_sammy_bold">Вертикальные (жирные)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Вертикальные с акцентом</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Вертикальные с акцентом (жирные)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Вертикальные с акцентом (альтернативные)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Вертикальные с акцентом (альтернативные жирные)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Фильтр альбома артов на заблокированном экране</string>
     <string name="lockscreen_cover_filter_none">Ничего</string>
     <string name="lockscreen_cover_filter_grayscale">Оттенки серого</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_tint">В цвет акцента</string>
     <string name="lockscreen_cover_filter_blur">Размытие</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayblur">Оттенки серого и размытие</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Автоматическая разблокировка лицом</string>
     <string name="face_auto_unlock_summary">Убарть экран блокировки после разблокировки сканером лица</string>

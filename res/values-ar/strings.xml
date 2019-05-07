@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">مطلوب إعادة تشغيل واجهة النظام</string>
     <string name="systemui_restart_message">لتكون كافة التغييرات نافذة المفعول، مطلوب إعادة تشغيل واجهة النظام. إعادة تشغيل واجهة النظام الآن؟</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">منتقي الألوان</string>
-    <string name="press_color_to_apply">إضغط على اللون أدناه لاستخدامه</string>
-    <string name="hex">كود Hex:</string>
-    <string name="set">ضبط</string>
-    <string name="color_default">الافتراضي</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">شريط الحالة</string>
     <string name="statusbar_bar_summary">ضبط متنوع لعناصر شريط الحالة</string>
@@ -57,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">شعار كرونيك</string>
     <string name="kronic_logo_summary">دع الجميع يعرفون أنك تستخدم AOSiP عندما يرون شاشتك</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">نمط شعار مخصص</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">مفعّل</string>
     <string name="clock_disabled">معطّل</string>
@@ -100,9 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">نمط البطارية</string>
     <string name="status_bar_battery_style_port">رأسي</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">نمط Q</string>
     <string name="status_bar_battery_style_circle">دائرة</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">دائرة منقطة</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">نص</string>
     <string name="status_bar_battery_style_hidden">مخفية</string>
     <!-- Old Style Mobile -->
@@ -124,17 +120,17 @@
     <string name="show_carrier_enabled">شاشة القفل وشريط الحالة</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">حركة الشبكة</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">عرض حركة مرور الشبكة</string>
     <string name="network_traffic_autohide">إخفاء تلقائي</string>
     <string name="network_traffic_autohide_summary">اخفاء مراقب حركة البيانات عند عدم وجود نشاط</string>
     <string name="network_traffic_autohide_threshold_title">حد الإخفاء الذاتي لنشاط الشبكة (KB/s)</string>
     <string name="network_traffic_hidearrow">إخفاء الأسهم</string>
     <string name="network_traffic_hidearrow_summary">إخفاء أسهم مؤشر حركة البيانات</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">عرض سرعة الرفع والتحميل للشبكة</string>
+    <string name="network_traffic_location_title">موضع مؤشر البيانات</string>
+    <string name="network_traffic_location_summary">وضع المؤشر اما في شريط الحالة أو في الحالة الموسعة (يوصى به لشاشات العرض مع قواطع من الدرجة الأولى)</string>
+    <string name="network_traffic_statusbar">شريط الحالة</string>
+    <string name="network_traffic_header">الحالة الموسّعة</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">التحكم بالسطوع</string>
     <string name="status_bar_toggle_brightness_summary">التحكم بالسطوع عبر السحب على شريط الحالة</string>
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">إشعارات صاخبة اذا كانت الشاشة قيد التشغيل</string>
     <string name="notification_sound_vib_screen_on_summary">تشغيل الصوت والاهتزاز للإشعارات عند تشغيل الشاشة</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">تفعيل</string>
     <string name="heads_up_summary_enabled">الإشعارات العائمة مفعلة</string>
@@ -312,7 +311,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">التطبيقات المستخدمة مؤخرًا</string>
     <string name="recent_summary">إعداد نمط وخيارت التطبيقات المستخدمة مؤخرا</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">خيارات التطبيقات الحديثة أوريو</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">حزمة الأيقونات</string>
     <string name="recents_icon_pack_summary">تطبيق حزمة أيقونات مخصصة للتطبيقات في اللوحة</string>
@@ -383,17 +382,17 @@
     <string name="lockscreen_clock_selection_du">تناظري (du)</string>
     <string name="lockscreen_clock_selection_sammy">سامي</string>
     <string name="lockscreen_clock_selection_sammy_bold">سامي (عريض)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">سامي مع اللكنة</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">سامي مع اللكنة (عريض)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">سامي مع اللكنة (بديل)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">سامي مع اللكنة (عريض- بديل)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">فلتر غطاء الألبوم لشاشة القفل</string>
     <string name="lockscreen_cover_filter_none">لا شيء</string>
     <string name="lockscreen_cover_filter_grayscale">رمادي</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_tint">تم تلوين اللكنة</string>
     <string name="lockscreen_cover_filter_blur">ضبابي</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayblur">تدرج الرمادي وضبابي</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">إلغاء قفل الوجه تلقائياً</string>
     <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>

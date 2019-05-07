@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">SystemUI restart required</string>
     <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Värin valinta</string>
-    <string name="press_color_to_apply">Suorita toiminto valitsemalla väri alta</string>
-    <string name="hex">Hex:</string>
-    <string name="set">Aseta</string>
-    <string name="color_default">Oletus</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Tilapalkki</string>
     <string name="statusbar_bar_summary">Säädä lukuisia tilapalkin asetuksia</string>
@@ -102,7 +96,9 @@
     <string name="status_bar_battery_style_port">Pysty</string>
     <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Ympyrä</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Pilkullinen ympyrä</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Teksti</string>
     <string name="status_bar_battery_style_hidden">Piilotettu</string>
     <!-- Old Style Mobile -->
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Enable</string>
     <string name="heads_up_summary_enabled">Heads up notifications are enabled</string>

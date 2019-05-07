@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Se requiere reinicio de SystemUI</string>
     <string name="systemui_restart_message">Para que todos los cambios surtan efecto, se necesita reiniciar SystemUI ¿reiniciar ahora?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Selector de color</string>
-    <string name="press_color_to_apply">Presione el color a continuación para aplicar</string>
-    <string name="hex">Maleficio:</string>
-    <string name="set">Establecer</string>
-    <string name="color_default">Defecto</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Barra de estado</string>
     <string name="statusbar_bar_summary">Ajuste varios elementos de la barra de estado</string>
@@ -102,7 +96,9 @@
     <string name="status_bar_battery_style_port">Retrato</string>
     <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Circulo</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Círculo punteado</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Old Style Mobile -->
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Notificaciones sonoras con la pantalla encendida</string>
     <string name="notification_sound_vib_screen_on_summary">Las notificaciones suenan y vibran cuando la pantalla está encendida</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Activar</string>
     <string name="heads_up_summary_enabled">Notificaciones flotantes activadas</string>

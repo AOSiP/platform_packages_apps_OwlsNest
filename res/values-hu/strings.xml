@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Rendszerfelület újraindítás szükséges</string>
     <string name="systemui_restart_message">Az összes módosítás érvénybe léptetéséhez a rendszerfelület újraindítása szükséges. Újraindítja most?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Színválasztó</string>
-    <string name="press_color_to_apply">Érintsen meg egy színt annak alkalmazáshoz</string>
-    <string name="hex">Hexadecimális:</string>
-    <string name="set">Beállítás</string>
-    <string name="color_default">Alapértelmezett</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Állapotsor</string>
     <string name="statusbar_bar_summary">Különböző állapotsori elemek</string>
@@ -57,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Hadd lássa mindenki, hogy AOSiP-t használ, amikor ránéz a képernyőjére</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">Egyéni logókép</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Engedélyezve</string>
     <string name="clock_disabled">Letiltva</string>
@@ -100,9 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Akkumulátor stílus</string>
     <string name="status_bar_battery_style_port">Álló</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Q stílus</string>
     <string name="status_bar_battery_style_circle">Kör</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Pontozott kör</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Szöveg</string>
     <string name="status_bar_battery_style_hidden">Rejtett</string>
     <!-- Old Style Mobile -->
@@ -124,17 +120,17 @@
     <string name="show_carrier_enabled">Záróképernyőn &amp; állapotsoron</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Hálózati forgalom</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Hálózati forgalom megjelenítése</string>
     <string name="network_traffic_autohide">Automatikus elrejtés</string>
     <string name="network_traffic_autohide_summary">Rejtse el az adatforgalom-kijelzést, ha nincs aktivitás</string>
     <string name="network_traffic_autohide_threshold_title">A hálózati forgalom automatikus elrejtésének határértéke (KB/s)</string>
     <string name="network_traffic_hidearrow">Nyilak elrejtése</string>
     <string name="network_traffic_hidearrow_summary">Hálózati forgalmat jelző nyilak elrejtése</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
+    <string name="network_traffic_state_summary">Mutassa a feltöltés &amp; letöltés hálózat sebességét</string>
+    <string name="network_traffic_location_title">Forgalom kijelző helye</string>
     <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_statusbar">Állapotsáv</string>
+    <string name="network_traffic_header">Kiterjesztett mód</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Fényerő-szabályozás</string>
     <string name="status_bar_toggle_brightness_summary">Engedélyezi, hogy az állapotsávon az ujjaival szabályozhassa a fényerőt</string>
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Hangosabb értesítések bekapcsolt képernyőnél</string>
     <string name="notification_sound_vib_screen_on_summary">Értesítésjelzés hanggal és rezgéssel, ha a képernyő be van kapcsolva</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Engedélyezés</string>
     <string name="heads_up_summary_enabled">A Lebegő értesítések engedélyezve vannak</string>
@@ -311,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Előzmények</string>
     <string name="recent_summary">Előzmények stílusa és beállításainak testreszabása</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Oreo előzmények beállításai</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Ikoncsomag</string>
     <string name="recents_icon_pack_summary">Egyéni ikoncsomag alkalmazása az Előzmények panelre</string>
@@ -382,17 +381,17 @@
     <string name="lockscreen_clock_selection_du">Analóg (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (félkövér)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy kiemeléssel</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy kiemeléssel (félkövér)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy kiemeléssel (alternatív)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy kiemeléssel (alternatív-félkövér)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
     <string name="lockscreen_cover_filter_none">Nincs</string>
     <string name="lockscreen_cover_filter_grayscale">Szürkeárnyalatos</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_tint">Kiemelőszínhez igazodó</string>
     <string name="lockscreen_cover_filter_blur">Elmosódás</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayblur">Szürkeárnyalatos és homályosított</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Automatikus arcfeloldás</string>
     <string name="face_auto_unlock_summary">Záróképernyő kihagyása sikeres arcfeloldás után</string>
@@ -418,7 +417,7 @@
     <string name="fprint_sucess_vib_title">Ujjlenyomat-hitelesítéső rezgés</string>
     <string name="fprint_sucess_vib_summary">Rezgéssel jelezze a sikeres ujjlenyomat-hitelesítést</string>
     <!--Owlsnest advanced-->
-    <string name="advanced_title">Haladó beállítások</string>
+    <string name="advanced_title">Rendszerbeállítások</string>
     <string name="advanced_summary">Egyéb rendszerbeállítások</string>
     <string name="system_category">Rendszerbeállítások</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->

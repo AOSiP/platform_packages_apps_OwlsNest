@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Neustart der SystemUI erforderlich</string>
     <string name="systemui_restart_message">Um alle Änderungen anzuwenden ist ein Neustart von SystemUI notwendig. SystemUI jetzt neustarten?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Farbauswahl</string>
-    <string name="press_color_to_apply">Zum Festlegen auf die Farbe unten tippen</string>
-    <string name="hex">Hex:</string>
-    <string name="set">Festlegen</string>
-    <string name="color_default">Standard</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Statusleiste</string>
     <string name="statusbar_bar_summary">Passe diverse Sachen an der Statusleiste an</string>
@@ -57,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Wenn leute den Bildschrim sehen, lass alle wissen, dass du AOSiP nutzt</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">Benutzerdefiniertes Logobild</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Aktiviert</string>
     <string name="clock_disabled">Deaktiviert</string>
@@ -100,9 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Akkustil</string>
     <string name="status_bar_battery_style_port">Hochformat</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Q Stil</string>
     <string name="status_bar_battery_style_circle">Kreis</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
     <!-- Old Style Mobile -->
@@ -124,17 +120,17 @@
     <string name="show_carrier_enabled">Sperrbildschirm &amp; Statusleiste</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Netzwerkverkehr</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Datenverkehrsanzeige</string>
     <string name="network_traffic_autohide">Automatisch ausblenden</string>
     <string name="network_traffic_autohide_summary">Netzwerkanzeige bei Inaktivität verbergen</string>
     <string name="network_traffic_autohide_threshold_title">Schwellenwert (in kB/s), ab dem die Netzwerk-Aktivitätsanzeige ausgeblendet wird</string>
     <string name="network_traffic_hidearrow">Pfeile verstecken</string>
     <string name="network_traffic_hidearrow_summary">Pfeile des Netzwerkverkehrs in der Statusleiste ausblenden</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">Zeige Upload &amp; Download Netzwerkgeschwindigkeit</string>
+    <string name="network_traffic_location_title">Indikator für Datentransfer</string>
+    <string name="network_traffic_location_summary">Platziere Indikator entweder in der Statusleiste oder in der erweiterten Leiste (bevorzugt bei Displays mit Notch)</string>
+    <string name="network_traffic_statusbar">Statusleiste</string>
+    <string name="network_traffic_header">Erweiterter Modus</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
     <string name="status_bar_toggle_brightness_summary">Helligkeit durch wischen über die Statusleiste ändern</string>
@@ -144,14 +140,17 @@
     <string name="notification_category">Benachrichtigungen</string>
     <string name="headsup_category">Heads-Up</string>
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+    <string name="notification_guts_kill_app_button_title">\"Alle beenden\" - Taste</string>
+    <string name="notification_guts_kill_app_button_summary">Eine \"App beenden\"-Taste anzeigen, wenn eine Benachrichtigung lange gedrückt wird</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast-Symbol</string>
     <string name="toast_icon_summary">Zeige das zugehörige App-Symbol an</string>
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Benachrichtigungen bei eingeschaltetem Bildschirm</string>
     <string name="notification_sound_vib_screen_on_summary">Wiedergabe von Ton und Vibration für Benachrichtigungen bei aktiviertem Bildschirm</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Aktiviert</string>
     <string name="heads_up_summary_enabled">Heads-Up-Benachrichtigungen aktiviert</string>
@@ -311,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Anwendungsverlauf</string>
     <string name="recent_summary">Konfigurieren Sie den Stil und die Optionen des Anwendungsverlaufs</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Einstellungen für Oreo-Anwendungsverlauf</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Symbolpaket</string>
     <string name="recents_icon_pack_summary">Ein benutzerdefiniertes Symbolpaket für den Anwenungsverlauf anwenden</string>
@@ -335,13 +334,13 @@
     <string name="aosp_gesture_title">AOSP Gesten</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Eine erweiterte Versin der Pixel Druck Funktion</string>
     <string name="active_edge_actions_title">Aktion beim quetschen</string>
-    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
+    <string name="active_edge_long_squeeze_actions_title">Langer Druck Aktion</string>
+    <string name="active_edge_sensitivity_title">Druckempfindlichkeit</string>
     <string name="active_edge_wake_title">Erlauben, wenn Bildschirm aus ist</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+    <string name="active_edge_wake_summary">Löse eine Aktion aus wenn der Bildschirm aus ist</string>
+    <string name="active_edge_footer_info">Nicht alle Druck-Aktionen in Active Edge können die Anzeige aktivieren</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Drei-Finger-Geste</string>
     <string name="three_finger_gesture_summary">Wische mit drei Fingern für Screenshot</string>
@@ -361,13 +360,13 @@
     <string name="lock_screen_shortcuts_summary">Sperrbildschirm-Verknüpfungen verwalten</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_category">Das Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_title">Sperrbildschirm Visualisierungen aktivieren</string>
+    <string name="lockscreen_visualizer_summary">Visualisierung auf dem Sperrbildschirm anzeigen, wenn Musik abgespielt wird</string>
+    <string name="lockscreen_visualizer_enable_custom">Benutzerdefinierte Farbe verwenden</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Nutze eine voreingestellte Farbe anstatt einer generierten Farbe</string>
+    <string name="lockscreen_visualizer_custom_color">Visualisierungsfarbe</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Musiktitelanzeige im Inaktivitätsdisplay</string>
     <string name="ambient_visualizer_summary">Zeigt die Visualisierungsbalken auch auf dem Ambient Display (weniger intensiv)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Uhr-Widget</string>
@@ -382,17 +381,17 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (Fett)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy mit Akzent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy mit Akzent (fett)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy mit Akzent (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy mit Akzent (alt-fett)</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_title">Sperrbildschirm Albumcover Filter</string>
     <string name="lockscreen_cover_filter_none">Keine</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayscale">Graustufen</string>
+    <string name="lockscreen_cover_filter_tint">Akzent gefärbt</string>
+    <string name="lockscreen_cover_filter_blur">Unschärfe</string>
+    <string name="lockscreen_cover_filter_grayblur">Graustufen und unscharf</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Entsperren per Gesichtserkennung</string>
     <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtserkennung automatisch übergehen</string>

@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Reinício da interface do sistema requerido</string>
     <string name="systemui_restart_message">Para que todas as modificações tenham efeito, um reinício na interface do sistema é requerida. Reiniciar interface do sistema agora?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Seletor de cores</string>
-    <string name="press_color_to_apply">Toque numa das cores abaixo para aplicar</string>
-    <string name="hex">Hex:</string>
-    <string name="set">Definir</string>
-    <string name="color_default">Predefinição</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Barra de estado</string>
     <string name="statusbar_bar_summary">Ajustar vários elementos da barra de estado</string>
@@ -102,7 +96,9 @@
     <string name="status_bar_battery_style_port">Retrato</string>
     <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Círculo com pontos</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Old Style Mobile -->
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Notificações com som se o ecrã estiver ligado</string>
     <string name="notification_sound_vib_screen_on_summary">Tocar som e vibrar para notificações quando o ecrã estiver ligado</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Ativar</string>
     <string name="heads_up_summary_enabled">Notificações pop-up estão ativadas</string>

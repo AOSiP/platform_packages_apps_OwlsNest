@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">시스템 UI 재시작이 필요합니다</string>
     <string name="systemui_restart_message">모든 변경 사항을 적용하려면 시스템 UI를 다시 시작해야합니다. 지금 시스템 UI를 다시 시작하시겠습니까?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">색상 선택기</string>
-    <string name="press_color_to_apply">적용할 색상을 아래에서 선택하세요.</string>
-    <string name="hex">16진수:</string>
-    <string name="set">설정</string>
-    <string name="color_default">기본값</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">상태 표시줄</string>
     <string name="statusbar_bar_summary">다양한 상태 표시줄 구성요소를 설정합니다</string>
@@ -57,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic 로고</string>
     <string name="kronic_logo_summary">화면을 볼 때 AOSiP를 사용하고 있다는 것을 모두에게 알립니다.</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">커스텀 로고 스타일</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">활성화됨</string>
     <string name="clock_disabled">비활성화됨</string>
@@ -100,9 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">배터리 스타일</string>
     <string name="status_bar_battery_style_port">세로</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Q 스타일</string>
     <string name="status_bar_battery_style_circle">원 아이콘</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">점선 원</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">텍스트</string>
     <string name="status_bar_battery_style_hidden">아이콘 숨김</string>
     <!-- Old Style Mobile -->
@@ -124,34 +120,37 @@
     <string name="show_carrier_enabled">잠금 화면 &amp; 상태 표시줄 모두 표시</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">네트워크 트래픽</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">네트워크 트래픽 디스플레이</string>
     <string name="network_traffic_autohide">자동 숨기기</string>
     <string name="network_traffic_autohide_summary">활동이 없을 때 자동으로 트래픽 모니터를 숨깁니다</string>
     <string name="network_traffic_autohide_threshold_title">네트워크 트래픽 자동으로 숨기기 (KB/s)</string>
     <string name="network_traffic_hidearrow">화살표 숨기기</string>
     <string name="network_traffic_hidearrow_summary">네트워크 트래픽 표시기 화살표 숨기기</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">업로드 &amp; 다운로드 네트워크 속도를 표시합니다</string>
+    <string name="network_traffic_location_title">트래픽 표시기 대체</string>
+    <string name="network_traffic_location_summary">상태 표시줄 또는 확장 헤더에 표시기 배치(노치 컷아웃이 있는 디스플레이에 권장됨)</string>
+    <string name="network_traffic_statusbar">상태표시줄</string>
+    <string name="network_traffic_header">확장된 머릿말</string>
     <!-- Brightness control -->
-    <string name="status_bar_toggle_brightness">밝기 조절</string>
-    <string name="status_bar_toggle_brightness_summary">상태 표시줄을 밀어 화면 밝기를 조절합니다</string>
+    <string name="status_bar_toggle_brightness">밝기 제어</string>
+    <string name="status_bar_toggle_brightness_summary">상태 표시줄을 밀어 화면 밝기를 제어합니다</string>
     <!--Owlsnest Notification-->
     <string name="notification_title">알림</string>
     <string name="notification_summary">LED와 알림 방식을 설정합니다</string>
     <string name="notification_category">알림</string>
     <string name="headsup_category">헤드업 알림</string>
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+    <string name="notification_guts_kill_app_button_title">앱 종료 버튼</string>
+    <string name="notification_guts_kill_app_button_summary">알림을 길게 누르면 앱 종료 버튼을 표시합니다</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">앱 아이콘 토스트 알림</string>
     <string name="toast_icon_summary">토스트 알림을 보낸 앱의 아이콘을 같이 표시합니다</string>
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">화면이 켜졌을 때 시끄러운 알림</string>
     <string name="notification_sound_vib_screen_on_summary">화면이 켜져있을 때 소리 및 진동 알림을 재생합니다.</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">활성화</string>
     <string name="heads_up_summary_enabled">헤드업 알림이 활성화 되었습니다</string>
@@ -196,7 +195,7 @@
     <string name="tuner_show_auto_brightness">적응형 밝기 버튼</string>
     <string name="tuner_auto_brightness_right">적응형 밝기 버튼을 오른쪽에 놓습니다</string>
     <string name="tuner_show_brightness_buttons">밝기 조정 버튼</string>
-    <string name="qs_show_brightness_title">밝기 조절 슬라이더</string>
+    <string name="qs_show_brightness_title">밝기 슬라이더</string>
     <string name="qs_show_brightness_summary">빠른 설정 밝기 슬라이더를 표시하거나 숨기는 옵션</string>
     <string name="brightness_slider_bottom_title">밝기 슬라이더를 아래에 표시</string>
     <string name="brightness_slider_bottom_summary">밝기 슬라이더를 빠른 설정 패널의 아래쪽에 표시</string>
@@ -311,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">최근 앱 목록</string>
     <string name="recent_summary">최근 앱 목록 스타일과 옵션을 설정합니다</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">오레오 최근 앱 옵션</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">아이콘 팩</string>
     <string name="recents_icon_pack_summary">최근 앱 목록에 사용자 지정 아이콘 팩 적용</string>
@@ -382,17 +381,17 @@
     <string name="lockscreen_clock_selection_du">아날로그 (du)</string>
     <string name="lockscreen_clock_selection_sammy">새미</string>
     <string name="lockscreen_clock_selection_sammy_bold">새미 (굵게)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">엑센트 Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">엑센트 Sammy (굵게)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">엑센트 Sammy (다른)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">엑센트 Sammy (다른-굵게)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">잠금화면 앨범 아트 필터</string>
     <string name="lockscreen_cover_filter_none">없음</string>
     <string name="lockscreen_cover_filter_grayscale">회색조</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_tint">엑센트 엷게</string>
     <string name="lockscreen_cover_filter_blur">흐릿하게</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayblur">회색조 &amp; 흐리게</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">자동 안면 잠금해제</string>
     <string name="face_auto_unlock_summary">얼굴 잠금 해제 후 잠금 화면 닫기</string>

@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">請求重新啟動使用者介面</string>
     <string name="systemui_restart_message">要使所有更改生效，需要重新啟動使用者介面。 現在重新啟動使用者介面？</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">調色盤</string>
-    <string name="press_color_to_apply">輕觸下方顏色以套用</string>
-    <string name="hex">Hex 色碼：</string>
-    <string name="set">設定</string>
-    <string name="color_default">預設</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">狀態列</string>
     <string name="statusbar_bar_summary">調整各種狀態列元素</string>
@@ -102,7 +96,9 @@
     <string name="status_bar_battery_style_port">縱向</string>
     <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">環形</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">點陣環形</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">隐藏</string>
     <!-- Old Style Mobile -->
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">若螢幕為開啟狀態, 發出通知提醒聲音和震動</string>
     <string name="notification_sound_vib_screen_on_summary">當螢幕打開時播放聲音和振動以進行通知</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">啟用浮動通知</string>
     <string name="heads_up_summary_enabled">浮動通知已啟用</string>

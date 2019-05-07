@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">システム UI の再起動が必要です</string>
     <string name="systemui_restart_message">全ての変更を反映するにはシステム UI の再起動が必要です。再起動しますか?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">色の選択</string>
-    <string name="press_color_to_apply">色を選択して適用</string>
-    <string name="hex">16進数:</string>
-    <string name="set">設定</string>
-    <string name="color_default">既定</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">ステータスバー</string>
     <string name="statusbar_bar_summary">ステータスバーの様々な要素を設定する</string>
@@ -57,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic ロゴ</string>
     <string name="kronic_logo_summary">あなたの画面を見た人にあなたが AOSiP を使っていることを知らせます</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">カスタムロゴのスタイル</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">有効</string>
     <string name="clock_disabled">無効</string>
@@ -100,9 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">バッテリースタイル</string>
     <string name="status_bar_battery_style_port">縦</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Q スタイル</string>
     <string name="status_bar_battery_style_circle">サークル</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">点線の円</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">非表示</string>
     <!-- Old Style Mobile -->
@@ -124,17 +120,17 @@
     <string name="show_carrier_enabled">両方で表示</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">ネットワーク通信量</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">ネットワーク通信量の表示</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にする</string>
     <string name="network_traffic_autohide_threshold_title">自動非表示にする通信速度しきい値 (KB/s)</string>
     <string name="network_traffic_hidearrow">矢印を非表示</string>
     <string name="network_traffic_hidearrow_summary">トラフィックモニターの矢印を隠す</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">送信と受信のネットワーク通信量を表示する</string>
+    <string name="network_traffic_location_title">アンテナアイコンの置き換え</string>
+    <string name="network_traffic_location_summary">アイコンをステータスバーか拡張ヘッダーのどちらかに置く (ノッチ画面にお勧めです)</string>
+    <string name="network_traffic_statusbar">ステータスバー</string>
+    <string name="network_traffic_header">拡張ヘッダー</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">明るさのコントロール</string>
     <string name="status_bar_toggle_brightness_summary">ステータスバーの上をスライドして明るさを調整する</string>
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">画面表示を避ける通知</string>
     <string name="notification_sound_vib_screen_on_summary">画面点灯中に通知を受信した時に通知音とバイブを鳴らす</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">有効</string>
     <string name="heads_up_summary_enabled">Heads Up は有効です</string>
@@ -311,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">アプリ履歴</string>
     <string name="recent_summary">アプリ履歴とオプションを設定する</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Oreo アプリ履歴のオプション</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">アイコンパック</string>
     <string name="recents_icon_pack_summary">カスタムアイコンパックをアプリ履歴パネルに適用する</string>
@@ -368,7 +367,7 @@
     <string name="lockscreen_visualizer_custom_color">ビジュアライザーの色</string>
     <!-- ambient visualizer -->
     <string name="ambient_visualizer_title">アンビエント音楽ビジュアライザー</string>
-    <string name="ambient_visualizer_summary">視覚効果バーをアンビエント画面にも表示する (ただし不透明度は低下します)</string>
+    <string name="ambient_visualizer_summary">視覚効果バーをアンビエント画面にも表示する (ただし透明度は低下します)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">時計ウィジェット</string>
     <string name="lockscreen_clock_summary">ロック画面に時計ウィジェットを表示する</string>
@@ -382,17 +381,17 @@
     <string name="lockscreen_clock_selection_du">アナログ (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (太字)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">アクセント付きの Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">アクセント付きの Sammy (太字)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">アクセント付きの Sammy (代替)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">アクセント付きの Sammy (太字-代替)</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">ロック画面のアルバムアートフィルタ</string>
     <string name="lockscreen_cover_filter_none">なし</string>
     <string name="lockscreen_cover_filter_grayscale">グレースケール</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_tint">アクセント色</string>
     <string name="lockscreen_cover_filter_blur">ぼかし</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayblur">グレースケールとぼかし</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>

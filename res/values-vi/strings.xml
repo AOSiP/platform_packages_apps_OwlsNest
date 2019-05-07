@@ -33,12 +33,6 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Yêu cầu khởi động lại SystemUI</string>
     <string name="systemui_restart_message">Để các thay đổi có hiệu lực, SystemUI cần phải khởi động lại. Khởi động lại SystemUI ngay?</string>
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Bảng chọn Màu</string>
-    <string name="press_color_to_apply">Chạm vào màu phía dưới để áp dụng</string>
-    <string name="hex">Hex:</string>
-    <string name="set">Đặt</string>
-    <string name="color_default">Mặc định</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Thanh trạng thái</string>
     <string name="statusbar_bar_summary">Tùy chỉnh các thành phần trên thanh trạng thái</string>
@@ -102,7 +96,9 @@
     <string name="status_bar_battery_style_port">Biểu tượng dọc</string>
     <string name="status_bar_battery_style_q">Q style</string>
     <string name="status_bar_battery_style_circle">Vòng tròn</string>
+    <string name="status_bar_battery_style_big_circle">Big Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Vòng tròng chấm</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
     <string name="status_bar_battery_style_text">Văn bản</string>
     <string name="status_bar_battery_style_hidden">Ẩn</string>
     <!-- Old Style Mobile -->
@@ -152,6 +148,9 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Âm thanh thông báo khi màn hình bật</string>
     <string name="notification_sound_vib_screen_on_summary">Phát âm thanh và rung khi có thông báo khi màn hình đang bật</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
     <!-- Heads up -->
     <string name="heads_up_title">Bật</string>
     <string name="heads_up_summary_enabled">Thông báo nổi đã được bật</string>
