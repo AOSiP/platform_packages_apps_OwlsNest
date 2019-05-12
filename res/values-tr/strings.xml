@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">Dikey</string>
     <string name="status_bar_battery_style_q">Q stili</string>
     <string name="status_bar_battery_style_circle">Daire</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Büyük daire</string>
     <string name="status_bar_battery_style_dotted_circle">Noktalı daire</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Büyük noktalı daire</string>
     <string name="status_bar_battery_style_text">Metin</string>
     <string name="status_bar_battery_style_hidden">Gizli</string>
     <!-- Old Style Mobile -->
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Ekran açıkken ses bildirimleri</string>
     <string name="notification_sound_vib_screen_on_summary">Ekran açıkken bildirimler için ses ve titreşim</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Daha az bildirim alın</string>
+    <string name="less_boring_heads_up_summary">Sadece telefon veya mesajlaşma uygulaması için bildirim pencerelerini göster</string>
     <!-- Heads up -->
     <string name="heads_up_title">Etkinleştir</string>
     <string name="heads_up_summary_enabled">Bildirim pencereleri etkinleştirildi</string>
@@ -385,6 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy ile vurgu rengi (kalın)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy ile vurgu rengi (alt)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy ile vurgu rengi (alt-kalın)</string>
+    <string name="lockscreen_clock_selection_text">Metin</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Kilit ekranı albüm kapağı filtresi</string>
     <string name="lockscreen_cover_filter_none">Hiçbiri</string>

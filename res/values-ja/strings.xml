@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">縦</string>
     <string name="status_bar_battery_style_q">Q スタイル</string>
     <string name="status_bar_battery_style_circle">サークル</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">大きな円</string>
     <string name="status_bar_battery_style_dotted_circle">点線の円</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">大きな点線の円</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">非表示</string>
     <!-- Old Style Mobile -->
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">画面表示を避ける通知</string>
     <string name="notification_sound_vib_screen_on_summary">画面点灯中に通知を受信した時に通知音とバイブを鳴らす</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">迷惑な Heads Up を減らす</string>
+    <string name="less_boring_heads_up_summary">ダイアラーかメッセージアプリのみ Heads Up を表示する</string>
     <!-- Heads up -->
     <string name="heads_up_title">有効</string>
     <string name="heads_up_summary_enabled">Heads Up は有効です</string>
@@ -385,8 +385,9 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">アクセント付きの Sammy (太字)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">アクセント付きの Sammy (代替)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">アクセント付きの Sammy (太字-代替)</string>
+    <string name="lockscreen_clock_selection_text">テキスト</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">ロック画面のアルバムアートフィルタ</string>
+    <string name="lockscreen_cover_filter_title">ロック画面のアルバムアートフィルター</string>
     <string name="lockscreen_cover_filter_none">なし</string>
     <string name="lockscreen_cover_filter_grayscale">グレースケール</string>
     <string name="lockscreen_cover_filter_tint">アクセント色</string>
@@ -399,8 +400,8 @@
     <string name="lockscreen_charging_current_title">充電情報</string>
     <string name="lockscreen_charging_current_summary">ロック画面に接続された充電器の最大電流と最大電圧を表示する</string>
     <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">アンビエントミュージックティッカー</string>
-    <string name="force_ambient_for_media_pref_summary">アンビエントミュージックティッカーを設定する</string>
+    <string name="force_ambient_for_media_pref_title">アンビエント音楽ティッカー</string>
+    <string name="force_ambient_for_media_pref_summary">アンビエント音楽ティッカーを設定する</string>
     <string name="ambient_ticker_footer">アンビエント音楽ティッカーは、アンビエント表示画面内で再生中の楽曲情報を表示します。\n\n新しいトラックが開始された時にアンビエント表示が無効になっていると画面中央に楽曲情報が表示されます。\n\n楽曲情報をダブルタップして曲をスキップすることもできます。\n\nPixel 端末を所有し、システムの音楽設定で Now Playing と通知を有効にすると、アンビエント音楽ティッカーもその中で機能します。</string>
     <string name="force_ambient_for_media_title">有効</string>
     <!-- Media art -->

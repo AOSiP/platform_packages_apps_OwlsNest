@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">纵向</string>
     <string name="status_bar_battery_style_q">Q 样式</string>
     <string name="status_bar_battery_style_circle">环形</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">大圆圈</string>
     <string name="status_bar_battery_style_dotted_circle">虚线圆圈</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">大虚线圆圈</string>
     <string name="status_bar_battery_style_text">文本</string>
     <string name="status_bar_battery_style_hidden">隐藏</string>
     <!-- Old Style Mobile -->
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">若屏幕为开启状态, 发出通知提醒声音和振动</string>
     <string name="notification_sound_vib_screen_on_summary">当屏幕打开时播放声音和振动以进行通知</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">让浮动通知更少地打扰你</string>
+    <string name="less_boring_heads_up_summary">仅显示电话或消息应用程序的浮动通知</string>
     <!-- Heads up -->
     <string name="heads_up_title">启用</string>
     <string name="heads_up_summary_enabled">浮动通知已启用</string>
@@ -385,6 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">三星样式 主题色 (粗体)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">三星样式 主题色 (其它)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">三星样式 主题色 (其它-粗体)</string>
+    <string name="lockscreen_clock_selection_text">Text</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">锁屏专辑艺术滤镜</string>
     <string name="lockscreen_cover_filter_none">均不显示</string>

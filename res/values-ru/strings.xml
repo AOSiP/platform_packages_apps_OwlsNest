@@ -385,6 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">Вертикальные с акцентом (жирные)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">Вертикальные с акцентом (альтернативные)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Вертикальные с акцентом (альтернативные жирные)</string>
+    <string name="lockscreen_clock_selection_text">Text</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Фильтр альбома артов на заблокированном экране</string>
     <string name="lockscreen_cover_filter_none">Ничего</string>

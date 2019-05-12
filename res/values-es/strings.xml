@@ -49,9 +49,9 @@
     <string name="status_bar_clock_summary">Configurar el reloj de la barra de estado y la apariencia de la fecha</string>
     <string name="clock_title_enable">Alineación</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="kronic_logo_title">Logo de Kronic</string>
+    <string name="kronic_logo_summary">Permite que vean que estas usando AOSiP cuando vean tu pantalla</string>
+    <string name="status_bar_logo_style_title">Imagen de logo personalizado</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Deshabilitado</string>
@@ -94,11 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Estilo de la batería</string>
     <string name="status_bar_battery_style_port">Retrato</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Estilo Android Q</string>
     <string name="status_bar_battery_style_circle">Circulo</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Circulo grande</string>
     <string name="status_bar_battery_style_dotted_circle">Círculo punteado</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Círculo grande punteado</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Old Style Mobile -->
@@ -120,17 +120,17 @@
     <string name="show_carrier_enabled"> Pantalla de bloqueo y amp; barra de estado</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Tráfico de red</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Tráfico de datos en pantalla</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar el monitor de tráfico cuando no haya actividad</string>
     <string name="network_traffic_autohide_threshold_title">Ocultar el tráfico de red cuando sea menor de (KB/s)</string>
     <string name="network_traffic_hidearrow">Ocultar las flechas</string>
     <string name="network_traffic_hidearrow_summary">Ocultar las flechas del tráfico de la red</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">Mostrar velocidad de carga y descarga</string>
+    <string name="network_traffic_location_title">Posición del indicador de tráfico</string>
+    <string name="network_traffic_location_summary">Selecciona donde mostrar el indicador, si en la barra de estado o solo arriba de los ajustes rápidos (recomendado para pantallas con recorte de notch)</string>
+    <string name="network_traffic_statusbar">Barra de estado</string>
+    <string name="network_traffic_header">Escritorio expandido</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Permitir ajustar la luminosidad de la pantalla mediante el deslizamiento por la barra de estado</string>
@@ -140,8 +140,8 @@
     <string name="notification_category">Notificaciones</string>
     <string name="headsup_category">Notificaciones flotantes</string>
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+    <string name="notification_guts_kill_app_button_title">Botón para cerrar la aplicación</string>
+    <string name="notification_guts_kill_app_button_summary">Muestra un botón para forzar la detención de la aplicación cuando mantienes presionada la notificación</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Icono en las notificaciones Toast</string>
     <string name="toast_icon_summary">Muestra el icono de la aplicación que ha emitido una notificación Toast</string>
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Notificaciones sonoras con la pantalla encendida</string>
     <string name="notification_sound_vib_screen_on_summary">Las notificaciones suenan y vibran cuando la pantalla está encendida</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Minimizar las notificaciones flotantes</string>
+    <string name="less_boring_heads_up_summary">Muestra notificaciones flotantes solo para llamadas y mensajes</string>
     <!-- Heads up -->
     <string name="heads_up_title">Activar</string>
     <string name="heads_up_summary_enabled">Notificaciones flotantes activadas</string>
@@ -292,8 +292,8 @@
     <string name="volume_rocker_music_controls_title">Control de reproducción</string>
     <string name="volume_rocker_music_controls_summary">Cuando la pantalla está apagada, al presionar prolongadamente las teclas de volumen buscarán pistas de música</string>
     <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
-    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
+    <string name="volume_keys_control_ring_tone_title">Control del volumen del tono de llamada</string>
+    <string name="volume_keys_control_ring_tone_summary">Los botones de volumen controlan la multimedia por defecto. Activalo para controlar el volumen de tono de llamada.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Responder con las teclas de volumen</string>
     <string name="volume_answer_call_summary">Responder a la llamada cuando se presionen las teclas de volumen</string>
@@ -310,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recientes</string>
     <string name="recent_summary">Configurar qué estilo y opciones recientes</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Opciones para recientes estilo Oreo</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Paquete de Iconos</string>
     <string name="recents_icon_pack_summary">Aplicar un paquete de iconos personalizado para la multitarea</string>
@@ -359,14 +359,14 @@
     <string name="lock_screen_shortcuts_title">Accesos directos</string>
     <string name="lock_screen_shortcuts_summary">Edita los accesos directos de la pantalla de bloqueo</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Visualizador musical</string>
+    <string name="lockscreen_visualizer_title">Activar visualizador en pantalla de bloqueo</string>
+    <string name="lockscreen_visualizer_summary">Mostrar visualizador cuando la música se está reproduciendo</string>
+    <string name="lockscreen_visualizer_enable_custom">Usar color personalizado</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Usa un color predeterminado en lugar del color generado</string>
+    <string name="lockscreen_visualizer_custom_color">Color del visualizador</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
+    <string name="ambient_visualizer_title">Visualizador musical ambiental</string>
     <string name="ambient_visualizer_summary">Muestra las barras de visualización en la pantalla ambiente (pero menos opacas)</string>
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Widget del reloj</string>
@@ -381,17 +381,18 @@
     <string name="lockscreen_clock_selection_du">Analógico (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrita)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy con color principal</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy con color principal (en negrita)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy con color principal (solo min.)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy con color principal (hrs. en negrita)</string>
+    <string name="lockscreen_clock_selection_text">Texto</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_title">Filtro de pantalla de bloqueo para las imagenes de albúm músical</string>
+    <string name="lockscreen_cover_filter_none">Ninguno</string>
+    <string name="lockscreen_cover_filter_grayscale">Escala de grises</string>
+    <string name="lockscreen_cover_filter_tint">Teñido con el color principal</string>
+    <string name="lockscreen_cover_filter_blur">Difuminado</string>
+    <string name="lockscreen_cover_filter_grayblur">Escala de grises y desenfocado</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueo automático de cara</string>
     <string name="face_auto_unlock_summary">Descartar pantalla de bloqueo después de desbloquear la cara</string>

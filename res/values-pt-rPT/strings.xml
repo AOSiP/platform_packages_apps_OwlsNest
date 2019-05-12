@@ -49,9 +49,9 @@
     <string name="status_bar_clock_summary">Configurar a aparência de relógio e data na barra de estado</string>
     <string name="clock_title_enable">Alinhamento</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="kronic_logo_title">Logo Kronic</string>
+    <string name="kronic_logo_summary">Deixa que todos saibam que estás a usar AOSiP quando olham para o teu ecrã</string>
+    <string name="status_bar_logo_style_title">Imagem do logótipo personalizada</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Ligado</string>
     <string name="clock_disabled">Desligado</string>
@@ -82,9 +82,9 @@
     <string name="clock_date_style_lowercase">Minúsculas</string>
     <string name="clock_date_style_uppercase">Maiúsculas</string>
     <string name="clock_date_format_custom">Formato Java personalizado</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">À direita do relógio</string>
+    <string name="clock_date_left">À esquerda do relógio</string>
+    <string name="clock_date_position">Posição da data</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Ícone da bateria</string>
     <string name="status_bar_battery_percentage_title">Percentagem da bateria</string>
@@ -94,11 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Estilo da bateria</string>
     <string name="status_bar_battery_style_port">Retrato</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Estilo Q</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Círculo grande</string>
     <string name="status_bar_battery_style_dotted_circle">Círculo com pontos</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Círculo pontilhado grande</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Old Style Mobile -->
@@ -120,17 +120,17 @@
     <string name="show_carrier_enabled">Ecrã de bloqueio &amp; barra de estado</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Tráfego de rede</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Exibição de tráfego de rede</string>
     <string name="network_traffic_autohide">Auto ocultar</string>
     <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfego quando não houver atividade</string>
     <string name="network_traffic_autohide_threshold_title">Limite para ocultar automaticamente a atividade de rede (KB/s)</string>
     <string name="network_traffic_hidearrow">Esconder setas</string>
     <string name="network_traffic_hidearrow_summary">Esconde as setas do indicador de tráfego</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">Mostrar a velocidade do upload &amp; e download</string>
+    <string name="network_traffic_location_title">Posição do indicador de tráfego</string>
+    <string name="network_traffic_location_summary">Colocar o indicador na barra de status ou no cabeçalho expandido (recomendado para exibições com recortes de entalhe)</string>
+    <string name="network_traffic_statusbar">Barra de estado</string>
+    <string name="network_traffic_header">Modo expandido</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Controlo de brilho</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar o brilho ao deslizar através da barra de estado</string>
@@ -140,8 +140,8 @@
     <string name="notification_category">Notificações</string>
     <string name="headsup_category">Notificações flutuantes</string>
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+    <string name="notification_guts_kill_app_button_title">Botão de terminar aplicação</string>
+    <string name="notification_guts_kill_app_button_summary">Mostrar um botão para terminar a aplicação no menu de pressão longa da notificação</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Ícone na notificação toast</string>
     <string name="toast_icon_summary">Mostrar o ícone da aplicação correspondente na notificação toast</string>
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Notificações com som se o ecrã estiver ligado</string>
     <string name="notification_sound_vib_screen_on_summary">Tocar som e vibrar para notificações quando o ecrã estiver ligado</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Tornar as notificações flutuantes menos chatas</string>
+    <string name="less_boring_heads_up_summary">Mostrar notificações head-up apenas para o telefone e mensagens</string>
     <!-- Heads up -->
     <string name="heads_up_title">Ativar</string>
     <string name="heads_up_summary_enabled">Notificações pop-up estão ativadas</string>
@@ -172,11 +172,11 @@
     <string name="heads_up_snooze_10min">10 minutos</string>
     <string name="heads_up_snooze_15min">15 minutos</string>
     <string name="heads_up_snooze_20min">20 minutos</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="add_heads_up_package">Adicionar aplicação</string>
+    <string name="add_heads_up_stoplist_summary">Desativar as notificações flutuantes nestas aplicações</string>
+    <string name="add_heads_up_blacklist_summary">Desativar as notificações flutuantes para estas aplicações</string>
+    <string name="heads_up_stoplist_title">Lista de paragem</string>
+    <string name="heads_up_blacklist_title">Lista negra</string>
     <!-- Battery light -->
     <string name="battery_light_settings">LED da bateria</string>
     <string name="battery_light_enable">Ativar</string>
@@ -194,7 +194,7 @@
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Botão de brilho adaptável</string>
     <string name="tuner_auto_brightness_right">Posição direita para o botão do brilho adaptivo</string>
-    <string name="tuner_show_brightness_buttons">Butões de controlo de brilho</string>
+    <string name="tuner_show_brightness_buttons">Botões de controlo de brilho</string>
     <string name="qs_show_brightness_title">Controle de brilho</string>
     <string name="qs_show_brightness_summary">Opção para mostrar e esconder a barra de brilho nos qs</string>
     <string name="brightness_slider_bottom_title">Barra de brilho em baixo</string>
@@ -202,21 +202,21 @@
     <string name="show_secure_title">Mostrar rodapé de segurança</string>
     <string name="show_info_header_title">Mostrar cabeçalho de informação</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_always">Always</string>
+    <string name="quick_pulldown_title">Abertura rápida</string>
+    <string name="quick_pulldown_summary">O %1$s da barra de estado faz baixar o painel de definições rápidas</string>
+    <string name="quick_pulldown_summary_always">Mostrar sempre as definições rápidas no pulldown da barra de estado</string>
+    <string name="quick_pulldown_off">Desativada</string>
+    <string name="quick_pulldown_left">Esquerda</string>
+    <string name="quick_pulldown_right">Direita</string>
+    <string name="quick_pulldown_always">Sempre</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">Abertura inteligente</string>
+    <string name="smart_pulldown_summary">Abrir o painel de definições rápidas quando estiver %1$s</string>
+    <string name="smart_pulldown_none_summary">Abrir o painel de definições rápidas quando não houver notificações</string>
+    <string name="smart_pulldown_off">Desligado</string>
+    <string name="smart_pulldown_none">sem notificações</string>
+    <string name="smart_pulldown_dismissable">c/ notif. não descartáveis</string>
+    <string name="smart_pulldown_ongoing">s/ notif. em curso</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animações</string>
     <string name="qs_tile_animation_style_title">Estilo da animação</string>
@@ -260,15 +260,15 @@
     <string name="hardware_keys_category">Navegação</string>
     <string name="hardware_keys_disable_title">Desactivar os botões de navegação</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">Luz de fundo</string>
+    <string name="button_backlight_options_category">Opções das luzes de fundo</string>
+    <string name="button_backlight_enable_title">Permitir luz de fundo dos botões</string>
+    <string name="button_link_brightness">Associar ao brilho do ecrã</string>
+    <string name="button_link_brightness_summary">O brilho da luz dos botões irá ajustar-se com base no nível de brilho do ecrã</string>
+    <string name="button_manual_brightness">Nível de brilho</string>
+    <string name="button_timeout_title">Tempo limite da luz de fundo</string>
+    <string name="button_backlight_on_touch_only_title">Luz de fundo dos botões ao tocar</string>
+    <string name="button_backlight_on_touch_only_summary">A luz de fundo dos botões irá ligar-se apenas quando os botões forem pressionados em vez de estar sempre ligada. Porém, o tempo limite continuará a ser utilizado.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Botões físicos</string>
     <string name="buttons_summary">Modificar as ações dos butões físicos do seu dispositivo</string>
@@ -292,16 +292,16 @@
     <string name="volume_rocker_music_controls_title">Controlo de reprodução</string>
     <string name="volume_rocker_music_controls_summary">Quando o ecrã estiver desligado, um toque longo nos botões de volume irá alternar as faixas</string>
     <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
-    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
+    <string name="volume_keys_control_ring_tone_title">Controlar o volume do toque</string>
+    <string name="volume_keys_control_ring_tone_summary">Teclas controlam o controle deslizante da média por padrão. Ativar para alternar para o controle deslizante de toque.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Tecla de volume para responder</string>
     <string name="volume_answer_call_summary">Atender a chamada quando pressionado as teclas de volume</string>
     <!-- Cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Controlar o cursor com as teclas de volume</string>
+    <string name="volume_key_cursor_control_off">Desativado</string>
+    <string name="volume_key_cursor_control_on">Volume para cima/baixo move o cursor para a esquerda/direita</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume para cima/baixo move o cursor para a direita/esquerda</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animação ao desligar o ecrã</string>
     <string name="screen_off_animation_fade">Desvanecer</string>
@@ -310,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recentes</string>
     <string name="recent_summary">Configurar o estilo de recentes e opções</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Opções de recentes do Oreo</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Pacote de ícones</string>
     <string name="recents_icon_pack_summary">Aplicar um pacote de ícones personalizado para o painel de recentes</string>
@@ -335,13 +335,13 @@
     <string name="aosp_gesture_title">Gestos AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+    <string name="active_edge_summary">Uma versão avançada do recurso de apertar do Pixel</string>
+    <string name="active_edge_actions_title">Ação do aperto</string>
+    <string name="active_edge_long_squeeze_actions_title">Ação longa de apertar</string>
+    <string name="active_edge_sensitivity_title">Sensibilidade do aperto</string>
+    <string name="active_edge_wake_title">Permitir quando o ecrã está desligado</string>
+    <string name="active_edge_wake_summary">Acionar uma ação quando o ecrã está desligado</string>
+    <string name="active_edge_footer_info">Nem todas as ações de compactação no Active Edge têm a capacidade de ativar a exibição</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gesto de três dedos</string>
     <string name="three_finger_gesture_summary">Deslizar três dedos para fazer capturas de ecrã</string>
@@ -355,44 +355,45 @@
     <string name="lockscreen_title">Ecrã de bloqueio</string>
     <string name="lockscreen_summary">Customizar layout do ecrã de bloqueio e opções</string>
     <string name="secure_lockscreen">Opções de segurança do ecrã de bloqueio</string>
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">Desativar as configurações rápidas quando bloqueado</string>
+    <string name="lockscreen_qs_disabled_summary">Impedir expandir as configurações rápidas em ecrã de bloqueio</string>
     <string name="lock_screen_shortcuts_title">Atalhos do ecrã de bloqueio</string>
     <string name="lock_screen_shortcuts_summary">Gerir os atalhos inferiores do ecrã de bloqueio</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Visualizador</string>
+    <string name="lockscreen_visualizer_title">Ativar o visualizador do ecrã de bloqueio</string>
+    <string name="lockscreen_visualizer_summary">Mostrar o visualizador no ecrã de bloqueio quando a música estiver a tocar</string>
+    <string name="lockscreen_visualizer_enable_custom">Usar a cor de texto personalizada</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Usar uma cor predefinida em vez da cor gerada</string>
+    <string name="lockscreen_visualizer_custom_color">Cor do visualizador</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
-    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+    <string name="ambient_visualizer_title">Visualizador do Ambient Music</string>
+    <string name="ambient_visualizer_summary">Mostrar também as barras de visualização no Ambient Display (mas menos opaco)</string>
     <!-- Lockscreen items -->
-    <string name="lockscreen_clock_title">Clock widget</string>
-    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
-    <string name="lockscreen_info_title">Items underneath the clock</string>
-    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <string name="lockscreen_clock_title">Widget de relógio</string>
+    <string name="lockscreen_clock_summary">Mostrar o widget do relógio no ecrã de bloqueio</string>
+    <string name="lockscreen_info_title">Itens debaixo do relógio</string>
+    <string name="lockscreen_info_summary">Mostrar a data, meteorologia, alarmes e Zen no ecrã de bloqueio</string>
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_title">Clock style</string>
-    <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-    <string name="lockscreen_clock_selection_analog">Analog</string>
-    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_title">Estilo do relógio</string>
+    <string name="lockscreen_clock_selection_digital">Predefinido</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (negrito)</string>
+    <string name="lockscreen_clock_selection_analog">Analógico</string>
+    <string name="lockscreen_clock_selection_du">Analógico (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
-    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (negrito)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy com acento</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy com acento (negrito)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy com acento (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy com acento (alt/negrito)</string>
+    <string name="lockscreen_clock_selection_text">Texto</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_title">Filtro da arte do álbum no ecrã de bloqueio</string>
+    <string name="lockscreen_cover_filter_none">Nenhum</string>
+    <string name="lockscreen_cover_filter_grayscale">Tons de cinza</string>
+    <string name="lockscreen_cover_filter_tint">Tom da cor de destaque</string>
+    <string name="lockscreen_cover_filter_blur">Desfocado</string>
+    <string name="lockscreen_cover_filter_grayblur">Tons de cinza e desfocado</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Dispensar o ecrã de bloqueio depois do desbloqueio facial</string>
@@ -400,9 +401,9 @@
     <string name="lockscreen_charging_current_title">Informações de carregamento</string>
     <string name="lockscreen_charging_current_summary">Mostra a tensão e a corrente máxima do carregador no ecrã de bloqueio</string>
     <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
+    <string name="force_ambient_for_media_pref_title">Notificação de música ambiente</string>
     <string name="force_ambient_for_media_pref_summary">Configurar o ícone de música ambiente</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="ambient_ticker_footer">O ícone de música ambiente mostra a reprodução de informações de faixa de música na tela de exibição Ambient. \ N \ nÉ acionado também se a Exibição de Ambiente for desativada quando uma nova faixa for iniciada, forçando uma tela ambiente limpa com informações de faixa no meio da tela. \ N \ nVocê também pode tocar duas vezes nas informações da faixa para pular a faixa. \ n \ nSe você possui um Pixel e ativa o recurso Now Playing e sua notificação nas configurações do sistema de áudio, o Ambient Music Ticker também funcionará dentro dele.</string>
     <string name="force_ambient_for_media_title">Ativar</string>
     <!-- Media art -->
     <string name="media_art_title">Capa da multimédia</string>
@@ -426,14 +427,14 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Sobreposição no ecrã com informação atual do CPU</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Call Notification Options</string>
-    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-    <string name="flashlight_on_call_always">Always blink flashlight</string>
+    <string name="call_notifications_cat">Opções de notificação de chamadas</string>
+    <string name="flashlight_on_call_title">Piscar lanterna durante chamada</string>
+    <string name="flashlight_on_call_disabled">Desativado</string>
+    <string name="flashlight_on_call_not_dnd">Piscar a lanterna somente no modo Não Incomodar</string>
+    <string name="flashlight_on_call_dnd">Pisca lanterna somente no modo Não Incomodar</string>
+    <string name="flashlight_on_call_always">Piscar sempre a lanterna</string>
     <!-- AOSP Recents component Style -->
-    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_component_type_title">Estilo das aplicações recentes</string>
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
@@ -460,8 +461,8 @@
     <string name="smart_pixels_percent">Percentagem de píxeis a desativar</string>
     <string name="smart_pixels_shift_title">Protção da retenção de imagem</string>
     <string name="smart_pixels_shift_summary">Impede a retenção de imagem em dispositivos OLED, deslocando pixels de vez em quando</string>
-    <string name="profile_choose_app">Choose app</string>
-    <string name="dialog_delete_title">Delete</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="profile_choose_app">Escolher aplicação</string>
+    <string name="dialog_delete_title">Eliminar</string>
+    <string name="dialog_delete_message">Remover o item selecionado?</string>
     <string name="app_ops_settings_summary">Gerir permissões das aplicações</string>
 </resources>

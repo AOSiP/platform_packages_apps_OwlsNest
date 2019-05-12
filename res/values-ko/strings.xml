@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">세로</string>
     <string name="status_bar_battery_style_q">Q 스타일</string>
     <string name="status_bar_battery_style_circle">원 아이콘</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">큰 원</string>
     <string name="status_bar_battery_style_dotted_circle">점선 원</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">점선 원</string>
     <string name="status_bar_battery_style_text">텍스트</string>
     <string name="status_bar_battery_style_hidden">아이콘 숨김</string>
     <!-- Old Style Mobile -->
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">화면이 켜졌을 때 시끄러운 알림</string>
     <string name="notification_sound_vib_screen_on_summary">화면이 켜져있을 때 소리 및 진동 알림을 재생합니다.</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">헤드업 알림 빈도 줄이기</string>
+    <string name="less_boring_heads_up_summary">전화나 메시지 앱 에서만 헤드업 알림 사용</string>
     <!-- Heads up -->
     <string name="heads_up_title">활성화</string>
     <string name="heads_up_summary_enabled">헤드업 알림이 활성화 되었습니다</string>
@@ -385,6 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">엑센트 Sammy (굵게)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">엑센트 Sammy (다른)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">엑센트 Sammy (다른-굵게)</string>
+    <string name="lockscreen_clock_selection_text">텍스트</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">잠금화면 앨범 아트 필터</string>
     <string name="lockscreen_cover_filter_none">없음</string>

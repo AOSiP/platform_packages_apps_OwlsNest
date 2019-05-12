@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">Álló</string>
     <string name="status_bar_battery_style_q">Q stílus</string>
     <string name="status_bar_battery_style_circle">Kör</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Nagy kör</string>
     <string name="status_bar_battery_style_dotted_circle">Pontozott kör</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Nagy pontozott kör</string>
     <string name="status_bar_battery_style_text">Szöveg</string>
     <string name="status_bar_battery_style_hidden">Rejtett</string>
     <!-- Old Style Mobile -->
@@ -128,7 +128,7 @@
     <string name="network_traffic_hidearrow_summary">Hálózati forgalmat jelző nyilak elrejtése</string>
     <string name="network_traffic_state_summary">Mutassa a feltöltés &amp; letöltés hálózat sebességét</string>
     <string name="network_traffic_location_title">Forgalom kijelző helye</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
+    <string name="network_traffic_location_summary">Helyezze el a kijelzőt akár az állapotsorra, akár a \"kiterjesztett fejlécre\" (ajánlott olyan eszközökre, melyek notch-al rendelkeznek)</string>
     <string name="network_traffic_statusbar">Állapotsáv</string>
     <string name="network_traffic_header">Kiterjesztett mód</string>
     <!-- Brightness control -->
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Hangosabb értesítések bekapcsolt képernyőnél</string>
     <string name="notification_sound_vib_screen_on_summary">Értesítésjelzés hanggal és rezgéssel, ha a képernyő be van kapcsolva</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Kevésbé zavaró lebegő értesítések</string>
+    <string name="less_boring_heads_up_summary">Csak a hívásnál vagy az üzenet alkalmazásnál mutasson lebegő értesítéseket</string>
     <!-- Heads up -->
     <string name="heads_up_title">Engedélyezés</string>
     <string name="heads_up_summary_enabled">A Lebegő értesítések engedélyezve vannak</string>
@@ -385,8 +385,9 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy kiemeléssel (félkövér)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy kiemeléssel (alternatív)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy kiemeléssel (alternatív-félkövér)</string>
+    <string name="lockscreen_clock_selection_text">Szöveg</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_title">Művészeti záróképernyő-album</string>
     <string name="lockscreen_cover_filter_none">Nincs</string>
     <string name="lockscreen_cover_filter_grayscale">Szürkeárnyalatos</string>
     <string name="lockscreen_cover_filter_tint">Kiemelőszínhez igazodó</string>

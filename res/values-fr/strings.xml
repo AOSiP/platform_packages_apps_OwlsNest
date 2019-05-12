@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">Portrait</string>
     <string name="status_bar_battery_style_q">Style Q</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Grand cercle</string>
     <string name="status_bar_battery_style_dotted_circle">Cercle pointillé</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Grand cercle pointillé</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Masqué</string>
     <!-- Old Style Mobile -->
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Notification sonore si écran actif</string>
     <string name="notification_sound_vib_screen_on_summary">Jouer un son avec vibrations pour les notifications lorsque l\'écran est allumé</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Faire les messages flottants moins dérangeants</string>
+    <string name="less_boring_heads_up_summary">Montrer les messages flottants uniquement pour les appels ou les messages</string>
     <!-- Heads up -->
     <string name="heads_up_title">Activer</string>
     <string name="heads_up_summary_enabled">Notifications flottantes activées</string>
@@ -385,6 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy avec accent (gras)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy avec accent (alternatif)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy avec accent (alternatif-gras)</string>
+    <string name="lockscreen_clock_selection_text">Texte</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtre de pochette d\'album sue l\'écran de verrouillage</string>
     <string name="lockscreen_cover_filter_none">Aucun</string>
