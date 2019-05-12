@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">Hochformat</string>
     <string name="status_bar_battery_style_q">Q Stil</string>
     <string name="status_bar_battery_style_circle">Kreis</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Großer Kreis</string>
     <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Großer gepunkteter Kreis</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
     <!-- Old Style Mobile -->
@@ -140,7 +140,7 @@
     <string name="notification_category">Benachrichtigungen</string>
     <string name="headsup_category">Heads-Up</string>
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">\"Alle beenden\" - Taste</string>
+    <string name="notification_guts_kill_app_button_title">\"App beenden\" - Taste</string>
     <string name="notification_guts_kill_app_button_summary">Eine \"App beenden\"-Taste anzeigen, wenn eine Benachrichtigung lange gedrückt wird</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast-Symbol</string>
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Benachrichtigungen bei eingeschaltetem Bildschirm</string>
     <string name="notification_sound_vib_screen_on_summary">Wiedergabe von Ton und Vibration für Benachrichtigungen bei aktiviertem Bildschirm</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Mache Heads-Up weniger störend</string>
+    <string name="less_boring_heads_up_summary">Zeige Heads-Up Benachrichtigungen nur für Telefon- oder Messaging-App</string>
     <!-- Heads up -->
     <string name="heads_up_title">Aktiviert</string>
     <string name="heads_up_summary_enabled">Heads-Up-Benachrichtigungen aktiviert</string>
@@ -385,6 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy mit Akzent (fett)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy mit Akzent (alt)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy mit Akzent (alt-fett)</string>
+    <string name="lockscreen_clock_selection_text">Text</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Sperrbildschirm Albumcover Filter</string>
     <string name="lockscreen_cover_filter_none">Keine</string>

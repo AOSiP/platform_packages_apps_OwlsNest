@@ -96,9 +96,9 @@
     <string name="status_bar_battery_style_port">رأسي</string>
     <string name="status_bar_battery_style_q">نمط Q</string>
     <string name="status_bar_battery_style_circle">دائرة</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">دائرة كبيرة</string>
     <string name="status_bar_battery_style_dotted_circle">دائرة منقطة</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">دائرة منقطة كبيرة</string>
     <string name="status_bar_battery_style_text">نص</string>
     <string name="status_bar_battery_style_hidden">مخفية</string>
     <!-- Old Style Mobile -->
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">إشعارات صاخبة اذا كانت الشاشة قيد التشغيل</string>
     <string name="notification_sound_vib_screen_on_summary">تشغيل الصوت والاهتزاز للإشعارات عند تشغيل الشاشة</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">جعل التنبيهات العلوية اقل أزعاجاً</string>
+    <string name="less_boring_heads_up_summary">إظهار التبيهات العلوية فقط لتطبيق الهاتف أو المراسلة</string>
     <!-- Heads up -->
     <string name="heads_up_title">تفعيل</string>
     <string name="heads_up_summary_enabled">الإشعارات العائمة مفعلة</string>
@@ -386,6 +386,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">سامي مع اللكنة (عريض)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">سامي مع اللكنة (بديل)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">سامي مع اللكنة (عريض- بديل)</string>
+    <string name="lockscreen_clock_selection_text">النص</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">فلتر غطاء الألبوم لشاشة القفل</string>
     <string name="lockscreen_cover_filter_none">لا شيء</string>

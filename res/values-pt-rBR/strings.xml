@@ -385,6 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
+    <string name="lockscreen_clock_selection_text">Text</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtro da capa do álbum na tela de bloqueio</string>
     <string name="lockscreen_cover_filter_none">Nenhum</string>
