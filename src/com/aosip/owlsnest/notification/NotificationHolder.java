@@ -82,9 +82,11 @@ public class NotificationHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new AmbientTicker();
-            frags[1] = new BatteryLightSettings();
-            frags[2] = new HeadsUpCategory();
-            frags[3] = new NotificationCategory();
+            frags[1] = new HeadsUpCategory();
+            frags[2] = new NotificationCategory();
+            try {
+                frags[3] = new BatteryLightSettings();
+            } catch (IndexOutOfBoundsException ignored) {/* Do nothing */}
         }
 
         @Override
@@ -104,12 +106,18 @@ public class NotificationHolder extends SettingsPreferenceFragment {
     }
 
     private String[] getTitles() {
-        String titleString[];
-        titleString = new String[]{
-                    getString(R.string.force_ambient_for_media_pref_title),
-                    getString(R.string.battery_light_settings),
-                    getString(R.string.headsup_category),
-                    getString(R.string.notification_category)};
-        return titleString;
+        boolean hasAnLED = getResources().getBoolean(com.aosip.owlsnest.R.bool.config_deviceHasLED);
+        if (hasAnLED) {
+            return new String[]{
+                getString(R.string.force_ambient_for_media_pref_title),
+                getString(R.string.headsup_category),
+                getString(R.string.notification_category),
+                getString(R.string.battery_light_settings)};
+        } else {
+            return new String[]{
+                getString(R.string.force_ambient_for_media_pref_title),
+                getString(R.string.headsup_category),
+                getString(R.string.notification_category)};
+        }
     }
 }
