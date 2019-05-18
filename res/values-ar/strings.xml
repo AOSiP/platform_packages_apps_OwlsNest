@@ -278,8 +278,8 @@
     <string name="powermenu_reboot_title">إعادة التشغيل</string>
     <string name="powermenu_reboot_summary">تمكين أو تعطيل زر إعادة تشغيل النظام العادي</string>
     <string name="powermenu_advanced_reboot_title">إعادة تشغيل متقدمة</string>
-    <string name="powermenu_advanced_reboot_summary">تمكين قائمة إعادة التشغيل المتقدمة تتيح خيارات إعادة التشغيل إلى وضع الإسترداد و محمل التمهيد و إعادة تشغيل واجهة النظام
-أو إعادة التشغيل السريع</string>
+    <string name="powermenu_advanced_reboot_summary">"تمكين قائمة إعادة التشغيل المتقدمة تتيح خيارات إعادة التشغيل إلى وضع الإسترداد و محمل التمهيد و إعادة تشغيل واجهة النظام
+أو إعادة التشغيل السريع"</string>
     <string name="powermenu_screenshot_title">لقطة الشاشة</string>
     <string name="powermenu_screenshot_summary">عرض زر في قائمة التشغيل لإلتقاط لقطات الشاشة</string>
     <string name="powermenu_airplane_title">وضع الطائرة</string>

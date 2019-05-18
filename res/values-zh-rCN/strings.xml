@@ -385,7 +385,7 @@
     <string name="lockscreen_clock_selection_sammy_accent_bold">三星样式 主题色 (粗体)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt">三星样式 主题色 (其它)</string>
     <string name="lockscreen_clock_selection_sammy_accent_alt_bold">三星样式 主题色 (其它-粗体)</string>
-    <string name="lockscreen_clock_selection_text">Text</string>
+    <string name="lockscreen_clock_selection_text">文本</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">锁屏专辑艺术滤镜</string>
     <string name="lockscreen_cover_filter_none">均不显示</string>

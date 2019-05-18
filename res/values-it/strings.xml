@@ -70,7 +70,7 @@
     <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'orologio</string>
     <string name="clock_date_style">Stile della data</string>
     <string name="clock_date_format">Formato della data</string>
-    <string name="clock_date_string_edittext_title">Deve essere in formato data es. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_title">Deve essere un formato DateFormat valido es. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Inserisci stringa</string>
     <string name="am_pm_clock_normal">Dimensione del carattere normale</string>
     <string name="am_pm_clock_small">Dimensione del carattere piccolo</string>
@@ -126,7 +126,7 @@
     <string name="network_traffic_autohide_threshold_title">Nascondi l\'attività di rete sotto (KB/s)</string>
     <string name="network_traffic_hidearrow">Nascondi frecce</string>
     <string name="network_traffic_hidearrow_summary">Nascondi frecce dell\'attività di rete</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
+    <string name="network_traffic_state_summary">Mostra la velocità di upload e download della rete</string>
     <string name="network_traffic_location_title">Posizione dell\'indicatore di traffico</string>
     <string name="network_traffic_location_summary">Posiziona l\'indicatore nella barra di stato o in un\'intestazione espansa (consigliato per i display con tacca)</string>
     <string name="network_traffic_statusbar">Barra di stato</string>
@@ -150,7 +150,7 @@
     <string name="notification_sound_vib_screen_on_summary">Riproduci suono e vibrazione per notifiche a schermo accesso</string>
     <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Rendi le notifiche a comparsa meno invasive</string>
-    <string name="less_boring_heads_up_summary">Mostra le notifiche a comparsa solo per il telefono o per l\' app messaggi</string>
+    <string name="less_boring_heads_up_summary">Mostra le notifiche a comparsa solo per il telefono o l\'app di messaggistica</string>
     <!-- Heads up -->
     <string name="heads_up_title">Attiva</string>
     <string name="heads_up_summary_enabled">Notifiche Heads-Up attive</string>

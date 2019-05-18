@@ -51,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Logo Kronic</string>
     <string name="kronic_logo_summary">Cho mọi người thấy rằng bạn đang dùng AOSiP :)</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">Logo tùy chỉnh</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Bật</string>
     <string name="clock_disabled">Tắt</string>
@@ -94,11 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Kiểu biểu tượng pin</string>
     <string name="status_bar_battery_style_port">Biểu tượng dọc</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Android Q</string>
     <string name="status_bar_battery_style_circle">Vòng tròn</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Vòng tròn lớn</string>
     <string name="status_bar_battery_style_dotted_circle">Vòng tròng chấm</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Vòng tròn đứt nét lớn</string>
     <string name="status_bar_battery_style_text">Văn bản</string>
     <string name="status_bar_battery_style_hidden">Ẩn</string>
     <!-- Old Style Mobile -->
@@ -120,17 +120,17 @@
     <string name="show_carrier_enabled">Màn hình khoá &amp; thanh trạng thái</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Tốc độ mạng</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Hiển thị tốc độ mạng</string>
     <string name="network_traffic_autohide">Tự động ẩn</string>
     <string name="network_traffic_autohide_summary">Ẩn tốc độ mạng khi không có hoạt động mạng</string>
     <string name="network_traffic_autohide_threshold_title">Ngưỡng tự động ẩn tốc độ mạng (KB/s)</string>
     <string name="network_traffic_hidearrow">Ẩn mũi tên</string>
     <string name="network_traffic_hidearrow_summary">Ẩn mũi tên bên cạnh tốc độ mạng</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">Hiển thị tốc độ tải lên &amp; tải xuống</string>
+    <string name="network_traffic_location_title">Nơi hiển thị tốc độ mạng</string>
+    <string name="network_traffic_location_summary">Hiển thị tốc độ mạng trên thanh trạng thái hoặc thanh tiêu đề cài đặt nhanh (thích hợp đối với màn hình tai thỏ, giọt nước,…)</string>
+    <string name="network_traffic_statusbar">Thanh trạng thái</string>
+    <string name="network_traffic_header">Thanh tiêu đề cài đặt nhanh</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Điều chỉnh độ sáng</string>
     <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt ngang trên thanh trạng thái</string>
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Âm thanh thông báo khi màn hình bật</string>
     <string name="notification_sound_vib_screen_on_summary">Phát âm thanh và rung khi có thông báo khi màn hình đang bật</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Làm cho thông báo nổi bớt khó chịu</string>
+    <string name="less_boring_heads_up_summary">Chỉ hiển thị thông báo nổi đối với cuộc gọi và tin nhắn</string>
     <!-- Heads up -->
     <string name="heads_up_title">Bật</string>
     <string name="heads_up_summary_enabled">Thông báo nổi đã được bật</string>
@@ -310,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Màn hình Đa nhiệm</string>
     <string name="recent_summary">Tùy chỉnh màn hình đa nhiệm</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Tùy chọn Đa nhiệm Oreo</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Gói biểu tượng</string>
     <string name="recents_icon_pack_summary">Áp dụng gói biểu tượng cho Màn hình Đa nhiệm</string>
@@ -381,18 +381,18 @@
     <string name="lockscreen_clock_selection_du">Đồng hồ kim (DU)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (đậm)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
-    <string name="lockscreen_clock_selection_text">Text</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy (màu chủ đề)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy in đậm (màu chủ đề)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy khác (màu chủ đề)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy in đậm khác (màu chủ đề)</string>
+    <string name="lockscreen_clock_selection_text">Văn bản</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Bộ lọc ảnh bìa âm nhạc màn hình khoá</string>
     <string name="lockscreen_cover_filter_none">Không có</string>
     <string name="lockscreen_cover_filter_grayscale">Trắng đen</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_tint">Đồng bộ màu chủ đề</string>
     <string name="lockscreen_cover_filter_blur">Mờ nền</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayblur">Trắng đen và làm mờ</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Tự động mở khoá khuôn mặt</string>
     <string name="face_auto_unlock_summary">Bỏ qua màn hình khoá khi khuôn mặt được nhận dạng</string>
@@ -438,9 +438,9 @@
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
     <string name="theme_category_title">Chủ đề</string>
-    <string name="accent_picker_dialog_title">Chọn màu nhấn</string>
-    <string name="theme_accent_picker_title">Màu nhấn</string>
-    <string name="theme_accent_picker_summary">Chọn màu nhấn cho hệ thống</string>
+    <string name="accent_picker_dialog_title">Chọn màu chủ đề</string>
+    <string name="theme_accent_picker_title">Màu chủ đề</string>
+    <string name="theme_accent_picker_summary">Chọn màu chủ đề cho hệ thống</string>
     <string name="theme_accent_picker_default">Mặc định</string>
     <string name="accent_picker_material_colors">Bảng màu Material</string>
     <string name="accent_picker_custom_colors">Được người dùng yêu cầu</string>

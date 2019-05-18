@@ -213,7 +213,7 @@
     <string name="smart_pulldown_title">Intelligens legördítés</string>
     <string name="smart_pulldown_summary">Gyorsbeállítások megnyitása, ha %1$s értesítés</string>
     <string name="smart_pulldown_none_summary">Gyorsbeállítások megnyitása, ha nincsenek értesítések</string>
-    <string name="smart_pulldown_off">Ki</string>
+    <string name="smart_pulldown_off">ki</string>
     <string name="smart_pulldown_none">nincsenek értesítések</string>
     <string name="smart_pulldown_dismissable">nincsenek törölhető értesítések</string>
     <string name="smart_pulldown_ongoing">nincsenek folyamatban lévő értesítések</string>
