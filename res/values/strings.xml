@@ -503,6 +503,7 @@
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
     <string name="theme_category">Theme Settings</string>
+    <string name="accent_color">Accent color</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
