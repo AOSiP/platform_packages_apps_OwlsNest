@@ -16,29 +16,36 @@
 
 package com.aosip.owlsnest.advanced;
 
-import android.content.ContentResolver;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.settings.wrapper.OverlayManagerWrapper;
+import com.android.settings.wrapper.OverlayManagerWrapper.OverlayInfo;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.aosip.owlsnest.utils.TelephonyUtils;
-import com.aosip.owlsnest.utils.Utils;
+
+import com.aosip.support.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ThemeCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
+
+    private static final String ACCENT_COLOR = "accent_color";
+    private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
+
+    private ColorPickerPreference mThemeColor;
+    private OverlayManagerWrapper mOverlayService;
 
     @Override
     public int getMetricsCategory() {
@@ -48,10 +55,8 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.theme);
-        final PreferenceScreen prefSet = getPreferenceScreen();
-        }
+        setupAccentPref();
     }
 
     @Override
@@ -59,8 +64,27 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
+        if (preference == mThemeColor) {
+            int color = (Integer) newValue;
+            String hexColor = String.format("%08X", (0xFFFFFFFF & color));
+            SystemProperties.set(ACCENT_COLOR_PROP, hexColor);
+            mOverlayService.reloadAndroidAssets(UserHandle.USER_CURRENT);
+            mOverlayService.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
+            mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+        }
+        return true;
+    }
+
+    private void setupAccentPref() {
+        mThemeColor = (ColorPickerPreference) findPreference(ACCENT_COLOR);
+        String colorVal = SystemProperties.get(ACCENT_COLOR_PROP, "-1");
+        int color = "-1".equals(colorVal)
+                ? Color.WHITE
+                : Color.parseColor("#" + colorVal);
+        mThemeColor.setNewPreviewColor(color);
+        mThemeColor.setOnPreferenceChangeListener(this);
     }
 
     /**
