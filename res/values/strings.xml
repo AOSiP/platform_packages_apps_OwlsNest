@@ -519,6 +519,7 @@
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
     <string name="theme_category">Theme Settings</string>
+    <string name="accent_color">Accent color</string>
 
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app</string>
