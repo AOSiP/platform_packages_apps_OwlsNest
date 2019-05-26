@@ -334,9 +334,9 @@
     <string name="aosp_gesture_title">Gestos AOSP</string>
     <!-- Active edge -->
     <string name="active_edge_title">Borde activo</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_summary">Una versión avanzada de la función Pixel squeeze</string>
     <string name="active_edge_actions_title">Acción de apretar</string>
-    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Acción de compresión larga</string>
     <string name="active_edge_sensitivity_title">Sensibilidad al apretar</string>
     <string name="active_edge_wake_title">Permitir cuando la pantalla esté apagada</string>
     <string name="active_edge_wake_summary">Activar una acción cuando la pantalla esté apagada</string>

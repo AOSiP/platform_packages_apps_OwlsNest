@@ -49,9 +49,9 @@
     <string name="status_bar_clock_summary">Skonfiguruj wygląd daty i zegara na pasku stanu</string>
     <string name="clock_title_enable">Wyrównanie</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="kronic_logo_title">Logo AOSiP</string>
+    <string name="kronic_logo_summary">Niech wszyscy wiedzą, że używasz AOSiP, gdy zobaczą twój ekran</string>
+    <string name="status_bar_logo_style_title">Niestandardowy obraz loga</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Włączono</string>
     <string name="clock_disabled">Wyłączony</string>
@@ -82,9 +82,9 @@
     <string name="clock_date_style_lowercase">Małe litery</string>
     <string name="clock_date_style_uppercase">Duże litery</string>
     <string name="clock_date_format_custom">Własny format (java)</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Po prawej stronie zegara</string>
+    <string name="clock_date_left">Po lewej stronie zegara</string>
+    <string name="clock_date_position">Położenie daty</string>
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Ikona baterii</string>
     <string name="status_bar_battery_percentage_title">Procent baterii</string>
@@ -94,11 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Styl paska baterii</string>
     <string name="status_bar_battery_style_port">Pionowy</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Styl Q</string>
     <string name="status_bar_battery_style_circle">Okrąg</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Duży okrąg</string>
     <string name="status_bar_battery_style_dotted_circle">Przerywany okrąg</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Duży przerywany okrąg</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Ukryty</string>
     <!-- Old Style Mobile -->
@@ -120,17 +120,17 @@
     <string name="show_carrier_enabled">Ekran blokady &amp; pasek statusu</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Ruch sieciowy</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Wskaźnik ruchu sieci</string>
     <string name="network_traffic_autohide">Autoukrywanie</string>
     <string name="network_traffic_autohide_summary">Ukryj monitor ruchu przy braku aktywności</string>
     <string name="network_traffic_autohide_threshold_title">Próg auto ukrywania wskaźnika aktywności sieci (KB/s)</string>
     <string name="network_traffic_hidearrow">Ukryj strzałki</string>
     <string name="network_traffic_hidearrow_summary">Ukryj strzałki wskaźnika ruchu</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">Pokaż przesyłanie i amp; prędkość pobierania sieci</string>
+    <string name="network_traffic_location_title">Położenie wskaźnika ruchu</string>
+    <string name="network_traffic_location_summary">Umieść wskaźnik na pasku stanu lub rozszerzonym nagłówku (zalecane dla wyświetlaczy z wycięciami wycięcia)</string>
+    <string name="network_traffic_statusbar">Pasek stanu</string>
+    <string name="network_traffic_header">Tryb rozszerzony</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Regulacja jasności</string>
     <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
@@ -140,8 +140,8 @@
     <string name="notification_category">Powiadomienia</string>
     <string name="headsup_category">Wyskakujące powiadomienia</string>
     <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Kill app button</string>
-    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+    <string name="notification_guts_kill_app_button_title">Przycisk zabijania aplikacji</string>
+    <string name="notification_guts_kill_app_button_summary">Pokaż przycisk zabijania aplikacji po długim przytrzymaniu w menu powiadomień</string>
     <!-- Toast app icon -->
     <string name="toast_icon_title">Ikona w dymku powiadomień</string>
     <string name="toast_icon_summary">Wyświetl ikonę aplikacji w dymku</string>
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Powiadomienia z dźwiękiem przy włączonym ekranie</string>
     <string name="notification_sound_vib_screen_on_summary">Odtwarzaj dźwięk i wibracje dla powiadomień, gdy ekran jest włączony</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Mniej inwazyjne wyskakujące powiadomienia</string>
+    <string name="less_boring_heads_up_summary">Pokaż heads up tylko dla dialera lub aplikacji do obsługi wiadomości</string>
     <!-- Heads up -->
     <string name="heads_up_title">Włącz</string>
     <string name="heads_up_summary_enabled">Wyskakujące powiadomienia są włączone</string>
@@ -202,21 +202,21 @@
     <string name="show_secure_title">Pokaż stopę bezpieczeństwa</string>
     <string name="show_info_header_title">Pokaż nagłówek informacji</string>
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Quick pulldown</string>
-    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="quick_pulldown_always">Always</string>
+    <string name="quick_pulldown_title">Szybkie rozwijanie</string>
+    <string name="quick_pulldown_summary">%1$s krawędź paska stanu rozwija szybkie ustawienia</string>
+    <string name="quick_pulldown_summary_always">Zawsze pokazuj szybkie ustawienia podczas rozwijania paska</string>
+    <string name="quick_pulldown_off">Wyłączone</string>
+    <string name="quick_pulldown_left">Po lewej</string>
+    <string name="quick_pulldown_right">Po prawej</string>
+    <string name="quick_pulldown_always">Zawsze</string>
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
+    <string name="smart_pulldown_title">Inteligentne rozwijanie</string>
+    <string name="smart_pulldown_summary">Otwórz szybkie ustawienia, gdy jest %1$s powiadomień</string>
+    <string name="smart_pulldown_none_summary">Otwórz szybkie ustawienia gdy nie ma powiadomień</string>
+    <string name="smart_pulldown_off">Wyłączone</string>
+    <string name="smart_pulldown_none">brak powiadomień</string>
+    <string name="smart_pulldown_dismissable">brak usuwalnych powiadomień</string>
+    <string name="smart_pulldown_ongoing">brak bieżących</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animacje</string>
     <string name="qs_tile_animation_style_title">Styl animacji</string>
@@ -260,15 +260,15 @@
     <string name="hardware_keys_category">Nawigacja</string>
     <string name="hardware_keys_disable_title">Wyłącz przyciski nawigacji</string>
     <!-- Button brightness -->
-    <string name="button_lights_category">Backlight</string>
-    <string name="button_backlight_options_category">Backlight options</string>
-    <string name="button_backlight_enable_title">Allow button backlight</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Button backlight brightness will adjust based on current screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_backlight_on_touch_only_title">Button backlight touch</string>
-    <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
+    <string name="button_lights_category">Podświetlenie</string>
+    <string name="button_backlight_options_category">Opcje podświetlenia</string>
+    <string name="button_backlight_enable_title">Zezwól na podświetlanie przycisków</string>
+    <string name="button_link_brightness">Ustaw według jasności ekranu</string>
+    <string name="button_link_brightness_summary">Jasność podświetlenia przycisków dostosuje się w zależności od poziomu jasności ekranu</string>
+    <string name="button_manual_brightness">Poziom jasności</string>
+    <string name="button_timeout_title">Czas podświetlania</string>
+    <string name="button_backlight_on_touch_only_title">Podświetlenie przycisków podczas dotyku</string>
+    <string name="button_backlight_on_touch_only_summary">Podświetlenie przycisków włączy się tylko gdy przyciski są używane, zamiast świecić się cały czas. Czas podświetlenia ma wpływ na tę funkcję.</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Przyciski sprzętowe</string>
     <string name="buttons_summary">Konfiguruj ustawienia przycisków sprzętowych</string>
@@ -292,16 +292,16 @@
     <string name="volume_rocker_music_controls_title">Sterowanie odtwarzaniem</string>
     <string name="volume_rocker_music_controls_summary">Przełączaj utwory przyciskami głośności, gdy ekran jest wyłączony</string>
     <!-- Volume keys control rint tone stream -->
-    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
-    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
+    <string name="volume_keys_control_ring_tone_title">Kontroluj głośność dzwonka</string>
+    <string name="volume_keys_control_ring_tone_summary">Przyciski domyślnie sterują suwakiem multimediów. Włącz, aby sterowały suwakiem dzwonka.</string>
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Odbierz przyciskiem głośności</string>
     <string name="volume_answer_call_summary">Odbierz połączenie naciskając przycisk głośności</string>
     <!-- Cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Kontrola kursora przyciskami głośności</string>
+    <string name="volume_key_cursor_control_off">Wyłączono</string>
+    <string name="volume_key_cursor_control_on">Klawisze głośności w górę/w dół przesuwa kursor w lewo/prawo</string>
+    <string name="volume_key_cursor_control_on_reverse">Klawisz głośności w górę/w dół przesuwa kursor w prawo/lewo</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animacja wyłączenia ekranu</string>
     <string name="screen_off_animation_fade">Proste zanikanie</string>
@@ -310,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Ostatnio uruchomione</string>
     <string name="recent_summary">Konfiguruj ustawienia ostatnich aplikacji</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Ostatnie opcje Oreo</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Zestaw ikon</string>
     <string name="recents_icon_pack_summary">Zastosuj niestandardowy zestaw ikon dla Ostatnich aplikacji</string>
@@ -333,14 +333,14 @@
     <string name="double_tap_options">Stuknij dwukrotnie aby uśpić</string>
     <string name="aosp_gesture_title">Gesty AOSP</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
-    <string name="active_edge_actions_title">Squeeze action</string>
-    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
-    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
-    <string name="active_edge_wake_title">Allow when screen is off</string>
-    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+    <string name="active_edge_title">Aktywne krawędzie</string>
+    <string name="active_edge_summary">Zaawansowana wersja funkcji ściskania z Pixeli</string>
+    <string name="active_edge_actions_title">Akcja naciśnięcia</string>
+    <string name="active_edge_long_squeeze_actions_title">Akcja dłuższego naciśnięcia</string>
+    <string name="active_edge_sensitivity_title">Czułość naciśnięcia</string>
+    <string name="active_edge_wake_title">Zezwól gdy ekran jest wyłączony</string>
+    <string name="active_edge_wake_summary">Wywołaj akcję, gdy ekran jest wyłączony</string>
+    <string name="active_edge_footer_info">Nie wszystkie akcje aktywnych krawędzi mają możliwość, aby uaktywnić ekran</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Gest przesunięcia trzema palcami</string>
     <string name="three_finger_gesture_summary">Przesuń trzema palcami by zrobić zrzut ekranu</string>
@@ -354,45 +354,45 @@
     <string name="lockscreen_title">Ekran blokady</string>
     <string name="lockscreen_summary">Konfiguruj opcje oraz wygląd ekranu blokadu</string>
     <string name="secure_lockscreen">Ustawienia zabezpieczonego ekranu blokady</string>
-    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">Wyłącz szybkie ustawienia na ekranie blokady</string>
+    <string name="lockscreen_qs_disabled_summary">Wyłącz rozszerzone szybkie ustawienia na zabezpieczonym ekranie blokady</string>
     <string name="lock_screen_shortcuts_title">Skróty ekranu blokady</string>
     <string name="lock_screen_shortcuts_summary">Zarządzaj dolnymi skrótami ekranu blokady</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_category">Visualizer</string>
-    <string name="lockscreen_visualizer_title">Enable lockscreen visualizer</string>
-    <string name="lockscreen_visualizer_summary">Show visualizer on lockscreen when music is playing</string>
-    <string name="lockscreen_visualizer_enable_custom">Use custom color</string>
-    <string name="lockscreen_visualizer_enable_custom_summary">Use a preset color instead of the generated color</string>
-    <string name="lockscreen_visualizer_custom_color">Visualizer Color</string>
+    <string name="lockscreen_visualizer_category">Wizualizacja</string>
+    <string name="lockscreen_visualizer_title">Wizualizacja na ekranie blokady</string>
+    <string name="lockscreen_visualizer_summary">Pokaż wizualizacje na ekranie blokady, gdy gra muzyka</string>
+    <string name="lockscreen_visualizer_enable_custom">Użyj niestandardowego koloru</string>
+    <string name="lockscreen_visualizer_enable_custom_summary">Użyj gotowego koloru zamiast wygenerowanego</string>
+    <string name="lockscreen_visualizer_custom_color">Kolor wizualizera</string>
     <!-- ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient Music visualizer</string>
-    <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
+    <string name="ambient_visualizer_title">Nazwa utworu na aktywnym wyświetlaczu</string>
+    <string name="ambient_visualizer_summary">Pokazuje paski wizualizacji również na wyświetlaczu otoczenia (ale mniej nieprzezroczyste)</string>
     <!-- Lockscreen items -->
-    <string name="lockscreen_clock_title">Clock widget</string>
-    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
-    <string name="lockscreen_info_title">Items underneath the clock</string>
-    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+    <string name="lockscreen_clock_title">Widżet zegara</string>
+    <string name="lockscreen_clock_summary">Pokaż zegar na ekranie blokady</string>
+    <string name="lockscreen_info_title">Elementy pod zegarem</string>
+    <string name="lockscreen_info_summary">Pokazuj datę, pogodę i alarmy na ekranie blokady</string>
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_title">Clock style</string>
-    <string name="lockscreen_clock_selection_digital">Default</string>
-    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
-    <string name="lockscreen_clock_selection_analog">Analog</string>
-    <string name="lockscreen_clock_selection_du">Analog (du)</string>
+    <string name="lockscreen_clock_selection_title">Styl zegara</string>
+    <string name="lockscreen_clock_selection_digital">Domyślny</string>
+    <string name="lockscreen_clock_selection_digital_bold">Cyfrowy (pogrubiony)</string>
+    <string name="lockscreen_clock_selection_analog">Analogowy</string>
+    <string name="lockscreen_clock_selection_du">Analogowy (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
-    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
-    <string name="lockscreen_clock_selection_text">Text</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (pogrubiony)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy z akcentem</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy z akcentem (Alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy z akcentem (Alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy z akcentem (Alt)</string>
+    <string name="lockscreen_clock_selection_text">Tekst</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
-    <string name="lockscreen_cover_filter_none">None</string>
-    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
-    <string name="lockscreen_cover_filter_blur">Blur</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_title">Filtr albumu na ekranie blokady</string>
+    <string name="lockscreen_cover_filter_none">Żaden</string>
+    <string name="lockscreen_cover_filter_grayscale">Odcienie szarości</string>
+    <string name="lockscreen_cover_filter_tint">Akcentowane przyciemnienie</string>
+    <string name="lockscreen_cover_filter_blur">Rozmycie</string>
+    <string name="lockscreen_cover_filter_grayblur">Skala szarości i rozmycie</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Odblokuj automatycznie twarzą</string>
     <string name="face_auto_unlock_summary">Nie pokazuj ekranu blokady po odblokowaniu twarzą</string>
@@ -402,7 +402,7 @@
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">Nazwa utworu na ekranie Ambient</string>
     <string name="force_ambient_for_media_pref_summary">Konfiguracja nazw utworów na ekranie Ambient</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info within Ambient display screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on track info to skip track.\n\nIf you own a Pixel and enable Now Playing and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="ambient_ticker_footer">Powiadomienie muzyki Ambient pokazuje odtwarzanie informacji o ścieżce muzycznej na ekranie Ambient.\n\nWyzwalane jest to również wtedy, gdy ekran Ambient jest wyłączony po uruchomieniu nowego utworu, wymuszając czysty ekran Ambient z informacjami o utworze na środku ekranu.\n\nMożesz uzyskać informacje o utworze, lub pominąć ścieżkę dwukrotnie dotykając ekran.\n\nJeśli posiadasz Pixel\'a i włączysz Now Playing oraz jego powiadomienia w ustawieniach audio, powiadomienie muzyki Ambient również zadziała.</string>
     <string name="force_ambient_for_media_title">Włącz</string>
     <!-- Media art -->
     <string name="media_art_title">Okładka albumu</string>
@@ -426,14 +426,14 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Nakładka ekranowa pokazująca bieżące wykorzystanie CPU</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Call Notification Options</string>
-    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-    <string name="flashlight_on_call_always">Always blink flashlight</string>
+    <string name="call_notifications_cat">Opcje powiadomień</string>
+    <string name="flashlight_on_call_title">Migaj latarką podczas połączenia</string>
+    <string name="flashlight_on_call_disabled">Wyłączony</string>
+    <string name="flashlight_on_call_not_dnd">Włącz latarkę tylko w trybie normalnym</string>
+    <string name="flashlight_on_call_dnd">Włącz latarkę tylko w trybie Nie przeszkadzać</string>
+    <string name="flashlight_on_call_always">Zawsze włącz latarkę</string>
     <!-- AOSP Recents component Style -->
-    <string name="recents_component_type_title">Recents Style</string>
+    <string name="recents_component_type_title">Styl panelu ostatnich aplikacji</string>
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->

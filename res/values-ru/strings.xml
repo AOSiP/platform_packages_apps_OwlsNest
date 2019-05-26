@@ -360,7 +360,7 @@
     <string name="lock_screen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_category">Визуализатор</string>
-    <string name="lockscreen_visualizer_title">Визуализатор на экране болкировки</string>
+    <string name="lockscreen_visualizer_title">Визуализатор на экране блокировки</string>
     <string name="lockscreen_visualizer_summary">Показывать визуализацию музыки на экране блокировки во время воспроизведения</string>
     <string name="lockscreen_visualizer_enable_custom">Использовать свой цвет</string>
     <string name="lockscreen_visualizer_enable_custom_summary">Использовать свой цвет вместо сгенерированного</string>

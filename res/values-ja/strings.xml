@@ -122,10 +122,10 @@
     <string name="traffic_category">ネットワーク通信量</string>
     <string name="network_traffic_state_title">ネットワーク通信量の表示</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
-    <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にする</string>
+    <string name="network_traffic_autohide_summary">非アクティブ時に通信速度を非表示にする</string>
     <string name="network_traffic_autohide_threshold_title">自動非表示にする通信速度しきい値 (KB/s)</string>
     <string name="network_traffic_hidearrow">矢印を非表示</string>
-    <string name="network_traffic_hidearrow_summary">トラフィックモニターの矢印を隠す</string>
+    <string name="network_traffic_hidearrow_summary">通信速度表示の矢印を隠す</string>
     <string name="network_traffic_state_summary">送信と受信のネットワーク通信量を表示する</string>
     <string name="network_traffic_location_title">アンテナアイコンの置き換え</string>
     <string name="network_traffic_location_summary">アイコンをステータスバーか拡張ヘッダーのどちらかに置く (ノッチ画面にお勧めです)</string>
