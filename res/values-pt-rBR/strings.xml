@@ -51,7 +51,7 @@
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Logo do Kronic</string>
     <string name="kronic_logo_summary">Deixe todo mundo saber que você está usando AOSIP quando olharem pra sua tela</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="status_bar_logo_style_title">Imagem do logotipo personalizado</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Desabilitado</string>
@@ -94,11 +94,11 @@
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Estilo da bateria</string>
     <string name="status_bar_battery_style_port">Retrato</string>
-    <string name="status_bar_battery_style_q">Q style</string>
+    <string name="status_bar_battery_style_q">Estilo Android Q</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
+    <string name="status_bar_battery_style_big_circle">Círculo Grande</string>
     <string name="status_bar_battery_style_dotted_circle">Círculo pontilhado</string>
-    <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Círculo pontilhado grande</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Old Style Mobile -->
@@ -120,17 +120,17 @@
     <string name="show_carrier_enabled">Tela de bloqueio &amp; barra de status</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Tráfego de rede</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Exibição de tráfego de rede</string>
     <string name="network_traffic_autohide">Ocultar automaticamente</string>
     <string name="network_traffic_autohide_summary">Esconder o monitor de tráfego quando não houver atividade</string>
     <string name="network_traffic_autohide_threshold_title">Limite para ocultar automaticamente a atividade de rede (KB/s)</string>
     <string name="network_traffic_hidearrow">Esconder as setas</string>
     <string name="network_traffic_hidearrow_summary">Esconder as setas dos indicadores de tráfego</string>
-    <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
-    <string name="network_traffic_location_title">Traffic indicator placement</string>
-    <string name="network_traffic_location_summary">Place indicator in either status bar or expanded header (recommended for displays with notch cutouts)</string>
-    <string name="network_traffic_statusbar">Status bar</string>
-    <string name="network_traffic_header">Expanded header</string>
+    <string name="network_traffic_state_summary">Mostrar a velocidade do upload &amp; e download</string>
+    <string name="network_traffic_location_title">Posição do indicador de tráfego</string>
+    <string name="network_traffic_location_summary">Colocar o indicador na barra de status ou no cabeçalho expandido (recomendado para exibições com recortes de entalhe)</string>
+    <string name="network_traffic_statusbar">Barra de Status</string>
+    <string name="network_traffic_header">Modo expandido</string>
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Controle de brilho</string>
     <string name="status_bar_toggle_brightness_summary">Permite ajustar o brilho deslizando através da barra de status</string>
@@ -149,8 +149,8 @@
     <string name="notification_sound_vib_screen_on_title">Som de notificação quando a tela estiver ligada</string>
     <string name="notification_sound_vib_screen_on_summary">Tocar som e vibração para notificações quando a tela está ativa</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+    <string name="less_boring_heads_up_title">Torne as notificações heads-up menos irritantes</string>
+    <string name="less_boring_heads_up_summary">Mostrar notificações heads-up apenas para o telefone e mensagens</string>
     <!-- Heads up -->
     <string name="heads_up_title">Ativar</string>
     <string name="heads_up_summary_enabled">Notificações pop-up estão ativadas</string>
@@ -310,7 +310,7 @@
     <!--Owlsnest recentscreen-->
     <string name="recent_title">Recentes</string>
     <string name="recent_summary">Configurar quais estilos de recentes e opções</string>
-    <string name="aosp_recents_category">Oreo recents options</string>
+    <string name="aosp_recents_category">Opções de recentes do Oreo</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">Pacote de ícones</string>
     <string name="recents_icon_pack_summary">Aplicar um pacote de ícones personalizados para o painel de recentes</string>
@@ -381,18 +381,18 @@
     <string name="lockscreen_clock_selection_du">Analógico (du)</string>
     <string name="lockscreen_clock_selection_sammy">Samsung</string>
     <string name="lockscreen_clock_selection_sammy_bold">Samsung (negrito)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy with accent (bold)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy with accent (alt-bold)</string>
-    <string name="lockscreen_clock_selection_text">Text</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Samsung com detalhe</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Sammy com detalhe (negrito)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy com detalhe (alt)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Sammy com detalhe (alt-negrito)</string>
+    <string name="lockscreen_clock_selection_text">Texto</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtro da capa do álbum na tela de bloqueio</string>
     <string name="lockscreen_cover_filter_none">Nenhum</string>
     <string name="lockscreen_cover_filter_grayscale">Tons de cinza</string>
-    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_tint">Tom da cor de destaque</string>
     <string name="lockscreen_cover_filter_blur">Desfocar</string>
-    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+    <string name="lockscreen_cover_filter_grayblur">Tons de cinza e desfocado</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Descartar o bloqueio após o desbloqueio com rosto</string>
