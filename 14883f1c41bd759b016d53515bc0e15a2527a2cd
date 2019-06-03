@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a925a062_e168c5f3",
+        "filename": "src/com/aosip/owlsnest/advanced/SystemCategory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000063
+      },
+      "writtenOn": "2019-06-03T15:10:14Z",
+      "side": 1,
+      "message": "duplicate",
+      "revId": "14883f1c41bd759b016d53515bc0e15a2527a2cd",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
