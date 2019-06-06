@@ -389,6 +389,11 @@
     <string name="lockscreen_cover_filter_blur">Blur</string>
     <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_cover_filter_gradientblur">Gradient Blur</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+
     <!-- Configurable lockscreen media blur strength -->
     <string name="lockscreen_media_blur_title">Media cover art blur level</string>
 
