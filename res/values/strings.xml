@@ -502,6 +502,7 @@
     <string name="advanced_title">Advanced Settings</string>
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
+    <string name="theme_category">Theme Settings</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
