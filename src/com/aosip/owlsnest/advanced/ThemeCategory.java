@@ -24,6 +24,8 @@ import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.ListPreference;
+import android.util.Log;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -41,10 +43,12 @@ import java.util.List;
 public class ThemeCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String KEY_DARKUI_MODE = "dark_ui_mode";
     private static final String ACCENT_COLOR = "accent_color";
     private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
 
     private ColorPickerPreference mThemeColor;
+    private ListPreference mDarkUiModePref;
     private OverlayManagerWrapper mOverlayService;
 
     @Override
@@ -57,6 +61,7 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.theme);
         setupAccentPref();
+        setupStylePref();
     }
 
     @Override
@@ -73,6 +78,10 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
             mOverlayService.reloadAndroidAssets(UserHandle.USER_CURRENT);
             mOverlayService.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
             mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+        } else if (preference == mDarkUiModePref) {
+            int value = Integer.parseInt((String) newValue);
+            Settings.Secure.putInt(getContext().getContentResolver(), Settings.Secure.THEME_MODE, value);
+            mDarkUiModePref.setSummary(mDarkUiModePref.getEntries()[value]);
         }
         return true;
     }
@@ -85,6 +94,15 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
                 : Color.parseColor("#" + colorVal);
         mThemeColor.setNewPreviewColor(color);
         mThemeColor.setOnPreferenceChangeListener(this);
+    }
+
+    private void setupStylePref() {
+        mDarkUiModePref = (ListPreference) findPreference(KEY_DARKUI_MODE);
+        int value = Settings.Secure.getInt(getContext().getContentResolver(), Settings.Secure.THEME_MODE, 0);
+        int index = mDarkUiModePref.findIndexOfValue(Integer.toString(value));
+        mDarkUiModePref.setValue(Integer.toString(value));
+        mDarkUiModePref.setSummary(mDarkUiModePref.getEntries()[index]);
+        mDarkUiModePref.setOnPreferenceChangeListener(this);
     }
 
     /**

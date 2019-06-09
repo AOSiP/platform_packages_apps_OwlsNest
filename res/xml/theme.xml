@@ -20,6 +20,18 @@
     android:layout="@layout/tab_ui"
     android:title="@string/theme_category" >
 
+    <ListPreference
+        android:key="dark_ui_mode"
+        android:title="@string/device_theme"
+        android:entries="@array/dark_ui_mode_entries"
+        android:entryValues="@array/dark_ui_mode_values" />
+
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="use_blackaf_theme"
+        android:title="@string/blackaf_theme_title"
+        android:summary="@string/blackaf_theme_summary"
+        android:defaultValue="false" />
+
     <com.aosip.support.colorpicker.ColorPickerPreference
         android:key="accent_color"
         android:title="@string/accent_color"
