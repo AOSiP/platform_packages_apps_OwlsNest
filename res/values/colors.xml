@@ -29,10 +29,6 @@
     <color name="owlsnest_oval_recents">#6fdb3d</color>
     <color name="owlsnest_oval_status">#8da2e8</color>
 
-    <!-- Accent picker -->
-    <color name="accent_picker_white_accent">@android:color/white</color>
-    <color name="accent_picker_dark_accent">@android:color/black</color>
-
     <!-- QS tile styles -->
     <color name="qs_tile_background_active">@*android:color/accent_device_default_light</color>
     <color name="qs_tile_background_inactive">#FFDCDCDC</color>
