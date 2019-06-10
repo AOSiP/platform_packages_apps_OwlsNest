@@ -16,9 +16,13 @@
 
 package com.aosip.owlsnest.advanced;
 
+import android.app.Fragment;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
@@ -36,6 +40,7 @@ import com.android.settings.wrapper.OverlayManagerWrapper.OverlayInfo;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.aosip.support.colorpicker.ColorPickerPreference;
+import com.aosip.owlsnest.advanced.DarkUIPreferenceController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,13 +48,16 @@ import java.util.List;
 public class ThemeCategory extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String KEY_DARKUI_MODE = "dark_ui_mode";
+    private static final String DARK_UI_KEY = "dark_ui_mode";
     private static final String ACCENT_COLOR = "accent_color";
     private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
 
+    private Handler mHandler;
     private ColorPickerPreference mThemeColor;
     private ListPreference mDarkUiModePref;
+    private Fragment mCurrentFragment = this;
     private OverlayManagerWrapper mOverlayService;
+    private PackageManager mPackageManager;
 
     @Override
     public int getMetricsCategory() {
@@ -60,6 +68,11 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.theme);
+        // OMS and PMS setup
+        mOverlayService = ServiceManager.getService(Context.OVERLAY_SERVICE) != null ? new OverlayManagerWrapper()
+                : null;
+        mPackageManager = getActivity().getPackageManager();
+        mHandler = new Handler();
         setupAccentPref();
         setupStylePref();
     }
@@ -67,6 +80,11 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
     }
 
     @Override
@@ -97,7 +115,7 @@ public class ThemeCategory extends SettingsPreferenceFragment implements
     }
 
     private void setupStylePref() {
-        mDarkUiModePref = (ListPreference) findPreference(KEY_DARKUI_MODE);
+        mDarkUiModePref = (ListPreference) findPreference(DARK_UI_KEY);
         int value = Settings.Secure.getInt(getContext().getContentResolver(), Settings.Secure.THEME_MODE, 0);
         int index = mDarkUiModePref.findIndexOfValue(Integer.toString(value));
         mDarkUiModePref.setValue(Integer.toString(value));

@@ -23,6 +23,7 @@
     <ListPreference
         android:key="dark_ui_mode"
         android:title="@string/device_theme"
+        android:dialogTitle="@string/device_theme"
         android:entries="@array/dark_ui_mode_entries"
         android:entryValues="@array/dark_ui_mode_values" />
 
