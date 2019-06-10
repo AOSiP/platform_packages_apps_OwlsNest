@@ -180,11 +180,11 @@
     <!-- Battery light -->
     <string name="battery_light_settings">バッテリー LED</string>
     <string name="battery_light_enable">有効</string>
-    <string name="battery_light_allow_on_dnd_title">マナーモード中のバッテリーライト</string>
-    <string name="battery_light_low_blinking_title">バッテリ低下時の点滅</string>
+    <string name="battery_light_allow_on_dnd_title">マナーモード中のライト</string>
+    <string name="battery_light_low_blinking_title">バッテリー低下時の点滅</string>
     <string name="battery_light_cat">充電中の LED の色</string>
     <string name="battery_light_low_color">バッテリー残量低下</string>
-    <string name="battery_light_medium_color">中程度のバッテリー残量</string>
+    <string name="battery_light_medium_color">中程度</string>
     <string name="battery_light_full_color">ほぼ充電完了</string>
     <string name="battery_light_reallyfull_color">充電完了</string>
     <!--Owlsnest Quick settings-->
@@ -276,7 +276,7 @@
     <string name="volume_category">音量</string>
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">再起動</string>
-    <string name="powermenu_reboot_summary">標準システム再起動ボタンの有無の設定</string>
+    <string name="powermenu_reboot_summary">標準の再起動ボタンの表示の有無を切り替える</string>
     <string name="powermenu_advanced_reboot_title">高度な再起動</string>
     <string name="powermenu_advanced_reboot_summary">再起動メニューで高度な再起動を有効にする</string>
     <string name="powermenu_screenshot_title">スクリーンショット</string>
@@ -295,7 +295,7 @@
     <string name="volume_keys_control_ring_tone_title">着信音量の制御</string>
     <string name="volume_keys_control_ring_tone_summary">既定では音量キーはメディア音量を制御します。有効にすると着信音量に切り替わります。</string>
     <!-- The volume key answer -->
-    <string name="volume_answer_call_title">音量ボタンで着信に出る</string>
+    <string name="volume_answer_call_title">音量ボタンで着信応答</string>
     <string name="volume_answer_call_summary">電話着信時に音量ボタンを押して応答する</string>
     <!-- Cursor control -->
     <string name="volume_key_cursor_control_title">音量ボタンでカーソル移動</string>
