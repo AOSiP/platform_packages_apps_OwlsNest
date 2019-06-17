@@ -39,7 +39,7 @@
     <string name="icon_category">アイコン</string>
     <string name="battery_category">バッテリー</string>
     <string name="status_bar_tuner_title">ステータスバーのアイコン</string>
-    <string name="status_bar_tuner_summary">ステータスバーのアイコンやオプションを編集する</string>
+    <string name="status_bar_tuner_summary">ステータスバーのアイコンと設定を編集する</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE アイコン</string>
     <string name="volte_icon_summary">VoLTE アイコンを表示する</string>
@@ -189,7 +189,7 @@
     <string name="battery_light_reallyfull_color">充電完了</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">クイック設定</string>
-    <string name="quicksettings_summary">クイックタイルと拡張ステータスバーを管理する</string>
+    <string name="quicksettings_summary">タイルと拡張ステータスバーを管理する</string>
     <string name="expanded_category">展開時</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">明るさ自動調節ボタン</string>
@@ -287,7 +287,7 @@
     <string name="volume_keys_swap_summary">端末の向きを変えた時音量ボタンも入れ替える</string>
     <!--Volume keys wake -->
     <string name="volume_rocker_wake_title">音量ボタンでスリープ解除</string>
-    <string name="volume_rocker_wake_summary">音量キーを押すとスリープが解除されます</string>
+    <string name="volume_rocker_wake_summary">音量キーを押すてスリープを解除する</string>
     <!--Vol key music control-->
     <string name="volume_rocker_music_controls_title">再生コントロール</string>
     <string name="volume_rocker_music_controls_summary">画面消灯時に音量ボタンを長押しで曲をシークする</string>
@@ -309,7 +309,7 @@
     <string name="screen_off_animation_scale">縮小</string>
     <!--Owlsnest recentscreen-->
     <string name="recent_title">アプリ履歴</string>
-    <string name="recent_summary">アプリ履歴とオプションを設定する</string>
+    <string name="recent_summary">アプリ履歴のスタイルと設定を編集する</string>
     <string name="aosp_recents_category">Oreo アプリ履歴のオプション</string>
     <!-- Recents icon packs -->
     <string name="recents_icon_pack_title">アイコンパック</string>
@@ -329,7 +329,7 @@
     <string name="recents_clear_all_location_bottom_center">中央下</string>
     <!--Owlsnest Gestures-->
     <string name="gesture_category">ジェスチャー</string>
-    <string name="gesture_summary">オプション/アクション に基づくジェスチャー</string>
+    <string name="gesture_summary">ジェスチャーのアクション設定</string>
     <string name="double_tap_options">ダブルタップでスリープ</string>
     <string name="aosp_gesture_title">AOSP ジェスチャー</string>
     <!-- Active edge -->
@@ -352,7 +352,7 @@
     <string name="double_tap_sleep_gesture_title">ステータスバー</string>
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">ロック画面</string>
-    <string name="lockscreen_summary">ロック画面のレイアウトとオプションを編集する</string>
+    <string name="lockscreen_summary">ロック画面のレイアウトと設定を編集する</string>
     <string name="secure_lockscreen">セキュアなロック画面の設定</string>
     <string name="lockscreen_qs_disabled_title">ロック画面では無効</string>
     <string name="lockscreen_qs_disabled_summary">保護されたロック画面上でのクイック設定の展開を無効にする</string>
@@ -398,7 +398,7 @@
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">充電情報</string>
-    <string name="lockscreen_charging_current_summary">ロック画面に接続された充電器の最大電流と最大電圧を表示する</string>
+    <string name="lockscreen_charging_current_summary">ロック画面に接続された充電器の情報を表示する</string>
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_title">アンビエント音楽ティッカー</string>
     <string name="force_ambient_for_media_pref_summary">アンビエント音楽ティッカーを設定する</string>
@@ -408,7 +408,7 @@
     <string name="media_art_title">メディアカバーアート</string>
     <string name="media_art_summary">ロック画面にアルバムアートを表示する</string>
     <!-- Power menu on lockscreen -->
-    <string name="lockscreen_power_menu_disabled_title">ロック画面での電源メニュー無効化</string>
+    <string name="lockscreen_power_menu_disabled_title">ロック画面で電源メニュー無効化</string>
     <string name="lockscreen_power_menu_disabled_summary">セキュアなロック画面で電源メニューを非表示にする</string>
     <string name="lockscreen_items_other">その他</string>
     <!-- Scramble PIN layout when unlocking -->
