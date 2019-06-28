@@ -30,6 +30,7 @@ import android.view.ViewGroup;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.aosip.aosipUtils;
 
 import com.aosip.owlsnest.PagerSlidingTabStrip;
 
@@ -85,8 +86,10 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
             frags[1] = new CarrierCategory();
             frags[2] = new ClockDateSettings();
             frags[3] = new IconsCategory();
-            frags[4] = new TickerCategory();
-            frags[5] = new TrafficCategory();
+            frags[4] = new TrafficCategory();
+            try {
+                frags[5] = new TickerCategory();
+            } catch (IndexOutOfBoundsException ignored) {/* Do nothing */}
         }
 
         @Override
@@ -106,14 +109,22 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
     }
 
     private String[] getTitles() {
-        String titleString[];
-        titleString = new String[]{
-                    getString(R.string.battery_category),
-                    getString(R.string.carrier_category),
-                    getString(R.string.clock_category),
-                    getString(R.string.icon_category),
-                    getString(R.string.ticker_category),
-                    getString(R.string.traffic_category)};
-        return titleString;
+        boolean notchDevice = aosipUtils.hasNotch(getActivity());
+        if (notchDevice) {
+            return new String[]{
+                getString(R.string.battery_category),
+                getString(R.string.carrier_category),
+                getString(R.string.clock_category),
+                getString(R.string.icon_category),
+                getString(R.string.traffic_category)};
+        } else {
+            return new String[]{
+                getString(R.string.battery_category),
+                getString(R.string.carrier_category),
+                getString(R.string.clock_category),
+                getString(R.string.icon_category),
+                getString(R.string.traffic_category),
+                getString(R.string.ticker_category)};
+        }
     }
 }
