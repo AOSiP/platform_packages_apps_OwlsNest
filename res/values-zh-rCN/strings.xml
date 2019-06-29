@@ -72,12 +72,12 @@
     <string name="clock_date_format">日期格式</string>
     <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">输入字符串</string>
-    <string name="am_pm_clock_normal">正常字体大小</string>
+    <string name="am_pm_clock_normal">正常字体</string>
     <string name="am_pm_clock_small">小号字体</string>
     <string name="am_pm_clock_none">隐藏</string>
     <string name="clock_date_display_none">隐藏</string>
     <string name="clock_date_display_small">小号字体</string>
-    <string name="clock_date_display_normal">正常字体大小</string>
+    <string name="clock_date_display_normal">正常字体</string>
     <string name="clock_date_style_normal">正常</string>
     <string name="clock_date_style_lowercase">小写</string>
     <string name="clock_date_style_uppercase">大写</string>
@@ -90,7 +90,7 @@
     <string name="status_bar_battery_percentage_title">电量百分比</string>
     <string name="status_bar_battery_percentage_default">隐藏</string>
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
-    <string name="status_bar_battery_percentage_text_inside">在图标内</string>
+    <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">电池样式</string>
     <string name="status_bar_battery_style_port">纵向</string>

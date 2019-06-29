@@ -31,8 +31,8 @@
     <string name="add">Adicionar</string>
     <string name="choose_app">Escolher aplicação</string>
     <!-- SystemUI Restart -->
-    <string name="systemui_restart_title">Reinício da interface do sistema requerido</string>
-    <string name="systemui_restart_message">Para que todas as modificações tenham efeito, um reinício na interface do sistema é requerida. Reiniciar interface do sistema agora?</string>
+    <string name="systemui_restart_title">É necessário reiniciar a interface do sistema</string>
+    <string name="systemui_restart_message">É necessário reiniciar a interface do sistema para que todas as modificações tenham efeito. Reiniciar agora?</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Barra de estado</string>
     <string name="statusbar_bar_summary">Ajustar vários elementos da barra de estado</string>
@@ -50,12 +50,12 @@
     <string name="clock_title_enable">Alinhamento</string>
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Logo Kronic</string>
-    <string name="kronic_logo_summary">Deixa que todos saibam que estás a usar AOSiP quando olham para o teu ecrã</string>
+    <string name="kronic_logo_summary">Deixa que todos saibam que está a usar a AOSIP quando vêem o seu ecrã</string>
     <string name="status_bar_logo_style_title">Imagem do logótipo personalizada</string>
     <!-- Status bar clock and date options -->
-    <string name="clock_enabled">Ligado</string>
+    <string name="clock_enabled">Ativado</string>
     <string name="clock_disabled">Desligado</string>
-    <string name="status_bar_clock_style_reset">Repor cor</string>
+    <string name="status_bar_clock_style_reset">Repor a cor</string>
     <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
     <string name="status_bar_clock_seconds_title">Mostrar segundos</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
@@ -70,7 +70,7 @@
     <string name="clock_date_display_summary">Mostrar data personalizada antes do relógio</string>
     <string name="clock_date_style">Estilo da data</string>
     <string name="clock_date_format">Formato da data</string>
-    <string name="clock_date_string_edittext_title">Deve estar num formato de data, por exemplo: MM/DD/AA</string>
+    <string name="clock_date_string_edittext_title">Deve estar num formato de data, por exemplo: MM/dd/aa</string>
     <string name="clock_date_string_edittext_summary">Escreva os caracteres</string>
     <string name="am_pm_clock_normal">Tamanho da fonte normal</string>
     <string name="am_pm_clock_small">Tamanho de fonte pequena</string>
