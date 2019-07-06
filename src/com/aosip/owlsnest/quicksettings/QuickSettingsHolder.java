@@ -81,7 +81,9 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new ExpandedCategory();
+            frags[0] = new SliderCategory();
+            frags[1] = new ExpandedCategory();
+            frags[2] = new TilesCategory();
         }
 
         @Override
@@ -103,7 +105,9 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.quicksettings_title)};
+                    getString(R.string.brightness_slider_title),
+                    getString(R.string.expanded_category),
+                    getString(R.string.tiles_title)};
         return titleString;
     }
 }
