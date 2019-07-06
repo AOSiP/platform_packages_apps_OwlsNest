@@ -230,6 +230,9 @@
     <string name="quicksettings_title">Quick Settings</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
     <string name="expanded_category">Expanded</string>
+    <string name="brightness_slider_title">Brightness slider</string>
+    <string name="tiles_title">QS Tiles</string>
+    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
 
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Adaptive brightness button</string>
