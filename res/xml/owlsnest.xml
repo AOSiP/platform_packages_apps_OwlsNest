@@ -25,7 +25,7 @@
 
     <PreferenceScreen
        android:key="quicksettings"
-       android:fragment="com.aosip.owlsnest.quicksettings.ExpandedCategory"
+       android:fragment="com.aosip.owlsnest.quicksettings.QuickSettingsHolder"
        android:title="@string/quicksettings_title"
        android:summary="@string/quicksettings_summary"
        android:icon="@drawable/ic_owlsnest_qs_background" />

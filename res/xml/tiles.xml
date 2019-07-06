@@ -19,30 +19,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:layout="@layout/tab_ui"
-    android:title="@string/quicksettings_title" >
+    android:title="@string/tiles_title" >
 
     <com.aosip.support.preference.SecureSettingSwitchPreference
-        android:key="qs_show_info_header"
-        android:title="@string/show_info_header_title"
-        android:defaultValue="true" />
-
-    <com.aosip.support.preference.SecureSettingSwitchPreference
-        android:key="qs_show_secure"
-        android:title="@string/show_secure_title"
-        android:defaultValue="true" />
+        android:key="quick_settings_vibrate"
+        android:title="@string/quick_settings_vibrate_title"
+        android:summary="@string/quick_settings_vibrate_summary"
+        android:defaultValue="false" />
 
     <ListPreference
-        android:key="quick_pulldown"
-        android:title="@string/quick_pulldown_title"
-        android:entries="@array/quick_pulldown_entries"
-        android:entryValues="@array/quick_pulldown_values"
+        android:key="qs_tile_animation_style"
+        android:title="@string/qs_tile_animation_style_title"
+        android:entries="@array/qs_tile_animation_style_entries"
+        android:entryValues="@array/qs_tile_animation_style_values"
         android:persistent="false" />
 
     <ListPreference
-        android:key="smart_pulldown"
-        android:title="@string/smart_pulldown_title"
-        android:entries="@array/smart_pulldown_entries"
-        android:entryValues="@array/smart_pulldown_values"
+        android:key="qs_tile_animation_duration"
+        android:title="@string/qs_tile_animation_duration_title"
+        android:entries="@array/qs_tile_animation_duration_entries"
+        android:entryValues="@array/qs_tile_animation_duration_values"
+        android:persistent="false" />
+
+    <ListPreference
+        android:key="qs_tile_animation_interpolator"
+        android:title="@string/qs_tile_animation_interpolator_title"
+        android:entries="@array/qs_tile_animation_interpolator_entries"
+        android:entryValues="@array/qs_tile_animation_interpolator_values"
         android:persistent="false" />
 
 </PreferenceScreen>
