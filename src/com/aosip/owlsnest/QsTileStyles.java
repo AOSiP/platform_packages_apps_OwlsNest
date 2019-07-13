@@ -95,32 +95,17 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
         LinearLayout shishunights = mView.findViewById(R.id.QsTileStyleShishuNights);
         setLayout("5", shishunights);
 
-        LinearLayout circlegradient = mView.findViewById(R.id.QsTileStyleCircleGradient);
-        setLayout("6", circlegradient);
-
-        LinearLayout wavey = mView.findViewById(R.id.QsTileStyleWavey);
-        setLayout("7", wavey);
-
         LinearLayout circledualtone = mView.findViewById(R.id.QsTileStyleCircleDualTone);
-        setLayout("8", circledualtone);
-
-        LinearLayout memedosquare = mView.findViewById(R.id.QsTileStyleMemedoSquare);
-        setLayout("9", memedosquare);
-
-        LinearLayout pokesign = mView.findViewById(R.id.QsTileStylePokesign);
-        setLayout("10", pokesign);
-
-        LinearLayout ninja = mView.findViewById(R.id.QsTileStyleNinja);
-        setLayout("11", ninja);
+        setLayout("6", circledualtone);
 
         LinearLayout dottedcircle = mView.findViewById(R.id.QsTileStyleDottedCircle);
-        setLayout("12", dottedcircle);
+        setLayout("7", dottedcircle);
 
         LinearLayout shishuink = mView.findViewById(R.id.QsTileStyleShishuInk);
-        setLayout("13", shishuink);
+        setLayout("8", shishuink);
 
         LinearLayout attemptmountain = mView.findViewById(R.id.QsTileStyleAttemptMountain);
-        setLayout("14", attemptmountain);
+        setLayout("9", attemptmountain);
     }
 
     @Override
@@ -170,12 +155,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
         LinearLayout deletround = mView.findViewById(R.id.QsTileStyleJustIcons);
         LinearLayout inktober = mView.findViewById(R.id.QsTileStyleInkDrop);
         LinearLayout shishunights = mView.findViewById(R.id.QsTileStyleShishuNights);
-        LinearLayout circlegradient = mView.findViewById(R.id.QsTileStyleCircleGradient);
-        LinearLayout wavey = mView.findViewById(R.id.QsTileStyleWavey);
         LinearLayout circledualtone = mView.findViewById(R.id.QsTileStyleCircleDualTone);
-        LinearLayout memedosquare = mView.findViewById(R.id.QsTileStyleMemedoSquare);
-        LinearLayout pokesign = mView.findViewById(R.id.QsTileStylePokesign);
-        LinearLayout ninja = mView.findViewById(R.id.QsTileStyleNinja);
         LinearLayout dottedcircle = mView.findViewById(R.id.QsTileStyleDottedCircle);
         LinearLayout shishuink = mView.findViewById(R.id.QsTileStyleShishuInk);
         LinearLayout attemptmountain = mView.findViewById(R.id.QsTileStyleAttemptMountain);
@@ -190,12 +170,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
             circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
             dottedcircle.setAlpha(mLayoutOpacity);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha(mLayoutOpacity);
@@ -205,12 +180,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
             circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
             dottedcircle.setAlpha(mLayoutOpacity);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha(mLayoutOpacity);
@@ -220,12 +190,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha((float) 1.0);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
             circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
             dottedcircle.setAlpha(mLayoutOpacity);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha(mLayoutOpacity);
@@ -235,12 +200,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha((float) 1.0);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
             circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
             dottedcircle.setAlpha(mLayoutOpacity);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha(mLayoutOpacity);
@@ -250,12 +210,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha((float) 1.0);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
             circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
             dottedcircle.setAlpha(mLayoutOpacity);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha(mLayoutOpacity);
@@ -265,12 +220,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha((float) 1.0);
-            wavey.setAlpha(mLayoutOpacity);
-            circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
+            circledualtone.setAlpha((float) 1.0);
             dottedcircle.setAlpha(mLayoutOpacity);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha(mLayoutOpacity);
@@ -280,13 +230,8 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha((float) 1.0);
             circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
-            dottedcircle.setAlpha(mLayoutOpacity);
+            dottedcircle.setAlpha((float) 1.0);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 8 )) {
@@ -295,14 +240,9 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
-            circledualtone.setAlpha((float) 1.0);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
+            circledualtone.setAlpha(mLayoutOpacity);
             dottedcircle.setAlpha(mLayoutOpacity);
-            shishuink.setAlpha(mLayoutOpacity);
+            shishuink.setAlpha((float) 1.0);
             attemptmountain.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 9 )) {
             squircle.setAlpha(mLayoutOpacity);
@@ -310,87 +250,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha(mLayoutOpacity);
             inktober.setAlpha(mLayoutOpacity);
             shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
             circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha((float) 1.0);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
-            dottedcircle.setAlpha(mLayoutOpacity);
-            shishuink.setAlpha(mLayoutOpacity);
-            attemptmountain.setAlpha(mLayoutOpacity);
-        } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 10 )) {
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            deletround.setAlpha(mLayoutOpacity);
-            inktober.setAlpha(mLayoutOpacity);
-            shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
-            circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha((float) 1.0);
-            ninja.setAlpha(mLayoutOpacity);
-            dottedcircle.setAlpha(mLayoutOpacity);
-            shishuink.setAlpha(mLayoutOpacity);
-            attemptmountain.setAlpha(mLayoutOpacity);
-        } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 11 )) {
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            deletround.setAlpha(mLayoutOpacity);
-            inktober.setAlpha(mLayoutOpacity);
-            shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
-            circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha((float) 1.0);
-            dottedcircle.setAlpha(mLayoutOpacity);
-            shishuink.setAlpha(mLayoutOpacity);
-            attemptmountain.setAlpha(mLayoutOpacity);
-        } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 12 )) {
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            deletround.setAlpha(mLayoutOpacity);
-            inktober.setAlpha(mLayoutOpacity);
-            shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
-            circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
-            dottedcircle.setAlpha((float) 1.0);
-            shishuink.setAlpha(mLayoutOpacity);
-            attemptmountain.setAlpha(mLayoutOpacity);
-        } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 13 )) {
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            deletround.setAlpha(mLayoutOpacity);
-            inktober.setAlpha(mLayoutOpacity);
-            shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
-            circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
-            dottedcircle.setAlpha(mLayoutOpacity);
-            shishuink.setAlpha((float) 1.0);
-            attemptmountain.setAlpha(mLayoutOpacity);
-        } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 14 )) {
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            deletround.setAlpha(mLayoutOpacity);
-            inktober.setAlpha(mLayoutOpacity);
-            shishunights.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            wavey.setAlpha(mLayoutOpacity);
-            circledualtone.setAlpha(mLayoutOpacity);
-            memedosquare.setAlpha(mLayoutOpacity);
-            pokesign.setAlpha(mLayoutOpacity);
-            ninja.setAlpha(mLayoutOpacity);
             dottedcircle.setAlpha(mLayoutOpacity);
             shishuink.setAlpha(mLayoutOpacity);
             attemptmountain.setAlpha((float) 1.0);
@@ -400,12 +260,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             deletround.setAlpha((float) 1.0);
             inktober.setAlpha((float) 1.0);
             shishunights.setAlpha((float) 1.0);
-            circlegradient.setAlpha((float) 1.0);
-            wavey.setAlpha((float) 1.0);
             circledualtone.setAlpha((float) 1.0);
-            memedosquare.setAlpha((float) 1.0);
-            pokesign.setAlpha((float) 1.0);
-            ninja.setAlpha((float) 1.0);
             dottedcircle.setAlpha((float) 1.0);
             shishuink.setAlpha((float) 1.0);
             attemptmountain.setAlpha((float) 1.0);
