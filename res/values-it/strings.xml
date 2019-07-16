@@ -43,6 +43,9 @@
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Icona VoLTE</string>
     <string name="volte_icon_summary">Mostra icona VoLTE</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Mostra l\'icona dei dati disattivati</string>
+    <string name="data_disabled_icon_summary">Mostra una X accanto alla barra del segnale quando i dati sono disabilitati</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Orologio</string>
     <string name="status_bar_clock">Data e Ora</string>
@@ -52,6 +55,13 @@
     <string name="kronic_logo_title">Logo Kronic</string>
     <string name="kronic_logo_summary">Fai sapere a tutti che stai utilizzando AOSiP quando vedono il tuo schermo</string>
     <string name="status_bar_logo_style_title">Immagine del logo personalizzata</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Ticker</string>
+    <string name="ticker_summary">Anteprima di notifica nella barra di stato</string>
+    <string name="ticker_animation_mode_title">Animazione del ticker</string>
+    <string name="ticker_animation_mode_alpha_fade">Dissolvenza</string>
+    <string name="ticker_animation_mode_scroll">Scorrimento</string>
+    <string name="ticker_tick_duration_title">Durata del ticker</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Abilitata</string>
     <string name="clock_disabled">Disabilitata</string>
@@ -191,6 +201,10 @@
     <string name="quicksettings_title">Impostazioni rapide</string>
     <string name="quicksettings_summary">Gestisci le tue impostazioni rapide e la barra di stato espansa</string>
     <string name="expanded_category">Esteso</string>
+	<string name="brightness_slider_title">Cursore della luminosità</string>
+    <string name="tiles_title">Tile</string>
+    <string name="qs_tile_footer">Per modificare il numero di righe e colonne, utilizzare il pulsante del menù a 3 punti sotto la sezione di modifica nel menù a discesa.</string>
+	
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Pulsante luminosità adattivo</string>
     <string name="tuner_auto_brightness_right">Icona luminosità adattiva a destra</string>
@@ -333,7 +347,7 @@
     <string name="double_tap_options">Doppio tocco per spegnere lo schermo</string>
     <string name="aosp_gesture_title">Gesti AOSP</string>
     <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
+    <string name="active_edge_title">Attiva bordo</string>
     <string name="active_edge_summary">Una versione avanzata della funzione di compressione dei Pixel</string>
     <string name="active_edge_actions_title">Azione allo strizzo</string>
     <string name="active_edge_long_squeeze_actions_title">Azione pressione prolungata</string>
@@ -421,6 +435,14 @@
     <string name="advanced_title">Impostazioni avanzate</string>
     <string name="advanced_summary">Varie e impostazioni di sistema extra</string>
     <string name="system_category">Impostazioni di sistema</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Avvia app musicale</string>
+    <string name="headset_connect_player_disabled">Disabilitato</string>
+    <string name="headset_connect_player_wired">Quando l\'auricolare cablato è collegato</string>
+    <string name="headset_connect_player_bt_no_carkit">Quando l\'auricolare BT (senza kit per auto) è collegato</string>
+    <string name="headset_connect_player_bt">Quando l\'auricolare BT è collegato</string>
+    <string name="headset_connect_player_both_no_carkit">Quando viene collegato l\'auricolare cablato o BT (senza kit per auto)</string>
+    <string name="headset_connect_player_both">Quando viene collegato l\'auricolare cablato o BT è collegata</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Mostra informazioni sulla CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -444,6 +466,7 @@
     <string name="theme_accent_picker_default">Predefinito</string>
     <string name="accent_picker_material_colors">Tavolozza colori Material</string>
     <string name="accent_picker_custom_colors">Personalizzati dall\'utente</string>
+    <string name="qs_styles_dialog_title">Seleziona uno stile dei Tile</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Opzioni vibrazione chiamate in entrata</string>
     <string name="incall_vibrate_connect_title">Vibra alla connessione</string>
