@@ -43,6 +43,9 @@
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE 图标</string>
     <string name="volte_icon_summary">显示 VoLTE 图标</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">显示数据禁用图标</string>
+    <string name="data_disabled_icon_summary">当数据禁用时，不显示图标旁边的 “×“ 图标</string>
     <!-- Status bar clock options -->
     <string name="clock_category">时钟</string>
     <string name="status_bar_clock">时钟和日期</string>
@@ -52,6 +55,13 @@
     <string name="kronic_logo_title">Kronic 标志</string>
     <string name="kronic_logo_summary">让每个看到你手机屏幕的人都知道你正在使用 aosip</string>
     <string name="status_bar_logo_style_title">自定义 Logo</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Ticker</string>
+    <string name="ticker_summary">Notification preview in status bar</string>
+    <string name="ticker_animation_mode_title">Ticker animation</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">启用</string>
     <string name="clock_disabled">禁用</string>
@@ -191,6 +201,9 @@
     <string name="quicksettings_title">快速设置</string>
     <string name="quicksettings_summary">管理您的快速设置瓷贴和扩展状态栏</string>
     <string name="expanded_category">扩展桌面</string>
+    <string name="brightness_slider_title">Brightness slider</string>
+    <string name="tiles_title">QS Tiles</string>
+    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">自适应亮度按钮</string>
     <string name="tuner_auto_brightness_right">右侧显示自适应亮度按钮</string>
@@ -399,11 +412,12 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">充电信息</string>
     <string name="lockscreen_charging_current_summary">在锁定屏幕上显示充电器的最大电流和电压</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">环境音乐</string>
-    <string name="force_ambient_for_media_pref_summary">配置环境音乐通知</string>
-    <string name="ambient_ticker_footer">环境音乐收录器显示在环境显示屏幕内播放音乐曲目信息。\n\n如果在启动新曲目时禁用环境显示，则会触发此操作，从而在屏幕中间强制显示带有曲目信息的干净环境屏幕。\n\n您也可以双击音轨信息以跳过音轨。\n\n如果您拥有Pixel并启用正在播放及其在系统音频设置中的通知，环境音乐收录器也可以在其中使用。</string>
-    <string name="force_ambient_for_media_title">启用</string>
+    <!-- Ambient Music Ticker -->
+    <string name="force_ambient_for_media_pref_title">Ambient Music Ticker</string>
+    <string name="force_ambient_for_media_pref_summary">Configure the Ambient Music Ticker</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
+    <string name="ambient_title">Ambient Music</string>
     <!-- Media art -->
     <string name="media_art_title">音乐封面</string>
     <string name="media_art_summary">在锁屏界面显示音乐封面</string>
@@ -421,6 +435,14 @@
     <string name="advanced_title">高级设置</string>
     <string name="advanced_summary">杂项和额外的系统设置</string>
     <string name="system_category">系统设置</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">显示 CPU 信息</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -444,6 +466,7 @@
     <string name="theme_accent_picker_default">默认</string>
     <string name="accent_picker_material_colors">质感设计</string>
     <string name="accent_picker_custom_colors">用户请求</string>
+    <string name="qs_styles_dialog_title">Select a QS tile style</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">通话振动选项</string>
     <string name="incall_vibrate_connect_title">接通时振动</string>

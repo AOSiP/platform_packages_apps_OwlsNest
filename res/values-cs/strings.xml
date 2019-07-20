@@ -43,6 +43,9 @@
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Ikona VoLTE</string>
     <string name="volte_icon_summary">Zobrazit ikonu VoLTE</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Zobrazit ikonu při vypnutí dat</string>
+    <string name="data_disabled_icon_summary">Zobrazit křížek na ikoně signálu sítě při vypnutých datech</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Hodiny</string>
     <string name="status_bar_clock">Hodiny a datum</string>
@@ -52,6 +55,13 @@
     <string name="kronic_logo_title">Logo Kronic</string>
     <string name="kronic_logo_summary">Ať všichni vědí, že používáte AOSiP, když uvidí vaši obrazovku</string>
     <string name="status_bar_logo_style_title">Vlastní styl loga</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Text oznámení</string>
+    <string name="ticker_summary">Náhled oznámení ve stavové liště</string>
+    <string name="ticker_animation_mode_title">Animace textu oznámení</string>
+    <string name="ticker_animation_mode_alpha_fade">Slábnutí</string>
+    <string name="ticker_animation_mode_scroll">Rolování</string>
+    <string name="ticker_tick_duration_title">Doba trvání textu oznámení</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Povoleno</string>
     <string name="clock_disabled">Zakázáno</string>
@@ -191,6 +201,9 @@
     <string name="quicksettings_title">Rychlá nastavení</string>
     <string name="quicksettings_summary">Spravá dlaždic rychlého nastavení a rozšířené stavové lišty</string>
     <string name="expanded_category">Rozšíření</string>
+    <string name="brightness_slider_title">Posuvník jasu</string>
+    <string name="tiles_title">QS dlaždice</string>
+    <string name="qs_tile_footer">Chcete-li změnit počet řádků, sloupců QS a další věci, použijte tlačítko 3-bodové nabídky v části Úpravy QS v rozbalovacím menu QS.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Tlačítko adaptivního jasu</string>
     <string name="tuner_auto_brightness_right">Umístění tlačítka adaptivního jasu vpravo</string>
@@ -399,11 +412,12 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Informace o nabíjení</string>
     <string name="lockscreen_charging_current_summary">Zobrazit maximální proud a napětí při nabíjení na zamykací obrazovce</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Hudební oznámení na Ambientním displeji</string>
+    <!-- Ambient Music Ticker -->
+    <string name="force_ambient_for_media_pref_title">Text oznámení okolní hudby</string>
     <string name="force_ambient_for_media_pref_summary">Nastavení hudebního oznámení na Ambientním displeji</string>
-    <string name="ambient_ticker_footer">Hudební oznámení na Ambientním displeji zobrazuje informace o hudebních skladbách v rámci Ambientního displeje.\n\nJe spuštěno i v případě, že je při spuštění nové skladby zakázán Ambientní displej, což znamená, že se uprostřed obrazovky zobrazí informaceme o skladbě. \n\nTaké můžete dvojím klepnutím na informace o skladbě skladbu přeskočit.\n\nPokud vlastníte Pixel a povolíte funkci \"Nyní hraje\" a oznámení v nastavení zvuku, v jeho rámci bude fungovat i hudební oznámení.</string>
-    <string name="force_ambient_for_media_title">Povolit</string>
+    <string name="ambient_ticker_footer">Hudební oznámení na Ambientním displeji zobrazuje informace o hudebních skladbách v rámci Ambientního displeje.\n\nJe spuštěno i v případě, že je při spuštění nové skladby zakázán Ambientní displej, což znamená, že se uprostřed obrazovky zobrazí informaceme o skladbě. \n\nTaké můžete dvojím klepnutím na informace o skladbě skladbu přeskočit.\n\nPokud vlastníte Pixel (2. generace a vyšší) a povolíte funkci \"Nyní hraje\" a oznámení v nastavení zvuku, v jeho rámci bude fungovat i hudební oznámení.</string>
+    <string name="force_ambient_for_media_title">Zobrazit hudební oznámení na zamčené obrazovce</string>
+    <string name="ambient_title">Okolní hudba</string>
     <!-- Media art -->
     <string name="media_art_title">Obal alba</string>
     <string name="media_art_summary">Povolit zobrazení obalu alba na zamykací obrazovce</string>
@@ -421,6 +435,14 @@
     <string name="advanced_title">Pokročilá nastavení</string>
     <string name="advanced_summary">Různá a extra systémová nastavení</string>
     <string name="system_category">Systémová nastavení</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Spustit aplikaci na hudbu</string>
+    <string name="headset_connect_player_disabled">Vypnuto</string>
+    <string name="headset_connect_player_wired">Když jsou připojena kabelová sluchátka</string>
+    <string name="headset_connect_player_bt_no_carkit">Když jsou připojena Bluetooth sluchátka (ne připojení v autě)</string>
+    <string name="headset_connect_player_bt">Když jsou připojena Bluetooth sluchátka</string>
+    <string name="headset_connect_player_both_no_carkit">Když jsou připojena kabelová nebo Bluetooth sluchátka (ne připojení v autě)</string>
+    <string name="headset_connect_player_both">Když jsou připojena kabelová nebo Bluetooth sluchátka</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Zobrazit využití CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -444,6 +466,7 @@
     <string name="theme_accent_picker_default">Výchozí</string>
     <string name="accent_picker_material_colors">Material barvy</string>
     <string name="accent_picker_custom_colors">Dle požadavku uživatele</string>
+    <string name="qs_styles_dialog_title">Vybrat styl dlaždic QS</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Možnosti vibrací při volání</string>
     <string name="incall_vibrate_connect_title">Vibrovat při připojení</string>

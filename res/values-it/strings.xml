@@ -43,6 +43,9 @@
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Icona VoLTE</string>
     <string name="volte_icon_summary">Mostra icona VoLTE</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Mostra l\'icona dei dati disattivati</string>
+    <string name="data_disabled_icon_summary">Mostra una X accanto alla barra del segnale quando i dati sono disabilitati</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Orologio</string>
     <string name="status_bar_clock">Data e Ora</string>
@@ -52,6 +55,13 @@
     <string name="kronic_logo_title">Logo Kronic</string>
     <string name="kronic_logo_summary">Fai sapere a tutti che stai utilizzando AOSiP quando vedono il tuo schermo</string>
     <string name="status_bar_logo_style_title">Immagine del logo personalizzata</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Ticker</string>
+    <string name="ticker_summary">Anteprima notifica nella barra di stato</string>
+    <string name="ticker_animation_mode_title">Animazione ticker</string>
+    <string name="ticker_animation_mode_alpha_fade">Dissolvenza</string>
+    <string name="ticker_animation_mode_scroll">Scorrimento</string>
+    <string name="ticker_tick_duration_title">Durata ticker</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Abilitata</string>
     <string name="clock_disabled">Disabilitata</string>
@@ -191,6 +201,9 @@
     <string name="quicksettings_title">Impostazioni rapide</string>
     <string name="quicksettings_summary">Gestisci le tue impostazioni rapide e la barra di stato espansa</string>
     <string name="expanded_category">Esteso</string>
+    <string name="brightness_slider_title">Cursore luminosità</string>
+    <string name="tiles_title">Tile Impostazioni rapide</string>
+    <string name="qs_tile_footer">Per cambiare il numero delle righe e delle colonne e altre impostazioni ancora, usa il pulsante con tre punti dalla sezione di modifica nel pannello delle Impostazioni rapide.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Pulsante luminosità adattivo</string>
     <string name="tuner_auto_brightness_right">Icona luminosità adattiva a destra</string>
@@ -399,11 +412,12 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Informazioni sulla ricarica</string>
     <string name="lockscreen_charging_current_summary">Mostra la corrente negoziata con il caricatore e il voltaggio nella schermata di blocco</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ticker Ambient Music</string>
-    <string name="force_ambient_for_media_pref_summary">Configura il ticker Ambient Music</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker mostra le informazioni della traccia musicale all\'interno della schermata di visualizzazione Ambient.\n\nSi attiva anche se Ambient Display è disabilitato quando viene avviata una nuova traccia, forzando una schermata ambiente pulita con le informazioni sulla traccia nel mezzo dello schermo.\n\nPuoi toccare due volte le informazioni sulla traccia per saltarla.\n\nSe possiedi un Pixel e attivi la riproduzione in corso e la sua notifica nelle impostazioni audio del sistema, Ambient Music Ticker funzionerà anche al suo interno.</string>
-    <string name="force_ambient_for_media_title">Abilita</string>
+    <!-- Ambient Music Ticker -->
+    <string name="force_ambient_for_media_pref_title">Ticker Ambient musicale</string>
+    <string name="force_ambient_for_media_pref_summary">Configura il ticker Ambient musicale</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker mostra le informazioni della traccia musicale all\'interno della schermata Ambient display.\n\nSi attiva anche se Ambient Display è disabilitato quando viene avviata una nuova traccia, forzando una schermata Ambient vuota con le informazioni sulla traccia nel mezzo dello schermo.\n\nPuoi anche toccare due volte sulle informazioni sulla traccia per saltarla.\n\nSe hai un Pixel (seconda generazione o più) e attivi \"In riproduzione\" e la sua notifica nelle impostazioni audio, il ticket funzionerà anche al suo interno.</string>
+    <string name="force_ambient_for_media_title">Mostra ticket musicale sulla schermata di blocco</string>
+    <string name="ambient_title">Ambient Music</string>
     <!-- Media art -->
     <string name="media_art_title">Copertina applicazioni multimediali</string>
     <string name="media_art_summary">Abilita la visualizzazione della copertina dei file multimediali nella schermata di blocco</string>
@@ -421,6 +435,14 @@
     <string name="advanced_title">Impostazioni avanzate</string>
     <string name="advanced_summary">Varie e impostazioni di sistema extra</string>
     <string name="system_category">Impostazioni di sistema</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Avvia il lettore musicale</string>
+    <string name="headset_connect_player_disabled">Disattivato</string>
+    <string name="headset_connect_player_wired">Quando è collegato l\'auricolare con cavo</string>
+    <string name="headset_connect_player_bt_no_carkit">Quando è collegato auricolare BT (nessun kit per auto)</string>
+    <string name="headset_connect_player_bt">Quando è collegato auricolare BT</string>
+    <string name="headset_connect_player_both_no_carkit">Quando è collegato l\'auricolare col cavo o BT (nessun kit per auto)</string>
+    <string name="headset_connect_player_both">Quando è collegato l\'auricolare col cavo o BT</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Mostra informazioni sulla CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -444,6 +466,7 @@
     <string name="theme_accent_picker_default">Predefinito</string>
     <string name="accent_picker_material_colors">Tavolozza colori Material</string>
     <string name="accent_picker_custom_colors">Personalizzati dall\'utente</string>
+    <string name="qs_styles_dialog_title">Seleziona stile QS</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Opzioni vibrazione chiamate in entrata</string>
     <string name="incall_vibrate_connect_title">Vibra alla connessione</string>

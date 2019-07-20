@@ -43,6 +43,9 @@
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE-Symbol</string>
     <string name="volte_icon_summary">VoLTE-Symbol anzeigen</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Symbol für ausgeschaltete Mobile Daten anzeigen</string>
+    <string name="data_disabled_icon_summary">Zeige das Kreuzzeichen neben dem Signalbalken wenn Mobile Daten ausgeschaltet sind</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Uhr</string>
     <string name="status_bar_clock">Datum und Uhrzeit</string>
@@ -52,6 +55,13 @@
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Wenn leute den Bildschrim sehen, lass alle wissen, dass du AOSiP nutzt</string>
     <string name="status_bar_logo_style_title">Benutzerdefiniertes Logobild</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Ticker</string>
+    <string name="ticker_summary">Benachrichtigungs-Vorschau in der Statusleiste</string>
+    <string name="ticker_animation_mode_title">Ticker-Animation</string>
+    <string name="ticker_animation_mode_alpha_fade">Überblenden</string>
+    <string name="ticker_animation_mode_scroll">Scrollen</string>
+    <string name="ticker_tick_duration_title">Ticker-Dauer</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Aktiviert</string>
     <string name="clock_disabled">Deaktiviert</string>
@@ -191,6 +201,9 @@
     <string name="quicksettings_title">Schnelleinstellungen</string>
     <string name="quicksettings_summary">Kacheln und erweiterte Statusleiste verwalten</string>
     <string name="expanded_category">Erweitert</string>
+    <string name="brightness_slider_title">Helligkeitsregler</string>
+    <string name="tiles_title">QS-Kacheln</string>
+    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Schaltfläche \"Adaptive Helligkeit\"</string>
     <string name="tuner_auto_brightness_right">Schaltfläche für adaptive Helligkeit rechts anzeigen</string>
@@ -399,11 +412,12 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Infos beim Ladevorgang</string>
     <string name="lockscreen_charging_current_summary">Zeige max Ladestrom und -spannung vom Ladegerät auf dem Sperrbildschirm an</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient-Musiktitelanzeige</string>
-    <string name="force_ambient_for_media_pref_summary">Einstellungen für Ambient-Musiktitelanzeige</string>
-    <string name="ambient_ticker_footer">Das ambient-Musiktitelanzeige stellt das Musikstück Titel in der ambient-display Bildschrim.\n\nWann ein Musikstück gestartet ist, wird es ausgelöst, auch wenn das ambient-Display deaktiviert ist. Es ergibt eine sauber ambient Display mit Titel Info mitte des Bildschirms.\n\nDu kannst mittels Doppeltes-Tippen auf Titel Info das Musikstück umgehen.\n\nWenn dir ein Pixel gehört, funkioniert das ambient-Musiktitelanzeige, mittels Aktivierung \'Now Playing\' und seine benachrichtingung in die Audio einstellungen.</string>
-    <string name="force_ambient_for_media_title">Aktivieren</string>
+    <!-- Ambient Music Ticker -->
+    <string name="force_ambient_for_media_pref_title">Ambient Musik Ticker</string>
+    <string name="force_ambient_for_media_pref_summary">Einstellungen für den Ambient Musik Ticker</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
+    <string name="ambient_title">Ambient Musik</string>
     <!-- Media art -->
     <string name="media_art_title">Albumcover anzeigen</string>
     <string name="media_art_summary">Mediencover auf dem Sperrbildschirm anzeigen</string>
@@ -421,6 +435,14 @@
     <string name="advanced_title">Erweiterte Einstellungen</string>
     <string name="advanced_summary">Verschiedene und zusätzliche Systemeinstellungen</string>
     <string name="system_category">Systemeinstellungen</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Musik-App starten</string>
+    <string name="headset_connect_player_disabled">Deaktiviert</string>
+    <string name="headset_connect_player_wired">Wenn Kabel Kopfhörer verbunden sind</string>
+    <string name="headset_connect_player_bt_no_carkit">Wenn BT-Kopfhörer (kein Carkit) eingesteckt ist</string>
+    <string name="headset_connect_player_bt">Wenn BT-Kopfhörer verbunden sind</string>
+    <string name="headset_connect_player_both_no_carkit">Wenn Kabel oder BT-Kopfhörer (kein Carkit) verbunden sind</string>
+    <string name="headset_connect_player_both">Wenn Kabel oder BT-Kopfhörer verbunden sind</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">CPU-Info anzeigen</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -444,6 +466,7 @@
     <string name="theme_accent_picker_default">Standard</string>
     <string name="accent_picker_material_colors">„Material“-Palette</string>
     <string name="accent_picker_custom_colors">Benutzerdefiniert</string>
+    <string name="qs_styles_dialog_title">Wähle einen Stil für die Kacheln der Schnelleinstellungen</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Vibrationseinstellungen während eines Gesprächs</string>
     <string name="incall_vibrate_connect_title">Vibriert bei Verbindung</string>

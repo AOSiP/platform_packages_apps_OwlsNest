@@ -43,15 +43,25 @@
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Biểu tượng VoLTE</string>
     <string name="volte_icon_summary">Hiển thị biểu tượng VoLTE</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Hiển thị biểu tượng tắt mạng di động</string>
+    <string name="data_disabled_icon_summary">Hiển thị biểu tượng dấu chéo bên cạnh biểu tượng mạng di động khi dữ liệu di động bị vô hiệu hóa</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Đồng hồ</string>
     <string name="status_bar_clock">Đồng hồ và Ngày</string>
     <string name="status_bar_clock_summary">Tùy chỉnh đồng hồ và ngày trên thanh trạng thái</string>
     <string name="clock_title_enable">Vị trí</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Logo Kronic</string>
+    <string name="kronic_logo_title">Ký hiệu AOSiP</string>
     <string name="kronic_logo_summary">Cho mọi người thấy rằng bạn đang dùng AOSiP :)</string>
-    <string name="status_bar_logo_style_title">Logo tùy chỉnh</string>
+    <string name="status_bar_logo_style_title">Tùy chỉnh biểu tượng</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Thông báo tường thuật</string>
+    <string name="ticker_summary">Xem trước thông báo trên thanh trạng thái</string>
+    <string name="ticker_animation_mode_title">Hiệu ứng thông báo tường thuật</string>
+    <string name="ticker_animation_mode_alpha_fade">Mờ dần</string>
+    <string name="ticker_animation_mode_scroll">Cuộn</string>
+    <string name="ticker_tick_duration_title">Thời gian tường thuật</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Bật</string>
     <string name="clock_disabled">Tắt</string>
@@ -72,12 +82,12 @@
     <string name="clock_date_format">Định dạng ngày</string>
     <string name="clock_date_string_edittext_title">Phải là định dạng ngày, vd. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Nhập chuỗi định dạng</string>
-    <string name="am_pm_clock_normal">Kích thước font bình thường</string>
-    <string name="am_pm_clock_small">Kích thước font nhỏ</string>
+    <string name="am_pm_clock_normal">Cỡ chữ bình thường</string>
+    <string name="am_pm_clock_small">Cỡ chữ nhỏ</string>
     <string name="am_pm_clock_none">Không hiển thị</string>
     <string name="clock_date_display_none">Không hiển thị</string>
-    <string name="clock_date_display_small">Kích thước font nhỏ</string>
-    <string name="clock_date_display_normal">Kích thước font bình thường</string>
+    <string name="clock_date_display_small">Cỡ chữ nhỏ</string>
+    <string name="clock_date_display_normal">Cỡ chữ bình thường</string>
     <string name="clock_date_style_normal">Bình thường</string>
     <string name="clock_date_style_lowercase">Chữ thường</string>
     <string name="clock_date_style_uppercase">Chữ in hoa</string>
@@ -117,7 +127,7 @@
     <string name="show_carrier_disabled">Tắt</string>
     <string name="show_carrier_keyguard">Chỉ màn hình khoá</string>
     <string name="show_carrier_statusbar">Chỉ thanh trạng thái</string>
-    <string name="show_carrier_enabled">Màn hình khoá &amp; thanh trạng thái</string>
+    <string name="show_carrier_enabled">Cả hai</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Tốc độ mạng</string>
     <string name="network_traffic_state_title">Hiển thị tốc độ mạng</string>
@@ -127,7 +137,7 @@
     <string name="network_traffic_hidearrow">Ẩn mũi tên</string>
     <string name="network_traffic_hidearrow_summary">Ẩn mũi tên bên cạnh tốc độ mạng</string>
     <string name="network_traffic_state_summary">Hiển thị tốc độ tải lên &amp; tải xuống</string>
-    <string name="network_traffic_location_title">Nơi hiển thị tốc độ mạng</string>
+    <string name="network_traffic_location_title">Khu vực hiển thị tốc độ mạng</string>
     <string name="network_traffic_location_summary">Hiển thị tốc độ mạng trên thanh trạng thái hoặc thanh tiêu đề cài đặt nhanh (thích hợp đối với màn hình tai thỏ, giọt nước,…)</string>
     <string name="network_traffic_statusbar">Thanh trạng thái</string>
     <string name="network_traffic_header">Thanh tiêu đề cài đặt nhanh</string>
@@ -191,10 +201,13 @@
     <string name="quicksettings_title">Cài đặt nhanh</string>
     <string name="quicksettings_summary">Quản lý phím tắt nhanh và thanh trạng thái mở rộng</string>
     <string name="expanded_category">Mở rộng</string>
+    <string name="brightness_slider_title">Thanh điều chỉnh độ sáng</string>
+    <string name="tiles_title">Ô Cài đặt nhanh</string>
+    <string name="qs_tile_footer">Để thay đổi số lượng cột &amp; hàng Cài đặt nhanh và hơn thế nữa, hãy mở trình đơn mở rộng bằng nút 3 chấm trong mục chỉnh sửa Cài đặt nhanh.</string>
     <!-- Brigntess Slider -->
-    <string name="tuner_show_auto_brightness">Nút độ sáng thích nghi</string>
-    <string name="tuner_auto_brightness_right">Nút độ sáng thích nghi bên phải</string>
-    <string name="tuner_show_brightness_buttons">Nút điều chỉnh độ sáng</string>
+    <string name="tuner_show_auto_brightness">Nút độ sáng tự động</string>
+    <string name="tuner_auto_brightness_right">Nút độ sáng tự động bên phải</string>
+    <string name="tuner_show_brightness_buttons">Nút điều chỉnh (-) &amp; (+) độ sáng</string>
     <string name="qs_show_brightness_title">Thanh trượt độ sáng</string>
     <string name="qs_show_brightness_summary">Hiện hoặc ẩn thanh trượt độ sáng trên cài đặt nhanh</string>
     <string name="brightness_slider_bottom_title">Thanh trượt độ sáng phía dưới</string>
@@ -254,9 +267,9 @@
     <string name="hardware_keys_double_tap_summary">Đặt hành động thực thi khi chạm đúp</string>
     <string name="hardware_keys_single_tap_summary">Đặt hành động khi chạm một lần</string>
     <string name="hardware_keys_long_press_summary">Đặt hành động khi nhấn giữ</string>
-    <string name="hardware_keys_single_tap_title">Hành động khi chạm một lần</string>
-    <string name="hardware_keys_long_press_title">Hành động khi nhấn giữ</string>
-    <string name="hardware_keys_double_tap_title">Hành động khi chạm đúp</string>
+    <string name="hardware_keys_single_tap_title">Chạm một lần</string>
+    <string name="hardware_keys_long_press_title">Nhấn giữ</string>
+    <string name="hardware_keys_double_tap_title">Chạm đúp</string>
     <string name="hardware_keys_category">Điều hướng</string>
     <string name="hardware_keys_disable_title">Tắt phím điều hướng</string>
     <!-- Button brightness -->
@@ -283,8 +296,8 @@
     <string name="powermenu_screenshot_summary">Hiện nút chụp ảnh màn hình trong menu nguồn</string>
     <string name="powermenu_airplane_title">Chế độ trên máy bay</string>
     <!--Vol button rotation swap-->
-    <string name="swap_volume_buttons">Đảo chiều phím Âm lượng</string>
-    <string name="volume_keys_swap_summary">Đảo chiều phím Âm lượng dựa trên chiều xoay của thiết bị</string>
+    <string name="swap_volume_buttons">Đảo chiều phím âm lượng</string>
+    <string name="volume_keys_swap_summary">Đảo chiều phím âm lượng dựa trên chiều xoay của thiết bị</string>
     <!--Volume keys wake -->
     <string name="volume_rocker_wake_title">Bật sáng màn hình</string>
     <string name="volume_rocker_wake_summary">Nhấn phím Âm lượng sẽ bật sáng màn hình thiết bị</string>
@@ -369,7 +382,7 @@
     <string name="ambient_visualizer_title">Sóng âm nhạc trên Màn hình sáng</string>
     <string name="ambient_visualizer_summary">Hiển thị sóng âm trên Màn hình sáng (mờ hơn)</string>
     <!-- Lockscreen items -->
-    <string name="lockscreen_clock_title">Đồng hồ Màn hình khoá</string>
+    <string name="lockscreen_clock_title">Đồng hồ màn hình khoá</string>
     <string name="lockscreen_clock_summary">Hiển thị đồng hồ trên màn hình khoá</string>
     <string name="lockscreen_info_title">Thông tin bên dưới Đồng hồ</string>
     <string name="lockscreen_info_summary">Hiển thị thông tin thời tiết, ngày và báo thức trên màn hình khoá</string>
@@ -399,11 +412,12 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Thông tin khi sạc</string>
     <string name="lockscreen_charging_current_summary">Hiển thị mức sạc tối đa của bộ sạc và điện áp hiện tại trên màn hình khoá</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Thẻ âm nhạc trên Màn hình sáng</string>
-    <string name="force_ambient_for_media_pref_summary">Tùy chỉnh thẻ âm nhạc trên Màn hình sáng</string>
-    <string name="ambient_ticker_footer">Thẻ Âm nhạc Màn hình sáng hiển thị thông tin bài hát đang phát ngay trên Màn hình sáng.\n\nTính năng này vẫn hoạt động khi có một bài hát đang phát cho dù Màn hình sáng đang bị tắt. Nó sẽ thay Màn hình sáng bằng một màn hình đen với thông tin bài hát ở chính giữa.\n\nBạn vẫn có thể chạm đúp vào thông tin bài hát để chuyển sang bài tiếp theo.\n\nNếu bạn đang sở hữu điện thoại Pixel và bật Now Playing, và thông báo của nó trong cài đặt Âm thanh, thì Thẻ Âm nhạc Màn hình sáng vẫn sẽ hoạt động cùng với Now Playing.</string>
-    <string name="force_ambient_for_media_title">Bật</string>
+    <!-- Ambient Music Ticker -->
+    <string name="force_ambient_for_media_pref_title">Thẻ âm nhạc ẩn hiện</string>
+    <string name="force_ambient_for_media_pref_summary">Tùy chỉnh Tường thuật Âm nhạc Xung quanh</string>
+    <string name="ambient_ticker_footer">Thẻ Âm nhạc Màn hình sáng hiển thị thông tin bài hát đang phát ngay trên Màn hình khoá và Màn hình sáng.\n\nTính năng này vẫn hoạt động khi có một bài hát đang phát cho dù Màn hình sáng đang bị tắt. Nó sẽ thay Màn hình sáng bằng một màn hình đen với thông tin bài hát ở chính giữa.\n\nBạn vẫn có thể chạm đúp vào thông tin bài hát để chuyển sang bài tiếp theo.\n\nNếu bạn đang sở hữu điện thoại Pixel (Pixel 2 hoặc mới hơn) và bật \"Đang phát\" và thông báo của nó trong cài đặt Âm thanh, thì Thẻ Âm nhạc Màn hình sáng vẫn sẽ hoạt động với nó.</string>
+    <string name="force_ambient_for_media_title">Hiển thị thẻ âm nhạc trên màn hình khoá</string>
+    <string name="ambient_title">Âm nhạc Xung quanh</string>
     <!-- Media art -->
     <string name="media_art_title">Ảnh bìa phương tiện</string>
     <string name="media_art_summary">Hiển thị ảnh bìa phương tiện trên màn hình khoá</string>
@@ -421,6 +435,14 @@
     <string name="advanced_title">Cài đặt nâng cao</string>
     <string name="advanced_summary">Cài đặt nâng cao và vài tùy chọn linh tinh khác</string>
     <string name="system_category">Cài đặt Hệ thống</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Khởi chạy ứng dụng nhạc</string>
+    <string name="headset_connect_player_disabled">Vô hiệu hoá</string>
+    <string name="headset_connect_player_wired">Khi kết nối tai nghe có dây</string>
+    <string name="headset_connect_player_bt_no_carkit">Khi kết nối tai nghe Bluetooth (không có phụ kiện ô tô)</string>
+    <string name="headset_connect_player_bt">Khi kết nối tai nghe Bluetooth</string>
+    <string name="headset_connect_player_both_no_carkit">Khi kết nối tai nghe có dây hoặc tai nghe Bluetooth (không có phụ kiện ô tô)</string>
+    <string name="headset_connect_player_both">Khi kết nối tai nghe có dây hoặc tai nghe Bluetooth</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Hiển thị thông tin CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -444,6 +466,7 @@
     <string name="theme_accent_picker_default">Mặc định</string>
     <string name="accent_picker_material_colors">Bảng màu Material</string>
     <string name="accent_picker_custom_colors">Được người dùng yêu cầu</string>
+    <string name="qs_styles_dialog_title">Chọn kiểu ô Cài đặt nhanh</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Tùy chọn rung trong cuộc gọi</string>
     <string name="incall_vibrate_connect_title">Rung khi kết nối</string>

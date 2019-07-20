@@ -43,6 +43,9 @@
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">Ícone do VoLTE</string>
     <string name="volte_icon_summary">Exibir ícone VoLTE</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Show data disabled icon</string>
+    <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Relógio</string>
     <string name="status_bar_clock">Relógio e data</string>
@@ -52,6 +55,13 @@
     <string name="kronic_logo_title">Logo do Kronic</string>
     <string name="kronic_logo_summary">Deixe todo mundo saber que você está usando AOSIP quando olharem pra sua tela</string>
     <string name="status_bar_logo_style_title">Imagem do logotipo personalizado</string>
+    <!-- Statusbar ticker -->
+    <string name="ticker_category">Ticker</string>
+    <string name="ticker_summary">Notification preview in status bar</string>
+    <string name="ticker_animation_mode_title">Ticker animation</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Desabilitado</string>
@@ -191,6 +201,9 @@
     <string name="quicksettings_title">Configurações Rápidas</string>
     <string name="quicksettings_summary">Gerencie seus blocos rápidos e a barra de status expandida</string>
     <string name="expanded_category">Expandido</string>
+    <string name="brightness_slider_title">Brightness slider</string>
+    <string name="tiles_title">QS Tiles</string>
+    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Botão de brilho adaptável</string>
     <string name="tuner_auto_brightness_right">Botão de brilho adaptável à direita</string>
@@ -399,11 +412,12 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Informação de carregamento</string>
     <string name="lockscreen_charging_current_summary">Exibir a tensão e corrente máxima do carregador na tela de bloqueio</string>
-    <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Ícone de música ambiente</string>
-    <string name="force_ambient_for_media_pref_summary">Configurar o ícone de música ambiente</string>
-    <string name="ambient_ticker_footer">Ícone de Música Ambiente mostra informações da música sendo reproduzida na tela da visão de ambiente.\n\nÉ acionado também se a tela ambiente estiver desativada quando uma a reprodução de uma nova música se inicia, forçando uma tela ambiente limpa com as informações da música no meio da tela.\n\nVoce pode dar dois toques na informação da música para ignorar.\n\nSe você possui um Pixel e ativar o Tocando Agora e suas notificações nas configurações de áudio, Ícone de Música Ambiente irá funcionar também com isso.</string>
-    <string name="force_ambient_for_media_title">Habilitar</string>
+    <!-- Ambient Music Ticker -->
+    <string name="force_ambient_for_media_pref_title">Ambient Music Ticker</string>
+    <string name="force_ambient_for_media_pref_summary">Configure the Ambient Music Ticker</string>
+    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
+    <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
+    <string name="ambient_title">Ambient Music</string>
     <!-- Media art -->
     <string name="media_art_title">Mostrar capa do album de música</string>
     <string name="media_art_summary">Habilitar a arte da capa de mídia na tela de bloqueio</string>
@@ -421,6 +435,14 @@
     <string name="advanced_title">Configurações avançadas</string>
     <string name="advanced_summary">Configurações de sistema variadas e extras</string>
     <string name="system_category">Configurações do sistema</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Mostrar informação da CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -444,6 +466,7 @@
     <string name="theme_accent_picker_default">Padrão</string>
     <string name="accent_picker_material_colors">Paleta de cores</string>
     <string name="accent_picker_custom_colors">Solicitação de usuário</string>
+    <string name="qs_styles_dialog_title">Select a QS tile style</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Opções de vibração na chamada</string>
     <string name="incall_vibrate_connect_title">Vibrar ao conectar</string>
