@@ -115,6 +115,13 @@
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
 
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Battery Estimates</string>
+    <string name="show_battery_estimate_summary">Show Battery Estimates in QS Panel</string>
+    <string name="battery_estimate_position_title">Battery Icon &amp; Estimates Position</string>
+    <string name="battery_estimate_position_qsheader">QS Header</string>
+    <string name="battery_estimate_position_qspanel">QS Panel</string>
+
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Battery style</string>
     <string name="status_bar_battery_style_port">Portrait</string>
