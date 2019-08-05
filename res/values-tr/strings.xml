@@ -56,12 +56,12 @@
     <string name="kronic_logo_summary">Herkes ekranınızı gördüğünde AOSİP kullandığınızı bilmesini sağlayın</string>
     <string name="status_bar_logo_style_title">Özel logo stili</string>
     <!-- Statusbar ticker -->
-    <string name="ticker_category">Ticker</string>
-    <string name="ticker_summary">Notification preview in status bar</string>
-    <string name="ticker_animation_mode_title">Ticker animation</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="ticker_category">Şerit</string>
+    <string name="ticker_summary">Durum çubuğunda bildirim ön izlemesi</string>
+    <string name="ticker_animation_mode_title">Şerit animasyonu</string>
+    <string name="ticker_animation_mode_alpha_fade">Karart</string>
+    <string name="ticker_animation_mode_scroll">Kaydır</string>
+    <string name="ticker_tick_duration_title">Şerit süresi</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Etkin</string>
     <string name="clock_disabled">Devre dışı</string>
@@ -201,9 +201,9 @@
     <string name="quicksettings_title">Hızlı Ayarlar</string>
     <string name="quicksettings_summary">Hızlı karelerinizi ve genişletilmiş durum çubuğunuzu yönetin</string>
     <string name="expanded_category">Genişletilmiş</string>
-    <string name="brightness_slider_title">Brightness slider</string>
-    <string name="tiles_title">QS Tiles</string>
-    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
+    <string name="brightness_slider_title">Parlaklık kaydırıcı</string>
+    <string name="tiles_title">Hızlı ayarlar kareleri</string>
+    <string name="qs_tile_footer">Hızlı ayarlar paneli satır ve sütun sayısını ve daha fazlasını değiştirmek için, Hızlı ayarlar panelin de açılan menüsündeki hızlı ayarlar paneli düzenleme bölümünün altındaki 3-nokta menü tuşunu kullanın.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Uyarlanabilir parlaklık tuşu</string>
     <string name="tuner_auto_brightness_right">Uyarlanabilir parlaklık tuşu için sağ konum</string>
@@ -413,11 +413,11 @@
     <string name="lockscreen_charging_current_title">Şarj bilgisi</string>
     <string name="lockscreen_charging_current_summary">Kilit ekranı üzerinde şarj cihazının maksimum akım voltajını ve pil sıcaklığını görüntüle</string>
     <!-- Ambient Music Ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient Music Ticker</string>
-    <string name="force_ambient_for_media_pref_summary">Configure the Ambient Music Ticker</string>
+    <string name="force_ambient_for_media_pref_title">Ortam Ekranı Müzik Bilgisi</string>
+    <string name="force_ambient_for_media_pref_summary">Ortam ekranında müzik bilgisini yapılandırma</string>
     <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
     <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
-    <string name="ambient_title">Ambient Music</string>
+    <string name="ambient_title">Ortam ekranı müziği</string>
     <!-- Media art -->
     <string name="media_art_title">Medya kapak resmi</string>
     <string name="media_art_summary">Kilit ekranında medya albüm kapağını etkinleştir</string>
@@ -436,13 +436,13 @@
     <string name="advanced_summary">Çeşitli ve ekstra sistem ayarları</string>
     <string name="system_category">Sistem Ayarları</string>
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app</string>
-    <string name="headset_connect_player_disabled">Disabled</string>
-    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
-    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
-    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
+    <string name="headset_connect_player_title">Müzik uygulamasını başlat</string>
+    <string name="headset_connect_player_disabled">Devre dışı</string>
+    <string name="headset_connect_player_wired">Kablolu kulaklık takıldığında</string>
+    <string name="headset_connect_player_bt_no_carkit">BT kulaklık takıldığında (araç kiti değil)</string>
+    <string name="headset_connect_player_bt">BT kulaklık takıldığında</string>
+    <string name="headset_connect_player_both_no_carkit">Kablolu veya BT kulaklık takıldığında (araç kiti değil)</string>
+    <string name="headset_connect_player_both">Kablolu veya BT kulaklık takıldığında</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">İşlemci bilgisini göster</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -466,7 +466,7 @@
     <string name="theme_accent_picker_default">Varsayılan</string>
     <string name="accent_picker_material_colors">Materyal renkler</string>
     <string name="accent_picker_custom_colors">Özel renkler</string>
-    <string name="qs_styles_dialog_title">Select a QS tile style</string>
+    <string name="qs_styles_dialog_title">Hızlı ayarlar kare stili seçin</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Arama titreşim seçenekleri</string>
     <string name="incall_vibrate_connect_title">Bağlandığında titret</string>

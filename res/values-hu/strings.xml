@@ -56,7 +56,7 @@
     <string name="kronic_logo_summary">Hadd lássa mindenki, hogy AOSiP-t használ, amikor ránéz a képernyőjére</string>
     <string name="status_bar_logo_style_title">Egyéni logókép</string>
     <!-- Statusbar ticker -->
-    <string name="ticker_category">Ticker</string>
+    <string name="ticker_category">Gördülő értesítés</string>
     <string name="ticker_summary">Értesítés előnézete az állapotsávon</string>
     <string name="ticker_animation_mode_title">A Jelzőszalag animációja</string>
     <string name="ticker_animation_mode_alpha_fade">Halványuló</string>
@@ -203,7 +203,7 @@
     <string name="expanded_category">Kiterjesztett</string>
     <string name="brightness_slider_title">Fényerőszabályzó-csúszka</string>
     <string name="tiles_title">Gyorsbeállítás-csempék</string>
-    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
+    <string name="qs_tile_footer">A csempesorok és oszlopok számának megváltoztatásához használd a 3-pötty menüt a csempe legördülő menüjében.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Az \'Alkalmazkodó fényerő\' gombja</string>
     <string name="tuner_auto_brightness_right">Jobb oldalra pozícionált \'Alkalmazkodó fényerő\' gomb</string>
@@ -416,8 +416,8 @@
     <string name="force_ambient_for_media_pref_title">Ambient Music jelzőszalag</string>
     <string name="force_ambient_for_media_pref_summary">A környezeti kijelzőn megjelenő zeneszám-információ beállítása</string>
     <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
-    <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
-    <string name="ambient_title">Ambient Music</string>
+    <string name="force_ambient_for_media_title">Zene-szalag megjelenítése a zárképernyőn</string>
+    <string name="ambient_title">Zene a környezeti kijelzőn</string>
     <!-- Media art -->
     <string name="media_art_title">A média albumborítója</string>
     <string name="media_art_summary">Engedélyezi a médiaborító megjelenítését a záróképernyőn</string>
