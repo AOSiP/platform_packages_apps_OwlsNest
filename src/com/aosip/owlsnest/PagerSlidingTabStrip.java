@@ -25,6 +25,7 @@ import android.graphics.Paint.Style;
 import android.graphics.Typeface;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.content.res.AccentUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
@@ -137,9 +138,12 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         // Get custom attrs
         a = context.obtainStyledAttributes(attrs, R.styleable.PagerSlidingTabStrip);
 
-        indicatorColor = context.getResources().getColor(R.color.theme_accent);
-        underlineColor = context.getResources().getColor(R.color.theme_accent);
-        dividerColor = context.getResources().getColor(R.color.theme_accent);
+        indicatorColor = AccentUtils.getAccentColor(
+                        context.getResources().getColor(R.color.theme_accent));
+        underlineColor = AccentUtils.getAccentColor(
+                        context.getResources().getColor(R.color.theme_accent));
+        dividerColor = AccentUtils.getAccentColor(
+                        context.getResources().getColor(R.color.theme_accent));
         indicatorHeight = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsIndicatorHeight, indicatorHeight);
         underlineHeight = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsUnderlineHeight, underlineHeight);
         dividerPadding = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsDividerPadding, dividerPadding);
