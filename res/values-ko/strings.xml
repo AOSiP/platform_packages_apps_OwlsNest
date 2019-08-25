@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">시스템 UI 재시작이 필요합니다</string>
     <string name="systemui_restart_message">모든 변경 사항을 적용하려면 시스템 UI를 다시 시작해야합니다. 지금 시스템 UI를 다시 시작하시겠습니까?</string>
+    <string name="theme_category_title">테마 옵션</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">상태 표시줄</string>
     <string name="statusbar_bar_summary">다양한 상태 표시줄 구성요소를 설정합니다</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">테마 옵션</string>
-    <string name="accent_picker_dialog_title">강조색 선택</string>
-    <string name="theme_accent_picker_title">강조 색상</string>
-    <string name="theme_accent_picker_summary">시스템 테마 강조 색상 선택</string>
     <string name="theme_accent_picker_default">확인</string>
-    <string name="accent_picker_material_colors">마테리얼 팔레트</string>
-    <string name="accent_picker_custom_colors">사용자 요청</string>
     <string name="qs_styles_dialog_title">Select a QS tile style</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">통화 중 진동 옵션</string>

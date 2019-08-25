@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">需要重启系统界面</string>
     <string name="systemui_restart_message">要使所有更改生效，需要重新启动系统界面。现在重新启动系统界面吗？</string>
+    <string name="theme_category_title">系统主题</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">状态栏</string>
     <string name="statusbar_bar_summary">调整各类状态栏项目</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">系统主题</string>
-    <string name="accent_picker_dialog_title">选择强调色</string>
-    <string name="theme_accent_picker_title">强调色</string>
-    <string name="theme_accent_picker_summary">选择系统主题强调色</string>
     <string name="theme_accent_picker_default">默认</string>
-    <string name="accent_picker_material_colors">质感设计</string>
-    <string name="accent_picker_custom_colors">用户请求</string>
     <string name="qs_styles_dialog_title">选择一个快速设置的样式</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">通话振动选项</string>

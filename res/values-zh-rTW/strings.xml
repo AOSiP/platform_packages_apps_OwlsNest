@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">請求重新啟動使用者介面</string>
     <string name="systemui_restart_message">要使所有更改生效，需要重新啟動使用者介面。 現在重新啟動使用者介面？</string>
+    <string name="theme_category_title">系統主題</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">狀態列</string>
     <string name="statusbar_bar_summary">調整各種狀態列元素</string>
@@ -460,13 +461,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">系統主題</string>
-    <string name="accent_picker_dialog_title">選取一個強調色</string>
-    <string name="theme_accent_picker_title">強調顏色</string>
-    <string name="theme_accent_picker_summary">選擇系統主題強調色</string>
     <string name="theme_accent_picker_default">預設</string>
-    <string name="accent_picker_material_colors">材料設計</string>
-    <string name="accent_picker_custom_colors">使用者請求</string>
     <string name="qs_styles_dialog_title">Select a QS tile style</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">通話震動選項</string>

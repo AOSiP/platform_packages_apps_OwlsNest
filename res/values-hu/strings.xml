@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Rendszerfelület újraindítás szükséges</string>
     <string name="systemui_restart_message">Az összes módosítás érvénybe léptetéséhez a rendszerfelület újraindítása szükséges. Újraindítja most?</string>
+    <string name="theme_category_title">Téma lehetőségek</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Állapotsor</string>
     <string name="statusbar_bar_summary">Különböző állapotsori elemek</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Téma lehetőségek</string>
-    <string name="accent_picker_dialog_title">Kiemelőszín kiválasztása</string>
-    <string name="theme_accent_picker_title">Kiemelőszín</string>
-    <string name="theme_accent_picker_summary">Rendszertéma-kiemelőszín kiválasztása</string>
     <string name="theme_accent_picker_default">Alapértelmezett</string>
-    <string name="accent_picker_material_colors">Material színpaletta</string>
-    <string name="accent_picker_custom_colors">A felhasználó által kívánt</string>
     <string name="qs_styles_dialog_title">Válasszon egy gyorsbeállítás-csempestílust</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">A hívás közbeni rezgés beállításai</string>

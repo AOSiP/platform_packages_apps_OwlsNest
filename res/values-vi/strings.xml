@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Yêu cầu khởi động lại giao diện hệ thống</string>
     <string name="systemui_restart_message">Để các thay đổi có hiệu lực, phải khởi động lại giao diện hệ thống. Khởi động lại ngay?</string>
+    <string name="theme_category_title">Chủ đề</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Thanh trạng thái</string>
     <string name="statusbar_bar_summary">Tùy chỉnh các thành phần trên thanh trạng thái</string>
@@ -48,7 +49,7 @@
     <string name="data_disabled_icon_summary">Hiển thị dấu chéo bên cạnh cột sóng khi không có kết nối mạng</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Đồng hồ</string>
-    <string name="status_bar_clock">Đồng hồ và Ngày</string>
+    <string name="status_bar_clock">Đồng hồ và ngày</string>
     <string name="status_bar_clock_summary">Tùy chỉnh đồng hồ và ngày trên thanh trạng thái</string>
     <string name="clock_title_enable">Vị trí</string>
     <!-- Kronic logo -->
@@ -98,7 +99,7 @@
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Biểu tượng pin</string>
     <string name="status_bar_battery_percentage_title">Phần trăm pin</string>
-    <string name="status_bar_battery_percentage_default">Ẩn</string>
+    <string name="status_bar_battery_percentage_default">Không hiển thị</string>
     <string name="status_bar_battery_percentage_text_next">Cạnh biểu tượng pin</string>
     <string name="status_bar_battery_percentage_text_inside">Trong biểu tượng pin</string>
     <!-- Status bar battery style-->
@@ -110,7 +111,7 @@
     <string name="status_bar_battery_style_dotted_circle">Vòng tròn chấm</string>
     <string name="status_bar_battery_style_big_dotted_circle">Vòng tròn chấm lớn</string>
     <string name="status_bar_battery_style_text">Phần trăm pin</string>
-    <string name="status_bar_battery_style_hidden">Ẩn</string>
+    <string name="status_bar_battery_style_hidden">Không hiển thị</string>
     <!-- Old Style Mobile -->
     <string name="use_old_mobiletype_title">Sử dụng biểu tượng mạng di động cũ</string>
     <string name="use_old_mobiletype_summary">Sử dụng biểu tượng mạng di động của Android O\n giao diện sẽ khởi động lại</string>
@@ -120,13 +121,13 @@
     <!-- Custom carrier label and position -->
     <string name="carrier_category">Tên nhà mạng</string>
     <string name="carrier_label_settings_summary">Chỉnh sửa tên nhà mạng</string>
-    <string name="custom_carrier_label_title">Tên nhà mạng tùy chỉnh</string>
+    <string name="custom_carrier_label_title">Tùy chỉnh tên nhà mạng</string>
     <string name="custom_carrier_label_explain">Vui lòng nhập tên nhà mạng mới theo ý muốn. Nếu để trống, tên nhà mạng sẽ được hiển thị mặc định hệ.</string>
-    <string name="custom_carrier_label_notset">Tên nhà mạng tùy chỉnh chưa được đặt</string>
+    <string name="custom_carrier_label_notset">Tên tùy chỉnh hiện chưa được thiết lập</string>
     <string name="show_carrier_title">Tên nhà mạng</string>
     <string name="show_carrier_disabled">Đã tắt</string>
-    <string name="show_carrier_keyguard">Chỉ màn hình khoá</string>
-    <string name="show_carrier_statusbar">Chỉ thanh trạng thái</string>
+    <string name="show_carrier_keyguard">Trên màn hình khoá</string>
+    <string name="show_carrier_statusbar">Trên thanh trạng thái</string>
     <string name="show_carrier_enabled">Cả hai</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Tốc độ mạng</string>
@@ -159,7 +160,7 @@
     <string name="notification_sound_vib_screen_on_title">Âm thanh thông báo khi màn hình bật</string>
     <string name="notification_sound_vib_screen_on_summary">Phát âm thanh và rung khi có thông báo khi màn hình đang bật</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Làm cho thông báo nổi bớt khó chịu</string>
+    <string name="less_boring_heads_up_title">Hạn chế thông báo nổi</string>
     <string name="less_boring_heads_up_summary">Chỉ hiển thị thông báo nổi đối với cuộc gọi và tin nhắn</string>
     <!-- Heads up -->
     <string name="heads_up_title">Bật</string>
@@ -341,8 +342,8 @@
     <string name="recents_clear_all_location_bottom_left">Phía dưới bên trái</string>
     <string name="recents_clear_all_location_bottom_center">Chính giữa phía dưới</string>
     <!--Owlsnest Gestures-->
-    <string name="gesture_category">Cử chỉ tràng cạnh</string>
-    <string name="gesture_summary">Cử chỉ dựa trên các tùy chọn/hành động</string>
+    <string name="gesture_category">Cử chỉ thao tác</string>
+    <string name="gesture_summary">Tùy chọn/hành động dựa trên cử chỉ</string>
     <string name="double_tap_options">Chạm đúp để tắt màn hình</string>
     <string name="aosp_gesture_title">Cử chỉ AOSP</string>
     <!-- Active edge -->
@@ -356,7 +357,7 @@
     <string name="active_edge_footer_info">Không phải tất cả hành động bóp cạnh của Active Edge cũng có thể bật màn hình</string>
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Vuốt ba ngón tay</string>
-    <string name="three_finger_gesture_summary">Vuốt 3 ngón tay xuống để chụp màn hình</string>
+    <string name="three_finger_gesture_summary">Vuốt ba ngón tay để ảnh chụp ảnh màn hình</string>
     <!--Double Tap to Sleep Navbar-->
     <string name="double_tap_sleep_navbar">Thanh điều hướng</string>
     <!--Double Tap to Sleep Lockscreen-->
@@ -370,7 +371,7 @@
     <string name="lockscreen_qs_disabled_title">Vô hiệu hoá bảng cài đặt nhanh khi bị khoá</string>
     <string name="lockscreen_qs_disabled_summary">Vô hiệu hoá bảng cài đặt nhanh trên màn hình khoá đã bảo mật</string>
     <string name="lock_screen_shortcuts_title">Phím tắt màn hình khoá</string>
-    <string name="lock_screen_shortcuts_summary">Quản lý lối tắt phía dưới màn hình khoá</string>
+    <string name="lock_screen_shortcuts_summary">Quản lý phím tắt phía dưới màn hình khoá</string>
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_category">Sóng âm nhạc</string>
     <string name="lockscreen_visualizer_title">Bật sóng âm nhạc màn hình khoá</string>
@@ -394,10 +395,10 @@
     <string name="lockscreen_clock_selection_du">Đồng hồ kim (DU)</string>
     <string name="lockscreen_clock_selection_sammy">Đồng hồ xếp dọc</string>
     <string name="lockscreen_clock_selection_sammy_bold">Đồng hồ dọc (in đậm giờ)</string>
-    <string name="lockscreen_clock_selection_sammy_accent">Đồng hồ xếp dọc (khác màu)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_bold">Đồng hồ xếp dọc in đậm (màu chủ đề)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt">Đồng hồ xếp dọc (số khác màu)</string>
-    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Đồng hồ xếp dọc in đậm khác (màu chủ đề)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Đồng hồ dọc (màu chủ đề)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_bold">Đồng hồ dọc in đậm (màu chủ đề)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Đồng hồ dọc (màu chủ đề trên phút)</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt_bold">Đồng hồ dọc in đậm khác (màu chủ đề)</string>
     <string name="lockscreen_clock_selection_text">Chữ</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Bộ lọc ảnh bìa âm nhạc</string>
@@ -448,24 +449,18 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Hiển thị thông tin CPU</string>
     <!-- Call notifications -->
-    <string name="call_notifications_cat">Tùy chọn Thông báo Cuộc gọi</string>
-    <string name="flashlight_on_call_title">Chớp đèn flash khi có cuộc gọi</string>
+    <string name="call_notifications_cat">Tùy chọn thông báo cuộc gọi</string>
+    <string name="flashlight_on_call_title">Chớp đèn flash cuộc gọi đến</string>
     <string name="flashlight_on_call_disabled">Tắt</string>
-    <string name="flashlight_on_call_not_dnd">Chỉ chớp flash khi ở chế độ chuông</string>
-    <string name="flashlight_on_call_dnd">Nháy đèn chỉ khi đang bật Không làm phiền</string>
-    <string name="flashlight_on_call_always">Luôn nháy đèn</string>
+    <string name="flashlight_on_call_not_dnd">Chỉ chớp đèn flash khi ở chế độ chuông</string>
+    <string name="flashlight_on_call_dnd">Chỉ chớp đèn chỉ khi ở chế độ DND</string>
+    <string name="flashlight_on_call_always">Luôn nháy đèn flash</string>
     <!-- AOSP Recents component Style -->
     <string name="recents_component_type_title">Kiểu màn hình đa nhiệm</string>
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Chủ đề</string>
-    <string name="accent_picker_dialog_title">Chọn màu chủ đề</string>
-    <string name="theme_accent_picker_title">Màu chủ đề</string>
-    <string name="theme_accent_picker_summary">Chọn màu chủ đề cho hệ thống</string>
     <string name="theme_accent_picker_default">Mặc định</string>
-    <string name="accent_picker_material_colors">Bảng màu Material</string>
-    <string name="accent_picker_custom_colors">Được người dùng yêu cầu</string>
     <string name="qs_styles_dialog_title">Chọn kiểu ô cài đặt nhanh</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Tùy chọn rung trong cuộc gọi</string>

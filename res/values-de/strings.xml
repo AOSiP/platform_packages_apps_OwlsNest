@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Neustart der SystemUI erforderlich</string>
     <string name="systemui_restart_message">Um alle Änderungen anzuwenden ist ein Neustart von SystemUI notwendig. SystemUI jetzt neustarten?</string>
+    <string name="theme_category_title">Themen-Optionen</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Statusleiste</string>
     <string name="statusbar_bar_summary">Passe diverse Sachen an der Statusleiste an</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Themen-Optionen</string>
-    <string name="accent_picker_dialog_title">Wähle eine Akzentfarbe</string>
-    <string name="theme_accent_picker_title">Akzentfarbe</string>
-    <string name="theme_accent_picker_summary">Wähle eine System-Theme Akzentfarbe</string>
     <string name="theme_accent_picker_default">Standard</string>
-    <string name="accent_picker_material_colors">„Material“-Palette</string>
-    <string name="accent_picker_custom_colors">Benutzerdefiniert</string>
     <string name="qs_styles_dialog_title">Wähle einen Stil für die Kacheln der Schnelleinstellungen</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Vibrationseinstellungen während eines Gesprächs</string>

@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Необхідне перезавантаження системного інтерфейсу</string>
     <string name="systemui_restart_message">Для застосування змін потрібно перезаватажити системний інтерфейс. Перезавантажити зараз?</string>
+    <string name="theme_category_title">Налаштування тем оформлення</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Рядок стану</string>
     <string name="statusbar_bar_summary">Налаштування різних елементів рядку стану</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Налаштування тем оформлення</string>
-    <string name="accent_picker_dialog_title">Виберіть колір відтінку</string>
-    <string name="theme_accent_picker_title">Колір відтінку</string>
-    <string name="theme_accent_picker_summary">Оберіть колір теми оформлення системи</string>
     <string name="theme_accent_picker_default">За замовчуванням</string>
-    <string name="accent_picker_material_colors">Матеріальна палітра</string>
-    <string name="accent_picker_custom_colors">Палітра користувача</string>
     <string name="qs_styles_dialog_title">Вибрати стиль плиток Швидких налаштувань</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Параметри вібрації під час дзвінка</string>

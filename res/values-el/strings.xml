@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Απαιτείται επανεκκίνηση του συστήματος UI</string>
     <string name="systemui_restart_message">Για να τεθούν σε ισχύ οι αλλαγές, απαιτείται επανεκκίνηση του συστήματος UI. Επανεκκίνηση του συστήματος UI τώρα;</string>
+    <string name="theme_category_title">Επιλογές θέματος</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Γραμμή κατάστασης</string>
     <string name="statusbar_bar_summary">Ρύθμιση διάφορων στοιχείων της γραμμής κατάστασης</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Επιλογές θέματος</string>
-    <string name="accent_picker_dialog_title">Επιλογή χρώματος</string>
-    <string name="theme_accent_picker_title">Χρώμα απόχρωσης</string>
-    <string name="theme_accent_picker_summary">Επιλέξτε χρώμα απόχρωσης συστήματος</string>
     <string name="theme_accent_picker_default">Προεπιλογή</string>
-    <string name="accent_picker_material_colors">Παλέτα χρωμάτων</string>
-    <string name="accent_picker_custom_colors">Αίτημα Χρήστη</string>
     <string name="qs_styles_dialog_title">Επιλογή του στυλ των γρήγορων ρυθμίσεων</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Επιλογές δονήσεων κατά τις κλήσεις</string>

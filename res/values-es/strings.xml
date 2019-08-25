@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Se requiere reinicio de SystemUI</string>
     <string name="systemui_restart_message">Para que todos los cambios surtan efecto, se necesita reiniciar SystemUI ¿reiniciar ahora?</string>
+    <string name="theme_category_title">Configuración de Temas</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Barra de estado</string>
     <string name="statusbar_bar_summary">Ajuste varios elementos de la barra de estado</string>
@@ -44,8 +45,8 @@
     <string name="volte_icon_title">Icono de VoLTE</string>
     <string name="volte_icon_summary">Mostrar el icono VoLTE</string>
     <!-- Data disabled icon -->
-    <string name="data_disabled_icon_title">Show data disabled icon</string>
-    <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+    <string name="data_disabled_icon_title">Mostrar icono de datos deshabilitados</string>
+    <string name="data_disabled_icon_summary">Mostrar una \"×\" al lado de la barra de señal cuando los datos estén deshabilitados</string>
     <!-- Status bar clock options -->
     <string name="clock_category">Reloj</string>
     <string name="status_bar_clock">Reloj y fecha</string>
@@ -56,12 +57,12 @@
     <string name="kronic_logo_summary">Permite que vean que estas usando AOSiP cuando vean tu pantalla</string>
     <string name="status_bar_logo_style_title">Imagen de logo personalizado</string>
     <!-- Statusbar ticker -->
-    <string name="ticker_category">Ticker</string>
-    <string name="ticker_summary">Notification preview in status bar</string>
-    <string name="ticker_animation_mode_title">Ticker animation</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="ticker_category">Ticker de notificacion</string>
+    <string name="ticker_summary">Pre-visualización de la notificación en la barra de estado</string>
+    <string name="ticker_animation_mode_title">Animación de notificación Ticker</string>
+    <string name="ticker_animation_mode_alpha_fade">Desvanecer</string>
+    <string name="ticker_animation_mode_scroll">Desplazamiento</string>
+    <string name="ticker_tick_duration_title">Duración de ticker</string>
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Deshabilitado</string>
@@ -201,9 +202,9 @@
     <string name="quicksettings_title">Ajustes rápidos</string>
     <string name="quicksettings_summary">Administre sus mosaicos rápidos y barra de estado expandida</string>
     <string name="expanded_category">Expandido</string>
-    <string name="brightness_slider_title">Brightness slider</string>
-    <string name="tiles_title">QS Tiles</string>
-    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
+    <string name="brightness_slider_title">Control deslizante de brillo</string>
+    <string name="tiles_title">Ajustes rápidos</string>
+    <string name="qs_tile_footer">Para cambiar el numero de columnas y filas de los ajustes rápidos, use el menú de 3 puntos que se encuentra al deslizar y mostrar todos los ajustes rápidos al editar y añadir.</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">Botón de brillo automático</string>
     <string name="tuner_auto_brightness_right">Botón de brillo automático a la derecha</string>
@@ -413,11 +414,11 @@
     <string name="lockscreen_charging_current_title">Información de la carga</string>
     <string name="lockscreen_charging_current_summary">Mostrar el amperaje y voltaje en la pantalla de bloqueo</string>
     <!-- Ambient Music Ticker -->
-    <string name="force_ambient_for_media_pref_title">Ambient Music Ticker</string>
-    <string name="force_ambient_for_media_pref_summary">Configure the Ambient Music Ticker</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
-    <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
-    <string name="ambient_title">Ambient Music</string>
+    <string name="force_ambient_for_media_pref_title">Pantalla ambiente de música</string>
+    <string name="force_ambient_for_media_pref_summary">Configurar la pantalla ambiente de música</string>
+    <string name="ambient_ticker_footer">La pantalla ambiente de música te muestra la información de la canción en el bloqueo de pantalla y pantalla ambiente. Funciona también cuando la pantalla ambiente esta desactivada y una nueva canción inicia, forzando una pantalla ambiente limpia con la información de la canción en medio de la pantalla. Puedes hacer doble toque en la información para saltar a la siguiente pista. Si tienes un Pixel (2da generación o más) y activas \"Reproduciendo ahora\" y la notificación esta activa en la configuración de audio de sistema, también funcionara con ello.</string>
+    <string name="force_ambient_for_media_title">Mostrar la información de la canción en la pantalla de bloqueo</string>
+    <string name="ambient_title">Pantalla ambiente de música</string>
     <!-- Media art -->
     <string name="media_art_title">Arte de portada de medios</string>
     <string name="media_art_summary">Habilitar la portada de medios en la pantalla de bloqueo</string>
@@ -436,13 +437,13 @@
     <string name="advanced_summary">Miscelánea y configuración adicional del sistema</string>
     <string name="system_category">Ajustes del sistema</string>
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app</string>
-    <string name="headset_connect_player_disabled">Disabled</string>
-    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
-    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
-    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
+    <string name="headset_connect_player_title">Iniciar reproductor</string>
+    <string name="headset_connect_player_disabled">Deshabilitado</string>
+    <string name="headset_connect_player_wired">Cuando se conectan auriculares por cable</string>
+    <string name="headset_connect_player_bt_no_carkit">Cuando los auriculares Bluetooth (no sistema de coche) se conectan</string>
+    <string name="headset_connect_player_bt">Cuando los auriculares Bluetooth se conectan</string>
+    <string name="headset_connect_player_both_no_carkit">Cuando los auriculares de cable o Bluetooth (no de sistema de coche) se conectan</string>
+    <string name="headset_connect_player_both">Cuando los auriculares de cable o Bluetooth se conectan</string>
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Mostrar información de la CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
@@ -459,14 +460,8 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Configuración de Temas</string>
-    <string name="accent_picker_dialog_title">Seleccione un color de acento</string>
-    <string name="theme_accent_picker_title">Acentuar el color</string>
-    <string name="theme_accent_picker_summary">Seleccionar el color de acento del tema del sistema</string>
     <string name="theme_accent_picker_default">Defecto</string>
-    <string name="accent_picker_material_colors">Elegir color de acento</string>
-    <string name="accent_picker_custom_colors">Usuario requerido</string>
-    <string name="qs_styles_dialog_title">Select a QS tile style</string>
+    <string name="qs_styles_dialog_title">Selecciona un estilo para los ajustes rápidos</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Opciones de vibración en llamada</string>
     <string name="incall_vibrate_connect_title">Vibrar al conectar</string>

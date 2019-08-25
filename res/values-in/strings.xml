@@ -17,13 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- AOSiP device info settings -->
-    <string name="aosip_version">AOSiP version</string>
-    <string name="aosip_version_default">Unknown</string>
+    <string name="aosip_version">Versi AOSiP</string>
+    <string name="aosip_version_default">Tidak diketahui</string>
     <!-- AOSiP custom settings main -->
     <string name="header_category_personalization">UI settings</string>
     <string name="nest_title">OwlsNest</string>
     <string name="aosip_title">AOSiP Settings</string>
-    <string name="owlsnest_settings_title">Categories</string>
+    <string name="owlsnest_settings_title">Kategori</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -76,66 +76,66 @@
     <string name="right_clock">Right clock</string>
     <string name="center_clock">Center clock</string>
     <string name="left_clock">Left clock</string>
-    <string name="dont_show">Don\'t show</string>
+    <string name="dont_show">Jangan tampilkan</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Display custom date before the clock</string>
     <string name="clock_date_style">Date style</string>
     <string name="clock_date_format">Date format</string>
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_string_edittext_summary">Masukan teks</string>
+    <string name="am_pm_clock_normal">Ukuran huruf normal</string>
+    <string name="am_pm_clock_small">Ukuran huruf kecil</string>
+    <string name="am_pm_clock_none">Jangan Tampilkan</string>
+    <string name="clock_date_display_none">Jangan Tampilkan</string>
+    <string name="clock_date_display_small">Ukuran huruf kecil</string>
+    <string name="clock_date_display_normal">Ukuran huruf normal</string>
     <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_style_lowercase">Huruf kecil</string>
+    <string name="clock_date_style_uppercase">Huruf besar</string>
     <string name="clock_date_format_custom">Custom java format</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Di sebelah kanan jam</string>
+    <string name="clock_date_left">Di sebelah kiri jam</string>
+    <string name="clock_date_position">Posisi tanggal</string>
     <!-- Battery percentage -->
-    <string name="battery_style_category_title">Battery icon</string>
-    <string name="status_bar_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_battery_percentage_default">Hidden</string>
-    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
-    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="battery_style_category_title">Ikon baterai</string>
+    <string name="status_bar_battery_percentage_title">Persentase baterai</string>
+    <string name="status_bar_battery_percentage_default">Tersembunyi</string>
+    <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
+    <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Battery style</string>
-    <string name="status_bar_battery_style_port">Portrait</string>
+    <string name="status_bar_battery_style_port">Tegak</string>
     <string name="status_bar_battery_style_q">Q style</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_big_circle">Big Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_circle">Lingkaran</string>
+    <string name="status_bar_battery_style_big_circle">Lingkaran Besar</string>
+    <string name="status_bar_battery_style_dotted_circle">Lingkaran bertitik</string>
     <string name="status_bar_battery_style_big_dotted_circle">Big Dotted circle</string>
-    <string name="status_bar_battery_style_text">Text</string>
-    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <string name="status_bar_battery_style_text">Teks</string>
+    <string name="status_bar_battery_style_hidden">Tersembunyi</string>
     <!-- Old Style Mobile -->
     <string name="use_old_mobiletype_title">Use old mobile signal</string>
     <string name="use_old_mobiletype_summary">Use the mobile icons from oreo and before\nSystemUI will restart</string>
     <!-- Hide notch -->
-    <string name="hide_notch_title">Hide notch</string>
+    <string name="hide_notch_title">Sembunyikan notch</string>
     <string name="hide_notch_summary">If enabled it hides notch and fills in side gaps</string>
     <!-- Custom carrier label and position -->
-    <string name="carrier_category">Carrier Label</string>
+    <string name="carrier_category">Label Operator</string>
     <string name="carrier_label_settings_summary">Customize the carrier label</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="show_carrier_title">Carrier label</string>
-    <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen only</string>
-    <string name="show_carrier_statusbar">Statusbar only</string>
+    <string name="show_carrier_title">Label operator</string>
+    <string name="show_carrier_disabled">Dinonaktifkan</string>
+    <string name="show_carrier_keyguard">Hanya di layar kunci</string>
+    <string name="show_carrier_statusbar">Hanya di statusbar</string>
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
     <!-- Network traffic Settings -->
     <string name="traffic_category">Network Traffic</string>
     <string name="network_traffic_state_title">Network traffic display</string>
-    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide">Sembunyikan otomatis</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
-    <string name="network_traffic_hidearrow">Hide arrows</string>
+    <string name="network_traffic_hidearrow">Sembunyikan panah</string>
     <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
     <string name="network_traffic_state_summary">Show upload &amp; download network speed</string>
     <string name="network_traffic_location_title">Traffic indicator placement</string>

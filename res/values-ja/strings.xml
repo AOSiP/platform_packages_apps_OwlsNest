@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">システム UI の再起動が必要です</string>
     <string name="systemui_restart_message">全ての変更を反映するにはシステム UI の再起動が必要です。再起動しますか?</string>
+    <string name="theme_category_title">テーマのオプション</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">ステータスバー</string>
     <string name="statusbar_bar_summary">ステータスバーの様々な要素を設定する</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">テーマのオプション</string>
-    <string name="accent_picker_dialog_title">アクセントカラーを選択する</string>
-    <string name="theme_accent_picker_title">アクセントカラー</string>
-    <string name="theme_accent_picker_summary">システムテーマのアクセントカラーを選択する</string>
     <string name="theme_accent_picker_default">既定</string>
-    <string name="accent_picker_material_colors">マテリアルパレット</string>
-    <string name="accent_picker_custom_colors">ユーザー設定</string>
     <string name="qs_styles_dialog_title">クイック設定タイルスタイルの選択</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">通話中の振動オプション</string>

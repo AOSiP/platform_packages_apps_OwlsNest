@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Vyžaduje sa reštart SystemUI</string>
     <string name="systemui_restart_message">Aby sa všetky zmeny prejavili je potrebné reštartovať SystemUI. Reštartovať teraz?</string>
+    <string name="theme_category_title">Theme options</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Stavový riadok</string>
     <string name="statusbar_bar_summary">Upraviť rôzne prvky stavového riadku</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Theme options</string>
-    <string name="accent_picker_dialog_title">Vyberte farbu témy</string>
-    <string name="theme_accent_picker_title">Doplnková farba</string>
-    <string name="theme_accent_picker_summary">Vyberte doplnkovú farbu systému</string>
     <string name="theme_accent_picker_default">Predvolená</string>
-    <string name="accent_picker_material_colors">Material palette</string>
-    <string name="accent_picker_custom_colors">User requested</string>
     <string name="qs_styles_dialog_title">Select a QS tile style</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration options</string>

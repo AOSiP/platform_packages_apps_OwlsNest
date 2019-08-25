@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Sistem arayüzünün yeniden başlatılması gerekir</string>
     <string name="systemui_restart_message">Tüm değişikliklerin etkili olması için Sistem arayüzünün yeniden başlatılması gerekiyor. Sistem arayüzünü şimdi yeniden başlatmak ister misiniz?</string>
+    <string name="theme_category_title">Tema seçenekleri</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Durum Çubuğu</string>
     <string name="statusbar_bar_summary">Çeşitli durum çubuğu öğelerini ayarlama</string>
@@ -415,8 +416,8 @@
     <!-- Ambient Music Ticker -->
     <string name="force_ambient_for_media_pref_title">Ortam Ekranı Müzik Bilgisi</string>
     <string name="force_ambient_for_media_pref_summary">Ortam ekranında müzik bilgisini yapılandırma</string>
-    <string name="ambient_ticker_footer">Ambient Music Ticker shows playing music track info on the lock screen and ambient screen.\n\nIt\'s triggered also if Ambient Display is disabled when a new track is started, forcing a clean ambient screen with track info in the middle of the screen.\n\nYou can also double tap on the track info to skip to the next track.\n\nIf you own a Pixel (2nd generation and higher) and enable \"Now Playing\" and its notification in system Audio settings, Ambient Music Ticker will also work within it.</string>
-    <string name="force_ambient_for_media_title">Show music ticker on lock screen</string>
+    <string name="ambient_ticker_footer">Ortam ekranı müzik bilgisi, kilit ekranı ve ortam ekranında çalınan müzik bilgilerini gösterir.\n\nYeni bir parça başlatıldığında ortam ekranı devre dışı bırakılmış olsa da gösterilir, ekranın ortasında müzik bilgisi içeren temiz bir ortam ekranına zorlar.\n\nAyrıca bir sonraki parçaya geçmek için parça bilgisine iki kez dokunabilirsiniz.\n\nBir Pixel (2. nesil ve daha üstü) sahibiyseniz ve \"Şimdi Oynatılıyor\" seçeneğini ve sistem Ses ayarlarında bildirimini etkinleştirirseniz, Ortam ekranı müzik bilgisi de içinde çalışır.</string>
+    <string name="force_ambient_for_media_title">Kilit ekranında müzik bilgisini göster</string>
     <string name="ambient_title">Ortam ekranı müziği</string>
     <!-- Media art -->
     <string name="media_art_title">Medya kapak resmi</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Tema seçenekleri</string>
-    <string name="accent_picker_dialog_title">Bir vurgu rengi seçin</string>
-    <string name="theme_accent_picker_title">Vurgu rengi</string>
-    <string name="theme_accent_picker_summary">Sistem teması için vurgu rengi seçin</string>
     <string name="theme_accent_picker_default">Varsayılan</string>
-    <string name="accent_picker_material_colors">Materyal renkler</string>
-    <string name="accent_picker_custom_colors">Özel renkler</string>
     <string name="qs_styles_dialog_title">Hızlı ayarlar kare stili seçin</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Arama titreşim seçenekleri</string>

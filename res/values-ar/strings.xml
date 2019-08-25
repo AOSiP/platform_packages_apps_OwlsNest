@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">مطلوب إعادة تشغيل واجهة النظام</string>
     <string name="systemui_restart_message">لتكون كافة التغييرات نافذة المفعول، مطلوب إعادة تشغيل واجهة النظام. إعادة تشغيل واجهة النظام الآن؟</string>
+    <string name="theme_category_title">خيارات السمة</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">شريط الحالة</string>
     <string name="statusbar_bar_summary">ضبط متنوع لعناصر شريط الحالة</string>
@@ -460,13 +461,7 @@
     <string name="recents_pie">أندرويد Pie</string>
     <string name="recents_oreo">أندرويد Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">خيارات السمة</string>
-    <string name="accent_picker_dialog_title">حدد لون اللكنة</string>
-    <string name="theme_accent_picker_title">لون اللكنة</string>
-    <string name="theme_accent_picker_summary">حدد لون لكنة سمة النظام</string>
     <string name="theme_accent_picker_default">الافتراضي</string>
-    <string name="accent_picker_material_colors">لوحة الألوان</string>
-    <string name="accent_picker_custom_colors">طلب المستخدم</string>
     <string name="qs_styles_dialog_title">Select a QS tile style</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">خيارات الإهتزاز أثناء المكالمة</string>

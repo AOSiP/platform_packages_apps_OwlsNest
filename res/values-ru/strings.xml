@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">Необходима перезагрузка системного интерфейса</string>
     <string name="systemui_restart_message">Чтобы все изменения вступили в силу, требуется перезагрузка системного интерфейса. Перезагрузить сейчас?</string>
+    <string name="theme_category_title">Настройки темы</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Строка состояния</string>
     <string name="statusbar_bar_summary">Отрегулировать элементы строки состояния</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Настройки темы</string>
-    <string name="accent_picker_dialog_title">Выберите цветовой оттенок</string>
-    <string name="theme_accent_picker_title">Цветовой оттенок</string>
-    <string name="theme_accent_picker_summary">Выберите оттенок цвета системной темы</string>
     <string name="theme_accent_picker_default">По умолчанию</string>
-    <string name="accent_picker_material_colors">Material-палитра</string>
-    <string name="accent_picker_custom_colors">Пользовательская палитра</string>
     <string name="qs_styles_dialog_title">Выберите стиль элементов быстрых настроек</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Параметры вибрации при вызове</string>

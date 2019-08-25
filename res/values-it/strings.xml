@@ -33,6 +33,7 @@
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">È richiesto il riavvio della SystemUI</string>
     <string name="systemui_restart_message">Per rendere effettive tutte le modifiche, è necessario un riavvio della SystemUI. Riavviare la SystemUI ora?</string>
+    <string name="theme_category_title">Opzioni tema</string>
     <!--Owlsnest statusbar-->
     <string name="statusbar_bar_title">Barra di stato</string>
     <string name="statusbar_bar_summary">Modifica vari elementi della barra di stato</string>
@@ -459,13 +460,7 @@
     <string name="recents_pie">Pie</string>
     <string name="recents_oreo">Oreo</string>
     <!-- Themes -->
-    <string name="theme_category_title">Opzioni tema</string>
-    <string name="accent_picker_dialog_title">Seleziona un colore in rilievo</string>
-    <string name="theme_accent_picker_title">Colore in rilievo</string>
-    <string name="theme_accent_picker_summary">Seleziona il colore primario per il tema di sistema</string>
     <string name="theme_accent_picker_default">Predefinito</string>
-    <string name="accent_picker_material_colors">Tavolozza colori Material</string>
-    <string name="accent_picker_custom_colors">Personalizzati dall\'utente</string>
     <string name="qs_styles_dialog_title">Seleziona stile QS</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Opzioni vibrazione chiamate in entrata</string>
