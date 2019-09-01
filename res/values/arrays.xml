@@ -165,22 +165,24 @@
         <item>2</item>
     </string-array>
 
+    <!-- Battery -->
     <string-array name="status_bar_battery_style_entries" translatable="false">
-        <item>@string/status_bar_battery_style_q</item>
-        <item>@string/status_bar_battery_style_dotted_circle</item>
+        <item>@string/status_bar_battery_style_icon_portrait</item> 
         <item>@string/status_bar_battery_style_circle</item>
+        <item>@string/status_bar_battery_style_dotted_circle</item>
+        <item>@string/status_bar_battery_style_filled_circle</item>
         <item>@string/status_bar_battery_style_text</item>
         <item>@string/status_bar_battery_style_hidden</item>
     </string-array>
-
     <string-array name="status_bar_battery_style_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
     </string-array>
-
+    
     <!-- Lockscreen media art filter -->
     <string-array name="lockscreen_cover_filter_entries">
         <item>@string/lockscreen_cover_filter_none</item>
@@ -198,21 +200,6 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
-    </string-array>
-
-    <!-- Battery mode -->
-    <string-array name="qs_battery_mode_entries">
-        <item>@string/battery_percentage_off</item>
-        <item>@string/battery_percentage_next</item>
-        <item>@string/battery_percentage_inside</item>
-        <item>@string/battery_percentage_estimate</item>
-    </string-array>
-
-    <string-array name="qs_battery_mode_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
     </string-array>
 
     <!-- Screen off animation -->

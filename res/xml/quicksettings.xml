@@ -20,14 +20,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quicksettings_title" >
 
-    <!-- Battery mode -->
-    <com.aosip.support.preference.SystemSettingListPreference
-        android:key="qs_battery_mode"
-        android:title="@string/battery_percentage_title"
-        android:entries="@array/qs_battery_mode_entries"
-        android:entryValues="@array/qs_battery_mode_values"
-        android:defaultValue="1" />
-
     <com.aosip.support.preference.SecureSettingSwitchPreference
         android:key="qs_long_press_action"
         android:title="@string/qs_long_press_action_title"
