@@ -203,7 +203,7 @@
     <string name="quicksettings_summary">タイルと拡張ステータスバーを管理する</string>
     <string name="expanded_category">展開時</string>
     <string name="brightness_slider_title">明るさスライダー</string>
-    <string name="tiles_title">クイック設定タイル</string>
+    <string name="tiles_title">タイル</string>
     <string name="qs_tile_footer">クイック設定の行数と列数を変更するには、クイック設定プルダウン内の編集エリアの3点メニューホタンをタップして下さい。</string>
     <!-- Brigntess Slider -->
     <string name="tuner_show_auto_brightness">明るさ自動調節ボタン</string>
@@ -368,7 +368,7 @@
     <string name="lockscreen_title">ロック画面</string>
     <string name="lockscreen_summary">ロック画面のレイアウトと設定を編集する</string>
     <string name="secure_lockscreen">保護されたロック画面の設定</string>
-    <string name="lockscreen_qs_disabled_title">ロック画面では無効</string>
+    <string name="lockscreen_qs_disabled_title">保護時は無効化</string>
     <string name="lockscreen_qs_disabled_summary">保護されたロック画面上でのクイック設定の展開を無効にする</string>
     <string name="lock_screen_shortcuts_title">ショートカット</string>
     <string name="lock_screen_shortcuts_summary">ロック画面下部のショートカットを編集する</string>

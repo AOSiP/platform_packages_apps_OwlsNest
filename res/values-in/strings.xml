@@ -26,7 +26,7 @@
     <string name="owlsnest_settings_title">Kategori</string>
     <!-- General strings -->
     <string name="ok">OK</string>
-    <string name="reset">Reset</string>
+    <string name="reset">Setel ulang</string>
     <string name="enabled">Enabled</string>
     <string name="add">Add</string>
     <string name="choose_app">Choose app</string>
@@ -66,7 +66,7 @@
     <!-- Status bar clock and date options -->
     <string name="clock_enabled">Enabled</string>
     <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_clock_style_reset">Setel ulang warna</string>
     <string name="status_bar_show_clock_title">Show clock and date</string>
     <string name="status_bar_clock_seconds_title">Show seconds</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
