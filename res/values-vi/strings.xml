@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">Không hiển thị</string>
     <string name="status_bar_battery_percentage_text_next">Cạnh biểu tượng pin</string>
     <string name="status_bar_battery_percentage_text_inside">Trong biểu tượng pin</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Ước tính thời lượng Pin còn lại</string>
+    <string name="show_battery_estimate_summary">Hiện ước tính Pin trong Bảng cài đặt nhanh</string>
+    <string name="battery_estimate_position_title">Biểu tượng pin &amp; Vị trí Ước tính</string>
+    <string name="battery_estimate_position_qsheader">Tiêu đề Cài đặt nhanh</string>
+    <string name="battery_estimate_position_qspanel">Bảng Cài đặt nhanh</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Biểu tượng pin</string>
     <string name="status_bar_battery_style_port">Biểu tượng dọc</string>

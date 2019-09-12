@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">Gizle</string>
     <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
     <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Tahmini pil ömrü</string>
+    <string name="show_battery_estimate_summary">Tahmini pil ömrünü hızlı ayarlar panelinde göster</string>
+    <string name="battery_estimate_position_title">Pil simgesi ve Tahmini ömrü konumu</string>
+    <string name="battery_estimate_position_qsheader">Hızlı ayarlar başlığı</string>
+    <string name="battery_estimate_position_qspanel">Hızlı ayarlar paneli</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Pil stili</string>
     <string name="status_bar_battery_style_port">Dikey</string>

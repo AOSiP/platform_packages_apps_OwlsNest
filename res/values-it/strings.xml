@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">Nascosta</string>
     <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
     <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Stima della batteria</string>
+    <string name="show_battery_estimate_summary">Mostra le stime della batteria nel pannello impostazioni rapide</string>
+    <string name="battery_estimate_position_title">Icona della batteria &amp; Posizione della stima</string>
+    <string name="battery_estimate_position_qsheader">Intestazione QS</string>
+    <string name="battery_estimate_position_qspanel">Pannello impostazioni rapide</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Stile batteria</string>
     <string name="status_bar_battery_style_port">Verticale</string>

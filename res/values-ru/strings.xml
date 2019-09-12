@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">Не показывать</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Оценочное время работы</string>
+    <string name="show_battery_estimate_summary">Показывать оценочное время работы в панели быстрых настроек</string>
+    <string name="battery_estimate_position_title">Значок батареи &amp; Оценки</string>
+    <string name="battery_estimate_position_qsheader">Заголовок быстрых настроек</string>
+    <string name="battery_estimate_position_qspanel">Панель Быстрых Настроек</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Стиль батареи</string>
     <string name="status_bar_battery_style_port">Портретная ориентация</string>

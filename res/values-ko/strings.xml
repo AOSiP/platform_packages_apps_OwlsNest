@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">아이콘 숨김</string>
     <string name="status_bar_battery_percentage_text_next">아이콘 바깥에 표시</string>
     <string name="status_bar_battery_percentage_text_inside">아이콘 안에 표시</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Battery Estimates</string>
+    <string name="show_battery_estimate_summary">Show Battery Estimates in QS Panel</string>
+    <string name="battery_estimate_position_title">Battery Icon &amp; Estimates Position</string>
+    <string name="battery_estimate_position_qsheader">QS Header</string>
+    <string name="battery_estimate_position_qspanel">QS Panel</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">배터리 스타일</string>
     <string name="status_bar_battery_style_port">세로</string>

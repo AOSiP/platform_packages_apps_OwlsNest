@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">非表示</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
     <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">予想稼働時間</string>
+    <string name="show_battery_estimate_summary">バッテリー予想稼働時間をクイック設定パネルに表示する</string>
+    <string name="battery_estimate_position_title">アイコンと予想稼働時間の位置</string>
+    <string name="battery_estimate_position_qsheader">ヘッダー</string>
+    <string name="battery_estimate_position_qspanel">パネル</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">バッテリースタイル</string>
     <string name="status_bar_battery_style_port">縦</string>

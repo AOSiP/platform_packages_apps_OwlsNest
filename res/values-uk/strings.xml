@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">Приховати</string>
     <string name="status_bar_battery_percentage_text_next">Поруч зі значком</string>
     <string name="status_bar_battery_percentage_text_inside">Всередині значка</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Оцінка залишку батареї</string>
+    <string name="show_battery_estimate_summary">Показувати оцінку залишку батареї в QS</string>
+    <string name="battery_estimate_position_title">Іконка батареї &amp; Оцінки</string>
+    <string name="battery_estimate_position_qsheader">Заголовок швидких налаштувань</string>
+    <string name="battery_estimate_position_qspanel">Панель Швидких налаштувань</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Стиль значка акумулятора</string>
     <string name="status_bar_battery_style_port">Портретна орієнтація</string>

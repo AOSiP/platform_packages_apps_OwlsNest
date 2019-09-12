@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">Piilotettu</string>
     <string name="status_bar_battery_percentage_text_next">Kuvakkeen vieressä</string>
     <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">Battery Estimates</string>
+    <string name="show_battery_estimate_summary">Show Battery Estimates in QS Panel</string>
+    <string name="battery_estimate_position_title">Battery Icon &amp; Estimates Position</string>
+    <string name="battery_estimate_position_qsheader">QS Header</string>
+    <string name="battery_estimate_position_qspanel">QS Panel</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Akun tyyli</string>
     <string name="status_bar_battery_style_port">Pysty</string>

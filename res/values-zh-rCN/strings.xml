@@ -102,6 +102,12 @@
     <string name="status_bar_battery_percentage_default">隐藏</string>
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
+    <!-- Battery Estimate -->
+    <string name="show_battery_estimate_title">快速设置中的电池可用时间预测</string>
+    <string name="show_battery_estimate_summary">在QS面板中显示电池预估剩余时间</string>
+    <string name="battery_estimate_position_title">电池图标和估计位置</string>
+    <string name="battery_estimate_position_qsheader">快速设置标头</string>
+    <string name="battery_estimate_position_qspanel">快速设置面板</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">电池样式</string>
     <string name="status_bar_battery_style_port">纵向</string>
