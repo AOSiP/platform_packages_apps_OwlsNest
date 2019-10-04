@@ -507,6 +507,12 @@
     <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_cover_filter_gradientblur">Gradient Blur</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+
     <!-- Show statusbar on lockscreen -->
     <string name="lockscreen_show_status_bar_title">Statusbar</string>
     <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
