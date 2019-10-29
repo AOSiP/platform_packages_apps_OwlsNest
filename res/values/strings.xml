@@ -44,6 +44,11 @@
     <string name="icon_category">Icons</string>
     <string name="battery_category">Battery</string>
 
+    <!-- Old MobileType Toggle -->
+    <string name="use_old_mobiletype_title">Use old mobile type style</string>
+    <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
+    <string name="mobile_data_style_info_title">Change take effect on next update of mobile signal icon.</string>
+
     <!-- Status bar clock and date options -->
     <string name="status_bar_style_title">Style</string>
     <string name="status_bar_clock">Clock &amp; Date</string>
