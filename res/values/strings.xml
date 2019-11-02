@@ -299,6 +299,12 @@
     <string name="lockscreen_enable_power_menu_title">Power menu</string>
     <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lock screen</string>
 
+
+    <string name="pulse_ambient_light_title">Pulse light notification</string>
+    <string name="pulse_ambient_light_summary">Show light bar on notification pulse</string>
+    <string name="ambient_notification_light_enabled_title">Always on Ambient lights on notification</string>
+    <string name="ambient_notification_light_enabled_sumary">Show Always On light bars when receiving a notification</string>
+
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Visualizer</string>
     <string name="lockscreen_visualizer_summary">Display music visualizer when available</string>
