@@ -20,6 +20,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -28,6 +29,7 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
+import com.aosip.support.preference.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +37,9 @@ import java.util.List;
 public class NotificationHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String PULSE_AMBIANT_LIGHT_PREF = "pulse_ambient_light";
+
+    private SystemSettingSwitchPreference mPulseEdgeLights;
 
     @Override
     public int getMetricsCategory() {
@@ -48,7 +53,12 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.notification);;
+        addPreferencesFromResource(R.xml.notification);
+
+        mPulseEdgeLights = (SystemSettingSwitchPreference) findPreference(PULSE_AMBIANT_LIGHT_PREF);
+        boolean mPulseNotificationEnabled = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.DOZE_ENABLED, 0) != 0;
+        mPulseEdgeLights.setEnabled(mPulseNotificationEnabled);
 
         mBatteryLightPref = (Preference) findPreference("charging_light");
         PreferenceScreen prefSet = getPreferenceScreen();
