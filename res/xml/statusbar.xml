@@ -30,4 +30,22 @@
         </PreferenceScreen>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="net_monitor_category"
+        android:title="@string/net_monitor_category_title"
+        android:order="25" >
+        <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="network_traffic_state"
+            android:title="@string/network_traffic_state_title"
+            android:defaultValue="true" />
+
+        <com.aosip.support.preference.CustomSystemSeekBarPreference
+            android:key="network_traffic_autohide_threshold"
+            android:title="@string/network_traffic_autohide_threshold_title"
+            android:max="10"
+            android:min="0"
+            android:defaultValue="1"
+            settings:units="" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
