@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2015-2018 Android Open Source Illusion Project
+ *  Copyright (C) 2015-2019 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,33 +14,25 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.lockscreen;
+package com.aosip.owlsnest.recent;
 
-import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.UserHandle;
+import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
-import android.provider.Settings;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceScreen;
+import androidx.preference.Preference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
-import com.aosip.support.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LockVisualizerCategory extends SettingsPreferenceFragment implements
+public class RecentsHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
-
-    private static final String LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR = "lock_screen_visualizer_custom_color";
-
-    private ColorPickerPreference mVisualizerColor;
 
     @Override
     public int getMetricsCategory() {
@@ -50,18 +42,7 @@ public class LockVisualizerCategory extends SettingsPreferenceFragment implement
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.lock_visualizer);
-	    ContentResolver resolver = getActivity().getContentResolver();
-
-        // Visualizer custom color
-        mVisualizerColor = (ColorPickerPreference) findPreference(LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR);
-        int visColor = Settings.System.getInt(resolver,
-                Settings.System.LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR, 0xff1976D2);
-        String visColorHex = String.format("#%08x", (0xff1976D2 & visColor));
-        mVisualizerColor.setSummary(visColorHex);
-        mVisualizerColor.setNewPreviewColor(visColor);
-        mVisualizerColor.setAlphaSliderEnabled(true);
-        mVisualizerColor.setOnPreferenceChangeListener(this);
+        addPreferencesFromResource(R.xml.recents);
     }
 
     @Override
@@ -70,18 +51,8 @@ public class LockVisualizerCategory extends SettingsPreferenceFragment implement
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-		ContentResolver resolver = getActivity().getContentResolver();
-	    if (preference == mVisualizerColor) {
-			String hex = ColorPickerPreference.convertToARGB(
-			Integer.valueOf(String.valueOf(newValue)));
-			int intHex = ColorPickerPreference.convertToColorInt(hex);
-			Settings.System.putInt(resolver,
-			Settings.System.LOCK_SCREEN_VISUALIZER_CUSTOM_COLOR, intHex);
-			preference.setSummary(hex);
-			return true;
-        }
-        return false;
-    }
+    return false;
+  }
 
     /**
      * For Search.
@@ -93,7 +64,7 @@ public class LockVisualizerCategory extends SettingsPreferenceFragment implement
                         boolean enabled) {
                     final ArrayList<SearchIndexableResource> result = new ArrayList<>();
                      final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.lock_visualizer;
+                    sir.xmlResId = R.xml.recents;
                     result.add(sir);
                     return result;
                 }
@@ -104,4 +75,3 @@ public class LockVisualizerCategory extends SettingsPreferenceFragment implement
                 }
     };
 }
-

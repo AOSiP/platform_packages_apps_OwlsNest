@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2015-2018 Android Open Source Illusion Project
+ * Copyright (C) 2015-2019 Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,54 +16,23 @@
 
 package com.aosip.owlsnest.buttons;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
+import android.content.Context;
 import android.os.Bundle;
-import android.provider.Settings;
-import android.preference.Preference;
-import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.os.ServiceManager;
+import android.provider.SearchIndexableResource;
+import androidx.preference.Preference;
 
-import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+import com.android.settings.SettingsPreferenceFragment;
 
-import com.aosip.owlsnest.PagerSlidingTabStrip;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ButtonsHolder extends SettingsPreferenceFragment {
-
-    ViewPager mViewPager;
-    String titleString[];
-    ViewGroup mContainer;
-    PagerSlidingTabStrip mTabs;
-
-    static Bundle mSavedState;
-
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mContainer = container;
-        View view = inflater.inflate(R.layout.preference_ui, container, false);
-        mViewPager = (ViewPager) view.findViewById(R.id.pager);
-        mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
-        StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
-        mViewPager.setAdapter(StatusBarAdapter);
-        mTabs.setViewPager(mViewPager);
-        getActivity().getActionBar().setTitle(R.string.buttons_title);
-        return view;
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        setHasOptionsMenu(false);
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle saveState) {
-        super.onSaveInstanceState(saveState);
-    }
+public class ButtonsHolder extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener, Indexable {
 
     @Override
     public int getMetricsCategory() {
@@ -71,63 +40,39 @@ public class ButtonsHolder extends SettingsPreferenceFragment {
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.buttons);
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
     }
 
-    class StatusBarAdapter extends FragmentPagerAdapter {
-        String titles[] = getTitles();
-        private Fragment frags[] = new Fragment[titles.length];
-
-        public StatusBarAdapter(FragmentManager fm) {
-            super(fm);
-            frags[0] = new PowermenuCategory();
-            frags[1] = new VolumeCategory();
-        try {
-            frags[2] = new NavigationCategory();
-            frags[3] = new LightsCategory();
-        } catch (IndexOutOfBoundsException e) {
-            // Do nothing
-            }
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles[position];
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return frags[position];
-        }
-
-        @Override
-        public int getCount() {
-            return frags.length;
-        }
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        return false;
     }
 
-    private String[] getTitles() {
-        boolean hasBacklight = getResources().getBoolean(com.android.internal.R.bool.config_button_brightness_support);
-        boolean hasHardwareKeys = getResources().getInteger(com.android.internal.R.integer.config_deviceHardwareKeys) > 64;
-        if (hasBacklight && hasHardwareKeys) {
-            return new String[] {
-                                getString(R.string.powermenu_category),
-                                getString(R.string.volume_category),
-                                getString(R.string.hardware_keys_category),
-                                getString(R.string.button_lights_category)
-                            };
-        } else if (hasHardwareKeys) {
-            return new String[] {
-                                getString(R.string.powermenu_category),
-                                getString(R.string.volume_category),
-                                getString(R.string.hardware_keys_category)
-                            };
-        } else {
-            return new String[] {
-                                getString(R.string.powermenu_category),
-                                getString(R.string.volume_category),
-                            };
-        }
-    }
+    /**
+     * For Search.
+     */
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                 @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                     final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.buttons;
+                    result.add(sir);
+                    return result;
+                }
+                 @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    final List<String> keys = super.getNonIndexableKeys(context);
+                    return keys;
+                }
+    };
 }
+
