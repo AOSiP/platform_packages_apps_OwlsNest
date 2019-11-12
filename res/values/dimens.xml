@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015-2018 AOSiP
+<!-- Copyright (C) 2015-2019 AOSiP
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,11 +15,5 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- QS Tile Styles -->
-    <dimen name="qs_styles_layout_opacity" format="float">0.50</dimen>
-    <dimen name="qs_styles_layout_background_size">70dp</dimen>
-    <dimen name="qs_styles_layout_foreground_size">30dp</dimen>
-    <dimen name="qs_styles_tile_preview_spacing">15dp</dimen>
 
 </resources>

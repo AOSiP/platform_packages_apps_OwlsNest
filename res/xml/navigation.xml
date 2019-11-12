@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2015-2018 Android Open Source Illusion Project
+<!--  Copyright (C) 2015-2019 Android Open Source Illusion Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -18,7 +18,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:layout="@layout/tab_ui"
     android:title="@string/navigation_category" >
 
 </PreferenceScreen>
