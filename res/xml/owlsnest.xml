@@ -39,7 +39,7 @@
 
     <PreferenceScreen
        android:key="navigation"
-       android:fragment="com.android.settings.smartnav.NavigationBarSettings"
+       android:fragment="com.android.settings.smartnav.NavigationHolder"
        android:title="@string/navigation_category"
        android:summary="@string/navigation_summary"
        android:icon="@drawable/ic_owlsnest_nav_background" />
@@ -53,7 +53,7 @@
 
     <PreferenceScreen
        android:key="recent"
-       android:fragment="com.aosip.owlsnest.recent.StockRecentCategory"
+       android:fragment="com.aosip.owlsnest.recent.RecentsHolder"
        android:title="@string/recent_title"
        android:summary="@string/recent_summary"
        android:icon="@drawable/ic_owlsnest_recents_background" />
@@ -67,14 +67,14 @@
 
     <PreferenceScreen
        android:key="gesture"
-       android:fragment="com.aosip.owlsnest.gesture.GestureCategory"
+       android:fragment="com.aosip.owlsnest.gesture.GestureHolder"
        android:title="@string/gesture_category"
        android:summary="@string/gesture_summary"
        android:icon="@drawable/ic_owlsnest_gesture_background" />
 
     <PreferenceScreen
        android:key="advanced"
-       android:fragment="com.aosip.owlsnest.advanced.SystemCategory"
+       android:fragment="com.aosip.owlsnest.advanced.SystemHolder"
        android:title="@string/advanced_title"
        android:summary="@string/advanced_summary"
        android:icon="@drawable/ic_owlsnest_advanced_background" />
