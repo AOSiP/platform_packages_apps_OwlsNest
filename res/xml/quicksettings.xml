@@ -18,6 +18,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/notification_category" >
+    android:layout="@layout/tab_ui"
+    android:title="@string/quicksettings_title" >
 
 </PreferenceScreen>
+

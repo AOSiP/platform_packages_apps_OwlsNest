@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015-2018 AOSiP
+<!-- Copyright (C) 2015-2019 AOSiP
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,11 +28,5 @@
     <color name="owlsnest_oval_qs">#fa6dff</color>
     <color name="owlsnest_oval_recents">#6fdb3d</color>
     <color name="owlsnest_oval_status">#8da2e8</color>
-
-    <!-- QS tile styles -->
-    <color name="qs_tile_background_active">@*android:color/accent_device_default_light</color>
-    <color name="qs_tile_background_inactive">#FFDCDCDC</color>
-    <color name="qs_tile_icon_active">#FFFFFFFF</color>
-    <color name="qs_tile_icon_inactive">#FF656565</color>
 
 </resources>
