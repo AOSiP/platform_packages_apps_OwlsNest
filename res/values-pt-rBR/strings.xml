@@ -103,11 +103,11 @@
     <string name="status_bar_battery_percentage_text_next">Próximo ao ícone</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
     <!-- Battery Estimate -->
-    <string name="show_battery_estimate_title">Battery Estimates</string>
-    <string name="show_battery_estimate_summary">Show Battery Estimates in QS Panel</string>
-    <string name="battery_estimate_position_title">Battery Icon &amp; Estimates Position</string>
-    <string name="battery_estimate_position_qsheader">QS Header</string>
-    <string name="battery_estimate_position_qspanel">QS Panel</string>
+    <string name="show_battery_estimate_title">Estimativas de bateria</string>
+    <string name="show_battery_estimate_summary">Mostrar estimativas de bateria no Painel QS</string>
+    <string name="battery_estimate_position_title">Ícone de Bateria &amp; Estima a posição</string>
+    <string name="battery_estimate_position_qsheader">Cabeçalho QS</string>
+    <string name="battery_estimate_position_qspanel">Painel de Configurações Rápidas</string>
     <!-- Status bar battery style-->
     <string name="status_bar_battery_style_title">Estilo da bateria</string>
     <string name="status_bar_battery_style_port">Retrato</string>
