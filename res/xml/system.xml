@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2015-2018 Android Open Source Illusion Project
+<!--  Copyright (C) 2015-2019 Android Open Source Illusion Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -18,52 +18,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:layout="@layout/tab_ui"
     android:title="@string/system_category" >
-
-    <Preference
-        android:title="@string/app_ops_settings"
-        android:summary="@string/app_ops_settings_summary"
-        android:fragment="com.android.settings.applications.appops.AppOpsSummary"/>
-
-    <com.aosip.support.preference.GlobalSettingSwitchPreference
-        android:key="show_cpu_overlay"
-        android:title="@string/show_cpu_info"
-        android:summary="@string/show_cpu_info_summary" 
-        android:defaultValue="false" />
-
-    <ListPreference
-        android:key="headset_connect_player"
-        android:title="@string/headset_connect_player_title"
-        android:entries="@array/headset_connect_player_entries"
-        android:entryValues="@array/headset_connect_player_values" />
-
-    <!-- Flashlight on incoming calls -->
-    <ListPreference
-        android:key="flashlight_on_call"
-        android:title="@string/flashlight_on_call_title"
-        android:entries="@array/flashlight_on_call_entries"
-        android:entryValues="@array/flashlight_on_call_values" />
-
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:title="@string/incall_vibration_category" >
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="false" />
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

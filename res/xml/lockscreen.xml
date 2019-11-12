@@ -18,6 +18,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/notification_category" >
+    android:title="@string/lockscreen_title" >
 
 </PreferenceScreen>
