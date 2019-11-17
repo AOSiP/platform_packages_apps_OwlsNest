@@ -24,4 +24,11 @@
         android:summary="@string/notification_headers_summary"
         android:defaultValue="true" />
 
+    <com.aosip.support.preference.SystemSettingMasterSwitchPreference
+        android:key="gaming_mode_enabled"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary"
+        android:fragment="com.aosip.owlsnest.fragments.system_misc.GamingMode"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

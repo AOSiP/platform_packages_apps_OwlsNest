@@ -345,4 +345,34 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Gaming mode</string>
+    <string name="gaming_mode_summary">Eliminate general interruptions during mobile game play</string>
+    <string name="gaming_mode_app_picker_title">Automatically enable for these apps</string>
+    <string name="gaming_mode_add_package_title">Add apps for automatic Gaming mode</string>
+    <string name="gaming_mode_add_package_summary">Automatically enable/disable Gaming mode based on the usage of selected apps</string>
+    <string name="gaming_mode_headsup_title">Hide Heads-up notifications</string>
+    <string name="gaming_mode_headsup_summary">Limit or disable Heads-up interruptions by notification type</string>
+    <string name="gaming_mode_headsup_allow">Show all</string>
+    <string name="gaming_mode_headsup_dnc">Show only for incoming calls &amp; alarms</string>
+    <string name="gaming_mode_headsup_clock">Show only for alarms</string>
+    <string name="gaming_mode_headsup_dialer">Show only for incoming calls</string>
+    <string name="gaming_mode_headsup_stop">Hide all</string>
+    <string name="gaming_mode_hardware_keys_title">Lock buttons</string>
+    <string name="gaming_mode_hardware_keys_summary">Disable hardware buttons while Gaming mode is enabled</string>
+    <string name="gaming_mode_brightness_title">Disable automatic brightness</string>
+    <string name="gaming_mode_brightness_summary">Prevent changes to screen brightness while Gaming mode is enabled</string>
+    <string name="gaming_mode_ringer_title">Allow ringer in gaming mode</string>
+    <string name="gaming_mode_ringer_off_title">Do not change</string>
+    <string name="gaming_mode_ringer_vibrate_title">Vibrate</string>
+    <string name="gaming_mode_ringer_dnd_title">Do Not Disturb</string>
+    <string name="gaming_mode_ringer_silent_title">Silent</string>
+    <string name="gaming_mode_notifications_title">Gaming mode indication</string>
+    <string name="gaming_mode_notifications_off_title">Disabled</string>
+    <string name="gaming_mode_notifications_notif_title">Show notification</string>
+    <string name="gaming_mode_notifications_toast_title">Show toasts</string>
+    <string name="gaming_mode_notifications_all_title">Show toasts and notification</string>
+    <string name="gaming_mode_dynamic_title">Dynamic mode</string>
+    <string name="gaming_mode_dynamic_summary">System will try to detect and add gaming apps automatically</string>
+
 </resources>
