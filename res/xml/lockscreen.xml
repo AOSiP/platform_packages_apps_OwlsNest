@@ -20,4 +20,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_title" >
 
+     <com.aosip.support.preference.CustomSystemSeekBarPreference
+        android:key="lockscreen_media_blur"
+        android:title="@string/lockscreen_media_blur_title"
+        settings:allowEditText="true"
+        android:max="2500"
+        android:min="1"
+        android:defaultValue="2500"
+        settings:units="dp" />
+
 </PreferenceScreen>

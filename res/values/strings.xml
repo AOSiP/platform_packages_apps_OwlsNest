@@ -90,6 +90,9 @@
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="secure_lockscreen">Secure lockscreen options</string>
 
+    <!-- Configurable lockscreen media blur strength -->
+    <string name="lockscreen_media_blur_title">Lockscreen media art blur level</string>
+
 
     <!--Owlsnest advanced-->
     <string name="advanced_title">Advanced Settings</string>
