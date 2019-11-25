@@ -344,4 +344,7 @@
     <!-- USB Configuration -->
     <string name="usb_default_config_title">USB configuration</string>
     <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
+
+    <!-- QS panel opacity -->
+    <string name="qs_panel_alpha_title">Background opacity</string>
 </resources>
