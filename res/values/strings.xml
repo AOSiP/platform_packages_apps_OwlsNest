@@ -51,6 +51,10 @@
     <string name="notification_category">Notifications</string>
     <string name="headsup_category">Heads-Up</string>
 
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
 
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
