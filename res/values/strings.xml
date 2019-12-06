@@ -32,6 +32,7 @@
     <string name="enabled">Enabled</string>
     <string name="add">Add</string>
     <string name="choose_app">Choose app</string>
+    <string name="default_string">Default</string>
 
     <!-- SystemUI Restart -->
     <string name="systemui_restart_title">SystemUI restart required</string>
@@ -145,6 +146,12 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full battery (100)</string>
+
+    <!-- Ambient edge lighting -->
+    <string name="notification_screen_title">Screen</string>
+    <string name="pulse_ambient_light_title">Edge lighting</string>
+    <string name="pulse_ambient_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="pulse_ambient_light_color_title">Edge light color</string>
 
 
     <!--Owlsnest Quick settings-->

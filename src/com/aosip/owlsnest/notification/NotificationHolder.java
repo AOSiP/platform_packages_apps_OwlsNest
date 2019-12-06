@@ -17,9 +17,13 @@
 package com.aosip.owlsnest.notification;
 
 import android.content.Context;
+import android.content.ContentResolver;
 import android.os.Bundle;
 import android.os.ServiceManager;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.provider.SearchIndexableResource;
+import android.widget.Toast;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -32,9 +36,14 @@ import com.android.settings.SettingsPreferenceFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.aosip.support.colorpicker.ColorPickerPreference;
+
 public class NotificationHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String PULSE_AMBIENT_LIGHT_COLOR = "pulse_ambient_light_color";
+
+    private ColorPickerPreference mEdgeLightColorPreference;
 
     @Override
     public int getMetricsCategory() {
@@ -56,6 +65,19 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_deviceHasLED)) {
             prefSet.removePreference(mBatteryLightPref);
         }
+
+        mEdgeLightColorPreference = (ColorPickerPreference) findPreference(PULSE_AMBIENT_LIGHT_COLOR);
+        int edgeLightColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.PULSE_AMBIENT_LIGHT_COLOR, 0xFF3980FF);
+        mEdgeLightColorPreference.setNewPreviewColor(edgeLightColor);
+        mEdgeLightColorPreference.setAlphaSliderEnabled(false);
+        String edgeLightColorHex = String.format("#%08x", (0xFF3980FF & edgeLightColor));
+        if (edgeLightColorHex.equals("#ff3980ff")) {
+            mEdgeLightColorPreference.setSummary(R.string.default_string);
+        } else {
+            mEdgeLightColorPreference.setSummary(edgeLightColorHex);
+        }
+        mEdgeLightColorPreference.setOnPreferenceChangeListener(this);
       }
 
     @Override
@@ -64,6 +86,21 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        if (preference == mEdgeLightColorPreference) {
+            String hex = ColorPickerPreference.convertToARGB(
+                   Integer.valueOf(String.valueOf(newValue)));
+            if (hex.equals("#ff3980ff")) {
+                preference.setSummary(R.string.default_string);
+            } else {
+                preference.setSummary(hex);
+            }
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PULSE_AMBIENT_LIGHT_COLOR, intHex);
+            return true;
+         }
        return false;
     }
 
