@@ -252,6 +252,8 @@
     <string name="navigation_category">Navigation</string>
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
     <string name="navigation_tuner_title">Navigation Tuner</string>
+    <string name="navigation_bar_menu_arrow_keys_title">Arrow keys while typing</string>
+    <string name="navigation_bar_menu_arrow_keys_summary">Display left and right cursor buttons while typing</string>
 
 
     <!--Owlsnest buttons-->
