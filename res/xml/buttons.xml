@@ -20,5 +20,27 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/buttons_title" >
 
+    <PreferenceCategory
+        android:key="power_button"
+        android:title="@string/power_button_category"
+        android:order="1" >
+
+        <com.aosip.support.preferences.SecureSettingSwitchPreference
+            android:key="reboot_in_power_menu"
+            android:title="@string/powermenu_reboot_title"
+            android:defaultValue="true" />
+
+        <com.aosip.support.preferences.SecureSettingSwitchPreference
+            android:key="advanced_reboot_in_power_menu"
+            android:title="@string/powermenu_advanced_restart_title"
+            android:summary="@string/powermenu_advanced_restart_summary"
+            android:defaultValue="false" />
+
+        <com.aosip.support.preferences.SecureSettingSwitchPreference
+            android:key="screenshot_in_power_menu"
+            android:title="@string/powermenu_screenshot_title"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
 
