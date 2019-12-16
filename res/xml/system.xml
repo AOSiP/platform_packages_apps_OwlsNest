@@ -21,6 +21,26 @@
     android:title="@string/system_category" >
 
     <PreferenceCategory
+        android:key="incall_vibration_category"
+        android:title="@string/aspect_ratio_category_title">
+
+        <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_connect"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="true" />
+
+        <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="true" />
+
+        <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_disconnect"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="aspect_ratio_category"
         android:title="@string/aspect_ratio_category_title">
 
@@ -47,8 +67,6 @@
             android:dependency="aspect_ratio_apps_enabled"
             android:persistent="false"
             android:summary="@string/aspect_ratio_apps_info" />
-
     </PreferenceCategory>
-
 
 </PreferenceScreen>
