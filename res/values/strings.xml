@@ -60,6 +60,10 @@
     <string name="volte_icon_hd">HD Icon</string>
     <string name="volte_icon_volit">VoLIT Icon</string>
 
+    <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrate on touch</string>
+    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
+
     <!-- Status bar clock and date options -->
     <string name="status_bar_style_title">Style</string>
     <string name="status_bar_clock">Clock &amp; Date</string>
