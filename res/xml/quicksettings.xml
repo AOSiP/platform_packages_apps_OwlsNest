@@ -60,6 +60,11 @@
             android:dependency="qs_show_brightness"
             android:defaultValue="true"/>
 
+        <com.aosip.support.preference.SecureSettingSwitchPreference
+            android:key="qs_vibrate"
+            android:title="@string/qs_vibrate_title"
+            android:summary="@string/qs_vibrate_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
