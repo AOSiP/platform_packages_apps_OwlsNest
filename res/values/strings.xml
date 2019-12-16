@@ -50,6 +50,7 @@
     <string name="mobile_data_style_info_title">Change take effect on next update of mobile signal icon.</string>
 
     <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_asus">VoLTE Asus Icon</string>
     <string name="volte_icon_title">VoLTE icon</string>
     <string name="volte_icon_summary">Display VoLTE icon</string>
     <string name="volte_icon_style_title">Select VoLTE Icon</string>
