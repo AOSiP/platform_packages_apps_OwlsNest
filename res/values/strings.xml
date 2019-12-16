@@ -176,6 +176,10 @@
     <string name="brightness_icon_title">Brightness icon</string>
     <string name="brightness_icon_summary">Show a brightness icon to the right of the brighness slider to adjust auto-brightness</string>
 
+    <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrate on touch</string>
+    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
+
 
     <!--Owlsnest navigation-->
     <string name="navigation_category">Navigation</string>
