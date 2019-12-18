@@ -35,6 +35,8 @@ import java.util.List;
 public class PixelGestureHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String AWARE_CATEGORY = "aware_settings";
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -44,6 +46,16 @@ public class PixelGestureHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.pixel_gesture);
+
+        Preference Aware = findPreference(AWARE_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_aware)) {
+            getPreferenceScreen().removePreference(Aware);
+        } else {
+            if (!SystemProperties.getBoolean(
+                    "ro.vendor.aware_available", false)) {
+                getPreferenceScreen().removePreference(Aware);
+            }
+        }
     }
 
     @Override

@@ -19,4 +19,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/pixel_gesture_title" >
 
+    <com.google.android.settings.aware.AwareSettingsDialogPreference
+        android:key="aware_settings"
+        android:icon="@drawable/ic_owlsnest_aware"
+        android:title="@string/aware_settings_title"
+        android:summary="@string/aware_settings_summary" />
+
 </PreferenceScreen>
