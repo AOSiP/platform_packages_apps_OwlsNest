@@ -18,11 +18,16 @@ package com.aosip.owlsnest.buttons;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.ServiceManager;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.widget.LockPatternUtils;
+
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -34,6 +39,11 @@ import java.util.List;
 public class ButtonsHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String KEY_LOCKDOWN_IN_POWER_MENU = "lockdown_in_power_menu";
+    private static final int MY_USER_ID = UserHandle.myUserId();
+
+    private SwitchPreference mPowerMenuLockDown;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -43,6 +53,17 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.buttons);
+        final PreferenceScreen prefSet = getPreferenceScreen();
+        final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
+
+        mPowerMenuLockDown = (SwitchPreference) findPreference(KEY_LOCKDOWN_IN_POWER_MENU);
+        if (lockPatternUtils.isSecure(MY_USER_ID)) {
+            mPowerMenuLockDown.setChecked((Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0) == 1));
+            mPowerMenuLockDown.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mPowerMenuLockDown);
+        }
     }
 
     @Override
@@ -51,6 +72,12 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mPowerMenuLockDown) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.LOCKDOWN_IN_POWER_MENU, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
