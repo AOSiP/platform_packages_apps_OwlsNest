@@ -19,6 +19,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/gesture_category" >
 
+    <com.google.android.settings.aware.AwareSettingsDialogPreference
+        android:key="aware_settings"
+        android:icon="@drawable/dt_aware"
+        android:title="@string/aware_settings_title"
+        android:summary="@string/aware_settings_summary" />
+
     <Preference
         android:key="gesture_settings"
         android:title="@string/aosp_gesture_title"

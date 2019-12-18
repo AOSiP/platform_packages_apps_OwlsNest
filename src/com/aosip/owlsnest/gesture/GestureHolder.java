@@ -19,6 +19,7 @@ package com.aosip.owlsnest.gesture;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.provider.SearchIndexableResource;
 import androidx.preference.Preference;
 
@@ -34,6 +35,8 @@ import java.util.List;
 public class GestureHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String AWARE_CATEGORY = "aware_settings";
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -43,6 +46,16 @@ public class GestureHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.gesture);
+
+        Preference Aware = findPreference(AWARE_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_aware)) {
+            getPreferenceScreen().removePreference(Aware);
+        } else {
+            if (!SystemProperties.getBoolean(
+                    "ro.vendor.aware_available", false)) {
+                getPreferenceScreen().removePreference(Aware);
+            }
+        }
     }
 
     @Override
