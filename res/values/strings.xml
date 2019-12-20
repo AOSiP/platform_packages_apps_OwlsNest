@@ -49,6 +49,15 @@
     <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
     <string name="mobile_data_style_info_title">Change take effect on next update of mobile signal icon.</string>
 
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
+    <string name="volte_icon_style_title">Select VoLTE Icon</string>
+    <string name="volte_icon_vo">Vo Only Icon</string>
+    <string name="volte_icon_volte">VoLTE Icon</string>
+    <string name="volte_icon_oos">VoLTE OOS Icon</string>
+    <string name="volte_icon_hd">HD Icon</string>
+
     <!-- Status bar clock and date options -->
     <string name="status_bar_style_title">Style</string>
     <string name="status_bar_clock">Clock &amp; Date</string>
