@@ -202,7 +202,7 @@
     <string name="lockscreen_tuner_title">Lockscreen shortcuts</string>
 
     <!-- Configurable lockscreen media blur strength -->
-    <string name="lockscreen_media_blur_title">Lockscreen media art blur level</string>
+    <string name="lockscreen_media_blur_title">Media art blur level</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Battery info</string>
@@ -230,17 +230,19 @@
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
 
     <!-- Media art -->
-    <string name="media_art_title">Show media cover art</string>
-    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+    <string name="media_art_title">Show media art</string>
+    <string name="media_art_summary">Enable media art on the lockscreen</string>
 
-    <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <!-- Lockscreen media art filter -->
+    <string name="lockscreen_cover_filter_title">Media art filter</string>
     <string name="lockscreen_cover_filter_none">None</string>
     <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
     <string name="lockscreen_cover_filter_tint">Accent tinted</string>
     <string name="lockscreen_cover_filter_blur">Blur</string>
     <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_cover_filter_gradientblur">Gradient Blur</string>
+
+    <string name="lockscreen_media_art_title">Media art</string>
 
 
     <!--Owlsnest advanced-->
