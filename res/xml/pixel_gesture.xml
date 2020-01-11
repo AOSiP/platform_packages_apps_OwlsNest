@@ -19,6 +19,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/pixel_gesture_title" >
 
+    <com.aosip.owlsnest.preference.CategoryPreference
+        android:key="active_edge_category"
+        android:icon="@drawable/ic_owlsnest_active_edge"
+        android:title="@string/active_edge_title"
+        android:summary="@string/active_edge_summary"
+        android:fragment="com.aosip.owlsnest.gesture.ActiveEdge" />
+
     <com.google.android.settings.aware.AwareSettingsDialogPreference
         android:key="aware_settings"
         android:icon="@drawable/ic_owlsnest_aware"
