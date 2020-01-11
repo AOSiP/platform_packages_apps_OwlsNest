@@ -26,6 +26,11 @@
         android:summary="@string/aware_settings_summary" />
 
     <Preference
+        android:key="active_edge"
+        android:title="@string/active_edge_title"
+        android:fragment="com.aosip.owlsnest.gesture.ActiveEdge" />
+
+    <Preference
         android:key="gesture_settings"
         android:title="@string/aosp_gesture_title"
         android:fragment="com.android.settings.gestures.GestureSettings" />
