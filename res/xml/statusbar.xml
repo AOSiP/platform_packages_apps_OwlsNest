@@ -75,6 +75,11 @@
             android:summary="@string/mobile_data_style_info_title" />
     </PreferenceCategory>
 
+    <Preference
+        android:key="carrier_label"
+        android:title="@string/status_carrier_title"
+        android:fragment="com.aosip.owlsnest.statusbar.CarrierLabel" />
+
     <PreferenceCategory
         android:title="@string/status_bar_clock">
         <SwitchPreference
