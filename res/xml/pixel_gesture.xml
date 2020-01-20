@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2015-2019 Android Open Source Illusion Project
+<!--  Copyright (C) 2015-2020 Android Open Source Illusion Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,17 +17,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/gesture_category" >
-
-    <Preference
-        android:key="gesture_settings"
-        android:title="@string/aosp_gesture_title"
-        android:fragment="com.android.settings.gestures.GestureSettings" />
-
-    <Preference
-        android:key="pixel_gesture_settings"
-        android:title="@string/pixel_gesture_title"
-        android:summary="@string/pixel_gesture_title"
-        android:fragment="com.android.settings.gestures.PixelGestureSettings" />
+    android:title="@string/pixel_gesture_title" >
 
 </PreferenceScreen>

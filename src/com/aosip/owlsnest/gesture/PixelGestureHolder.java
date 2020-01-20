@@ -19,6 +19,7 @@ package com.aosip.owlsnest.gesture;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.provider.SearchIndexableResource;
 import androidx.preference.Preference;
 
@@ -31,10 +32,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GestureHolder extends SettingsPreferenceFragment implements
+public class PixelGestureHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
-
-    private static final String PIXEL_CATEGORY = "pixel_gesture_settings";
 
     @Override
     public int getMetricsCategory() {
@@ -44,12 +43,7 @@ public class GestureHolder extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.gesture);
-
-        Preference Pixel = findPreference(PIXEL_CATEGORY);
-        if (!getResources().getBoolean(R.bool.is_pixel_device)) {
-            getPreferenceScreen().removePreference(Pixel);
-        }
+        addPreferencesFromResource(R.xml.pixel_gesture);
     }
 
     @Override
@@ -71,7 +65,7 @@ public class GestureHolder extends SettingsPreferenceFragment implements
                         boolean enabled) {
                     final ArrayList<SearchIndexableResource> result = new ArrayList<>();
                      final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.gesture;
+                    sir.xmlResId = R.xml.pixel_gesture;
                     result.add(sir);
                     return result;
                 }
