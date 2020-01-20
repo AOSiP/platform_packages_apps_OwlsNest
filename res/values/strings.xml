@@ -203,6 +203,8 @@
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesture</string>
     <string name="gesture_summary">Gesture based options/actions</string>
+    <string name="pixel_gesture_title">Pixel Gestures</string>
+    <string name="pixel_gesture_summary">Features specific to Pixel like Active Edge</string>
     <string name="double_tap_options">Double Tap to Sleep</string>
     <string name="aosp_gesture_title">AOSP Gestures</string>
 
