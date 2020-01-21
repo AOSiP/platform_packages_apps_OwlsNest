@@ -34,10 +34,13 @@ import android.text.InputFilter;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.util.aosip.aosipUtils;
@@ -257,6 +260,17 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
         mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER);
         showCarrierLabel = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_SHOW_CARRIER, 1);
+        CharSequence[] NonNotchEntries = { getResources().getString(R.string.show_carrier_disabled),
+                getResources().getString(R.string.show_carrier_keyguard),
+                getResources().getString(R.string.show_carrier_statusbar), getResources().getString(
+                R.string.show_carrier_enabled) };
+        CharSequence[] NotchEntries = { getResources().getString(R.string.show_carrier_disabled),
+                getResources().getString(R.string.show_carrier_keyguard) };
+        CharSequence[] NonNotchValues = {"0", "1" , "2", "3"};
+        CharSequence[] NotchValues = {"0", "1"};
+        mShowCarrierLabel.setEntries(aosipUtils.hasNotch(getActivity()) ? NotchEntries : NonNotchEntries);
+        mShowCarrierLabel.setDefaultValue("1");
+        mShowCarrierLabel.setEntryValues(aosipUtils.hasNotch(getActivity()) ? NotchValues : NonNotchValues);
         mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
         mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
@@ -271,6 +285,7 @@ public class StatusbarHolder extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         AlertDialog dialog;
+        ContentResolver resolver = getActivity().getContentResolver();
         if  (preference == mShowKronicLogo) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
