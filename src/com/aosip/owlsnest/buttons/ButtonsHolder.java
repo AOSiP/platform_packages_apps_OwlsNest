@@ -24,6 +24,7 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
@@ -33,17 +34,38 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.settings.smartactions.ActionFragment;
 import com.android.settings.SettingsPreferenceFragment;
+
+import com.android.smartactions.utils.ActionUtils;
+import com.android.smartactions.utils.ActionConstants;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ButtonsHolder extends SettingsPreferenceFragment implements
+public class ButtonsHolder extends ActionFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String KEY_LOCKDOWN_IN_POWER_MENU = "lockdown_in_power_menu";
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final int MY_USER_ID = UserHandle.myUserId();
+    // category keys
+    private static final String CATEGORY_HWKEY = "hardware_keys";
+    private static final String CATEGORY_BACK = "back_key";
+    private static final String CATEGORY_HOME = "home_key";
+    private static final String CATEGORY_MENU = "menu_key";
+    private static final String CATEGORY_ASSIST = "assist_key";
+    private static final String CATEGORY_APPSWITCH = "app_switch_key";
+
+    // Masks for checking presence of hardware keys.
+    // Must match values in frameworks/base/core/res/res/values/config.xml
+    public static final int KEY_MASK_HOME = 0x01;
+    public static final int KEY_MASK_BACK = 0x02;
+    public static final int KEY_MASK_MENU = 0x04;
+    public static final int KEY_MASK_ASSIST = 0x08;
+    public static final int KEY_MASK_APP_SWITCH = 0x10;
+    public static final int KEY_MASK_CAMERA = 0x20;
+    public static final int KEY_MASK_VOLUME = 0x40;
 
     private SwitchPreference mPowerMenuLockDown;
     private ListPreference mScreenOffAnimation;
@@ -57,8 +79,9 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.buttons);
-        final PreferenceScreen prefSet = getPreferenceScreen();
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        ContentResolver resolver = getContentResolver();
 
         mPowerMenuLockDown = (SwitchPreference) findPreference(KEY_LOCKDOWN_IN_POWER_MENU);
         if (lockPatternUtils.isSecure(MY_USER_ID)) {
@@ -66,7 +89,7 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
                     Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0) == 1));
             mPowerMenuLockDown.setOnPreferenceChangeListener(this);
         } else {
-            prefSet.removePreference(mPowerMenuLockDown);
+            prefScreen.removePreference(mPowerMenuLockDown);
         }
 
         // Screen Off Animations
@@ -76,6 +99,70 @@ public class ButtonsHolder extends SettingsPreferenceFragment implements
         mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
         mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
         mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
+        final boolean needsNavbar = ActionUtils.hasNavbarByDefault(getActivity());
+        final PreferenceCategory hwkeyCat = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_HWKEY);
+
+        // bits for hardware keys present on device
+        final int deviceKeys = getResources()
+                .getInteger(com.android.internal.R.integer.config_deviceHardwareKeys);
+
+        // read bits for present hardware keys
+        final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
+        final boolean hasBackKey = (deviceKeys & KEY_MASK_BACK) != 0;
+        final boolean hasMenuKey = (deviceKeys & KEY_MASK_MENU) != 0;
+        final boolean hasAssistKey = (deviceKeys & KEY_MASK_ASSIST) != 0;
+        final boolean hasAppSwitchKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
+
+        // load categories and init/remove preferences based on device
+        // configuration
+        final PreferenceCategory backCategory = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_BACK);
+        final PreferenceCategory homeCategory = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_HOME);
+        final PreferenceCategory menuCategory = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_MENU);
+        final PreferenceCategory assistCategory = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_ASSIST);
+        final PreferenceCategory appSwitchCategory = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_APPSWITCH);
+
+        // back key
+        if (!hasBackKey) {
+            prefScreen.removePreference(backCategory);
+        }
+
+        // home key
+        if (!hasHomeKey) {
+            prefScreen.removePreference(homeCategory);
+        }
+
+        // App switch key (recents)
+        if (!hasAppSwitchKey) {
+            prefScreen.removePreference(appSwitchCategory);
+        }
+
+        // menu key
+        if (!hasMenuKey) {
+            prefScreen.removePreference(menuCategory);
+        }
+
+        // search/assist key
+        if (!hasAssistKey) {
+            prefScreen.removePreference(assistCategory);
+        }
+
+        // let super know we can load ActionPreferences
+        onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.HWKEYS));
+
+        // load preferences first
+        setActionPreferencesEnabled(true);
+    }
+
+    @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
     }
 
     @Override
