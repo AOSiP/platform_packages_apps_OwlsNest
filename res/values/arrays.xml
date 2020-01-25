@@ -159,7 +159,6 @@
     <!-- Statusbar Logos -->
     <string-array name="status_bar_logo_style_entries">
         <item>Default (Kronic 2.0)</item>
-        <item>Khloe</item>
         <item>Kronic</item>
         <item>Kronic 3.0</item>
         <item>OwlsNest</item>
@@ -172,7 +171,6 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>5</item>
     </string-array>
 
     <!-- Network traffic location -->
