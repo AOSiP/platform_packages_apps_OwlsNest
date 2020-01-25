@@ -30,4 +30,10 @@
         android:summary="@string/pixel_gesture_summary"
         android:fragment="com.aosip.owlsnest.gesture.PixelGestureHolder" />
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="fod_gesture"
+        android:title="@string/fod_gesture_title"
+        android:summary="@string/fod_gesture_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
