@@ -167,10 +167,17 @@
     <string name="headsup_category">Heads-Up</string>
 
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulse light notification</string>
-    <string name="pulse_ambient_light_summary">Show light bar on notification pulse</string>
-    <string name="ambient_notification_light_enabled_title">Always on ambient lights on notification</string>
-    <string name="ambient_notification_light_enabled_sumary">Show Always On light bars when receiving a notification</string>
+    <string name="pulse_ambient_light_title">Pulse on new notifcation</string>
+    <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
+    <string name="ambient_notification_light_enabled_title">Pulse on always on</string>
+    <string name="ambient_notification_light_enabled_sumary">Show light pulse on new notification using always on</string>
+    <string name="pulse_ambient_light_note">Wake screen on receiving new notifications must be turned on</string>
+    <string name="ambient_brigthness_category_title">Screen brightness</string>
+    <string name="pulse_ambient_category_title">Notification light pulse</string>
+    <string name="ambient_notification_light_hide_aod_title">Only show light pulse</string>
+    <string name="ambient_notification_light_hide_aod_sumary">Hide all other display elements from always on</string>
+    <string name="ambient_notification_light_accent_title">Use system accent color</string>
+    <string name="ambient_notification_light_accent_sumary">Use current system accent color for light pulse</string>
 
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
