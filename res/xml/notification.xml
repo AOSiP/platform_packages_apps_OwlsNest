@@ -44,20 +44,28 @@
         <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="ambient_notification_light_enabled"
             android:title="@string/ambient_notification_light_enabled_title"
-            android:summary="@string/ambient_notification_light_enabled_sumary"
+            android:summary="@string/ambient_notification_light_enabled_summary"
             android:defaultValue="false" />
 
         <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="ambient_notification_light_hide_aod"
             android:title="@string/ambient_notification_light_hide_aod_title"
-            android:summary="@string/ambient_notification_light_hide_aod_sumary"
+            android:summary="@string/ambient_notification_light_hide_aod_summary"
             android:defaultValue="false" />
 
         <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="ambient_notification_light_accent"
             android:title="@string/ambient_notification_light_accent_title"
-            android:summary="@string/ambient_notification_light_accent_sumary"
-            android:defaultValue="false" />
+            android:summary="@string/ambient_notification_light_accent_summary"
+            android:defaultValue="false"
+            android:disableDependentsState="true" />
+
+        <com.aosip.support.preference.ColorSelectPreference
+            android:key="ambient_notification_light_color"
+            android:title="@string/ambient_notification_light_color_title"
+            android:summary="@string/ambient_notification_light_color_summary"
+            android:persistent="false"
+            android:dependency="ambient_notification_light_accent" />
 
         <Preference
             android:icon="@drawable/ic_info_outline_24dp"

@@ -17,12 +17,17 @@
 package com.aosip.owlsnest.notification;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.ServiceManager;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -30,7 +35,9 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settingslib.Utils;
 
+import com.aosip.support.preference.ColorSelectPreference;
 import com.aosip.support.preference.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
@@ -41,8 +48,14 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String PULSE_AMBIANT_LIGHT_PREF = "pulse_ambient_light";
+    private static final String PULSE_COLOR_PREF = "ambient_notification_light_color";
+    private static final String AMBIENT_NOTIFICATION_LIGHT_ACCENT_PREF = "ambient_notification_light_accent";
 
     private SystemSettingSwitchPreference mPulseEdgeLights;
+    private ColorSelectPreference mPulseLightColorPref;
+    private static final int MENU_RESET = Menu.FIRST;
+    private int mDefaultColor;
+    private int mColor;
 
     @Override
     public int getMetricsCategory() {
@@ -58,10 +71,20 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.notification);
 
+        mDefaultColor = getResources().getInteger(
+                com.android.internal.R.integer.config_ambientNotificationDefaultColor);
         mPulseEdgeLights = (SystemSettingSwitchPreference) findPreference(PULSE_AMBIANT_LIGHT_PREF);
         boolean mPulseNotificationEnabled = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.DOZE_ENABLED, 0) != 0;
         mPulseEdgeLights.setEnabled(mPulseNotificationEnabled);
+
+        setHasOptionsMenu(true);
+
+        mPulseLightColorPref = (ColorSelectPreference) findPreference(PULSE_COLOR_PREF);
+        mColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.NOTIFICATION_PULSE_COLOR, mDefaultColor);
+        mPulseLightColorPref.setColor(mColor);
+        mPulseLightColorPref.setOnPreferenceChangeListener(this);
 
         mBatteryLightPref = (Preference) findPreference("charging_light");
         PreferenceScreen prefSet = getPreferenceScreen();
@@ -77,7 +100,43 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mPulseLightColorPref) {
+            ColorSelectPreference lightPref = (ColorSelectPreference) preference;
+            Settings.System.putInt(getContentResolver(),
+                     Settings.System.NOTIFICATION_PULSE_COLOR, lightPref.getColor());
+            mColor = lightPref.getColor();
+            mPulseLightColorPref.setColor(mColor);
+            return true;
+        }
        return false;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, MENU_RESET, 0, R.string.reset)
+                .setIcon(R.drawable.ic_settings_backup_restore)
+                .setAlphabeticShortcut('r')
+                .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case MENU_RESET:
+                resetToDefaults();
+                return true;
+        }
+        return false;
+    }
+
+    protected void resetToDefaults() {
+        Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_PULSE_COLOR,
+                mDefaultColor);
+        mPulseLightColorPref.setColor(mDefaultColor);
+    }
+
+    private void refreshView() {
+        getFragmentManager().beginTransaction().detach(this).attach(this).commit();
     }
 
     /**
