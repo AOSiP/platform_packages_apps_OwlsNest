@@ -49,6 +49,10 @@
     <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
     <string name="mobile_data_style_info_title">Change take effect on next update of mobile signal icon.</string>
 
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Show 4G instead of LTE</string>
+    <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
+
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_switch_title">VoLTE icon</string>
     <string name="volte_switch_summary">Display VoLTE icon</string>
