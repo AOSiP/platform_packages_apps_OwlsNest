@@ -33,29 +33,6 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
-    <com.aosip.support.preference.SystemSettingSwitchPreference
-        android:key="lockscreen_media_metadata"
-        android:title="@string/media_art_title"
-        android:summary="@string/media_art_summary"
-        android:defaultValue="true" />
-
-    <com.aosip.support.preference.SystemSettingListPreference
-        android:key="lockscreen_album_art_filter"
-        android:title="@string/lockscreen_cover_filter_title"
-        android:entries="@array/lockscreen_cover_filter_entries"
-        android:entryValues="@array/lockscreen_cover_filter_values"
-        android:dependency="lockscreen_media_metadata"
-        android:defaultValue="5" />
-
-     <com.aosip.support.preference.CustomSystemSeekBarPreference
-        android:key="lockscreen_media_blur"
-        android:title="@string/lockscreen_media_blur_title"
-        settings:allowEditText="true"
-        android:max="25"
-        android:min="0"
-        android:defaultValue="25"
-        settings:units="dp" />
-
     <com.aosip.support.preference.GlobalSettingSwitchPreference
         android:key="lockscreen_enable_power_menu"
         android:title="@string/lockscreen_enable_power_menu_title"
@@ -66,5 +43,33 @@
         android:title="@string/lockscreen_visualizer_title"
         android:summary="@string/lockscreen_visualizer_summary"
         android:fragment="com.aosip.owlsnest.lockscreen.LockScreenVisualizer" />
+
+    <PreferenceCategory
+        android:key="album_art_category"
+        android:title="@string/media_art_title" >
+
+        <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
+
+        <com.aosip.support.preference.SystemSettingListPreference
+            android:key="lockscreen_album_art_filter"
+            android:title="@string/lockscreen_cover_filter_title"
+            android:entries="@array/lockscreen_cover_filter_entries"
+            android:entryValues="@array/lockscreen_cover_filter_values"
+            android:dependency="lockscreen_media_metadata"
+            android:defaultValue="5" />
+
+         <com.aosip.support.preference.CustomSystemSeekBarPreference
+            android:key="lockscreen_media_blur"
+            android:title="@string/lockscreen_media_blur_title"
+            settings:allowEditText="true"
+            android:max="25"
+            android:min="0"
+            android:defaultValue="25"
+            settings:units="dp" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
