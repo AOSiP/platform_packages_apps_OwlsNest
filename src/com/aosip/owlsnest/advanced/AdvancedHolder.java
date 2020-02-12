@@ -17,8 +17,6 @@
 package com.aosip.owlsnest.advanced;
 
 import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
@@ -36,30 +34,15 @@ import java.util.List;
 public class AdvancedHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String CUSTOM_THEME_BROWSE = "theme_select_activity";
-
-    private Preference mThemeBrowse;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.system);
-
-        mThemeBrowse = findPreference(CUSTOM_THEME_BROWSE);
-        mThemeBrowse.setEnabled(isBrowseThemesAvailable());
-
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         return false;
-    }
-
-    private boolean isBrowseThemesAvailable() {
-        PackageManager pm = getPackageManager();
-        Intent browse = new Intent();
-        browse.setClassName("com.android.customization", "com.android.customization.picker.CustomizationPickerActivity");
-        return pm.resolveActivity(browse, 0) != null;
     }
 
     @Override
