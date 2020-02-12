@@ -23,6 +23,7 @@ import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import android.view.Menu;
@@ -50,9 +51,11 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     private static final String PULSE_AMBIANT_LIGHT_PREF = "pulse_ambient_light";
     private static final String PULSE_COLOR_PREF = "ambient_notification_light_color";
     private static final String AMBIENT_NOTIFICATION_LIGHT_ACCENT_PREF = "ambient_notification_light_accent";
+    private static final String PULSE_TIMEOUT_PREF = "ambient_notification_light_timeout";
 
-    private SystemSettingSwitchPreference mPulseEdgeLights;
     private ColorSelectPreference mPulseLightColorPref;
+    private ListPreference mPulseTimeout;
+    private SystemSettingSwitchPreference mPulseEdgeLights;
     private static final int MENU_RESET = Menu.FIRST;
     private int mDefaultColor;
     private int mColor;
@@ -86,6 +89,14 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         mPulseLightColorPref.setColor(mColor);
         mPulseLightColorPref.setOnPreferenceChangeListener(this);
 
+        mPulseTimeout = (ListPreference) findPreference(PULSE_TIMEOUT_PREF);
+        int value = Settings.System.getInt(getContentResolver(),
+                Settings.System.AOD_NOTIFICATION_PULSE_TIMEOUT, 0);
+
+        mPulseTimeout.setValue(Integer.toString(value));
+        mPulseTimeout.setSummary(mPulseTimeout.getEntry());
+        mPulseTimeout.setOnPreferenceChangeListener(this);
+
         mBatteryLightPref = (Preference) findPreference("charging_light");
         PreferenceScreen prefSet = getPreferenceScreen();
         if (!getResources().getBoolean(
@@ -106,6 +117,13 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
                      Settings.System.NOTIFICATION_PULSE_COLOR, lightPref.getColor());
             mColor = lightPref.getColor();
             mPulseLightColorPref.setColor(mColor);
+            return true;
+        } else if (preference == mPulseTimeout) {
+            int value = Integer.valueOf((String) newValue);
+            int index = mPulseTimeout.findIndexOfValue((String) newValue);
+            mPulseTimeout.setSummary(mPulseTimeout.getEntries()[index]);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.AOD_NOTIFICATION_PULSE_TIMEOUT, value);
             return true;
         }
        return false;
