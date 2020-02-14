@@ -50,6 +50,18 @@
         <item>3600</item>
     </string-array>
 
+    <string-array name="ambient_notification_light_color_mode_entries" translatable="false">
+        <item>@string/ambient_notification_light_color_mode_automatic</item>
+        <item>@string/ambient_notification_light_color_mode_accent</item>
+        <item>@string/ambient_notification_light_color_mode_custom</item>
+    </string-array>
+
+    <string-array name="ambient_notification_light_color_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Status bar clock and date options -->
      <string-array name="entries_status_bar_am_pm">
         <item>@string/am_pm_clock_none</item>
