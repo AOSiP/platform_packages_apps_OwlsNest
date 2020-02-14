@@ -52,8 +52,10 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     private static final String PULSE_COLOR_PREF = "ambient_notification_light_color";
     private static final String AMBIENT_NOTIFICATION_LIGHT_ACCENT_PREF = "ambient_notification_light_accent";
     private static final String PULSE_TIMEOUT_PREF = "ambient_notification_light_timeout";
+    private static final String PULSE_COLOR_MODE_PREF = "ambient_notification_light_color_mode";
 
     private ColorSelectPreference mPulseLightColorPref;
+    private ListPreference mColorMode;
     private ListPreference mPulseTimeout;
     private SystemSettingSwitchPreference mPulseEdgeLights;
     private static final int MENU_RESET = Menu.FIRST;
@@ -97,6 +99,23 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         mPulseTimeout.setSummary(mPulseTimeout.getEntry());
         mPulseTimeout.setOnPreferenceChangeListener(this);
 
+        mColorMode = (ListPreference) findPreference(PULSE_COLOR_MODE_PREF);
+        boolean colorModeAutomatic = Settings.System.getInt(getContentResolver(),
+                Settings.System.NOTIFICATION_PULSE_COLOR_AUTOMATIC, 0) != 0;
+        boolean colorModeAccent = Settings.System.getInt(getContentResolver(),
+                Settings.System.NOTIFICATION_PULSE_ACCENT, 0) != 0;
+        if (colorModeAutomatic) {
+            value = 0;
+        } else if (colorModeAccent) {
+            value = 1;
+        } else {
+            value = 2;
+       }
+
+        mColorMode.setValue(Integer.toString(value));
+        mColorMode.setSummary(mColorMode.getEntry());
+        mColorMode.setOnPreferenceChangeListener(this);
+
         mBatteryLightPref = (Preference) findPreference("charging_light");
         PreferenceScreen prefSet = getPreferenceScreen();
         if (!getResources().getBoolean(
@@ -124,6 +143,27 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
             mPulseTimeout.setSummary(mPulseTimeout.getEntries()[index]);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.AOD_NOTIFICATION_PULSE_TIMEOUT, value);
+            return true;
+        } else if (preference == mColorMode) {
+            int value = Integer.valueOf((String) newValue);
+            int index = mColorMode.findIndexOfValue((String) newValue);
+            mColorMode.setSummary(mColorMode.getEntries()[index]);
+            if (value == 0) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_PULSE_COLOR_AUTOMATIC, 1);
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_PULSE_ACCENT, 0);
+            } else if (value == 1) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_PULSE_COLOR_AUTOMATIC, 0);
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_PULSE_ACCENT, 1);
+            } else {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_PULSE_COLOR_AUTOMATIC, 0);
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_PULSE_ACCENT, 0);
+            }
             return true;
         }
        return false;
