@@ -29,6 +29,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.internal.util.aosip.aosipUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String KEY_NAVIGATION_BAR_ENABLED = "force_show_navbar";
+    private static final String KEY_LAYOUT_SETTINGS = "layout_settings";
 
     private SwitchPreference mNavigationBar;
 
@@ -59,6 +61,10 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 defaultToNavigationBar ? 1 : 0) == 1));
         mNavigationBar.setOnPreferenceChangeListener(this);
 
+        Preference mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
+        if (!aosipUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            prefSet.removePreference(mLayoutSettings);
+        }
     }
 
     @Override
