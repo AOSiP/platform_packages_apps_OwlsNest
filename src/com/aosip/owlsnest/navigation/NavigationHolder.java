@@ -22,6 +22,8 @@ import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -41,15 +43,20 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_BAR_ENABLED = "force_show_navbar";
     private static final String KEY_LAYOUT_SETTINGS = "layout_settings";
     private static final String KEY_NAVIGATION_BAR_ARROWS = "navigation_bar_menu_arrow_keys";
+    private static final String KEY_SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
 
     private Preference mLayoutSettings;
     private SwitchPreference mNavigationBar;
     private SystemSettingSwitchPreference mNavigationArrows;
+    private SystemSettingSwitchPreference mSwapHardwareKeys;
+
+    private int deviceKeys;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.navigation);
+        final PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
 
         final boolean defaultToNavigationBar = getResources().getBoolean(
@@ -57,6 +64,9 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         final boolean navigationBarEnabled = Settings.System.getIntForUser(
                 resolver, Settings.System.FORCE_SHOW_NAVBAR,
                 defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+
+        deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
 
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
         mNavigationBar.setChecked((Settings.System.getInt(getContentResolver(),
@@ -73,6 +83,13 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         if (Utils.isThemeEnabled("com.android.internal.systemui.navbar.gestural_nopill")) {
             prefSet.removePreference(mNavigationArrows);
         }
+
+        mSwapHardwareKeys = (SystemSettingSwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
+
+        if (deviceKeys == 0) {
+            prefSet.removePreference(mSwapHardwareKeys);
+        }
+        updateOptions();
     }
 
     @Override
@@ -81,6 +98,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FORCE_SHOW_NAVBAR, value ? 1 : 0);
+            updateOptions();
             return true;
         }
         return false;
@@ -89,6 +107,34 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateOptions();
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        updateOptions();
+    }
+
+    private void updateOptions() {
+        final ContentResolver resolver = getActivity().getContentResolver();
+        boolean defaultToNavigationBar = getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar);
+        boolean navigationBarEnabled = Settings.System.getIntForUser(
+                resolver, Settings.System.FORCE_SHOW_NAVBAR,
+                defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+
+        if (navigationBarEnabled) {
+            mSwapHardwareKeys.setEnabled(false);
+        } else {
+            mSwapHardwareKeys.setEnabled(true);
+        }
     }
 
     /**
@@ -109,6 +155,11 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             @Override
             public List<String> getNonIndexableKeys(Context context) {
                 List<String> keys = super.getNonIndexableKeys(context);
+                int deviceKeys = context.getResources().getInteger(
+                        com.android.internal.R.integer.config_deviceHardwareKeys);
+                if (deviceKeys == 0) {
+                    keys.add(KEY_SWAP_NAVIGATION_KEYS);
+                }
                 return keys;
             }
         };
