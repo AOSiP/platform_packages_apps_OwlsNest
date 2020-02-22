@@ -92,7 +92,7 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         mPulseLightColorPref.setOnPreferenceChangeListener(this);
 
         mPulseTimeout = (ListPreference) findPreference(PULSE_TIMEOUT_PREF);
-        value = Settings.System.getInt(getContentResolver(),
+        int value = Settings.System.getInt(getContentResolver(),
                 Settings.System.AOD_NOTIFICATION_PULSE_TIMEOUT, 0);
 
         mPulseTimeout.setValue(Integer.toString(value));
