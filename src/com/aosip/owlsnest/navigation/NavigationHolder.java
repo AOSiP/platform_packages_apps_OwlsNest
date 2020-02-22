@@ -22,6 +22,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+
+import androidx.preference.PreferenceCategory;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -318,17 +322,17 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         navbarCheck();
         customAppCheck();
 
-        mBackLongPressCustomApp.setEnabled(mBackLongPress.getEntryValues()
+        mBackLongPressCustomApp.setVisible(mBackLongPress.getEntryValues()
                 [backlongpress].equals("16"));
-        mBackDoubleTapCustomApp.setEnabled(mBackDoubleTap.getEntryValues()
+        mBackDoubleTapCustomApp.setVisible(mBackDoubleTap.getEntryValues()
                 [backdoubletap].equals("16"));
-        mHomeLongPressCustomApp.setEnabled(mHomeLongPress.getEntryValues()
+        mHomeLongPressCustomApp.setVisible(mHomeLongPress.getEntryValues()
                 [homelongpress].equals("16"));
-        mHomeDoubleTapCustomApp.setEnabled(mHomeDoubleTap.getEntryValues()
+        mHomeDoubleTapCustomApp.setVisible(mHomeDoubleTap.getEntryValues()
                 [homedoubletap].equals("16"));
-        mAppSwitchLongPressCustomApp.setEnabled(mAppSwitchLongPress.getEntryValues()
+        mAppSwitchLongPressCustomApp.setVisible(mAppSwitchLongPress.getEntryValues()
                 [appswitchlongpress].equals("16"));
-        mAppSwitchDoubleTapCustomApp.setEnabled(mAppSwitchDoubleTap.getEntryValues()
+        mAppSwitchDoubleTapCustomApp.setVisible(mAppSwitchDoubleTap.getEntryValues()
                 [appswitchdoubletap].equals("16"));
     }
 
@@ -360,7 +364,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             mBackLongPress.setSummary(
                     mBackLongPress.getEntries()[index]);
             customAppCheck();
-            mBackLongPressCustomApp.setEnabled(mBackLongPress.getEntryValues()
+            mBackLongPressCustomApp.setVisible(mBackLongPress.getEntryValues()
                     [index].equals("16"));
             return true;
         } else if (preference == mBackDoubleTap) {
@@ -371,7 +375,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             int index = mBackDoubleTap.findIndexOfValue((String) objValue);
             mBackDoubleTap.setSummary(
                     mBackDoubleTap.getEntries()[index]);
-            mBackDoubleTapCustomApp.setEnabled(mBackDoubleTap.getEntryValues()
+            mBackDoubleTapCustomApp.setVisible(mBackDoubleTap.getEntryValues()
                     [index].equals("16"));
             return true;
         } else if (preference == mHomeLongPress) {
@@ -382,7 +386,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             int index = mHomeLongPress.findIndexOfValue((String) objValue);
             mHomeLongPress.setSummary(
                     mHomeLongPress.getEntries()[index]);
-            mHomeLongPressCustomApp.setEnabled(mHomeLongPress.getEntryValues()
+            mHomeLongPressCustomApp.setVisible(mHomeLongPress.getEntryValues()
                     [index].equals("16"));
             return true;
         } else if (preference == mHomeDoubleTap) {
@@ -393,7 +397,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             int index = mHomeDoubleTap.findIndexOfValue((String) objValue);
             mHomeDoubleTap.setSummary(
                     mHomeDoubleTap.getEntries()[index]);
-            mHomeDoubleTapCustomApp.setEnabled(mHomeDoubleTap.getEntryValues()
+            mHomeDoubleTapCustomApp.setVisible(mHomeDoubleTap.getEntryValues()
                     [index].equals("16"));
             return true;
         } else if (preference == mAppSwitchLongPress) {
@@ -404,7 +408,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             int index = mAppSwitchLongPress.findIndexOfValue((String) objValue);
             mAppSwitchLongPress.setSummary(
                     mAppSwitchLongPress.getEntries()[index]);
-            mAppSwitchLongPressCustomApp.setEnabled(mAppSwitchLongPress.getEntryValues()
+            mAppSwitchLongPressCustomApp.setVisible(mAppSwitchLongPress.getEntryValues()
                     [index].equals("16"));
             return true;
         } else if (preference == mAppSwitchDoubleTap) {
@@ -415,7 +419,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             int index = mAppSwitchDoubleTap.findIndexOfValue((String) objValue);
             mAppSwitchDoubleTap.setSummary(
                     mAppSwitchDoubleTap.getEntries()[index]);
-            mAppSwitchDoubleTapCustomApp.setEnabled(mAppSwitchDoubleTap.getEntryValues()
+            mAppSwitchDoubleTapCustomApp.setVisible(mAppSwitchDoubleTap.getEntryValues()
                     [index].equals("16"));
             return true;
         } else if (preference == mMenuLongPress) {
