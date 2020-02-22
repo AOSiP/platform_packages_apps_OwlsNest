@@ -251,9 +251,7 @@
     <!--Owlsnest navigation-->
     <string name="navigation_category">Navigation</string>
     <string name="navigation_summary">Customize navigation bar style and behavior</string>
-
-    <!-- Navbar options -->
-    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navigation_tuner_title">Navigation Tuner</string>
 
 
     <!--Owlsnest buttons-->
