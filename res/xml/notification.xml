@@ -39,6 +39,12 @@
         android:defaultValue="true" />
 
     <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="alert_slider_notifications"
+        android:title="@string/alert_slider_notifications_title"
+        android:summary="@string/alert_slider_notifications_summary"
+        android:defaultValue="true" />
+
+    <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="notification_headers"
             android:title="@string/notification_headers_title"
             android:summary="@string/notification_headers_summary"
