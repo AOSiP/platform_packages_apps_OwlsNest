@@ -16,6 +16,7 @@
 
 package com.aosip.owlsnest.notification;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -58,12 +59,14 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     private static final String PULSE_COLOR_MODE_PREF = "ambient_notification_light_color_mode";
     private static final String PREF_HEADS_UP = "heads_up";
     private static final String STATUS_BAR_TICKER = "status_bar_show_ticker";
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
 
     private ColorSelectPreference mPulseLightColorPref;
     private GlobalSettingMasterSwitchPreference mHeadsUp;
     private ListPreference mColorMode;
     private ListPreference mPulseTimeout;
     private Preference mBatteryLightPref;
+    private Preference mAlertSlider;
     private SwitchPreference mTicker;
     private SystemSettingSwitchPreference mPulseEdgeLights;
     private static final int MENU_RESET = Menu.FIRST;
@@ -80,6 +83,10 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.notification);
+
+        ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Resources res = getResources();
 
         mDefaultColor = getResources().getInteger(
                 com.android.internal.R.integer.config_ambientNotificationDefaultColor);
@@ -138,6 +145,12 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         mTicker.setChecked((Settings.System.getInt(getContentResolver(),
              Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 1));
         mTicker.setOnPreferenceChangeListener(this);
+
+        mAlertSlider = (Preference) prefScreen.findPreference(ALERT_SLIDER_PREF);
+        boolean mAlertSliderAvailable = res.getBoolean(
+                com.android.internal.R.bool.config_hasAlertSlider);
+        if (!mAlertSliderAvailable)
+            prefScreen.removePreference(mAlertSlider);
       }
 
     @Override
@@ -261,6 +274,11 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
             @Override
             public List<String> getNonIndexableKeys(Context context) {
                 List<String> keys = super.getNonIndexableKeys(context);
+                    final Resources res = context.getResources();
+                    boolean mAlertSliderAvailable = res.getBoolean(
+                            com.android.internal.R.bool.config_hasAlertSlider);
+                    if (!mAlertSliderAvailable)
+                        keys.add(ALERT_SLIDER_PREF);
                 return keys;
             }
         };
