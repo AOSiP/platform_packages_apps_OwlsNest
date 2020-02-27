@@ -16,6 +16,24 @@
       "revId": "904d334e05444c5959e9d3c8264ddbd706470308",
       "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f811d49c_3f0e93d1",
+        "filename": "res/xml/navigation.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000075
+      },
+      "writtenOn": "2020-02-27T19:12:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5543fcd2_7b30b16f",
+      "revId": "904d334e05444c5959e9d3c8264ddbd706470308",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": false
     }
   ]
 }
