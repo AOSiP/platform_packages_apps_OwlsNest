@@ -53,6 +53,10 @@
     <string name="show_fourg_title">Show 4G instead of LTE</string>
     <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
 
+    <!--Statusbar privacy indicators-->
+    <string name="statusbar_privacy_indicators_title">Privacy indicators</string>
+    <string name="statusbar_privacy_indicators_summary">Show privacy indicators on statusbar</string>
+
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_switch_title">VoLTE icon</string>
     <string name="volte_switch_summary">Display VoLTE icon</string>
