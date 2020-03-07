@@ -63,6 +63,12 @@
             android:title="@string/status_bar_logo_style_title" />
 
          <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="statusbar_privacy_indicators"
+            android:title="@string/statusbar_privacy_indicators_title"
+            android:summary="@string/statusbar_privacy_indicators_summary"
+            android:defaultValue="true" />
+
+         <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="show_volte_icon"
             android:title="@string/volte_switch_title"
             android:summary="@string/volte_switch_summary"
