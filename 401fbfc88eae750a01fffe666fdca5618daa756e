@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "19d934a3_7caa134c",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 1000075
+      },
+      "writtenOn": "2020-03-08T03:15:44Z",
+      "side": 1,
+      "message": "Move these strings to above the VoLTE strings (the file is categorized based on where the strings are used)",
+      "revId": "401fbfc88eae750a01fffe666fdca5618daa756e",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
