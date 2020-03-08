@@ -20,7 +20,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
-import android.provider.Settings;
 import androidx.preference.Preference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -30,18 +29,12 @@ import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.aosip.support.preference.CustomSeekBarPreference;
-
 import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
 public class QuickSettingsHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
-
-    private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
-
-    private CustomSeekBarPreference mQsPanelAlpha;
 
     @Override
     public int getMetricsCategory() {
@@ -52,12 +45,6 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quicksettings);
-
-        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
-        int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
-                Settings.System.QS_PANEL_BG_ALPHA, 255);
-        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
-        mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -66,13 +53,6 @@ public class QuickSettingsHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mQsPanelAlpha) {
-            int bgAlpha = (Integer) newValue;
-            int trueValue = (int) (((double) bgAlpha / 100) * 255);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.QS_PANEL_BG_ALPHA, trueValue);
-            return true;
-        }
     return false;
   }
 

@@ -17,7 +17,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quicksettings_title" >
 
     <!-- Battery mode -->
@@ -27,14 +27,6 @@
         android:entries="@array/qs_battery_mode_entries"
         android:entryValues="@array/qs_battery_mode_values"
         android:defaultValue="1" />
-
-    <com.aosip.support.preference.CustomSeekBarPreference
-        android:key="qs_panel_alpha"
-        android:title="@string/qs_panel_alpha_title"
-        android:summary="@string/qs_panel_alpha_summary"
-        android:max="100"
-        settings:min="0"
-        android:persistent="false" />
 
     <PreferenceCategory
         android:key="string/qs_brightness_category"
