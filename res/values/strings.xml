@@ -155,7 +155,7 @@
     <string name="show_network_traffic_up">Upload</string>
     <string name="show_network_traffic_down">Download</string>
     <string name="show_network_traffic_all">Both</string>
-    <string name="nettraf_font_size">Single net font size</string>
+    <string name="nettraf_font_size">Single net font size (dp)</string>
 
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
