@@ -69,6 +69,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             mLowColor = (ColorPickerPreference) findPreference("battery_light_low_color");
             mLowColor.setAlphaSliderEnabled(false);
             mLowColor.setNewPreviewColor(color);
+            mLowColor.setIconSpaceReserved(true);
             mLowColor.setOnPreferenceChangeListener(this);
 
             color = Settings.System.getIntForUser(getContentResolver(),
@@ -77,6 +78,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             mMediumColor = (ColorPickerPreference) findPreference("battery_light_medium_color");
             mMediumColor.setAlphaSliderEnabled(false);
             mMediumColor.setNewPreviewColor(color);
+            mMediumColor.setIconSpaceReserved(true);
             mMediumColor.setOnPreferenceChangeListener(this);
 
             color = Settings.System.getIntForUser(getContentResolver(),
@@ -85,6 +87,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             mFullColor = (ColorPickerPreference) findPreference("battery_light_full_color");
             mFullColor.setAlphaSliderEnabled(false);
             mFullColor.setNewPreviewColor(color);
+            mFullColor.setIconSpaceReserved(true);
             mFullColor.setOnPreferenceChangeListener(this);
 
             color = Settings.System.getIntForUser(getContentResolver(),
@@ -93,6 +96,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             mReallyFullColor = (ColorPickerPreference) findPreference("battery_light_reallyfull_color");
             mReallyFullColor.setAlphaSliderEnabled(false);
             mReallyFullColor.setNewPreviewColor(color);
+            mReallyFullColor.setIconSpaceReserved(true);
             mReallyFullColor.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(mColorCategory);
