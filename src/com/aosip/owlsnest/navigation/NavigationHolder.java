@@ -55,6 +55,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
     private static final String KEY_GESTURE_BAR_SIZE = "navigation_handle_width";
     private static final String KEY_LAYOUT_SETTINGS = "layout_settings";
     private static final String KEY_NAVIGATION_BAR_ARROWS = "navigation_bar_menu_arrow_keys";
+    private static final String KEY_NAVIGATION_IME_SPACE = "navigation_bar_ime_space";
     private static final String KEY_SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
     private static final String KEY_GESTURE_SYSTEM = "gesture_system_navigation";
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
@@ -153,6 +154,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
     private SwitchPreference mNavigationBar;
     private SystemSettingListPreference mTimeout;
     private SystemSettingSwitchPreference mNavigationArrowKeys;
+    private SystemSettingSwitchPreference mNavigationIMESpace;
     private SystemSettingSwitchPreference mSwapHardwareKeys;
     private SystemSettingSwitchPreference mExtendedSwipe;
 
@@ -232,6 +234,9 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
         mSwapHardwareKeys = (SystemSettingSwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
 
         mNavigationArrowKeys = (SystemSettingSwitchPreference) findPreference(KEY_NAVIGATION_BAR_ARROWS);
+
+        mNavigationIMESpace = (SystemSettingSwitchPreference) findPreference(KEY_NAVIGATION_IME_SPACE);
+        mNavigationIMESpace.setOnPreferenceChangeListener(this);
 
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
         mNavigationBar.setChecked(isNavbarVisible());
@@ -607,6 +612,10 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
             mExtendedSwipe.setChecked(enabled);
             mTimeout.setEnabled(!enabled);
             navbarCheck();
+        } else if (preference == mNavigationIMESpace) {
+            navbarCheck();
+            SystemNavigationGestureSettings.updateNavigationBarOverlays(getActivity());
+            return true;
         } else if (preference == mGestureBarSize) {
             int value = Integer.parseInt((String) objValue);
             Settings.System.putIntForUser(getActivity().getContentResolver(),
@@ -725,6 +734,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 appSwitchCategory.setEnabled(true);
                 cameraCategory.setEnabled(true);
                 mNavigationArrowKeys.setEnabled(true);
+                mNavigationIMESpace.setEnabled(true);
             } else {
                 homeCategory.setEnabled(false);
                 backCategory.setEnabled(false);
@@ -733,6 +743,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 appSwitchCategory.setEnabled(false);
                 cameraCategory.setEnabled(false);
                 mNavigationArrowKeys.setEnabled(false);
+                mNavigationIMESpace.setEnabled(false);
             }
         } else {
             if (isNavbarVisible()) {
@@ -743,6 +754,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 appSwitchCategory.setEnabled(true);
                 cameraCategory.setEnabled(true);
                 mNavigationArrowKeys.setEnabled(true);
+                mNavigationIMESpace.setEnabled(true);
             } else {
                 homeCategory.setEnabled(true);
                 backCategory.setEnabled(true);
@@ -751,6 +763,7 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 appSwitchCategory.setEnabled(true);
                 cameraCategory.setEnabled(true);
                 mNavigationArrowKeys.setEnabled(false);
+                mNavigationIMESpace.setEnabled(false);
             }
         }
 
@@ -820,6 +833,23 @@ public class NavigationHolder extends SettingsPreferenceFragment implements
                 rightVerticalSwipeCategory.setVisible(true);
             }
 
+        }
+
+        int navbarWidth = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.NAVIGATION_HANDLE_WIDTH, 2, UserHandle.USER_CURRENT);
+        boolean navbarSpaceEnabled = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_IME_SPACE, 1, UserHandle.USER_CURRENT) != 0;
+
+        if (navbarWidth == 0) {
+            mNavigationIMESpace.setVisible(true);
+        } else {
+            mNavigationIMESpace.setVisible(false);
+        }
+
+        if (navbarWidth == 0 && !navbarSpaceEnabled) {
+            mNavigationArrowKeys.setEnabled(false);
+        } else {
+            mNavigationArrowKeys.setEnabled(true);
         }
     }
 
