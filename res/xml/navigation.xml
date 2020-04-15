@@ -70,6 +70,12 @@
         android:defaultValue="false"/>
 
    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="navigation_bar_ime_space"
+        android:title="@string/navigation_bar_ime_space_title"
+        android:summary="@string/navigation_bar_ime_space_summary"
+        android:defaultValue="true" />
+
+   <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="back_swipe_extended"
         android:title="@string/back_swipe_extended_title"
         android:summary="@string/back_swipe_extended_summary"
