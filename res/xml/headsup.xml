@@ -46,4 +46,36 @@
         android:entryValues="@array/heads_up_time_out_values"
         android:persistent="false" />
 
+    <PreferenceCategory
+            android:title="@string/heads_up_stoplist_title"
+            android:key="stoplist_applications" >
+
+        <com.aosip.owlsnest.preference.AppMultiSelectListPreference
+            android:key="add_stoplist_packages"
+            android:title="@string/add_heads_up_package"
+            android:summary="@string/add_heads_up_stoplist_summary"
+            android:persistent="false" />
+        <com.aosip.owlsnest.preference.ScrollAppsViewPreference
+            android:key="stoplist_apps_list_scroller"
+            android:persistent="false"
+            android:selectable="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/heads_up_blacklist_title"
+            android:key="blacklist_applications" >
+
+        <com.aosip.owlsnest.preference.AppMultiSelectListPreference
+            android:key="add_blacklist_packages"
+            android:title="@string/add_heads_up_package"
+            android:summary="@string/add_heads_up_blacklist_summary"
+            android:persistent="false" />
+        <com.aosip.owlsnest.preference.ScrollAppsViewPreference
+            android:key="blacklist_apps_list_scroller"
+            android:persistent="false"
+            android:selectable="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
