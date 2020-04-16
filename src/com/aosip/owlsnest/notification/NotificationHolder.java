@@ -40,6 +40,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.Utils;
 
 import com.aosip.support.preference.ColorSelectPreference;
+import com.aosip.support.preference.GlobalSettingMasterSwitchPreference;
 import com.aosip.support.preference.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
@@ -54,8 +55,10 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     private static final String AMBIENT_NOTIFICATION_LIGHT_ACCENT_PREF = "ambient_notification_light_accent";
     private static final String PULSE_TIMEOUT_PREF = "ambient_notification_light_timeout";
     private static final String PULSE_COLOR_MODE_PREF = "ambient_notification_light_color_mode";
+    private static final String PREF_HEADS_UP = "heads_up";
 
     private ColorSelectPreference mPulseLightColorPref;
+    private GlobalSettingMasterSwitchPreference mHeadsUp;
     private ListPreference mColorMode;
     private ListPreference mPulseTimeout;
     private SystemSettingSwitchPreference mPulseEdgeLights;
@@ -123,6 +126,12 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_deviceHasLED)) {
             prefSet.removePreference(mBatteryLightPref);
         }
+
+        mHeadsUp = (GlobalSettingMasterSwitchPreference)
+                findPreference(PREF_HEADS_UP);
+        mHeadsUp.setChecked(Settings.Global.getInt(getContentResolver(),
+                Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 1) == 1);
+        mHeadsUp.setOnPreferenceChangeListener(this);
       }
 
     @Override
@@ -165,6 +174,11 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
                 Settings.System.putInt(getContentResolver(),
                         Settings.System.NOTIFICATION_PULSE_ACCENT, 0);
             }
+            return true;
+        } else if (preference == mHeadsUp) {
+            Boolean value = (Boolean) newValue;
+            Settings.Global.putInt(getContentResolver(),
+                    Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, value ? 1 : 0);
             return true;
         }
        return false;
