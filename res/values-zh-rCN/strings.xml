@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016-2020 AOSiP
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- AOSiP device info settings -->
+    <string name="aosip_version">AOSiP 版本</string>
+    <string name="aosip_version_default">未知</string>
+    <!-- AOSiP custom settings main -->
+    <string name="header_category_personalization">界面设置</string>
+    <string name="nest_title">鹰巢</string>
+    <string name="aosip_title">AOSiP 设置</string>
+    <string name="owlsnest_settings_title">分类</string>
+    <!-- General strings -->
+    <string name="ok">确定</string>
+    <string name="reset">重置</string>
+    <string name="enabled">已启用</string>
+    <string name="add">添加</string>
+    <string name="choose_app">选择应用程序</string>
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_title">需要重启系统界面</string>
+    <string name="systemui_restart_message">要使所有更改生效，需要重新启动系统界面。现在重新启动系统界面吗？</string>
+    <!--Owlsnest statusbar-->
+    <string name="statusbar_bar_title">状态栏</string>
+    <string name="statusbar_bar_summary">调整各类状态栏项目</string>
+    <string name="icon_category">图标</string>
+    <string name="battery_category">电池</string>
+    <!-- Old MobileType Toggle -->
+    <string name="use_old_mobiletype_title">使用旧的移动网络类型样式</string>
+    <string name="use_old_mobiletype_summary">合并信号和信号类型图标</string>
+    <string name="mobile_data_style_info_title">更改将在下一次更新移动信号图标时生效。</string>
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">使用 4G 图标替代 LTE 图标</string>
+    <string name="show_fourg_summary">显示 4G 网络指示图标而非 LTE 图标</string>
+    <!--Statusbar privacy indicators-->
+    <string name="statusbar_privacy_indicators_title">隐私指示器</string>
+    <string name="statusbar_privacy_indicators_summary">在状态栏上显示隐私指示器</string>
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_switch_title">VoLTE 图标</string>
+    <string name="volte_switch_summary">显示 VoLTE 图标</string>
+    <string name="volte_icon_asus">VoLTE Asus 图标</string>
+    <string name="volte_icon_title">VoLTE 图标</string>
+    <string name="volte_icon_summary">显示 VoLTE 图标</string>
+    <string name="volte_icon_style_title">选择 VoLTE 图标</string>
+    <string name="volte_icon_vo">仅 Vo 图标</string>
+    <string name="volte_icon_volte">VoLTE 图标</string>
+    <string name="volte_icon_oos">VoLTE OOS 图标</string>
+    <string name="volte_icon_hd">HD 图标</string>
+    <string name="volte_icon_volit">VoLIT 图标</string>
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_style_title">风格</string>
+    <string name="status_bar_clock">时钟和日期</string>
+    <string name="clock_enabled">启用</string>
+    <string name="clock_disabled">禁用</string>
+    <string name="status_bar_clock_style_reset">重置颜色</string>
+    <string name="status_bar_show_clock_title">显示时钟和日期</string>
+    <string name="status_bar_clock_seconds_title">时钟秒数</string>
+    <string name="status_bar_clock_seconds_summary">在状态栏时钟后面显示秒数</string>
+    <string name="status_bar_am_pm_title">上午/下午</string>
+    <string name="status_bar_am_pm_info">24 小时制已启用</string>
+    <string name="enable_clock_weekday">星期计数</string>
+    <string name="enable_clock_weekday_summary">在时间前显示简写的星期</string>
+    <string name="dont_show">隐藏</string>
+    <string name="clock_date_display">日期</string>
+    <string name="status_bar_time_cat">时间</string>
+    <string name="clock_date_display_summary">在时钟前显示自定义日期</string>
+    <string name="clock_date_style">日期样式</string>
+    <string name="clock_date_format">日期格式</string>
+    <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">输入字符串</string>
+    <string name="am_pm_clock_normal">正常字体</string>
+    <string name="am_pm_clock_small">小号字体</string>
+    <string name="am_pm_clock_none">隐藏</string>
+    <string name="clock_date_display_none">隐藏</string>
+    <string name="clock_date_display_small">小号字体</string>
+    <string name="clock_date_display_normal">正常字体</string>
+    <string name="clock_date_style_normal">正常</string>
+    <string name="clock_date_style_lowercase">小写</string>
+    <string name="clock_date_style_uppercase">大写</string>
+    <string name="clock_date_right">时间右侧</string>
+    <string name="clock_date_left">时间左侧</string>
+    <string name="clock_date_position">日期位置</string>
+    <string name="clock_position">时钟位置</string>
+    <string name="clock_position_right">时钟居右</string>
+    <string name="clock_position_center">时钟居中</string>
+    <string name="clock_position_left">时钟居左</string>
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">状态栏图标</string>
+    <string name="status_bar_system_icons_title">系统图标</string>
+    <string name="status_bar_system_icons_summary">控制在状态栏上显示的图标</string>
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">电池电量</string>
+    <string name="battery_percent_title">电量百分比</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">电池样式</string>
+    <string name="status_bar_battery_style_q">竖置图标 (默认)</string>
+    <string name="status_bar_battery_style_dotted_circle">虚线圆圈</string>
+    <string name="status_bar_battery_style_circle">实心圆</string>
+    <string name="status_bar_battery_style_text">文本</string>
+    <string name="status_bar_battery_style_hidden">隐藏</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">电量百分比</string>
+    <string name="status_bar_battery_percentage_default">隐藏 (默认)</string>
+    <string name="status_bar_battery_percentage_text_inside">图标内</string>
+    <string name="status_bar_battery_percentage_text_next">图标旁</string>
+    <string name="status_bar_battery_text_charging_title">充电时电池百分比</string>
+    <string name="status_bar_battery_text_charging_summary">充电时总是显示电池百分比</string>
+    <!-- Battery mode -->
+    <string name="battery_percentage_title">电量百分比</string>
+    <string name="battery_percentage_off">禁用</string>
+    <string name="battery_percentage_next">启用</string>
+    <string name="battery_percentage_inside">启用 (图标内)</string>
+    <string name="battery_percentage_estimate">启用 (估算可用时间)</string>
+    <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">网络活动显示</string>
+    <string name="network_traffic_location">流量指示器位置</string>
+    <string name="traffic_disabled">禁用</string>
+    <string name="traffic_statusbar">状态栏</string>
+    <string name="traffic_expanded_statusbar">下拉栏顶部</string>
+    <string name="network_traffic_autohide_threshold_title">网络活动自动隐藏阈值 (KB/s)</string>
+    <string name="network_traffic_arrow">显示箭头</string>
+    <string name="network_traffic_arrow_summary">显示网络流量监控中的指示箭头</string>
+    <string name="network_traffic_type">选择网络活动类型</string>
+    <string name="show_network_traffic_combined">组合 (上传+下载)</string>
+    <string name="show_network_traffic_dynamic">动态</string>
+    <string name="show_network_traffic_up">上传</string>
+    <string name="show_network_traffic_down">下载</string>
+    <string name="show_network_traffic_all">同时显示</string>
+    <string name="nettraf_font_size">单行字体大小</string>
+    <!-- Kronic logo -->
+    <string name="kronic_logo_title">Kronic 标志</string>
+    <string name="kronic_logo_summary">让每个看到你手机屏幕的人都知道你正在使用 aosip</string>
+    <string name="status_bar_logo_style_title">自定义 Logo</string>
+    <!-- Carrier Label -->
+    <string name="status_carrier_title">运营商标签</string>
+    <string name="carrier_options">选择显示位置</string>
+    <string name="custom_carrier_label_title">自定义运营商标签</string>
+    <string name="custom_carrier_label_explain">输入自定义标签。若保留为空白则使用您的网络名称</string>
+    <string name="custom_carrier_label_notset">未设置自定义运营商标签</string>
+    <string name="show_carrier_title">运营商名称</string>
+    <string name="show_carrier_disabled">不显示</string>
+    <string name="show_carrier_keyguard">锁屏</string>
+    <string name="show_carrier_statusbar">状态栏</string>
+    <string name="show_carrier_enabled">同时显示</string>
+    <!--Owlsnest Notification-->
+    <string name="notification_title">通知</string>
+    <string name="notification_summary">调节 LED 灯和通知行为</string>
+    <string name="notification_category">通知</string>
+    <string name="headsup_category">浮动通知</string>
+    <string name="show_media_heads_up_title">显示音乐</string>
+    <string name="show_media_heads_up_summary">如果播放器未进入前台模式，当播放新曲目时显示媒体浮动通知。</string>
+    <!--Notification Pulse-->
+    <string name="pulse_ambient_light_title">通知脉冲</string>
+    <string name="pulse_ambient_light_summary">有新消息时屏幕侧边闪光</string>
+    <string name="ambient_notification_light_enabled_title">脉冲常开</string>
+    <string name="ambient_notification_light_enabled_summary">使用始终开启功能在新通知上显示光脉冲</string>
+    <string name="pulse_ambient_light_note">收到新通知时唤醒屏幕</string>
+    <string name="ambient_brigthness_category_title">屏幕亮度</string>
+    <string name="pulse_ambient_category_title">通知指示灯</string>
+    <string name="ambient_notification_light_hide_aod_title">只显示光脉冲</string>
+    <string name="ambient_notification_light_hide_aod_summary">始终隐藏所有其他显示元素</string>
+    <string name="ambient_notification_light_accent_title">使用系统强调色</string>
+    <string name="ambient_notification_light_accent_summary">呼吸灯使用系统强调色</string>
+    <string name="ambient_notification_light_color_title">自定义颜色</string>
+    <string name="ambient_notification_light_color_summary">默认线条颜色</string>
+    <string name="ambient_notification_light_timeout_title">光脉冲超时</string>
+    <string name="ambient_notification_light_color_mode_title">光脉冲颜色</string>
+    <string name="ambient_notification_light_color_mode_automatic">通知颜色</string>
+    <string name="ambient_notification_light_color_mode_accent">系统强调色</string>
+    <string name="ambient_notification_light_color_mode_custom">自定义颜色</string>
+    <string name="entry_infinite">永不超时</string>
+    <string name="entry_five_minute">5 分钟</string>
+    <string name="entry_ten_minute">10 分钟</string>
+    <string name="entry_thirty_minute">30 分钟</string>
+    <string name="entry_sixty_minute">60 分钟</string>
+    <string name="entry_fifteen_minute">15 分钟</string>
+    <!-- Notifications while screen on -->
+    <string name="notification_sound_vib_screen_on_title">若屏幕为开启状态, 发出通知提醒声音和振动</string>
+    <string name="notification_sound_vib_screen_on_summary">当屏幕打开时播放声音和振动以进行通知</string>
+    <!-- Battery light -->
+    <string name="battery_light_settings">充电指示灯</string>
+    <string name="battery_light_summary">自定义充电闪光灯</string>
+    <string name="battery_light_allow_on_dnd_title">在勿扰模式下启用指示灯</string>
+    <string name="battery_light_low_blinking_title">低电量时指示灯闪烁</string>
+    <string name="battery_light_cat">充电时电量指示灯颜色</string>
+    <string name="battery_light_low_color">低电量</string>
+    <string name="battery_light_medium_color">中等电量</string>
+    <string name="battery_light_full_color">接近满电</string>
+    <string name="battery_light_reallyfull_color">满电量</string>
+    <!--Owlsnest Quick settings-->
+    <string name="quicksettings_title">快速设置</string>
+    <string name="quicksettings_summary">管理您的快速设置瓷贴和扩展状态栏</string>
+    <string name="expanded_category">扩展桌面</string>
+    <string name="brightness_slider_title">亮度滑块</string>
+    <string name="tiles_title">快速设置磁贴</string>
+    <string name="qs_tile_footer">要更改快速磁贴的行和列的数量等，请使用快速磁贴下拉菜单中快速磁贴编辑部分下的三点菜单按钮。</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_category_title">亮度滑块选项</string>
+    <string name="qs_show_brightness_title">亮度滑块</string>
+    <string name="qs_show_brightness_summary">在快速设置面板中显示亮度滑块</string>
+    <string name="qs_brightness_position_bottom_title">底部亮度滑块</string>
+    <string name="qs_brightness_position_bottom_summary">在快速设置面板底部显示亮度滑块</string>
+    <!-- Brightness icon-->
+    <string name="brightness_icon_title">亮度图标 </string>
+    <string name="brightness_icon_summary">在亮度条右侧显示一个亮度图标以开关自动亮度调节</string>
+    <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">触摸时振动</string>
+    <string name="qs_vibrate_summary">触摸快速设置瓷块时振动</string>
+    <!--Owlsnest navigation-->
+    <string name="navigation_category">导航栏</string>
+    <string name="navigation_summary">自定义导航样式和行为</string>
+    <string name="navigation_tuner_title">导航栏</string>
+    <string name="navigation_bar_menu_arrow_keys_title">输入时显示左右光标按钮</string>
+    <string name="navigation_bar_menu_arrow_keys_summary">输入时显示左右光标按钮</string>
+    <!-- Button brightness -->
+    <string name="button_backlight_options_category">背光设置</string>
+    <string name="button_backlight_enable_title">允许按键背光</string>
+    <string name="button_link_brightness">跟随屏幕亮度</string>
+    <string name="button_link_brightness_summary">按键背光亮度将根据屏幕亮度调整</string>
+    <string name="button_manual_brightness">亮度级别</string>
+    <string name="button_timeout_title">背光超时</string>
+    <string name="button_backlight_on_touch_only_title">触摸时点亮按键背光</string>
+    <string name="button_backlight_on_touch_only_summary">按键背光将只出现在按下按钮时, 而不是一直出现。背光超时仍然会影响此功能。</string>
+    <!--Owlsnest buttons-->
+    <string name="buttons_title">实体按键</string>
+    <string name="buttons_summary">自定义设备的物理按键行为</string>
+    <string name="power_button_category">电源</string>
+    <string name="volume_category">音量</string>
+    <!-- Power menu -->
+    <string name="powermenu_reboot_title">重新启动</string>
+    <string name="powermenu_advanced_restart_title">高级重启</string>
+    <string name="powermenu_advanced_restart_summary">重启选项启用高级重启菜单</string>
+    <string name="powermenu_lockdown_title">锁定</string>
+    <string name="powermenu_screenshot_title">屏幕截图</string>
+    <string name="powermenu_screenrecord_title">屏幕录制</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">屏幕关闭动画</string>
+    <string name="screen_off_animation_default">默认</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">缩放</string>
+    <!--Owlsnest recentscreen-->
+    <string name="recent_title">最近任务</string>
+    <string name="recent_summary">配置最近任务样式和选项</string>
+    <!--Owlsnest Gestures-->
+    <string name="gesture_category">手势</string>
+    <string name="gesture_summary">手势基本选项/操作</string>
+    <string name="pixel_gesture_title">Pixel 手势</string>
+    <string name="pixel_gesture_summary">Pixel 的特色功能，例如侧边动作</string>
+    <string name="double_tap_options">双击睡眠</string>
+    <string name="aosp_gesture_title">AOSP 手势</string>
+    <string name="aware_settings_title">运动传感器</string>
+    <string name="aware_settings_summary">配置运动传感器选项</string>
+    <!-- Active edge -->
+    <string name="active_edge_title">活动边缘</string>
+    <string name="active_edge_summary">配置侧边动作选项</string>
+    <string name="active_edge_short_actions_title">短按行为</string>
+    <string name="active_edge_long_actions_title">长按行为</string>
+    <string name="active_edge_sensitivity_title">挤压灵敏度</string>
+    <string name="active_edge_wake_title">屏幕关闭时允许</string>
+    <string name="active_edge_wake_summary">屏幕关闭时触发操作</string>
+    <string name="active_edge_footer_info">无法显示所有可用动作。\n\n如果想要为该动作选择特定的应用 Activity，请长按应用选择器中的一个应用。</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">无动作</string>
+    <string name="action_search">助手</string>
+    <string name="action_voice_search">语音搜索</string>
+    <string name="action_launch_camera">相机</string>
+    <string name="action_flashlight">手电筒</string>
+    <string name="action_volume_panel">音量面板</string>
+    <string name="action_screen_off">关闭屏幕</string>
+    <string name="action_screenshot">屏幕截图</string>
+    <string name="action_app_action">应用</string>
+    <string name="action_ringer_modes">响铃模式</string>
+    <string name="kill_app">退出前台应用</string>
+    <string name="skip_song">Skip song</string>
+    <string name="prev_song">Previous song</string>
+    <string name="action_qs_panel">快速设置面板</string>
+    <string name="action_clear_notifications">清除通知</string>
+    <string name="action_notifications">通知</string>
+    <string name="active_edge_ss_app_select_title">选择短按应用</string>
+    <string name="active_edge_ls_app_select_title">选择长按应用</string>
+    <string name="active_edge_app_select_summary">选择一个应用程序在按压时启动</string>
+    <!-- Motion Sense -->
+    <string name="ambient_display_wake_screen_summary">拿起您的手机即可查看时间、通知和其他信息。</string>
+    <string name="ambient_display_wake_screen_summary_on">开启</string>
+    <string name="aware_category_display">息屏显示</string>
+    <string name="aware_category_gesture">快速手势</string>
+    <string name="aware_disabled_preference_action">运动传感器设置</string>
+    <string name="aware_disabled_preference_dialog_content">要使用快捷手势，请开启运动传感器。</string>
+    <string name="aware_disabled_preference_dialog_title">此功能已关闭</string>
+    <string name="aware_disabled_preference_neutral">暂不</string>
+    <string name="aware_display_settings_title">空闲锁屏</string>
+    <string name="aware_settings_description">借助新的传感器，Pixel可以识别手机周围的距离和移动</string>
+    <string name="aware_settings_disabled_info_dialog_content">运动传感器功能，如快速手势，接近时亮屏，拿起查看手机，在这个国家不受支持</string>
+    <string name="aware_settings_disabled_info_dialog_title">运动传感器已经关闭</string>
+    <string name="aware_settings_enabled_info_dialog_content">运动传感器功能，如快速手势，接近时亮屏，拿起查看手机，在这个国家不受支持</string>
+    <string name="aware_settings_enabled_info_dialog_title">运动传感器已经开启</string>
+    <string name="aware_wake_display_summary">当接近时，显示时间、通知图标和其他信息</string>
+    <string name="aware_wake_display_summary_aod_off">由于常亮显示已关闭，因此无法使用</string>
+    <string name="aware_wake_display_title">接近时亮屏</string>
+    <string name="dialog_aware_settings_message">如果您关闭运动传感器，则无法使用快速手势、接近时亮屏或者拿起查看手机</string>
+    <string name="dialog_aware_settings_title">关闭运动传感器？</string>
+    <string name="gesture_aware_confirmation_action_button">我知道了</string>
+    <string name="gesture_aware_disabled_info_dialog_content">这个国家不支持快捷手势和其他运动传感器功能。</string>
+    <string name="gesture_aware_off_dialog_content">要使用快捷手势，请开启运动传感器。</string>
+    <string name="gesture_aware_off_dialog_title">快捷手势已关闭</string>
+    <string name="gesture_silence_on_summary">开启 / 暂停闹钟与静音通话</string>
+    <string name="gesture_silence_summary">暂停闹钟与静音通话</string>
+    <string name="gesture_silence_title">中断静音</string>
+    <string name="gesture_skip_direction_ltr">向右滑动以播放下一首歌曲</string>
+    <string name="gesture_skip_direction_rtl">向左滑动以播放下一首歌曲</string>
+    <string name="gesture_skip_direction_title">滑动方向</string>
+    <string name="gesture_skip_on_summary">开启/跳至下一首或上一首歌曲</string>
+    <string name="gesture_skip_summary">跳至下一首或上一首歌曲</string>
+    <string name="gesture_skip_title">下一曲</string>
+    <string name="gesture_tap_off_summary">关闭/暂停或继续播放音乐</string>
+    <string name="gesture_tap_on_summary">开启/暂停或继续播放音乐</string>
+    <string name="gesture_tap_summary">轻拍手机上方以暂停或恢复音乐播放</string>
+    <string name="gesture_tap_title">暂停音乐</string>
+    <string name="wake_screen_aware_disabled_info_dialog_content">这个国家不支持拿起查看手机和其他运动传感器功能</string>
+    <string name="wake_screen_aware_off_dialog_content">要使用拿起查看手机，请开启运动传感器。</string>
+    <string name="wake_screen_aware_off_dialog_title">拿起查看手机已关闭</string>
+    <!--Owlsnest lockscreen-->
+    <string name="lockscreen_title">锁屏</string>
+    <string name="lockscreen_summary">自定义锁屏界面布局和选项</string>
+    <string name="secure_lockscreen">安全锁屏设置</string>
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">媒体封面滤镜</string>
+    <string name="lockscreen_cover_filter_none">均不显示</string>
+    <string name="lockscreen_cover_filter_grayscale">灰度</string>
+    <string name="lockscreen_cover_filter_tint">主题色</string>
+    <string name="lockscreen_cover_filter_blur">模糊</string>
+    <string name="lockscreen_cover_filter_grayblur">灰度和模糊</string>
+    <string name="lockscreen_cover_filter_gradientblur">渐变模糊</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">充电动画</string>
+    <string name="charging_animation_summary">插入充电器时显示充电动画</string>
+    <!-- Configurable lockscreen media blur strength -->
+    <string name="lockscreen_media_blur_title">媒体封面模糊级别</string>
+    <!-- Media art -->
+    <string name="media_art_title">音乐封面</string>
+    <string name="media_art_summary">在锁屏界面显示音乐封面</string>
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">快捷方式</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">电池信息</string>
+    <string name="lockscreen_battery_info_summary">充电时在锁屏显示当前电池状态</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">电源菜单</string>
+    <string name="lockscreen_enable_power_menu_summary">在安全锁定屏幕上允许访问电源菜单</string>
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">可视化工具</string>
+    <string name="lockscreen_visualizer_summary">当音乐可视化可用时显示</string>
+    <string name="lockscreen_autocolor_title">自动调整颜色</string>
+    <string name="lockscreen_autocolor_summary">与锁屏背景色同步</string>
+    <string name="lockscreen_autocolor_lavalamp">需要禁用熔岩灯</string>
+    <string name="lockscreen_lavalamp_title">熔岩灯</string>
+    <string name="lockscreen_lavalamp_summary">熔岩灯风格的渐变色</string>
+    <string name="lockscreen_lavalamp_speed_title">熔岩灯颜色混合间隔</string>
+    <string name="lockscreen_solid_units_count_title">频谱线数量</string>
+    <string name="lockscreen_solid_fudge_factor_title">清晰等级</string>
+    <string name="lockscreen_solid_units_opacity_title">频谱线不透明度</string>
+    <string name="unit_milliseconds">毫秒</string>
+    <!-- Ambient visualizer -->
+    <string name="ambient_visualizer_title">环境音乐可视化</string>
+    <string name="ambient_visualizer_summary">在环境显示中也显示可视化条 (但不太透明)</string>
+    <!--Owlsnest advanced-->
+    <string name="advanced_title">高级设置</string>
+    <string name="advanced_summary">杂项和额外的系统设置</string>
+    <string name="system_category">系统设置</string>
+    <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">启用缩放</string>
+    <string name="aspect_ratio_apps_enabled_summary">允许旧版应用全屏显示</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
+    <string name="aspect_ratio_apps_list_title">允许缩放的应用</string>
+    <string name="aspect_ratio_category_title">旧式应用缩放</string>
+    <string name="aspect_ratio_apps_info">更改后应用程序需要重启</string>
+    <string name="action_save">保存</string>
+</resources>
