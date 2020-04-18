@@ -19,11 +19,10 @@
     <!-- AOSiP device info settings -->
     <string name="aosip_version">AOSiP version</string>
     <string name="aosip_version_default">Unknown</string>
-
     <!-- AOSiP custom settings main -->
     <string name="header_category_personalization">UI settings</string>
     <string name="nest_title">OwlsNest</string>
-    <string name="aosip_title">AOSiP Settings</string>
+    <string name="aosip_tit8le">AOSiP Settings</string>
     <string name="owlsnest_settings_title">Categories</string>
 
     <!-- About AOSiP -->
@@ -254,6 +253,9 @@
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full battery (100)</string>
 
+   <!-- R Notification headers -->
+    <string name="notification_headers_title">Show notification headers</string>
+    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
 
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Quick Settings</string>
