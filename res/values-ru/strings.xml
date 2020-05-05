@@ -43,20 +43,20 @@
     <string name="mobile_data_style_info_title">Изменение отобразится в следующем обновлении иконки мобильной связи</string>
     <!-- 4G LTE switch -->
     <string name="show_fourg_title">Показывать 4G вместо LTE</string>
-    <string name="show_fourg_summary">Заменяет индикатор LTE на 4G в строке состояния</string>
+    <string name="show_fourg_summary">Заменить индикатор LTE на 4G в строке состояния</string>
     <!--Statusbar privacy indicators-->
-    <string name="statusbar_privacy_indicators_title">Индикатор конфиденциальности</string>
-    <string name="statusbar_privacy_indicators_summary">Отображать индикатор конфиденциальности в строке состояния</string>
+    <string name="statusbar_privacy_indicators_title">Индикаторы конфиденциальности</string>
+    <string name="statusbar_privacy_indicators_summary">Отображать индикаторы конфиденциальности в строке состояния</string>
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_switch_title">Значок VoLTE</string>
     <string name="volte_switch_summary">Показывать значок VoLTE</string>
-    <string name="volte_icon_asus">Значок VoLTE стилистики Asus</string>
+    <string name="volte_icon_asus">Значок VoLTE в стиле Asus</string>
     <string name="volte_icon_title">Значок VoLTE</string>
     <string name="volte_icon_summary">Показывать значок VoLTE</string>
     <string name="volte_icon_style_title">Выбрать значок VoLTE</string>
     <string name="volte_icon_vo">Отображать только Vo значок</string>
     <string name="volte_icon_volte">Значок VoLTE</string>
-    <string name="volte_icon_oos">Значок VoLTE стилистики OOS</string>
+    <string name="volte_icon_oos">Значок VoLTE в стиле OOS</string>
     <string name="volte_icon_hd">Значок HD</string>
     <string name="volte_icon_volit">Значок VoLIT</string>
     <!-- Status bar clock and date options -->
@@ -99,15 +99,16 @@
     <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Значки строки состояния</string>
     <string name="status_bar_system_icons_title">Системные значки</string>
-    <string name="status_bar_system_icons_summary">Какие значки отображаются в строке состояния отображаются</string>
+    <string name="status_bar_system_icons_summary">Отображаемые значки в строке состояния</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Уровень заряда батареи</string>
+    <string name="battery_style_category_title">Battery</string>
     <string name="battery_percent_title">Процент заряда батареи</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Стиль батареи</string>
-    <string name="status_bar_battery_style_q">Портрет (по умолчанию)</string>
-    <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
-    <string name="status_bar_battery_style_circle">Заполненный круг</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Не показывать</string>
     <!-- Status bar - Battery percentage -->
@@ -115,14 +116,6 @@
     <string name="status_bar_battery_percentage_default">Скрытый (по умолчанию)</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
-    <string name="status_bar_battery_text_charging_title">Проценты батареи при зарядке</string>
-    <string name="status_bar_battery_text_charging_summary">Всегда показывать проценты батареи при зарядке</string>
-    <!-- Battery mode -->
-    <string name="battery_percentage_title">Процент заряда батареи</string>
-    <string name="battery_percentage_off">Выключено</string>
-    <string name="battery_percentage_next">Включено</string>
-    <string name="battery_percentage_inside">Включен (внутри значка)</string>
-    <string name="battery_percentage_estimate">Включен (ожидаемое время)</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Отображение индикатора сетевого трафика</string>
     <string name="network_traffic_location">Расположение индикатора трафика</string>
@@ -212,6 +205,8 @@
     <string name="qs_show_brightness_summary">Показывать слайдер яркости в панели быстрых настроек</string>
     <string name="qs_brightness_position_bottom_title">Ползунок яркости внизу</string>
     <string name="qs_brightness_position_bottom_summary">Показывать ползунок яркости внизу быстрых настроек</string>
+    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Значок яркости</string>
     <string name="brightness_icon_summary">Показать значок яркости справа от ползунка для настройки авто-яркости</string>
@@ -283,8 +278,8 @@
     <string name="action_app_action">Приложение</string>
     <string name="action_ringer_modes">Режимы звонка</string>
     <string name="kill_app">Закрыть активное приложение</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">Пропустить песню</string>
+    <string name="prev_song">Предыдущая песня</string>
     <string name="action_qs_panel">Панель быстрых настроек</string>
     <string name="action_clear_notifications">Очистить уведомления</string>
     <string name="action_notifications">Уведомления</string>
