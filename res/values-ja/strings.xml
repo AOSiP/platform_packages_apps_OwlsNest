@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- AOSiP device info settings -->
-    <string name="aosip_version">AOSiPバージョン</string>
+    <string name="aosip_version">AOSiP バージョン</string>
     <string name="aosip_version_default">不明</string>
     <!-- AOSiP custom settings main -->
     <string name="header_category_personalization">UI の設定</string>
@@ -101,13 +101,14 @@
     <string name="status_bar_system_icons_title">システムアイコン</string>
     <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを管理する</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">バッテリー残量</string>
+    <string name="battery_style_category_title">Battery</string>
     <string name="battery_percent_title">バッテリー残量</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">バッテリースタイル</string>
-    <string name="status_bar_battery_style_q">縦アイコン (既定)</string>
-    <string name="status_bar_battery_style_dotted_circle">点線の円</string>
-    <string name="status_bar_battery_style_circle">塗り潰しの円</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">非表示</string>
     <!-- Status bar - Battery percentage -->
@@ -115,14 +116,6 @@
     <string name="status_bar_battery_percentage_default">非表示 (既定)</string>
     <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
-    <string name="status_bar_battery_text_charging_title">充電中のバッテリー残量</string>
-    <string name="status_bar_battery_text_charging_summary">充電中は常に残量を表示する</string>
-    <!-- Battery mode -->
-    <string name="battery_percentage_title">バッテリー残量</string>
-    <string name="battery_percentage_off">無効</string>
-    <string name="battery_percentage_next">有効</string>
-    <string name="battery_percentage_inside">有効 (アイコンの内側)</string>
-    <string name="battery_percentage_estimate">有効 (予想)</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">通信速度</string>
     <string name="network_traffic_location">電波アイコンの置き換え</string>
@@ -171,15 +164,15 @@
     <string name="pulse_ambient_category_title">通知ライトの点滅</string>
     <string name="ambient_notification_light_hide_aod_title">ライト点滅のみ表示</string>
     <string name="ambient_notification_light_hide_aod_summary">Always on からその他全ての要素を隠す</string>
-    <string name="ambient_notification_light_accent_title">システムアクセントカラーを使用</string>
-    <string name="ambient_notification_light_accent_summary">ライト点滅に既定のシステムアクセントカラーを使う</string>
-    <string name="ambient_notification_light_color_title">カスタムカラー</string>
+    <string name="ambient_notification_light_accent_title">システムアクセント色を使用</string>
+    <string name="ambient_notification_light_accent_summary">ライト点滅に既定のシステムアクセント色を使う</string>
+    <string name="ambient_notification_light_color_title">カスタム色</string>
     <string name="ambient_notification_light_color_summary">ライト点滅の既定の色</string>
     <string name="ambient_notification_light_timeout_title">ライト点滅の点滅時間</string>
     <string name="ambient_notification_light_color_mode_title">ライト点滅の色</string>
     <string name="ambient_notification_light_color_mode_automatic">通知の色</string>
-    <string name="ambient_notification_light_color_mode_accent">システムアクセントカラー</string>
-    <string name="ambient_notification_light_color_mode_custom">カスタムカラー</string>
+    <string name="ambient_notification_light_color_mode_accent">システムアクセント色</string>
+    <string name="ambient_notification_light_color_mode_custom">カスタム色</string>
     <string name="entry_infinite">無制限</string>
     <string name="entry_five_minute">5分</string>
     <string name="entry_ten_minute">10分</string>
@@ -212,6 +205,8 @@
     <string name="qs_show_brightness_summary">クイック設定パネルに明るさスライダーを表示する</string>
     <string name="qs_brightness_position_bottom_title">下部の明るさスライダー</string>
     <string name="qs_brightness_position_bottom_summary">クイック設定下部に明るさスライダーを表示する</string>
+    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">明るさアイコン</string>
     <string name="brightness_icon_summary">明るさスライダーの右に明るさ自動調節ボタンを表示する</string>
@@ -283,8 +278,8 @@
     <string name="action_app_action">アプリ</string>
     <string name="action_ringer_modes">着信モード</string>
     <string name="kill_app">フォアグラウンドアプリを終了</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">曲をスキップ</string>
+    <string name="prev_song">前の曲</string>
     <string name="action_qs_panel">クイック設定パネル</string>
     <string name="action_clear_notifications">通知を消去</string>
     <string name="action_notifications">通知</string>
@@ -362,12 +357,12 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">ビジュアライザー</string>
     <string name="lockscreen_visualizer_summary">使用可能な場合音楽ビジュアライザーを表示する</string>
-    <string name="lockscreen_autocolor_title">自動カラー</string>
+    <string name="lockscreen_autocolor_title">自動設定の色</string>
     <string name="lockscreen_autocolor_summary">背景と色を同期させる</string>
     <string name="lockscreen_autocolor_lavalamp">ラーヴァランプモードを無効化して下さい</string>
     <string name="lockscreen_lavalamp_title">ラーヴァランプ</string>
-    <string name="lockscreen_lavalamp_summary">ラーヴァランプスタイルのカラーブレンドでスムーズなアニメーションをします</string>
-    <string name="lockscreen_lavalamp_speed_title">ラーヴァランプカラーブレンドの間隔</string>
+    <string name="lockscreen_lavalamp_summary">ラーヴァランプスタイルの色ブレンドでスムーズなアニメーションをします</string>
+    <string name="lockscreen_lavalamp_speed_title">ラーヴァランプ色ブレンドの間隔</string>
     <string name="lockscreen_solid_units_count_title">ソリッドラインの数</string>
     <string name="lockscreen_solid_fudge_factor_title">ビジュアライザーの感度</string>
     <string name="lockscreen_solid_units_opacity_title">ソリッドラインの透明度</string>

@@ -101,13 +101,14 @@
     <string name="status_bar_system_icons_title">Icone di sistema</string>
     <string name="status_bar_system_icons_summary">Controlla quali icone vengono visualizzate nella barra di stato</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Livello batteria</string>
+    <string name="battery_style_category_title">Battery</string>
     <string name="battery_percent_title">Percentuale batteria</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stile batteria</string>
-    <string name="status_bar_battery_style_q">Icona verticale (predefinito)</string>
-    <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
-    <string name="status_bar_battery_style_circle">Cerchio pieno</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_style_hidden">Nascosta</string>
     <!-- Status bar - Battery percentage -->
@@ -115,20 +116,12 @@
     <string name="status_bar_battery_percentage_default">Nascosta (predefinito)</string>
     <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
     <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
-    <string name="status_bar_battery_text_charging_title">Percentuale batteria quando in carica</string>
-    <string name="status_bar_battery_text_charging_summary">Mostra sempre la percentuale della batteria durante la carica</string>
-    <!-- Battery mode -->
-    <string name="battery_percentage_title">Percentuale della batteria</string>
-    <string name="battery_percentage_off">Disattivata</string>
-    <string name="battery_percentage_next">Abilitata</string>
-    <string name="battery_percentage_inside">Attivata (dentro l\'icona)</string>
-    <string name="battery_percentage_estimate">Abilitata (stima)</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Indicatore di traffico di rete</string>
     <string name="network_traffic_location">Posizione dell\'indicatore di traffico</string>
     <string name="traffic_disabled">Disattivato</string>
     <string name="traffic_statusbar">Barra di stato</string>
-    <string name="traffic_expanded_statusbar">Expanded header</string>
+    <string name="traffic_expanded_statusbar">Intestazione espansa</string>
     <string name="network_traffic_autohide_threshold_title">Nascondi l\'attività di rete sotto (KB/s)</string>
     <string name="network_traffic_arrow">Mostra frecce</string>
     <string name="network_traffic_arrow_summary">Mostra le frecce dell\'indicatore di traffico di rete</string>
@@ -212,6 +205,8 @@
     <string name="qs_show_brightness_summary">Visualizza un cursore per la luminosità nel pannello delle impostazioni rapide</string>
     <string name="qs_brightness_position_bottom_title">Cursore luminosità in basso</string>
     <string name="qs_brightness_position_bottom_summary">Visualizza un cursore per la luminosità in basso nel pannello delle impostazioni rapide</string>
+    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Icona della luminosità</string>
     <string name="brightness_icon_summary">Mostra un\'icona per la luminosità automatica a destra dello slider della luminosità</string>
@@ -265,12 +260,12 @@
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
     <string name="active_edge_summary">Configura opzioni Active Edge</string>
-    <string name="active_edge_short_actions_title">Short squeeze action</string>
-    <string name="active_edge_long_actions_title">Long squeeze action</string>
+    <string name="active_edge_short_actions_title">Azione pressione breve</string>
+    <string name="active_edge_long_actions_title">Azione pressione prolungata</string>
     <string name="active_edge_sensitivity_title">Sensibilità allo strizzo</string>
     <string name="active_edge_wake_title">Permetti a schermo spento</string>
     <string name="active_edge_wake_summary">Scatena azione a schermo spento</string>
-    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nIf you want to choose a specific app activity for the action, long press on any app in the app picker.</string>
+    <string name="active_edge_footer_info">Non tutte le azioni di pressione Active Edge hanno la capacità di attivare il display.\n\nSe si desidera scegliere un’attività specifica dell’app per l’azione, premere a lungo su qualsiasi app nella selezione dell’app.</string>
     <!-- Custom actions -->
     <string name="action_nothing">Nessuna azione</string>
     <string name="action_search">Assistente</string>
@@ -283,14 +278,14 @@
     <string name="action_app_action">Applicazione</string>
     <string name="action_ringer_modes">Modalità suoneria</string>
     <string name="kill_app">Termina app in primo piano</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">Salta brano</string>
+    <string name="prev_song">Brano precedente</string>
     <string name="action_qs_panel">Pannello delle impostazioni rapide</string>
     <string name="action_clear_notifications">Cancella le notifiche</string>
     <string name="action_notifications">Notifiche</string>
-    <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
-    <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
+    <string name="active_edge_ss_app_select_title">Seleziona l\'app con pressione breve</string>
+    <string name="active_edge_ls_app_select_title">Seleziona l\'app con pressione prolungata</string>
+    <string name="active_edge_app_select_summary">Seleziona un\'app da avviare con la pressione</string>
     <!-- Motion Sense -->
     <string name="ambient_display_wake_screen_summary">Per controllare l\'ora, le notifiche e altre informazioni, avvicinati al telefono.</string>
     <string name="ambient_display_wake_screen_summary_on">Attivo</string>
@@ -300,7 +295,7 @@
     <string name="aware_disabled_preference_dialog_content">Per utilizzare questa funzione, attiva Motion Sense</string>
     <string name="aware_disabled_preference_dialog_title">Questa funzione è disattivata</string>
     <string name="aware_disabled_preference_neutral">Non ora</string>
-    <string name="aware_display_settings_title">Idle lock screen</string>
+    <string name="aware_display_settings_title">Schermata di blocco a riposo</string>
     <string name="aware_settings_description">Con i nuovi sensori, Pixel può riconoscere distanza e movimenti intorno al telefono</string>
     <string name="aware_settings_disabled_info_dialog_content">Le funzioni di Motion Sense come i Gesti Rapidi, Accendi Schermo quando sei nelle vicinanze e Avvicinati per Controllare il telefono non sono supportate in questo Paese</string>
     <string name="aware_settings_disabled_info_dialog_title">Motion Sense è disattivato</string>
@@ -360,7 +355,7 @@
     <string name="lockscreen_enable_power_menu_title">Menù di spegnimento</string>
     <string name="lockscreen_enable_power_menu_summary">Consenti di accedere al menù di spegnimento sulla schermata di blocco sicura</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Visualizer</string>
+    <string name="lockscreen_visualizer_title">Visualizzatore</string>
     <string name="lockscreen_visualizer_summary">Mostra il visualizzatore musicale quando disponibile</string>
     <string name="lockscreen_autocolor_title">Colore automatico</string>
     <string name="lockscreen_autocolor_summary">Sincronizza il colore con lo sfondo</string>
@@ -369,7 +364,7 @@
     <string name="lockscreen_lavalamp_summary">Anima in modo fluido la miscelazione dei colori dello stile Lava lamp</string>
     <string name="lockscreen_lavalamp_speed_title">Intervallo miscelazione colori Lava lamp</string>
     <string name="lockscreen_solid_units_count_title">Numero di linee</string>
-    <string name="lockscreen_solid_fudge_factor_title">Sanity level</string>
+    <string name="lockscreen_solid_fudge_factor_title">Livello di sicurezza</string>
     <string name="lockscreen_solid_units_opacity_title">Opacità delle linee</string>
     <string name="unit_milliseconds">ms</string>
     <!-- Ambient visualizer -->

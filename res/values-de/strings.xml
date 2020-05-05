@@ -101,13 +101,14 @@
     <string name="status_bar_system_icons_title">System-Symbole</string>
     <string name="status_bar_system_icons_summary">Bestimmen, welche Statusleistesymbole angezeigt werden</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Akkustand</string>
+    <string name="battery_style_category_title">Battery</string>
     <string name="battery_percent_title">Akku Prozent</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Akkustil</string>
-    <string name="status_bar_battery_style_q">Standard-Symbol</string>
-    <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
-    <string name="status_bar_battery_style_circle">gefüllter Kreis </string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
     <!-- Status bar - Battery percentage -->
@@ -115,14 +116,6 @@
     <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
-    <string name="status_bar_battery_text_charging_title">Akku-Prozentzahl beim Laden</string>
-    <string name="status_bar_battery_text_charging_summary">Akkustand immer anzeigen beim Laden</string>
-    <!-- Battery mode -->
-    <string name="battery_percentage_title">Akku Prozentanzeige</string>
-    <string name="battery_percentage_off">Deaktiviert</string>
-    <string name="battery_percentage_next">Aktiviert</string>
-    <string name="battery_percentage_inside">Aktiviert (innerhalb des Symbols)</string>
-    <string name="battery_percentage_estimate">Aktiviert (geschätzte Laufzeit)</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Datenverkehrsanzeige</string>
     <string name="network_traffic_location">Indikator für Datentransfer</string>
@@ -212,6 +205,8 @@
     <string name="qs_show_brightness_summary">Zeigt einen Helligkeitsregler in den Schnelleinstellungen an</string>
     <string name="qs_brightness_position_bottom_title">Helligkeitsregler unten anzeigen</string>
     <string name="qs_brightness_position_bottom_summary">Helligkeitsregler unten in den Schnelleinstellungen anzeigen</string>
+    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Symbol für Helligkeit</string>
     <string name="brightness_icon_summary">Umschalter für adaptive Helligkeit rechts neben dem Schieberegler anzeigen</string>
@@ -283,8 +278,8 @@
     <string name="action_app_action">Anwendung</string>
     <string name="action_ringer_modes">Klingelton-Modus</string>
     <string name="kill_app">App im Vordergrund beenden</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">Titel überspringen</string>
+    <string name="prev_song">Vorherigen Titel</string>
     <string name="action_qs_panel">Schnelleinstellungen</string>
     <string name="action_clear_notifications">Benachrichtigungen löschen</string>
     <string name="action_notifications">Benachrichtigungen</string>

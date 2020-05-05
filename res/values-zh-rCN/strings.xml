@@ -101,13 +101,14 @@
     <string name="status_bar_system_icons_title">系统图标</string>
     <string name="status_bar_system_icons_summary">控制在状态栏上显示的图标</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">电池电量</string>
+    <string name="battery_style_category_title">Battery</string>
     <string name="battery_percent_title">电量百分比</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">电池样式</string>
-    <string name="status_bar_battery_style_q">竖置图标 (默认)</string>
-    <string name="status_bar_battery_style_dotted_circle">虚线圆圈</string>
-    <string name="status_bar_battery_style_circle">实心圆</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">文本</string>
     <string name="status_bar_battery_style_hidden">隐藏</string>
     <!-- Status bar - Battery percentage -->
@@ -115,14 +116,6 @@
     <string name="status_bar_battery_percentage_default">隐藏 (默认)</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
-    <string name="status_bar_battery_text_charging_title">充电时电池百分比</string>
-    <string name="status_bar_battery_text_charging_summary">充电时总是显示电池百分比</string>
-    <!-- Battery mode -->
-    <string name="battery_percentage_title">电量百分比</string>
-    <string name="battery_percentage_off">禁用</string>
-    <string name="battery_percentage_next">启用</string>
-    <string name="battery_percentage_inside">启用 (图标内)</string>
-    <string name="battery_percentage_estimate">启用 (估算可用时间)</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">网络活动显示</string>
     <string name="network_traffic_location">流量指示器位置</string>
@@ -212,6 +205,8 @@
     <string name="qs_show_brightness_summary">在快速设置面板中显示亮度滑块</string>
     <string name="qs_brightness_position_bottom_title">底部亮度滑块</string>
     <string name="qs_brightness_position_bottom_summary">在快速设置面板底部显示亮度滑块</string>
+    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">亮度图标 </string>
     <string name="brightness_icon_summary">在亮度条右侧显示一个亮度图标以开关自动亮度调节</string>
@@ -283,8 +278,8 @@
     <string name="action_app_action">应用</string>
     <string name="action_ringer_modes">响铃模式</string>
     <string name="kill_app">退出前台应用</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">下一曲</string>
+    <string name="prev_song">上一曲</string>
     <string name="action_qs_panel">快速设置面板</string>
     <string name="action_clear_notifications">清除通知</string>
     <string name="action_notifications">通知</string>

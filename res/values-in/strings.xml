@@ -101,13 +101,14 @@
     <string name="status_bar_system_icons_title">System icons</string>
     <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery level</string>
+    <string name="battery_style_category_title">Battery</string>
     <string name="battery_percent_title">Battery percent</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Battery style</string>
-    <string name="status_bar_battery_style_q">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_dotted_circle">Lingkaran bertitik</string>
-    <string name="status_bar_battery_style_circle">Filled circle</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">Teks</string>
     <string name="status_bar_battery_style_hidden">Tersembunyi</string>
     <!-- Status bar - Battery percentage -->
@@ -115,14 +116,6 @@
     <string name="status_bar_battery_percentage_default">Hidden (default)</string>
     <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
     <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
-    <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
-    <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
-    <!-- Battery mode -->
-    <string name="battery_percentage_title">Battery percentage</string>
-    <string name="battery_percentage_off">Disabled</string>
-    <string name="battery_percentage_next">Enabled</string>
-    <string name="battery_percentage_inside">Enabled (inside icon)</string>
-    <string name="battery_percentage_estimate">Enabled (estimate)</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_location">Traffic indicator placement</string>
@@ -212,6 +205,8 @@
     <string name="qs_show_brightness_summary">Show a brightness slider in the quick settings panel</string>
     <string name="qs_brightness_position_bottom_title">Brightness slider on bottom</string>
     <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
+    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Brightness icon</string>
     <string name="brightness_icon_summary">Show a brightness icon to the right of the brighness slider to adjust auto-brightness</string>

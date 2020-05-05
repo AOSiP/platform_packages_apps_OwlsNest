@@ -101,13 +101,14 @@
     <string name="status_bar_system_icons_title">Íconos del Sistema</string>
     <string name="status_bar_system_icons_summary">Controlar que iconos mostrar en la barra de estado</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Nivel de batería</string>
+    <string name="battery_style_category_title">Battery</string>
     <string name="battery_percent_title">Porcentaje de batería</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Estilo de la batería</string>
-    <string name="status_bar_battery_style_q">Ícono en retrato (por defecto)</string>
-    <string name="status_bar_battery_style_dotted_circle">Círculo punteado</string>
-    <string name="status_bar_battery_style_circle">Llenar círculo</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Status bar - Battery percentage -->
@@ -115,14 +116,6 @@
     <string name="status_bar_battery_percentage_default">Oculto (por defecto)</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
     <string name="status_bar_battery_percentage_text_next">Al lado del ícono</string>
-    <string name="status_bar_battery_text_charging_title">Porcentaje de batería cuando se cargue</string>
-    <string name="status_bar_battery_text_charging_summary">Mostrar siempre porcentaje de batería al cargar</string>
-    <!-- Battery mode -->
-    <string name="battery_percentage_title">Porcentaje de batería</string>
-    <string name="battery_percentage_off">Deshabilitado</string>
-    <string name="battery_percentage_next">Habilitado</string>
-    <string name="battery_percentage_inside">Habilitado (dentro de icono)</string>
-    <string name="battery_percentage_estimate">Habilitado (estimado)</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Tráfico de datos en pantalla</string>
     <string name="network_traffic_location">Posición del indicador de tráfico</string>
@@ -212,6 +205,8 @@
     <string name="qs_show_brightness_summary">Mostrar un deslizador de brillo en el panel de ajustes rápidos</string>
     <string name="qs_brightness_position_bottom_title">Mostrar la barra de brillo abajo</string>
     <string name="qs_brightness_position_bottom_summary">Mostrar la barra de brillo en la parte de abajo de los ajustes rápidos</string>
+    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Icono de brillo </string>
     <string name="brightness_icon_summary">Muestra un icono a la derecha de la barra de brillo para ajustar el brillo automático</string>
@@ -283,8 +278,8 @@
     <string name="action_app_action">Aplicación</string>
     <string name="action_ringer_modes">Modos de timbre</string>
     <string name="kill_app">Cerrar aplicación en primer plano</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
+    <string name="skip_song">Saltar canción</string>
+    <string name="prev_song">Canción anterior</string>
     <string name="action_qs_panel">Panel de ajustes rápidos</string>
     <string name="action_clear_notifications">Borrar notificaciones</string>
     <string name="action_notifications">Notificaciones</string>
@@ -315,76 +310,76 @@
     <string name="gesture_aware_disabled_info_dialog_content">Gestos rápidos y otras funciones del Sentido de movimiento no son compatibles en este país.</string>
     <string name="gesture_aware_off_dialog_content">Para usar los Gestos rápidos, encienda el Sentido de movimiento.</string>
     <string name="gesture_aware_off_dialog_title">Gestos rápidos están apagados</string>
-    <string name="gesture_silence_on_summary">On / Snooze alarms and silence calls</string>
-    <string name="gesture_silence_summary">Snooze alarms and silence calls</string>
-    <string name="gesture_silence_title">Silence interruptions</string>
-    <string name="gesture_skip_direction_ltr">Swipe left to right for next song</string>
-    <string name="gesture_skip_direction_rtl">Swipe right to left for next song</string>
-    <string name="gesture_skip_direction_title">Swipe direction</string>
-    <string name="gesture_skip_on_summary">On / Skip to the next or previous song</string>
-    <string name="gesture_skip_summary">Skip to the next or previous song</string>
-    <string name="gesture_skip_title">Skip songs</string>
-    <string name="gesture_tap_off_summary">Off / Pause or resume music</string>
-    <string name="gesture_tap_on_summary">On / Pause or resume music</string>
-    <string name="gesture_tap_summary">Pause or resume music by tapping the air above the phone</string>
-    <string name="gesture_tap_title">Pause music</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content">Reach to check phone and other Motion Sense features are not supported in this country</string>
-    <string name="wake_screen_aware_off_dialog_content">To use Reach to check phone, turn on Motion Sense</string>
-    <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>
+    <string name="gesture_silence_on_summary">Encender / Dormir alarmas y silenciar llamadas</string>
+    <string name="gesture_silence_summary">Dormir alarmas y silenciar llamadas</string>
+    <string name="gesture_silence_title">Interrupciones de silencio</string>
+    <string name="gesture_skip_direction_ltr">Desliza de izquierda a derecha para la siguiente canción</string>
+    <string name="gesture_skip_direction_rtl">Desliza de derecha a izquierda para la siguiente canción</string>
+    <string name="gesture_skip_direction_title">Dirección de deslizamiento</string>
+    <string name="gesture_skip_on_summary">Encender / Saltar a la siguiente o anterior canción</string>
+    <string name="gesture_skip_summary">Salta a la siguiente o anterior canción</string>
+    <string name="gesture_skip_title">Saltar canción</string>
+    <string name="gesture_tap_off_summary">Apagar / Pausar o continuar música</string>
+    <string name="gesture_tap_on_summary">Encender / Pausar o continuar música</string>
+    <string name="gesture_tap_summary">Pausa o reanuda la música tocando el aire sobre el teléfono</string>
+    <string name="gesture_tap_title">Pausar música</string>
+    <string name="wake_screen_aware_disabled_info_dialog_content">Llegar a verificar el teléfono y otras funciones de Motion Sense no son compatibles en este país</string>
+    <string name="wake_screen_aware_off_dialog_content">Para usar Alcanzar para revisar el teléfono, active Motion Sense</string>
+    <string name="wake_screen_aware_off_dialog_title">Alcanzar para revisar el teléfono está apagado</string>
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Bloquear pantalla</string>
     <string name="lockscreen_summary">Personalice el diseño y las opciones de la pantalla de bloqueo</string>
     <string name="secure_lockscreen">Opciones de seguridad de la pantalla de bloqueo</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Media cover art filter</string>
+    <string name="lockscreen_cover_filter_title">Filtro de carátulas multimedia</string>
     <string name="lockscreen_cover_filter_none">Ninguno</string>
     <string name="lockscreen_cover_filter_grayscale">Escala de grises</string>
     <string name="lockscreen_cover_filter_tint">Teñido con el color principal</string>
     <string name="lockscreen_cover_filter_blur">Difuminado</string>
     <string name="lockscreen_cover_filter_grayblur">Escala de grises y desenfocado</string>
-    <string name="lockscreen_cover_filter_gradientblur">Gradient Blur</string>
+    <string name="lockscreen_cover_filter_gradientblur">Desenfoque degradado</string>
     <!-- Charging animation -->
-    <string name="charging_animation_title">Charging animation</string>
-    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+    <string name="charging_animation_title">Animación mientras cargas</string>
+    <string name="charging_animation_summary">Mostrar una animación cuando el dispositivo está enchufado</string>
     <!-- Configurable lockscreen media blur strength -->
-    <string name="lockscreen_media_blur_title">Media cover art blur level</string>
+    <string name="lockscreen_media_blur_title">Nivel de desenfoque de portada de medios</string>
     <!-- Media art -->
     <string name="media_art_title">Arte de portada de medios</string>
     <string name="media_art_summary">Habilitar la portada de medios en la pantalla de bloqueo</string>
     <!-- Lockscreen icons -->
-    <string name="lockscreen_tuner_title">Shortcuts</string>
+    <string name="lockscreen_tuner_title">Accesos directos</string>
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Battery info</string>
-    <string name="lockscreen_battery_info_summary">Display current battery status on lockscreen while charging</string>
+    <string name="lockscreen_battery_info_title">Información de batería</string>
+    <string name="lockscreen_battery_info_summary">Muestra el estado actual de la batería en la pantalla de bloqueo mientras se carga</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Power menu</string>
-    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lock screen</string>
+    <string name="lockscreen_enable_power_menu_title">Menu de apagado</string>
+    <string name="lockscreen_enable_power_menu_summary">Permitir acceso al menú de apagado desde la pantalla de bloqueo con seguridad</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Visualizer</string>
-    <string name="lockscreen_visualizer_summary">Display music visualizer when available</string>
-    <string name="lockscreen_autocolor_title">Automatic color</string>
-    <string name="lockscreen_autocolor_summary">Sync color with background</string>
-    <string name="lockscreen_autocolor_lavalamp">Requires lava lamp disabled</string>
-    <string name="lockscreen_lavalamp_title">Lava lamp</string>
-    <string name="lockscreen_lavalamp_summary">Animate smooth lava lamp style color blend</string>
-    <string name="lockscreen_lavalamp_speed_title">Lava lamp color blend interval</string>
-    <string name="lockscreen_solid_units_count_title">Solid lines count</string>
-    <string name="lockscreen_solid_fudge_factor_title">Sanity level</string>
-    <string name="lockscreen_solid_units_opacity_title">Solid lines opacity</string>
+    <string name="lockscreen_visualizer_title">Visualizador musical</string>
+    <string name="lockscreen_visualizer_summary">Mostrar el visualizador de música cuando esté disponible</string>
+    <string name="lockscreen_autocolor_title">Color automático</string>
+    <string name="lockscreen_autocolor_summary">Sincronizar color con fondo</string>
+    <string name="lockscreen_autocolor_lavalamp">Requiere desactivar la lámpara de lava</string>
+    <string name="lockscreen_lavalamp_title">Lámpara de lava</string>
+    <string name="lockscreen_lavalamp_summary">Animar visualizador de música al estilo mezcla de colores</string>
+    <string name="lockscreen_lavalamp_speed_title">Intervalo de mezcla de color de la lámpara de lava</string>
+    <string name="lockscreen_solid_units_count_title">Contador de líneas sólidas</string>
+    <string name="lockscreen_solid_fudge_factor_title">Nivel de sensibilidad al volúmen</string>
+    <string name="lockscreen_solid_units_opacity_title">Opacidad de líneas sólidas</string>
     <string name="unit_milliseconds">ms</string>
     <!-- Ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient visualizer</string>
+    <string name="ambient_visualizer_title">Visualizador musical ambiental</string>
     <string name="ambient_visualizer_summary">Muestra las barras de visualización en la pantalla ambiente (pero menos opacas)</string>
     <!--Owlsnest advanced-->
     <string name="advanced_title">Ajustes avanzados</string>
     <string name="advanced_summary">Miscelánea y configuración adicional del sistema</string>
     <string name="system_category">Ajustes del sistema</string>
     <!-- Per App aspect Ratio -->
-    <string name="aspect_ratio_apps_enabled_title">Enable scaling</string>
-    <string name="aspect_ratio_apps_enabled_summary">Allow legacy apps to use full screen</string>
+    <string name="aspect_ratio_apps_enabled_title">Activar escalado</string>
+    <string name="aspect_ratio_apps_enabled_summary">Permite a aplicaciones olvidadas utilizar la pantalla completa</string>
     <string name="aspect_ratio_apps_list_summary"></string>
-    <string name="aspect_ratio_apps_list_title">Apps allowed to use scaling</string>
-    <string name="aspect_ratio_category_title">Legacy app scaling</string>
-    <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
-    <string name="action_save">Save</string>
+    <string name="aspect_ratio_apps_list_title">Aplicaciones que pueden utilizar escalado</string>
+    <string name="aspect_ratio_category_title">Escalado de aplicaciones olvidadas</string>
+    <string name="aspect_ratio_apps_info">Las aplicaciones deben reiniciarse después de los cambios</string>
+    <string name="action_save">Guardar</string>
 </resources>
