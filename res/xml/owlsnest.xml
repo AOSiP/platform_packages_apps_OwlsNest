@@ -79,4 +79,11 @@
        android:summary="@string/advanced_summary"
        android:icon="@drawable/ic_owlsnest_advanced_background" />
 
+    <PreferenceScreen
+       android:key="about"
+       android:fragment="com.aosip.owlsnest.AboutAOSiP"
+       android:title="@string/aosip_about_title"
+       android:summary="@string/aosip_about_summary"
+       android:icon="@drawable/ic_owlsnest_about_background" />
+
 </PreferenceScreen>
