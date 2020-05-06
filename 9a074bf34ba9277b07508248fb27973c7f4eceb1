@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b8b8afb4_b00fe8d1",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-05-06T15:09:53Z",
+      "side": 1,
+      "message": "translatable\u003dfalse for the names and maybe others",
+      "revId": "9a074bf34ba9277b07508248fb27973c7f4eceb1",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
