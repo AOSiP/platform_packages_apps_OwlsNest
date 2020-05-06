@@ -19,6 +19,7 @@
     <color name="tab_text_color">@*android:color/accent_device_default_light</color>
     <color name="white">#FFF</color>
 
+    <color name="owlsnest_oval_about">#a3a3a3</color>
     <color name="owlsnest_oval_advanced">#ff6868</color>
     <color name="owlsnest_oval_buttons">#31aa5c</color>
     <color name="owlsnest_oval_gesture">#ffaf66</color>
