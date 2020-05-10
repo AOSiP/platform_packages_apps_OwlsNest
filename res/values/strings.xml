@@ -156,7 +156,7 @@
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Traffic indicator placement</string>
     <string name="traffic_disabled">Disabled</string>
     <string name="traffic_statusbar">Statusbar</string>
@@ -200,7 +200,7 @@
     <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
 
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulse on new notifcation</string>
+    <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
     <string name="ambient_notification_light_enabled_title">Pulse on always on</string>
     <string name="ambient_notification_light_enabled_summary">Show light pulse on new notification using always on</string>
