@@ -101,14 +101,14 @@
     <string name="status_bar_system_icons_title">系统图标</string>
     <string name="status_bar_system_icons_summary">控制在状态栏上显示的图标</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
+    <string name="battery_style_category_title">电池</string>
     <string name="battery_percent_title">电量百分比</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">电池样式</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">竖置图标 (默认)</string>
+    <string name="status_bar_battery_style_circle">圆形图标</string>
+    <string name="status_bar_battery_style_dotted_circle">环形虚线</string>
+    <string name="status_bar_battery_style_filled_circle">实心圆圈</string>
     <string name="status_bar_battery_style_text">文本</string>
     <string name="status_bar_battery_style_hidden">隐藏</string>
     <!-- Status bar - Battery percentage -->
@@ -205,8 +205,8 @@
     <string name="qs_show_brightness_summary">在快速设置面板中显示亮度滑块</string>
     <string name="qs_brightness_position_bottom_title">底部亮度滑块</string>
     <string name="qs_brightness_position_bottom_summary">在快速设置面板底部显示亮度滑块</string>
-    <string name="qs_long_press_action_title">Long-press Action</string>
-    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
+    <string name="qs_long_press_action_title">长按动作</string>
+    <string name="qs_long_press_action_summary">长按使用旧样式的整页设置</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">亮度图标 </string>
     <string name="brightness_icon_summary">在亮度条右侧显示一个亮度图标以开关自动亮度调节</string>
@@ -374,6 +374,11 @@
     <string name="advanced_title">高级设置</string>
     <string name="advanced_summary">杂项和额外的系统设置</string>
     <string name="system_category">系统设置</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">启用缩放</string>
     <string name="aspect_ratio_apps_enabled_summary">允许旧版应用全屏显示</string>

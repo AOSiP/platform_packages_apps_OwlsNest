@@ -101,14 +101,14 @@
     <string name="status_bar_system_icons_title">システムアイコン</string>
     <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを管理する</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
+    <string name="battery_style_category_title">バッテリー</string>
     <string name="battery_percent_title">バッテリー残量</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">バッテリースタイル</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">縦アイコン (既定)</string>
+    <string name="status_bar_battery_style_circle">円</string>
+    <string name="status_bar_battery_style_dotted_circle">円 (点線)</string>
+    <string name="status_bar_battery_style_filled_circle">円 (塗り潰し)</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">非表示</string>
     <!-- Status bar - Battery percentage -->
@@ -205,8 +205,8 @@
     <string name="qs_show_brightness_summary">クイック設定パネルに明るさスライダーを表示する</string>
     <string name="qs_brightness_position_bottom_title">下部の明るさスライダー</string>
     <string name="qs_brightness_position_bottom_summary">クイック設定下部に明るさスライダーを表示する</string>
-    <string name="qs_long_press_action_title">Long-press Action</string>
-    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
+    <string name="qs_long_press_action_title">長押しアクション</string>
+    <string name="qs_long_press_action_summary">長押しで旧スタイルの全画面ページを使用する</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">明るさアイコン</string>
     <string name="brightness_icon_summary">明るさスライダーの右に明るさ自動調節ボタンを表示する</string>
@@ -374,6 +374,11 @@
     <string name="advanced_title">高度な設定</string>
     <string name="advanced_summary">その他のシステム設定</string>
     <string name="system_category">システム設定</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">スケーリングの有効化</string>
     <string name="aspect_ratio_apps_enabled_summary">従来のアプリの全画面の使用を許可する</string>

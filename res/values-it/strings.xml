@@ -101,14 +101,14 @@
     <string name="status_bar_system_icons_title">Icone di sistema</string>
     <string name="status_bar_system_icons_summary">Controlla quali icone vengono visualizzate nella barra di stato</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
+    <string name="battery_style_category_title">Batteria</string>
     <string name="battery_percent_title">Percentuale batteria</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stile batteria</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">Icona verticale (predefinito)</string>
+    <string name="status_bar_battery_style_circle">Cerchio</string>
+    <string name="status_bar_battery_style_dotted_circle">Cerchio (tratteggiato)</string>
+    <string name="status_bar_battery_style_filled_circle">Cerchio (riempito)</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_style_hidden">Nascosta</string>
     <!-- Status bar - Battery percentage -->
@@ -205,8 +205,8 @@
     <string name="qs_show_brightness_summary">Visualizza un cursore per la luminosità nel pannello delle impostazioni rapide</string>
     <string name="qs_brightness_position_bottom_title">Cursore luminosità in basso</string>
     <string name="qs_brightness_position_bottom_summary">Visualizza un cursore per la luminosità in basso nel pannello delle impostazioni rapide</string>
-    <string name="qs_long_press_action_title">Long-press Action</string>
-    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
+    <string name="qs_long_press_action_title">Azione tocco prolungato</string>
+    <string name="qs_long_press_action_summary">Usa le impostazioni pagina intera vecchio stile su stampa lunga</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Icona della luminosità</string>
     <string name="brightness_icon_summary">Mostra un\'icona per la luminosità automatica a destra dello slider della luminosità</string>
@@ -374,6 +374,11 @@
     <string name="advanced_title">Impostazioni avanzate</string>
     <string name="advanced_summary">Varie e impostazioni di sistema extra</string>
     <string name="system_category">Impostazioni di sistema</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Abilita il ridimensionamento</string>
     <string name="aspect_ratio_apps_enabled_summary">Consenti alle app legacy di utilizzare tutto lo schermo</string>

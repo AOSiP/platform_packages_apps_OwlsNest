@@ -374,6 +374,11 @@
     <string name="advanced_title">Расширенные настройки</string>
     <string name="advanced_summary">Прочие и дополнительные настройки системы</string>
     <string name="system_category">Настройки системы</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Включить масштабирование</string>
     <string name="aspect_ratio_apps_enabled_summary">Разрешить устаревшим приложениям использовать весь экран</string>

@@ -101,14 +101,14 @@
     <string name="status_bar_system_icons_title">Systémové ikony</string>
     <string name="status_bar_system_icons_summary">Vyberte, které ikony mají být zobrazeny na stavovém řádku</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
+    <string name="battery_style_category_title">Baterie</string>
     <string name="battery_percent_title">Procenta baterie</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Styl baterie</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikona na výšku (výchozí)</string>
+    <string name="status_bar_battery_style_circle">Kruh</string>
+    <string name="status_bar_battery_style_dotted_circle">Kruh (tečkovaný)</string>
+    <string name="status_bar_battery_style_filled_circle">Kruh (vyplněný)</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Nezobrazovat</string>
     <!-- Status bar - Battery percentage -->
@@ -205,8 +205,8 @@
     <string name="qs_show_brightness_summary">Zobrazit posuvník jasu v panelu Rychlého nastavení</string>
     <string name="qs_brightness_position_bottom_title">Posuvník jasu v dolní části</string>
     <string name="qs_brightness_position_bottom_summary">Zobrazit posuvník jasu v dolní části panelu Rychlého nastavení</string>
-    <string name="qs_long_press_action_title">Long-press Action</string>
-    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
+    <string name="qs_long_press_action_title">Akce dlouhého stisku</string>
+    <string name="qs_long_press_action_summary">Použít starý styl nastavení celé stránky při dlouhém stisknutí</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Ikona jasu</string>
     <string name="brightness_icon_summary">Zobrazit ikonu jasu na pravé straně posuvníku k přepnutí automatického jasu</string>
@@ -374,6 +374,11 @@
     <string name="advanced_title">Pokročilá nastavení</string>
     <string name="advanced_summary">Různá a extra systémová nastavení</string>
     <string name="system_category">Systémová nastavení</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Povolit změnu měřítka</string>
     <string name="aspect_ratio_apps_enabled_summary">Povolit starším aplikacím používat celou obrazovku</string>
