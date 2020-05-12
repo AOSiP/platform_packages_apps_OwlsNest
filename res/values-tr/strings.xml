@@ -374,6 +374,11 @@
     <string name="advanced_title">Gelişmiş Ayarlar</string>
     <string name="advanced_summary">Çeşitli ve ekstra sistem ayarları</string>
     <string name="system_category">Sistem Ayarları</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Ölçeklemeyi etkinleştir</string>
     <string name="aspect_ratio_apps_enabled_summary">Eski uygulamaların tam ekran kullanmasına izin ver</string>

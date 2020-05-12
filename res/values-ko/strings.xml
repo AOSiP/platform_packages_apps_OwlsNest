@@ -374,6 +374,11 @@
     <string name="advanced_title">고급 설정</string>
     <string name="advanced_summary">그 밖의 시스템 설정</string>
     <string name="system_category">시스템 설정</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Enable scaling</string>
     <string name="aspect_ratio_apps_enabled_summary">Allow legacy apps to use full screen</string>

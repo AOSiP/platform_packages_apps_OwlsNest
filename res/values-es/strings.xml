@@ -101,14 +101,14 @@
     <string name="status_bar_system_icons_title">Íconos del Sistema</string>
     <string name="status_bar_system_icons_summary">Controlar que iconos mostrar en la barra de estado</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
+    <string name="battery_style_category_title">Batería</string>
     <string name="battery_percent_title">Porcentaje de batería</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Estilo de la batería</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">Icono (por defecto)</string>
+    <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_dotted_circle">Círculo (punteado)</string>
+    <string name="status_bar_battery_style_filled_circle">Círculo (relleno)</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Status bar - Battery percentage -->
@@ -205,8 +205,8 @@
     <string name="qs_show_brightness_summary">Mostrar un deslizador de brillo en el panel de ajustes rápidos</string>
     <string name="qs_brightness_position_bottom_title">Mostrar la barra de brillo abajo</string>
     <string name="qs_brightness_position_bottom_summary">Mostrar la barra de brillo en la parte de abajo de los ajustes rápidos</string>
-    <string name="qs_long_press_action_title">Long-press Action</string>
-    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
+    <string name="qs_long_press_action_title">Acción de pulsación larga</string>
+    <string name="qs_long_press_action_summary">Utilice la configuración de página completa de estilo antiguo en pulsación larga</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Icono de brillo </string>
     <string name="brightness_icon_summary">Muestra un icono a la derecha de la barra de brillo para ajustar el brillo automático</string>
@@ -374,6 +374,11 @@
     <string name="advanced_title">Ajustes avanzados</string>
     <string name="advanced_summary">Miscelánea y configuración adicional del sistema</string>
     <string name="system_category">Ajustes del sistema</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Activar escalado</string>
     <string name="aspect_ratio_apps_enabled_summary">Permite a aplicaciones olvidadas utilizar la pantalla completa</string>
