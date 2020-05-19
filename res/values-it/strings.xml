@@ -23,6 +23,19 @@
     <string name="nest_title">Tana del Gufo</string>
     <string name="aosip_title">Impostazioni AOSiP</string>
     <string name="owlsnest_settings_title">Categorie</string>
+    <!-- About AOSiP -->
+    <string name="aosip_about_title">About AOSiP</string>
+    <string name="aosip_about_summary">A little info about the team</string>
+    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
+    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
+    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_github_title">AOSiP Github</string>
+    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
+    <string name="aosip_about_team">Team Illusion</string>
+    <string name="about_maintainer">Maintainer</string>
+    <string name="aosip_about_maintainer">The maintainer for your device is</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Ripristina</string>
@@ -117,7 +130,7 @@
     <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
     <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Indicatore di traffico di rete</string>
+    <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Posizione dell\'indicatore di traffico</string>
     <string name="traffic_disabled">Disattivato</string>
     <string name="traffic_statusbar">Barra di stato</string>
@@ -155,7 +168,7 @@
     <string name="show_media_heads_up_title">Visualizza heads up multimediali</string>
     <string name="show_media_heads_up_summary">Visualizza heads up multimediali quando viene riprodotta una nuova traccia, se il player musicale non è già in primo piano</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Impulso luminoso per le nuove notifiche</string>
+    <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Visualizza impulso luminoso per le nuove notifiche</string>
     <string name="ambient_notification_light_enabled_title">Visualizza impulso luminoso sul display Always On</string>
     <string name="ambient_notification_light_enabled_summary">Visualizza impulso luminoso alla ricezione di nuove notifiche sul display Always On</string>
@@ -375,10 +388,10 @@
     <string name="advanced_summary">Varie e impostazioni di sistema extra</string>
     <string name="system_category">Impostazioni di sistema</string>
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">Opzioni vibrazione in chiamata</string>
+    <string name="incall_vibrate_connect_title">Vibra alla connessione</string>
+    <string name="incall_vibrate_call_wait_title">Vibra per chiamata in attesa</string>
+    <string name="incall_vibrate_disconnect_title">Vibra alla disconnessione</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Abilita il ridimensionamento</string>
     <string name="aspect_ratio_apps_enabled_summary">Consenti alle app legacy di utilizzare tutto lo schermo</string>

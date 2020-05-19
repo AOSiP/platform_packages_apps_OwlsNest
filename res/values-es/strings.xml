@@ -23,6 +23,19 @@
     <string name="nest_title">OwlsNest</string>
     <string name="aosip_title">Configuración de AOSiP</string>
     <string name="owlsnest_settings_title">Categorías</string>
+    <!-- About AOSiP -->
+    <string name="aosip_about_title">About AOSiP</string>
+    <string name="aosip_about_summary">A little info about the team</string>
+    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
+    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
+    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_github_title">AOSiP Github</string>
+    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
+    <string name="aosip_about_team">Team Illusion</string>
+    <string name="about_maintainer">Maintainer</string>
+    <string name="aosip_about_maintainer">The maintainer for your device is</string>
     <!-- General strings -->
     <string name="ok">Aceptar</string>
     <string name="reset">Reiniciar</string>
@@ -117,7 +130,7 @@
     <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
     <string name="status_bar_battery_percentage_text_next">Al lado del ícono</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Tráfico de datos en pantalla</string>
+    <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Posición del indicador de tráfico</string>
     <string name="traffic_disabled">Deshabilitado</string>
     <string name="traffic_statusbar">Barra de estado</string>
@@ -155,7 +168,7 @@
     <string name="show_media_heads_up_title">Mostrar notificaciones multimedia</string>
     <string name="show_media_heads_up_summary">Mostrar aviso multimedia cuando se reproduzca una nueva pista si el reproductor no está en primer plano</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulso sobre las nuevas notificaciones</string>
+    <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Mostrar pulsación ligera en las nuevas notificaciones</string>
     <string name="ambient_notification_light_enabled_title">Pulso siempre encendido</string>
     <string name="ambient_notification_light_enabled_summary">Mostrar pulso ligero en una nueva notificación usando Always-On</string>
@@ -375,10 +388,10 @@
     <string name="advanced_summary">Miscelánea y configuración adicional del sistema</string>
     <string name="system_category">Ajustes del sistema</string>
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">Opciones de vibración durante llamadas</string>
+    <string name="incall_vibrate_connect_title">Vibrar al conectar</string>
+    <string name="incall_vibrate_call_wait_title">Vibrar con llamada en espera</string>
+    <string name="incall_vibrate_disconnect_title">Vibrar al desconectar</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Activar escalado</string>
     <string name="aspect_ratio_apps_enabled_summary">Permite a aplicaciones olvidadas utilizar la pantalla completa</string>

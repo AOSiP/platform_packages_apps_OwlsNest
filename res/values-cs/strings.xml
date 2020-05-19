@@ -23,6 +23,19 @@
     <string name="nest_title">OwlsNest</string>
     <string name="aosip_title">Nastavení AOSiP</string>
     <string name="owlsnest_settings_title">Kategorie</string>
+    <!-- About AOSiP -->
+    <string name="aosip_about_title">About AOSiP</string>
+    <string name="aosip_about_summary">A little info about the team</string>
+    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
+    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
+    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_github_title">AOSiP Github</string>
+    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
+    <string name="aosip_about_team">Team Illusion</string>
+    <string name="about_maintainer">Maintainer</string>
+    <string name="aosip_about_maintainer">The maintainer for your device is</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Resetovat</string>
@@ -117,7 +130,7 @@
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Zobrazení síťového provozu</string>
+    <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Umístění indikátoru síťového provozu</string>
     <string name="traffic_disabled">Vypnuto</string>
     <string name="traffic_statusbar">Stavový řádek</string>
@@ -155,7 +168,7 @@
     <string name="show_media_heads_up_title">Zobrazit plovoucí oznámení médií</string>
     <string name="show_media_heads_up_summary">Zobrazit plovoucí oznámení médií při přehrávání nové skladby, pokud již není přehrávač v popředí</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Blikání při novém oznámení</string>
+    <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Zobrazit blikání kontrolky po příchodu nového oznámení</string>
     <string name="ambient_notification_light_enabled_title">Blikat v režimu Vždy zapnuto</string>
     <string name="ambient_notification_light_enabled_summary">Zobrazit blikání kontrolky po příchodu nového oznámení při použití režimu Vždy zapnuto</string>
@@ -375,10 +388,10 @@
     <string name="advanced_summary">Různá a extra systémová nastavení</string>
     <string name="system_category">Systémová nastavení</string>
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">Možnosti vibrací při volání</string>
+    <string name="incall_vibrate_connect_title">Zavibrovat při spojení</string>
+    <string name="incall_vibrate_call_wait_title">Zavibrovat při dalším hovoru</string>
+    <string name="incall_vibrate_disconnect_title">Zavibrovat při odpojení</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Povolit změnu měřítka</string>
     <string name="aspect_ratio_apps_enabled_summary">Povolit starším aplikacím používat celou obrazovku</string>

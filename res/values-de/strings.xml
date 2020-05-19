@@ -23,6 +23,19 @@
     <string name="nest_title">EulenNest</string>
     <string name="aosip_title">AOSiP Einstellungen</string>
     <string name="owlsnest_settings_title">Kategorien</string>
+    <!-- About AOSiP -->
+    <string name="aosip_about_title">About AOSiP</string>
+    <string name="aosip_about_summary">A little info about the team</string>
+    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
+    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
+    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_github_title">AOSiP Github</string>
+    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
+    <string name="aosip_about_team">Team Illusion</string>
+    <string name="about_maintainer">Maintainer</string>
+    <string name="aosip_about_maintainer">The maintainer for your device is</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Zurücksetzen</string>
@@ -117,7 +130,7 @@
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Datenverkehrsanzeige</string>
+    <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Indikator für Datentransfer</string>
     <string name="traffic_disabled">Deaktiviert</string>
     <string name="traffic_statusbar">Statusleiste</string>
@@ -155,7 +168,7 @@
     <string name="show_media_heads_up_title">Medien als Heads-Up Benachrichtigung anzeigen</string>
     <string name="show_media_heads_up_summary">Medien als Heads-Up Benachrichtigung anzeigen, wenn ein neuer Track abgespielt ist, falls der Player nicht bereits im Vordergrund ist</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Bei Benachrichtigungen pulsieren</string>
+    <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Lichtimpuls bei neuer Benachrichtigung anzeigen</string>
     <string name="ambient_notification_light_enabled_title">pulsieren bei always on</string>
     <string name="ambient_notification_light_enabled_summary">Zeige Lichtimpuls bei neuer Benachrichtigung mit immer an</string>

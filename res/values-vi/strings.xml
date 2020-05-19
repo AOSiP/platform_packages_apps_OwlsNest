@@ -23,6 +23,19 @@
     <string name="nest_title">Giao diện nâng cao</string>
     <string name="aosip_title">Cài đặt AOSiP</string>
     <string name="owlsnest_settings_title">Danh mục</string>
+    <!-- About AOSiP -->
+    <string name="aosip_about_title">About AOSiP</string>
+    <string name="aosip_about_summary">A little info about the team</string>
+    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
+    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
+    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_github_title">AOSiP Github</string>
+    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
+    <string name="aosip_about_team">Team Illusion</string>
+    <string name="about_maintainer">Maintainer</string>
+    <string name="aosip_about_maintainer">The maintainer for your device is</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Đặt lại</string>
@@ -117,7 +130,7 @@
     <string name="status_bar_battery_percentage_text_inside">Trong biểu tượng pin</string>
     <string name="status_bar_battery_percentage_text_next">Cạnh biểu tượng pin</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Hiển thị tốc độ mạng</string>
+    <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Khu vực hiển thị tốc độ mạng</string>
     <string name="traffic_disabled">Tắt</string>
     <string name="traffic_statusbar">Thanh trạng thái</string>
@@ -155,7 +168,7 @@
     <string name="show_media_heads_up_title">Hiển thị phương tiện truyền thông nổi</string>
     <string name="show_media_heads_up_summary">Hiển thị phương tiện truyền thông nổi khi một bản nhạc mới được phát, nếu trình phát chưa ở phía trước</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Xung vào thông báo mới</string>
+    <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Hiển thị xung ánh sáng trên thông báo mới</string>
     <string name="ambient_notification_light_enabled_title">Luôn luôn bật</string>
     <string name="ambient_notification_light_enabled_summary">Hiển thị xung ánh sáng trên thông báo mới bằng cách luôn bật</string>

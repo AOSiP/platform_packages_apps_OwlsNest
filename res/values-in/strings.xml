@@ -23,6 +23,19 @@
     <string name="nest_title">OwlsNest</string>
     <string name="aosip_title">AOSiP Settings</string>
     <string name="owlsnest_settings_title">Kategori</string>
+    <!-- About AOSiP -->
+    <string name="aosip_about_title">About AOSiP</string>
+    <string name="aosip_about_summary">A little info about the team</string>
+    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
+    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
+    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_github_title">AOSiP Github</string>
+    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
+    <string name="aosip_about_team">Team Illusion</string>
+    <string name="about_maintainer">Maintainer</string>
+    <string name="aosip_about_maintainer">The maintainer for your device is</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Setel ulang</string>
@@ -117,7 +130,7 @@
     <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
     <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Network traffic display</string>
+    <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Traffic indicator placement</string>
     <string name="traffic_disabled">Disabled</string>
     <string name="traffic_statusbar">Statusbar</string>
@@ -155,7 +168,7 @@
     <string name="show_media_heads_up_title">Show media heads up</string>
     <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulse on new notifcation</string>
+    <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
     <string name="ambient_notification_light_enabled_title">Pulse on always on</string>
     <string name="ambient_notification_light_enabled_summary">Show light pulse on new notification using always on</string>
