@@ -24,18 +24,18 @@
     <string name="aosip_title">AOSiP Beállítások</string>
     <string name="owlsnest_settings_title">Kategóriák</string>
     <!-- About AOSiP -->
-    <string name="aosip_about_title">About AOSiP</string>
-    <string name="aosip_about_summary">A little info about the team</string>
-    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
-    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_about_title">Az AOSiP-ről</string>
+    <string name="aosip_about_summary">Egy kis információ a csapatról</string>
+    <string name="aosip_telegram_title">AOSiP Telegram közösség</string>
+    <string name="aosip_telegram_summary">Koppintson ide a csodálatos közösség megnyitásához!</string>
     <string name="aosip_gerrit_title">AOSiP Gerrit</string>
-    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_gerrit_summary">Koppintson ide a gerrit megnyitásához</string>
     <string name="aosip_github_title">AOSiP Github</string>
-    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_github_summary">Koppintson ide a Github megnyitásához!</string>
     <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
-    <string name="aosip_about_team">Team Illusion</string>
+    <string name="aosip_about_team">Illusion csapat</string>
     <string name="about_maintainer">Maintainer</string>
-    <string name="aosip_about_maintainer">The maintainer for your device is</string>
+    <string name="aosip_about_maintainer">Az eszközöd maintainer-e</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Visszaállítás</string>
@@ -51,43 +51,43 @@
     <string name="icon_category">Ikonok</string>
     <string name="battery_category">Akkumulátor</string>
     <!-- Old MobileType Toggle -->
-    <string name="use_old_mobiletype_title">Use old mobile type style</string>
-    <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
+    <string name="use_old_mobiletype_title">A régi mobil-stílus használata</string>
+    <string name="use_old_mobiletype_summary">Jel- és hálózatikonok összevonása</string>
     <string name="mobile_data_style_info_title">Change take effect on next update of mobile signal icon.</string>
     <!-- 4G LTE switch -->
-    <string name="show_fourg_title">Show 4G instead of LTE</string>
-    <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
+    <string name="show_fourg_title">4G megjelenítése LTE helyett</string>
+    <string name="show_fourg_summary">Lecseréli az LTE hálozatkijelző ikonját 4G-re</string>
     <!--Statusbar privacy indicators-->
     <string name="statusbar_privacy_indicators_title">Privacy indicators</string>
     <string name="statusbar_privacy_indicators_summary">Show privacy indicators on statusbar</string>
     <!-- Show VoLTE icon on statusbar -->
-    <string name="volte_switch_title">VoLTE icon</string>
-    <string name="volte_switch_summary">Display VoLTE icon</string>
-    <string name="volte_icon_asus">VoLTE Asus Icon</string>
+    <string name="volte_switch_title">VoLTE ikon</string>
+    <string name="volte_switch_summary">Megjeleníti a VoLTE ikont</string>
+    <string name="volte_icon_asus">VoLTE Asus Ikon</string>
     <string name="volte_icon_title">VoLTE ikon</string>
     <string name="volte_icon_summary">Megjeleníti a VoLTE ikont</string>
-    <string name="volte_icon_style_title">Select VoLTE Icon</string>
-    <string name="volte_icon_vo">Vo Only Icon</string>
-    <string name="volte_icon_volte">VoLTE Icon</string>
-    <string name="volte_icon_oos">VoLTE OOS Icon</string>
-    <string name="volte_icon_hd">HD Icon</string>
-    <string name="volte_icon_volit">VoLIT Icon</string>
+    <string name="volte_icon_style_title">VoLTE Ikon kiválasztása</string>
+    <string name="volte_icon_vo">Csak Vo Ikon</string>
+    <string name="volte_icon_volte">VoLTE Ikon</string>
+    <string name="volte_icon_oos">VoLTE OOS Ikon</string>
+    <string name="volte_icon_hd">HD Ikon</string>
+    <string name="volte_icon_volit">VoLIT Ikon</string>
     <!-- Status bar clock and date options -->
-    <string name="status_bar_style_title">Style</string>
-    <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="status_bar_style_title">Stílus</string>
+    <string name="status_bar_clock">Óra és Dátum</string>
     <string name="clock_enabled">Engedélyezve</string>
     <string name="clock_disabled">Letiltva</string>
     <string name="status_bar_clock_style_reset">Színek visszaállítása</string>
-    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
-    <string name="status_bar_clock_seconds_title">Clock seconds</string>
-    <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
+    <string name="status_bar_show_clock_title">Az óra és a dátum megjelenítése</string>
+    <string name="status_bar_clock_seconds_title">Óra másodperccel</string>
+    <string name="status_bar_clock_seconds_summary">Másodpercek kijelzése az óra mellett az állapotsoron</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">A 24-órás formátum engedélyezve</string>
     <string name="enable_clock_weekday">A hét napja</string>
     <string name="enable_clock_weekday_summary">Az óra előtt mutatja a hét napját rövid formátumban</string>
     <string name="dont_show">Ne jelenjenítse meg</string>
     <string name="clock_date_display">Dátum</string>
-    <string name="status_bar_time_cat">Time</string>
+    <string name="status_bar_time_cat">Idő</string>
     <string name="clock_date_display_summary">Egyéni dátum megjelenítése az óra előtt</string>
     <string name="clock_date_style">Dátum stílusa</string>
     <string name="clock_date_format">Dátum formátuma</string>
@@ -105,106 +105,117 @@
     <string name="clock_date_right">Az órától jobbra</string>
     <string name="clock_date_left">Az órától balra</string>
     <string name="clock_date_position">Dátum pozíciója</string>
-    <string name="clock_position">Clock position</string>
-    <string name="clock_position_right">Right clock</string>
-    <string name="clock_position_center">Center clock</string>
-    <string name="clock_position_left">Left clock</string>
+    <string name="clock_position">Az óra pozíciója</string>
+    <string name="clock_position_right">Az óra a jobb oldalon</string>
+    <string name="clock_position_center">Az óra középen</string>
+    <string name="clock_position_left">Az óra a bal oldalon</string>
     <!-- Status bar - icons -->
-    <string name="status_bar_icons_title">Status bar icons</string>
-    <string name="status_bar_system_icons_title">System icons</string>
-    <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
+    <string name="status_bar_icons_title">Az állapotsor ikonjai</string>
+    <string name="status_bar_system_icons_title">Rendszerikonok</string>
+    <string name="status_bar_system_icons_summary">Állapotsor ikonok megjelenítésének vezérlése</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
-    <string name="battery_percent_title">Battery percent</string>
+    <string name="battery_style_category_title">Akkumulátor</string>
+    <string name="battery_percent_title">Akkumulátor százalék</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Akkumulátor stílus</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikon álló (alapértelmezett)</string>
+    <string name="status_bar_battery_style_circle">Kör</string>
+    <string name="status_bar_battery_style_dotted_circle">Kör (Pontozott)</string>
+    <string name="status_bar_battery_style_filled_circle">Kör (Kitöltött)</string>
     <string name="status_bar_battery_style_text">Szöveg</string>
     <string name="status_bar_battery_style_hidden">Rejtett</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Akkumulátor százalék</string>
-    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_default">Rejtett (alapértelmezett)</string>
     <string name="status_bar_battery_percentage_text_inside">Az ikonon belül</string>
     <string name="status_bar_battery_percentage_text_next">Az ikon mellett</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Network traffic</string>
-    <string name="network_traffic_location">Traffic indicator placement</string>
-    <string name="traffic_disabled">Disabled</string>
-    <string name="traffic_statusbar">Statusbar</string>
-    <string name="traffic_expanded_statusbar">Expanded header</string>
+    <string name="network_traffic_state_title">Hálózati forgalom</string>
+    <string name="network_traffic_location">Hálozati forgalom kijelző helye</string>
+    <string name="traffic_disabled">Letiltva</string>
+    <string name="traffic_statusbar">Állapotsor</string>
+    <string name="traffic_expanded_statusbar">Kiterjesztett mód</string>
     <string name="network_traffic_autohide_threshold_title">A hálózati forgalom automatikus elrejtésének határértéke (KB/s)</string>
-    <string name="network_traffic_arrow">Show arrows</string>
-    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
-    <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
-    <string name="show_network_traffic_dynamic">Dynamic</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Both</string>
-    <string name="nettraf_font_size">Single net font size (dp)</string>
+    <string name="network_traffic_arrow">Nyíl mutatása</string>
+    <string name="network_traffic_arrow_summary">Hálózati forgalmat jelző nyilak megjelenítése</string>
+    <string name="network_traffic_type">Hálózataktivitás-típus kiválasztása</string>
+    <string name="show_network_traffic_combined">Kombinált (fel-letöltés)</string>
+    <string name="show_network_traffic_dynamic">Dinamikus</string>
+    <string name="show_network_traffic_up">Feltöltés</string>
+    <string name="show_network_traffic_down">Letöltés</string>
+    <string name="show_network_traffic_all">Mindkettő</string>
+    <string name="nettraf_font_size">Egyedülálló net betűmérete (dp)</string>
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronic Logo</string>
     <string name="kronic_logo_summary">Hadd lássa mindenki, hogy AOSiP-t használ, amikor ránéz a képernyőjére</string>
     <string name="status_bar_logo_style_title">Egyéni logókép</string>
     <!-- Carrier Label -->
-    <string name="status_carrier_title">Carrier Label</string>
-    <string name="carrier_options">Select display locations</string>
+    <string name="status_carrier_title">Szolgáltatói címke</string>
+    <string name="carrier_options">A megjelenítési hely kiválasztása</string>
     <string name="custom_carrier_label_title">Egyéni szolgáltatónév</string>
-    <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
+    <string name="custom_carrier_label_explain">Adjon meg egy egyéni feliratot. Hagyja üresen, ha a valódi hálózat nevét szeretné látni</string>
     <string name="custom_carrier_label_notset">Jelenleg nincs beállított egyedi felirat</string>
     <string name="show_carrier_title">Szolgáltatónév</string>
     <string name="show_carrier_disabled">Letiltva</string>
-    <string name="show_carrier_keyguard">Lockscreen</string>
-    <string name="show_carrier_statusbar">Status bar</string>
-    <string name="show_carrier_enabled">Both</string>
+    <string name="show_carrier_keyguard">Zárképernyő</string>
+    <string name="show_carrier_statusbar">Állapotsoron</string>
+    <string name="show_carrier_enabled">Mindkettő</string>
     <!--Owlsnest Notification-->
     <string name="notification_title">Értesítések</string>
     <string name="notification_summary">LED és értesítés viselkedéseinek beállítása</string>
     <string name="notification_category">Értesítések</string>
     <string name="headsup_category">Lebegő értesítés</string>
-    <string name="show_media_heads_up_title">Show media heads up</string>
-    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
+    <!-- Media heads-up ticker -->
+    <string name="show_media_heads_up_title">Média felugró értesítései</string>
+    <string name="show_media_heads_up_summary">Zenelejátszás közben megjeleníti a médiatartalmak felugró értesítéseit, akkor is ha az nincs az előtérben</string>
+    <!-- Heads-up snooze -->
+    <string name="heads_up_snooze_title">Snooze timer</string>
+    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
+    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
+    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
+    <string name="heads_up_snooze_1min">1 minute</string>
+    <string name="heads_up_snooze_5min">5 minutes</string>
+    <string name="heads_up_snooze_10min">10 minutes</string>
+    <string name="heads_up_snooze_15min">15 minutes</string>
+    <string name="heads_up_snooze_20min">20 minutes</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulse on new notification</string>
-    <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
-    <string name="ambient_notification_light_enabled_title">Pulse on always on</string>
-    <string name="ambient_notification_light_enabled_summary">Show light pulse on new notification using always on</string>
+    <string name="pulse_ambient_light_title">Pulzálás új értesités érkezésekor</string>
+    <string name="pulse_ambient_light_summary">Vékony pulzálás megjelenítése új értesítéskor</string>
+    <string name="ambient_notification_light_enabled_title">Pulzálás az AOD-n</string>
+    <string name="ambient_notification_light_enabled_summary">Vékony pulzálás megjelenítése új értesítéskor az AOD-n</string>
     <string name="pulse_ambient_light_note">Wake screen on receiving new notifications must be turned on</string>
-    <string name="ambient_brigthness_category_title">Screen brightness</string>
-    <string name="pulse_ambient_category_title">Notification light pulse</string>
-    <string name="ambient_notification_light_hide_aod_title">Only show light pulse</string>
-    <string name="ambient_notification_light_hide_aod_summary">Hide all other display elements from always on</string>
-    <string name="ambient_notification_light_accent_title">Use system accent color</string>
-    <string name="ambient_notification_light_accent_summary">Use current system accent color for light pulse</string>
-    <string name="ambient_notification_light_color_title">Custom color</string>
-    <string name="ambient_notification_light_color_summary">Default color for light pulse</string>
-    <string name="ambient_notification_light_timeout_title">Timeout for light pulse</string>
-    <string name="ambient_notification_light_color_mode_title">Light pulse color</string>
-    <string name="ambient_notification_light_color_mode_automatic">Notification color</string>
-    <string name="ambient_notification_light_color_mode_accent">System accent color</string>
-    <string name="ambient_notification_light_color_mode_custom">Custom color</string>
-    <string name="entry_infinite">Infinite</string>
-    <string name="entry_five_minute">5 minutes</string>
-    <string name="entry_ten_minute">10 minutes</string>
-    <string name="entry_thirty_minute">30 minutes</string>
-    <string name="entry_sixty_minute">60 minutes</string>
-    <string name="entry_fifteen_minute">15 minutes</string>
+    <string name="ambient_brigthness_category_title">Képernyő fényereje</string>
+    <string name="pulse_ambient_category_title">Vékony pulzálás értesítéskor</string>
+    <string name="ambient_notification_light_hide_aod_title">Csak vékony pulzálás megjelenítése</string>
+    <string name="ambient_notification_light_hide_aod_summary">Összes többi elem elrejtése az AOD-n</string>
+    <string name="ambient_notification_light_accent_title">Kiemelőszín használata</string>
+    <string name="ambient_notification_light_accent_summary">Jelenlegi kiemelőszín használata a vékony pulzáláshoz</string>
+    <string name="ambient_notification_light_color_title">Egyéni szín</string>
+    <string name="ambient_notification_light_color_summary">Alapértelmezett szín a vékony pulzáláshoz</string>
+    <string name="ambient_notification_light_timeout_title">Vékony pulzálás időkorlátja</string>
+    <string name="ambient_notification_light_color_mode_title">Vékony pulzálás színe</string>
+    <string name="ambient_notification_light_color_mode_automatic">Értesítés színe</string>
+    <string name="ambient_notification_light_color_mode_accent">Kiemelőszín használata</string>
+    <string name="ambient_notification_light_color_mode_custom">Egyéni szín</string>
+    <string name="entry_infinite">Végtelen</string>
+    <string name="entry_five_minute">5 perc</string>
+    <string name="entry_ten_minute">10 perc</string>
+    <string name="entry_thirty_minute">30 perc</string>
+    <string name="entry_sixty_minute">60 perc</string>
+    <string name="entry_fifteen_minute">15 perc</string>
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Hangosabb értesítések bekapcsolt képernyőnél</string>
     <string name="notification_sound_vib_screen_on_summary">Értesítésjelzés hanggal és rezgéssel, ha a képernyő be van kapcsolva</string>
     <!-- Battery light -->
-    <string name="battery_light_settings">Battery Charging Light</string>
-    <string name="battery_light_summary">Customization for Battery Light</string>
+    <string name="battery_light_settings">Akkumulátortöltés jelzőfénye</string>
+    <string name="battery_light_summary">Akkumulátorfény testreszabása</string>
     <string name="battery_light_allow_on_dnd_title">Akkumulátor-fény a Ne zavarj módban</string>
     <string name="battery_light_low_blinking_title">Alacsony akkumulátorszintnél villogó fényjelzés</string>
     <string name="battery_light_cat">Akkumulátor-fény színe töltéskor</string>
     <string name="battery_light_low_color">Alacsony akkumulátor szint</string>
     <string name="battery_light_medium_color">Közepes akkumulátor szint</string>
     <string name="battery_light_full_color">Majdnem teljes akkumulátor szint</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_reallyfull_color">Teljesen feltöltött (100)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Gyorsbeállítások</string>
     <string name="quicksettings_summary">Gyors csempék és kiterjesztett értesítési sáv</string>
@@ -213,25 +224,25 @@
     <string name="tiles_title">Gyorsbeállítás-csempék</string>
     <string name="qs_tile_footer">A csempesorok és oszlopok számának megváltoztatásához használd a 3-pötty menüt a csempe legördülő menüjében.</string>
     <!-- Quick Settings brightness slider -->
-    <string name="qs_brightness_category_title">Brightness slider options</string>
+    <string name="qs_brightness_category_title">Fényerőcsúszka beállításai</string>
     <string name="qs_show_brightness_title">Fényerőszabályzó-csúszka</string>
-    <string name="qs_show_brightness_summary">Show a brightness slider in the quick settings panel</string>
-    <string name="qs_brightness_position_bottom_title">Brightness slider on bottom</string>
-    <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
-    <string name="qs_long_press_action_title">Long-press Action</string>
+    <string name="qs_show_brightness_summary">Fényerőszabályzó-csúszka megjelenítése a gyorsbeállítások panelén</string>
+    <string name="qs_brightness_position_bottom_title">A fényerőcsúszka megjelenítése alul</string>
+    <string name="qs_brightness_position_bottom_summary">Fényerőszabályzó csúszka megjelenítése a gyorsbeállítások panel alján</string>
+    <string name="qs_long_press_action_title">Hosszan nyomás művelete</string>
     <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
     <!-- Brightness icon-->
-    <string name="brightness_icon_title">Brightness icon</string>
-    <string name="brightness_icon_summary">Show a brightness icon to the right of the brighness slider to adjust auto-brightness</string>
+    <string name="brightness_icon_title">Fényerőikon</string>
+    <string name="brightness_icon_summary">Fényerőikon megjelenítése a fényerőcsúszka jobb oldalán az automatikus fényerőre állításhoz</string>
     <!-- QS tiles haptic feedback -->
-    <string name="qs_vibrate_title">Vibrate on touch</string>
-    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="qs_vibrate_title">Érintéskor rezegjen</string>
+    <string name="qs_vibrate_summary">Jelezze rezgéssel a csempeérintést</string>
     <!--Owlsnest navigation-->
     <string name="navigation_category">Navigáció</string>
     <string name="navigation_summary">A navigáció stílusának és viselkedésének testreszabása</string>
-    <string name="navigation_tuner_title">Navigation Tuner</string>
-    <string name="navigation_bar_menu_arrow_keys_title">Arrow keys while typing</string>
-    <string name="navigation_bar_menu_arrow_keys_summary">Display left and right cursor buttons while typing</string>
+    <string name="navigation_tuner_title">Navigációs sáv szabályzó</string>
+    <string name="navigation_bar_menu_arrow_keys_title">Nyílbillentyűk gépelés közben</string>
+    <string name="navigation_bar_menu_arrow_keys_summary">Mutassa a bal és jobb kurzort gépelés közben</string>
     <!-- Button brightness -->
     <string name="button_backlight_options_category">Háttérvilágítás beállításai</string>
     <string name="button_backlight_enable_title">A gombok háttérvilágításának engedélyezése</string>
@@ -244,18 +255,18 @@
     <!--Owlsnest buttons-->
     <string name="buttons_title">Hardvergombok</string>
     <string name="buttons_summary">Az eszköz fizikai gombjainak testreszabása</string>
-    <string name="power_button_category">Power</string>
+    <string name="power_button_category">Teljesítmény</string>
     <string name="volume_category">Hangerő</string>
     <!-- Power menu -->
-    <string name="powermenu_reboot_title">Restart</string>
-    <string name="powermenu_advanced_restart_title">Advanced restart</string>
-    <string name="powermenu_advanced_restart_summary">Enables the advanced restart menu for other restarting options</string>
-    <string name="powermenu_lockdown_title">Lockdown</string>
+    <string name="powermenu_reboot_title">Újraindítás</string>
+    <string name="powermenu_advanced_restart_title">Speciális újraindítás</string>
+    <string name="powermenu_advanced_restart_summary">Engedélyezi a speciális újraindítási menüt a kikapcsoló menüben</string>
+    <string name="powermenu_lockdown_title">Lezárás</string>
     <string name="powermenu_screenshot_title">Képernyőmentés</string>
-    <string name="powermenu_screenrecord_title">Screenrecord</string>
+    <string name="powermenu_screenrecord_title">Képernyőfelvétel</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Képernyő-kikapcsolási animáció</string>
-    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_default">Alapértelmezett</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skála</string>
     <!--Owlsnest recentscreen-->
@@ -264,50 +275,50 @@
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesztusok</string>
     <string name="gesture_summary">Gesztus által vezérelt opció</string>
-    <string name="pixel_gesture_title">Pixel Gestures</string>
+    <string name="pixel_gesture_title">Pixel gesztusok</string>
     <string name="pixel_gesture_summary">Features specific to Pixel like Active Edge</string>
     <string name="double_tap_options">Dupla érintésre alvás</string>
     <string name="aosp_gesture_title">AOSP gesztusok</string>
     <string name="aware_settings_title">Motion Sense</string>
-    <string name="aware_settings_summary">Configure Motion Sense options</string>
+    <string name="aware_settings_summary">Motion Sense beállítások</string>
     <!-- Active edge -->
     <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Configure Active Edge options</string>
-    <string name="active_edge_short_actions_title">Short squeeze action</string>
-    <string name="active_edge_long_actions_title">Long squeeze action</string>
+    <string name="active_edge_summary">Active Edge beállítások</string>
+    <string name="active_edge_short_actions_title">Rövid szorítás művelete</string>
+    <string name="active_edge_long_actions_title">Hosszú szorítás művelete</string>
     <string name="active_edge_sensitivity_title">Szórítás érzékenysége</string>
     <string name="active_edge_wake_title">Engedélyezi amikor a képernyő ki van kapcsolva</string>
     <string name="active_edge_wake_summary">Egy művelet végrehajtása a képernyő kikapcsolásakor</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nIf you want to choose a specific app activity for the action, long press on any app in the app picker.</string>
     <!-- Custom actions -->
-    <string name="action_nothing">No action</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
-    <string name="kill_app">Kill foreground app</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_notifications">Notifications</string>
+    <string name="action_nothing">Nincs művelet</string>
+    <string name="action_search">Asszisztens</string>
+    <string name="action_voice_search">Hangalapú keresés</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_flashlight">Zseblámpa</string>
+    <string name="action_volume_panel">Hangerő panel</string>
+    <string name="action_screen_off">Képernyő ki</string>
+    <string name="action_screenshot">Képernyőmentés</string>
+    <string name="action_app_action">Alkalmazás</string>
+    <string name="action_ringer_modes">Csengés módok</string>
+    <string name="kill_app">Az előtérben lévő alkalmazás kilövése</string>
+    <string name="skip_song">Zene átugrása</string>
+    <string name="prev_song">Előző zene</string>
+    <string name="action_qs_panel">Gyorsbeállítások panel</string>
+    <string name="action_clear_notifications">Értesítések törlése</string>
+    <string name="action_notifications">Értesítések</string>
     <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
     <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
     <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
     <!-- Motion Sense -->
     <string name="ambient_display_wake_screen_summary">To check time, notifications, and other info, reach for your phone</string>
-    <string name="ambient_display_wake_screen_summary_on">On</string>
+    <string name="ambient_display_wake_screen_summary_on">Be</string>
     <string name="aware_category_display">Ambient Display</string>
     <string name="aware_category_gesture">Quick Gestures</string>
     <string name="aware_disabled_preference_action">Motion Sense Settings</string>
     <string name="aware_disabled_preference_dialog_content">To use this feature, turn on Motion Sense</string>
-    <string name="aware_disabled_preference_dialog_title">This feature is turned off</string>
-    <string name="aware_disabled_preference_neutral">Not now</string>
+    <string name="aware_disabled_preference_dialog_title">Ez a funkció ki van kapcsolva</string>
+    <string name="aware_disabled_preference_neutral">Most nem</string>
     <string name="aware_display_settings_title">Idle lock screen</string>
     <string name="aware_settings_description">With new sensors, Pixel can recognize distance and movement around the phone</string>
     <string name="aware_settings_disabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are not supported in this country</string>
@@ -315,27 +326,27 @@
     <string name="aware_settings_enabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are supported in this country</string>
     <string name="aware_settings_enabled_info_dialog_title">Motion Sense is on</string>
     <string name="aware_wake_display_summary">Show time, notification icons, and other info when you’re nearby</string>
-    <string name="aware_wake_display_summary_aod_off">Unavailable because always-on display is off</string>
-    <string name="aware_wake_display_title">Show display when nearby</string>
+    <string name="aware_wake_display_summary_aod_off">Nem érhető el, mert az AOD ki van kapcsolva</string>
+    <string name="aware_wake_display_title">Képernyő megjelenítése a közelben</string>
     <string name="dialog_aware_settings_message">If you turn off Motion Sense, you can’t use Quick Gestures, show display when nearby, and reach to check phone</string>
-    <string name="dialog_aware_settings_title">Turn off Motion Sense?</string>
-    <string name="gesture_aware_confirmation_action_button">Got it</string>
-    <string name="gesture_aware_disabled_info_dialog_content">Quick Gestures and other Motion Sense features are not supported in this country.</string>
-    <string name="gesture_aware_off_dialog_content">To use Quick Gestures, turn on Motion Sense.</string>
-    <string name="gesture_aware_off_dialog_title">Quick Gestures are off</string>
+    <string name="dialog_aware_settings_title">Motion Sense kikapcsolása?</string>
+    <string name="gesture_aware_confirmation_action_button">Értettem</string>
+    <string name="gesture_aware_disabled_info_dialog_content">Gyors gesztusok és más Motion Sense funkciók nem támogatottak az országodban</string>
+    <string name="gesture_aware_off_dialog_content">Gyors gesztusok használatához kapcsolja be a Motion Sense-t.</string>
+    <string name="gesture_aware_off_dialog_title">Gyors gesztusok kikapcsolva</string>
     <string name="gesture_silence_on_summary">On / Snooze alarms and silence calls</string>
     <string name="gesture_silence_summary">Snooze alarms and silence calls</string>
     <string name="gesture_silence_title">Silence interruptions</string>
-    <string name="gesture_skip_direction_ltr">Swipe left to right for next song</string>
-    <string name="gesture_skip_direction_rtl">Swipe right to left for next song</string>
-    <string name="gesture_skip_direction_title">Swipe direction</string>
-    <string name="gesture_skip_on_summary">On / Skip to the next or previous song</string>
-    <string name="gesture_skip_summary">Skip to the next or previous song</string>
-    <string name="gesture_skip_title">Skip songs</string>
-    <string name="gesture_tap_off_summary">Off / Pause or resume music</string>
-    <string name="gesture_tap_on_summary">On / Pause or resume music</string>
+    <string name="gesture_skip_direction_ltr">Csúsztatás balra a következő zenéhez</string>
+    <string name="gesture_skip_direction_rtl">Csúsztatás jobbra a következő zenéhez</string>
+    <string name="gesture_skip_direction_title">Csúsztatás iránya</string>
+    <string name="gesture_skip_on_summary">Be / Ugrás a következő vagy az előző zenére</string>
+    <string name="gesture_skip_summary">Ugrás a következő vagy az előző zenére</string>
+    <string name="gesture_skip_title">Zene átugrása</string>
+    <string name="gesture_tap_off_summary">Zene szüneteltetése vagy folytatása</string>
+    <string name="gesture_tap_on_summary">Zene szüneteltetése vagy folytatása</string>
     <string name="gesture_tap_summary">Pause or resume music by tapping the air above the phone</string>
-    <string name="gesture_tap_title">Pause music</string>
+    <string name="gesture_tap_title">Zene szüneteltetése</string>
     <string name="wake_screen_aware_disabled_info_dialog_content">Reach to check phone and other Motion Sense features are not supported in this country</string>
     <string name="wake_screen_aware_off_dialog_content">To use Reach to check phone, turn on Motion Sense</string>
     <string name="wake_screen_aware_off_dialog_title">Reach to check phone is off</string>
@@ -344,60 +355,60 @@
     <string name="lockscreen_summary">Zárképernyő elrendezésének testreszabása</string>
     <string name="secure_lockscreen">Biztonságos zárképernyő opciók</string>
     <!-- Lockscreen cover art filter -->
-    <string name="lockscreen_cover_filter_title">Media cover art filter</string>
+    <string name="lockscreen_cover_filter_title">Médiaborító-szűrő</string>
     <string name="lockscreen_cover_filter_none">Nincs</string>
     <string name="lockscreen_cover_filter_grayscale">Szürkeárnyalatos</string>
     <string name="lockscreen_cover_filter_tint">Kiemelőszínhez igazodó</string>
     <string name="lockscreen_cover_filter_blur">Elmosódás</string>
     <string name="lockscreen_cover_filter_grayblur">Szürkeárnyalatos és homályosított</string>
-    <string name="lockscreen_cover_filter_gradientblur">Gradient Blur</string>
+    <string name="lockscreen_cover_filter_gradientblur">Átmenetes, homályosított</string>
     <!-- Charging animation -->
-    <string name="charging_animation_title">Charging animation</string>
-    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+    <string name="charging_animation_title">Töltési animáció</string>
+    <string name="charging_animation_summary">Animáció megjelenítése, ha a készülék töltőhöz van csatlakoztatva</string>
     <!-- Configurable lockscreen media blur strength -->
-    <string name="lockscreen_media_blur_title">Media cover art blur level</string>
+    <string name="lockscreen_media_blur_title">A médiaborító homályosítási szintje</string>
     <!-- Media art -->
     <string name="media_art_title">A média albumborítója</string>
     <string name="media_art_summary">Engedélyezi a médiaborító megjelenítését a záróképernyőn</string>
     <!-- Lockscreen icons -->
-    <string name="lockscreen_tuner_title">Shortcuts</string>
+    <string name="lockscreen_tuner_title">Parancsikonok</string>
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Battery info</string>
-    <string name="lockscreen_battery_info_summary">Display current battery status on lockscreen while charging</string>
+    <string name="lockscreen_battery_info_title">Akkumulátorinformáció</string>
+    <string name="lockscreen_battery_info_summary">Az akkumulátor aktuális állapotának megjelenítése töltés közben </string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Power menu</string>
-    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lock screen</string>
+    <string name="lockscreen_enable_power_menu_title">Kikapcsolómenü</string>
+    <string name="lockscreen_enable_power_menu_summary">A kikapcsolómenü engedélyezése a biztonságos képernyőzáron</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Visualizer</string>
-    <string name="lockscreen_visualizer_summary">Display music visualizer when available</string>
-    <string name="lockscreen_autocolor_title">Automatic color</string>
-    <string name="lockscreen_autocolor_summary">Sync color with background</string>
-    <string name="lockscreen_autocolor_lavalamp">Requires lava lamp disabled</string>
-    <string name="lockscreen_lavalamp_title">Lava lamp</string>
-    <string name="lockscreen_lavalamp_summary">Animate smooth lava lamp style color blend</string>
-    <string name="lockscreen_lavalamp_speed_title">Lava lamp color blend interval</string>
-    <string name="lockscreen_solid_units_count_title">Solid lines count</string>
-    <string name="lockscreen_solid_fudge_factor_title">Sanity level</string>
-    <string name="lockscreen_solid_units_opacity_title">Solid lines opacity</string>
+    <string name="lockscreen_visualizer_title">Vizualizáció</string>
+    <string name="lockscreen_visualizer_summary">Zenei vizualizáció megjelenítése, ha elérhető</string>
+    <string name="lockscreen_autocolor_title">Automatikus szín</string>
+    <string name="lockscreen_autocolor_summary">A szín szinkronizálása a háttérhez</string>
+    <string name="lockscreen_autocolor_lavalamp">Ehhez a lávalámpát ki kell kapcsolni</string>
+    <string name="lockscreen_lavalamp_title">Lávalámpa</string>
+    <string name="lockscreen_lavalamp_summary">Egy lávalámpa stílusú lágy színkavalkádot kelt életre</string>
+    <string name="lockscreen_lavalamp_speed_title">A Lávalámpa színkeverési sebessége</string>
+    <string name="lockscreen_solid_units_count_title">A folytonos vonalak száma</string>
+    <string name="lockscreen_solid_fudge_factor_title">Az ésszerűség szintje</string>
+    <string name="lockscreen_solid_units_opacity_title">A folytonos vonalak átlátszósága</string>
     <string name="unit_milliseconds">ms</string>
     <!-- Ambient visualizer -->
-    <string name="ambient_visualizer_title">Ambient visualizer</string>
+    <string name="ambient_visualizer_title">Környezeti kijelző vizualizációja</string>
     <string name="ambient_visualizer_summary">Mutassa a zenevizualizációt a környezeti kijelzőn is (kevésbé átlátszó)</string>
     <!--Owlsnest advanced-->
     <string name="advanced_title">Rendszerbeállítások</string>
     <string name="advanced_summary">Egyéb rendszerbeállítások</string>
     <string name="system_category">Rendszerbeállítások</string>
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">A hívás közbeni rezgés beállításai</string>
+    <string name="incall_vibrate_connect_title">Rezgés a kapcsolat létrejöttekor</string>
+    <string name="incall_vibrate_call_wait_title">Rezgés hívásvárakoztatásnál</string>
+    <string name="incall_vibrate_disconnect_title">Rezgés a kapcsolat bontásakor</string>
     <!-- Per App aspect Ratio -->
-    <string name="aspect_ratio_apps_enabled_title">Enable scaling</string>
-    <string name="aspect_ratio_apps_enabled_summary">Allow legacy apps to use full screen</string>
+    <string name="aspect_ratio_apps_enabled_title">Méretezés engedélyezése</string>
+    <string name="aspect_ratio_apps_enabled_summary">Engedélyezi az alkalmazásoknak a teljes képernyő használatát</string>
     <string name="aspect_ratio_apps_list_summary"></string>
-    <string name="aspect_ratio_apps_list_title">Apps allowed to use scaling</string>
-    <string name="aspect_ratio_category_title">Legacy app scaling</string>
-    <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
-    <string name="action_save">Save</string>
+    <string name="aspect_ratio_apps_list_title">A következő alkalmazások használhatják a méretezést</string>
+    <string name="aspect_ratio_category_title">Örökölt alkalmazás méretezése</string>
+    <string name="aspect_ratio_apps_info">A változtatás után újra kell indítani az alkalmazásokat</string>
+    <string name="action_save">Mentés</string>
 </resources>

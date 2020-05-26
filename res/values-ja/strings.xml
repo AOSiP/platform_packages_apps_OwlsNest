@@ -24,18 +24,18 @@
     <string name="aosip_title">AOSiP の設定</string>
     <string name="owlsnest_settings_title">カテゴリー</string>
     <!-- About AOSiP -->
-    <string name="aosip_about_title">About AOSiP</string>
-    <string name="aosip_about_summary">A little info about the team</string>
-    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
-    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_about_title">AOSiP について</string>
+    <string name="aosip_about_summary">チームについての情報</string>
+    <string name="aosip_telegram_title">AOSiP Telegram コミュニティ</string>
+    <string name="aosip_telegram_summary">ここをタップして私達の素晴らしいコミュニティを表示します!</string>
     <string name="aosip_gerrit_title">AOSiP Gerrit</string>
-    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
-    <string name="aosip_github_title">AOSiP Github</string>
-    <string name="aosip_github_summary">Tap here to open our Github!</string>
-    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
-    <string name="aosip_about_team">Team Illusion</string>
-    <string name="about_maintainer">Maintainer</string>
-    <string name="aosip_about_maintainer">The maintainer for your device is</string>
+    <string name="aosip_gerrit_summary">ここをタップして Gerrit を開き最新のコミットを確認する</string>
+    <string name="aosip_github_title">AOSiP GitHub</string>
+    <string name="aosip_github_summary">ここをタップして GitHub を開きます!</string>
+    <string name="aosip_about_info_summary">AOSiP は Android Open Source illusion Project を表しています。私達は様々な Android 開発コミュニティからの機能を織り込んだ AOSP ベースのカスタム ROM です。Android が提供する最高のものをお届けすることに専念しているため、品質と安定性が私達の最優先事項です。</string>
+    <string name="aosip_about_team">チーム Illusion</string>
+    <string name="about_maintainer">メンテナ</string>
+    <string name="aosip_about_maintainer">この端末のメンテナ</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">リセット</string>
@@ -130,7 +130,7 @@
     <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Network traffic</string>
+    <string name="network_traffic_state_title">通信速度</string>
     <string name="network_traffic_location">電波アイコンの置き換え</string>
     <string name="traffic_disabled">無効</string>
     <string name="traffic_statusbar">ステータスバー</string>
@@ -165,10 +165,21 @@
     <string name="notification_summary">LED と通知の動作を設定する</string>
     <string name="notification_category">通知</string>
     <string name="headsup_category">Heads Up</string>
+    <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">メディアの Heads Up を表示</string>
     <string name="show_media_heads_up_summary">プレイヤーが前面に準備できていない場合は、新しい曲を再生時にメディアの Heads Up を表示する。</string>
+    <!-- Heads-up snooze -->
+    <string name="heads_up_snooze_title">Snooze timer</string>
+    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
+    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
+    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
+    <string name="heads_up_snooze_1min">1 minute</string>
+    <string name="heads_up_snooze_5min">5 minutes</string>
+    <string name="heads_up_snooze_10min">10 minutes</string>
+    <string name="heads_up_snooze_15min">15 minutes</string>
+    <string name="heads_up_snooze_20min">20 minutes</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulse on new notification</string>
+    <string name="pulse_ambient_light_title">新しい通知で点滅</string>
     <string name="pulse_ambient_light_summary">新しい通知でライトを点滅させる</string>
     <string name="ambient_notification_light_enabled_title">Always on で点滅</string>
     <string name="ambient_notification_light_enabled_summary">Always on 使用中に新しい通知でライトを点滅させる</string>
