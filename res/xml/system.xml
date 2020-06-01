@@ -22,7 +22,7 @@
 
     <PreferenceCategory
         android:key="incall_vibration_category"
-        android:title="@string/aspect_ratio_category_title">
+        android:title="@string/incall_vibration_category">
 
         <com.aosip.support.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
