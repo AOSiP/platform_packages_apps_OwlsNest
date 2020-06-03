@@ -129,6 +129,8 @@
     <string name="status_bar_battery_percentage_default">Rejtett (alapértelmezett)</string>
     <string name="status_bar_battery_percentage_text_inside">Az ikonon belül</string>
     <string name="status_bar_battery_percentage_text_next">Az ikon mellett</string>
+    <string name="qs_battery_percentage_title">QS battery percentage</string>
+    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Hálózati forgalom</string>
     <string name="network_traffic_location">Hálozati forgalom kijelző helye</string>

@@ -25,17 +25,17 @@
     <string name="owlsnest_settings_title">Категории</string>
     <!-- About AOSiP -->
     <string name="aosip_about_title">О AOSiP</string>
-    <string name="aosip_about_summary">A little info about the team</string>
+    <string name="aosip_about_summary">Небольшая информация о команде</string>
     <string name="aosip_telegram_title">AOSiP Telegram-сообщество</string>
     <string name="aosip_telegram_summary">Нажмите здесь, чтобы посетить наше замечательное сообщество!</string>
-    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
-    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_gerrit_title">AOSiP репозиторий</string>
+    <string name="aosip_gerrit_summary">Нажмите здесь, чтобы открыть репозиторий и увидеть последние изменения</string>
     <string name="aosip_github_title">AOSiP Github</string>
-    <string name="aosip_github_summary">Tap here to open our Github!</string>
+    <string name="aosip_github_summary">Нажмите здесь, чтобы открыть нашу страницу на GitHub!</string>
     <string name="aosip_about_info_summary">AOSiP расшифровывается как Android Open Source illusion Project. Мы создали прошивку на основе исходного кода AOSP, включив в нее самые интересные и полезные свойства и особенности со всего сообщества разработчиков системы Android. Качество и стабильность для нас превыше всего, так как наша основная задача - брать только лучшее из того, что может предложить экосистема Android.</string>
     <string name="aosip_about_team">Команда Illusion</string>
     <string name="about_maintainer">Сопровождающий</string>
-    <string name="aosip_about_maintainer">The maintainer for your device is</string>
+    <string name="aosip_about_maintainer">Ответственный за ваше устройство</string>
     <!-- General strings -->
     <string name="ok">ОК</string>
     <string name="reset">Сбросить</string>
@@ -129,6 +129,8 @@
     <string name="status_bar_battery_percentage_default">Скрытый (по умолчанию)</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    <string name="qs_battery_percentage_title">QS battery percentage</string>
+    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Сетевой траффик</string>
     <string name="network_traffic_location">Расположение индикатора трафика</string>
@@ -169,15 +171,15 @@
     <string name="show_media_heads_up_title">Отображать всплывающие уведомления</string>
     <string name="show_media_heads_up_summary">Показывать всплывающие уведомления при воспроизведении нового трека, если проигрыватель не открыт</string>
     <!-- Heads-up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_title">Таймер переноса</string>
+    <string name="heads_up_snooze_summary_one_minute">Свайп вверх по всплывающему уведомлению от этого приложения скроет его на одну минуту</string>
+    <string name="heads_up_snooze_summary">Свайп вверх по всплывающему уведомлению от этого приложения скроет его на <xliff:g id="number">%d</xliff:g> минут</string>
+    <string name="heads_up_snooze_disabled_summary">Таймер режима \"Не беспокоить\" отключен</string>
+    <string name="heads_up_snooze_1min">1 минута</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">Пульсировать при новых уведомлениях</string>
     <string name="pulse_ambient_light_summary">Пускать пульс света при новом уведомлении</string>

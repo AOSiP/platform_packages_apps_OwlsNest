@@ -129,6 +129,8 @@
     <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <string name="qs_battery_percentage_title">QS battery percentage</string>
+    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Network traffic</string>
     <string name="network_traffic_location">Indikator für Datentransfer</string>

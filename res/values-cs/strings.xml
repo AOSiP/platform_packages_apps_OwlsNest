@@ -129,6 +129,8 @@
     <string name="status_bar_battery_percentage_default">Skryté (výchozí)</string>
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
+    <string name="qs_battery_percentage_title">QS battery percentage</string>
+    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Síťový provoz</string>
     <string name="network_traffic_location">Umístění indikátoru síťového provozu</string>
@@ -169,15 +171,15 @@
     <string name="show_media_heads_up_title">Zobrazit plovoucí oznámení médií</string>
     <string name="show_media_heads_up_summary">Zobrazit plovoucí oznámení médií při přehrávání nové skladby, pokud již není přehrávač v popředí</string>
     <!-- Heads-up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_title">Časovač odložení</string>
+    <string name="heads_up_snooze_summary_one_minute">Přejetím prstem nahoru přes plovoucí oznámení dojde k odložení oznámení z příslušné aplikace po dobu 1 minuty</string>
+    <string name="heads_up_snooze_summary">Přejetím prstem nahoru přes plovoucí oznámení dojde k odložení oznámení z příslušné aplikace po dobu <xliff:g id="number">%d</xliff:g> minut</string>
+    <string name="heads_up_snooze_disabled_summary">Časovač odložení je zakázán</string>
+    <string name="heads_up_snooze_1min">1 minuta</string>
+    <string name="heads_up_snooze_5min">5 minut</string>
+    <string name="heads_up_snooze_10min">10 minut</string>
+    <string name="heads_up_snooze_15min">15 minut</string>
+    <string name="heads_up_snooze_20min">20 minut</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">Blikání při novém oznámení</string>
     <string name="pulse_ambient_light_summary">Zobrazit blikání kontrolky po příchodu nového oznámení</string>

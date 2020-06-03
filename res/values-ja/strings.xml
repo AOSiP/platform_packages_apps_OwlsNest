@@ -129,6 +129,8 @@
     <string name="status_bar_battery_percentage_default">非表示 (既定)</string>
     <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
+    <string name="qs_battery_percentage_title">QS battery percentage</string>
+    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">通信速度</string>
     <string name="network_traffic_location">電波アイコンの置き換え</string>
@@ -169,15 +171,15 @@
     <string name="show_media_heads_up_title">メディアの Heads Up を表示</string>
     <string name="show_media_heads_up_summary">プレイヤーが前面に準備できていない場合は、新しい曲を再生時にメディアの Heads Up を表示する。</string>
     <!-- Heads-up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_title">スヌーズタイマー</string>
+    <string name="heads_up_snooze_summary_one_minute">表示された通知を上にスワイプするとこのアプリからの通知を1分間無効にします</string>
+    <string name="heads_up_snooze_summary">表示された通知を上にスワイプするとこのアプリからの通知を<xliff:g id="number">%d</xliff:g>分間無効にします</string>
+    <string name="heads_up_snooze_disabled_summary">スヌーズタイマーは無効です</string>
+    <string name="heads_up_snooze_1min">1分</string>
+    <string name="heads_up_snooze_5min">5分</string>
+    <string name="heads_up_snooze_10min">10分</string>
+    <string name="heads_up_snooze_15min">15分</string>
+    <string name="heads_up_snooze_20min">20分</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">新しい通知で点滅</string>
     <string name="pulse_ambient_light_summary">新しい通知でライトを点滅させる</string>
