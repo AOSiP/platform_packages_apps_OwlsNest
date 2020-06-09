@@ -25,6 +25,13 @@
         android:title="@string/navigation_bar_title"
         android:summary="@string/navigation_bar_summary" />
 
+    <Preference
+        android:key="pulse"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:dependency="force_show_navbar"
+        android:fragment="com.aosip.owlsnest.navigation.PulseSettings" />
+
    <com.aosip.support.preference.SecureSettingSwitchPreference
         android:key="hardware_keys_enable"
         android:title="@string/hardware_keys_disable_title"
