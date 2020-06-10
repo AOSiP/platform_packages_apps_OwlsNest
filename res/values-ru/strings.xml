@@ -30,7 +30,7 @@
     <string name="aosip_telegram_summary">Нажмите здесь, чтобы посетить наше замечательное сообщество!</string>
     <string name="aosip_gerrit_title">AOSiP репозиторий</string>
     <string name="aosip_gerrit_summary">Нажмите здесь, чтобы открыть репозиторий и увидеть последние изменения</string>
-    <string name="aosip_github_title">AOSiP Github</string>
+    <string name="aosip_github_title">Гитхаб говна мочи поноса</string>
     <string name="aosip_github_summary">Нажмите здесь, чтобы открыть нашу страницу на GitHub!</string>
     <string name="aosip_about_info_summary">AOSiP расшифровывается как Android Open Source illusion Project. Мы создали прошивку на основе исходного кода AOSP, включив в нее самые интересные и полезные свойства и особенности со всего сообщества разработчиков системы Android. Качество и стабильность для нас превыше всего, так как наша основная задача - брать только лучшее из того, что может предложить экосистема Android.</string>
     <string name="aosip_about_team">Команда Illusion</string>
@@ -129,8 +129,8 @@
     <string name="status_bar_battery_percentage_default">Скрытый (по умолчанию)</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
-    <string name="qs_battery_percentage_title">QS battery percentage</string>
-    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
+    <string name="qs_battery_percentage_title">Процент заряда в быстрых настройках</string>
+    <string name="qs_battery_percentage_summary">Показывать процент батареи в шторке быстрых настроек вместо рассчётного времени работы</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Сетевой траффик</string>
     <string name="network_traffic_location">Расположение индикатора трафика</string>
@@ -364,6 +364,9 @@
     <string name="lockscreen_cover_filter_blur">Размытие</string>
     <string name="lockscreen_cover_filter_grayblur">Оттенки серого и размытие</string>
     <string name="lockscreen_cover_filter_gradientblur">Градиентное размытие</string>
+    <!-- Show statusbar on lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Statusbar</string>
+    <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Анимация зарядки</string>
     <string name="charging_animation_summary">Показывать анимацию при подключении зарядного устройства</string>

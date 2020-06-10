@@ -32,10 +32,10 @@
     <string name="aosip_gerrit_summary">点击此处以打开 Gerrit 并查看最新的 commits</string>
     <string name="aosip_github_title">AOSiP Github</string>
     <string name="aosip_github_summary">点击此处打开我们的 GitHub</string>
-    <string name="aosip_about_info_summary">AOSiP 代表 Android Open Source illusion Project. 我们是一个基于 AOSP 的第三方 ROM，混合了其他开发社区的许多最新功能。高质量和稳定性是我们的首先考虑的，因为我们致力于为您提供我们所能提供的最佳 Android 体验。</string>
+    <string name="aosip_about_info_summary">AOSiP 代表 Android Open Source illusion Project. 我们是一个基于 AOSP 的第三方 ROM，混合了其他开发社区的许多最新功能。高质量和稳定性是我们的首要考虑，因为我们致力于为您提供我们所能提供的最佳 Android 体验。</string>
     <string name="aosip_about_team">Illusion 团队</string>
     <string name="about_maintainer">维护者</string>
-    <string name="aosip_about_maintainer">您的设备维护着是</string>
+    <string name="aosip_about_maintainer">您的设备维护者是</string>
     <!-- General strings -->
     <string name="ok">确定</string>
     <string name="reset">重置</string>
@@ -129,8 +129,8 @@
     <string name="status_bar_battery_percentage_default">隐藏 (默认)</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
-    <string name="qs_battery_percentage_title">QS battery percentage</string>
-    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
+    <string name="qs_battery_percentage_title">快速设置面板电池百分比</string>
+    <string name="qs_battery_percentage_summary">在快速设置面板顶部显示电池百分比而不是电池寿命估值</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">网络流量</string>
     <string name="network_traffic_location">流量指示器位置</string>
@@ -364,6 +364,9 @@
     <string name="lockscreen_cover_filter_blur">模糊</string>
     <string name="lockscreen_cover_filter_grayblur">灰度和模糊</string>
     <string name="lockscreen_cover_filter_gradientblur">渐变模糊</string>
+    <!-- Show statusbar on lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Statusbar</string>
+    <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">充电动画</string>
     <string name="charging_animation_summary">插入充电器时显示充电动画</string>

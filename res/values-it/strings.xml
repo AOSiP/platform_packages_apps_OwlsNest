@@ -129,8 +129,8 @@
     <string name="status_bar_battery_percentage_default">Nascosta (predefinito)</string>
     <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
     <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
-    <string name="qs_battery_percentage_title">QS battery percentage</string>
-    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
+    <string name="qs_battery_percentage_title">Percentuale batteria in Quick Settings</string>
+    <string name="qs_battery_percentage_summary">Visualizza la percentuale della batteria invece dell\'autonomia stimata nel pannello dei Quick Settings</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Traffico di rete</string>
     <string name="network_traffic_location">Posizione dell\'indicatore di traffico</string>
@@ -364,6 +364,9 @@
     <string name="lockscreen_cover_filter_blur">Sfocatura</string>
     <string name="lockscreen_cover_filter_grayblur">Scala di grigi e sfocatura</string>
     <string name="lockscreen_cover_filter_gradientblur">Sfocatura sfumata</string>
+    <!-- Show statusbar on lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Statusbar</string>
+    <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Animazione di ricarica</string>
     <string name="charging_animation_summary">Visualizza un\'animazione quando il dispositivo viene collegato alla carica</string>

@@ -129,8 +129,8 @@
     <string name="status_bar_battery_percentage_default">Skryté (výchozí)</string>
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
-    <string name="qs_battery_percentage_title">QS battery percentage</string>
-    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
+    <string name="qs_battery_percentage_title">Procenta baterie v QS</string>
+    <string name="qs_battery_percentage_summary">Zobrazit procenta baterie v záhlaví QS namísto odhadu baterie</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Síťový provoz</string>
     <string name="network_traffic_location">Umístění indikátoru síťového provozu</string>
@@ -364,6 +364,9 @@
     <string name="lockscreen_cover_filter_blur">Rozostřený</string>
     <string name="lockscreen_cover_filter_grayblur">Odstíny šedi a rozostření</string>
     <string name="lockscreen_cover_filter_gradientblur">Stupňující rozostření</string>
+    <!-- Show statusbar on lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Statusbar</string>
+    <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Animace nabíjení</string>
     <string name="charging_animation_summary">Zobrazí animaci při připojení zařízení ke zdroji nabíjení</string>
