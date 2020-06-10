@@ -474,4 +474,15 @@
         <item>4</item>
     </string-array>
 
+   <!-- QS Battery Location -->
+    <string-array name="qs_battery_header_entries" translatable="false">
+        <item>@string/qs_battery_on_signal</item>
+        <item>@string/qs_battery_on_header</item>
+    </string-array>
+
+    <string-array name="qs_battery_header_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
 </resources>
