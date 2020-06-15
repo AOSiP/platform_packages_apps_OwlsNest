@@ -33,6 +33,12 @@
         android:entryValues="@array/quick_pulldown_values"
         android:defaultValue="0" />
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="qs_blur_enabled"
+        android:title="@string/qs_blur_title"
+        android:summary="@string/qs_blur_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="string/qs_brightness_category"
         android:title="@string/qs_brightness_category_title">
