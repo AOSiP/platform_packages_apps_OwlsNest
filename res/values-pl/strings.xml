@@ -225,6 +225,45 @@
     <string name="brightness_slider_title">Suwak jasności</string>
     <string name="tiles_title">Kafelki szybkich ustawień</string>
     <string name="qs_tile_footer">Żeby zmienić ilość kolumn i rzędów w szybkich ustawieniach, użyj menu w szybkich ustawieniach po ich rozwinięciu</string>
+    <!-- QS layout -->
+    <string name="qs_layout_title">Layout</string>
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
+    <string name="quick_pulldown_none">Disabled</string>
+    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
+    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Animations</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Duration</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
+    <string name="qs_tile_animation_style_off">None</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">Default</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- QS visibility -->
+    <string name="qs_tile_title_visibility_title">Title visibility</string>
+    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+    <!-- QS Blur -->
+    <string name="qs_blur_title">QS Blur</string>
+    <string name="qs_blur_summary">Blur the section of the QS panel behind the notifications</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_category_title">Brightness slider options</string>
     <string name="qs_show_brightness_title">Suwak jasności</string>
@@ -242,18 +281,43 @@
     <!--Owlsnest navigation-->
     <string name="navigation_category">Nawigacja</string>
     <string name="navigation_summary">Dostosuj styl nawigacji i zachowanie</string>
-    <string name="navigation_tuner_title">Navigation Tuner</string>
+    <string name="navigation_bar_layout_title">Layout</string>
+    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
     <string name="navigation_bar_menu_arrow_keys_title">Arrow keys while typing</string>
     <string name="navigation_bar_menu_arrow_keys_summary">Display left and right cursor buttons while typing</string>
-    <!-- Button brightness -->
-    <string name="button_backlight_options_category">Opcje podświetlenia</string>
-    <string name="button_backlight_enable_title">Zezwól na podświetlanie przycisków</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="navbar_gesture_mode_category_title">Gesture mode tweaks</string>
+    <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
+    <string name="navbar_gesture_pill_toggle_title">Full screen gestures</string>
+    <string name="navbar_gesture_pill_toggle_summary">This will hide both the navigation bar and the pill for a seamless fullscreen gesture experience.</string>
+    <string name="navbar_gesture_pill_toggle_summary_disabled">This option is only available for gesture navigation!</string>
+    <!-- Navigation -->
+    <string name="navigation_bar_title">On-screen navigation bar</string>
+    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
+    <string name="hw_keys_swap_title">Swap hardware buttons</string>
+    <string name="hw_keys_swap_summary">Swap the order of recents and back buttons</string>
+    <string name="home_key_title">Home button</string>
+    <string name="back_key_title">Back button</string>
+    <string name="menu_key_title">Menu button</string>
+    <string name="assist_key_title">Assist button</string>
+    <string name="app_switch_key_title">Recents button</string>
+    <string name="camera_key_title">Camera button</string>
+    <string name="short_press_title">Short press action</string>
+    <string name="long_press_title">Long press action</string>
+    <string name="double_tap_title">Double tap action</string>
+    <string name="app_picker_dialog_title">Select an app</string>
+    <string name="long_press_custom_app_title">Long press custom app</string>
+    <string name="double_tap_custom_app_title">Double tap custom app</string>
+    <!-- Button backlight -->
+    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
+    <string name="button_backlight_on_touch_only_title">Button touch</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
+    <string name="button_timeout_title">Backlight timeout (seconds)</string>
     <string name="button_link_brightness">Ustaw według jasności ekranu</string>
-    <string name="button_link_brightness_summary">Jasność podświetlenia przycisków dostosuje się w zależności od poziomu jasności ekranu</string>
+    <string name="button_link_brightness_summary">Use screen brightness level</string>
     <string name="button_manual_brightness">Poziom jasności</string>
-    <string name="button_timeout_title">Czas podświetlania</string>
-    <string name="button_backlight_on_touch_only_title">Podświetlenie przycisków podczas dotyku</string>
-    <string name="button_backlight_on_touch_only_summary">Podświetlenie przycisków włączy się tylko gdy przyciski są używane, zamiast świecić się cały czas. Czas podświetlenia ma wpływ na tę funkcję.</string>
+    <string name="button_backlight_enable_title">Allow backlight</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Przyciski sprzętowe</string>
     <string name="buttons_summary">Konfiguruj ustawienia przycisków sprzętowych</string>
@@ -294,21 +358,27 @@
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nIf you want to choose a specific app activity for the action, long press on any app in the app picker.</string>
     <!-- Custom actions -->
     <string name="action_nothing">No action</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Recents</string>
     <string name="action_search">Assistant</string>
     <string name="action_voice_search">Voice search</string>
     <string name="action_launch_camera">Camera</string>
+    <string name="action_last_app">Last app</string>
+    <string name="action_splitscreen">Split screen</string>
     <string name="action_flashlight">Flashlight</string>
+    <string name="action_clear_notifications">Clear notifications</string>
     <string name="action_volume_panel">Volume panel</string>
     <string name="action_screen_off">Screen off</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_power_menu">Power menu</string>
     <string name="action_screenshot">Screenshot</string>
+    <string name="action_qs_panel">QS panel</string>
     <string name="action_app_action">Application</string>
     <string name="action_ringer_modes">Ringer modes</string>
     <string name="kill_app">Kill foreground app</string>
     <string name="skip_song">Skip song</string>
     <string name="prev_song">Previous song</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_notifications">Notifications</string>
+    <!-- Active edge -->
     <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
     <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
     <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
@@ -416,4 +486,22 @@
     <string name="aspect_ratio_category_title">Legacy app scaling</string>
     <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
     <string name="action_save">Save</string>
+    <!-- Long swipe gestures -->
+    <string name="left_swipe_key_title">Left swipe</string>
+    <string name="right_swipe_key_title">Right swipe</string>
+    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
+    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
+    <string name="left_swipe_actions_title">Long left swipe action</string>
+    <string name="left_swipe_app_action_title">Select long left swipe app</string>
+    <string name="right_swipe_actions_title">Long right swipe action</string>
+    <string name="right_swipe_app_action_title">Select long right swipe app</string>
+    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+    <string name="back_swipe_extended_title">Extended swipe action</string>
+    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+    <!-- Gesture navbar handle -->
+    <string name="gesture_navbar_handle_title">Gesture bar size</string>
+    <string name="gesture_navbar_handle_default">Default</string>
+    <string name="gesture_navbar_handle_middle">Middle</string>
+    <string name="gesture_navbar_handle_large">Large</string>
 </resources>

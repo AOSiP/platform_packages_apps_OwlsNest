@@ -24,18 +24,18 @@
     <string name="aosip_title">AOSiP Ayarları</string>
     <string name="owlsnest_settings_title">Kategoriler</string>
     <!-- About AOSiP -->
-    <string name="aosip_about_title">About AOSiP</string>
-    <string name="aosip_about_summary">A little info about the team</string>
-    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
-    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_about_title">AOSiP Hakkında</string>
+    <string name="aosip_about_summary">Takım hakkında biraz bilgi</string>
+    <string name="aosip_telegram_title">AOSiP Telegram Topluluğu</string>
+    <string name="aosip_telegram_summary">Harika topluluğumuzu açmak için buraya dokunun!</string>
     <string name="aosip_gerrit_title">AOSiP Gerrit</string>
-    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_gerrit_summary">Gerrit\'i açmak ve en son taahhütleri görmek için buraya dokunun</string>
     <string name="aosip_github_title">AOSiP Github</string>
-    <string name="aosip_github_summary">Tap here to open our Github!</string>
-    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
-    <string name="aosip_about_team">Team Illusion</string>
-    <string name="about_maintainer">Maintainer</string>
-    <string name="aosip_about_maintainer">The maintainer for your device is</string>
+    <string name="aosip_github_summary">Github\'ımızı açmak için buraya dokunun!</string>
+    <string name="aosip_about_info_summary">AOSiP, Android Open Source illusion Project anlamına gelir. Biz, Android geliştirme topluluğunun her yerinden en son özelliklere sahip olan AOSP tabanlı bir özel ROM\'uz. Size Android\'in sunabileceği en iyi hizmeti sunmaya adadığımız için kalite ve istikrar ilk önceliğimizdir.</string>
+    <string name="aosip_about_team">İllüzyon Takımı</string>
+    <string name="about_maintainer">Sorumlu</string>
+    <string name="aosip_about_maintainer">Cihanızın bakım sorumlusu</string>
     <!-- General strings -->
     <string name="ok">Tamam</string>
     <string name="reset">Sıfırla</string>
@@ -67,11 +67,11 @@
     <string name="volte_icon_title">VoLTE simgesi</string>
     <string name="volte_icon_summary">VoLTE simgesini görüntüle</string>
     <string name="volte_icon_style_title">VoLTE simgesini seçin</string>
-    <string name="volte_icon_vo">Vo Only Icon</string>
+    <string name="volte_icon_vo">Yalnızca Vo Simgesi</string>
     <string name="volte_icon_volte">VoLTE simgesi</string>
-    <string name="volte_icon_oos">VoLTE OOS Icon</string>
+    <string name="volte_icon_oos">OOS VoLTE Simgesi</string>
     <string name="volte_icon_hd">HD simgesi</string>
-    <string name="volte_icon_volit">VoLIT Icon</string>
+    <string name="volte_icon_volit">VoLIT Simgesi</string>
     <!-- Status bar clock and date options -->
     <string name="status_bar_style_title">Stil</string>
     <string name="status_bar_clock">Saat ve tarih</string>
@@ -110,92 +110,92 @@
     <string name="clock_position_center">Saat ortada</string>
     <string name="clock_position_left">Saat solda</string>
     <!-- Status bar - icons -->
-    <string name="status_bar_icons_title">Status bar icons</string>
-    <string name="status_bar_system_icons_title">System icons</string>
-    <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
+    <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
+    <string name="status_bar_system_icons_title">Sistem simgeleri</string>
+    <string name="status_bar_system_icons_summary">Hangi durum çubuğu simgelerinin gösterildiğini kontrol edin</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
-    <string name="battery_percent_title">Battery percent</string>
+    <string name="battery_style_category_title">Pil</string>
+    <string name="battery_percent_title">Pil yüzdesi</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Pil stili</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">Dikey simge (varsayılan)</string>
+    <string name="status_bar_battery_style_circle">Daire</string>
+    <string name="status_bar_battery_style_dotted_circle">Yuvarlak (Nokta)</string>
+    <string name="status_bar_battery_style_filled_circle">Yuvarlak (Dolu)</string>
     <string name="status_bar_battery_style_text">Metin</string>
     <string name="status_bar_battery_style_hidden">Gizli</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
-    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_default">Gizle (varsayılan)</string>
     <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
     <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
-    <string name="qs_battery_percentage_title">QS battery percentage</string>
-    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
+    <string name="qs_battery_percentage_title">QS pil yüzdesi</string>
+    <string name="qs_battery_percentage_summary">Pil tahmini yerine QS başlığında pil yüzdesini göster</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Network traffic</string>
-    <string name="network_traffic_location">Traffic indicator placement</string>
-    <string name="traffic_disabled">Disabled</string>
-    <string name="traffic_statusbar">Statusbar</string>
-    <string name="traffic_expanded_statusbar">Expanded header</string>
+    <string name="network_traffic_state_title">Ağ trafiği</string>
+    <string name="network_traffic_location">Trafik göstergesi yerleşimi</string>
+    <string name="traffic_disabled">Devre dışı</string>
+    <string name="traffic_statusbar">Durum çubuğu</string>
+    <string name="traffic_expanded_statusbar">Genişletilmiş başlık</string>
     <string name="network_traffic_autohide_threshold_title">Ağ etkinliği otomatik gizlenme eşiği (KB/s)</string>
-    <string name="network_traffic_arrow">Show arrows</string>
-    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
-    <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
-    <string name="show_network_traffic_dynamic">Dynamic</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Both</string>
-    <string name="nettraf_font_size">Single net font size (dp)</string>
+    <string name="network_traffic_arrow">Okları göster</string>
+    <string name="network_traffic_arrow_summary">Ağ trafiği göstergesi oklarını göster</string>
+    <string name="network_traffic_type">İnternet etkinlik türünü seç</string>
+    <string name="show_network_traffic_combined">Birlikte (Yükleme + İndirme)</string>
+    <string name="show_network_traffic_dynamic">Dinamik</string>
+    <string name="show_network_traffic_up">Yükle</string>
+    <string name="show_network_traffic_down">İndir</string>
+    <string name="show_network_traffic_all">Her ikisi de</string>
+    <string name="nettraf_font_size">Tek net yazı tipi boyutu (dp)</string>
     <!-- Kronic logo -->
     <string name="kronic_logo_title">Kronik Logo</string>
     <string name="kronic_logo_summary">Herkes ekranınızı gördüğünde AOSİP kullandığınızı bilmesini sağlayın</string>
     <string name="status_bar_logo_style_title">Özel logo stili</string>
     <!-- Carrier Label -->
-    <string name="status_carrier_title">Carrier Label</string>
-    <string name="carrier_options">Select display locations</string>
+    <string name="status_carrier_title">Operatör etiketi</string>
+    <string name="carrier_options">Ekran konumu seçin</string>
     <string name="custom_carrier_label_title">Özel operatör etiketi</string>
-    <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
+    <string name="custom_carrier_label_explain">Özel bir etiket girin. Ağ adınızı kullanmak için boş bırakın</string>
     <string name="custom_carrier_label_notset">Özel etiket ayarlanmadı</string>
     <string name="show_carrier_title">Operatör etiketi</string>
     <string name="show_carrier_disabled">Devre dışı</string>
-    <string name="show_carrier_keyguard">Lockscreen</string>
-    <string name="show_carrier_statusbar">Status bar</string>
-    <string name="show_carrier_enabled">Both</string>
+    <string name="show_carrier_keyguard">Kilit ekranı</string>
+    <string name="show_carrier_statusbar">Durum çubuğu</string>
+    <string name="show_carrier_enabled">Her ikisi de</string>
     <!--Owlsnest Notification-->
     <string name="notification_title">Bildirimler</string>
     <string name="notification_summary">LED\'leri ve bildirim davranışını ayarlayın</string>
     <string name="notification_category">Bildirimler</string>
     <string name="headsup_category">Bildirim pencereleri</string>
     <!-- Media heads-up ticker -->
-    <string name="show_media_heads_up_title">Show media heads up</string>
-    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
+    <string name="show_media_heads_up_title">Medyayı bildirim penceresi olarak göster</string>
+    <string name="show_media_heads_up_summary">Müzik çalar ön planda değilse, yeni bir parça çalınırken medyayı bildirim penceresi ile göster</string>
     <!-- Heads-up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_title">Erteleme zamanlayıcı</string>
+    <string name="heads_up_snooze_summary_one_minute">Bildirim pencerelerini yukarı kaydırarak 1 dakika boyunca uygulamalardan gelecek olan bildirimler ertelenir</string>
+    <string name="heads_up_snooze_summary">Bildirim pencereleri kaydırılarak <xliff:g id="number">%d</xliff:g> dakika boyunca uygulamalardan gelecek olan bildirimler ertelenir</string>
+    <string name="heads_up_snooze_disabled_summary">Erteleme zamanlayıcısı devre dışı</string>
+    <string name="heads_up_snooze_1min">1 dakika</string>
+    <string name="heads_up_snooze_5min">5 dakika</string>
+    <string name="heads_up_snooze_10min">10 dakika</string>
+    <string name="heads_up_snooze_15min">15 dakika</string>
+    <string name="heads_up_snooze_20min">20 dakika</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulse on new notification</string>
-    <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
-    <string name="ambient_notification_light_enabled_title">Pulse on always on</string>
-    <string name="ambient_notification_light_enabled_summary">Show light pulse on new notification using always on</string>
-    <string name="pulse_ambient_light_note">Wake screen on receiving new notifications must be turned on</string>
-    <string name="ambient_brigthness_category_title">Screen brightness</string>
-    <string name="pulse_ambient_category_title">Notification light pulse</string>
-    <string name="ambient_notification_light_hide_aod_title">Only show light pulse</string>
-    <string name="ambient_notification_light_hide_aod_summary">Hide all other display elements from always on</string>
-    <string name="ambient_notification_light_accent_title">Use system accent color</string>
-    <string name="ambient_notification_light_accent_summary">Use current system accent color for light pulse</string>
+    <string name="pulse_ambient_light_title">Yeni bildirimlerde kenar aydınlatmaları</string>
+    <string name="pulse_ambient_light_summary">Bildirim geldiğinde ortam ekranın yan kenarlarını aydınlat</string>
+    <string name="ambient_notification_light_enabled_title">Kenar aydınlatmaları her zaman açık</string>
+    <string name="ambient_notification_light_enabled_summary">Her zaman açık özelliğini kullanarak yeni bildirimlerde kenar aydınlatmalarını göster</string>
+    <string name="pulse_ambient_light_note">Yeni bildirimler alınırken uyandırma ekranı açılmalı</string>
+    <string name="ambient_brigthness_category_title">Ekran parlaklığı</string>
+    <string name="pulse_ambient_category_title">Kenar aydınlatmaları</string>
+    <string name="ambient_notification_light_hide_aod_title">Sadece kenar aydınlatmalarını göster</string>
+    <string name="ambient_notification_light_hide_aod_summary">Diğer tüm görüntüleme öğelerini her zaman açıktan çıkar</string>
+    <string name="ambient_notification_light_accent_title">Sistem vurgu rengini kullan</string>
+    <string name="ambient_notification_light_accent_summary">Kenar aydınlatmaları için geçerli sistem vurgu rengini kullan</string>
     <string name="ambient_notification_light_color_title">Özel renk</string>
-    <string name="ambient_notification_light_color_summary">Default color for light pulse</string>
-    <string name="ambient_notification_light_timeout_title">Timeout for light pulse</string>
-    <string name="ambient_notification_light_color_mode_title">Light pulse color</string>
+    <string name="ambient_notification_light_color_summary">Kenar aydınlatmaları için varsayılan renk</string>
+    <string name="ambient_notification_light_timeout_title">Kenar aydınlatmaları için zaman aşımı</string>
+    <string name="ambient_notification_light_color_mode_title">Kenar aydınlatmaları rengi</string>
     <string name="ambient_notification_light_color_mode_automatic">Bildirim rengi</string>
     <string name="ambient_notification_light_color_mode_accent">Sistem vurgu rengi</string>
     <string name="ambient_notification_light_color_mode_custom">Özel renk</string>
@@ -225,14 +225,53 @@
     <string name="brightness_slider_title">Parlaklık kaydırıcı</string>
     <string name="tiles_title">Hızlı ayarlar kareleri</string>
     <string name="qs_tile_footer">Hızlı ayarlar paneli satır ve sütun sayısını ve daha fazlasını değiştirmek için, Hızlı ayarlar panelin de açılan menüsündeki hızlı ayarlar paneli düzenleme bölümünün altındaki 3-nokta menü tuşunu kullanın.</string>
+    <!-- QS layout -->
+    <string name="qs_layout_title">Layout</string>
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
+    <string name="quick_pulldown_none">Disabled</string>
+    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
+    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Animations</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Duration</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
+    <string name="qs_tile_animation_style_off">None</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Low</string>
+    <string name="qs_tile_animation_duration_default">Default</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- QS visibility -->
+    <string name="qs_tile_title_visibility_title">Title visibility</string>
+    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+    <!-- QS Blur -->
+    <string name="qs_blur_title">QS Blur</string>
+    <string name="qs_blur_summary">Blur the section of the QS panel behind the notifications</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_category_title">Parlaklık kaydırıcısı seçenekleri</string>
     <string name="qs_show_brightness_title">Parlaklık kaydırıcısı</string>
     <string name="qs_show_brightness_summary">Hızlı ayarlar panelinde bir parlaklık kaydırma çubuğu göster</string>
     <string name="qs_brightness_position_bottom_title">Alt parlaklık kaydırıcısı</string>
     <string name="qs_brightness_position_bottom_summary">Hızlı ayarlar alt panelinde parlaklık kaydırıcısını göster</string>
-    <string name="qs_long_press_action_title">Long-press Action</string>
-    <string name="qs_long_press_action_summary">Use the old style full page settings on long press</string>
+    <string name="qs_long_press_action_title">Uzun basma eylemi</string>
+    <string name="qs_long_press_action_summary">Uzun basışta eski stil tam sayfa ayarlarını kullanın</string>
     <!-- Brightness icon-->
     <string name="brightness_icon_title">Parlaklık simgesi</string>
     <string name="brightness_icon_summary">Otomatik parlaklığı ayarlamak için parlaklık kaydırıcısının sağında simge göster</string>
@@ -242,18 +281,43 @@
     <!--Owlsnest navigation-->
     <string name="navigation_category">Gezinme çubuğu</string>
     <string name="navigation_summary">Gezinme çubuğu stilini ve davranışını özelleştirin</string>
-    <string name="navigation_tuner_title">Gezinme çubuğu</string>
+    <string name="navigation_bar_layout_title">Layout</string>
+    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
     <string name="navigation_bar_menu_arrow_keys_title">Yazarken ok tuşları</string>
     <string name="navigation_bar_menu_arrow_keys_summary">Yazı yazarken sol ve sağ imleç tuşlarını gösterir</string>
-    <!-- Button brightness -->
-    <string name="button_backlight_options_category">Aydınlatma ışığı seçenekleri</string>
-    <string name="button_backlight_enable_title">Tuş aydınlatmasına izin ver</string>
+    <!-- NavigationBar Gestural Mode Tweaks -->
+    <string name="navbar_gesture_mode_category_title">Gesture mode tweaks</string>
+    <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
+    <string name="navbar_gesture_pill_toggle_title">Full screen gestures</string>
+    <string name="navbar_gesture_pill_toggle_summary">This will hide both the navigation bar and the pill for a seamless fullscreen gesture experience.</string>
+    <string name="navbar_gesture_pill_toggle_summary_disabled">This option is only available for gesture navigation!</string>
+    <!-- Navigation -->
+    <string name="navigation_bar_title">On-screen navigation bar</string>
+    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
+    <string name="hw_keys_swap_title">Swap hardware buttons</string>
+    <string name="hw_keys_swap_summary">Swap the order of recents and back buttons</string>
+    <string name="home_key_title">Home button</string>
+    <string name="back_key_title">Back button</string>
+    <string name="menu_key_title">Menu button</string>
+    <string name="assist_key_title">Assist button</string>
+    <string name="app_switch_key_title">Recents button</string>
+    <string name="camera_key_title">Camera button</string>
+    <string name="short_press_title">Short press action</string>
+    <string name="long_press_title">Long press action</string>
+    <string name="double_tap_title">Double tap action</string>
+    <string name="app_picker_dialog_title">Select an app</string>
+    <string name="long_press_custom_app_title">Long press custom app</string>
+    <string name="double_tap_custom_app_title">Double tap custom app</string>
+    <!-- Button backlight -->
+    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
+    <string name="button_backlight_on_touch_only_title">Button touch</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
+    <string name="button_timeout_title">Backlight timeout (seconds)</string>
     <string name="button_link_brightness">Ekran parlaklığına bağla</string>
-    <string name="button_link_brightness_summary">Tuş arka aydınlatma parlaklığını ekran parlaklığı seviyesine göre ayarlar</string>
+    <string name="button_link_brightness_summary">Use screen brightness level</string>
     <string name="button_manual_brightness">Parlaklık seviyesi</string>
-    <string name="button_timeout_title">Aydınlatma ışığı zaman aşımı</string>
-    <string name="button_backlight_on_touch_only_title">Tuşa dokunulduğunda aydınlat</string>
-    <string name="button_backlight_on_touch_only_summary">Tuş aydınlatma ışığı sadece tuşlara basıldığında değil her zaman görünür. Zaman aşımı yine de bu özelliği etkiler.</string>
+    <string name="button_backlight_enable_title">Allow backlight</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Donanım Tuşları</string>
     <string name="buttons_summary">Cihazınızın fiziksel tuş hareketlerini yapılandırma</string>
@@ -278,7 +342,7 @@
     <string name="gesture_category">Hareketler</string>
     <string name="gesture_summary">Harekete dayalı seçenekler ve eylemler</string>
     <string name="pixel_gesture_title">Pixel Hareketleri</string>
-    <string name="pixel_gesture_summary">Features specific to Pixel like Active Edge</string>
+    <string name="pixel_gesture_summary">Active Edge gibi Pixel\'e özgü özellikler</string>
     <string name="double_tap_options">Çift dokunuşla uyutma</string>
     <string name="aosp_gesture_title">AOSP Hareketleri</string>
     <string name="aware_settings_title">Hareket Algılama</string>
@@ -294,60 +358,66 @@
     <string name="active_edge_footer_info">Aktif Kenar içindeki tüm sıkıştırma eylemleri ekranı etkinleştirme özelliğine sahip değildir.\n\nEylem için belirli bir uygulama etkinliği seçmek istiyorsanız, uygulama seçicideki herhangi bir uygulamaya uzun basın.</string>
     <!-- Custom actions -->
     <string name="action_nothing">Eylem yok</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Recents</string>
     <string name="action_search">Asistan</string>
     <string name="action_voice_search">Sesli arama</string>
     <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Last app</string>
+    <string name="action_splitscreen">Split screen</string>
     <string name="action_flashlight">El feneri</string>
+    <string name="action_clear_notifications">Bildirimleri temizle</string>
     <string name="action_volume_panel">Ses paneli</string>
     <string name="action_screen_off">Ekranı kapat</string>
+    <string name="action_notifications">Bildirimler</string>
+    <string name="action_power_menu">Power menu</string>
     <string name="action_screenshot">Ekran görüntüsü</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
-    <string name="kill_app">Kill foreground app</string>
-    <string name="skip_song">Skip song</string>
-    <string name="prev_song">Previous song</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_notifications">Notifications</string>
-    <string name="active_edge_ss_app_select_title">Select short squeeze app</string>
-    <string name="active_edge_ls_app_select_title">Select long squeeze app</string>
-    <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
+    <string name="action_qs_panel">Hızlı ayarlar paneli</string>
+    <string name="action_app_action">Uygulama</string>
+    <string name="action_ringer_modes">Zil modu</string>
+    <string name="kill_app">Ön plan uygulamasını sonlandır</string>
+    <string name="skip_song">Şarkıyı atla</string>
+    <string name="prev_song">Önceki şarkı</string>
+    <!-- Active edge -->
+    <string name="active_edge_ss_app_select_title">Kısa sıkıştırma uygulaması seçin</string>
+    <string name="active_edge_ls_app_select_title">Uzun sıkma uygulamasını seçin</string>
+    <string name="active_edge_app_select_summary">Sıkma eylemiyle başlatmak için bir uygulama seçin</string>
     <!-- Motion Sense -->
-    <string name="ambient_display_wake_screen_summary">To check time, notifications, and other info, reach for your phone</string>
-    <string name="ambient_display_wake_screen_summary_on">On</string>
-    <string name="aware_category_display">Ambient Display</string>
-    <string name="aware_category_gesture">Quick Gestures</string>
-    <string name="aware_disabled_preference_action">Motion Sense Settings</string>
-    <string name="aware_disabled_preference_dialog_content">To use this feature, turn on Motion Sense</string>
-    <string name="aware_disabled_preference_dialog_title">This feature is turned off</string>
-    <string name="aware_disabled_preference_neutral">Not now</string>
-    <string name="aware_display_settings_title">Idle lock screen</string>
-    <string name="aware_settings_description">With new sensors, Pixel can recognize distance and movement around the phone</string>
-    <string name="aware_settings_disabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are not supported in this country</string>
-    <string name="aware_settings_disabled_info_dialog_title">Motion Sense is off</string>
-    <string name="aware_settings_enabled_info_dialog_content">Motion Sense features like Quick Gestures, show display when nearby, and reach to check phone are supported in this country</string>
-    <string name="aware_settings_enabled_info_dialog_title">Motion Sense is on</string>
-    <string name="aware_wake_display_summary">Show time, notification icons, and other info when you’re nearby</string>
-    <string name="aware_wake_display_summary_aod_off">Unavailable because always-on display is off</string>
-    <string name="aware_wake_display_title">Show display when nearby</string>
-    <string name="dialog_aware_settings_message">If you turn off Motion Sense, you can’t use Quick Gestures, show display when nearby, and reach to check phone</string>
-    <string name="dialog_aware_settings_title">Turn off Motion Sense?</string>
-    <string name="gesture_aware_confirmation_action_button">Got it</string>
-    <string name="gesture_aware_disabled_info_dialog_content">Quick Gestures and other Motion Sense features are not supported in this country.</string>
-    <string name="gesture_aware_off_dialog_content">To use Quick Gestures, turn on Motion Sense.</string>
-    <string name="gesture_aware_off_dialog_title">Quick Gestures are off</string>
-    <string name="gesture_silence_on_summary">On / Snooze alarms and silence calls</string>
-    <string name="gesture_silence_summary">Snooze alarms and silence calls</string>
-    <string name="gesture_silence_title">Silence interruptions</string>
-    <string name="gesture_skip_direction_ltr">Swipe left to right for next song</string>
-    <string name="gesture_skip_direction_rtl">Swipe right to left for next song</string>
-    <string name="gesture_skip_direction_title">Swipe direction</string>
-    <string name="gesture_skip_on_summary">On / Skip to the next or previous song</string>
-    <string name="gesture_skip_summary">Skip to the next or previous song</string>
-    <string name="gesture_skip_title">Skip songs</string>
-    <string name="gesture_tap_off_summary">Off / Pause or resume music</string>
-    <string name="gesture_tap_on_summary">On / Pause or resume music</string>
-    <string name="gesture_tap_summary">Pause or resume music by tapping the air above the phone</string>
+    <string name="ambient_display_wake_screen_summary">Saati, bildirimleri ve diğer bilgileri kontrol etmek için telefonunuzu bulunduğu yerden alın</string>
+    <string name="ambient_display_wake_screen_summary_on">Açık</string>
+    <string name="aware_category_display">Ortam Ekranı</string>
+    <string name="aware_category_gesture">Hızlı Hareketler</string>
+    <string name="aware_disabled_preference_action">Haraket Algılama Ayarları</string>
+    <string name="aware_disabled_preference_dialog_content">Bu özelliği kullanmak için Hareket Algılama özelliğini açın</string>
+    <string name="aware_disabled_preference_dialog_title">Bu özellik kapatıldı</string>
+    <string name="aware_disabled_preference_neutral">Şimdi değil</string>
+    <string name="aware_display_settings_title">Boştayken kilit ekranı</string>
+    <string name="aware_settings_description">Yeni sensörler ile Pixel telefonun mesafesini ve hareketini tanıyabilir</string>
+    <string name="aware_settings_disabled_info_dialog_content">Hızlı Hareketler, yakınlarda ekranı göster ve telefonu kontrol etme erişimi gibi Hareket Algılama özellikleri bu ülkede desteklenmiyor</string>
+    <string name="aware_settings_disabled_info_dialog_title">Hareket Algılama kapalı</string>
+    <string name="aware_settings_enabled_info_dialog_content">Hızlı Hareketler, yakınlarda ekranı göster ve telefonu kontrol etme erişimi gibi Hareket Algılama özellikleri bu ülkede destekleniyor</string>
+    <string name="aware_settings_enabled_info_dialog_title">Hareket Algılama açık</string>
+    <string name="aware_wake_display_summary">Yakındayken zamanı, bildirim simgelerini ve diğer bilgileri göster</string>
+    <string name="aware_wake_display_summary_aod_off">Her zaman açık ekran kapalı olduğundan kullanılamıyor</string>
+    <string name="aware_wake_display_title">Yakındayken ekranı göster</string>
+    <string name="dialog_aware_settings_message">Hareket Algılama özelliğini kapatırsanız, Hızlı Hareketleri kullanamaz, yakınlarda ekranı gösteremez ve telefonu kontrol etmek için erişemezsiniz</string>
+    <string name="dialog_aware_settings_title">Hareket Algılama kapatılsın mı?</string>
+    <string name="gesture_aware_confirmation_action_button">Anladım</string>
+    <string name="gesture_aware_disabled_info_dialog_content">Hızlı Hareketler ve diğer Hareket Algılama özellikleri bu ülkede desteklenmiyor.</string>
+    <string name="gesture_aware_off_dialog_content">Hızlı Hareketleri kullanmak için Hareket Algılama özelliğini açın.</string>
+    <string name="gesture_aware_off_dialog_title">Hızlı Hareketler kapalı</string>
+    <string name="gesture_silence_on_summary">Açık / Alarmları ertele ve çağrıları sustur</string>
+    <string name="gesture_silence_summary">Alarmları ertele ve çağrıları sustur</string>
+    <string name="gesture_silence_title">Sessizlik kesintileri</string>
+    <string name="gesture_skip_direction_ltr">Sonraki şarkı için soldan sağa kaydırın</string>
+    <string name="gesture_skip_direction_rtl">Sonraki şarkı için sağdan sola kaydırın</string>
+    <string name="gesture_skip_direction_title">Kaydırma yönü</string>
+    <string name="gesture_skip_on_summary">Açık / Sonraki veya önceki şarkıya atla</string>
+    <string name="gesture_skip_summary">Sonraki veya önceki şarkıya atlama</string>
+    <string name="gesture_skip_title">Şarkıları atla</string>
+    <string name="gesture_tap_off_summary">Kapalı / Müziği duraklat veya sürdür</string>
+    <string name="gesture_tap_on_summary">Açık / Müziği duraklat veya sürdür</string>
+    <string name="gesture_tap_summary">Telefonun üst kısmındaki boşluğa dokunarak müziği duraklatın veya devam ettirin</string>
     <string name="gesture_tap_title">Müziği duraklat</string>
     <string name="wake_screen_aware_disabled_info_dialog_content">Telefonu kontrol etme ve diğer Hareket Algılama özellikleri bu ülkede desteklenmiyor</string>
     <string name="wake_screen_aware_off_dialog_content">Telefonu kontrol etme Erişim\'ini kullanmak üzere Hareket Algılama\'yı açın</string>
@@ -365,8 +435,8 @@
     <string name="lockscreen_cover_filter_grayblur">Gri tonlamalı ve bulanık</string>
     <string name="lockscreen_cover_filter_gradientblur">Eğimli bulanıklık</string>
     <!-- Show statusbar on lockscreen -->
-    <string name="lockscreen_show_status_bar_title">Statusbar</string>
-    <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
+    <string name="lockscreen_show_status_bar_title">Durum çubuğu</string>
+    <string name="lockscreen_show_status_bar_summary">Kilit ekranında durum çubuğunu göster</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Şarj animasyonu</string>
     <string name="charging_animation_summary">Cihaz şarja takıldığında bir animasyon göster</string>
@@ -404,10 +474,10 @@
     <string name="advanced_summary">Çeşitli ve ekstra sistem ayarları</string>
     <string name="system_category">Sistem Ayarları</string>
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">Arama titreşim seçenekleri</string>
+    <string name="incall_vibrate_connect_title">Bağlanınca titre</string>
+    <string name="incall_vibrate_call_wait_title">Arama bekletildiğinde titre</string>
+    <string name="incall_vibrate_disconnect_title">Bağlantı kopunca titre</string>
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Ölçeklemeyi etkinleştir</string>
     <string name="aspect_ratio_apps_enabled_summary">Eski uygulamaların tam ekran kullanmasına izin ver</string>
@@ -416,4 +486,22 @@
     <string name="aspect_ratio_category_title">Eski uygulama ölçeklendirmesi</string>
     <string name="aspect_ratio_apps_info">Değişikliklerden sonra uygulamaların yeniden başlatılması gerekiyor</string>
     <string name="action_save">Kaydet</string>
+    <!-- Long swipe gestures -->
+    <string name="left_swipe_key_title">Left swipe</string>
+    <string name="right_swipe_key_title">Right swipe</string>
+    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
+    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
+    <string name="left_swipe_actions_title">Long left swipe action</string>
+    <string name="left_swipe_app_action_title">Select long left swipe app</string>
+    <string name="right_swipe_actions_title">Long right swipe action</string>
+    <string name="right_swipe_app_action_title">Select long right swipe app</string>
+    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+    <string name="back_swipe_extended_title">Extended swipe action</string>
+    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+    <!-- Gesture navbar handle -->
+    <string name="gesture_navbar_handle_title">Gesture bar size</string>
+    <string name="gesture_navbar_handle_default">Default</string>
+    <string name="gesture_navbar_handle_middle">Middle</string>
+    <string name="gesture_navbar_handle_large">Large</string>
 </resources>
