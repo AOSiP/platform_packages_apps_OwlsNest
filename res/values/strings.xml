@@ -488,7 +488,7 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
-    <string name="secure_lockscreen">Secure lockscreen options</string>
+    <string name="fingerprint_category">Fingerprint</string>
 
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Media cover art filter</string>
