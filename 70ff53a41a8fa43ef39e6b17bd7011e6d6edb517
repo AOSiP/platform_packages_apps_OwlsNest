@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ec1866f1_68378dc0",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 1000075
+      },
+      "writtenOn": "2020-06-18T07:19:28Z",
+      "side": 1,
+      "message": "We have the file sorted based on category, move this to L256 or so please",
+      "revId": "70ff53a41a8fa43ef39e6b17bd7011e6d6edb517",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
