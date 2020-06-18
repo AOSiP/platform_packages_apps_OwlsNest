@@ -16,12 +16,16 @@
 
 package com.aosip.owlsnest.lockscreen;
 
+import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.provider.SearchIndexableResource;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -37,6 +41,11 @@ import java.util.List;
 public class LockscreenHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String FINGERPRINT_CATEGORY = "fingerprint_category";
+
+    private FingerprintManager mFingerprintManager;
+    private PreferenceCategory mFingerprint;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -46,6 +55,13 @@ public class LockscreenHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen);
+
+        mFingerprintManager = (FingerprintManager) this.getSystemService(
+                Context.FINGERPRINT_SERVICE);
+        mFingerprint = (PreferenceCategory) findPreference(FINGERPRINT_CATEGORY);
+        if (mFingerprintManager == null) {
+            getPreferenceScreen().removePreference(mFingerprint);
+        }
     }
 
     @Override
