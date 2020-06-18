@@ -22,12 +22,12 @@
 
     <PreferenceCategory
         android:key="power_button"
-        android:title="@string/power_button_category"
-        android:order="1" >
+        android:title="@string/power_button_category">
 
         <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="reboot_in_power_menu"
-            android:title="@string/powermenu_reboot_title"
+            android:title="@string/powermenu_restart_title"
+            android:summary="@string/powermenu_restart_summary"
             android:defaultValue="true" />
 
         <com.aosip.support.preference.SecureSettingSwitchPreference
@@ -39,24 +39,33 @@
         <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="lockdown_in_power_menu"
             android:title="@string/powermenu_lockdown_title"
+            android:summary="@string/powermenu_lockdown_summary"
             android:defaultValue="false" />
 
         <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="screenshot_in_power_menu"
             android:title="@string/powermenu_screenshot_title"
+            android:summary="@string/powermenu_screenshot_summary"
             android:defaultValue="true" />
 
         <com.aosip.support.preference.SecureSettingSwitchPreference
             android:key="screenrecord_in_power_menu"
             android:title="@string/powermenu_screenrecord_title"
+            android:summary="@string/powermenu_screenrecord_summary"
             android:defaultValue="false" />
-    </PreferenceCategory>
 
-    <ListPreference
-        android:key="screen_off_animation"
-        android:title="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values"
-        android:defaultValue="0" />
+        <com.aosip.support.preference.GlobalSettingSwitchPreference
+            android:key="lockscreen_enable_power_menu"
+            android:title="@string/lockscreen_enable_power_menu_title"
+            android:summary="@string/lockscreen_enable_power_menu_summary"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            android:key="screen_off_animation"
+            android:title="@string/screen_off_animation_title"
+            android:entries="@array/screen_off_animation_entries"
+            android:entryValues="@array/screen_off_animation_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
 </PreferenceScreen>
 
