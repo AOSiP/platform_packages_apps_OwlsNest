@@ -40,18 +40,6 @@
         android:defaultValue="false" />
 
     <com.aosip.support.preference.SystemSettingSwitchPreference
-        android:key="fingerprint_success_vib"
-        android:title="@string/fprint_sucess_vib_title"
-        android:summary="@string/fprint_sucess_vib_summary"
-        android:defaultValue="true" />
-
-    <com.aosip.support.preference.SystemSettingSwitchPreference
-        android:key="fingerprint_error_vib"
-        android:title="@string/fprint_error_vib_title"
-        android:summary="@string/fprint_error_vib_summary"
-        android:defaultValue="true" />
-
-    <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="lockscreen_show_status_bar"
         android:title="@string/lockscreen_show_status_bar_title"
         android:summary="@string/lockscreen_show_status_bar_summary"
@@ -88,6 +76,23 @@
             android:min="0"
             android:defaultValue="25"
             settings:units="dp" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="fingerprint_category"
+        android:title="@string/fingerprint_category">
+
+        <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:defaultValue="true" />
+
+        <com.aosip.support.preference.SystemSettingSwitchPreference
+            android:key="fingerprint_error_vib"
+            android:title="@string/fprint_error_vib_title"
+            android:summary="@string/fprint_error_vib_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
 </PreferenceScreen>
