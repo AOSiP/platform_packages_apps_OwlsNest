@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0e5b36fe_6a022ec7",
+        "filename": "res/xml/notification.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2020-06-19T01:20:37Z",
+      "side": 1,
+      "message": "set to false as well to disable by default",
+      "revId": "03e0bdd0814bd6c3944502abb2e10dae86570795",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
