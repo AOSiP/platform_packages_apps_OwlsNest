@@ -470,4 +470,19 @@
         <item>2</item>
     </string-array>
 
+    <!-- Volume Panel Type -->
+    <string-array name="vol_panel_entries" translatable="false">
+        <item>@string/plugin_volume_aosp</item>
+        <item>@string/plugin_volume_fancy</item>
+        <item>@string/plugin_volume_toggle</item>
+        <item>@string/plugin_volume_oreo</item>
+    </string-array>
+
+    <string-array name="vol_panel_values" translatable="false"> 
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
 </resources>

@@ -583,4 +583,9 @@
     <string name="gesture_navbar_handle_middle">Middle</string>
     <string name="gesture_navbar_handle_large">Large</string>
 
+    <!-- Volume Panel Switcher -->
+    <string name="volume_panel_types_title">Volume Panel Selector</string>
+    <string name="select_vol_panel_title">Select Desired Volume Panel Style</string>
+    <string name="vol_panel_title">Volume Panel Selector</string>
+
 </resources>
