@@ -218,6 +218,9 @@
     <string name="battery_light_medium_color">Batterie moyenne</string>
     <string name="battery_light_full_color">Batterie presque pleine</string>
     <string name="battery_light_reallyfull_color">Batterie chargée (100)</string>
+    <!-- R Notification headers -->
+    <string name="notification_headers_title">Show notification headers</string>
+    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Réglages Rapides</string>
     <string name="quicksettings_summary">Gérez vos tuiles et la barre d\'état étendue</string>
@@ -324,12 +327,16 @@
     <string name="power_button_category">Alimentation</string>
     <string name="volume_category">Volume</string>
     <!-- Power menu -->
-    <string name="powermenu_reboot_title">Redémarrer</string>
+    <string name="powermenu_restart_title">Restart</string>
+    <string name="powermenu_restart_summary">Display the Restart button</string>
     <string name="powermenu_advanced_restart_title">Redémarrage avancé</string>
-    <string name="powermenu_advanced_restart_summary">Activer le menu de redémarrage avancé pour d\'autres options de redémarrage</string>
+    <string name="powermenu_advanced_restart_summary">Display the Advanced Restart button</string>
     <string name="powermenu_lockdown_title">Verrouiller</string>
+    <string name="powermenu_lockdown_summary">Display the Lockdown button</string>
     <string name="powermenu_screenshot_title">Capture d\'écran</string>
+    <string name="powermenu_screenshot_summary">Display the Screenshot button</string>
     <string name="powermenu_screenrecord_title">Capture vidéo</string>
+    <string name="powermenu_screenrecord_summary">Display the Screenrecord button</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animation précédant l\'extinction de l\'écran</string>
     <string name="screen_off_animation_default">Défaut</string>
@@ -425,7 +432,7 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Écran de verrouillage</string>
     <string name="lockscreen_summary">Personnaliser la disposition et les options de l\'écran de verrouillage</string>
-    <string name="secure_lockscreen">Option de l\'écran de verrouillage sécurisé</string>
+    <string name="fingerprint_category">Fingerprint</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtre des pochettes de média</string>
     <string name="lockscreen_cover_filter_none">Aucun</string>
@@ -434,6 +441,11 @@
     <string name="lockscreen_cover_filter_blur">Flou</string>
     <string name="lockscreen_cover_filter_grayblur">Niveaux de gris et flou</string>
     <string name="lockscreen_cover_filter_gradientblur">Flou dégradé</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
     <!-- Show statusbar on lockscreen -->
     <string name="lockscreen_show_status_bar_title">Statusbar</string>
     <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>

@@ -218,6 +218,9 @@
     <string name="battery_light_medium_color">Batería media</string>
     <string name="battery_light_full_color">Batería casi llena</string>
     <string name="battery_light_reallyfull_color">Batería llena (100)</string>
+    <!-- R Notification headers -->
+    <string name="notification_headers_title">Show notification headers</string>
+    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Ajustes rápidos</string>
     <string name="quicksettings_summary">Administre sus mosaicos rápidos y barra de estado expandida</string>
@@ -227,10 +230,10 @@
     <string name="qs_tile_footer">Para cambiar el numero de columnas y filas de los ajustes rápidos, use el menú de 3 puntos que se encuentra al deslizar y mostrar todos los ajustes rápidos al editar y añadir.</string>
     <!-- QS layout -->
     <string name="qs_layout_title">Layout</string>
-    <string name="qs_rows_portrait_title">Rows (portrait)</string>
-    <string name="qs_rows_landscape_title">Rows (landscape)</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_rows_portrait_title">Filas (vertical)</string>
+    <string name="qs_rows_landscape_title">Filas (horizontal)</string>
+    <string name="qs_columns_portrait_title">Columnas (vertical)</string>
+    <string name="qs_columns_landscape_title">Columnas (horizontal)</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
     <string name="quick_pulldown_none">Disabled</string>
@@ -238,22 +241,22 @@
     <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_animation_options_title">Animations</string>
-    <string name="qs_tile_animation_style_title">Style</string>
-    <string name="qs_tile_animation_duration_title">Duration</string>
+    <string name="qs_tile_animation_style_title">Estilo</string>
+    <string name="qs_tile_animation_duration_title">Duración</string>
     <string name="qs_tile_animation_interpolator_title">Interpolator</string>
-    <string name="qs_tile_animation_style_off">None</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_style_off">Ninguno</string>
+    <string name="qs_tile_animation_style_flip">Girar</string>
+    <string name="qs_tile_animation_style_rotate">Rotar</string>
+    <string name="qs_tile_animation_duration_low">Baja</string>
+    <string name="qs_tile_animation_duration_default">Por defecto</string>
+    <string name="qs_tile_animation_duration_fast">Rápida</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineal</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Acelerar</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
     <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
     <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipar</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
@@ -324,12 +327,16 @@
     <string name="power_button_category">Encendido</string>
     <string name="volume_category">Volumen</string>
     <!-- Power menu -->
-    <string name="powermenu_reboot_title">Reiniciar</string>
+    <string name="powermenu_restart_title">Restart</string>
+    <string name="powermenu_restart_summary">Display the Restart button</string>
     <string name="powermenu_advanced_restart_title">Reinicio avanzado</string>
-    <string name="powermenu_advanced_restart_summary">Activar el reinicio avanzado para otras opciones de reinicio</string>
+    <string name="powermenu_advanced_restart_summary">Display the Advanced Restart button</string>
     <string name="powermenu_lockdown_title">Bloqueo</string>
+    <string name="powermenu_lockdown_summary">Display the Lockdown button</string>
     <string name="powermenu_screenshot_title">Captura de pantalla</string>
+    <string name="powermenu_screenshot_summary">Display the Screenshot button</string>
     <string name="powermenu_screenrecord_title">Grabación de pantalla</string>
+    <string name="powermenu_screenrecord_summary">Display the Screenrecord button</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Pantalla de animación</string>
     <string name="screen_off_animation_default">Defecto</string>
@@ -358,13 +365,13 @@
     <string name="active_edge_footer_info">No todas las acciones de compresión dentro de Active Edge tienen la capacidad de activar la pantalla.\ n\nSi desea elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones</string>
     <!-- Custom actions -->
     <string name="action_nothing">Ninguna acción</string>
-    <string name="action_menu">Menu</string>
+    <string name="action_menu">Menú</string>
     <string name="action_app_switch">Recents</string>
     <string name="action_search">Asistente</string>
     <string name="action_voice_search">Búsqueda por voz</string>
     <string name="action_launch_camera">Cámara</string>
     <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
+    <string name="action_splitscreen">Pantalla dividida</string>
     <string name="action_flashlight">Linterna</string>
     <string name="action_clear_notifications">Borrar notificaciones</string>
     <string name="action_volume_panel">Panel de volumen</string>
@@ -425,7 +432,7 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Bloquear pantalla</string>
     <string name="lockscreen_summary">Personalice el diseño y las opciones de la pantalla de bloqueo</string>
-    <string name="secure_lockscreen">Opciones de seguridad de la pantalla de bloqueo</string>
+    <string name="fingerprint_category">Fingerprint</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtro de carátulas multimedia</string>
     <string name="lockscreen_cover_filter_none">Ninguno</string>
@@ -434,6 +441,11 @@
     <string name="lockscreen_cover_filter_blur">Difuminado</string>
     <string name="lockscreen_cover_filter_grayblur">Escala de grises y desenfocado</string>
     <string name="lockscreen_cover_filter_gradientblur">Desenfoque degradado</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
     <!-- Show statusbar on lockscreen -->
     <string name="lockscreen_show_status_bar_title">Barra de estado</string>
     <string name="lockscreen_show_status_bar_summary">Mostrar barra de estado en la pantalla de bloqueo</string>
@@ -489,7 +501,7 @@
     <!-- Long swipe gestures -->
     <string name="left_swipe_key_title">Left swipe</string>
     <string name="right_swipe_key_title">Right swipe</string>
-    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+    <string name="navbar_gesture_tweaks_pref_title">Gestos personalizados</string>
     <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
     <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
     <string name="left_swipe_actions_title">Long left swipe action</string>
@@ -500,8 +512,8 @@
     <string name="back_swipe_extended_title">Extended swipe action</string>
     <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Gesture bar size</string>
-    <string name="gesture_navbar_handle_default">Default</string>
-    <string name="gesture_navbar_handle_middle">Middle</string>
-    <string name="gesture_navbar_handle_large">Large</string>
+    <string name="gesture_navbar_handle_title">Tamaño de barra de gestos</string>
+    <string name="gesture_navbar_handle_default">Por defecto</string>
+    <string name="gesture_navbar_handle_middle">Mediana</string>
+    <string name="gesture_navbar_handle_large">Grande</string>
 </resources>

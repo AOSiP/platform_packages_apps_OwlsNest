@@ -218,6 +218,9 @@
     <string name="battery_light_medium_color">Bateria média</string>
     <string name="battery_light_full_color">Bateria quase cheia</string>
     <string name="battery_light_reallyfull_color">Bateria cheia (100)</string>
+    <!-- R Notification headers -->
+    <string name="notification_headers_title">Show notification headers</string>
+    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Configurações Rápidas</string>
     <string name="quicksettings_summary">Gerencie seus blocos rápidos e a barra de status expandida</string>
@@ -226,44 +229,44 @@
     <string name="tiles_title">Mosaicos das definições rápidas</string>
     <string name="qs_tile_footer">Para mudar o número de linhas e colunas QS e mais, use o botão de menu com três pontos na seção de edição QS no menu suspenso QS.</string>
     <!-- QS layout -->
-    <string name="qs_layout_title">Layout</string>
-    <string name="qs_rows_portrait_title">Rows (portrait)</string>
-    <string name="qs_rows_landscape_title">Rows (landscape)</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_layout_title">Leiaute</string>
+    <string name="qs_rows_portrait_title">Linhas (retrato)</string>
+    <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
+    <string name="qs_columns_portrait_title">Colunas (retrato)</string>
+    <string name="qs_columns_landscape_title">Colunas (paisagem)</string>
     <!-- Quick QS pulldown -->
-    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
-    <string name="quick_pulldown_none">Disabled</string>
-    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
-    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <string name="status_bar_quick_qs_pulldown">Puxar rápido QS</string>
+    <string name="quick_pulldown_none">Desativado</string>
+    <string name="quick_pulldown_right">Puxe a barra de status do lado direito</string>
+    <string name="quick_pulldown_left">Barra de status do lado esquerdo</string>
     <!-- Tiles animation/interpolator style  -->
-    <string name="qs_animation_options_title">Animations</string>
-    <string name="qs_tile_animation_style_title">Style</string>
-    <string name="qs_tile_animation_duration_title">Duration</string>
-    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
-    <string name="qs_tile_animation_style_off">None</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_animation_options_title">Animações</string>
+    <string name="qs_tile_animation_style_title">Estilo</string>
+    <string name="qs_tile_animation_duration_title">Duração</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolador</string>
+    <string name="qs_tile_animation_style_off">Nenhum</string>
+    <string name="qs_tile_animation_style_flip">Inverter</string>
+    <string name="qs_tile_animation_style_rotate">Rotacionar</string>
+    <string name="qs_tile_animation_duration_low">Baixa</string>
+    <string name="qs_tile_animation_duration_default">Padrão</string>
+    <string name="qs_tile_animation_duration_fast">Rápido</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Acelerar</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Desacelerar</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Acelerar/desacelerar</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Pular</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Adiantar</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Antecipar</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Antecipar/adiantar</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
     <!-- QS visibility -->
-    <string name="qs_tile_title_visibility_title">Title visibility</string>
-    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+    <string name="qs_tile_title_visibility_title">Visibilidade do título</string>
+    <string name="qs_tile_title_visibility_summary">Mostrar os títulos abaixo dos blocos QS</string>
     <!-- QS Blur -->
-    <string name="qs_blur_title">QS Blur</string>
-    <string name="qs_blur_summary">Blur the section of the QS panel behind the notifications</string>
+    <string name="qs_blur_title">QS Desfocado</string>
+    <string name="qs_blur_summary">Desfoque a seção do painel QS atrás das notificações</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_category_title">Opções de controle deslizante de brilho</string>
     <string name="qs_show_brightness_title">Controle de Brilho</string>
@@ -281,55 +284,59 @@
     <!--Owlsnest navigation-->
     <string name="navigation_category">Navegação</string>
     <string name="navigation_summary">Personalizar o estilo da navegação e comportamento</string>
-    <string name="navigation_bar_layout_title">Layout</string>
-    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
+    <string name="navigation_bar_layout_title">Leiaute</string>
+    <string name="navigation_bar_layout_summary">Personalizar o leiaute da barra de navegação</string>
     <string name="navigation_bar_menu_arrow_keys_title">Setas nas teclas durante a digitação</string>
     <string name="navigation_bar_menu_arrow_keys_summary">Mostrar os botões esquerdo e direito do cursor enquanto digita</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="navbar_gesture_mode_category_title">Gesture mode tweaks</string>
-    <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
-    <string name="navbar_gesture_pill_toggle_title">Full screen gestures</string>
-    <string name="navbar_gesture_pill_toggle_summary">This will hide both the navigation bar and the pill for a seamless fullscreen gesture experience.</string>
-    <string name="navbar_gesture_pill_toggle_summary_disabled">This option is only available for gesture navigation!</string>
+    <string name="navbar_gesture_mode_category_title">Ajustes no modo de gesto</string>
+    <string name="navbar_gesture_mode_category_key">ajustes no modo de gesto</string>
+    <string name="navbar_gesture_pill_toggle_title">Gestos em tela cheia</string>
+    <string name="navbar_gesture_pill_toggle_summary">Isso ocultará a barra de navegação e o ícone de pílula para uma experiência perfeita de gestos em tela cheia.</string>
+    <string name="navbar_gesture_pill_toggle_summary_disabled">Esta opção está disponível apenas para navegação por gestos!</string>
     <!-- Navigation -->
-    <string name="navigation_bar_title">On-screen navigation bar</string>
-    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
-    <string name="hw_keys_swap_title">Swap hardware buttons</string>
-    <string name="hw_keys_swap_summary">Swap the order of recents and back buttons</string>
-    <string name="home_key_title">Home button</string>
-    <string name="back_key_title">Back button</string>
-    <string name="menu_key_title">Menu button</string>
-    <string name="assist_key_title">Assist button</string>
-    <string name="app_switch_key_title">Recents button</string>
-    <string name="camera_key_title">Camera button</string>
-    <string name="short_press_title">Short press action</string>
-    <string name="long_press_title">Long press action</string>
-    <string name="double_tap_title">Double tap action</string>
-    <string name="app_picker_dialog_title">Select an app</string>
-    <string name="long_press_custom_app_title">Long press custom app</string>
-    <string name="double_tap_custom_app_title">Double tap custom app</string>
+    <string name="navigation_bar_title">Ativa a barra de navegação na tela</string>
+    <string name="navigation_bar_summary">Ativar teclas de navegação na tela</string>
+    <string name="hw_keys_swap_title">Trocar botões de hardware</string>
+    <string name="hw_keys_swap_summary">Troque a ordem dos botões recentes e voltar</string>
+    <string name="home_key_title">Botão de início</string>
+    <string name="back_key_title">Botão de Voltar</string>
+    <string name="menu_key_title">Botão de menu</string>
+    <string name="assist_key_title">Botão de assistência</string>
+    <string name="app_switch_key_title">Botão recentes</string>
+    <string name="camera_key_title">Botão da câmera</string>
+    <string name="short_press_title">Ação de toque rápido</string>
+    <string name="long_press_title">Ação de toque longo</string>
+    <string name="double_tap_title">Ação de duplo toque</string>
+    <string name="app_picker_dialog_title">Selecionar um aplicativo</string>
+    <string name="long_press_custom_app_title">Toque longo no aplicativo personalizado</string>
+    <string name="double_tap_custom_app_title">Toque duas vezes no aplicativo personalizado</string>
     <!-- Button backlight -->
-    <string name="button_backlight_title">Backlight</string>
-    <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
-    <string name="button_backlight_on_touch_only_title">Button touch</string>
-    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
-    <string name="button_timeout_title">Backlight timeout (seconds)</string>
+    <string name="button_backlight_title">Luz de fundo</string>
+    <string name="button_backlight_summary">Configurar a luz de fundo para as teclas capacitivas</string>
+    <string name="button_backlight_on_touch_only_title">Toque no botão</string>
+    <string name="button_backlight_on_touch_only_summary">Ativar luz de fundo com tempo limite apenas com o toque no botão</string>
+    <string name="button_timeout_title">Tempo limite da luz de fundo (segundos)</string>
     <string name="button_link_brightness">Acompanhar o brilho da tela</string>
-    <string name="button_link_brightness_summary">Use screen brightness level</string>
+    <string name="button_link_brightness_summary">Usar nível de brilho da tela</string>
     <string name="button_manual_brightness">Nível de brilho</string>
-    <string name="button_backlight_enable_title">Allow backlight</string>
+    <string name="button_backlight_enable_title">Permitir luz de fundo</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">Teclas Físicas</string>
     <string name="buttons_summary">Ajustar as ações das teclas do seu dispositivo físico</string>
     <string name="power_button_category">Ligar / desligar</string>
     <string name="volume_category">Volume</string>
     <!-- Power menu -->
-    <string name="powermenu_reboot_title">Reniciar</string>
+    <string name="powermenu_restart_title">Restart</string>
+    <string name="powermenu_restart_summary">Display the Restart button</string>
     <string name="powermenu_advanced_restart_title">Reinicialização avançada</string>
-    <string name="powermenu_advanced_restart_summary">Ativa o menu de reinicialização avançada para outras opções de reinicialização</string>
+    <string name="powermenu_advanced_restart_summary">Display the Advanced Restart button</string>
     <string name="powermenu_lockdown_title">Bloqueio </string>
+    <string name="powermenu_lockdown_summary">Display the Lockdown button</string>
     <string name="powermenu_screenshot_title">Captura de tela</string>
+    <string name="powermenu_screenshot_summary">Display the Screenshot button</string>
     <string name="powermenu_screenrecord_title">Gravador de tela</string>
+    <string name="powermenu_screenrecord_summary">Display the Screenrecord button</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animação ao desligar tela</string>
     <string name="screen_off_animation_default">Padrão</string>
@@ -359,18 +366,18 @@
     <!-- Custom actions -->
     <string name="action_nothing">Nenhuma ação</string>
     <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
+    <string name="action_app_switch">Recentes</string>
     <string name="action_search">Assistente</string>
     <string name="action_voice_search">Pesquisa por voz</string>
     <string name="action_launch_camera">Câmera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
+    <string name="action_last_app">Último aplicativo</string>
+    <string name="action_splitscreen">Tela dividida</string>
     <string name="action_flashlight">Lanterna</string>
     <string name="action_clear_notifications">Limpar notificações</string>
     <string name="action_volume_panel">Painel de volume</string>
     <string name="action_screen_off">Tela apagada</string>
     <string name="action_notifications">Notificações</string>
-    <string name="action_power_menu">Power menu</string>
+    <string name="action_power_menu">Menu do botão Liga/Desliga</string>
     <string name="action_screenshot">Captura de tela</string>
     <string name="action_qs_panel">Painel CR</string>
     <string name="action_app_action">Aplicativo</string>
@@ -425,7 +432,7 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Tela de bloqueio</string>
     <string name="lockscreen_summary">Personalize o layout e as opções da tela de bloqueio</string>
-    <string name="secure_lockscreen">Garantir a segurança da Tela de Bloqueio</string>
+    <string name="fingerprint_category">Fingerprint</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtro da arte da capa de mídia</string>
     <string name="lockscreen_cover_filter_none">Nenhum</string>
@@ -434,6 +441,11 @@
     <string name="lockscreen_cover_filter_blur">Desfocar</string>
     <string name="lockscreen_cover_filter_grayblur">Tons de cinza e desfocado</string>
     <string name="lockscreen_cover_filter_gradientblur">Desfoque gradiente</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
     <!-- Show statusbar on lockscreen -->
     <string name="lockscreen_show_status_bar_title">Barra de status</string>
     <string name="lockscreen_show_status_bar_summary">Mostrar barra de status na tela de bloqueio</string>
@@ -487,21 +499,21 @@
     <string name="aspect_ratio_apps_info">Os aplicativos precisam ser reiniciados após as alterações</string>
     <string name="action_save">Salvar</string>
     <!-- Long swipe gestures -->
-    <string name="left_swipe_key_title">Left swipe</string>
-    <string name="right_swipe_key_title">Right swipe</string>
-    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
-    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
-    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
-    <string name="left_swipe_actions_title">Long left swipe action</string>
-    <string name="left_swipe_app_action_title">Select long left swipe app</string>
-    <string name="right_swipe_actions_title">Long right swipe action</string>
-    <string name="right_swipe_app_action_title">Select long right swipe app</string>
-    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
-    <string name="back_swipe_extended_title">Extended swipe action</string>
-    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+    <string name="left_swipe_key_title">Deslizar para a esquerda</string>
+    <string name="right_swipe_key_title">Deslizar para a direita</string>
+    <string name="navbar_gesture_tweaks_pref_title">Gestos personalizados</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personalize gestos e defina ações personalizadas</string>
+    <string name="long_back_swipe_timeout_title">Tempo limite do deslize longo</string>
+    <string name="left_swipe_actions_title">Ação ao deslizar longamente para a esquerda</string>
+    <string name="left_swipe_app_action_title">Selecionar aplicativo de deslize longo para a esquerda</string>
+    <string name="right_swipe_actions_title">Ação ao deslizar longamente para a direita</string>
+    <string name="right_swipe_app_action_title">Selecione o app ao deslizar longamente para a direita</string>
+    <string name="gesture_nav_tweaks_footer_info">Para escolher uma atividade de aplicativo específica para a ação, pressione e segure qualquer aplicativo no seletor de aplicativos. \n\nSe o iniciador estiver sendo exibido, deslize o dedo na área inferior da tela para acionar a ação.</string>
+    <string name="back_swipe_extended_title">Ação ao fazer um deslize estendido</string>
+    <string name="back_swipe_extended_summary">Acionar ação se o deslize for horizontalmente maior que 3\/4 do tamanho da tela</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Gesture bar size</string>
-    <string name="gesture_navbar_handle_default">Default</string>
-    <string name="gesture_navbar_handle_middle">Middle</string>
-    <string name="gesture_navbar_handle_large">Large</string>
+    <string name="gesture_navbar_handle_title">Tamanho da barra de gestos</string>
+    <string name="gesture_navbar_handle_default">Padrão</string>
+    <string name="gesture_navbar_handle_middle">Médio</string>
+    <string name="gesture_navbar_handle_large">Grande</string>
 </resources>

@@ -218,6 +218,9 @@
     <string name="battery_light_medium_color">Akku puolivälissä</string>
     <string name="battery_light_full_color">Melkein täysi akku</string>
     <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <!-- R Notification headers -->
+    <string name="notification_headers_title">Show notification headers</string>
+    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Pika-asetukset</string>
     <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
@@ -324,12 +327,16 @@
     <string name="power_button_category">Power</string>
     <string name="volume_category">Äänenvoimakkuus</string>
     <!-- Power menu -->
-    <string name="powermenu_reboot_title">Restart</string>
+    <string name="powermenu_restart_title">Restart</string>
+    <string name="powermenu_restart_summary">Display the Restart button</string>
     <string name="powermenu_advanced_restart_title">Advanced restart</string>
-    <string name="powermenu_advanced_restart_summary">Enables the advanced restart menu for other restarting options</string>
+    <string name="powermenu_advanced_restart_summary">Display the Advanced Restart button</string>
     <string name="powermenu_lockdown_title">Lockdown</string>
+    <string name="powermenu_lockdown_summary">Display the Lockdown button</string>
     <string name="powermenu_screenshot_title">Screenshot</string>
+    <string name="powermenu_screenshot_summary">Display the Screenshot button</string>
     <string name="powermenu_screenrecord_title">Screenrecord</string>
+    <string name="powermenu_screenrecord_summary">Display the Screenrecord button</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Screen off animation</string>
     <string name="screen_off_animation_default">Default</string>
@@ -425,7 +432,7 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Lukitusnäyttö</string>
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
-    <string name="secure_lockscreen">Secure lockscreen options</string>
+    <string name="fingerprint_category">Fingerprint</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Media cover art filter</string>
     <string name="lockscreen_cover_filter_none">None</string>
@@ -434,6 +441,11 @@
     <string name="lockscreen_cover_filter_blur">Blur</string>
     <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_cover_filter_gradientblur">Gradient Blur</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
     <!-- Show statusbar on lockscreen -->
     <string name="lockscreen_show_status_bar_title">Statusbar</string>
     <string name="lockscreen_show_status_bar_summary">Show statusbar on the lockscreen</string>
