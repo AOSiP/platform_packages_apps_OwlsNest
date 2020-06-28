@@ -498,6 +498,9 @@
     <string name="lockscreen_summary">Customize lockscreen layout and options</string>
     <string name="fingerprint_category">Fingerprint</string>
 
+    <string name="tuner_keyguard_show_lock_icon_title">Show lock status</string>
+    <string name="tuner_keyguard_show_lock_icon_summary">Show current lock status icon on top</string>
+
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Media cover art filter</string>
     <string name="lockscreen_cover_filter_none">None</string>
