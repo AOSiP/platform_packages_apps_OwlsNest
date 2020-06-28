@@ -39,6 +39,12 @@
         android:summary="@string/charging_animation_summary"
         android:defaultValue="false" />
 
+    <com.aosip.support.preference.SecureSettingSwitchPreference
+        android:key="sysui_keyguard_show_lock_icon"
+        android:title="@string/tuner_keyguard_show_lock_icon_title"
+        android:summary="@string/tuner_keyguard_show_lock_icon_summary"
+        android:defaultValue="true" />
+
     <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="lockscreen_show_status_bar"
         android:title="@string/lockscreen_show_status_bar_title"
