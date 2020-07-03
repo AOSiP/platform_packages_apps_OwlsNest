@@ -93,6 +93,10 @@
     <string name="volte_icon_hd">HD Icon</string>
     <string name="volte_icon_volit">VoLIT Icon</string>
 
+    <!-- Show VoWiFi icon -->
+    <string name="vowifi_switch_title">VoWiFi icon</string>
+    <string name="vowifi_switch_summary">Display VoWiFi icon</string>
+
     <!-- Status bar clock and date options -->
     <string name="status_bar_style_title">Style</string>
     <string name="status_bar_clock">Clock &amp; Date</string>
