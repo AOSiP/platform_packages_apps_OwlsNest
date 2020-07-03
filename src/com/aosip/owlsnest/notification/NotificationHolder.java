@@ -49,8 +49,6 @@ import java.util.List;
 public class NotificationHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
-
     private static final String PULSE_AMBIANT_LIGHT_PREF = "pulse_ambient_light";
     private static final String PULSE_COLOR_PREF = "ambient_notification_light_color";
     private static final String AMBIENT_NOTIFICATION_LIGHT_ACCENT_PREF = "ambient_notification_light_accent";
@@ -58,7 +56,6 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     private static final String PULSE_COLOR_MODE_PREF = "ambient_notification_light_color_mode";
 
     private ColorSelectPreference mPulseLightColorPref;
-    private ListPreference mHeadsUpSnoozeTime;
     private ListPreference mColorMode;
     private ListPreference mPulseTimeout;
     private SystemSettingSwitchPreference mPulseEdgeLights;
@@ -79,22 +76,6 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.notification);
-
-        Resources systemUiResources;
-        try {
-            systemUiResources = getPackageManager().getResourcesForApplication("com.android.systemui");
-        } catch (Exception e) {
-            return;
-        }
-
-        int defaultSnooze = systemUiResources.getInteger(systemUiResources.getIdentifier(
-                    "com.android.systemui:integer/heads_up_default_snooze_length_ms", null, null));
-        mHeadsUpSnoozeTime = (ListPreference) findPreference(PREF_HEADS_UP_SNOOZE_TIME);
-        mHeadsUpSnoozeTime.setOnPreferenceChangeListener(this);
-        int headsUpSnooze = Settings.System.getInt(getContentResolver(),
-                Settings.System.HEADS_UP_NOTIFICATION_SNOOZE, defaultSnooze);
-        mHeadsUpSnoozeTime.setValue(String.valueOf(headsUpSnooze));
-        updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
 
         mDefaultColor = getResources().getInteger(
                 com.android.internal.R.integer.config_ambientNotificationDefaultColor);
@@ -150,14 +131,7 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mHeadsUpSnoozeTime) {
-            int headsUpSnooze = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.HEADS_UP_NOTIFICATION_SNOOZE,
-                    headsUpSnooze);
-            updateHeadsUpSnoozeTimeSummary(headsUpSnooze);
-            return true;
-        } else if (preference == mPulseLightColorPref) {
+        if (preference == mPulseLightColorPref) {
             ColorSelectPreference lightPref = (ColorSelectPreference) preference;
             Settings.System.putInt(getContentResolver(),
                      Settings.System.NOTIFICATION_PULSE_COLOR, lightPref.getColor());
@@ -212,17 +186,6 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
                 return true;
         }
         return false;
-    }
-
-    private void updateHeadsUpSnoozeTimeSummary(int value) {
-        if (value == 0) {
-            mHeadsUpSnoozeTime.setSummary(getResources().getString(R.string.heads_up_snooze_disabled_summary));
-        } else if (value == 60000) {
-            mHeadsUpSnoozeTime.setSummary(getResources().getString(R.string.heads_up_snooze_summary_one_minute));
-        } else {
-            String summary = getResources().getString(R.string.heads_up_snooze_summary, value / 60 / 1000);
-            mHeadsUpSnoozeTime.setSummary(summary);
-        }
     }
 
     protected void resetToDefaults() {
