@@ -197,6 +197,7 @@
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
     <string name="headsup_category">Heads-Up</string>
+    <string name="headsup_summary">Various options to change how Heads Up works</string>
 
     <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">Show media heads up</string>
