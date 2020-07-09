@@ -219,8 +219,8 @@
     <string name="battery_light_full_color">Prawie pełna bateria</string>
     <string name="battery_light_reallyfull_color">Bateria w pełni naładowana</string>
     <!-- R Notification headers -->
-    <string name="notification_headers_title">Show notification headers</string>
-    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
+    <string name="notification_headers_title">Pokaż nagłówki powiadomień</string>
+    <string name="notification_headers_summary">Określa, czy wyświetlać nagłówki powiadomień w stylu Androida R (wymaga ponownego uruchomienia SystemUI)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Szybkie ustawienia</string>
     <string name="quicksettings_summary">Zarządzaj szybkimi ustawieniami oraz rozszerzonym paskiem statusu</string>
@@ -247,7 +247,7 @@
     <string name="qs_tile_animation_style_off">Brak</string>
     <string name="qs_tile_animation_style_flip">Obrót w pionie</string>
     <string name="qs_tile_animation_style_rotate">Obrót</string>
-    <string name="qs_tile_animation_duration_low">Powoli</string>
+    <string name="qs_tile_animation_duration_low">Długi</string>
     <string name="qs_tile_animation_duration_default">Domyślny</string>
     <string name="qs_tile_animation_duration_fast">Szybki</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Liniowa</string>
@@ -265,8 +265,8 @@
     <string name="qs_tile_title_visibility_title">Widoczność nazw</string>
     <string name="qs_tile_title_visibility_summary">Włącz aby pokazać nazwy kafelków szybkich ustawień</string>
     <!-- QS Blur -->
-    <string name="qs_blur_title">Rozmycie panelu szybkich ustawień</string>
-    <string name="qs_blur_summary">Rozmać tło panelu szybkich ustawień za powiadomieniami</string>
+    <string name="qs_blur_title">Rozmycie tła panelu szybkich ustawień</string>
+    <string name="qs_blur_summary">Rozmyj tło panelu szybkich ustawień za powiadomieniami</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_category_title">Opcje suwaka jasności</string>
     <string name="qs_show_brightness_title">Suwak jasności</string>
@@ -327,16 +327,16 @@
     <string name="power_button_category">Przycisk zasilania</string>
     <string name="volume_category">Głośność</string>
     <!-- Power menu -->
-    <string name="powermenu_restart_title">Restart</string>
-    <string name="powermenu_restart_summary">Display the Restart button</string>
+    <string name="powermenu_restart_title">Uruchom ponownie</string>
+    <string name="powermenu_restart_summary">Wyświetl przycisk Ponownego uruchomienia</string>
     <string name="powermenu_advanced_restart_title">Zaawansowany restart</string>
-    <string name="powermenu_advanced_restart_summary">Display the Advanced Restart button</string>
+    <string name="powermenu_advanced_restart_summary">Wyświetl przycisk Zaawansowanego ponownego uruchomienia</string>
     <string name="powermenu_lockdown_title">Blokada</string>
-    <string name="powermenu_lockdown_summary">Display the Lockdown button</string>
+    <string name="powermenu_lockdown_summary">Wyświetl przycisk Blokady</string>
     <string name="powermenu_screenshot_title">Zrzut ekranu</string>
-    <string name="powermenu_screenshot_summary">Display the Screenshot button</string>
+    <string name="powermenu_screenshot_summary">Wyświetl przycisk Zrzutu ekranu</string>
     <string name="powermenu_screenrecord_title">Nagrywanie ekranu</string>
-    <string name="powermenu_screenrecord_summary">Display the Screenrecord button</string>
+    <string name="powermenu_screenrecord_summary">Wyświetl przycisk Nagrywania ekranu</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animacja wyłączenia ekranu</string>
     <string name="screen_off_animation_default">Domyślna</string>
@@ -432,7 +432,7 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Ekran blokady</string>
     <string name="lockscreen_summary">Konfiguruj opcje oraz wygląd ekranu blokadu</string>
-    <string name="fingerprint_category">Fingerprint</string>
+    <string name="fingerprint_category">Odcisk palca</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtr okładki albumu</string>
     <string name="lockscreen_cover_filter_none">Żaden</string>
@@ -442,10 +442,10 @@
     <string name="lockscreen_cover_filter_grayblur">Skala szarości i rozmycie</string>
     <string name="lockscreen_cover_filter_gradientblur">Rozmyty Gradient</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
-    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
-    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
-    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_sucess_vib_title">Wibracja podczas uwierzytelniania odcisku palca</string>
+    <string name="fprint_sucess_vib_summary">Wibruj po udanym uwierzytelnianiu odcisku palca</string>
+    <string name="fprint_error_vib_title">Wibruj po nierozpoznaniu odcisku palca</string>
+    <string name="fprint_error_vib_summary">Wibruj po nieudanym uwierzytelnianiu odcisku palca</string>
     <!-- Show statusbar on lockscreen -->
     <string name="lockscreen_show_status_bar_title">Pasek stanu</string>
     <string name="lockscreen_show_status_bar_summary">Pokaż pasek stanu na ekranie blokady</string>
