@@ -219,8 +219,8 @@
     <string name="battery_light_full_color">ほぼ充電完了</string>
     <string name="battery_light_reallyfull_color">満充電</string>
     <!-- R Notification headers -->
-    <string name="notification_headers_title">Show notification headers</string>
-    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
+    <string name="notification_headers_title">通知ヘッダーの表示</string>
+    <string name="notification_headers_summary">R スタイルの通知ヘッダーの表示に切り替える (システム UI の再起動が必要)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">クイック設定</string>
     <string name="quicksettings_summary">タイルと拡張ステータスバーを管理する</string>
@@ -229,44 +229,44 @@
     <string name="tiles_title">タイル</string>
     <string name="qs_tile_footer">クイック設定の行数と列数を変更するには、クイック設定プルダウン内の編集エリアの3点メニューホタンをタップして下さい。</string>
     <!-- QS layout -->
-    <string name="qs_layout_title">Layout</string>
-    <string name="qs_rows_portrait_title">Rows (portrait)</string>
-    <string name="qs_rows_landscape_title">Rows (landscape)</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="qs_layout_title">レイアウト</string>
+    <string name="qs_rows_portrait_title">行数 (縦向き)</string>
+    <string name="qs_rows_landscape_title">行数 (横向き)</string>
+    <string name="qs_columns_portrait_title">列数 (縦向き)</string>
+    <string name="qs_columns_landscape_title">列数 (横向き)</string>
     <!-- Quick QS pulldown -->
-    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
-    <string name="quick_pulldown_none">Disabled</string>
-    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
-    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+    <string name="status_bar_quick_qs_pulldown">クイック設定プルダウン</string>
+    <string name="quick_pulldown_none">無効</string>
+    <string name="quick_pulldown_right">ステータスバーの右端をプルダウン</string>
+    <string name="quick_pulldown_left">ステータスバーの左端をプルダウン</string>
     <!-- Tiles animation/interpolator style  -->
-    <string name="qs_animation_options_title">Animations</string>
-    <string name="qs_tile_animation_style_title">Style</string>
-    <string name="qs_tile_animation_duration_title">Duration</string>
-    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
-    <string name="qs_tile_animation_style_off">None</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_animation_options_title">アニメーション</string>
+    <string name="qs_tile_animation_style_title">スタイル</string>
+    <string name="qs_tile_animation_duration_title">継続時間</string>
+    <string name="qs_tile_animation_interpolator_title">タイルアニメーションの補間</string>
+    <string name="qs_tile_animation_style_off">なし</string>
+    <string name="qs_tile_animation_style_flip">反転</string>
+    <string name="qs_tile_animation_style_rotate">回転</string>
+    <string name="qs_tile_animation_duration_low">遅い</string>
+    <string name="qs_tile_animation_duration_default">既定</string>
+    <string name="qs_tile_animation_duration_fast">速い</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">等速</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">減速</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">加速と減速</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">弾む</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">通過</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">先取り</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">先取りと通過</string>
     <string name="qs_set_animation_style">%1$s</string>
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
     <!-- QS visibility -->
-    <string name="qs_tile_title_visibility_title">Title visibility</string>
-    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
+    <string name="qs_tile_title_visibility_title">タイルの名称</string>
+    <string name="qs_tile_title_visibility_summary">クイック設定タイルのタイル名を有効化する</string>
     <!-- QS Blur -->
-    <string name="qs_blur_title">QS Blur</string>
-    <string name="qs_blur_summary">Blur the section of the QS panel behind the notifications</string>
+    <string name="qs_blur_title">クイック設定のぼかし</string>
+    <string name="qs_blur_summary">通知の後ろのクイック設定の部分をぼかす</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_category_title">明るさスライダーオプション</string>
     <string name="qs_show_brightness_title">明るさスライダー</string>
@@ -284,59 +284,59 @@
     <!--Owlsnest navigation-->
     <string name="navigation_category">ナビゲーション</string>
     <string name="navigation_summary">ナビゲーションのスタイルと動作を編集する</string>
-    <string name="navigation_bar_layout_title">Layout</string>
-    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
+    <string name="navigation_bar_layout_title">レイアウト</string>
+    <string name="navigation_bar_layout_summary">ナビゲーションバーのレイアウトを編集する</string>
     <string name="navigation_bar_menu_arrow_keys_title">入力中の矢印キー</string>
     <string name="navigation_bar_menu_arrow_keys_summary">入力中は左右のカーソルボタンを表示する</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="navbar_gesture_mode_category_title">Gesture mode tweaks</string>
+    <string name="navbar_gesture_mode_category_title">ジェスチャーモードの設定</string>
     <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
-    <string name="navbar_gesture_pill_toggle_title">Full screen gestures</string>
-    <string name="navbar_gesture_pill_toggle_summary">This will hide both the navigation bar and the pill for a seamless fullscreen gesture experience.</string>
-    <string name="navbar_gesture_pill_toggle_summary_disabled">This option is only available for gesture navigation!</string>
+    <string name="navbar_gesture_pill_toggle_title">全画面のジェスチャー</string>
+    <string name="navbar_gesture_pill_toggle_summary">これによってシームレスなジェスチャー体験のためにナビゲーションバーとピルを両方隠します</string>
+    <string name="navbar_gesture_pill_toggle_summary_disabled">このオプションはジェスチャーナビゲーションのみ有効です!</string>
     <!-- Navigation -->
-    <string name="navigation_bar_title">On-screen navigation bar</string>
-    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
-    <string name="hw_keys_swap_title">Swap hardware buttons</string>
-    <string name="hw_keys_swap_summary">Swap the order of recents and back buttons</string>
-    <string name="home_key_title">Home button</string>
-    <string name="back_key_title">Back button</string>
-    <string name="menu_key_title">Menu button</string>
-    <string name="assist_key_title">Assist button</string>
-    <string name="app_switch_key_title">Recents button</string>
-    <string name="camera_key_title">Camera button</string>
-    <string name="short_press_title">Short press action</string>
-    <string name="long_press_title">Long press action</string>
-    <string name="double_tap_title">Double tap action</string>
-    <string name="app_picker_dialog_title">Select an app</string>
-    <string name="long_press_custom_app_title">Long press custom app</string>
-    <string name="double_tap_custom_app_title">Double tap custom app</string>
+    <string name="navigation_bar_title">画面内ナビゲーションバー</string>
+    <string name="navigation_bar_summary">画面上にナビゲーションバーを表示する</string>
+    <string name="hw_keys_swap_title">ハードウェアボタンの入替え</string>
+    <string name="hw_keys_swap_summary">アプリ履歴ボタンと戻るボタンの位置を入れ替える</string>
+    <string name="home_key_title">ホームボタン</string>
+    <string name="back_key_title">戻るボタン</string>
+    <string name="menu_key_title">メニューボタン</string>
+    <string name="assist_key_title">アシストボタン</string>
+    <string name="app_switch_key_title">アプリ履歴ボタン</string>
+    <string name="camera_key_title">カメラボタン</string>
+    <string name="short_press_title">短く押した時のアクション</string>
+    <string name="long_press_title">長押しのアクション</string>
+    <string name="double_tap_title">ダブルタップのアクション</string>
+    <string name="app_picker_dialog_title">アプリを選択</string>
+    <string name="long_press_custom_app_title">長押しのカスタムアプリ</string>
+    <string name="double_tap_custom_app_title">ダブルタップのカスタムアプリ</string>
     <!-- Button backlight -->
-    <string name="button_backlight_title">Backlight</string>
-    <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
-    <string name="button_backlight_on_touch_only_title">Button touch</string>
-    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
-    <string name="button_timeout_title">Backlight timeout (seconds)</string>
+    <string name="button_backlight_title">バックライト</string>
+    <string name="button_backlight_summary">静電容量タッチキーのバックライトを設定する</string>
+    <string name="button_backlight_on_touch_only_title">ボタンタッチ</string>
+    <string name="button_backlight_on_touch_only_summary">タッチ時のボタンのバックライト点灯時間を有効にする</string>
+    <string name="button_timeout_title">バックライト点灯時間 (秒)</string>
     <string name="button_link_brightness">画面の明るさとリンク</string>
-    <string name="button_link_brightness_summary">Use screen brightness level</string>
+    <string name="button_link_brightness_summary">画面の明るさを使う</string>
     <string name="button_manual_brightness">明るさレベル</string>
-    <string name="button_backlight_enable_title">Allow backlight</string>
+    <string name="button_backlight_enable_title">バックライトを点灯</string>
     <!--Owlsnest buttons-->
     <string name="buttons_title">ハードウェアボタン</string>
     <string name="buttons_summary">端末の物理ボタンのアクションを設定する</string>
     <string name="power_button_category">電源</string>
     <string name="volume_category">音量</string>
     <!-- Power menu -->
-    <string name="powermenu_restart_title">Restart</string>
-    <string name="powermenu_restart_summary">Display the Restart button</string>
+    <string name="powermenu_restart_title">再起動</string>
+    <string name="powermenu_restart_summary">再起動ボタンを表示する</string>
     <string name="powermenu_advanced_restart_title">高度な再起動</string>
-    <string name="powermenu_advanced_restart_summary">Display the Advanced Restart button</string>
+    <string name="powermenu_advanced_restart_summary">高度な再起動ボタンを表示する</string>
     <string name="powermenu_lockdown_title">画面ロック</string>
-    <string name="powermenu_lockdown_summary">Display the Lockdown button</string>
+    <string name="powermenu_lockdown_summary">画面ロックボタンを表示する</string>
     <string name="powermenu_screenshot_title">スクリーンショット</string>
-    <string name="powermenu_screenshot_summary">Display the Screenshot button</string>
+    <string name="powermenu_screenshot_summary">スクリーンショットボタンを表示する</string>
     <string name="powermenu_screenrecord_title">画面録画</string>
-    <string name="powermenu_screenrecord_summary">Display the Screenrecord button</string>
+    <string name="powermenu_screenrecord_summary">画面録画ボタンを表示する</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">画面消灯時のアニメーション</string>
     <string name="screen_off_animation_default">既定</string>
@@ -365,19 +365,19 @@
     <string name="active_edge_footer_info">Active Edge 内の全ての握りアクションに画面を点灯する機能があるわけではありません。\n\nアクションに特定のアプリアクティビティを選択する場合は、アプリ選択でアプリを長押しして下さい。</string>
     <!-- Custom actions -->
     <string name="action_nothing">なし</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
+    <string name="action_menu">メニュー</string>
+    <string name="action_app_switch">アプリ履歴</string>
     <string name="action_search">アシスタント</string>
     <string name="action_voice_search">音声検索</string>
     <string name="action_launch_camera">カメラ</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
+    <string name="action_last_app">直前のアプリ</string>
+    <string name="action_splitscreen">画面分割</string>
     <string name="action_flashlight">フラッシュライト</string>
     <string name="action_clear_notifications">通知を消去</string>
     <string name="action_volume_panel">音量パネル</string>
     <string name="action_screen_off">画面を消灯</string>
     <string name="action_notifications">通知</string>
-    <string name="action_power_menu">Power menu</string>
+    <string name="action_power_menu">電源メニュー</string>
     <string name="action_screenshot">スクリーンショット</string>
     <string name="action_qs_panel">クイック設定パネル</string>
     <string name="action_app_action">アプリ</string>
@@ -432,7 +432,7 @@
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">ロック画面</string>
     <string name="lockscreen_summary">ロック画面のレイアウトと設定を編集する</string>
-    <string name="fingerprint_category">Fingerprint</string>
+    <string name="fingerprint_category">指紋</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">メディアカバーアートフィルター</string>
     <string name="lockscreen_cover_filter_none">なし</string>
@@ -442,10 +442,10 @@
     <string name="lockscreen_cover_filter_grayblur">グレースケールとぼかし</string>
     <string name="lockscreen_cover_filter_gradientblur">グラデーションぼかし</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
-    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
-    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
-    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_sucess_vib_title">指紋認証時の振動</string>
+    <string name="fprint_sucess_vib_summary">指紋認証が成功した時に振動させる</string>
+    <string name="fprint_error_vib_title">指紋認証エラー時の振動</string>
+    <string name="fprint_error_vib_summary">指紋認証が失敗した時に振動させる</string>
     <!-- Show statusbar on lockscreen -->
     <string name="lockscreen_show_status_bar_title">ステータスバー</string>
     <string name="lockscreen_show_status_bar_summary">ロック画面にステータスバーを表示する</string>
@@ -499,21 +499,21 @@
     <string name="aspect_ratio_apps_info">変更後アプリを再起動させる必要があります</string>
     <string name="action_save">保存</string>
     <!-- Long swipe gestures -->
-    <string name="left_swipe_key_title">Left swipe</string>
-    <string name="right_swipe_key_title">Right swipe</string>
-    <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
-    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
-    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
-    <string name="left_swipe_actions_title">Long left swipe action</string>
-    <string name="left_swipe_app_action_title">Select long left swipe app</string>
-    <string name="right_swipe_actions_title">Long right swipe action</string>
-    <string name="right_swipe_app_action_title">Select long right swipe app</string>
-    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
-    <string name="back_swipe_extended_title">Extended swipe action</string>
-    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+    <string name="left_swipe_key_title">左スワイプ</string>
+    <string name="right_swipe_key_title">右スワイプ</string>
+    <string name="navbar_gesture_tweaks_pref_title">カスタムジェスチャー</string>
+    <string name="navbar_gesture_tweaks_pref_summary">ジェスチャー編集とカスタムアクション設定</string>
+    <string name="long_back_swipe_timeout_title">長いスワイプアクションの制限時間</string>
+    <string name="left_swipe_actions_title">長い左スワイプアクション</string>
+    <string name="left_swipe_app_action_title">長い左スワイプアクションのアプリ選択</string>
+    <string name="right_swipe_actions_title">長い右スワイプアクション</string>
+    <string name="right_swipe_app_action_title">長い右スワイプアクションのアプリ選択</string>
+    <string name="gesture_nav_tweaks_footer_info">アクションの特定のアプリアクティビティを選択するには、アプリピッカーでアプリを長押しして下さい。\n\nランチャーが表示されている場合は、画面の一番下の領域でスワイプしてアクションを起動します。</string>
+    <string name="back_swipe_extended_title">拡張スワイプアクション</string>
+    <string name="back_swipe_extended_summary">スワイプの高さが画面サイズの75%以上ならアクションを起動する</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Gesture bar size</string>
-    <string name="gesture_navbar_handle_default">Default</string>
-    <string name="gesture_navbar_handle_middle">Middle</string>
-    <string name="gesture_navbar_handle_large">Large</string>
+    <string name="gesture_navbar_handle_title">ジェスチャーバーのサイズ</string>
+    <string name="gesture_navbar_handle_default">既定</string>
+    <string name="gesture_navbar_handle_middle">中</string>
+    <string name="gesture_navbar_handle_large">大</string>
 </resources>

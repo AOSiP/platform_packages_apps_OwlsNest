@@ -24,18 +24,18 @@
     <string name="aosip_title">Nastavenia AOSiP</string>
     <string name="owlsnest_settings_title">Kategórie</string>
     <!-- About AOSiP -->
-    <string name="aosip_about_title">About AOSiP</string>
-    <string name="aosip_about_summary">A little info about the team</string>
-    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
-    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
+    <string name="aosip_about_title">O AOSiP</string>
+    <string name="aosip_about_summary">Zopár informácií o tíme</string>
+    <string name="aosip_telegram_title">Telegram komunita AOSiP</string>
+    <string name="aosip_telegram_summary">Kliknutím sem otvoríte našu úžasnú komunitu!</string>
     <string name="aosip_gerrit_title">AOSiP Gerrit</string>
-    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
+    <string name="aosip_gerrit_summary">Klepnutím sem otvoríte Gerrit a uvidíte najnovšie príspevky</string>
     <string name="aosip_github_title">AOSiP Github</string>
-    <string name="aosip_github_summary">Tap here to open our Github!</string>
-    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
-    <string name="aosip_about_team">Team Illusion</string>
-    <string name="about_maintainer">Maintainer</string>
-    <string name="aosip_about_maintainer">The maintainer for your device is</string>
+    <string name="aosip_github_summary">Klepnutím sem otvoríte náš Github!</string>
+    <string name="aosip_about_info_summary">AOSiP je skratka pre Android Open Source illusion Project. Sme vlastná ROM založená na AOSP, vytvorená z najnovších funkcií z celej vývojovej komunity Android. Kvalita a stabilita sú našou prvou prioritou, sme odhodlaní priniesť vám to najlepšie, čo Android ponúka.</string>
+    <string name="aosip_about_team">Tím Illusion</string>
+    <string name="about_maintainer">Správca</string>
+    <string name="aosip_about_maintainer">Správca vášho zariadenia je</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Resetovať</string>
@@ -51,43 +51,43 @@
     <string name="icon_category">Ikony</string>
     <string name="battery_category">Batéria</string>
     <!-- Old MobileType Toggle -->
-    <string name="use_old_mobiletype_title">Use old mobile type style</string>
-    <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
-    <string name="mobile_data_style_info_title">Change take effect on next update of mobile signal icon.</string>
+    <string name="use_old_mobiletype_title">Použiť štýl starého telefónu</string>
+    <string name="use_old_mobiletype_summary">Zlúčiť popis a ikonu signálu</string>
+    <string name="mobile_data_style_info_title">Zmena sa prejaví pri ďalšej aktualizácii ikony mobilného signálu.</string>
     <!-- 4G LTE switch -->
-    <string name="show_fourg_title">Show 4G instead of LTE</string>
-    <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
+    <string name="show_fourg_title">Zobraziť 4G namiesto LTE</string>
+    <string name="show_fourg_summary">Nahradí indikátor LTE v stavovom riadku indikátorom 4G</string>
     <!--Statusbar privacy indicators-->
-    <string name="statusbar_privacy_indicators_title">Privacy indicators</string>
-    <string name="statusbar_privacy_indicators_summary">Show privacy indicators on statusbar</string>
+    <string name="statusbar_privacy_indicators_title">Indikátory súkromia</string>
+    <string name="statusbar_privacy_indicators_summary">Zobraziť ikony súkromia v stavovom riadku</string>
     <!-- Show VoLTE icon on statusbar -->
-    <string name="volte_switch_title">VoLTE icon</string>
-    <string name="volte_switch_summary">Display VoLTE icon</string>
-    <string name="volte_icon_asus">VoLTE Asus Icon</string>
-    <string name="volte_icon_title">VoLTE icon</string>
-    <string name="volte_icon_summary">Display VoLTE icon</string>
-    <string name="volte_icon_style_title">Select VoLTE Icon</string>
-    <string name="volte_icon_vo">Vo Only Icon</string>
-    <string name="volte_icon_volte">VoLTE Icon</string>
-    <string name="volte_icon_oos">VoLTE OOS Icon</string>
-    <string name="volte_icon_hd">HD Icon</string>
-    <string name="volte_icon_volit">VoLIT Icon</string>
+    <string name="volte_switch_title">Ikona VoLTE</string>
+    <string name="volte_switch_summary">Zobraziť ikonu VoLTE</string>
+    <string name="volte_icon_asus">Ikona VoLTE Asus</string>
+    <string name="volte_icon_title">Ikona VoLTE</string>
+    <string name="volte_icon_summary">Zobraziť ikonu VoLTE</string>
+    <string name="volte_icon_style_title">Vybrať ikonu VoLTE</string>
+    <string name="volte_icon_vo">Len ikona Vo</string>
+    <string name="volte_icon_volte">Ikona VoLTE</string>
+    <string name="volte_icon_oos">Ikona VoLTE OOS</string>
+    <string name="volte_icon_hd">Ikona HD</string>
+    <string name="volte_icon_volit">Ikona VoLIT</string>
     <!-- Status bar clock and date options -->
-    <string name="status_bar_style_title">Style</string>
-    <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="status_bar_style_title">Štýl</string>
+    <string name="status_bar_clock">Hodiny a dátum</string>
     <string name="clock_enabled">Zapnuté</string>
     <string name="clock_disabled">Vypnuté</string>
     <string name="status_bar_clock_style_reset">Resetovať farby</string>
-    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
-    <string name="status_bar_clock_seconds_title">Clock seconds</string>
-    <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
+    <string name="status_bar_show_clock_title">Zobraziť hodiny a dátum</string>
+    <string name="status_bar_clock_seconds_title">Sekundy hodín</string>
+    <string name="status_bar_clock_seconds_summary">Zobraziť sekundy vedľa hodín v stavovom riadku</string>
     <string name="status_bar_am_pm_title">dop./pop.</string>
     <string name="status_bar_am_pm_info">24-hodinový formát je povolený</string>
     <string name="enable_clock_weekday">Deň v týždni</string>
     <string name="enable_clock_weekday_summary">Skratka dňa v týždni pred hodinami</string>
     <string name="dont_show">Nezobrazovať</string>
     <string name="clock_date_display">Dátum</string>
-    <string name="status_bar_time_cat">Time</string>
+    <string name="status_bar_time_cat">Čas</string>
     <string name="clock_date_display_summary">Zobraziť vlastný dátum pred hodinami</string>
     <string name="clock_date_style">Štýl dátumu</string>
     <string name="clock_date_format">Formát dátumu</string>
@@ -102,130 +102,130 @@
     <string name="clock_date_style_normal">Normálny</string>
     <string name="clock_date_style_lowercase">Malé písmená</string>
     <string name="clock_date_style_uppercase">Veľké písmená</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
-    <string name="clock_position">Clock position</string>
-    <string name="clock_position_right">Right clock</string>
-    <string name="clock_position_center">Center clock</string>
-    <string name="clock_position_left">Left clock</string>
+    <string name="clock_date_right">Napravo od času</string>
+    <string name="clock_date_left">Naľavo od času</string>
+    <string name="clock_date_position">Pozícia dátumu</string>
+    <string name="clock_position">Pozícia hodín</string>
+    <string name="clock_position_right">Hodiny vpravo</string>
+    <string name="clock_position_center">Hodiny v strede</string>
+    <string name="clock_position_left">Hodiny vľavo</string>
     <!-- Status bar - icons -->
-    <string name="status_bar_icons_title">Status bar icons</string>
-    <string name="status_bar_system_icons_title">System icons</string>
-    <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
+    <string name="status_bar_icons_title">Ikony stavového riadku</string>
+    <string name="status_bar_system_icons_title">Systémové ikony</string>
+    <string name="status_bar_system_icons_summary">Vyberte ikony, ktoré budú zobrazené v stavovom riadku</string>
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Battery</string>
-    <string name="battery_percent_title">Battery percent</string>
+    <string name="battery_style_category_title">Batéria</string>
+    <string name="battery_percent_title">Percentá batérie</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Štýl batérie</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikona na výšku (predvolené)</string>
+    <string name="status_bar_battery_style_circle">Kruh</string>
+    <string name="status_bar_battery_style_dotted_circle">Kruh (bodkovaný)</string>
+    <string name="status_bar_battery_style_filled_circle">Kruh (plný)</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Nezobrazovať</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Percentá batérie</string>
-    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_default">Skryté (predvolené)</string>
     <string name="status_bar_battery_percentage_text_inside">Vnútri ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedľa ikony</string>
-    <string name="qs_battery_percentage_title">QS battery percentage</string>
-    <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
+    <string name="qs_battery_percentage_title">Percentá batérie v QS</string>
+    <string name="qs_battery_percentage_summary">Zobrazovať percentá batérie v záhlaví QS namiesto odhadu výdrže batérie</string>
     <!-- Statusbar net monitor -->
-    <string name="network_traffic_state_title">Network traffic</string>
-    <string name="network_traffic_location">Traffic indicator placement</string>
-    <string name="traffic_disabled">Disabled</string>
-    <string name="traffic_statusbar">Statusbar</string>
-    <string name="traffic_expanded_statusbar">Expanded header</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
-    <string name="network_traffic_arrow">Show arrows</string>
-    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
-    <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
-    <string name="show_network_traffic_dynamic">Dynamic</string>
+    <string name="network_traffic_state_title">Sieťová prevádzka</string>
+    <string name="network_traffic_location">Umiestnenie indikátoru sieťovej prevádzky</string>
+    <string name="traffic_disabled">Zakázané</string>
+    <string name="traffic_statusbar">Stavový riadok</string>
+    <string name="traffic_expanded_statusbar">Rozšírené záhlavie</string>
+    <string name="network_traffic_autohide_threshold_title">Automaticky skryť pri rýchlosti dát stanovenej hodnoty (KB/s)</string>
+    <string name="network_traffic_arrow">Zobraziť šípky</string>
+    <string name="network_traffic_arrow_summary">Zobraziť šípky sieťovej prevádzky</string>
+    <string name="network_traffic_type">Vybrať typ činnosti siete</string>
+    <string name="show_network_traffic_combined">Kombinované (Upload + Download)</string>
+    <string name="show_network_traffic_dynamic">Dynamické</string>
     <string name="show_network_traffic_up">Upload</string>
     <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Both</string>
-    <string name="nettraf_font_size">Single net font size (dp)</string>
+    <string name="show_network_traffic_all">Obe</string>
+    <string name="nettraf_font_size">Veľkosť textu jednej siete (dp)</string>
     <!-- Kronic logo -->
-    <string name="kronic_logo_title">Kronic Logo</string>
-    <string name="kronic_logo_summary">Let everyone know that you\'re using AOSiP when they see your screen</string>
-    <string name="status_bar_logo_style_title">Custom logo style</string>
+    <string name="kronic_logo_title">Logo Kronic</string>
+    <string name="kronic_logo_summary">Nech všetci vedia, že používate AOSiP, keď uvidia vašu obrazovku</string>
+    <string name="status_bar_logo_style_title">Vlastný štýl loga</string>
     <!-- Carrier Label -->
-    <string name="status_carrier_title">Carrier Label</string>
-    <string name="carrier_options">Select display locations</string>
+    <string name="status_carrier_title">Názov operátora</string>
+    <string name="carrier_options">Vyberte umiestnenie zobrazenia</string>
     <string name="custom_carrier_label_title">Vlastný názov operátora</string>
-    <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
+    <string name="custom_carrier_label_explain">Zadajte vlastný názov. Nechajte prázdne, ak chcete použiť názov siete</string>
     <string name="custom_carrier_label_notset">Vlastný názov momentálne nie je nastavený</string>
-    <string name="show_carrier_title">Carrier label</string>
-    <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen</string>
-    <string name="show_carrier_statusbar">Status bar</string>
-    <string name="show_carrier_enabled">Both</string>
+    <string name="show_carrier_title">Názov operátora</string>
+    <string name="show_carrier_disabled">Zakázané</string>
+    <string name="show_carrier_keyguard">Obrazovka uzamknutia</string>
+    <string name="show_carrier_statusbar">Stavový riadok</string>
+    <string name="show_carrier_enabled">Obe</string>
     <!--Owlsnest Notification-->
     <string name="notification_title">Upozornenie</string>
     <string name="notification_summary">Nastaviť správanie kontrolky LED a upozornenia</string>
     <string name="notification_category">Upozornenia</string>
-    <string name="headsup_category">Heads-Up</string>
+    <string name="headsup_category">Plávajúce oznámenia</string>
     <!-- Media heads-up ticker -->
-    <string name="show_media_heads_up_title">Show media heads up</string>
-    <string name="show_media_heads_up_summary">Show media heads up when a new track is played, if the player is not already in foreground</string>
+    <string name="show_media_heads_up_title">Zobraziť plávajúce oznámenia médií</string>
+    <string name="show_media_heads_up_summary">Zobraziť plávajúce oznámenia médií pri prehrávaní novej skladby, ak prehrávač ešte nie je v popredí</string>
     <!-- Heads-up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_title">Časovač odloženia</string>
+    <string name="heads_up_snooze_summary_one_minute">Potiahnutím nahor dôjde k odloženiu plávajúcich upozornení aplikácie na 1 minútu</string>
+    <string name="heads_up_snooze_summary">Potiahnutím nahor dôjde k odloženiu plávajúcich upozornení aplikácie na <xliff:g id="number">%d</xliff:g> minút</string>
+    <string name="heads_up_snooze_disabled_summary">Časovač odloženia je vypnutý</string>
+    <string name="heads_up_snooze_1min">1 minúta</string>
+    <string name="heads_up_snooze_5min">5 minút</string>
+    <string name="heads_up_snooze_10min">10 minút</string>
+    <string name="heads_up_snooze_15min">15 minút</string>
+    <string name="heads_up_snooze_20min">20 minút</string>
     <!--Notification Pulse-->
-    <string name="pulse_ambient_light_title">Pulse on new notification</string>
-    <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
-    <string name="ambient_notification_light_enabled_title">Pulse on always on</string>
-    <string name="ambient_notification_light_enabled_summary">Show light pulse on new notification using always on</string>
-    <string name="pulse_ambient_light_note">Wake screen on receiving new notifications must be turned on</string>
-    <string name="ambient_brigthness_category_title">Screen brightness</string>
-    <string name="pulse_ambient_category_title">Notification light pulse</string>
-    <string name="ambient_notification_light_hide_aod_title">Only show light pulse</string>
-    <string name="ambient_notification_light_hide_aod_summary">Hide all other display elements from always on</string>
-    <string name="ambient_notification_light_accent_title">Use system accent color</string>
-    <string name="ambient_notification_light_accent_summary">Use current system accent color for light pulse</string>
-    <string name="ambient_notification_light_color_title">Custom color</string>
-    <string name="ambient_notification_light_color_summary">Default color for light pulse</string>
-    <string name="ambient_notification_light_timeout_title">Timeout for light pulse</string>
-    <string name="ambient_notification_light_color_mode_title">Light pulse color</string>
-    <string name="ambient_notification_light_color_mode_automatic">Notification color</string>
-    <string name="ambient_notification_light_color_mode_accent">System accent color</string>
-    <string name="ambient_notification_light_color_mode_custom">Custom color</string>
-    <string name="entry_infinite">Infinite</string>
-    <string name="entry_five_minute">5 minutes</string>
-    <string name="entry_ten_minute">10 minutes</string>
-    <string name="entry_thirty_minute">30 minutes</string>
-    <string name="entry_sixty_minute">60 minutes</string>
-    <string name="entry_fifteen_minute">15 minutes</string>
+    <string name="pulse_ambient_light_title">Blikať pri novom oznámení</string>
+    <string name="pulse_ambient_light_summary">Zobraziť blikanie kontrolky pri novom oznámení</string>
+    <string name="ambient_notification_light_enabled_title">Blikať v režime Displej vždy zapnutý</string>
+    <string name="ambient_notification_light_enabled_summary">Zobraziť blikanie kontrolky pri novom oznámení v režime Displej vždy zapnutý</string>
+    <string name="pulse_ambient_light_note">Prebudenie obrazovky pri novom oznámení musí byť zapnuté</string>
+    <string name="ambient_brigthness_category_title">Jas obrazovky</string>
+    <string name="pulse_ambient_category_title">Blikajúca kontrolka upozornení</string>
+    <string name="ambient_notification_light_hide_aod_title">Zobraziť len blikanie</string>
+    <string name="ambient_notification_light_hide_aod_summary">Skryť všetky ostatné prvky v zobrazení Displej vždy zapnutý</string>
+    <string name="ambient_notification_light_accent_title">Použiť systémovú doplnkovú farbu</string>
+    <string name="ambient_notification_light_accent_summary">Pre blikanie použiť aktuálnu systémovú doplnkovú farbu</string>
+    <string name="ambient_notification_light_color_title">Vlastná farba</string>
+    <string name="ambient_notification_light_color_summary">Predvolená farba blikania</string>
+    <string name="ambient_notification_light_timeout_title">Časový limit blikania</string>
+    <string name="ambient_notification_light_color_mode_title">Farba blikania svetla</string>
+    <string name="ambient_notification_light_color_mode_automatic">Farba oznámenia</string>
+    <string name="ambient_notification_light_color_mode_accent">Systémová doplnková farba</string>
+    <string name="ambient_notification_light_color_mode_custom">Vlastná farba</string>
+    <string name="entry_infinite">Nekonečno</string>
+    <string name="entry_five_minute">5 minút</string>
+    <string name="entry_ten_minute">10 minút</string>
+    <string name="entry_thirty_minute">30 minút</string>
+    <string name="entry_sixty_minute">60 minút</string>
+    <string name="entry_fifteen_minute">15 minút</string>
     <!-- Notifications while screen on -->
-    <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
-    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+    <string name="notification_sound_vib_screen_on_title">Hlasité oznámenia pri zapnutej obrazovke</string>
+    <string name="notification_sound_vib_screen_on_summary">Prehrať zvuk a vibrácie pre upozornenia pri zapnutej obrazovke</string>
     <!-- Battery light -->
-    <string name="battery_light_settings">Battery Charging Light</string>
-    <string name="battery_light_summary">Customization for Battery Light</string>
+    <string name="battery_light_settings">Kontrolka nabíjania batérie</string>
+    <string name="battery_light_summary">Prispôsobenie kontrolky batérie</string>
     <string name="battery_light_allow_on_dnd_title">LED aj v režime Nerušiť</string>
     <string name="battery_light_low_blinking_title">LED bliká pri nízkej úrovni nabitia</string>
     <string name="battery_light_cat">Farba LED pri nabíjaní</string>
     <string name="battery_light_low_color">Vybitá batéria</string>
     <string name="battery_light_medium_color">Stredná úroveň</string>
     <string name="battery_light_full_color">Skoro nabitá (90%)</string>
-    <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="battery_light_reallyfull_color">Plne nabité (100)</string>
     <!-- R Notification headers -->
-    <string name="notification_headers_title">Show notification headers</string>
-    <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
+    <string name="notification_headers_title">Zobraziť záhlavia oznámení</string>
+    <string name="notification_headers_summary">Zobraziť záhlavia oznámení v štýle Android R (vyžaduje reštart SystemUI)</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Rýchle nastavenia</string>
     <string name="quicksettings_summary">Spravovanie dlaždíc Rýchlych nastavení a rozšíreného stavového riadku</string>
     <string name="expanded_category">Rozšírený</string>
-    <string name="brightness_slider_title">Brightness slider</string>
+    <string name="brightness_slider_title">Posuvník jasu</string>
     <string name="tiles_title">QS Tiles</string>
     <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
     <!-- QS layout -->
@@ -248,7 +248,7 @@
     <string name="qs_tile_animation_style_flip">Flip</string>
     <string name="qs_tile_animation_style_rotate">Rotate</string>
     <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
+    <string name="qs_tile_animation_duration_default">Predvolené</string>
     <string name="qs_tile_animation_duration_fast">Fast</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
@@ -339,7 +339,7 @@
     <string name="powermenu_screenrecord_summary">Display the Screenrecord button</string>
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Animácia vypnutia obrazovky</string>
-    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_default">Predvolené</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Mierka</string>
     <!--Owlsnest recentscreen-->
@@ -513,7 +513,7 @@
     <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
     <!-- Gesture navbar handle -->
     <string name="gesture_navbar_handle_title">Gesture bar size</string>
-    <string name="gesture_navbar_handle_default">Default</string>
+    <string name="gesture_navbar_handle_default">Predvolené</string>
     <string name="gesture_navbar_handle_middle">Middle</string>
     <string name="gesture_navbar_handle_large">Large</string>
 </resources>
