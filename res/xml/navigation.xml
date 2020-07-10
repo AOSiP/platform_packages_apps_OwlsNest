@@ -25,6 +25,12 @@
         android:title="@string/navigation_bar_title"
         android:summary="@string/navigation_bar_summary" />
 
+   <com.aosip.support.preference.SecureSettingSwitchPreference
+        android:key="hardware_keys_enable"
+        android:title="@string/hardware_keys_disable_title"
+        android:summary="@string/hardware_keys_disable_summary"
+        android:defaultValue="true" />
+
     <Preference
         android:key="gesture_system_navigation"
         android:title="@string/system_navigation_title"
