@@ -55,6 +55,12 @@
         settings:min="0"
         android:persistent="false" />
 
+    <com.aosip.support.preference.SecureSettingSwitchPreference
+        android:key="qs_status_bar_bg_transparency"
+        android:title="@string/qs_header_transparency_title"
+        android:summary="@string/qs_header_transparency_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="string/qs_brightness_category"
         android:title="@string/qs_brightness_category_title">
