@@ -295,6 +295,9 @@
     <string name="qs_header_transparency_title">QS Header Transparency</string>
     <string name="qs_header_transparency_summary">Change wether the header in the QS panel is black or transparent</string>
 
+    <string name="qs_drag_handle_title">Drag handle</string>
+    <string name="qs_drag_handle_summary">Show the QS panel drag handle</string>
+
     <!-- QS layout -->
     <string name="qs_layout_title">Layout</string>
     <string name="qs_rows_portrait_title">Rows (portrait)</string>

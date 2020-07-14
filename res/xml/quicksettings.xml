@@ -61,6 +61,12 @@
         android:summary="@string/qs_header_transparency_summary"
         android:defaultValue="false" />
 
+    <com.aosip.support.preference.SecureSettingSwitchPreference
+        android:key="qs_show_drag_handle"
+        android:title="@string/qs_drag_handle_title"
+        android:summary="@string/qs_drag_handle_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="string/qs_brightness_category"
         android:title="@string/qs_brightness_category_title">
