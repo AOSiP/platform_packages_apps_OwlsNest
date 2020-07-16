@@ -36,8 +36,6 @@ import java.util.List;
 public class GestureHolder extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String PIXEL_CATEGORY = "pixel_gesture_settings";
-
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.OWLSNEST;
@@ -47,11 +45,6 @@ public class GestureHolder extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.gesture);
-
-        Preference Pixel = findPreference(PIXEL_CATEGORY);
-        if (!getResources().getBoolean(R.bool.is_pixel_device)) {
-            getPreferenceScreen().removePreference(Pixel);
-        }
     }
 
     @Override

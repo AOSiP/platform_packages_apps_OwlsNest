@@ -19,15 +19,4 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/gesture_category" >
 
-    <Preference
-        android:key="gesture_settings"
-        android:title="@string/aosp_gesture_title"
-        android:fragment="com.android.settings.gestures.GestureSettings" />
-
-    <Preference
-        android:key="pixel_gesture_settings"
-        android:title="@string/pixel_gesture_title"
-        android:summary="@string/pixel_gesture_summary"
-        android:fragment="com.aosip.owlsnest.gesture.PixelGestureHolder" />
-
 </PreferenceScreen>

@@ -11,8 +11,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Whether to display pixel gestures category -->
-    <bool name="is_pixel_device">false</bool>
     <!-- Whether to display active edge category -->
     <bool name="has_active_edge">false</bool>
     <!-- Whether to display aware category -->
