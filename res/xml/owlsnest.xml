@@ -67,7 +67,7 @@
 
     <PreferenceScreen
        android:key="gesture"
-       android:fragment="com.aosip.owlsnest.gesture.GestureHolder"
+       android:fragment="com.android.settings.gestures.GestureSettings"
        android:title="@string/gesture_category"
        android:summary="@string/gesture_summary"
        android:icon="@drawable/ic_owlsnest_gesture_background" />
