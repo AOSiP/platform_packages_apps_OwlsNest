@@ -167,6 +167,7 @@
     <string name="notification_summary">Dostosuj diodę LED oraz zachowanie powiadomień</string>
     <string name="notification_category">Powiadomienia</string>
     <string name="headsup_category">Wyskakujące powiadomienia</string>
+    <string name="headsup_summary">Various options to change how Heads Up works</string>
     <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">Pokaż wyskakujące powiadomienia multimediów</string>
     <string name="show_media_heads_up_summary">Pokaż wyskakujące powiadomienia multimediów, gdy zostanie odtworzony nowy utwór, jeśli odtwarzacz nie jest jeszcze na pierwszym planie</string>
@@ -180,6 +181,15 @@
     <string name="heads_up_snooze_10min">10 minut</string>
     <string name="heads_up_snooze_15min">15 minut</string>
     <string name="heads_up_snooze_20min">20 minut</string>
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Time out</string>
+    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
+    <string name="heads_up_time_out_2sec">2 seconds</string>
+    <string name="heads_up_time_out_4sec">4 seconds</string>
+    <string name="heads_up_time_out_5sec">5 seconds</string>
+    <string name="heads_up_time_out_6sec">6 seconds</string>
+    <string name="heads_up_time_out_8sec">8 seconds</string>
+    <string name="heads_up_time_out_10sec">10 seconds</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">Pulsowanie przy nowym powiadomieniu</string>
     <string name="pulse_ambient_light_summary">Podświetl boczne krawędzie ekranu podczas pulsu powiadomień</string>
@@ -221,6 +231,18 @@
     <!-- R Notification headers -->
     <string name="notification_headers_title">Pokaż nagłówki powiadomień</string>
     <string name="notification_headers_summary">Określa, czy wyświetlać nagłówki powiadomień w stylu Androida R (wymaga ponownego uruchomienia SystemUI)</string>
+    <!-- Statusbar ticker -->
+    <string name="statusbar_notifi_cat">Notifications Ticker</string>
+    <string name="status_bar_ticker_title">Ticker</string>
+    <string name="status_bar_show_ticker_title">Ticker</string>
+    <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
+    <string name="ticker_animation_mode_title">Ticker animation</string>
+    <string name="ticker_animation_mode_alpha_fade">Fade</string>
+    <string name="ticker_animation_mode_scroll">Scroll</string>
+    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Less boring heads up</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Szybkie ustawienia</string>
     <string name="quicksettings_summary">Zarządzaj szybkimi ustawieniami oraz rozszerzonym paskiem statusu</string>
@@ -234,6 +256,11 @@
     <string name="qs_rows_landscape_title">Wiersze (poziomo)</string>
     <string name="qs_columns_portrait_title">Kolumny (pionowo)</string>
     <string name="qs_columns_landscape_title">Kolumny (poziomo)</string>
+    <!-- QS Battery Location -->
+    <string name="qs_battery_header_title">QS Battery Location</string>
+    <string name="qs_battery_off">Off</string>
+    <string name="qs_battery_on_signal">Qs Signal Group</string>
+    <string name="qs_battery_on_header">Qs Header</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Szybkie rozwijanie</string>
     <string name="quick_pulldown_none">Wyłączono</string>
@@ -271,6 +298,8 @@
     <string name="qs_brightness_category_title">Opcje suwaka jasności</string>
     <string name="qs_show_brightness_title">Suwak jasności</string>
     <string name="qs_show_brightness_summary">Pokaż suwak jasności w panelu szybkich ustawień</string>
+    <string name="qs_show_brightness_buttons_title">Brightness slider Buttons</string>
+    <string name="qs_show_brightness_buttons_summary">Show a -/+ next to the slider in the quick settings panel</string>
     <string name="qs_brightness_position_bottom_title">Suwak jasności na dole</string>
     <string name="qs_brightness_position_bottom_summary">Pokaż suwak jasności na dole szybkich ustawień</string>
     <string name="qs_long_press_action_title">Akcja długiego naciśnięcia</string>
@@ -288,6 +317,11 @@
     <string name="navigation_bar_layout_summary">Dostosuj układ paska nawigacji</string>
     <string name="navigation_bar_menu_arrow_keys_title">Pokaż klawisze strzałek podczas pisania</string>
     <string name="navigation_bar_menu_arrow_keys_summary">Wyświetlaj przyciski lewego i prawego kursora podczas pisania</string>
+    <string name="hardware_keys_disable_title">Enable Keys</string>
+    <string name="hardware_keys_disable_summary">Enable the device\'s hardware keys and backlight</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">IME button space</string>
+    <string name="navigation_bar_ime_space_summary">Show IME button space below keyboard</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="navbar_gesture_mode_category_title">Poprawki trybu gestów</string>
     <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
@@ -311,6 +345,36 @@
     <string name="app_picker_dialog_title">Wybierz aplikację</string>
     <string name="long_press_custom_app_title">Długo naciśnij niestandardową aplikację</string>
     <string name="double_tap_custom_app_title">Podwójnie naciśnij niestandardową aplikację</string>
+    <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+    <string name="show_pulse_title">Show Pulse</string>
+    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
+    <string name="pulse_render_mode_title">Render mode</string>
+    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+    <string name="pulse_render_mode_solid_lines">Solid lines</string>
+    <string name="pulse_color">Color</string>
+    <string name="pulse_color_mode">Color mode</string>
+    <string name="pulse_color_accent">Accent</string>
+    <string name="pulse_color_custom">Custom</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_auto">Album art</string>
+    <string name="pulse_color_chooser">Choose color</string>
+    <string name="smoothing_enabled_title">Turn on smoothing</string>
+    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
+    <string name="pulse_advanced_category">Advanced</string>
+    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+    <string name="pulse_custom_fudge_factor">Sanity level</string>
+    <string name="lavamp_speed_title">Lava lamp speed</string>
+    <string name="pulse_solid_units_count">Solid lines count</string>
+    <string name="pulse_solid_lines_count">Solid lines count</string>
+    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
+    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+    <string name="pulse_custom_dimen">Bar width</string>
+    <string name="pulse_custom_div">Bar spacing</string>
+    <string name="pulse_filled_block_size">Block size</string>
+    <string name="pulse_empty_block_size">Block spacing</string>
     <!-- Button backlight -->
     <string name="button_backlight_title">Podświetlenie</string>
     <string name="button_backlight_summary">Skonfiguruj podświetlenie dla przycisków dotykowych</string>
@@ -433,6 +497,8 @@
     <string name="lockscreen_title">Ekran blokady</string>
     <string name="lockscreen_summary">Konfiguruj opcje oraz wygląd ekranu blokadu</string>
     <string name="fingerprint_category">Odcisk palca</string>
+    <string name="tuner_keyguard_show_lock_icon_title">Show lock status</string>
+    <string name="tuner_keyguard_show_lock_icon_summary">Show current lock status icon on top</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtr okładki albumu</string>
     <string name="lockscreen_cover_filter_none">Żaden</string>
@@ -508,12 +574,23 @@
     <string name="left_swipe_app_action_title">Wybierz aplikację dla długiego przeciągnięcia w lewo</string>
     <string name="right_swipe_actions_title">Akcja długiego przesunięcia w prawo</string>
     <string name="right_swipe_app_action_title">Wybierz aplikację długiego przeciągnięcia w prawo</string>
+    <string name="left_vertical_swipe_key_title">Left L swipe</string>
+    <string name="right_vertical_swipe_key_title">Right L swipe</string>
+    <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
+    <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
+    <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
+    <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
     <string name="gesture_nav_tweaks_footer_info">Aby wybrać konkretną aktywność aplikacji dla akcji, przytrzymaj długo dowolną aplikację.\n\nJeśli program uruchamiający się wyświetla, przesuń palcem po dolnej części ekranu, aby uruchomić akcję.</string>
     <string name="back_swipe_extended_title">Rozszerzona akcja przesunięcia</string>
-    <string name="back_swipe_extended_summary">Wyzwalaj akcję, jeśli przeciągnięcie jest poziomo szersze niż 3/4 wielkości wyświetlacza</string>
+    <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Wysokość paska gestów</string>
-    <string name="gesture_navbar_handle_default">Domyślna</string>
-    <string name="gesture_navbar_handle_middle">Średnia</string>
-    <string name="gesture_navbar_handle_large">Duża</string>
+    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
+    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
+    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
+    <string name="gesture_navbar_handle_default">Default pill</string>
+    <string name="gesture_navbar_handle_middle">Middle pill</string>
+    <string name="gesture_navbar_handle_large">Large pill</string>
+    <!-- USB Configuration -->
+    <string name="usb_default_config_title">USB configuration</string>
+    <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
 </resources>
