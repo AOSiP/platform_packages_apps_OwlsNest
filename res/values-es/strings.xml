@@ -167,7 +167,7 @@
     <string name="notification_summary">Ajuste los LED y el comportamiento de notificación</string>
     <string name="notification_category">Notificaciones</string>
     <string name="headsup_category">Notificaciones flotantes</string>
-    <string name="headsup_summary">Various options to change how Heads Up works</string>
+    <string name="headsup_summary">Varias opciones para cambiar el funcionamiento de las notificaciones emergentes</string>
     <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">Mostrar notificaciones multimedia</string>
     <string name="show_media_heads_up_summary">Mostrar aviso multimedia cuando se reproduzca una nueva pista si el reproductor no está en primer plano</string>
@@ -182,14 +182,14 @@
     <string name="heads_up_snooze_15min">15 minutos</string>
     <string name="heads_up_snooze_20min">20 minutos</string>
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_5sec">5 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
+    <string name="heads_up_time_out_title">Tiempo de espera</string>
+    <string name="heads_up_time_out_summary">La notificación se mostrará durante <xliff:g id="number">%d </xliff:g> segundos</string>
+    <string name="heads_up_time_out_2sec">2 segundos</string>
+    <string name="heads_up_time_out_4sec">4 segundos</string>
+    <string name="heads_up_time_out_5sec">5 segundos</string>
+    <string name="heads_up_time_out_6sec">6 segundos</string>
+    <string name="heads_up_time_out_8sec">8 segundos</string>
+    <string name="heads_up_time_out_10sec">10 segundos</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">Pulso sobre las nuevas notificaciones</string>
     <string name="pulse_ambient_light_summary">Mostrar pulsación ligera en las nuevas notificaciones</string>
@@ -232,17 +232,17 @@
     <string name="notification_headers_title">Mostrar notificaciones en encabezados</string>
     <string name="notification_headers_summary">Permite elegir si se desean encabezados de notificación de estilo R (debe reiniciarse el sistema)</string>
     <!-- Statusbar ticker -->
-    <string name="statusbar_notifi_cat">Notifications Ticker</string>
-    <string name="status_bar_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
-    <string name="ticker_animation_mode_title">Ticker animation</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="statusbar_notifi_cat">Etiqueta de notificación</string>
+    <string name="status_bar_ticker_title">Etiqueta</string>
+    <string name="status_bar_show_ticker_title">Etiqueta</string>
+    <string name="status_bar_show_ticker_summary">Pre-Visualización de la Notificación en la Barra de Estado</string>
+    <string name="ticker_animation_mode_title">Animación de la etiqueta</string>
+    <string name="ticker_animation_mode_alpha_fade">Ocultar</string>
+    <string name="ticker_animation_mode_scroll">Desplazamiento</string>
+    <string name="ticker_tick_duration_title">Duración de etiqueta</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
+    <string name="less_boring_heads_up_title">Notificaciones flotantes menos aburridas</string>
+    <string name="less_boring_heads_up_summary">Mostrar notificaciones emergentes sólo para la aplicación de teléfono y alarma</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Ajustes rápidos</string>
     <string name="quicksettings_summary">Administre sus mosaicos rápidos y barra de estado expandida</string>
@@ -257,10 +257,10 @@
     <string name="qs_columns_portrait_title">Columnas (vertical)</string>
     <string name="qs_columns_landscape_title">Columnas (horizontal)</string>
     <!-- QS Battery Location -->
-    <string name="qs_battery_header_title">QS Battery Location</string>
-    <string name="qs_battery_off">Off</string>
-    <string name="qs_battery_on_signal">Qs Signal Group</string>
-    <string name="qs_battery_on_header">Qs Header</string>
+    <string name="qs_battery_header_title">Ubicación de la batería</string>
+    <string name="qs_battery_off">Apagado</string>
+    <string name="qs_battery_on_signal">Grupo de señales en ajustes rápidos</string>
+    <string name="qs_battery_on_header">Cabecera de ajustes rapidos</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Acceso rapido a configuraciones rapidas</string>
     <string name="quick_pulldown_none">Desactivado</string>
@@ -298,8 +298,8 @@
     <string name="qs_brightness_category_title">Opciones de la barra de brillo</string>
     <string name="qs_show_brightness_title">Barra de brillo</string>
     <string name="qs_show_brightness_summary">Mostrar un deslizador de brillo en el panel de ajustes rápidos</string>
-    <string name="qs_show_brightness_buttons_title">Brightness slider Buttons</string>
-    <string name="qs_show_brightness_buttons_summary">Show a -/+ next to the slider in the quick settings panel</string>
+    <string name="qs_show_brightness_buttons_title">Botones a los costados de la barra de brillo</string>
+    <string name="qs_show_brightness_buttons_summary">Mostrar un - / + junto al control deslizante en el panel de configuración rápida</string>
     <string name="qs_brightness_position_bottom_title">Mostrar la barra de brillo abajo</string>
     <string name="qs_brightness_position_bottom_summary">Mostrar la barra de brillo en la parte de abajo de los ajustes rápidos</string>
     <string name="qs_long_press_action_title">Acción de pulsación larga</string>
@@ -317,11 +317,11 @@
     <string name="navigation_bar_layout_summary">Personalizar el diseño de la barra de navegación</string>
     <string name="navigation_bar_menu_arrow_keys_title">Mostrar flechas de cursor mientras estás escribiendo</string>
     <string name="navigation_bar_menu_arrow_keys_summary">Mostrar los botones de cursor izquierda y derecha al escribir</string>
-    <string name="hardware_keys_disable_title">Enable Keys</string>
-    <string name="hardware_keys_disable_summary">Enable the device\'s hardware keys and backlight</string>
+    <string name="hardware_keys_disable_title">Activar teclas</string>
+    <string name="hardware_keys_disable_summary">Habilite las teclas de hardware y la luz de fondo del dispositivo.</string>
     <!-- IME button space -->
-    <string name="navigation_bar_ime_space_title">IME button space</string>
-    <string name="navigation_bar_ime_space_summary">Show IME button space below keyboard</string>
+    <string name="navigation_bar_ime_space_title">Espacio del botón IME</string>
+    <string name="navigation_bar_ime_space_summary">Mostrar el espacio del botón IME debajo del teclado</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="navbar_gesture_mode_category_title">Retoques del modo de gestos</string>
     <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
@@ -346,35 +346,35 @@
     <string name="long_press_custom_app_title">Pulsación larga para aplicación personalizada</string>
     <string name="double_tap_custom_app_title">Doble toque para aplicación personalizada</string>
     <!-- Pulse -->
-    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_help_policy_notice_summary">Pulse no funciona con algunas fuentes de audio cuando se escucha en el altavoz del dispositivo</string>
     <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
-    <string name="show_pulse_title">Show Pulse</string>
-    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-    <string name="pulse_render_mode_title">Render mode</string>
-    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-    <string name="pulse_render_mode_solid_lines">Solid lines</string>
+    <string name="pulse_settings_summary">Ecualizador gráfico de la barra de navegación</string>
+    <string name="show_pulse_title">Mostrar Pulse</string>
+    <string name="show_pulse_summary">Ecualizador gráfico en la barra de navegación</string>
+    <string name="pulse_render_mode_title">Modo de renderizado</string>
+    <string name="pulse_render_mode_fading_bars">Bloques desvanecientes</string>
+    <string name="pulse_render_mode_solid_lines">Líneas sólidas</string>
     <string name="pulse_color">Color</string>
-    <string name="pulse_color_mode">Color mode</string>
-    <string name="pulse_color_accent">Accent</string>
-    <string name="pulse_color_custom">Custom</string>
-    <string name="pulse_color_lava_lamp">Lava lamp</string>
-    <string name="pulse_color_auto">Album art</string>
-    <string name="pulse_color_chooser">Choose color</string>
-    <string name="smoothing_enabled_title">Turn on smoothing</string>
-    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
-    <string name="pulse_advanced_category">Advanced</string>
-    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-    <string name="pulse_custom_fudge_factor">Sanity level</string>
-    <string name="lavamp_speed_title">Lava lamp speed</string>
-    <string name="pulse_solid_units_count">Solid lines count</string>
-    <string name="pulse_solid_lines_count">Solid lines count</string>
-    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
-    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
-    <string name="pulse_custom_dimen">Bar width</string>
-    <string name="pulse_custom_div">Bar spacing</string>
-    <string name="pulse_filled_block_size">Block size</string>
-    <string name="pulse_empty_block_size">Block spacing</string>
+    <string name="pulse_color_mode">Modo en color</string>
+    <string name="pulse_color_accent">Acento</string>
+    <string name="pulse_color_custom">Personalizado</string>
+    <string name="pulse_color_lava_lamp">Lámpara de lava</string>
+    <string name="pulse_color_auto">Portada de Albúm</string>
+    <string name="pulse_color_chooser">Elegir color</string>
+    <string name="smoothing_enabled_title">Encender suavizado</string>
+    <string name="smoothing_enabled_summary">La animación de las barras es mas suave</string>
+    <string name="pulse_advanced_category">Avanzado</string>
+    <string name="pulse_legacy_mode_advanced_category">Ajustes del modo desvanecimiento de bloques</string>
+    <string name="pulse_custom_fudge_factor">Nivel de sensibilidad</string>
+    <string name="lavamp_speed_title">Velocidad de lámpara de lava</string>
+    <string name="pulse_solid_units_count">Recuento de líneas sólidas</string>
+    <string name="pulse_solid_lines_count">Recuento de líneas sólidas</string>
+    <string name="pulse_solid_units_opacity">Opacidad de líneas sólidas</string>
+    <string name="pulse_solid_dimen_category">Ajustes del modo de líneas sólidas</string>
+    <string name="pulse_custom_dimen">Ancho de barra</string>
+    <string name="pulse_custom_div">Espaciado de barra</string>
+    <string name="pulse_filled_block_size">Tamaño de bloque</string>
+    <string name="pulse_empty_block_size">Espaciado de bloque</string>
     <!-- Button backlight -->
     <string name="button_backlight_title">Retroiluminación</string>
     <string name="button_backlight_summary">Configurar la luz de fondo para teclas capacitivas</string>
@@ -412,93 +412,13 @@
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesto</string>
     <string name="gesture_summary">Opciones / acciones basadas en gestos</string>
-    <string name="pixel_gesture_title">Gestos de Pixel</string>
-    <string name="pixel_gesture_summary">Características específicas de Pixel como Curva Edge</string>
     <string name="double_tap_options">Doble toque para dormir</string>
-    <string name="aosp_gesture_title">Gestos AOSP</string>
-    <string name="aware_settings_title">Sentido de movimiento</string>
-    <string name="aware_settings_summary">Configure las opciones del sentido de movimiento</string>
-    <!-- Active edge -->
-    <string name="active_edge_title">Borde activo</string>
-    <string name="active_edge_summary">Configure las opciones del sentido de movimiento</string>
-    <string name="active_edge_short_actions_title">Acción de apretar corta</string>
-    <string name="active_edge_long_actions_title">Acción de compresión larga</string>
-    <string name="active_edge_sensitivity_title">Sensibilidad al apretar</string>
-    <string name="active_edge_wake_title">Permitir cuando la pantalla esté apagada</string>
-    <string name="active_edge_wake_summary">Activar una acción cuando la pantalla esté apagada</string>
-    <string name="active_edge_footer_info">No todas las acciones de compresión dentro de Active Edge tienen la capacidad de activar la pantalla.\ n\nSi desea elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones</string>
-    <!-- Custom actions -->
-    <string name="action_nothing">Ninguna acción</string>
-    <string name="action_menu">Menú</string>
-    <string name="action_app_switch">Recientes</string>
-    <string name="action_search">Asistente</string>
-    <string name="action_voice_search">Búsqueda por voz</string>
-    <string name="action_launch_camera">Cámara</string>
-    <string name="action_last_app">Última aplicación</string>
-    <string name="action_splitscreen">Pantalla dividida</string>
-    <string name="action_flashlight">Linterna</string>
-    <string name="action_clear_notifications">Borrar notificaciones</string>
-    <string name="action_volume_panel">Panel de volumen</string>
-    <string name="action_screen_off">Apagar la pantalla</string>
-    <string name="action_notifications">Notificaciones</string>
-    <string name="action_power_menu">Menú de apagado</string>
-    <string name="action_screenshot">Captura de Pantalla</string>
-    <string name="action_qs_panel">Panel de ajustes rápidos</string>
-    <string name="action_app_action">Aplicación</string>
-    <string name="action_ringer_modes">Modos de timbre</string>
-    <string name="kill_app">Cerrar aplicación en primer plano</string>
-    <string name="skip_song">Saltar canción</string>
-    <string name="prev_song">Canción anterior</string>
-    <!-- Active edge -->
-    <string name="active_edge_ss_app_select_title">Seleccionar aplicación para squeeze corto</string>
-    <string name="active_edge_ls_app_select_title">Seleccionar aplicación para squeeze largo</string>
-    <string name="active_edge_app_select_summary">Elije una aplicación a iniciar cuando hagas la acción squeeze</string>
-    <!-- Motion Sense -->
-    <string name="ambient_display_wake_screen_summary">Para revisar la hora, las notificaciones, y otra información, agarra tu teléfono</string>
-    <string name="ambient_display_wake_screen_summary_on">Encender</string>
-    <string name="aware_category_display">Pantalla Ambiente</string>
-    <string name="aware_category_gesture">Gestos rápidos</string>
-    <string name="aware_disabled_preference_action">Ajustes del sentido de movimiento</string>
-    <string name="aware_disabled_preference_dialog_content">Para usar esta característica, active el sentido de movimiento</string>
-    <string name="aware_disabled_preference_dialog_title">Esta característica está apagada</string>
-    <string name="aware_disabled_preference_neutral">No ahora</string>
-    <string name="aware_display_settings_title">Pantalla de bloqueo en espera</string>
-    <string name="aware_settings_description">Con los nuevos sensores, Pixel puede reconocer la distancia y moviendo alrededor del teléfono</string>
-    <string name="aware_settings_disabled_info_dialog_content">Las funciones de detección de movimiento como gestos rápidos, muestra en pantalla cuando está cerca y revisa el teléfono para verificar que no son soportados en este país</string>
-    <string name="aware_settings_disabled_info_dialog_title">Sentido de movimiento está apagado</string>
-    <string name="aware_settings_enabled_info_dialog_content">Las funciones de detección de movimiento como gestos rápidos, muestra en pantalla cuando está cerca y revisa el teléfono para verificar que son soportados en este país</string>
-    <string name="aware_settings_enabled_info_dialog_title">Sentido de movimiento está encendido</string>
-    <string name="aware_wake_display_summary">Mostrar hora, iconos de notificación y otra información cuando estás cerca</string>
-    <string name="aware_wake_display_summary_aod_off">No disponible por que Always-On Display está apagado</string>
-    <string name="aware_wake_display_title">Mostrar pantalla cuando estés cerca</string>
-    <string name="dialog_aware_settings_message">Si desactiva Sentido de movimiento, no podrá usar Gestos rápidos, muestra la pantalla cuando esté cerca y alcanza a revisar el teléfono.</string>
-    <string name="dialog_aware_settings_title">Apagar Sentido de movimiento?</string>
-    <string name="gesture_aware_confirmation_action_button">Lo entiendo</string>
-    <string name="gesture_aware_disabled_info_dialog_content">Gestos rápidos y otras funciones del Sentido de movimiento no son compatibles en este país.</string>
-    <string name="gesture_aware_off_dialog_content">Para usar los Gestos rápidos, encienda el Sentido de movimiento.</string>
-    <string name="gesture_aware_off_dialog_title">Gestos rápidos están apagados</string>
-    <string name="gesture_silence_on_summary">Encender / Dormir alarmas y silenciar llamadas</string>
-    <string name="gesture_silence_summary">Dormir alarmas y silenciar llamadas</string>
-    <string name="gesture_silence_title">Interrupciones de silencio</string>
-    <string name="gesture_skip_direction_ltr">Desliza de izquierda a derecha para la siguiente canción</string>
-    <string name="gesture_skip_direction_rtl">Desliza de derecha a izquierda para la siguiente canción</string>
-    <string name="gesture_skip_direction_title">Dirección de deslizamiento</string>
-    <string name="gesture_skip_on_summary">Encender / Saltar a la siguiente o anterior canción</string>
-    <string name="gesture_skip_summary">Salta a la siguiente o anterior canción</string>
-    <string name="gesture_skip_title">Saltar canción</string>
-    <string name="gesture_tap_off_summary">Apagar / Pausar o continuar música</string>
-    <string name="gesture_tap_on_summary">Encender / Pausar o continuar música</string>
-    <string name="gesture_tap_summary">Pausa o reanuda la música tocando el aire sobre el teléfono</string>
-    <string name="gesture_tap_title">Pausar música</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content">Llegar a verificar el teléfono y otras funciones de Motion Sense no son compatibles en este país</string>
-    <string name="wake_screen_aware_off_dialog_content">Para usar Alcanzar para revisar el teléfono, active Motion Sense</string>
-    <string name="wake_screen_aware_off_dialog_title">Alcanzar para revisar el teléfono está apagado</string>
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Bloquear pantalla</string>
     <string name="lockscreen_summary">Personalice el diseño y las opciones de la pantalla de bloqueo</string>
     <string name="fingerprint_category">Huella digital</string>
-    <string name="tuner_keyguard_show_lock_icon_title">Show lock status</string>
-    <string name="tuner_keyguard_show_lock_icon_summary">Show current lock status icon on top</string>
+    <string name="tuner_keyguard_show_lock_icon_title">Mostrar estado de bloqueo</string>
+    <string name="tuner_keyguard_show_lock_icon_summary">Mostrar icono de estado de bloqueo actual en la parte superior</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtro de carátulas multimedia</string>
     <string name="lockscreen_cover_filter_none">Ninguno</string>
@@ -574,23 +494,23 @@
     <string name="left_swipe_app_action_title">Seleccionar aplicación de deslizamiento izquierdo largo</string>
     <string name="right_swipe_actions_title">Acción con deslizamiento derecho largo</string>
     <string name="right_swipe_app_action_title">Seleccionar aplicación de deslizamiento derecho largo</string>
-    <string name="left_vertical_swipe_key_title">Left L swipe</string>
-    <string name="right_vertical_swipe_key_title">Right L swipe</string>
-    <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
-    <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
-    <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
-    <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
+    <string name="left_vertical_swipe_key_title">Gesto L a la izquierda</string>
+    <string name="right_vertical_swipe_key_title">Gesto L a la derecha</string>
+    <string name="left_vertical_swipe_actions_title">Acción con deslizamiento vertical a la izquierda</string>
+    <string name="left_vertical_swipe_app_action_title">Elegir app con deslizamiento vertical a la izquierda</string>
+    <string name="right_vertical_swipe_actions_title">Acción con deslizamiento vertical a la izquierda</string>
+    <string name="right_vertical_swipe_app_action_title">Elegir app con deslizamiento vertical a la izquierda</string>
     <string name="gesture_nav_tweaks_footer_info">Para elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones.\n\nSi se muestra el iniciador, deslice el dedo en la parte inferior de la pantalla para activar la acción.</string>
     <string name="back_swipe_extended_title">Acción de deslizamiento extendida</string>
-    <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
+    <string name="back_swipe_extended_summary">Acción de activación en un deslizamiento más ancho (más de la mitad del tamaño de la pantalla) o un deslizamiento en L (verticalmente más largo)</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
-    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
-    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
-    <string name="gesture_navbar_handle_default">Default pill</string>
-    <string name="gesture_navbar_handle_middle">Middle pill</string>
-    <string name="gesture_navbar_handle_large">Large pill</string>
+    <string name="gesture_navbar_handle_title">Estilo de visualización de la barra de navegación</string>
+    <string name="gesture_navbar_hidden">Ocultar la barra de navegación</string>
+    <string name="gesture_navbar_handle_hidden">Píldora oculta</string>
+    <string name="gesture_navbar_handle_default">Píldora predeterminada</string>
+    <string name="gesture_navbar_handle_middle">Pildora media</string>
+    <string name="gesture_navbar_handle_large">Píldora larga</string>
     <!-- USB Configuration -->
-    <string name="usb_default_config_title">USB configuration</string>
-    <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
+    <string name="usb_default_config_title">Configuración de USB</string>
+    <string name="usb_default_config_summary">Elijir el comportamiento predeterminado cuando esté conectado a un dispositivo a través de USB</string>
 </resources>

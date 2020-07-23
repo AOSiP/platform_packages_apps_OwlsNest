@@ -167,7 +167,7 @@
     <string name="notification_summary">Nastavit chování kontrolky LED a oznámení</string>
     <string name="notification_category">Oznámení</string>
     <string name="headsup_category">Plovoucí oznámení</string>
-    <string name="headsup_summary">Various options to change how Heads Up works</string>
+    <string name="headsup_summary">Různé možnosti, jak změnit způsob zobrazení plovoucích oznámení</string>
     <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">Zobrazit plovoucí oznámení médií</string>
     <string name="show_media_heads_up_summary">Zobrazit plovoucí oznámení médií při přehrávání nové skladby, pokud již není přehrávač v popředí</string>
@@ -182,14 +182,14 @@
     <string name="heads_up_snooze_15min">15 minut</string>
     <string name="heads_up_snooze_20min">20 minut</string>
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_5sec">5 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
+    <string name="heads_up_time_out_title">Délka zobrazení</string>
+    <string name="heads_up_time_out_summary">Prohlížení oznámení bude zobrazeno na <xliff:g id="number">%d</xliff:g> sekund</string>
+    <string name="heads_up_time_out_2sec">2 sekundy</string>
+    <string name="heads_up_time_out_4sec">4 sekundy</string>
+    <string name="heads_up_time_out_5sec">5 sekund</string>
+    <string name="heads_up_time_out_6sec">6 sekund</string>
+    <string name="heads_up_time_out_8sec">8 sekund</string>
+    <string name="heads_up_time_out_10sec">10 sekund</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">Blikání při novém oznámení</string>
     <string name="pulse_ambient_light_summary">Zobrazit blikání kontrolky po příchodu nového oznámení</string>
@@ -232,17 +232,17 @@
     <string name="notification_headers_title">Zobrazit záhlaví oznámení</string>
     <string name="notification_headers_summary">Zobrazit záhlaví oznámení ve stylu Android R (vyžaduje restart SystemUI)</string>
     <!-- Statusbar ticker -->
-    <string name="statusbar_notifi_cat">Notifications Ticker</string>
-    <string name="status_bar_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
-    <string name="ticker_animation_mode_title">Ticker animation</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="statusbar_notifi_cat">Notifikační text oznámení</string>
+    <string name="status_bar_ticker_title">Text oznámení</string>
+    <string name="status_bar_show_ticker_title">Text oznámení</string>
+    <string name="status_bar_show_ticker_summary">Náhled oznámení ve stavovém řádku</string>
+    <string name="ticker_animation_mode_title">Animace textu oznámení</string>
+    <string name="ticker_animation_mode_alpha_fade">Slábnutí</string>
+    <string name="ticker_animation_mode_scroll">Rolování</string>
+    <string name="ticker_tick_duration_title">Délka zobrazení textu oznámení</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
+    <string name="less_boring_heads_up_title">Méně obtěžující plovoucí oznámení</string>
+    <string name="less_boring_heads_up_summary">Zobrazit plovoucí oznámení pouze pro aplikace Telefon, Zprávy nebo Budík</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">Rychlá nastavení</string>
     <string name="quicksettings_summary">Spravá dlaždic rychlého nastavení a rozšířené stavové lišty</string>
@@ -257,10 +257,10 @@
     <string name="qs_columns_portrait_title">Sloupce (na výšku)</string>
     <string name="qs_columns_landscape_title">Sloupce (na šířku)</string>
     <!-- QS Battery Location -->
-    <string name="qs_battery_header_title">QS Battery Location</string>
-    <string name="qs_battery_off">Off</string>
-    <string name="qs_battery_on_signal">Qs Signal Group</string>
-    <string name="qs_battery_on_header">Qs Header</string>
+    <string name="qs_battery_header_title">Umístění ikony baterie v QS</string>
+    <string name="qs_battery_off">Vyp.</string>
+    <string name="qs_battery_on_signal">Skupina ikon signálů v QS</string>
+    <string name="qs_battery_on_header">Záhlaví QS</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Rychlé stažení QS panelu</string>
     <string name="quick_pulldown_none">Vypnuto</string>
@@ -298,8 +298,8 @@
     <string name="qs_brightness_category_title">Možnosti posuvníku jasu</string>
     <string name="qs_show_brightness_title">Posuvník jasu</string>
     <string name="qs_show_brightness_summary">Zobrazit posuvník jasu v panelu Rychlého nastavení</string>
-    <string name="qs_show_brightness_buttons_title">Brightness slider Buttons</string>
-    <string name="qs_show_brightness_buttons_summary">Show a -/+ next to the slider in the quick settings panel</string>
+    <string name="qs_show_brightness_buttons_title">Tlačítka posuvníku jasu</string>
+    <string name="qs_show_brightness_buttons_summary">Zobrazit -/+ poblíž posuvníku jasu v panelu Rychlého nastavení</string>
     <string name="qs_brightness_position_bottom_title">Posuvník jasu v dolní části</string>
     <string name="qs_brightness_position_bottom_summary">Zobrazit posuvník jasu v dolní části panelu Rychlého nastavení</string>
     <string name="qs_long_press_action_title">Akce dlouhého stisku</string>
@@ -317,11 +317,11 @@
     <string name="navigation_bar_layout_summary">Přizpůsobte si výchozí navigační panel</string>
     <string name="navigation_bar_menu_arrow_keys_title">Klávesy šipek při psaní</string>
     <string name="navigation_bar_menu_arrow_keys_summary">Zobrazit tlačítka pro kurzor vlevo a vpravo při psaní</string>
-    <string name="hardware_keys_disable_title">Enable Keys</string>
-    <string name="hardware_keys_disable_summary">Enable the device\'s hardware keys and backlight</string>
+    <string name="hardware_keys_disable_title">Povolit tlačítka</string>
+    <string name="hardware_keys_disable_summary">Povolit hardwarová tlačítka zařízení a podsvícení</string>
     <!-- IME button space -->
-    <string name="navigation_bar_ime_space_title">IME button space</string>
-    <string name="navigation_bar_ime_space_summary">Show IME button space below keyboard</string>
+    <string name="navigation_bar_ime_space_title">Prostor pro přepínač IME</string>
+    <string name="navigation_bar_ime_space_summary">Zobrazit prostor pro tlačítko IME pod klávesnicí</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="navbar_gesture_mode_category_title">Vylepšení režimu gest</string>
     <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
@@ -346,35 +346,35 @@
     <string name="long_press_custom_app_title">Vlastní aplikace při dlouhém stisknutí</string>
     <string name="double_tap_custom_app_title">Vlastní aplikace při dvojím poklepání</string>
     <!-- Pulse -->
-    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_help_policy_notice_summary">Pulse nefunguje s některými zvukovými zdroji při poslechu z reproduktoru zařízení</string>
     <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
-    <string name="show_pulse_title">Show Pulse</string>
-    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-    <string name="pulse_render_mode_title">Render mode</string>
-    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-    <string name="pulse_render_mode_solid_lines">Solid lines</string>
-    <string name="pulse_color">Color</string>
-    <string name="pulse_color_mode">Color mode</string>
-    <string name="pulse_color_accent">Accent</string>
-    <string name="pulse_color_custom">Custom</string>
-    <string name="pulse_color_lava_lamp">Lava lamp</string>
-    <string name="pulse_color_auto">Album art</string>
-    <string name="pulse_color_chooser">Choose color</string>
-    <string name="smoothing_enabled_title">Turn on smoothing</string>
-    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
-    <string name="pulse_advanced_category">Advanced</string>
-    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-    <string name="pulse_custom_fudge_factor">Sanity level</string>
-    <string name="lavamp_speed_title">Lava lamp speed</string>
-    <string name="pulse_solid_units_count">Solid lines count</string>
-    <string name="pulse_solid_lines_count">Solid lines count</string>
-    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
-    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
-    <string name="pulse_custom_dimen">Bar width</string>
-    <string name="pulse_custom_div">Bar spacing</string>
-    <string name="pulse_filled_block_size">Block size</string>
-    <string name="pulse_empty_block_size">Block spacing</string>
+    <string name="pulse_settings_summary">Grafický ekvalizér na navigačním panelu</string>
+    <string name="show_pulse_title">Zobrazit Pulse</string>
+    <string name="show_pulse_summary">Zvukový ekvalizér na navigačním panelu</string>
+    <string name="pulse_render_mode_title">Režim vykreslení</string>
+    <string name="pulse_render_mode_fading_bars">Vyblednutí bloků</string>
+    <string name="pulse_render_mode_solid_lines">Plné čáry</string>
+    <string name="pulse_color">Barva</string>
+    <string name="pulse_color_mode">Barevný režim</string>
+    <string name="pulse_color_accent">Odstín</string>
+    <string name="pulse_color_custom">Vlastní</string>
+    <string name="pulse_color_lava_lamp">Lávová lampa</string>
+    <string name="pulse_color_auto">Obal interpreta</string>
+    <string name="pulse_color_chooser">Vyberte barvu</string>
+    <string name="smoothing_enabled_title">Zapnout vyhlazování</string>
+    <string name="smoothing_enabled_summary">Animace pruhů je mnohem hladší</string>
+    <string name="pulse_advanced_category">Pokročilé</string>
+    <string name="pulse_legacy_mode_advanced_category">Nastavení režimu vyblednutí bloků</string>
+    <string name="pulse_custom_fudge_factor">Úroveň výkonu</string>
+    <string name="lavamp_speed_title">Rychlost lávové lampy</string>
+    <string name="pulse_solid_units_count">Počet plných čar</string>
+    <string name="pulse_solid_lines_count">Počet plných čar</string>
+    <string name="pulse_solid_units_opacity">Průhlednost plných čar</string>
+    <string name="pulse_solid_dimen_category">Nastavení režimu plné čáry</string>
+    <string name="pulse_custom_dimen">Šířka pruhu</string>
+    <string name="pulse_custom_div">Mezera pruhu</string>
+    <string name="pulse_filled_block_size">Velikost bloku</string>
+    <string name="pulse_empty_block_size">Mezera mezi bloky</string>
     <!-- Button backlight -->
     <string name="button_backlight_title">Podsvícení</string>
     <string name="button_backlight_summary">Nastavit podsvícení pro kapacitní tlačítka</string>
@@ -412,93 +412,13 @@
     <!--Owlsnest Gestures-->
     <string name="gesture_category">Gesta</string>
     <string name="gesture_summary">Možnosti/akce založené na gestech</string>
-    <string name="pixel_gesture_title">Gesta Pixel</string>
-    <string name="pixel_gesture_summary">Funkce specifické pro Pixel, např. Active Edge</string>
     <string name="double_tap_options">Dvojím poklepáním uspat</string>
-    <string name="aosp_gesture_title">Gesta AOSP</string>
-    <string name="aware_settings_title">Motion Sense</string>
-    <string name="aware_settings_summary">Konfigurovat možnosti Motion Sense</string>
-    <!-- Active edge -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="active_edge_summary">Konfigurovat možnosti Active Edge</string>
-    <string name="active_edge_short_actions_title">Akce při krátkém zmáčknutí</string>
-    <string name="active_edge_long_actions_title">Akce při dlouhém zmáčknutí</string>
-    <string name="active_edge_sensitivity_title">Citlivost zmáčknutí</string>
-    <string name="active_edge_wake_title">Povolit při vypnuté obrazovce</string>
-    <string name="active_edge_wake_summary">Spuštění akce při vypnuté obrazovce</string>
-    <string name="active_edge_footer_info">Ne všechny akce zmáčknutím v rámci Active Edge mají schopnost zapnout obrazovku.\n\nPokud chcete pro danou akci vybrat konkrétní aktivitu aplikace, dlouze stiskněte libovolnou aplikaci v seznamu aplikací.</string>
-    <!-- Custom actions -->
-    <string name="action_nothing">Žádné akce</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Nedávné</string>
-    <string name="action_search">Asistent</string>
-    <string name="action_voice_search">Hlasové vyhledávání</string>
-    <string name="action_launch_camera">Fotoaparát</string>
-    <string name="action_last_app">Poslední aplikace</string>
-    <string name="action_splitscreen">Rozdělená obrazovka</string>
-    <string name="action_flashlight">Svítilna</string>
-    <string name="action_clear_notifications">Vymazat oznámení</string>
-    <string name="action_volume_panel">Panel hlasitosti</string>
-    <string name="action_screen_off">Vypnout obrazovku</string>
-    <string name="action_notifications">Oznámení</string>
-    <string name="action_power_menu">Menu napájení</string>
-    <string name="action_screenshot">Snímek obrazovky</string>
-    <string name="action_qs_panel">Panel QS</string>
-    <string name="action_app_action">Aplikace</string>
-    <string name="action_ringer_modes">Režimy vyzvánění</string>
-    <string name="kill_app">Ukončit aplikaci na popředí</string>
-    <string name="skip_song">Přeskočit skladbu</string>
-    <string name="prev_song">Předchozí skladba</string>
-    <!-- Active edge -->
-    <string name="active_edge_ss_app_select_title">Vyberte aplikaci při krátkém zmáčknutí</string>
-    <string name="active_edge_ls_app_select_title">Vyberte aplikaci při dlouhém zmáčknutí</string>
-    <string name="active_edge_app_select_summary">Vyberte aplikaci, která se spustí při zmáčknutí</string>
-    <!-- Motion Sense -->
-    <string name="ambient_display_wake_screen_summary">Chcete-li zobrazit čas, oznámení a další informace, přibližte se k telefonu</string>
-    <string name="ambient_display_wake_screen_summary_on">Zap.</string>
-    <string name="aware_category_display">Ambientní displej</string>
-    <string name="aware_category_gesture">Rychlá gesta</string>
-    <string name="aware_disabled_preference_action">Nastavení Motion Sense</string>
-    <string name="aware_disabled_preference_dialog_content">Chcete-li použít tuto funkci, zapněte Motion Sense</string>
-    <string name="aware_disabled_preference_dialog_title">Tato funkce je vypnuta</string>
-    <string name="aware_disabled_preference_neutral">Nyní ne</string>
-    <string name="aware_display_settings_title">Obrazovka uzamčení při nečinnosti</string>
-    <string name="aware_settings_description">Díky novým senzorům dokáže Pixel rozpoznat vzdálenost a pohyb kolem telefonu</string>
-    <string name="aware_settings_disabled_info_dialog_content">Funkce Motion Sense, jako jsou Rychlá gesta, zobrazení v blízkosti a ověření telefonu při přiblížení nejsou v této zemi podporovány</string>
-    <string name="aware_settings_disabled_info_dialog_title">Motion Sense je vypnuto</string>
-    <string name="aware_settings_enabled_info_dialog_content">Funkce Motion Sense, jako jsou Rychlá gesta, zobrazení v blízkosti a ověření telefonu při přiblížení jsou v této zemi podporovány</string>
-    <string name="aware_settings_enabled_info_dialog_title">Motion Sense je zapnuto</string>
-    <string name="aware_wake_display_summary">Zobrazovat čas, ikony oznámení a další informace, když budete poblíž</string>
-    <string name="aware_wake_display_summary_aod_off">Nedostupné, protože funkce Vždy zapnuto je vypnutá</string>
-    <string name="aware_wake_display_title">Zobrazit displej, pokud budete poblíž</string>
-    <string name="dialog_aware_settings_message">Pokud Motion Sense vypnete, nebudete moci používat rychlá gesta, funkci zobrazení displeje při přiblížení ani kontrolu telefonu přiblížením</string>
-    <string name="dialog_aware_settings_title">Vypnout Motion Sense?</string>
-    <string name="gesture_aware_confirmation_action_button">Rozumím</string>
-    <string name="gesture_aware_disabled_info_dialog_content">Rychlá gesta a další funkce Motion Sense nejsou v této zemi podporovány.</string>
-    <string name="gesture_aware_off_dialog_content">Chcete-li používat Rychlá gesta, zapněte Motion Sense.</string>
-    <string name="gesture_aware_off_dialog_title">Rychlá gesta jsou vypnuta</string>
-    <string name="gesture_silence_on_summary">Zapnuto / Odložení budíků a ztlumení hovorů</string>
-    <string name="gesture_silence_summary">Odložení budíků a ztlumení hovorů</string>
-    <string name="gesture_silence_title">Ztlumit vyrušení</string>
-    <string name="gesture_skip_direction_ltr">Přejetím zleva doprava začnete přehrávat další skladbu</string>
-    <string name="gesture_skip_direction_rtl">Přejetím zprava doleva začnete přehrávat další skladbu</string>
-    <string name="gesture_skip_direction_title">Směr přejetí</string>
-    <string name="gesture_skip_on_summary">Zapnuto / Přeskočit na další nebo předchozí skladbu</string>
-    <string name="gesture_skip_summary">Přeskočit na další nebo předchozí skladbu</string>
-    <string name="gesture_skip_title">Přeskočit skladby</string>
-    <string name="gesture_tap_off_summary">Vypnuto / Pozastavit nebo pokračovat v přehrávání</string>
-    <string name="gesture_tap_on_summary">Zapnuto / Pozastavit nebo pokračovat v přehrávání</string>
-    <string name="gesture_tap_summary">Pozastavte nebo obnovte hudbu klepnutím nad telefonem</string>
-    <string name="gesture_tap_title">Pozastavit přehrávání</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content">Ověření telefonu při přiblížení a další funkce Motion Sense nejsou v této zemi podporovány</string>
-    <string name="wake_screen_aware_off_dialog_content">Chcete-li použít funkci Ověření telefonu při přiblížení, zapněte Motion Sense</string>
-    <string name="wake_screen_aware_off_dialog_title">Ověření telefonu při přiblížení je vypnuto</string>
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">Zamykací obrazovka</string>
     <string name="lockscreen_summary">Přizpůsobení možností a rozložení zamykací obrazovky</string>
     <string name="fingerprint_category">Otisk prstu</string>
-    <string name="tuner_keyguard_show_lock_icon_title">Show lock status</string>
-    <string name="tuner_keyguard_show_lock_icon_summary">Show current lock status icon on top</string>
+    <string name="tuner_keyguard_show_lock_icon_title">Zobrazit stav zámku</string>
+    <string name="tuner_keyguard_show_lock_icon_summary">Nahoře zobrazit aktuální ikonu stavu zámku</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">Filtr obalu interpreta</string>
     <string name="lockscreen_cover_filter_none">Žádný</string>
@@ -574,23 +494,23 @@
     <string name="left_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vlevo</string>
     <string name="right_swipe_actions_title">Akce dlouhým přejetím vpravo</string>
     <string name="right_swipe_app_action_title">Vyberte aplikaci dlouhým přejetím vpravo</string>
-    <string name="left_vertical_swipe_key_title">Left L swipe</string>
-    <string name="right_vertical_swipe_key_title">Right L swipe</string>
-    <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
-    <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
-    <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
-    <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
+    <string name="left_vertical_swipe_key_title">Levé gesto L</string>
+    <string name="right_vertical_swipe_key_title">Pravé gesto L</string>
+    <string name="left_vertical_swipe_actions_title">Akce svislým přejetím vlevo</string>
+    <string name="left_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vlevo</string>
+    <string name="right_vertical_swipe_actions_title">Akce svislým přejetím vpravo</string>
+    <string name="right_vertical_swipe_app_action_title">Vyberte aplikaci svislým přejetím vpravo</string>
     <string name="gesture_nav_tweaks_footer_info">Chcete-li vybrat konkrétní aktivitu aplikace pro akci, podržte stisknutou libovolnou aplikaci ve výběru aplikací.\n\nPokud se zobrazuje spouštěč, proveďte akci přejetím prstem v dolní dolní části obrazovky.</string>
     <string name="back_swipe_extended_title">Pokročilé akce přejetím</string>
-    <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
+    <string name="back_swipe_extended_summary">Aktivovat akci širším přejetím (více než polovina velikosti displeje) nebo gestem L (dostatečně svisle)</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
-    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
-    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
-    <string name="gesture_navbar_handle_default">Default pill</string>
-    <string name="gesture_navbar_handle_middle">Middle pill</string>
-    <string name="gesture_navbar_handle_large">Large pill</string>
+    <string name="gesture_navbar_handle_title">Styl zobrazení navigačního panelu</string>
+    <string name="gesture_navbar_hidden">Skrytý navigační panel</string>
+    <string name="gesture_navbar_handle_hidden">Skrytá pilulka</string>
+    <string name="gesture_navbar_handle_default">Výchozí pilulka</string>
+    <string name="gesture_navbar_handle_middle">Střední pilulka</string>
+    <string name="gesture_navbar_handle_large">Velká pilulka</string>
     <!-- USB Configuration -->
-    <string name="usb_default_config_title">USB configuration</string>
-    <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
+    <string name="usb_default_config_title">Konfigurace USB</string>
+    <string name="usb_default_config_summary">Vyberte výchozí chování při připojení zařízení pomocí USB</string>
 </resources>

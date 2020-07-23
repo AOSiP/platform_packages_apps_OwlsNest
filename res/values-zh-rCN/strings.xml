@@ -129,7 +129,7 @@
     <string name="status_bar_battery_percentage_default">隐藏 (默认)</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
-    <string name="qs_battery_percentage_title">QS 电池百分比</string>
+    <string name="qs_battery_percentage_title">快速设置电池百分比</string>
     <string name="qs_battery_percentage_summary">在快速设置面板顶部显示电池百分比而不是电池寿命估值</string>
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">网络流量</string>
@@ -167,7 +167,7 @@
     <string name="notification_summary">调节 LED 灯和通知行为</string>
     <string name="notification_category">通知</string>
     <string name="headsup_category">浮动通知</string>
-    <string name="headsup_summary">Various options to change how Heads Up works</string>
+    <string name="headsup_summary">更改悬浮通知工作方式</string>
     <!-- Media heads-up ticker -->
     <string name="show_media_heads_up_title">显示音乐</string>
     <string name="show_media_heads_up_summary">如果播放器未进入前台模式，当播放新曲目时显示媒体浮动通知。</string>
@@ -182,14 +182,14 @@
     <string name="heads_up_snooze_15min">15 分钟</string>
     <string name="heads_up_snooze_20min">20 分钟</string>
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_5sec">5 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
+    <string name="heads_up_time_out_title">超时</string>
+    <string name="heads_up_time_out_summary">浮动通知将显示 <xliff:g id="number">%d</xliff:g> 秒</string>
+    <string name="heads_up_time_out_2sec">2 秒</string>
+    <string name="heads_up_time_out_4sec">4 秒</string>
+    <string name="heads_up_time_out_5sec">5 秒</string>
+    <string name="heads_up_time_out_6sec">6 秒</string>
+    <string name="heads_up_time_out_8sec">8 秒</string>
+    <string name="heads_up_time_out_10sec">10 秒</string>
     <!--Notification Pulse-->
     <string name="pulse_ambient_light_title">通知脉冲</string>
     <string name="pulse_ambient_light_summary">有新消息时屏幕侧边闪光</string>
@@ -232,17 +232,17 @@
     <string name="notification_headers_title">显示通知标头</string>
     <string name="notification_headers_summary">显示 Android R 风格的通知标头 (需要重启 SystemUI)</string>
     <!-- Statusbar ticker -->
-    <string name="statusbar_notifi_cat">Notifications Ticker</string>
-    <string name="status_bar_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_title">Ticker</string>
-    <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
-    <string name="ticker_animation_mode_title">Ticker animation</string>
-    <string name="ticker_animation_mode_alpha_fade">Fade</string>
-    <string name="ticker_animation_mode_scroll">Scroll</string>
-    <string name="ticker_tick_duration_title">Ticker duration</string>
+    <string name="statusbar_notifi_cat">状态栏通知</string>
+    <string name="status_bar_ticker_title">状态栏通知</string>
+    <string name="status_bar_show_ticker_title">状态栏通知</string>
+    <string name="status_bar_show_ticker_summary">状态栏通知预览</string>
+    <string name="ticker_animation_mode_title">状态栏通知动画</string>
+    <string name="ticker_animation_mode_alpha_fade">淡入淡出</string>
+    <string name="ticker_animation_mode_scroll">滚动</string>
+    <string name="ticker_tick_duration_title">通知动画持续时间</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
+    <string name="less_boring_heads_up_title">减少无关浮动通知</string>
+    <string name="less_boring_heads_up_summary">仅显示电话、短信和闹钟的浮动通知</string>
     <!--Owlsnest Quick settings-->
     <string name="quicksettings_title">快速设置</string>
     <string name="quicksettings_summary">管理您的快速设置瓷贴和扩展状态栏</string>
@@ -257,10 +257,10 @@
     <string name="qs_columns_portrait_title">列（纵向）</string>
     <string name="qs_columns_landscape_title">列（横向）</string>
     <!-- QS Battery Location -->
-    <string name="qs_battery_header_title">QS Battery Location</string>
-    <string name="qs_battery_off">Off</string>
-    <string name="qs_battery_on_signal">Qs Signal Group</string>
-    <string name="qs_battery_on_header">Qs Header</string>
+    <string name="qs_battery_header_title">快速设置电池图标位置</string>
+    <string name="qs_battery_off">关闭</string>
+    <string name="qs_battery_on_signal">快速设置信号组</string>
+    <string name="qs_battery_on_header">快速设置标头</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">快速下拉</string>
     <string name="quick_pulldown_none">未启用</string>
@@ -298,8 +298,8 @@
     <string name="qs_brightness_category_title">亮度滑块选项</string>
     <string name="qs_show_brightness_title">亮度滑块</string>
     <string name="qs_show_brightness_summary">在快速设置面板中显示亮度滑块</string>
-    <string name="qs_show_brightness_buttons_title">Brightness slider Buttons</string>
-    <string name="qs_show_brightness_buttons_summary">Show a -/+ next to the slider in the quick settings panel</string>
+    <string name="qs_show_brightness_buttons_title">亮度滑块按钮</string>
+    <string name="qs_show_brightness_buttons_summary">在快速设置面板亮度条旁显示 -/+</string>
     <string name="qs_brightness_position_bottom_title">底部亮度滑块</string>
     <string name="qs_brightness_position_bottom_summary">在快速设置面板底部显示亮度滑块</string>
     <string name="qs_long_press_action_title">长按动作</string>
@@ -317,11 +317,11 @@
     <string name="navigation_bar_layout_summary">自定义导航栏布局</string>
     <string name="navigation_bar_menu_arrow_keys_title">输入时显示左右光标按钮</string>
     <string name="navigation_bar_menu_arrow_keys_summary">输入时显示左右光标按钮</string>
-    <string name="hardware_keys_disable_title">Enable Keys</string>
-    <string name="hardware_keys_disable_summary">Enable the device\'s hardware keys and backlight</string>
+    <string name="hardware_keys_disable_title">启用按键</string>
+    <string name="hardware_keys_disable_summary">启用设备物理按键和背光</string>
     <!-- IME button space -->
-    <string name="navigation_bar_ime_space_title">IME button space</string>
-    <string name="navigation_bar_ime_space_summary">Show IME button space below keyboard</string>
+    <string name="navigation_bar_ime_space_title">输入法按键空间</string>
+    <string name="navigation_bar_ime_space_summary">在键盘下方显示输入法按键空间</string>
     <!-- NavigationBar Gestural Mode Tweaks -->
     <string name="navbar_gesture_mode_category_title">手势模式调整</string>
     <string name="navbar_gesture_mode_category_key">手势模式调整</string>
@@ -346,35 +346,35 @@
     <string name="long_press_custom_app_title">长按自定义应用程序</string>
     <string name="double_tap_custom_app_title">双击自定义应用程序</string>
     <!-- Pulse -->
-    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
-    <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
-    <string name="show_pulse_title">Show Pulse</string>
-    <string name="show_pulse_summary">Audio graphic equalizer on the navigation bar</string>
-    <string name="pulse_render_mode_title">Render mode</string>
-    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-    <string name="pulse_render_mode_solid_lines">Solid lines</string>
-    <string name="pulse_color">Color</string>
-    <string name="pulse_color_mode">Color mode</string>
-    <string name="pulse_color_accent">Accent</string>
-    <string name="pulse_color_custom">Custom</string>
-    <string name="pulse_color_lava_lamp">Lava lamp</string>
-    <string name="pulse_color_auto">Album art</string>
-    <string name="pulse_color_chooser">Choose color</string>
-    <string name="smoothing_enabled_title">Turn on smoothing</string>
-    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
-    <string name="pulse_advanced_category">Advanced</string>
-    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-    <string name="pulse_custom_fudge_factor">Sanity level</string>
-    <string name="lavamp_speed_title">Lava lamp speed</string>
-    <string name="pulse_solid_units_count">Solid lines count</string>
-    <string name="pulse_solid_lines_count">Solid lines count</string>
-    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
-    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
-    <string name="pulse_custom_dimen">Bar width</string>
-    <string name="pulse_custom_div">Bar spacing</string>
-    <string name="pulse_filled_block_size">Block size</string>
-    <string name="pulse_empty_block_size">Block spacing</string>
+    <string name="pulse_help_policy_notice_summary">在设备扬声器上播放时, 音乐可视化不能与某些音频源配合使用</string>
+    <string name="pulse_settings">音频脉冲</string>
+    <string name="pulse_settings_summary">导航栏音乐可视化</string>
+    <string name="show_pulse_title">显示音频脉冲</string>
+    <string name="show_pulse_summary">导航栏上的音频可视化效果</string>
+    <string name="pulse_render_mode_title">渲染模式</string>
+    <string name="pulse_render_mode_fading_bars">色块</string>
+    <string name="pulse_render_mode_solid_lines">实线</string>
+    <string name="pulse_color">颜色</string>
+    <string name="pulse_color_mode">色彩模式</string>
+    <string name="pulse_color_accent">强调色</string>
+    <string name="pulse_color_custom">自定义</string>
+    <string name="pulse_color_lava_lamp">熔岩灯</string>
+    <string name="pulse_color_auto">专辑封面</string>
+    <string name="pulse_color_chooser">选择颜色</string>
+    <string name="smoothing_enabled_title">平滑动画</string>
+    <string name="smoothing_enabled_summary">每条频谱线动画更平滑</string>
+    <string name="pulse_advanced_category">高级</string>
+    <string name="pulse_legacy_mode_advanced_category">色块模式设置</string>
+    <string name="pulse_custom_fudge_factor">清晰等级</string>
+    <string name="lavamp_speed_title">熔岩灯速度</string>
+    <string name="pulse_solid_units_count">实线数</string>
+    <string name="pulse_solid_lines_count">实线数</string>
+    <string name="pulse_solid_units_opacity">实线不透明度</string>
+    <string name="pulse_solid_dimen_category">实线模式设置</string>
+    <string name="pulse_custom_dimen">栏宽度</string>
+    <string name="pulse_custom_div">栏间距</string>
+    <string name="pulse_filled_block_size">色块大小</string>
+    <string name="pulse_empty_block_size">色块间隔</string>
     <!-- Button backlight -->
     <string name="button_backlight_title">背光灯</string>
     <string name="button_backlight_summary">配置按键背光</string>
@@ -412,93 +412,13 @@
     <!--Owlsnest Gestures-->
     <string name="gesture_category">手势</string>
     <string name="gesture_summary">手势基本选项/操作</string>
-    <string name="pixel_gesture_title">Pixel 手势</string>
-    <string name="pixel_gesture_summary">Pixel 的特色功能，例如侧边动作</string>
     <string name="double_tap_options">双击睡眠</string>
-    <string name="aosp_gesture_title">AOSP 手势</string>
-    <string name="aware_settings_title">运动传感器</string>
-    <string name="aware_settings_summary">配置运动传感器选项</string>
-    <!-- Active edge -->
-    <string name="active_edge_title">活动边缘</string>
-    <string name="active_edge_summary">配置侧边动作选项</string>
-    <string name="active_edge_short_actions_title">短按行为</string>
-    <string name="active_edge_long_actions_title">长按行为</string>
-    <string name="active_edge_sensitivity_title">挤压灵敏度</string>
-    <string name="active_edge_wake_title">屏幕关闭时允许</string>
-    <string name="active_edge_wake_summary">屏幕关闭时触发操作</string>
-    <string name="active_edge_footer_info">无法显示所有可用动作。\n\n如果想要为该动作选择特定的应用 Activity，请长按应用选择器中的一个应用。</string>
-    <!-- Custom actions -->
-    <string name="action_nothing">无动作</string>
-    <string name="action_menu">菜单</string>
-    <string name="action_app_switch">最近任务</string>
-    <string name="action_search">助手</string>
-    <string name="action_voice_search">语音搜索</string>
-    <string name="action_launch_camera">相机</string>
-    <string name="action_last_app">上一个应用程序</string>
-    <string name="action_splitscreen">分屏</string>
-    <string name="action_flashlight">手电筒</string>
-    <string name="action_clear_notifications">清除通知</string>
-    <string name="action_volume_panel">音量面板</string>
-    <string name="action_screen_off">关闭屏幕</string>
-    <string name="action_notifications">通知</string>
-    <string name="action_power_menu">电源菜单</string>
-    <string name="action_screenshot">屏幕截图</string>
-    <string name="action_qs_panel">快速设置面板</string>
-    <string name="action_app_action">应用</string>
-    <string name="action_ringer_modes">响铃模式</string>
-    <string name="kill_app">退出前台应用</string>
-    <string name="skip_song">下一曲</string>
-    <string name="prev_song">上一曲</string>
-    <!-- Active edge -->
-    <string name="active_edge_ss_app_select_title">选择短按应用</string>
-    <string name="active_edge_ls_app_select_title">选择长按应用</string>
-    <string name="active_edge_app_select_summary">选择一个应用程序在按压时启动</string>
-    <!-- Motion Sense -->
-    <string name="ambient_display_wake_screen_summary">拿起您的手机即可查看时间、通知和其他信息。</string>
-    <string name="ambient_display_wake_screen_summary_on">开启</string>
-    <string name="aware_category_display">息屏显示</string>
-    <string name="aware_category_gesture">快速手势</string>
-    <string name="aware_disabled_preference_action">运动传感器设置</string>
-    <string name="aware_disabled_preference_dialog_content">要使用快捷手势，请开启运动传感器。</string>
-    <string name="aware_disabled_preference_dialog_title">此功能已关闭</string>
-    <string name="aware_disabled_preference_neutral">暂不</string>
-    <string name="aware_display_settings_title">空闲锁屏</string>
-    <string name="aware_settings_description">借助新的传感器，Pixel可以识别手机周围的距离和移动</string>
-    <string name="aware_settings_disabled_info_dialog_content">运动传感器功能，如快速手势，接近时亮屏，拿起查看手机，在这个国家不受支持</string>
-    <string name="aware_settings_disabled_info_dialog_title">运动传感器已经关闭</string>
-    <string name="aware_settings_enabled_info_dialog_content">运动传感器功能，如快速手势，接近时亮屏，拿起查看手机，在这个国家不受支持</string>
-    <string name="aware_settings_enabled_info_dialog_title">运动传感器已经开启</string>
-    <string name="aware_wake_display_summary">当接近时，显示时间、通知图标和其他信息</string>
-    <string name="aware_wake_display_summary_aod_off">由于常亮显示已关闭，因此无法使用</string>
-    <string name="aware_wake_display_title">接近时亮屏</string>
-    <string name="dialog_aware_settings_message">如果您关闭运动传感器，则无法使用快速手势、接近时亮屏或者拿起查看手机</string>
-    <string name="dialog_aware_settings_title">关闭运动传感器？</string>
-    <string name="gesture_aware_confirmation_action_button">我知道了</string>
-    <string name="gesture_aware_disabled_info_dialog_content">这个国家不支持快捷手势和其他运动传感器功能。</string>
-    <string name="gesture_aware_off_dialog_content">要使用快捷手势，请开启运动传感器。</string>
-    <string name="gesture_aware_off_dialog_title">快捷手势已关闭</string>
-    <string name="gesture_silence_on_summary">开启 / 暂停闹钟与静音通话</string>
-    <string name="gesture_silence_summary">暂停闹钟与静音通话</string>
-    <string name="gesture_silence_title">中断静音</string>
-    <string name="gesture_skip_direction_ltr">向右滑动以播放下一首歌曲</string>
-    <string name="gesture_skip_direction_rtl">向左滑动以播放下一首歌曲</string>
-    <string name="gesture_skip_direction_title">滑动方向</string>
-    <string name="gesture_skip_on_summary">开启/跳至下一首或上一首歌曲</string>
-    <string name="gesture_skip_summary">跳至下一首或上一首歌曲</string>
-    <string name="gesture_skip_title">下一曲</string>
-    <string name="gesture_tap_off_summary">关闭/暂停或继续播放音乐</string>
-    <string name="gesture_tap_on_summary">开启/暂停或继续播放音乐</string>
-    <string name="gesture_tap_summary">轻拍手机上方以暂停或恢复音乐播放</string>
-    <string name="gesture_tap_title">暂停音乐</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content">这个国家不支持拿起查看手机和其他运动传感器功能</string>
-    <string name="wake_screen_aware_off_dialog_content">要使用拿起查看手机，请开启运动传感器。</string>
-    <string name="wake_screen_aware_off_dialog_title">拿起查看手机已关闭</string>
     <!--Owlsnest lockscreen-->
     <string name="lockscreen_title">锁屏</string>
     <string name="lockscreen_summary">自定义锁屏界面布局和选项</string>
     <string name="fingerprint_category">指纹</string>
-    <string name="tuner_keyguard_show_lock_icon_title">Show lock status</string>
-    <string name="tuner_keyguard_show_lock_icon_summary">Show current lock status icon on top</string>
+    <string name="tuner_keyguard_show_lock_icon_title">显示锁定状态</string>
+    <string name="tuner_keyguard_show_lock_icon_summary">在上方显示当前的锁定状态</string>
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">媒体封面滤镜</string>
     <string name="lockscreen_cover_filter_none">均不显示</string>
@@ -574,23 +494,23 @@
     <string name="left_swipe_app_action_title">选择左长划应用</string>
     <string name="right_swipe_actions_title">右长划动作</string>
     <string name="right_swipe_app_action_title">选择右长划应用</string>
-    <string name="left_vertical_swipe_key_title">Left L swipe</string>
-    <string name="right_vertical_swipe_key_title">Right L swipe</string>
-    <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
-    <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
-    <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
-    <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
+    <string name="left_vertical_swipe_key_title">左 L 滑</string>
+    <string name="right_vertical_swipe_key_title">右 L 滑</string>
+    <string name="left_vertical_swipe_actions_title">垂直左滑动作</string>
+    <string name="left_vertical_swipe_app_action_title">选择垂直左滑应用</string>
+    <string name="right_vertical_swipe_actions_title">垂直右滑动作</string>
+    <string name="right_vertical_swipe_app_action_title">选择垂直右滑应用</string>
     <string name="gesture_nav_tweaks_footer_info">在应用选择器中长按应用，为该手势动作指定一个应用活动。\n\n应用切换指示器展示期间，在屏幕底部区域滑动以激活手势动作。</string>
     <string name="back_swipe_extended_title">扩展滑动动作</string>
-    <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
+    <string name="back_swipe_extended_summary">长横滑 (超过屏幕一半) 或做 L 形滑动 (垂直方向足够长) 以激活动作</string>
     <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
-    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
-    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
-    <string name="gesture_navbar_handle_default">Default pill</string>
-    <string name="gesture_navbar_handle_middle">Middle pill</string>
-    <string name="gesture_navbar_handle_large">Large pill</string>
+    <string name="gesture_navbar_handle_title">导航条显示样式</string>
+    <string name="gesture_navbar_hidden">隐藏导航栏</string>
+    <string name="gesture_navbar_handle_hidden">隐藏导航条</string>
+    <string name="gesture_navbar_handle_default">默认导航条</string>
+    <string name="gesture_navbar_handle_middle">中等导航条</string>
+    <string name="gesture_navbar_handle_large">大号导航条</string>
     <!-- USB Configuration -->
-    <string name="usb_default_config_title">USB configuration</string>
-    <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
+    <string name="usb_default_config_title">USB 配置</string>
+    <string name="usb_default_config_summary">选择 USB 连接到设备时的默认行为</string>
 </resources>
