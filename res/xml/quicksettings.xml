@@ -39,14 +39,6 @@
         android:summary="@string/qs_blur_summary"
         android:defaultValue="true" />
 
-    <com.aosip.support.preference.SystemSettingListPreference
-        android:key="qs_battery_location"
-        android:title="@string/qs_battery_header_title"
-        android:entries="@array/qs_battery_header_entries"
-        android:entryValues="@array/qs_battery_header_values"
-        android:summary="%s"
-        android:defaultValue="1" />
-
     <PreferenceCategory
         android:key="string/qs_brightness_category"
         android:title="@string/qs_brightness_category_title">
