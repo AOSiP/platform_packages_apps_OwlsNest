@@ -51,6 +51,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
     private static final String TAG = PulseSettings.class.getSimpleName();
     private static final String NAVBAR_PULSE_ENABLED_KEY = "navbar_pulse_enabled";
     private static final String LOCKSCREEN_PULSE_ENABLED_KEY = "lockscreen_pulse_enabled";
+    private static final String AMBIENT_PULSE_ENABLED_KEY = "ambient_pulse_enabled";
     private static final String PULSE_SMOOTHING_KEY = "pulse_smoothing_enabled";
     private static final String PULSE_COLOR_MODE_KEY = "pulse_color_mode";
     private static final String PULSE_COLOR_MODE_CHOOSER_KEY = "pulse_color_user";
@@ -67,6 +68,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mNavbarPulse;
     private SwitchPreference mLockscreenPulse;
+    private SwitchPreference mAmbientPulse;
     private SwitchPreference mPulseSmoothing;
     private Preference mRenderMode;
     private ListPreference mColorModePref;
@@ -100,12 +102,18 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mLockscreenPulse.setChecked(lockscreenPulse);
         mLockscreenPulse.setOnPreferenceChangeListener(this);
 
+        mAmbientPulse = (SwitchPreference) findPreference(AMBIENT_PULSE_ENABLED_KEY);
+        boolean ambientPulse = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.AMBIENT_PULSE_ENABLED, 1, UserHandle.USER_CURRENT) != 0;
+        mAmbientPulse.setChecked(ambientPulse);
+        mAmbientPulse.setOnPreferenceChangeListener(this);
+
         mColorModePref = (ListPreference) findPreference(PULSE_COLOR_MODE_KEY);
         mLavaSpeedPref = findPreference(PULSE_COLOR_MODE_LAVA_SPEED_KEY);
         mColorPickerPref = (ColorSelectPreference) findPreference(PULSE_COLOR_MODE_CHOOSER_KEY);
         mColorModePref.setOnPreferenceChangeListener(this);
-        int colorMode = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.PULSE_COLOR_TYPE, COLOR_TYPE_ACCENT, UserHandle.USER_CURRENT);
+        int colorMode = Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.Secure.PULSE_COLOR_MODE, COLOR_TYPE_ACCENT, UserHandle.USER_CURRENT);
         updateColorPrefs(colorMode);
 
         mRenderMode = findPreference(PULSE_RENDER_MODE_KEY);
@@ -118,8 +126,8 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mPulseSmoothing = (SwitchPreference) findPreference(PULSE_SMOOTHING_KEY);
 
         mColorAccent = (Utils.getThemeAccentColor(getContext()));
-        mColorPref = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.PULSE_COLOR_USER, mColorAccent,
+        mColorPref = Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.Secure.PULSE_COLOR_USER, mColorAccent,
                         UserHandle.USER_CURRENT);
         mColorPickerPref.setColor(mColorPref);
         mColorPickerPref.setOnPreferenceChangeListener(this);
@@ -142,6 +150,12 @@ public class PulseSettings extends SettingsPreferenceFragment implements
                 Settings.Secure.LOCKSCREEN_PULSE_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
             updateAllPrefs();
             return true;
+        } else if (preference == mAmbientPulse) {
+            boolean val = (Boolean) newValue;
+            Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.AMBIENT_PULSE_ENABLED, val ? 1 : 0, UserHandle.USER_CURRENT);
+            updateAllPrefs();
+            return true;
         } else if (preference == mColorModePref) {
             updateColorPrefs(Integer.valueOf(String.valueOf(newValue)));
             return true;
@@ -150,8 +164,8 @@ public class PulseSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference.equals(mColorPickerPref)) {
             ColorSelectPreference colorPref = (ColorSelectPreference) preference;
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.PULSE_COLOR_USER, colorPref.getColor(),
+            Settings.Secure.putIntForUser(getContentResolver(),
+                    Settings.Secure.PULSE_COLOR_USER, colorPref.getColor(),
                     UserHandle.USER_CURRENT);
             mColorPref = colorPref.getColor();
             mColorPickerPref.setColor(mColorPref);
@@ -167,10 +181,12 @@ public class PulseSettings extends SettingsPreferenceFragment implements
                 Settings.Secure.NAVBAR_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
         boolean lockscreenPulse = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.LOCKSCREEN_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+        boolean ambientPulse = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.AMBIENT_PULSE_ENABLED, 1, UserHandle.USER_CURRENT) != 0;
 
-        mPulseSmoothing.setEnabled(navbarPulse || lockscreenPulse);
+        mPulseSmoothing.setEnabled(navbarPulse || lockscreenPulse || ambientPulse);
 
-        mColorModePref.setEnabled(navbarPulse || lockscreenPulse);
+        mColorModePref.setEnabled(navbarPulse || lockscreenPulse || ambientPulse);
         if (navbarPulse || lockscreenPulse) {
             int colorMode = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.PULSE_COLOR_MODE, COLOR_TYPE_ACCENT, UserHandle.USER_CURRENT);
@@ -180,8 +196,8 @@ public class PulseSettings extends SettingsPreferenceFragment implements
             mLavaSpeedPref.setEnabled(false);
         }
 
-        mRenderMode.setEnabled(navbarPulse || lockscreenPulse);
-        if (navbarPulse || lockscreenPulse) {
+        mRenderMode.setEnabled(navbarPulse || lockscreenPulse || ambientPulse);
+        if (navbarPulse || lockscreenPulse || ambientPulse) {
             int renderMode = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.PULSE_RENDER_STYLE, RENDER_STYLE_SOLID_LINES, UserHandle.USER_CURRENT);
             updateRenderCategories(renderMode);
