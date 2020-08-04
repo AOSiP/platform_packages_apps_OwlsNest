@@ -51,11 +51,6 @@
         android:summary="@string/lockscreen_show_status_bar_summary"
         android:defaultValue="true" />
 
-    <Preference
-        android:title="@string/lockscreen_visualizer_title"
-        android:summary="@string/lockscreen_visualizer_summary"
-        android:fragment="com.aosip.owlsnest.lockscreen.LockScreenVisualizer" />
-
     <PreferenceCategory
         android:key="album_art_category"
         android:title="@string/media_art_title" >
