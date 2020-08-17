@@ -27,7 +27,6 @@ import android.provider.Settings;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -42,6 +41,7 @@ import com.android.settingslib.Utils;
 
 import com.aosip.support.preference.ColorSelectPreference;
 import com.aosip.support.preference.GlobalSettingMasterSwitchPreference;
+import com.aosip.support.preference.SystemSettingMasterSwitchPreference;
 import com.aosip.support.preference.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
@@ -57,14 +57,14 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     private static final String PULSE_TIMEOUT_PREF = "ambient_notification_light_timeout";
     private static final String PULSE_COLOR_MODE_PREF = "ambient_notification_light_color_mode";
     private static final String PREF_HEADS_UP = "heads_up";
-    private static final String STATUS_BAR_TICKER = "status_bar_show_ticker";
+    private static final String PREF_TICKER = "ticker";
 
     private ColorSelectPreference mPulseLightColorPref;
     private GlobalSettingMasterSwitchPreference mHeadsUp;
     private ListPreference mColorMode;
     private ListPreference mPulseTimeout;
     private Preference mBatteryLightPref;
-    private SwitchPreference mTicker;
+    private SystemSettingMasterSwitchPreference mTicker;
     private SystemSettingSwitchPreference mPulseEdgeLights;
     private static final int MENU_RESET = Menu.FIRST;
     private int mDefaultColor;
@@ -134,9 +134,10 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
                 Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 1) == 1);
         mHeadsUp.setOnPreferenceChangeListener(this);
 
-        mTicker = (SystemSettingSwitchPreference) findPreference(STATUS_BAR_TICKER);
-        mTicker.setChecked((Settings.System.getInt(getContentResolver(),
-             Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 1));
+        mTicker = (SystemSettingMasterSwitchPreference)
+                findPreference(PREF_TICKER);
+        mTicker.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 1);
         mTicker.setOnPreferenceChangeListener(this);
       }
 
@@ -151,13 +152,7 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if  (preference == mTicker) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_SHOW_TICKER, value ? 1 : 0);
-            isHeadsUpEnabledCheck();
-            return true;
-        } else if (preference == mPulseLightColorPref) {
+        if (preference == mPulseLightColorPref) {
             ColorSelectPreference lightPref = (ColorSelectPreference) preference;
             Settings.System.putInt(getContentResolver(),
                      Settings.System.NOTIFICATION_PULSE_COLOR, lightPref.getColor());
@@ -198,6 +193,12 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
                     Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, value ? 1 : 0);
             isHeadsUpEnabledCheck();
             return true;
+        } else if (preference == mTicker) {
+            Boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_SHOW_TICKER, value ? 1 : 0);
+            isHeadsUpEnabledCheck();
+            return true;
         }
        return false;
     }
@@ -233,13 +234,15 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     private void isHeadsUpEnabledCheck() {
         boolean headsupEnabled = Settings.Global.getInt(getContentResolver(),
                 Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 1) == 1;
+        boolean tickerEnabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_TICKER, 1) == 1;
 
         if (headsupEnabled) {
-            mTicker.setEnabled(false);
             mTicker.setChecked(false);
-        } else {
-            mTicker.setEnabled(true);
-            mTicker.setChecked(true);
+        }
+
+        if (tickerEnabled) {
+            mHeadsUp.setChecked(false);
         }
     }
 
