@@ -225,6 +225,8 @@
     <string name="heads_up_time_out_10sec">10 seconds</string>
 
     <!--Notification Pulse-->
+    <string name="ambient_pulse_category">Ambient Pulse</string>
+    <string name="ambient_pulse_summary">Show pulse on ambient/AOD for new notifications</string>
     <string name="pulse_ambient_light_title">Pulse on new notification</string>
     <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
     <string name="ambient_notification_light_enabled_title">Pulse on always on</string>
