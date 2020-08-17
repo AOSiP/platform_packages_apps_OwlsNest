@@ -20,6 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notification_category" >
 
+    <Preference
+        android:key="ambient_pulse"
+        android:title="@string/ambient_pulse_category"
+        android:summary="@string/ambient_pulse_summary"
+        android:fragment="com.aosip.owlsnest.notification.AmbientPulse" />
+
     <com.aosip.support.preference.GlobalSettingMasterSwitchPreference
         android:key="heads_up"
         android:title="@string/headsup_category"
@@ -49,56 +55,5 @@
         android:title="@string/status_bar_show_ticker_title"
         android:summary="@string/status_bar_show_ticker_summary"
         android:fragment="com.aosip.owlsnest.notification.Ticker" />
-
-    <PreferenceCategory
-        android:title="@string/pulse_ambient_category_title" >
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="pulse_ambient_light"
-            android:title="@string/pulse_ambient_light_title"
-            android:summary="@string/pulse_ambient_light_summary"
-            android:defaultValue="false" />
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="ambient_notification_light_enabled"
-            android:title="@string/ambient_notification_light_enabled_title"
-            android:summary="@string/ambient_notification_light_enabled_summary"
-            android:defaultValue="false" />
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="ambient_notification_light_hide_aod"
-            android:title="@string/ambient_notification_light_hide_aod_title"
-            android:summary="@string/ambient_notification_light_hide_aod_summary"
-            android:defaultValue="false"
-            android:dependency="ambient_notification_light_enabled"/>
-
-        <ListPreference
-            android:key="ambient_notification_light_timeout"
-            android:title="@string/ambient_notification_light_timeout_title"
-            android:persistent="false"
-            android:entries="@array/ambient_notification_light_timeout_entries"
-            android:entryValues="@array/ambient_notification_light_timeout_values"
-            android:dependency="ambient_notification_light_enabled" />
-
-        <ListPreference
-            android:key="ambient_notification_light_color_mode"
-            android:title="@string/ambient_notification_light_color_mode_title"
-            android:persistent="false"
-            android:entries="@array/ambient_notification_light_color_mode_entries"
-            android:entryValues="@array/ambient_notification_light_color_mode_values"
-            android:defaultValue="2" />
-
-        <com.aosip.support.preference.ColorSelectPreference
-            android:key="ambient_notification_light_color"
-            android:title="@string/ambient_notification_light_color_title"
-            android:summary="@string/ambient_notification_light_color_summary"
-            android:persistent="false" />
-
-        <Preference
-            android:icon="@drawable/ic_info_outline_24dp"
-            android:persistent="false"
-            android:summary="@string/pulse_ambient_light_note" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

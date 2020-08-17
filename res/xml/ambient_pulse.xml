@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2015-2020 Android Open Source Illusion Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/ambient_pulse_category" >
+
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="pulse_ambient_light"
+        android:title="@string/pulse_ambient_light_title"
+        android:summary="@string/pulse_ambient_light_summary"
+        android:defaultValue="false" />
+
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="ambient_notification_light_enabled"
+        android:title="@string/ambient_notification_light_enabled_title"
+        android:summary="@string/ambient_notification_light_enabled_summary"
+        android:defaultValue="false" />
+
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="ambient_notification_light_hide_aod"
+        android:title="@string/ambient_notification_light_hide_aod_title"
+        android:summary="@string/ambient_notification_light_hide_aod_summary"
+        android:defaultValue="false"
+        android:dependency="ambient_notification_light_enabled"/>
+
+    <ListPreference
+        android:key="ambient_notification_light_timeout"
+        android:title="@string/ambient_notification_light_timeout_title"
+        android:persistent="false"
+        android:entries="@array/ambient_notification_light_timeout_entries"
+        android:entryValues="@array/ambient_notification_light_timeout_values"
+        android:dependency="ambient_notification_light_enabled" />
+
+    <ListPreference
+        android:key="ambient_notification_light_color_mode"
+        android:title="@string/ambient_notification_light_color_mode_title"
+        android:persistent="false"
+        android:entries="@array/ambient_notification_light_color_mode_entries"
+        android:entryValues="@array/ambient_notification_light_color_mode_values"
+        android:defaultValue="2" />
+
+    <com.aosip.support.preference.ColorSelectPreference
+        android:key="ambient_notification_light_color"
+        android:title="@string/ambient_notification_light_color_title"
+        android:summary="@string/ambient_notification_light_color_summary"
+        android:persistent="false" />
+
+    <Preference
+        android:icon="@drawable/ic_info_outline_24dp"
+        android:persistent="false"
+        android:summary="@string/pulse_ambient_light_note" />
+
+</PreferenceScreen>
