@@ -196,6 +196,7 @@
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
+    <string name="headsup_ticker_note">Heads Up and Ticker can not be used together, one must be disabled to use the other.</string>
     <string name="headsup_category">Heads-Up</string>
     <string name="headsup_summary">Various options to change how Heads Up works</string>
 
@@ -272,8 +273,6 @@
     <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
 
     <!-- Statusbar ticker -->
-    <string name="statusbar_notifi_cat">Notifications Ticker</string>
-    <string name="status_bar_ticker_title">Ticker</string>
     <string name="status_bar_show_ticker_title">Ticker</string>
     <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
     <string name="ticker_animation_mode_title">Ticker animation</string>
