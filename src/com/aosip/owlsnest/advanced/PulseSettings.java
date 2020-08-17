@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aosip.owlsnest.navigation;
+package com.aosip.owlsnest.advanced;
 
 import java.util.ArrayList;
 import java.util.List;
