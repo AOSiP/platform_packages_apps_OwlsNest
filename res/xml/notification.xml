@@ -56,4 +56,9 @@
         android:summary="@string/status_bar_show_ticker_summary"
         android:fragment="com.aosip.owlsnest.notification.Ticker" />
 
+    <Preference
+        android:icon="@drawable/ic_info_outline_24dp"
+        android:persistent="false"
+        android:summary="@string/headsup_ticker_note" />
+
 </PreferenceScreen>
