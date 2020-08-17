@@ -196,6 +196,7 @@
     <string name="notification_title">Notification</string>
     <string name="notification_summary">Adjust LEDs and notification behavior</string>
     <string name="notification_category">Notifications</string>
+    <string name="headsup_ticker_note">Heads Up and Ticker can not be used together, one must be disabled to use the other.</string>
     <string name="headsup_category">Heads-Up</string>
     <string name="headsup_summary">Various options to change how Heads Up works</string>
 
@@ -272,8 +273,6 @@
     <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
 
     <!-- Statusbar ticker -->
-    <string name="statusbar_notifi_cat">Notifications Ticker</string>
-    <string name="status_bar_ticker_title">Ticker</string>
     <string name="status_bar_show_ticker_title">Ticker</string>
     <string name="status_bar_show_ticker_summary">Notification preview in status bar</string>
     <string name="ticker_animation_mode_title">Ticker animation</string>
@@ -403,40 +402,33 @@
     <string name="long_press_custom_app_title">Long press custom app</string>
     <string name="double_tap_custom_app_title">Double tap custom app</string>
 
-    <!-- Pulse -->
-    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
-    <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
-    <string name="show_navbar_pulse_title">Navbar Pulse</string>
-    <string name="show_navbar_pulse_summary">Audio graphic equalizer on the navigation bar area, also if bar is hidden</string>
-    <string name="show_lockscreen_pulse_title">Lockscreen Pulse</string>
-    <string name="show_lockscreen_pulse_summary">Audio graphic equalizer on the lockscreen</string>
-    <string name="show_ambient_pulse_title">Ambient Pulse</string>
-    <string name="show_ambient_pulse_summary">Audio graphic equalizer on the ambient screen</string>
-    <string name="pulse_render_mode_title">Render mode</string>
-    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
-    <string name="pulse_render_mode_solid_lines">Solid lines</string>
-    <string name="pulse_color">Color</string>
-    <string name="pulse_color_mode">Color mode</string>
-    <string name="pulse_color_accent">Accent</string>
-    <string name="pulse_color_custom">Custom</string>
-    <string name="pulse_color_lava_lamp">Lava lamp</string>
-    <string name="pulse_color_auto">Album art</string>
-    <string name="pulse_color_chooser">Choose color</string>
-    <string name="smoothing_enabled_title">Turn on smoothing</string>
-    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
-    <string name="pulse_advanced_category">Advanced</string>
-    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
-    <string name="pulse_custom_fudge_factor">Sanity level</string>
-    <string name="lavamp_speed_title">Lava lamp speed</string>
-    <string name="pulse_solid_units_count">Solid lines count</string>
-    <string name="pulse_solid_lines_count">Solid lines count</string>
-    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
-    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
-    <string name="pulse_custom_dimen">Bar width</string>
-    <string name="pulse_custom_div">Bar spacing</string>
-    <string name="pulse_filled_block_size">Block size</string>
-    <string name="pulse_empty_block_size">Block spacing</string>
+   <!-- Long swipe gestures -->
+   <string name="left_swipe_key_title">Left swipe</string>
+   <string name="right_swipe_key_title">Right swipe</string>
+   <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
+   <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
+   <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
+   <string name="left_swipe_actions_title">Long left swipe action</string>
+   <string name="left_swipe_app_action_title">Select long left swipe app</string>
+   <string name="right_swipe_actions_title">Long right swipe action</string>
+   <string name="right_swipe_app_action_title">Select long right swipe app</string>
+   <string name="left_vertical_swipe_key_title">Left L swipe</string>
+   <string name="right_vertical_swipe_key_title">Right L swipe</string>
+   <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
+   <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
+   <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
+   <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
+   <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
+   <string name="back_swipe_extended_title">Extended swipe action</string>
+   <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
+
+    <!-- Gesture navbar handle -->
+    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
+    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
+    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
+    <string name="gesture_navbar_handle_default">Default pill</string>
+    <string name="gesture_navbar_handle_middle">Middle pill</string>
+    <string name="gesture_navbar_handle_large">Large pill</string>
 
     <!-- Button backlight -->
     <string name="button_backlight_title">Backlight</string>
@@ -553,6 +545,41 @@
     <string name="advanced_summary">Misc and extra system settings</string>
     <string name="system_category">System Settings</string>
 
+    <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Navigation bar audio graphic equalizer</string>
+    <string name="show_navbar_pulse_title">Navbar Pulse</string>
+    <string name="show_navbar_pulse_summary">Audio graphic equalizer on the navigation bar area, also if bar is hidden</string>
+    <string name="show_lockscreen_pulse_title">Lockscreen Pulse</string>
+    <string name="show_lockscreen_pulse_summary">Audio graphic equalizer on the lockscreen</string>
+    <string name="show_ambient_pulse_title">Ambient Pulse</string>
+    <string name="show_ambient_pulse_summary">Audio graphic equalizer on the ambient screen</string>
+    <string name="pulse_render_mode_title">Render mode</string>
+    <string name="pulse_render_mode_fading_bars">Fading blocks</string>
+    <string name="pulse_render_mode_solid_lines">Solid lines</string>
+    <string name="pulse_color">Color</string>
+    <string name="pulse_color_mode">Color mode</string>
+    <string name="pulse_color_accent">Accent</string>
+    <string name="pulse_color_custom">Custom</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_auto">Album art</string>
+    <string name="pulse_color_chooser">Choose color</string>
+    <string name="smoothing_enabled_title">Turn on smoothing</string>
+    <string name="smoothing_enabled_summary">Each bar is animated more smoothly</string>
+    <string name="pulse_advanced_category">Advanced</string>
+    <string name="pulse_legacy_mode_advanced_category">Fading blocks mode settings</string>
+    <string name="pulse_custom_fudge_factor">Sanity level</string>
+    <string name="lavamp_speed_title">Lava lamp speed</string>
+    <string name="pulse_solid_units_count">Solid lines count</string>
+    <string name="pulse_solid_lines_count">Solid lines count</string>
+    <string name="pulse_solid_units_opacity">Solid lines opacity</string>
+    <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
+    <string name="pulse_custom_dimen">Bar width</string>
+    <string name="pulse_custom_div">Bar spacing</string>
+    <string name="pulse_filled_block_size">Block size</string>
+    <string name="pulse_empty_block_size">Block spacing</string>
+
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration options</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
@@ -567,34 +594,6 @@
     <string name="aspect_ratio_category_title">Legacy app scaling</string>
     <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
     <string name="action_save">Save</string>
-
-   <!-- Long swipe gestures -->
-   <string name="left_swipe_key_title">Left swipe</string>
-   <string name="right_swipe_key_title">Right swipe</string>
-   <string name="navbar_gesture_tweaks_pref_title">Custom gestures</string>
-   <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
-   <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
-   <string name="left_swipe_actions_title">Long left swipe action</string>
-   <string name="left_swipe_app_action_title">Select long left swipe app</string>
-   <string name="right_swipe_actions_title">Long right swipe action</string>
-   <string name="right_swipe_app_action_title">Select long right swipe app</string>
-   <string name="left_vertical_swipe_key_title">Left L swipe</string>
-   <string name="right_vertical_swipe_key_title">Right L swipe</string>
-   <string name="left_vertical_swipe_actions_title">Vertical left swipe action</string>
-   <string name="left_vertical_swipe_app_action_title">Select vertical left swipe app</string>
-   <string name="right_vertical_swipe_actions_title">Vertical right swipe action</string>
-   <string name="right_vertical_swipe_app_action_title">Select vertical right swipe app</string>
-   <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the app picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
-   <string name="back_swipe_extended_title">Extended swipe action</string>
-   <string name="back_swipe_extended_summary">Trigger action on wider swipe (more than half of display size), or a L swipe (vertically longer enough)</string>
-
-    <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Navigation bar display style</string>
-    <string name="gesture_navbar_hidden">Hidden navigation bar</string>
-    <string name="gesture_navbar_handle_hidden">Hidden pill</string>
-    <string name="gesture_navbar_handle_default">Default pill</string>
-    <string name="gesture_navbar_handle_middle">Middle pill</string>
-    <string name="gesture_navbar_handle_large">Large pill</string>
 
     <!-- USB Configuration -->
     <string name="usb_default_config_title">USB configuration</string>
