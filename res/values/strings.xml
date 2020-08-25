@@ -83,6 +83,7 @@
     <string name="volte_icon_oos">VoLTE OOS Icon</string>
     <string name="volte_icon_hd">HD Icon</string>
     <string name="volte_icon_volit">VoLIT Icon</string>
+    <string name="volte_icon_oos10">OOS 10</string>
 
     <!-- Status bar clock and date options -->
     <string name="status_bar_style_title">Style</string>
