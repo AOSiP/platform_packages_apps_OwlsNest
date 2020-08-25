@@ -113,9 +113,7 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
 
         if (headsupEnabled) {
             mTicker.setChecked(false);
-        }
-
-        if (tickerEnabled) {
+        } else if (tickerEnabled) {
             mHeadsUp.setChecked(false);
         }
     }
