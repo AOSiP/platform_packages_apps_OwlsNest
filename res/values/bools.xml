@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015-2020 AOSiP
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+<!-- OWLSNEST TAB CATEGORIES -->
+	<!-- Below is a list of all tabs and categories of OwlsNest.
+		 Once you add a new feature, check to make sure the category
+		 is already set visible. HIDDEN="false", VISIBLE="true". -->
+
+    <!-- Actions tab -->
+    <bool name="powerbutton_category_isVisible">true</bool>
+    <bool name="navigationbar_category_isVisible">true</bool>
+    <bool name="gestures_category_isVisible">true</bool>
+    <bool name="volumerocker_category_isVisible">true</bool>
+    <bool name="hwkeys_category_isVisible">false</bool>
+
+    <!-- Interface tab -->
+    <bool name="headsup_category_isVisible">true</bool>
+    <bool name="recents_category_isVisible">true</bool>
+    <bool name="quick_settings_category_isVisible">true</bool>
+    <bool name="themer_category_isVisible">true</bool>
+
+    <!-- StatusBar tab -->
+    <bool name="battery_category_isVisible">true</bool>
+    <bool name="clock_category_isVisible">true</bool>
+    <bool name="traffic_category_isVisible">true</bool>
+    <bool name="statusbar_icon_blacklist_category_isVisible">true</bool>
+
+    <!-- LockScreen tab -->
+    <bool name="lockscreen_aosp_category_isVisible">true</bool>
+    <bool name="lockscreen_weather_category_isVisible">false</bool>
+    <bool name="lockscreen_tuner_category_isVisible">true</bool>
+    <bool name="lockscreen_general_category_isVisible">true</bool>
+
+    <!-- System/Misc tab -->
+    <bool name="animations_category_isVisible">true</bool>
+    <bool name="general_notifications_category_isVisible">true</bool>
+    <bool name="miscellaneous_category_isVisible">true</bool>
+    <bool name="changelog_category_isVisible">true</bool>
+    <bool name="led_settings_category_isVisible">false</bool>
+
+<!-- BOOLEANS FOR FEATURES -->
+    <!-- Whether to display Motion Sense setting -->
+    <bool name="has_aware">false</bool>
+
+    <!-- Whether to display active edge category -->
+    <bool name="has_active_edge">false</bool>
+
+</resources>

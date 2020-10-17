@@ -1,35 +1,175 @@
+/*
+ * Copyright (C) 2015-2020 AOSiP
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.aosip.owlsnest;
 
+import android.app.ActionBar;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceActivity;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
+import android.util.TypedValue;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 
-public class OwlsNestSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+import com.aosip.owlsnest.tabs.ActionsTab;
+import com.aosip.owlsnest.tabs.InterfaceTab;
+import com.aosip.owlsnest.tabs.StatusBarTab;
+import com.aosip.owlsnest.tabs.LockScreenTab;
+import com.aosip.owlsnest.tabs.SystemMiscTab;
+
+import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
+import github.com.st235.lib_expandablebottombar.ExpandableBottomBarMenuItem;
+
+public class OwlsNestSettings extends SettingsPreferenceFragment {
 
     private static final String TAG = "OwlsNestSettings";
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsEvent.OWLSNEST;
-    }
+    Context mContext;
+    View view;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.owlsnest);
+        mContext = getActivity();
+
+        view = inflater.inflate(R.layout.owlsnest, container, false);
+
+        ActionBar actionBar = getActivity().getActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(R.string.coralreef_title);
+        }
+
+        ExpandableBottomBar bottomBar = view.findViewById(R.id.expandable_bottom_bar);
+
+        Fragment tab_actions = new ActionsTab();
+        Fragment tab_interface = new InterfaceTab();
+        Fragment tab_status_bar = new StatusBarTab();
+        Fragment tab_lock_screen = new LockScreenTab();
+        Fragment tab_system_misc = new SystemMiscTab();
+
+        Fragment fragment = (Fragment) getFragmentManager().findFragmentById(R.id.fragmentContainer);
+        if (fragment == null) {
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragmentContainer, tab_actions);
+            transaction.addToBackStack(null);
+            transaction.commit();
+        }
+
+        bottomBar.addItems(new ExpandableBottomBarMenuItem.Builder(mContext)
+                .addItem(R.id.tab_actions,
+                        R.drawable.bottomnav_actions,
+                        R.string.bottom_nav_actions_title, getThemeAccentColor(mContext))
+                .addItem(R.id.tab_interface,
+                        R.drawable.bottomnav_interface,
+                        R.string.bottom_nav_interface_title, getThemeAccentColor(mContext))
+                .addItem(R.id.tab_status_bar,
+                        R.drawable.bottomnav_lock_screen,
+                        R.string.bottom_nav_status_bar_title, getThemeAccentColor(mContext))
+                .addItem(R.id.tab_lock_screen,
+                        R.drawable.bottomnav_status_bar,
+                        R.string.bottom_nav_lock_screen_title, getThemeAccentColor(mContext))
+                .addItem(R.id.tab_system_misc,
+                        R.drawable.bottomnav_system_misc,
+                        R.string.bottom_nav_system_misc_title, getThemeAccentColor(mContext))
+                .build()
+        );
+
+        bottomBar.setOnItemSelectedListener((view, menuItem) -> {
+            int id = menuItem.getItemId();
+            switch (id) {
+                case R.id.tab_actions:
+                    launchFragment(tab_actions);
+                    break;
+                case R.id.tab_interface:
+                    launchFragment(tab_interface);
+                    break;
+                case R.id.tab_status_bar:
+                    launchFragment(tab_status_bar);
+                    break;
+                case R.id.tab_lock_screen:
+                    launchFragment(tab_lock_screen);
+                    break;
+                case R.id.tab_system_misc:
+                    launchFragment(tab_system_misc);
+                    break;
+            }
+            return null;
+        });
+
+        setHasOptionsMenu(true);
+
+        return view;
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        return true;
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+    }
+
+    private void launchFragment(Fragment fragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainer, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.OWLSNEST;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, 0, 0, R.string.dialog_team_title);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        view = getView();
+        view.setFocusableInTouchMode(true);
+        view.requestFocus();
+        view.setOnKeyListener((v, keyCode, event) -> {
+            if (event.getAction() == KeyEvent.ACTION_UP &&
+                    keyCode == KeyEvent.KEYCODE_BACK) {
+                getActivity().finish();
+                return true;
+            }
+            return false;
+        });
+    }
+
+    public static int getThemeAccentColor (final Context context) {
+        final TypedValue value = new TypedValue ();
+        context.getTheme ().resolveAttribute (android.R.attr.colorAccent, value, true);
+        return value.data;
     }
 }

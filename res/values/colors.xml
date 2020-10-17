@@ -4,7 +4,9 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+
           http://www.apache.org/licenses/LICENSE-2.0
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -12,19 +14,43 @@
      limitations under the License.
 -->
 <resources>
+    <color name="background_tab_pressed">#6633B5E5</color>
     <color name="text_color_white">@android:color/white</color>
     <color name="theme_accent">@*android:color/accent_device_default_light</color>
+    <color name="tab_background_color">@android:color/transparent</color>
+    <color name="tab_text_color">@*android:color/accent_device_default_light</color>
     <color name="white">#FFF</color>
 
-    <color name="owlsnest_oval_about">#a3a3a3</color>
-    <color name="owlsnest_oval_advanced">#ff6868</color>
-    <color name="owlsnest_oval_buttons">#31aa5c</color>
-    <color name="owlsnest_oval_gesture">#ffaf66</color>
-    <color name="owlsnest_oval_lockscreen">#84a7f4</color>
-    <color name="owlsnest_oval_nav">#f4d484</color>
-    <color name="owlsnest_oval_notif">#9863d8</color>
-    <color name="owlsnest_oval_qs">#fa6dff</color>
-    <color name="owlsnest_oval_recents">#6fdb3d</color>
-    <color name="owlsnest_oval_status">#8da2e8</color>
+    <color name="BottomBarBackgroundColor">@*android:color/primary_device_default_dark</color>
+    <color name="bottom_nav_text_icon_active">@android:color/white</color>
+    <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
+    <color name="preference_background_color">@*android:color/accent_device_default_light</color>
+    <color name="top_banner_icon_color_white_accent">#6d6d6d</color>
+    <color name="owlsnest_navbar_color">@*android:color/notification_material_background_color</color>
+
+    <!-- OwlsNest icon background colors -->
+    <color name="owlsnest_animations_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_battery_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_changelog_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_clock_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_display_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_gestures_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_headsup_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_hw_keys_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_led_settings_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_lockscreen_aosp_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_lockscreen_general_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_lockscreen_tuner_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_lockscreen_weather_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_miscellaneous_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_themer_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_traffic_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_navigationbar_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_notifications_general_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_powerbutton_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_quick_settings_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_recents_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_statusbar_items_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_volume_rocker_background">@*android:color/accent_device_default_light</color>
 
 </resources>

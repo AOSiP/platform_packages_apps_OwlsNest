@@ -14,14 +14,8 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/lockscreen_general_title" >
 
-    <!-- OwlsNest -->
-    <item type="id" name="info_button" />
-    <item name="tab_actions" type="id" />
-    <item name="tab_interface" type="id" />
-    <item name="tab_status_bar" type="id" />
-    <item name="tab_lock_screen" type="id" />
-    <item name="tab_system_misc" type="id" />
-
-</resources>
+</PreferenceScreen>

@@ -16,13 +16,91 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- AOSiP device info settings -->
-    <string name="aosip_version">AOSiP version</string>
-    <string name="aosip_version_default">Unknown</string>
-
     <!-- AOSiP dashboard -->
     <string name="nest_title">OwlsNest</string>
     <string name="aosip_title">AOSiP Settings</string>
+
+    <!-- Bottom Tabs -->
+    <string name="bottom_nav_actions_title">Actions</string>
+    <string name="bottom_nav_interface_title">Interface</string>
+    <string name="bottom_nav_status_bar_title">Statusbar</string>
+    <string name="bottom_nav_lock_screen_title">Lockscreen</string>
+    <string name="bottom_nav_system_misc_title">System/Misc</string>
+    <string name="accessibility_description">Screen menu</string>
+    <string name="accessibility_item_description">%1$s menu item</string>
+
+<!-- CATEGORIES -->
+    <!-- Actions -->
+    <string name="powerbutton_title">Power button</string>
+    <string name="powerbutton_summary">Configure additional options &amp; actions</string>
+    <string name="navigationbar_title">Navigation</string>
+    <string name="navigationbar_summary">Configure system navigation options</string>
+    <string name="gesture_options_title">Gestures</string>
+    <string name="gesture_options_summary">Enable/disable device specific user actions</string>
+    <string name="volume_rocker_title">Volume rocker</string>
+    <string name="volume_rocker_summary">Set default behavior and actions for vol +/- keys</string>
+    <string name="hw_keys_title">Hardware keys</string>
+    <string name="hw_keys_summary">Assign actions for physical navigation buttons</string>
+
+    <!-- Interface -->
+    <string name="quick_settings_title">Quick settings</string>
+    <string name="quick_settings_summary">Customize the overall view &amp; functionality</string>
+    <string name="headsup_title">Heads-up</string>
+    <string name="headsup_summary">Configure Heads-up options</string>
+    <string name="recents_title">Recents</string>
+    <string name="recents_summary">Configure look &amp; feel of recent apps view</string>
+
+    <!-- Statusbar -->
+    <string name="battery_options_title">Battery options</string>
+    <string name="battery_options_summary">Customize how battery is displayed</string>
+    <string name="clock_options_title">Clock options</string>
+    <string name="clock_options_summary">Set view options of time &amp; date in statusbar</string>
+    <string name="traffic_title">Network indicator</string>
+    <string name="traffic_summary">Enable &amp; configure network indicator in statusbar</string>
+    <string name="status_bar_items_title">Statusbar items</string>
+    <string name="status_bar_items_summary">Configure statusbar indicators</string>
+
+    <!-- Lockscreen -->
+    <string name="lockscreen_aosp_title">Native controls</string>
+    <string name="lockscreen_aosp_summary">Configure AOSP options for lockscreen &amp; ambient display</string>
+    <string name="lockscreen_general_title">General options</string>
+    <string name="lockscreen_general_summary">Add or remove visual elements of your lockscreen</string>
+    <string name="lockscreen_tuner_title">Lockscreen tuner</string>
+    <string name="lockscreen_tuner_summary">Add or remove tuner parts of your lockscreen</string>
+    <string name="lockscreen_weather_title">Weather options</string>
+    <string name="lockscreen_weather_summary">Configure lockscreen weather</string>
+
+    <!-- System/ Misc -->
+    <string name="animations_category_title">Animations</string>
+    <string name="animations_category_summary">Set custom animations for certain transitions</string>
+    <string name="general_notifications_title">General notifications</string>
+    <string name="general_notifications_summary">Miscellaneous notification controls</string>
+    <string name="miscellaneous_title">Miscellaneous</string>
+    <string name="miscellaneous_summary">Uncategorized options</string>
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">List of recent commits added to AOSiP</string>
+    <string name="led_settings_title">LED settings</string>
+    <string name="led_settings_summary">Configure the LED light for supported options</string>
+
+<!-- OTHER -->
+    <!-- Empty Preference Screen (if applicable) -->
+    <string name="empty_category_title">No extra features yet...</string>
+    <string name="empty_category_description">However, new features may be added here soon. Check back after future updates!</string>
+    <string name="dummy_string"> </string>
+
+    <!-- Sub-Categorized XMLs - DO NOT REMOVE -->
+    <string name="active_edge_title">Active Edge</string>
+    <string name="ambient_music_display">Music ticker</string>
+    <string name="brightness_control_category">Brightness control</string>
+    <string name="led_notifications_title">LED notifications</string>
+    <string name="led_battery_title">Battery LED</string>
+    <string name="qs_panel_layout_category">QS panel layout</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="volume_steps_title">Volume steps</string>
+    <string name="power_menu_category">Power menu</string>
+    <string name="aware_settings_title">Motion Sense</string>
+    <string name="battery_style_statusbar">Statusbar battery</string>
+    <string name="battery_style_qs">Quick panel battery</string>
 
     <!-- About AOSiP -->
     <string name="aosip_about_title">About AOSiP</string>
@@ -47,79 +125,16 @@
     <string name="aosip_about_maintainer">The maintainer for your device is</string>
     <string name="aosip_about_maintainer_summary" translatable="false">Kronic the Owl</string>
 
-    <!-- SystemUI Restart -->
-    <string name="systemui_restart_title">SystemUI restart required</string>
-    <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+    <!-- AOSiP device info settings -->
+    <string name="aosip_version">AOSiP version</string>
+    <string name="aosip_version_default">Unknown</string>
 
-    <!-- Misc -->
-    <string name="action_save">Save</string>
+    <!-- Reusable strings -->
+    <string name="advanced_behavior_title">Advanced behavior</string>
+    <string name="appearance_category">APPEARANCE</string>
+    <string name="behavior_category">BEHAVIOR</string>
+    <string name="enable_first">Please enable first</string>
 
-    <!--Owlsnest statusbar-->
-    <string name="statusbar_bar_title">Statusbar</string>
-    <string name="statusbar_bar_summary">Adjust various statusbar elements</string>
-    <string name="icon_category">Icons</string>
-    <string name="battery_category">Battery</string>
-
-
-    <!--Owlsnest Notification-->
-    <string name="notification_title">Notification</string>
-    <string name="notification_summary">Adjust LEDs and notification behavior</string>
-    <string name="notification_category">Notifications</string>
-    <string name="headsup_ticker_note">Heads Up and Ticker can not be used together, one must be disabled to use the other.</string>
-    <string name="headsup_category">Heads-Up</string>
-    <string name="headsup_summary">Various options to change how Heads Up works</string>
-
-
-    <!--Owlsnest Quick settings-->
-    <string name="quicksettings_title">Quick Settings</string>
-    <string name="quicksettings_summary">Manage your quick tiles and expanded statusbar</string>
-    <string name="expanded_category">Expanded</string>
-    <string name="brightness_slider_title">Brightness slider</string>
-    <string name="tiles_title">QS Tiles</string>
-    <string name="qs_tile_footer">To change the number of QS rows and columns and more, use the 3-dot menu button under the QS edit section in QS pulldown.</string>
-
-    <!--Owlsnest navigation-->
-    <string name="navigation_category">Navigation</string>
-    <string name="navigation_summary">Customize navigation bar style and behavior</string>
-    <string name="navigation_bar_layout_title">Layout</string>
-    <string name="navigation_bar_layout_summary">Customize the layout of the navigation bar</string>
-    <string name="navigation_bar_menu_arrow_keys_title">Arrow keys while typing</string>
-    <string name="navigation_bar_menu_arrow_keys_summary">Display left and right cursor buttons while typing</string>
-    <string name="hardware_keys_disable_title">Enable Keys</string>
-    <string name="hardware_keys_disable_summary">Enable the device\'s hardware keys and backlight</string>
-
-
-    <!--Owlsnest buttons-->
-    <string name="buttons_title">Hardware buttons</string>
-    <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
-    <string name="power_button_category">Power</string>
-    <string name="volume_category">Volume</string>
-
-
-    <!--Owlsnest recentscreen-->
-    <string name="recent_title">Recents</string>
-    <string name="recent_summary">Configure which recents style and options</string>
-
-
-    <!--Owlsnest Gestures-->
-    <string name="gesture_category">Gesture</string>
-    <string name="gesture_summary">Gesture based options/actions</string>
-    <string name="double_tap_options">Double Tap to Sleep</string>
-
-
-    <!--Owlsnest lockscreen-->
-    <string name="lockscreen_title">Lockscreen</string>
-    <string name="lockscreen_summary">Customize lockscreen layout and options</string>
-    <string name="fingerprint_category">Fingerprint</string>
-
-
-    <!--Owlsnest advanced-->
-    <string name="advanced_title">Advanced Settings</string>
-    <string name="advanced_summary">Misc and extra system settings</string>
-    <string name="system_category">System Settings</string>
-
-    <!-- USB Configuration -->
-    <string name="usb_default_config_title">USB configuration</string>
-    <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
+<!-- FEATURES -->
 
 </resources>
