@@ -20,45 +20,4 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notification_category" >
 
-    <Preference
-        android:key="ambient_pulse"
-        android:title="@string/ambient_pulse_category"
-        android:summary="@string/ambient_pulse_summary"
-        android:fragment="com.aosip.owlsnest.notification.AmbientPulse" />
-
-    <com.aosip.support.preference.GlobalSettingMasterSwitchPreference
-        android:key="heads_up"
-        android:title="@string/headsup_category"
-        android:summary="@string/headsup_summary"
-        android:fragment="com.aosip.owlsnest.notification.HeadsUp" />
-
-    <Preference
-        android:key="charging_light"
-        android:title="@string/battery_light_settings"
-        android:summary="@string/battery_light_summary"
-        android:fragment="com.aosip.owlsnest.notification.BatteryLightSettings" />
-
-    <com.aosip.support.preference.SystemSettingSwitchPreference
-        android:key="notification_sound_vib_screen_on"
-        android:title="@string/notification_sound_vib_screen_on_title"
-        android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" />
-
-    <com.aosip.support.preference.SystemSettingSwitchPreference
-        android:key="notification_headers"
-        android:title="@string/notification_headers_title"
-        android:summary="@string/notification_headers_summary"
-        android:defaultValue="false" />
-
-    <com.aosip.support.preference.SystemSettingMasterSwitchPreference
-        android:key="ticker"
-        android:title="@string/status_bar_show_ticker_title"
-        android:summary="@string/status_bar_show_ticker_summary"
-        android:fragment="com.aosip.owlsnest.notification.Ticker" />
-
-    <Preference
-        android:icon="@drawable/ic_info_outline_24dp"
-        android:persistent="false"
-        android:summary="@string/headsup_ticker_note" />
-
 </PreferenceScreen>

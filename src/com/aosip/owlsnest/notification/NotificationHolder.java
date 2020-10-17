@@ -18,34 +18,19 @@ package com.aosip.owlsnest.notification;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.provider.SearchIndexableResource;
-import android.provider.Settings;
+import android.os.UserHandle;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.aosip.support.preference.GlobalSettingMasterSwitchPreference;
-import com.aosip.support.preference.SystemSettingMasterSwitchPreference;
-
-import java.util.ArrayList;
-import java.util.List;
-
-@SearchIndexable
+@SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class NotificationHolder extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener, Indexable {
-
-    private static final String PREF_HEADS_UP = "heads_up";
-    private static final String PREF_TICKER = "ticker";
-
-    private GlobalSettingMasterSwitchPreference mHeadsUp;
-    private Preference mBatteryLightPref;
-    private SystemSettingMasterSwitchPreference mTicker;
+        Preference.OnPreferenceChangeListener {
 
     @Override
     public int getMetricsCategory() {
@@ -57,25 +42,6 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.notification);
-
-        mHeadsUp = (GlobalSettingMasterSwitchPreference)
-                findPreference(PREF_HEADS_UP);
-        mHeadsUp.setChecked(Settings.Global.getInt(getContentResolver(),
-                Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 1) == 1);
-        mHeadsUp.setOnPreferenceChangeListener(this);
-
-        mTicker = (SystemSettingMasterSwitchPreference)
-                findPreference(PREF_TICKER);
-        mTicker.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUS_BAR_SHOW_TICKER, 0) == 1);
-        mTicker.setOnPreferenceChangeListener(this);
-
-              mBatteryLightPref = (Preference) findPreference("charging_light");
-        PreferenceScreen prefSet = getPreferenceScreen();
-        if (!getResources().getBoolean(
-                com.android.internal.R.bool.config_deviceHasLED)) {
-            prefSet.removePreference(mBatteryLightPref);
-        }
       }
 
     @Override
@@ -89,55 +55,14 @@ public class NotificationHolder extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mHeadsUp) {
-            Boolean value = (Boolean) newValue;
-            Settings.Global.putInt(getContentResolver(),
-                    Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, value ? 1 : 0);
-            isHeadsUpEnabledCheck();
-            return true;
-        } else if (preference == mTicker) {
-            Boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_SHOW_TICKER, value ? 1 : 0);
-            isHeadsUpEnabledCheck();
-            return true;
-        }
        return false;
-    }
-
-    private void isHeadsUpEnabledCheck() {
-        boolean headsupEnabled = Settings.Global.getInt(getContentResolver(),
-                Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 1) == 1;
-        boolean tickerEnabled = Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUS_BAR_SHOW_TICKER, 1) == 1;
-
-        if (headsupEnabled) {
-            mTicker.setChecked(false);
-        } else if (tickerEnabled) {
-            mHeadsUp.setChecked(false);
-        }
     }
 
     /**
      * For Search.
      */
-    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-        new BaseSearchIndexProvider() {
-            @Override
-            public List<SearchIndexableResource> getXmlResourcesToIndex(Context context, boolean enabled) {
-                ArrayList<SearchIndexableResource> result =
-                    new ArrayList<SearchIndexableResource>();
-                    SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.notification;
-                    result.add(sir);
-                    return result;
-            }
 
-            @Override
-            public List<String> getNonIndexableKeys(Context context) {
-                List<String> keys = super.getNonIndexableKeys(context);
-                return keys;
-            }
-        };
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.notification);
 }
 

@@ -21,81 +21,9 @@
     android:title="@string/system_category" >
 
     <Preference
-        android:key="pulse"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:fragment="com.aosip.owlsnest.advanced.PulseSettings" />
-
-    <Preference
         android:key="default_usb_configuration"
         android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment"
         android:title="@string/usb_default_config_title"
         android:summary="@string/usb_default_config_summary"/>
-
-    <PreferenceCategory
-        android:key="dashboard_category"
-        android:title="@string/dashboard_category">
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="settings_show_conditions"
-            android:title="@string/dashboard_conditions_title"
-            android:summary="@string/dashboard_conditions_summary"
-            android:defaultValue="true" />
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="settings_show_suggestions"
-            android:title="@string/dashboard_suggestions_title"
-            android:summary="@string/dashboard_suggestions_summary"
-            android:defaultValue="true" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="incall_vibration_category"
-        android:title="@string/incall_vibration_category">
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="true" />
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="true" />
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="true" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="aspect_ratio_category"
-        android:title="@string/aspect_ratio_category_title">
-
-        <com.aosip.support.preference.SystemSettingSwitchPreference
-            android:key="aspect_ratio_apps_enabled"
-            android:title="@string/aspect_ratio_apps_enabled_title"
-            android:summary="@string/aspect_ratio_apps_enabled_summary"
-            android:defaultValue="false" />
-
-        <com.aosip.owlsnest.preference.AppMultiSelectListPreference
-            android:dependency="aspect_ratio_apps_enabled"
-            android:summary="@string/aspect_ratio_apps_list_summary"
-            android:title="@string/aspect_ratio_apps_list_title"
-            android:key="aspect_ratio_apps_list"
-            android:persistent="false" />
-
-        <com.aosip.owlsnest.preference.ScrollAppsViewPreference
-            android:dependency="aspect_ratio_apps_enabled"
-            android:key="aspect_ratio_apps_list_scroller"
-            android:persistent="false"
-            android:selectable="false" />
-
-        <Preference
-            android:dependency="aspect_ratio_apps_enabled"
-            android:persistent="false"
-            android:summary="@string/aspect_ratio_apps_info" />
-    </PreferenceCategory>
 
 </PreferenceScreen>
