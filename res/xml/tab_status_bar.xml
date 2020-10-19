@@ -17,27 +17,23 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="top_header_image"
-        android:layout="@layout/tab_header_status_bar" />
-
     <com.android.settings.widget.CardPreference
         android:key="battery_options_category"
-        android:fragment="com.aosip.owlsnest.fragments.BatteryOptions"
+        android:fragment="com.aosip.owlsnest.fragments.statusbar.BatteryOptions"
         android:icon="@drawable/ic_battery_background"
         android:title="@string/battery_options_title"
         android:summary="@string/battery_options_summary" />
 
     <com.android.settings.widget.CardPreference
         android:key="clock_options_category"
-        android:fragment="com.aosip.owlsnest.fragments.ClockOptions"
+        android:fragment="com.aosip.owlsnest.fragments.statusbar.ClockOptions"
         android:icon="@drawable/ic_clock_background"
         android:title="@string/clock_options_title"
         android:summary="@string/clock_options_summary" />
 
     <com.android.settings.widget.CardPreference
         android:key="traffic_category"
-        android:fragment="com.aosip.owlsnest.fragments.TrafficIndicators"
+        android:fragment="com.aosip.owlsnest.fragments.statusbar.TrafficIndicators"
         android:icon="@drawable/ic_network_traffic_background"
         android:title="@string/traffic_title"
         android:summary="@string/traffic_summary" />

@@ -17,21 +17,87 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/expandable_bottom_bar"/>
+        android:layout_above="@+id/bottom_navigation_view_constraint"/>
 
-    <github.com.st235.lib_expandablebottombar.ExpandableBottomBar
-        android:id="@+id/expandable_bottom_bar"
+    <com.aosip.owlsnest.navigation.BubbleNavigationConstraintView
+        android:id="@+id/bottom_navigation_view_constraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:exb_backgroundColor="@color/coralreef_navbar_color"
-        app:exb_itemInactiveColor="?android:attr/textColorPrimary"
-        android:layout_alignParentBottom="true" />
+        android:background="?android:colorPrimary"
+        android:elevation="8dp"
+        app:aosip_mode="spread"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <com.aosip.owlsnest.navigation.BubbleToggleView
+            android:id="@+id/tab_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:aosip_active="true"
+            app:aosip_padding="14dp"
+            app:aosip_titlePadding="4dp"
+            app:aosip_colorActive="@color/color_active"
+            app:aosip_colorInactive="@color/color_inactive"
+            app:aosip_icon="@drawable/navigation_actions"
+            app:aosip_shape="@drawable/navigation_transition_background_drawable_actions"
+            app:aosip_title="@string/navigation_actions_title" />
+
+        <com.aosip.owlsnest.navigation.BubbleToggleView
+            android:id="@+id/tab_interface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:aosip_padding="14dp"
+            app:aosip_titlePadding="4dp"
+            app:aosip_colorActive="@color/color_active"
+            app:aosip_colorInactive="@color/color_inactive"
+            app:aosip_icon="@drawable/navigation_interface"
+            app:aosip_shape="@drawable/navigation_transition_background_drawable_interface"
+            app:aosip_title="@string/navigation_interface_title" />
+
+        <com.aosip.owlsnest.navigation.BubbleToggleView
+            android:id="@+id/tab_statusbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:aosip_padding="14dp"
+            app:aosip_titlePadding="4dp"
+            app:aosip_colorActive="@color/color_active"
+            app:aosip_colorInactive="@color/color_inactive"
+            app:aosip_icon="@drawable/navigation_statusbar"
+            app:aosip_shape="@drawable/navigation_transition_background_drawable_statusbar"
+            app:aosip_title="@string/navigation_statusbar_title" />
+
+        <com.aosip.owlsnest.navigation.BubbleToggleView
+            android:id="@+id/tab_lockscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:aosip_padding="14dp"
+            app:aosip_titlePadding="4dp"
+            app:aosip_colorActive="@color/color_active"
+            app:aosip_colorInactive="@color/color_inactive"
+            app:aosip_icon="@drawable/navigation_lockscreen"
+            app:aosip_shape="@drawable/navigation_transition_background_drawable_lockscreen"
+            app:aosip_title="@string/navigation_lockscreen_title" />
+
+        <com.aosip.owlsnest.navigation.BubbleToggleView
+            android:id="@+id/tab_system_misc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:aosip_padding="14dp"
+            app:aosip_titlePadding="4dp"
+            app:aosip_colorActive="@color/color_active"
+            app:aosip_colorInactive="@color/color_inactive"
+            app:aosip_icon="@drawable/navigation_system"
+            app:aosip_shape="@drawable/navigation_transition_background_drawable_system"
+            app:aosip_title="@string/navigation_system_title" />
+
+    </com.aosip.owlsnest.navigation.BubbleNavigationConstraintView>
 
 </RelativeLayout>

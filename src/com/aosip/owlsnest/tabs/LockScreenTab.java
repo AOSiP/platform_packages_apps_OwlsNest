@@ -25,18 +25,15 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.CardPreference;
-import com.android.settingslib.widget.LayoutPreference;
 
 public class LockScreenTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String HEADER_IMAGE_KEY = "top_header_image";
     private static final String LOCKSCREEN_AOSP_CATEGORY = "lockscreen_aosp_category";
     private static final String LOCKSCREEN_GENERAL_CATEGORY = "lockscreen_general_category";
     private static final String LOCKSCREEN_TUNER_CATEGORY = "lockscreen_tuner_category";
     private static final String LOCKSCREEN_WEATHER_CATEGORY = "lockscreen_weather";
 
-    private LayoutPreference mHeaderImage;
     private CardPreference mLockscreenAosp;
     private CardPreference mLockscreenGeneral;
     private CardPreference mLockscreenTuner;
@@ -46,9 +43,6 @@ public class LockScreenTab extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.tab_lock_screen);
-
-        mHeaderImage = (LayoutPreference) findPreference(HEADER_IMAGE_KEY);
-        mHeaderImage.setEnabled(false);
 
         CardPreference mLockscreenAosp = findPreference("lockscreen_aosp_category");
         if (!getResources().getBoolean(R.bool.lockscreen_aosp_category_isVisible)) {
