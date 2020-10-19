@@ -17,15 +17,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- AOSiP dashboard -->
-    <string name="nest_title">OwlsNest</string>
+    <string name="owlsnest_title">OwlsNest</string>
     <string name="aosip_title">AOSiP Settings</string>
 
     <!-- Bottom Tabs -->
-    <string name="bottom_nav_actions_title">Actions</string>
-    <string name="bottom_nav_interface_title">Interface</string>
-    <string name="bottom_nav_status_bar_title">Statusbar</string>
-    <string name="bottom_nav_lock_screen_title">Lockscreen</string>
-    <string name="bottom_nav_system_misc_title">System/Misc</string>
+    <string name="navigation_actions_title">Actions</string>
+    <string name="navigation_interface_title">Interface</string>
+    <string name="navigation_statusbar_title">Statusbar</string>
+    <string name="navigation_lockscreen_title">Lockscreen</string>
+    <string name="navigation_system_title">System/Misc</string>
     <string name="accessibility_description">Screen menu</string>
     <string name="accessibility_item_description">%1$s menu item</string>
 
@@ -49,6 +49,8 @@
     <string name="headsup_summary">Configure Heads-up options</string>
     <string name="recents_title">Recents</string>
     <string name="recents_summary">Configure look &amp; feel of recent apps view</string>
+    <string name="themer_title">Themer</string>
+    <string name="themer_summary">Browse and select installed themes</string>
 
     <!-- Statusbar -->
     <string name="battery_options_title">Battery options</string>
@@ -91,39 +93,19 @@
     <!-- Sub-Categorized XMLs - DO NOT REMOVE -->
     <string name="active_edge_title">Active Edge</string>
     <string name="ambient_music_display">Music ticker</string>
+    <string name="aware_settings_title">Motion Sense</string>
+    <string name="battery_style_statusbar">Statusbar battery</string>
+    <string name="battery_style_qs">Quick panel battery</string>
     <string name="brightness_control_category">Brightness control</string>
+    <string name="custom_header_title">Custom header</string>
     <string name="led_notifications_title">LED notifications</string>
     <string name="led_battery_title">Battery LED</string>
+    <string name="lockscreen_visualizer_enable">Music Visualizer</string>
     <string name="qs_panel_layout_category">QS panel layout</string>
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="volume_steps_title">Volume steps</string>
     <string name="power_menu_category">Power menu</string>
-    <string name="aware_settings_title">Motion Sense</string>
-    <string name="battery_style_statusbar">Statusbar battery</string>
-    <string name="battery_style_qs">Quick panel battery</string>
-
-    <!-- About AOSiP -->
-    <string name="aosip_about_title">About AOSiP</string>
-    <string name="aosip_about_summary">A little info about the team</string>
-    <string name="aosip_telegram_title">AOSiP Telegram Community</string>
-    <string name="aosip_telegram_summary">Tap here to open our wonderful community!</string>
-    <string name="aosip_gerrit_title">AOSiP Gerrit</string>
-    <string name="aosip_gerrit_summary">Tap here to open gerrit and see the latest commits</string>
-    <string name="aosip_github_title">AOSiP Github</string>
-    <string name="aosip_github_summary">Tap here to open our Github!</string>
-    <string name="aosip_about_info_summary">AOSiP stands for Android Open Source illusion Project. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
-    <string name="aosip_about_team">Team Illusion</string>
-    <string name="aosip_about_josh" translatable="false">Josh Fox (XlxFoXxlX)</string>
-    <string name="aosip_about_josh_summary" translatable="false">Lead Derp</string>
-    <string name="aosip_about_akhil" translatable="false">Akhil Narang</string>
-    <string name="aosip_about_akhil_summary" translatable="false">Server/gerrit guru</string>
-    <string name="aosip_about_anirudh" translatable="false">Anirudh Gupta</string>
-    <string name="aosip_about_anirudh_summary" translatable="false">Team shit poster</string>
-    <string name="aosip_about_harsh" translatable="false">Harsh Shandilya</string>
-    <string name="aosip_about_harsh_summary" translatable="false">Local mean boi</string>
-    <string name="about_maintainer">Maintainer</string>
-    <string name="aosip_about_maintainer">The maintainer for your device is</string>
-    <string name="aosip_about_maintainer_summary" translatable="false">Kronic the Owl</string>
+    <string name="pulse_settings">Pulse</string>
 
     <!-- AOSiP device info settings -->
     <string name="aosip_version">AOSiP version</string>
@@ -134,6 +116,10 @@
     <string name="appearance_category">APPEARANCE</string>
     <string name="behavior_category">BEHAVIOR</string>
     <string name="enable_first">Please enable first</string>
+
+    <!-- SystemUI Restart -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
 
 <!-- FEATURES -->
 

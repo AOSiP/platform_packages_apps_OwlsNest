@@ -25,19 +25,16 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.CardPreference;
-import com.android.settingslib.widget.LayoutPreference;
 
 public class ActionsTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String HEADER_IMAGE_KEY = "top_header_image";
     private static final String POWERBUTTON_CATEGORY = "powerbutton_category";
     private static final String NAVIGATION_CATEGORY = "navigationbar_settings";
-    private static final String GESTURE_OPTIONS_CATEGORY = "gesture_options";
+    private static final String GESTURE_OPTIONS_CATEGORY = "gesture_settings";
     private static final String VOLUME_ROCKER_CATEGORY = "volume_rocker_category";
     private static final String HWKEY_CATEGORY = "hw_keys_category";
 
-    private LayoutPreference mHeaderImage;
     private CardPreference mPowerButton;
     private CardPreference mNavigation;
     private CardPreference mGestures;
@@ -48,9 +45,6 @@ public class ActionsTab extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.tab_actions);
-
-        mHeaderImage = (LayoutPreference) findPreference(HEADER_IMAGE_KEY);
-        mHeaderImage.setEnabled(false);
 
         CardPreference mPowerButton = findPreference("powerbutton_category");
         if (!getResources().getBoolean(R.bool.powerbutton_category_isVisible)) {
@@ -66,7 +60,7 @@ public class ActionsTab extends SettingsPreferenceFragment implements
             mNavigation = (CardPreference) findPreference(NAVIGATION_CATEGORY);
         }
 
-        CardPreference mGestures = findPreference("gesture_options");
+        CardPreference mGestures = findPreference("gesture_settings");
         if (!getResources().getBoolean(R.bool.gestures_category_isVisible)) {
             getPreferenceScreen().removePreference(mGestures);
         } else {

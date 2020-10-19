@@ -17,10 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="top_header_image"
-        android:layout="@layout/tab_header_lockscreen" />
-
     <com.android.settings.widget.CardPreference
         android:key="lockscreen_aosp_category"
         android:fragment="com.android.settings.security.LockscreenDashboardFragment"
@@ -30,11 +26,12 @@
 
     <com.android.settings.widget.CardPreference
         android:key="lockscreen_weather"
-        android:fragment="com.aosip.owlsnest.fragments.LockscreenWeather"
+        android:fragment="com.aosip.owlsnest.fragments.lockscreen.LockscreenWeather"
         android:icon="@drawable/ic_lockscreen_weather_background"
         android:title="@string/lockscreen_weather_title"
         android:summary="@string/lockscreen_weather_summary" />
 
+<!-- Uncomment once Tuner has been added
     <com.android.settings.widget.CardPreference
         android:key="lockscreen_tuner"
         android:icon="@drawable/ic_lockscreen_tuner_background"
@@ -44,10 +41,10 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
     </com.android.settings.widget.CardPreference>
-
+-->
     <com.android.settings.widget.CardPreference
         android:key="lockscreen_general_category"
-        android:fragment="com.aosip.owlsnest.fragments.LockscreenGeneral"
+        android:fragment="com.aosip.owlsnest.fragments.lockscreen.LockscreenGeneral"
         android:icon="@drawable/ic_lockscreen_general_background"
         android:title="@string/lockscreen_general_title"
         android:summary="@string/lockscreen_general_summary" />

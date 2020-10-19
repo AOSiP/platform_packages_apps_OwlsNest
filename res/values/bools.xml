@@ -20,7 +20,7 @@
 		 is already set visible. HIDDEN="false", VISIBLE="true". -->
 
     <!-- Actions tab -->
-    <bool name="powerbutton_category_isVisible">true</bool>
+    <bool name="powerbutton_category_isVisible">false</bool>
     <bool name="navigationbar_category_isVisible">true</bool>
     <bool name="gestures_category_isVisible">true</bool>
     <bool name="volumerocker_category_isVisible">true</bool>
@@ -36,12 +36,12 @@
     <bool name="battery_category_isVisible">true</bool>
     <bool name="clock_category_isVisible">true</bool>
     <bool name="traffic_category_isVisible">true</bool>
-    <bool name="statusbar_icon_blacklist_category_isVisible">true</bool>
+    <bool name="statusbar_icon_blacklist_category_isVisible">false</bool>
 
     <!-- LockScreen tab -->
     <bool name="lockscreen_aosp_category_isVisible">true</bool>
-    <bool name="lockscreen_weather_category_isVisible">false</bool>
-    <bool name="lockscreen_tuner_category_isVisible">true</bool>
+    <bool name="lockscreen_weather_category_isVisible">true</bool>
+    <bool name="lockscreen_tuner_category_isVisible">false</bool>
     <bool name="lockscreen_general_category_isVisible">true</bool>
 
     <!-- System/Misc tab -->
@@ -49,7 +49,7 @@
     <bool name="general_notifications_category_isVisible">true</bool>
     <bool name="miscellaneous_category_isVisible">true</bool>
     <bool name="changelog_category_isVisible">true</bool>
-    <bool name="led_settings_category_isVisible">false</bool>
+    <bool name="led_settings_category_isVisible">true</bool>
 
 <!-- BOOLEANS FOR FEATURES -->
     <!-- Whether to display Motion Sense setting -->

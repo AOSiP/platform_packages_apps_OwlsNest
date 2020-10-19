@@ -25,30 +25,24 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.CardPreference;
-import com.android.settingslib.widget.LayoutPreference;
 
 public class LockScreenTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String HEADER_IMAGE_KEY = "top_header_image";
     private static final String LOCKSCREEN_AOSP_CATEGORY = "lockscreen_aosp_category";
     private static final String LOCKSCREEN_GENERAL_CATEGORY = "lockscreen_general_category";
-    private static final String LOCKSCREEN_TUNER_CATEGORY = "lockscreen_tuner_category";
+//    private static final String LOCKSCREEN_TUNER_CATEGORY = "lockscreen_tuner_category";
     private static final String LOCKSCREEN_WEATHER_CATEGORY = "lockscreen_weather";
 
-    private LayoutPreference mHeaderImage;
     private CardPreference mLockscreenAosp;
     private CardPreference mLockscreenGeneral;
-    private CardPreference mLockscreenTuner;
+//    private CardPreference mLockscreenTuner;
     private CardPreference mLockscreenWeather;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.tab_lock_screen);
-
-        mHeaderImage = (LayoutPreference) findPreference(HEADER_IMAGE_KEY);
-        mHeaderImage.setEnabled(false);
 
         CardPreference mLockscreenAosp = findPreference("lockscreen_aosp_category");
         if (!getResources().getBoolean(R.bool.lockscreen_aosp_category_isVisible)) {
@@ -63,14 +57,14 @@ public class LockScreenTab extends SettingsPreferenceFragment implements
         } else {
             mLockscreenGeneral = (CardPreference) findPreference(LOCKSCREEN_GENERAL_CATEGORY);
         }
-
+/** Uncomment once Tuner is added
         CardPreference mLockscreenTuner = findPreference("lockscreen_tuner_category");
         if (!getResources().getBoolean(R.bool.lockscreen_tuner_category_isVisible)) {
             getPreferenceScreen().removePreference(mLockscreenTuner);
         } else {
             mLockscreenTuner = (CardPreference) findPreference(LOCKSCREEN_TUNER_CATEGORY);
         }
-
+*/
         CardPreference mLockscreenWeather = findPreference("lockscreen_weather");
         if (!getResources().getBoolean(R.bool.lockscreen_weather_category_isVisible)) {
             getPreferenceScreen().removePreference(mLockscreenWeather);

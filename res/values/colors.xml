@@ -14,19 +14,15 @@
      limitations under the License.
 -->
 <resources>
-    <color name="background_tab_pressed">#6633B5E5</color>
-    <color name="text_color_white">@android:color/white</color>
-    <color name="theme_accent">@*android:color/accent_device_default_light</color>
-    <color name="tab_background_color">@android:color/transparent</color>
-    <color name="tab_text_color">@*android:color/accent_device_default_light</color>
-    <color name="white">#FFF</color>
+    <color name="nav_bg_light">#32787878</color>
+    <color name="color_active">#FF3A3A3A</color>
+    <color name="color_inactive">#BC606060</color> 
 
-    <color name="BottomBarBackgroundColor">@*android:color/primary_device_default_dark</color>
-    <color name="bottom_nav_text_icon_active">@android:color/white</color>
-    <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
+    <color name="default_inactive_shape_color">#BC606060</color>
+    <color name="default_inactive_color">#FFC8C8C8</color>
+    <color name="default_shape_inactive_color">#BC606060</color> 
+    <color name="theme_accent">@*android:color/accent_device_default_light</color>
     <color name="preference_background_color">@*android:color/accent_device_default_light</color>
-    <color name="top_banner_icon_color_white_accent">#6d6d6d</color>
-    <color name="owlsnest_navbar_color">@*android:color/notification_material_background_color</color>
 
     <!-- OwlsNest icon background colors -->
     <color name="owlsnest_animations_background">@*android:color/accent_device_default_light</color>
