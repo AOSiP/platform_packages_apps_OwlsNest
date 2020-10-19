@@ -25,18 +25,15 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.CardPreference;
-import com.android.settingslib.widget.LayoutPreference;
 
 public class StatusBarTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String HEADER_IMAGE_KEY = "top_header_image";
     private static final String BATTERY_CATEGORY = "battery_options_category";
     private static final String CLOCK_OPTIONS_CATEGORY = "clock_options_category";
     private static final String TRAFFIC_CATEGORY = "traffic_category";
     private static final String STATUS_BAR_ITEMS_CATEGORY = "status_bar_icons";
 
-    private LayoutPreference mHeaderImage;
     private CardPreference mBattery;
     private CardPreference mClockOptions;
     private CardPreference mTraffic;
@@ -46,9 +43,6 @@ public class StatusBarTab extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.tab_status_bar);
-
-        mHeaderImage = (LayoutPreference) findPreference(HEADER_IMAGE_KEY);
-        mHeaderImage.setEnabled(false);
 
         CardPreference mBattery = findPreference("battery_options_category");
         if (!getResources().getBoolean(R.bool.battery_category_isVisible)) {

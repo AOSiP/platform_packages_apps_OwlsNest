@@ -15,30 +15,28 @@
 -->
 <resources>
 
-    <declare-styleable name="ExpandableBottomBarItem">
-        <attr name="android:id" />
-        <attr name="android:title" />
-        <attr name="exb_icon" format="reference" />
-        <attr name="exb_color" format="reference|color" />
+<declare-styleable name="BubbleToggleView">
+        <attr name="aosip_icon" format="reference" />
+        <attr name="aosip_iconWidth" format="dimension" />
+        <attr name="aosip_iconHeight" format="dimension" />
+        <attr name="aosip_shape" format="reference" />
+        <attr name="aosip_shapeColor" format="color" />
+        <attr name="aosip_showShapeAlways" format="boolean" />
+        <attr name="aosip_title" format="string" />
+        <attr name="aosip_titleSize" format="dimension" />
+        <attr name="aosip_colorActive" format="color" />
+        <attr name="aosip_colorInactive" format="color" />
+        <attr name="aosip_active" format="boolean" />
+        <attr name="aosip_duration" format="integer" />
+        <attr name="aosip_padding" format="dimension" />
+        <attr name="aosip_titlePadding" format="dimension" />
     </declare-styleable>
-
-    <declare-styleable name="ExpandableBottomBar">
-        <attr name="exb_itemInactiveColor" format="color" />
-        <attr name="exb_itemBackgroundCornerRadius" format="dimension" />
-        <attr name="exb_itemBackgroundOpacity" format="float" />
-        <attr name="exb_transitionDuration" format="integer" />
-        <attr name="exb_elevation" format="dimension" />
-        <attr name="exb_backgroundColor" format="color" />
-        <attr name="exb_backgroundCornerRadius" format="dimension" />
-
-        <attr name="exb_item_vertical_margin" format="dimension" />
-        <attr name="exb_item_horizontal_margin" format="dimension" />
-        <attr name="exb_item_vertical_padding" format="dimension" />
-        <attr name="exb_item_horizontal_padding" format="dimension" />
-
-        <attr name="exb_items" format="reference" />
+    <declare-styleable name="BubbleNavigationConstraintView">
+        <attr name="aosip_mode">
+            <enum name="spread" value="0" />
+            <enum name="inside" value="1" />
+            <enum name="packed" value="2" />
+        </attr>
     </declare-styleable>
-
-    <attr name="exb_expandableButtonBarDefaultStyle" format="reference" />
 
 </resources>

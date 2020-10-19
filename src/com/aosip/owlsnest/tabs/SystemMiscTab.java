@@ -25,19 +25,16 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.CardPreference;
-import com.android.settingslib.widget.LayoutPreference;
 
 public class SystemMiscTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String HEADER_IMAGE_KEY = "top_header_image";
     private static final String ANIMATIONS_CATEGORY = "animations_category";
     private static final String GENERAL_NOTIFICATIONS = "general_notifications";
     private static final String MISCELLANEOUS_CATEGORY = "miscellaneous_category";
     private static final String CHANGELOG_CATEGORY = "changelog";
     private static final String LED_SETTINGS_CATEGORY = "led_settings";
 
-    private LayoutPreference mHeaderImage;
     private CardPreference mAnimations;
     private CardPreference mGeneral;
     private CardPreference mMiscellaneous;
@@ -48,9 +45,6 @@ public class SystemMiscTab extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.tab_system_misc);
-
-        mHeaderImage = (LayoutPreference) findPreference(HEADER_IMAGE_KEY);
-        mHeaderImage.setEnabled(false);
 
         CardPreference mAnimations = findPreference("animations_category");
         if (!getResources().getBoolean(R.bool.animations_category_isVisible)) {
