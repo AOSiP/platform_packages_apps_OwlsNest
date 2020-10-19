@@ -25,7 +25,8 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
+import com.android.settingslib.search.Indexable;
+import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
@@ -35,22 +36,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class HWKeys extends ActionFragment implements
+public class HWKeys /*extends ActionFragment*/ implements
         Preference.OnPreferenceChangeListener, Indexable {
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.hw_keys);
-    }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.OWLSNEST;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

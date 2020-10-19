@@ -27,18 +27,15 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widget.CardPreference;
-import com.android.settingslib.widget.LayoutPreference;
 
 public class InterfaceTab extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String HEADER_IMAGE_KEY = "top_header_image";
     private static final String QUICK_SETTINGS_CATEGORY = "quick_settings_category";
     private static final String HEADSUP_CATEGORY = "headsup_category";
     private static final String RECENTS_CATEGORY = "recents_category";
     private static final String THEMER_CATEGORY = "themer_category";
 
-    private LayoutPreference mHeaderImage;
     private CardPreference mQuickSettings;
     private CardPreference mHeadsup;
     private CardPreference mRecents;
@@ -48,9 +45,6 @@ public class InterfaceTab extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.tab_interface);
-
-        mHeaderImage = (LayoutPreference) findPreference(HEADER_IMAGE_KEY);
-        mHeaderImage.setEnabled(false);
 
         CardPreference mQuickSettings = findPreference("quick_settings_category");
         if (!getResources().getBoolean(R.bool.quick_settings_category_isVisible)) {

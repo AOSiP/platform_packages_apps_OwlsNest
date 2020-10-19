@@ -21,16 +21,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.TypedValue;
-import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import androidx.viewpager.widget.ViewPager;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -42,86 +44,63 @@ import com.aosip.owlsnest.tabs.StatusBarTab;
 import com.aosip.owlsnest.tabs.LockScreenTab;
 import com.aosip.owlsnest.tabs.SystemMiscTab;
 
-import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
-import github.com.st235.lib_expandablebottombar.ExpandableBottomBarMenuItem;
+import com.aosip.owlsnest.navigation.BubbleNavigationConstraintView;
+import com.aosip.owlsnest.navigation.BubbleNavigationChangeListener;
 
 public class OwlsNestSettings extends SettingsPreferenceFragment {
 
     private static final String TAG = "OwlsNestSettings";
 
     Context mContext;
-    View view;
+//    View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState);
-
         mContext = getActivity();
-
-        view = inflater.inflate(R.layout.owlsnest, container, false);
+        View view = inflater.inflate(R.layout.owlsnest, container, false);
 
         ActionBar actionBar = getActivity().getActionBar();
         if (actionBar != null) {
-            actionBar.setTitle(R.string.coralreef_title);
+            actionBar.setTitle(R.string.owlsnest_title);
         }
 
-        ExpandableBottomBar bottomBar = view.findViewById(R.id.expandable_bottom_bar);
+        BubbleNavigationConstraintView bubbleNavigationConstraintView =  (BubbleNavigationConstraintView) view.findViewById(R.id.bottom_navigation_view_constraint);
+        ViewPager viewPager = view.findViewById(R.id.viewpager);
+        PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
+        viewPager.setAdapter(mPagerAdapter);
 
-        Fragment tab_actions = new ActionsTab();
-        Fragment tab_interface = new InterfaceTab();
-        Fragment tab_status_bar = new StatusBarTab();
-        Fragment tab_lock_screen = new LockScreenTab();
-        Fragment tab_system_misc = new SystemMiscTab();
-
-        Fragment fragment = (Fragment) getFragmentManager().findFragmentById(R.id.fragmentContainer);
-        if (fragment == null) {
-            FragmentTransaction transaction = getFragmentManager().beginTransaction();
-            transaction.replace(R.id.fragmentContainer, tab_actions);
-            transaction.addToBackStack(null);
-            transaction.commit();
-        }
-
-        bottomBar.addItems(new ExpandableBottomBarMenuItem.Builder(mContext)
-                .addItem(R.id.tab_actions,
-                        R.drawable.bottomnav_actions,
-                        R.string.bottom_nav_actions_title, getThemeAccentColor(mContext))
-                .addItem(R.id.tab_interface,
-                        R.drawable.bottomnav_interface,
-                        R.string.bottom_nav_interface_title, getThemeAccentColor(mContext))
-                .addItem(R.id.tab_status_bar,
-                        R.drawable.bottomnav_lock_screen,
-                        R.string.bottom_nav_status_bar_title, getThemeAccentColor(mContext))
-                .addItem(R.id.tab_lock_screen,
-                        R.drawable.bottomnav_status_bar,
-                        R.string.bottom_nav_lock_screen_title, getThemeAccentColor(mContext))
-                .addItem(R.id.tab_system_misc,
-                        R.drawable.bottomnav_system_misc,
-                        R.string.bottom_nav_system_misc_title, getThemeAccentColor(mContext))
-                .build()
-        );
-
-        bottomBar.setOnItemSelectedListener((view, menuItem) -> {
-            int id = menuItem.getItemId();
-            switch (id) {
-                case R.id.tab_actions:
-                    launchFragment(tab_actions);
-                    break;
-                case R.id.tab_interface:
-                    launchFragment(tab_interface);
-                    break;
-                case R.id.tab_status_bar:
-                    launchFragment(tab_status_bar);
-                    break;
-                case R.id.tab_lock_screen:
-                    launchFragment(tab_lock_screen);
-                    break;
-                case R.id.tab_system_misc:
-                    launchFragment(tab_system_misc);
-                    break;
+        bubbleNavigationConstraintView.setNavigationChangeListener(new BubbleNavigationChangeListener() {
+            @Override
+            public void onNavigationChanged(View view, int position) {
+                if (view.getId() == R.id.tab_actions) {
+                    viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.tab_interface) {
+                    viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.tab_statusbar) {
+                    viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.tab_lockscreen) {
+                    viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.tab_system_misc) {
+                    viewPager.setCurrentItem(position, true);
+                }
             }
-            return null;
+        });
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i1) {
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+                bubbleNavigationConstraintView.setCurrentActiveItem(i);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+            }
         });
 
         setHasOptionsMenu(true);
@@ -129,15 +108,46 @@ public class OwlsNestSettings extends SettingsPreferenceFragment {
         return view;
     }
 
-    @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+    class PagerAdapter extends FragmentPagerAdapter {
+
+        String titles[] = getTitles();
+        private Fragment frags[] = new Fragment[titles.length];
+
+        PagerAdapter(FragmentManager fm) {
+            super(fm);
+            frags[0] = new ActionsTab();
+            frags[1] = new InterfaceTab();
+            frags[2] = new StatusBarTab();
+            frags[3] = new LockScreenTab();
+            frags[4] = new SystemMiscTab();
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return frags[position];
+        }
+
+        @Override
+        public int getCount() {
+            return frags.length;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles[position];
+        }
     }
 
-    private void launchFragment(Fragment fragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragmentContainer, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+    private String[] getTitles() {
+        String titleString[];
+        titleString = new String[]{
+            getString(R.string.navigation_actions_title),
+            getString(R.string.navigation_interface_title),
+            getString(R.string.navigation_statusbar_title),
+            getString(R.string.navigation_lockscreen_title),
+            getString(R.string.navigation_system_title)};
+
+        return titleString;
     }
 
     @Override
@@ -147,29 +157,18 @@ public class OwlsNestSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, 0, 0, R.string.dialog_team_title);
+        menu.add(0, 0, 0, R.string.aosip_about_title);
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == 0) {
+            FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
 
-        view = getView();
-        view.setFocusableInTouchMode(true);
-        view.requestFocus();
-        view.setOnKeyListener((v, keyCode, event) -> {
-            if (event.getAction() == KeyEvent.ACTION_UP &&
-                    keyCode == KeyEvent.KEYCODE_BACK) {
-                getActivity().finish();
-                return true;
-            }
-            return false;
-        });
-    }
-
-    public static int getThemeAccentColor (final Context context) {
-        final TypedValue value = new TypedValue ();
-        context.getTheme ().resolveAttribute (android.R.attr.colorAccent, value, true);
-        return value.data;
+            AboutAOSiP newFragment = AboutAOSiP .newInstance();
+            newFragment.show(ft, "AboutAOSiP");
+            return true;
+        }
+        return false;
     }
 }

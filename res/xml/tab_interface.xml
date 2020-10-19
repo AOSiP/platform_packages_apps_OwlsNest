@@ -17,13 +17,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="top_header_image"
-        android:layout="@layout/tab_header_interface" />
-
     <com.android.settings.widget.CardPreference
         android:key="quick_settings_category"
-        android:fragment="com.aosip.owlsnest.fragments.QuickSettings"
+        android:fragment="com.aosip.owlsnest.fragments.ui.QuickSettings"
         android:icon="@drawable/ic_quick_settings_background"
         android:title="@string/quick_settings_title"
         android:summary="@string/quick_settings_summary" />
@@ -41,14 +37,14 @@
 
     <com.android.settings.widget.CardPreference
         android:key="headsup_category"
-        android:fragment="com.aosip.owlsnest.fragments.HeadsUp"
+        android:fragment="com.aosip.owlsnest.fragments.ui.HeadsUp"
         android:icon="@drawable/ic_headsup_background"
         android:title="@string/headsup_title"
         android:summary="@string/headsup_summary" />
 
     <com.android.settings.widget.CardPreference
         android:key="recents_category"
-        android:fragment="com.aosip.owlsnest.fragments.Recents"
+        android:fragment="com.aosip.owlsnest.fragments.ui.Recents"
         android:icon="@drawable/ic_recents_background"
         android:title="@string/recents_title"
         android:summary="@string/recents_summary" />
