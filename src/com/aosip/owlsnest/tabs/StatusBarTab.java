@@ -32,12 +32,12 @@ public class StatusBarTab extends SettingsPreferenceFragment implements
     private static final String BATTERY_CATEGORY = "battery_options_category";
     private static final String CLOCK_OPTIONS_CATEGORY = "clock_options_category";
     private static final String TRAFFIC_CATEGORY = "traffic_category";
-//    private static final String STATUS_BAR_ITEMS_CATEGORY = "status_bar_icons";
+    private static final String STATUS_BAR_ITEMS_CATEGORY = "status_bar";
 
     private CardPreference mBattery;
     private CardPreference mClockOptions;
     private CardPreference mTraffic;
-//    private CardPreference mStatusBarItems;
+    private CardPreference mStatusBarItems;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,14 +64,13 @@ public class StatusBarTab extends SettingsPreferenceFragment implements
         } else {
             mTraffic = (CardPreference) findPreference(TRAFFIC_CATEGORY);
         }
-/** Uncomment once Tuner is added
-        CardPreference mStatusBarItems = findPreference("status_bar_icons");
+
+        CardPreference mStatusBarItems = findPreference("status_bar");
         if (!getResources().getBoolean(R.bool.statusbar_icon_blacklist_category_isVisible)) {
             getPreferenceScreen().removePreference(mStatusBarItems);
         } else {
             mStatusBarItems = (CardPreference) findPreference(STATUS_BAR_ITEMS_CATEGORY);
         }
-*/ 
     }
 
     @Override

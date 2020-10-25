@@ -18,4 +18,18 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/navigationbar_title" >
 
+    <Preference
+        android:key="system_navigation_settings_preferences"
+        android:title="@string/navbar_gestures_title"
+        android:summary="@string/navbar_gestures_summary"
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
+        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
+
+    <Preference
+        android:title="@string/navigation_tuner_title"
+        android:summary="@string/navigation_tuner_summary"
+        android:key="nav_bar_tuner">
+            <intent android:action="com.android.settings.action.NAV_BAR_TUNER" />
+    </Preference>
+
 </PreferenceScreen>
