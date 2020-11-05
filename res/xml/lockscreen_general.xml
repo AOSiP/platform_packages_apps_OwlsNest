@@ -38,6 +38,11 @@
         android:defaultValue="0"
         android:dependency="lockscreen_battery_info" />
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_translucent_notifications_bg_enabled"
+        android:title="@string/translucent_lockscreen_notifications_bg_title"
+        android:defaultValue="false" />
+
         <PreferenceCategory
             android:key="lockscreen_media_art_options"
             android:title="@string/lockscreen_media_art_options_title"
