@@ -212,4 +212,8 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
 
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Notification Headers</string>
+    <string name="notification_headers_summary">Show headers in the notification shade\nRequires a SystemUI restart</string>
+
 </resources>
