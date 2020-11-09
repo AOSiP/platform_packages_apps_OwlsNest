@@ -263,4 +263,8 @@
     <string name="global_actions_max_columns_title">Max visible actions</string>
     <string name="global_actions_max_columns_summary">Limit the amount of actions to show at once</string>
 
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Notification Headers</string>
+    <string name="notification_headers_summary">Show headers in the notification shade\nRequires a SystemUI restart</string>
+
 </resources>
