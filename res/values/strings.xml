@@ -212,4 +212,23 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
 
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_cat">ADVANCED</string>
+    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader upon restart</string>
+    <string name="global_actions_add_remove_cat">ADD/REMOVE</string>
+    <string name="global_actions_power">Power</string>
+    <string name="global_actions_restart">Restart</string>
+    <string name="global_actions_airplane">Airplane</string>
+    <string name="global_actions_settings">Settings</string>
+    <string name="global_actions_lockdown">Lock down</string>
+    <string name="global_actions_soundpanel">Sound panel</string>
+    <string name="global_actions_users">Users</string>
+    <string name="global_actions_screenshot">Screenshot</string>
+    <string name="global_actions_screenrecord">Screenrecord</string>
+    <string name="global_actions_flashlight">Flashlight</string>
+    <string name="global_actions_emergency">Emergency</string>
+    <string name="global_actions_max_columns_title">Max visible actions</string>
+    <string name="global_actions_max_columns_summary">Limit the amount of actions to show at once</string>
+
 </resources>
