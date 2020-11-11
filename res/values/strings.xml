@@ -216,6 +216,7 @@
     <string name="global_actions_advanced_cat">ADVANCED</string>
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader upon restart</string>
+    <string name="aosp_powermenu_title">More options</string>
     <string name="global_actions_add_remove_cat">ADD/REMOVE</string>
     <string name="global_actions_power">Power</string>
     <string name="global_actions_restart">Restart</string>
