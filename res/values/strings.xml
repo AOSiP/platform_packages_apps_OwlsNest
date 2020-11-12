@@ -106,6 +106,8 @@
     <string name="volume_steps_title">Volume steps</string>
     <string name="power_menu_category">Power menu</string>
     <string name="pulse_settings">Pulse</string>
+    <string name="gestures_buttons_category">BUTTONS</string>
+    <string name="gestures_motions_category">MOTIONS</string>
 
     <!-- About AOSiP -->
     <string name="aosip_about_title">About AOSiP</string>
