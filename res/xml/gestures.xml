@@ -39,18 +39,17 @@
         settings:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />
 
     <Preference
+        android:key="double_tap_power_flashlight_summary"
+        android:title="@string/double_tap_power_flashlight_screen_title"
+        android:fragment="com.android.settings.gestures.DoubleTapPowerFlashlightSettings"
+        settings:controller="com.android.settings.gestures.DoubleTapPowerFlashlightPreferenceController" />
+
+    <Preference
         android:key="gesture_double_twist_input_summary"
         android:title="@string/double_twist_for_camera_mode_title"
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
-
-    <Preference
-        android:key="gesture_system_navigation_input_summary"
-        android:title="@string/system_navigation_title"
-        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
-        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
-        settings:keywords="@string/keywords_system_navigation" />
 
     <Preference
         android:key="gesture_tap_screen_input_summary"
@@ -84,5 +83,17 @@
         android:title="@string/power_menu_setting_name"
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
+
+    <Preference
+        android:key="gesture_volume_skiptrack_summary"
+        android:title="@string/volume_skiptrack_screen_title"
+        android:fragment="com.android.settings.gestures.VolumeSkipTrackSettings"
+        settings:controller="com.android.settings.gestures.VolumeSkipTrackPreferenceController" />
+
+    <Preference
+        android:key="gesture_doubletap_lockscreen_summary"
+        android:title="@string/doubletap_lockscreen_screen_title"
+        android:fragment="com.android.settings.gestures.DoubleTapLockscreenSettings"
+        settings:controller="com.android.settings.gestures.DoubleTapLockscreenPreferenceController" />
 
 </PreferenceScreen>
