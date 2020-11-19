@@ -18,4 +18,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_general_title" >
 
+
+    <com.aosip.support.preference.SecureSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:title="@string/lockscreen_media_art_title"
+        android:summary="@string/lockscreen_media_art_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
