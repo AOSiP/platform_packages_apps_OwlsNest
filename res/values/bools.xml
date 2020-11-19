@@ -27,8 +27,8 @@
     <bool name="hwkeys_category_isVisible">false</bool>
 
     <!-- Interface tab -->
-    <bool name="headsup_category_isVisible">true</bool>
-    <bool name="recents_category_isVisible">true</bool>
+    <bool name="headsup_category_isVisible">false</bool>
+    <bool name="recents_category_isVisible">false</bool>
     <bool name="quick_settings_category_isVisible">true</bool>
     <bool name="themer_category_isVisible">true</bool>
 
@@ -40,16 +40,16 @@
 
     <!-- LockScreen tab -->
     <bool name="lockscreen_aosp_category_isVisible">true</bool>
-    <bool name="lockscreen_weather_category_isVisible">true</bool>
+    <bool name="lockscreen_weather_category_isVisible">false</bool>
     <bool name="lockscreen_tuner_category_isVisible">false</bool>
     <bool name="lockscreen_general_category_isVisible">true</bool>
 
     <!-- System/Misc tab -->
-    <bool name="animations_category_isVisible">true</bool>
+    <bool name="animations_category_isVisible">false</bool>
     <bool name="general_notifications_category_isVisible">true</bool>
     <bool name="miscellaneous_category_isVisible">true</bool>
-    <bool name="changelog_category_isVisible">true</bool>
-    <bool name="led_settings_category_isVisible">true</bool>
+    <bool name="changelog_category_isVisible">false</bool>
+    <bool name="led_settings_category_isVisible">false</bool>
 
 <!-- BOOLEANS FOR FEATURES -->
     <!-- Whether to display Motion Sense setting -->
