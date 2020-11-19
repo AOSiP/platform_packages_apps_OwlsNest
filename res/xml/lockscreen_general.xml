@@ -18,11 +18,25 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_general_title" >
 
+        <PreferenceCategory
+            android:key="lockscreen_media_art_options"
+            android:title="@string/lockscreen_media_art_options_title"
+            android:order="999">
+            <com.aosip.support.preference.SecureSettingSwitchPreference
+                android:key="lockscreen_media_metadata"
+                android:title="@string/lockscreen_media_art_title"
+                android:summary="@string/lockscreen_media_art_summary"
+                android:defaultValue="false" />
 
-    <com.aosip.support.preference.SecureSettingSwitchPreference
-        android:key="lockscreen_media_metadata"
-        android:title="@string/lockscreen_media_art_title"
-        android:summary="@string/lockscreen_media_art_summary"
-        android:defaultValue="false" />
+            <com.aosip.support.preference.CustomSystemSeekBarPreference
+                android:key="lockscreen_media_blur"
+                android:title="@string/lockscreen_media_blur_title"
+                android:dependency="lockscreen_media_metadata"
+                settings:allowEditText="true"
+                android:max="25"
+                android:min="0"
+                android:defaultValue="25"
+                settings:units="dp"/>
+        </PreferenceCategory>
 
 </PreferenceScreen>
