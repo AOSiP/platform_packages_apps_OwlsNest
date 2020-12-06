@@ -20,8 +20,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import androidx.preference.Preference;
-import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.*;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -39,10 +38,18 @@ import java.util.List;
 public class NavigationBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
+
+    private SwitchPreference mPixelNavAnimation;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.navigation_bar);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
