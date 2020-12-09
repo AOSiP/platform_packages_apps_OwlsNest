@@ -34,4 +34,10 @@
         android:defaultValue="default"
         android:dependency="navbar_visibility" />
 
+    <com.aosip.support.preference.SecureSettingSwitchPreference
+        android:key="navbar_inverse_layout"
+        android:title="@string/navbar_invert_layout_title"
+        android:defaultValue="false"
+        android:dependency="navbar_visibility" />
+
 </PreferenceScreen>
