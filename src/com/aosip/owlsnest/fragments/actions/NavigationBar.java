@@ -30,6 +30,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.aosip.AOSiPUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,8 +40,10 @@ public class NavigationBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
+    private static final String LAYOUT_SETTINGS = "navbar_layout_views";
 
     private SwitchPreference mPixelNavAnimation;
+    private Preference mLayoutSettings;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,11 @@ public class NavigationBar extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
+        mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
+
+        if (!AOSiPUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            prefScreen.removePreference(mLayoutSettings);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
