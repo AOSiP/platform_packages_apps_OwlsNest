@@ -18,4 +18,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/powerbutton_title" >
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/powermenu_advanced_reboot_title"
+        android:summary="@string/powermenu_advanced_reboot_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
