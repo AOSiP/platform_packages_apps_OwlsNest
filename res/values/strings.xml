@@ -261,4 +261,8 @@
     <string name="navbar_invert_layout_title">Invert layout</string>
     <string name="navbar_visibility">Enable navigation bar</string>
 
+    <!-- Global Actions -->
+    <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
+    <string name="powermenu_advanced_reboot_summary">Enables access to recovery and bootloader</string>
+
 </resources>
