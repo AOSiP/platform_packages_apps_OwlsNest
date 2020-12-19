@@ -265,4 +265,9 @@
     <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
     <string name="powermenu_advanced_reboot_summary">Enables access to recovery and bootloader</string>
 
+    <!-- QS panel options -->
+    <string name="qs_edit_title">Edit Icon</string>
+    <string name="qs_edit_summary">Enable the tile edit icon in the footer</string>
+
+
 </resources>
