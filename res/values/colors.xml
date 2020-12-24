@@ -44,6 +44,7 @@
     <color name="owlsnest_navigationbar_background">@*android:color/accent_device_default_light</color>
     <color name="owlsnest_notifications_general_background">@*android:color/accent_device_default_light</color>
     <color name="owlsnest_powerbutton_background">@*android:color/accent_device_default_light</color>
+    <color name="owlsnest_pulse_background">@*android:color/accent_device_default_light</color>
     <color name="owlsnest_quick_settings_background">@*android:color/accent_device_default_light</color>
     <color name="owlsnest_recents_background">@*android:color/accent_device_default_light</color>
     <color name="owlsnest_statusbar_items_background">@*android:color/accent_device_default_light</color>
