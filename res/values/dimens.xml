@@ -26,4 +26,6 @@
     <!-- Where the category icon will start (from the left) -->
     <dimen name="owlsnest_cat_icon_image_inset">6dp</dimen>
 
+    <dimen name="alert_dialog_padding_material">20dp</dimen>
+
 </resources>
