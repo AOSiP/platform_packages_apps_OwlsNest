@@ -31,6 +31,7 @@
     <bool name="recents_category_isVisible">true</bool>
     <bool name="quick_settings_category_isVisible">true</bool>
     <bool name="themer_category_isVisible">true</bool>
+    <bool name="pulse_category_isVisible">true</bool>
 
     <!-- StatusBar tab -->
     <bool name="battery_category_isVisible">true</bool>
