@@ -233,12 +233,16 @@
     <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
 
     <!-- QS rows and columns -->
-    <string name="qs_columns_rows_category_title">QS columns and rows</string>
-    <string name="qs_rows_columns_title">QS rows and columns</string>
-    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+    <string name="qs_columns_rows_config_title">QS columns &amp; rows</string>
+    <string name="qs_columns_rows_config_summary">Configure the way quick settings tiles are arranged</string>
+    <string name="dialog_title">QS Columns &amp; Rows</string>
+    <string name="portrait_title">PORTRAIT</string>
+    <string name="landscape_title">LANDSCAPE</string>
+    <string name="seekbar_columns">Columns</string>
+    <string name="seekbar_rows">Rows</string>
+    <string name="submit_button">Submit</string>
+
+    <!-- Tile titles -->
     <string name="qs_tile_title_visibility_title">Show tiles title</string>
 
     <!-- Lock screen cover art -->
@@ -268,7 +272,6 @@
     <!-- QS panel options -->
     <string name="qs_edit_title">Edit Icon</string>
     <string name="qs_edit_summary">Enable the tile edit icon in the footer</string>
-
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
