@@ -39,4 +39,11 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="DialogSeekBar">
+        <attr name="minValue" format="float" />
+        <attr name="maxValue" format="float" />
+        <attr name="defaultQsValue" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
+
 </resources>

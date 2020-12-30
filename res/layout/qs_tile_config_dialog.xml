@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2021 AOSiP
+     Author: calebcabob <calphonic@gmail.com>
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:layout_width="380dp"
+    android:layout_height="520dp">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <!-- QS Columns & Rows -->
+        <TextView
+            android:id="@+id/portrait_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/dialog_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="18sp" />
+
+        <!-- Portrait -->
+        <TextView
+            android:id="@+id/portrait_columns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/portrait_title"
+            android:layout_marginBottom="20dp"
+            android:text="@string/portrait_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+
+        <!-- Columns -->
+        <TextView
+            android:id="@+id/seekbar_columns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/portrait_columns"
+            android:text="@string/seekbar_columns" />
+
+        <com.aosip.owlsnest.helpers.DialogSeekBar
+            android:id="@+id/portrait_columns_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekbar_columns"
+            android:min="1"
+            android:max="6"
+            settings:defaultQsValue="3" />
+
+        <!-- Display portrait columns value -->
+        <TextView
+            android:id="@+id/pcText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/portrait_columns_seekbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="29dp"
+            android:textSize="12sp" />
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/portrait_columns_seekbar" />
+
+        <!-- Rows -->
+        <TextView
+            android:id="@+id/portrait_rows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space1"
+            android:text="@string/seekbar_rows" />
+
+        <com.aosip.owlsnest.helpers.DialogSeekBar
+            android:id="@+id/portrait_rows_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/portrait_rows"
+            android:min="1"
+            android:max="6"
+            settings:defaultQsValue="3" />
+
+        <!-- Display portrait rows value -->
+        <TextView
+            android:id="@+id/prText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/portrait_rows_seekbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="29dp"
+            android:textSize="12sp" />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/portrait_rows_seekbar"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Landscape -->
+        <TextView
+            android:id="@+id/landscape_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space2"
+            android:layout_marginBottom="20dp"
+            android:text="@string/landscape_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+
+        <!-- Columns -->
+        <TextView
+            android:id="@+id/landscape_columns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landscape_title"
+            android:text="@string/seekbar_columns" />
+
+        <com.aosip.owlsnest.helpers.DialogSeekBar
+            android:id="@+id/landscape_columns_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landscape_columns"
+            android:min="1"
+            android:max="6"
+            settings:defaultQsValue="4" />
+
+        <!-- Display landscape columns value -->
+        <TextView
+            android:id="@+id/lcText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landscape_columns_seekbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="29dp"
+            android:textSize="12sp" />
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/landscape_columns_seekbar" />
+
+        <!-- Rows -->
+        <TextView
+            android:id="@+id/landscape_rows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space3"
+            android:text="@string/seekbar_rows" />
+
+        <com.aosip.owlsnest.helpers.DialogSeekBar
+            android:id="@+id/landscape_rows_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landscape_rows"
+            android:min="1"
+            android:max="6"
+            settings:defaultQsValue="2" />
+
+        <!-- Display landscape rows value -->
+        <TextView
+            android:id="@+id/lrText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landscape_rows_seekbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="29dp"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landscape_rows_seekbar"
+            android:layout_alignEnd="@+id/landscape_rows_seekbar"
+            android:layout_marginTop="30dp"
+            android:text="@string/submit_button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
