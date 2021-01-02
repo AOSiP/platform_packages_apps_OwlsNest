@@ -16,6 +16,23 @@
       "message": "Upon clean flashing I noticed I had fucked up getInitialSeekBarPositions. I do have an update for it coming though",
       "revId": "b35d91a6c628c40f39483b07c896c76e74c90a05",
       "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb0a308d_49afa5ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000232
+      },
+      "writtenOn": "2021-01-02T18:33:00Z",
+      "side": 1,
+      "message": "Made private until the initial values thing is sorted",
+      "revId": "b35d91a6c628c40f39483b07c896c76e74c90a05",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c"
     }
   ]
 }
