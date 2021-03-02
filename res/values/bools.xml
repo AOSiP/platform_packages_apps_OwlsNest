@@ -30,7 +30,7 @@
     <bool name="headsup_category_isVisible">true</bool>
     <bool name="recents_category_isVisible">true</bool>
     <bool name="quick_settings_category_isVisible">true</bool>
-    <bool name="themer_category_isVisible">true</bool>
+    <bool name="themer_category_isVisible">false</bool>
     <bool name="pulse_category_isVisible">true</bool>
 
     <!-- StatusBar tab -->
