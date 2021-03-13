@@ -65,6 +65,12 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
 
+    <com.aosip.support.preference.SystemSettingSwitchPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_toggle_brightness"
+        android:summary="@string/status_bar_toggle_brightness_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:key="gesture_pick_up_input_summary"
         android:title="@string/ambient_display_pickup_title"
