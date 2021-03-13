@@ -410,4 +410,9 @@
     <string name="heads_up_snooze_15min">15 minutes</string>
     <string name="heads_up_snooze_20min">20 minutes</string>
 
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Essential only mode</string>
+    <string name="less_boring_heads_up_summary">Only show heads-up for incoming calls, texts and alarms</string>
+
+
 </resources>
