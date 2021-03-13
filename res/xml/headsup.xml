@@ -18,4 +18,24 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/headsup_title" >
 
+    <PreferenceCategory
+            android:title="@string/heads_up_stoplist_title"
+            android:key="stoplist_applications">
+        <Preference
+            android:key="add_stoplist_packages"
+            android:icon="@drawable/ic_menu_add_activated_tint"
+            android:title="@string/add_heads_up_package"
+            android:summary="@string/add_heads_up_stoplist_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/heads_up_blacklist_title"
+            android:key="blacklist_applications">
+        <Preference
+            android:key="add_blacklist_packages"
+            android:icon="@drawable/ic_menu_add_activated_tint"
+            android:title="@string/add_heads_up_package"
+            android:summary="@string/add_heads_up_blacklist_summary" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
