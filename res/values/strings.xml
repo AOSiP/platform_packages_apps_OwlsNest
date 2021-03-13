@@ -341,4 +341,8 @@
     <string name="lockscreen_charge_temp_unit_farhenheit">Farhenheit</string>
     <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
 
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
 </resources>
