@@ -366,6 +366,7 @@ public class GamingMode extends SettingsPreferenceFragment implements
         pref.setKey(pkg.name);
         pref.setTitle(info.applicationInfo.loadLabel(mPackageManager));
         pref.setIcon(info.applicationInfo.loadIcon(mPackageManager));
+        pref.setLayoutResource(R.layout.custom_app_filter_list_view );
         pref.setPersistent(false);
         pref.setOnPreferenceClickListener(this);
         return pref;
