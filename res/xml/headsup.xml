@@ -18,11 +18,19 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/headsup_title" >
 
+    <com.aosip.support.preference.GlobalSettingSwitchPreference
+        android:key="heads_up_notifications_enabled"
+        android:title="@string/heads_up_notifications"
+        android:summaryOn="@string/summary_heads_up_enabled"
+        android:summaryOff="@string/summary_heads_up_disabled"
+        android:defaultValue="true" />
+
     <ListPreference
         android:key="heads_up_time_out"
         android:title="@string/heads_up_time_out_title"
         android:entries="@array/heads_up_time_out_entries"
         android:entryValues="@array/heads_up_time_out_values"
+        android:dependency="heads_up_notifications_enabled"
         android:persistent="false" />
 
     <ListPreference
@@ -30,17 +38,20 @@
         android:title="@string/heads_up_snooze_title"
         android:entries="@array/heads_up_snooze_entries"
         android:entryValues="@array/heads_up_snooze_values"
+        android:dependency="heads_up_notifications_enabled"
         android:persistent="false" />
 
     <com.aosip.support.preference.SystemSettingSwitchPreference
         android:key="less_boring_heads_up"
         android:title="@string/less_boring_heads_up_title"
         android:summary="@string/less_boring_heads_up_summary"
+        android:dependency="heads_up_notifications_enabled"
         android:defaultValue="false" />
 
     <PreferenceCategory
             android:title="@string/heads_up_stoplist_title"
-            android:key="stoplist_applications">
+            android:key="stoplist_applications"
+            android:dependency="heads_up_notifications_enabled">
         <Preference
             android:key="add_stoplist_packages"
             android:icon="@drawable/ic_menu_add_activated_tint"
@@ -50,7 +61,8 @@
 
     <PreferenceCategory
             android:title="@string/heads_up_blacklist_title"
-            android:key="blacklist_applications">
+            android:key="blacklist_applications"
+            android:dependency="heads_up_notifications_enabled">
         <Preference
             android:key="add_blacklist_packages"
             android:icon="@drawable/ic_menu_add_activated_tint"
