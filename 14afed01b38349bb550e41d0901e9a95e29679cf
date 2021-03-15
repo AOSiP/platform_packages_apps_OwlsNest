@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55885146_b3fc42af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000232
+      },
+      "writtenOn": "2021-03-15T14:41:44Z",
+      "side": 1,
+      "message": "the master toggle doesn\u0027t seem to stay in sync with the parent toggle in general notifications. Still need to look at why",
+      "revId": "14afed01b38349bb550e41d0901e9a95e29679cf",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c"
+    }
+  ]
+}
