@@ -19,7 +19,6 @@ package com.aosip.owlsnest.fragments.system_misc;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
-import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
@@ -31,7 +30,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.aosip.support.preference.SystemSettingMasterSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,35 +38,13 @@ import java.util.List;
 public class GeneralNotifications extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String GAMING_MODE_ENABLED = "gaming_mode_enabled";
-
-    private SystemSettingMasterSwitchPreference mGamingMode;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.general_notifications);
-
-        mGamingMode = (SystemSettingMasterSwitchPreference) findPreference(GAMING_MODE_ENABLED);
-        boolean gameEnabled = Settings.System.getInt(
-        getActivity().getApplicationContext().getContentResolver(),
-                Settings.System.GAMING_MODE_ENABLED, 0) == 1;
-        updateGameModeEnabledUpdatePrefs(gameEnabled);
-        mGamingMode.setOnPreferenceChangeListener(this);
-    }
-
-    private void updateGameModeEnabledUpdatePrefs(boolean gameEnabled) {
-        mGamingMode.setChecked(gameEnabled);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mGamingMode) {
-            boolean gameEnabled = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.GAMING_MODE_ENABLED, gameEnabled ? 1 : 0);
-            updateGameModeEnabledUpdatePrefs(gameEnabled);
-            return true;
-        }
         return false;
     }
 
