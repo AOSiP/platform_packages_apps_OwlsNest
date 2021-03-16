@@ -414,5 +414,11 @@
     <string name="less_boring_heads_up_title">Essential only mode</string>
     <string name="less_boring_heads_up_summary">Only show heads-up for incoming calls, texts and alarms</string>
 
+    <!-- Global Actions -->
+    <string name="global_actions_users_choice_title">Optional user action</string>
+    <string name="global_actions_flashlight_title">Flashlight</string>
+    <string name="global_actions_screenshot_title">Screenshot</string>
+    <string name="global_actions_screenrecord_title">Screenrecord</string>
+    <string name="global_actions_none_title">None</string>
 
 </resources>
