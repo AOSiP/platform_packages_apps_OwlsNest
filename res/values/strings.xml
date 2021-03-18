@@ -421,4 +421,8 @@
     <string name="global_actions_screenrecord_title">Screenrecord</string>
     <string name="global_actions_none_title">None</string>
 
+    <!-- QS panel opacity -->
+    <string name="qs_panel_alpha_title">Background opacity</string>
+    <string name="qs_panel_alpha_summary">Adjust opacity/transparency of QS panel background</string>
+
 </resources>
