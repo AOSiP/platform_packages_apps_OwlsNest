@@ -51,6 +51,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.aosip.support.preference.AppListPreference;
 import com.aosip.support.preference.PackageListAdapter;
 import com.aosip.support.preference.PackageListAdapter.PackageItem;
 import com.aosip.support.preference.SystemSettingListPreference;
@@ -361,7 +362,7 @@ public class GamingMode extends SettingsPreferenceFragment implements
         PackageInfo info = mPackageManager.getPackageInfo(pkg.name,
                 PackageManager.GET_META_DATA);
         Preference pref =
-                new Preference(getActivity());
+                new AppListPreference(getActivity());
 
         pref.setKey(pkg.name);
         pref.setTitle(info.applicationInfo.loadLabel(mPackageManager));

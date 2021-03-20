@@ -64,7 +64,7 @@
     <PreferenceCategory
         android:title="@string/gaming_mode_app_picker_title"
         android:key="gamingmode_applications">
-        <Preference
+        <com.aosip.support.preference.AppListPreference
             android:key="gaming_mode_add_packages"
             android:icon="@drawable/ic_menu_add_white"
             android:title="@string/gaming_mode_add_package_title" />
