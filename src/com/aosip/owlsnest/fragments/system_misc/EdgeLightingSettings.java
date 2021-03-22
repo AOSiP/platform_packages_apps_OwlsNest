@@ -41,6 +41,7 @@ import java.util.List;
 
 import com.aosip.owlsnest.fragments.system_misc.EdgeLightingEnabler;
 import com.aosip.support.colorpicker.ColorPickerPreference;
+import com.aosip.support.preference.SecureSettingListPreference;
 import com.aosip.support.preference.SystemSettingListPreference;
 import com.aosip.support.preference.CustomSeekBarPreference;
 import com.aosip.support.preference.SystemSettingSwitchPreference;
@@ -59,6 +60,7 @@ public class EdgeLightingSettings extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mAmbientNotificationLightHideAod;
     private SystemSettingListPreference mColorMode;
     private SystemSettingListPreference mAmbientNotificationLightTimeout;
+    private SecureSettingListPreference mAmbientLightLayout;
 
     private EdgeLightingEnabler mEdgeLightingEnabler;
 
@@ -77,6 +79,7 @@ public class EdgeLightingSettings extends SettingsPreferenceFragment implements
         mEdgeLightDurationPreference = (CustomSeekBarPreference) findPreference("ambient_light_duration");
         mColorMode = (SystemSettingListPreference) findPreference("ambient_notification_light_color_mode");
         mEdgeLightColorPreference = (ColorPickerPreference) findPreference("ambient_notification_light_color");
+        mAmbientLightLayout = (SecureSettingListPreference) findPreference("pulse_ambient_light_layout");
 
         int rCount = Settings.System.getInt(getContentResolver(),
                 Settings.System.AMBIENT_LIGHT_REPEAT_COUNT, 0);
@@ -206,6 +209,7 @@ public class EdgeLightingSettings extends SettingsPreferenceFragment implements
         mColorMode.setEnabled(enabled ? true : false);
         mAmbientNotificationLightHideAod.setEnabled(enabled ? true : false);
         mAmbientNotificationLightTimeout.setEnabled(enabled ? true : false);
+        mAmbientLightLayout.setEnabled(enabled ? true : false);
         mAmbientNotificationLightEnabled.setEnabled(enabled && aodEnabled ? true : false);
         mAmbientNotificationLightHideAod.setEnabled(enabled && aodEnabled ? true : false);
         if (!aodEnabled) {
