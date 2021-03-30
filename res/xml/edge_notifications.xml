@@ -27,6 +27,7 @@
             android:key="ambient_notification_light_enabled"
             android:title="@string/ambient_notification_light_enabled_title"
             android:summary="@string/ambient_notification_light_enabled_summary"
+            android:persistent="false"
             android:defaultValue="false" />
 
         <com.aosip.support.preference.SystemSettingSwitchPreference
@@ -34,6 +35,7 @@
             android:title="@string/ambient_notification_light_hide_aod_title"
             android:summary="@string/ambient_notification_light_hide_aod_summary"
             android:dependency="ambient_notification_light_enabled"
+            android:persistent="false"
             android:defaultValue="false" />
 
         <com.aosip.support.preference.SystemSettingListPreference
