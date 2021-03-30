@@ -441,6 +441,7 @@
     <string name="ambient_notification_light_hide_aod_title">Only show light pulse</string>
     <string name="ambient_notification_light_hide_aod_summary">Hide all other display elements from always on</string>
     <string name="ambient_notification_light_timeout_title">Timeout for light pulse</string>
+    <string name="aod_disabled">AOD is disabled</string>
     <string name="entry_infinite">Infinite</string>
     <string name="entry_five_minute">5 minutes</string>
     <string name="entry_ten_minute">10 minutes</string>
