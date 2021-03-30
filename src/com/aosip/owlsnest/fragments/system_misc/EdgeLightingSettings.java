@@ -196,6 +196,8 @@ public class EdgeLightingSettings extends SettingsPreferenceFragment implements
     private void refreshPreferenceStates() {
         enabled = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.NOTIFICATION_PULSE, 0, UserHandle.USER_CURRENT) == 1;
+        boolean aodEnabled = Settings.Secure.getIntForUser(getContext().getContentResolver(),
+                Settings.Secure.DOZE_ALWAYS_ON, 0, UserHandle.USER_CURRENT) == 1;
         mEdgeLightColorPreference.setEnabled(enabled ? true : false);
         mEdgeLightDurationPreference.setEnabled(enabled ? true : false);
         mEdgeLightRepeatCountPreference.setEnabled(enabled ? true : false);
@@ -203,8 +205,13 @@ public class EdgeLightingSettings extends SettingsPreferenceFragment implements
         mColorMode.setEnabled(enabled ? true : false);
         mAmbientNotificationLightHideAod.setEnabled(enabled ? true : false);
         mAmbientNotificationLightTimeout.setEnabled(enabled ? true : false);
-        mAmbientNotificationLightHideAod.setEnabled(enabled ? true : false);
-        mAmbientNotificationLightTimeout.setEnabled(enabled ? true : false);
+        mAmbientNotificationLightEnabled.setEnabled(enabled && aodEnabled ? true : false);
+        mAmbientNotificationLightHideAod.setEnabled(enabled && aodEnabled ? true : false);
+        if (!aodEnabled) {
+            mAmbientNotificationLightTimeout.setSummary(R.string.aod_disabled);
+            mAmbientNotificationLightHideAod.setSummary(R.string.aod_disabled);
+            mAmbientNotificationLightEnabled.setSummary(R.string.aod_disabled);
+        }
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
