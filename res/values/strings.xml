@@ -430,7 +430,7 @@
     <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
 
     <!-- Ambient edge lighting -->
-    <string name="edge_notifications_title">Notification lights</string>
+    <string name="edge_notifications_title">Pulsing edge</string>
     <string name="pulse_ambient_light_category">Screen edge lighting</string>
     <string name="pulse_ambient_light_title">Show on new notifcation</string>
     <string name="pulse_ambient_light_summary">Show light pulse on new notification</string>
