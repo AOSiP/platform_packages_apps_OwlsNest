@@ -24,12 +24,12 @@ import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -37,33 +37,38 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.CompoundButton;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.TextView;
 
-import androidx.preference.Preference;
-import androidx.preference.PreferenceGroup;
-import androidx.preference.PreferenceScreen;
+import androidx.preference.*;
 
 import com.android.internal.logging.nano.MetricsProto;
-
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.widget.SwitchBar;
+import com.android.settings.widget.SwitchBarController;
+import com.android.settingslib.search.Indexable;
+import com.android.settingslib.search.SearchIndexable;
 
 import com.aosip.support.preference.AppListPreference;
 import com.aosip.support.preference.PackageListAdapter;
 import com.aosip.support.preference.PackageListAdapter.PackageItem;
 import com.aosip.support.preference.SystemSettingListPreference;
 import com.aosip.support.preference.SystemSettingSwitchPreference;
+import com.aosip.owlsnest.fragments.system_misc.GamingModeEnabler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SearchIndexable
 public class GamingMode extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceClickListener, CompoundButton.OnCheckedChangeListener {
+        Preference.OnPreferenceClickListener, GamingModeEnabler.OnGamingModeChangeListener,
+        Indexable {
 
     private static final int DIALOG_GAMING_APPS = 1;
 
@@ -84,16 +89,18 @@ public class GamingMode extends SettingsPreferenceFragment implements
     private Context mContext;
 
     private TextView mTextView;
-    private View mSwitchBar;
 
     private static final int KEY_MASK_HOME = 0x01;
     private static final int KEY_MASK_BACK = 0x02;
     private static final int KEY_MASK_MENU = 0x04;
     private static final int KEY_MASK_APP_SWITCH = 0x10;
 
+    private GamingModeEnabler mGamingModeEnabler;
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+
         // Get launch-able applications
         addPreferencesFromResource(R.xml.gaming_mode_settings);
 
@@ -124,68 +131,29 @@ public class GamingMode extends SettingsPreferenceFragment implements
 
         mContext = getActivity().getApplicationContext();
 
-        SettingsObserver observer = new SettingsObserver(new Handler(Looper.getMainLooper()));
-        observer.observe();
+        refreshPreferenceStates();
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        final View view = LayoutInflater.from(getContext()).inflate(R.layout.master_setting_switch, container, false);
-        ((ViewGroup) view).addView(super.onCreateView(inflater, container, savedInstanceState));
-        return view;
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        final SettingsActivity activity = (SettingsActivity) getActivity();
+        final SwitchBar switchBar = activity.getSwitchBar();
+        mGamingModeEnabler = new GamingModeEnabler(getContext(),
+                new SwitchBarController(switchBar), this, getSettingsLifecycle());
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        boolean enabled = Settings.System.getInt(getContentResolver(),
-                Settings.System.GAMING_MODE_ENABLED, 0) == 1;
-
-        mTextView = view.findViewById(R.id.switch_text);
-        mTextView.setText(getString(enabled ?
-                R.string.switch_on_text : R.string.switch_off_text));
-
-        mSwitchBar = view.findViewById(R.id.switch_bar);
-        Switch switchWidget = mSwitchBar.findViewById(android.R.id.switch_widget);
-        switchWidget.setChecked(enabled);
-        switchWidget.setOnCheckedChangeListener(this);
-        mSwitchBar.setActivated(enabled);
-        mSwitchBar.setOnClickListener(v -> {
-            switchWidget.setChecked(!switchWidget.isChecked());
-            mSwitchBar.setActivated(switchWidget.isChecked());
-        });
-
-        mRingerMode.setEnabled(enabled);
-        mGamingNotification.setEnabled(enabled);
-        mHeadsUpDisable.setEnabled(enabled);
-        // mHardwareKeysDisable.setEnabled(enabled);
-        mManualBrightness.setEnabled(enabled);
-        mDynamicMode.setEnabled(enabled);
-        mAddGamingPref.setEnabled(enabled);
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-        Settings.System.putInt(getContentResolver(),
-                Settings.System.GAMING_MODE_ENABLED, isChecked ? 1 : 0);
-        mTextView.setText(getString(isChecked ? R.string.switch_on_text : R.string.switch_off_text));
-        mSwitchBar.setActivated(isChecked);
-
-        mRingerMode.setEnabled(isChecked);
-        mGamingNotification.setEnabled(isChecked);
-        mHeadsUpDisable.setEnabled(isChecked);
-        // mHardwareKeysDisable.setEnabled(isChecked);
-        mManualBrightness.setEnabled(isChecked);
-        mDynamicMode.setEnabled(isChecked);
-        mAddGamingPref.setEnabled(isChecked);
+    public void onDestroyView() {
+        super.onDestroyView();
+        mGamingModeEnabler.teardownSwitchController();
     }
 
     @Override
     public void onResume() {
         super.onResume();
         refreshCustomApplicationPrefs();
+        refreshPreferenceStates();
     }
 
     @Override
@@ -228,29 +196,6 @@ public class GamingMode extends SettingsPreferenceFragment implements
                 });
         }
         return dialog;
-    }
-
-    class SettingsObserver extends ContentObserver {
-        SettingsObserver(Handler handler) {
-            super(handler);
-        }
-
-        void observe() {
-            ContentResolver resolver = mContext.getContentResolver();
-
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.GAMING_MODE_ACTIVE), false, this,
-                    UserHandle.USER_ALL);
-        }
-
-        @Override
-        public void onChange(boolean selfChange, Uri uri) {
-            if (uri.equals(Settings.System.getUriFor(
-                                   Settings.System.GAMING_MODE_ACTIVE))) {
-                boolean enable = Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.GAMING_MODE_ACTIVE, 0) == 1;
-            }
-        }
     }
 
     /**
@@ -323,7 +268,7 @@ public class GamingMode extends SettingsPreferenceFragment implements
         }
     }
 
-    @Override
+    @Override                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     public boolean onPreferenceClick(Preference preference) {
         if (preference == mAddGamingPref) {
             showDialog(DIALOG_GAMING_APPS);
@@ -344,7 +289,24 @@ public class GamingMode extends SettingsPreferenceFragment implements
 
             builder.show();
         }
+        refreshPreferenceStates();
         return true;
+    }
+
+    @Override
+    public void onChanged(boolean enabled) {
+        refreshPreferenceStates();
+    }
+
+    private void refreshPreferenceStates() {
+        boolean enabled = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.GAMING_MODE_ACTIVE, 0, UserHandle.USER_CURRENT) == 1;
+        mRingerMode.setEnabled(enabled ? true : false);
+        mGamingNotification.setEnabled(enabled ? true : false);
+        mHeadsUpDisable.setEnabled(enabled ? true : false);
+        mManualBrightness.setEnabled(enabled ? true : false);
+        mDynamicMode.setEnabled(enabled ? true : false);
+        mGamingPrefList.setEnabled(enabled ? true : false);
     }
 
     private void addCustomApplicationPref(String packageName, Map<String,Package> map) {
@@ -426,4 +388,23 @@ public class GamingMode extends SettingsPreferenceFragment implements
         Settings.System.putString(getContentResolver(),
                 setting, value);
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+        new BaseSearchIndexProvider() {
+            @Override
+            public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                    boolean enabled) {
+                final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                final SearchIndexableResource sir = new SearchIndexableResource(context);
+                sir.xmlResId = R.xml.gaming_mode_settings;
+                result.add(sir);
+                return result;
+            }
+
+            @Override
+            public List<String> getNonIndexableKeys(Context context) {
+                final List<String> keys = super.getNonIndexableKeys(context);
+                return keys;
+            }
+    };
 }
