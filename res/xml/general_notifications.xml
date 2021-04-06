@@ -30,6 +30,12 @@
         android:summary="@string/pulse_ambient_light_summary"
         android:fragment="com.aosip.owlsnest.fragments.system_misc.EdgeLightingSettings" />
 
+	<com.aosip.support.preference.SystemSettingSwitchPreference
+	    android:key="notification_sound_vib_screen_on"
+	    android:title="@string/notification_sound_vib_screen_on_title"
+	    android:summary="@string/notification_sound_vib_screen_on_summary"
+	    android:defaultValue="false" />
+
     <Preference
         android:key="gaming_mode_enabled"
         android:title="@string/gaming_mode_title"
