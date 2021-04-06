@@ -462,4 +462,9 @@
     <string name="pulse_ambient_light_show_always_title">Show for all doze events</string>
     <string name="pulse_ambient_light_show_always_summary">Show lights for all doze events and not just notifications</string>
 
+    <!-- Supress notifications if screen is on -->
+    <string name="notification_sound_vib_screen_on_title">Reduce notification sounds</string>
+    <string name="notification_sound_vib_screen_on_summary">Do not play notification sounds/vibrations while screen is on</string>
+
+
 </resources>
