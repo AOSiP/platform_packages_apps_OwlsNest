@@ -70,13 +70,10 @@ public class InterfaceTab extends SettingsPreferenceFragment implements
         }
 
         CardPreference mThemer = findPreference("themer_category");
-        // The following 2 checks need to pass in order for Themer to show
-        if ((!hasCustomThemesAvailable()) &&
-            (!getResources().getBoolean(R.bool.themer_category_isVisible))) {
+        if (!getResources().getBoolean(R.bool.themer_category_isVisible)) {
             getPreferenceScreen().removePreference(mThemer);
         } else {
             mThemer = (CardPreference) findPreference(THEMER_CATEGORY);
-            mThemer.setEnabled(hasCustomThemesAvailable());
         }
 
         CardPreference mPulse = findPreference("pulse_category");
