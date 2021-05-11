@@ -40,4 +40,8 @@
         android:title="@string/qs_battery_percentage_title"
         android:summary="@string/qs_battery_percentage_summary" />
 
+    <Preference
+        android:key="battery_bar"
+        android:title="@string/battery_bar_title"
+        android:fragment="com.aosip.owlsnest.fragments.statusbar.BatteryBar"/>
 </PreferenceScreen>
